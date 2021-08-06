@@ -1,6 +1,6 @@
 # Plase configure your git as Linux to properly handle line endings
 #  git config --global core.autocrlf input
-#  git config --global core.filemode false
+#  git config --global core.filemode false # see https://stackoverflow.com/a/1580644/287948
 
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto

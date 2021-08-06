@@ -1,0 +1,12 @@
+{{#query_view}}
+	psql $(pg_uri_db) -c "CREATE VIEW vw{{file}}_$(tabname) AS {{{.}}}"
+	psql $(pg_uri_db) -c "SELECT ingest.any_load('{{method}}','$(sandbox)/{{orig_filename}}','$(layername)','vw{{file}}_$(tabname)','$(fullPkID)','$(part{{file}}_file)',array[]::text[])"
+	psql $(pg_uri_db) -c "DROP VIEW vw{{file}}_$(tabname)"
+{{/query_view}}
+{{^query_view}}
+	psql $(pg_uri_db) -c "SELECT ingest.any_load('{{method}}','$(sandbox)/{{orig_filename}}','$(layername)','$(tabname)','$(fullPkID)','$(part{{file}}_file)',array{{{sql_select}}})"
+{{/query_view}}
+	@echo "Confira os resultados nas tabelas ingest.layer_file e ingest.feature_asis".
+ifeq ('{{method}}','csv2sql')
+	psql $(pg_uri_db) -c "DROP FOREIGN TABLE IF EXISTS $(tabname)"
+endif

@@ -1,0 +1,6 @@
+pg_io:   /tmp/pg_io
+orig:    /var/www/preserv.addressforall.org/download
+pg_uri:  postgres://postgres@localhost
+pg_db:   ingest1
+sandbox: /tmp/sandbox
+thisTplFile_root: digital-preservation-BR
