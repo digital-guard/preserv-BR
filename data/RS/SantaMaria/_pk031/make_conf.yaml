@@ -1,0 +1,51 @@
+pkid:      31
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31982
+files:
+  -
+    p:    1
+    file: 51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.zip
+    name: Lotes
+  -
+    p:    2
+    file: f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip
+    name: Eixos
+  -
+    p:    3
+    file: 9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip
+    name: Bairros
+
+parts:
+  parcel:
+        subtype: full
+        p: 1a
+        file: 1
+        tabname:  parcel
+        sql_select: ['gid', "Tipo || ' ' || Logradouro AS via_name", 'Numero AS house_number', 'Bairro AS ns_name', 'geom']
+        orig_filename: lote
+  via:
+        subtype: full
+        p: 2a
+        file: 2
+        tabname:  via
+        sql_select: ['gid', 'NOME AS via_name', 'geom']
+        #NOME ver README.md 
+        orig_filename: Ruas
+  nsvia:
+        subtype: full
+        p: 3a
+        file: 3
+        tabname:  nsvia
+        sql_select: ['gid', 'NOME AS ns_name', 'geom']
+        orig_filename: Bairros
+  block:
+        subtype: none
+        p: 3b
+        file: 3
+        tabname:  genericvia
+        sql_select: ['gid', 'NumQuadra', 'geom']
+        orig_filename: Quadras

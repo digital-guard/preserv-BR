@@ -1,0 +1,8 @@
+905c17cc70f710123d5b2e8ab1bf8a21cb31e00f6d124eea667569e84e9fa7ac *Arquivos Webmap Duque de Caxias . KML-20201029T141507Z-001.zip
+e6f6921bf4ce2900f60baa28c4237ffbd026b7cf0155aa685d893d58addf826d *Arquivos Webmap Duque de Caxias .SHP-20201029T141438Z-001.zip
+1b3ea57db0fd4694dff2434f69085443b65698018e8c2c51d28da71b2c76a470 *Centros de Bairro.zip
+47c15bff9e923333f147415c356526758eb0c985986189c9f245fc471a8cbe73 *Estradas Rurais.zip
+8561c9b7d33b1ef69fc144664fe15cfaa12a9e578b9d05e1c069f0419806ac0b *Limite de Distritos.zip
+f751736f9b3a74a74106a904cb948ecb93cedd48211829788bd3c7ad39242e5e *Limite de Duque de Caxias.zip
+4e53e315b125ee3518d2140fd4c2d54a653e97cfc66bbc4f97eb405d4c3368bf *Limite de bairros de Duque de Caxias.zip
+adad9829506c63667de797cc18701d2a9bf368e66f8c07007737fc87013aa5bf *qgis.png

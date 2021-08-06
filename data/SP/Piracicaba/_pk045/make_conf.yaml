@@ -1,0 +1,46 @@
+pkid:      45
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 4326 
+files:
+  -
+    p:    1
+    file: f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
+    name: Lotes
+  -
+    p:    2
+    file: 23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
+    name: Quadras
+  -
+    p:    3
+    file: 2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
+    name: Bairros
+
+parts:
+  parcel:
+        subtype: full
+        p: 1a
+        file: 1
+        tabname:  parcel
+        sql_select: ['gid','bairro_imo AS ns_name','cep_imovel', 'logradouro AS via_name', 'numero_imo AS house_number', 'unidades', 'geom']
+        orig_filename: Cadastro de Imoveis
+        codec: -W iso-8859-1
+  block:
+        subtype: none
+        p: 2a
+        file: 2
+        tabname:  via
+        sql_select: ['gid', 'chave_qd','geom']
+        orig_filename: Quadras
+        codec: -W iso-8859-1
+  nsvia:
+        subtype: none
+        p: 3a
+        file: 3
+        tabname:  nsvia
+        sql_select: ['gid', 'bairro AS ns_name','geom']
+        orig_filename: Bairros
+        codec: -W iso-8859-1

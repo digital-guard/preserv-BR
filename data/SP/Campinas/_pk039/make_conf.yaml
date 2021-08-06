@@ -1,0 +1,34 @@
+pkid:      39
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31983
+files:
+  -
+    p:    1
+    file: b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip
+    name: Eixos
+  -
+    p:    2
+    file: 6bb020e023ffd10570d887f907fdad909eecde1003c8911ef64ac63d48f5fe8b.zip
+    name: Pontos de lotes
+
+layers:
+
+  via: 
+    subtype: none
+    p: 1a   
+    file: 1
+    tabname:  geoaddress
+    sql_select: ['gid', 'LOGRADOURO AS via_name', 'geom']
+    orig_filename: eixos
+
+  geoaddress:
+    subtype: none
+    p: 3a
+    file: 3
+    tabname:  via
+    sql_select: ['gid', 'geom']
+    orig_filename: lotes

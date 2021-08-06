@@ -1,0 +1,57 @@
+pkid:      46
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 32719
+files:
+  -
+    p:    1
+    file: d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip
+    name: Lotes
+  -
+    p:    2
+    file: 73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip
+    name: Bairros
+  -
+    p:    3
+    file: 29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar
+    name: Eixos
+
+layers:
+  parcel:
+        subtype: full
+        method: shp2sql
+        p: 1a
+        file: 1
+        tabname:  parcel
+        sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
+        orig_filename: rb_20201116/lotes
+  nsvia:
+        subtype: full
+        method: shp2sql
+        p: 2a
+        file: 2
+        tabname:  nsvia
+        sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
+        orig_filename: rb_20201111/bairros
+  via:
+        subtype: full
+        method: shp2sql
+        p: 3a
+        file: 3
+        tabname:  via
+        query_view: |-
+                    SELECT gid, 'Nome' || ' ' || 'Tipo' AS via_name,  geom FROM $(tabname)
+        orig_filename: logradouros
+  # Não importei Eixos - planilha, precisa?
+  block:
+        subtype: full
+        method: shp2sql
+        p: 2b
+        file: 2
+        tabname:  via
+        sql_select: ['gid', 'iq', 'geom']
+        orig_filename: rb_20201111/quadras
+  # Mão importei Loteamentos - funciona como Bairro

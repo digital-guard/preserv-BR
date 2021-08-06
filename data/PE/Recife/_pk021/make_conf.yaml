@@ -1,0 +1,41 @@
+pkid:      21
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31985
+files:
+  -
+    p:    1
+    file: 04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip
+    name: Todos os shapes
+
+layers:
+  parcel:
+        subtype: full
+        method: shp2sql
+        p: 1a
+        file: 1
+        tabname:  parcel
+        sql_select: ['gid', 'ENDNUMERO AS house_number','QTDPAVIMEN','NMEDIFICAC', 'geom']
+        orig_filename: Lotes
+        method_opts: -W iso-8859-1
+  via:
+        subtype: full
+        method: shp2sql
+        p: 1b
+        file: 1
+        tabname:  via
+        sql_select: ['gid', 'NLGPAVOFIC AS via_name', 'geom']
+        orig_filename: TrechoLogradouros
+        method_opts: -W iso-8859-1
+  nsvia:
+        subtype: full
+        method: shp2sql
+        p: 1c
+        file: 1
+        tabname:  nsvia
+        sql_select: ['gid', 'EBAIRRNO_1 AS ns_name', 'geom']
+        orig_filename: Bairros
+        method_opts: -W iso-8859-1

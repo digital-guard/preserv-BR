@@ -1,0 +1,5 @@
+# Ignore non-src makefiles, only final DVD preservation need to add each local makefile
+data/**/makefile
+
+# Local temporary sandbox
+tmp/

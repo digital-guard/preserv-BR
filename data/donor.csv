@@ -1,0 +1,66 @@
+id,escopo,shortName,vat_id,legalName,wikidata_id,url
+1,BR,IBGE,cnpj:33.787.094/0001-40,Instituto Brasileiro de Geografia e Estatística,268072,https://ibge.gov.br/
+2,BR-PR-CTA,IPPUC,cnpj:76.582.337/0001-16,Inst. de Pesquisa e Plan Urbano de Curitiba,100641436,http://ippuc.org.br
+3,BR,OK-BR,cnpj:19.131.243/0001-97,Open Knowledge Foundation Brasil,73828324,http://ok.org.br
+4,INT,OSM,wd:P2657:365969219933-54,OpenStreetMap Foundation,6542248,https://www.osmfoundation.org/
+5,BR-ES-SEA,ES-SEA,cnpj:27.174.093/0001-27,Prefeitura Municipal de Serra,56450024,http://www.serra.es.gov.br/
+6,BR-ES-VTA,ES-VTA,cnpj:27.142.058/0001-26,Prefeitura Municipal de Vitória,30263900,https://www.vitoria.es.gov.br/
+7,BR-ES-VVA,ES-VVA,cnpj:27.165.554/0001-03,Prefeitura Municipal de Vila Velha,56450026,https://www.vilavelha.es.gov.br/
+8,BR-MG-BHE,MG-BHE,cnpj:18.715.383/0001-40,Prefeitura de Belo Horizonte,30263897,https://prefeitura.pbh.gov.br/
+9,BR-MG-CEM,MG-CEM,cnpj:18.715.508/0001-31,Prefeitura Municipal de Contagem,56450007,http://www.contagem.mg.gov.br
+10,BR-PE-RCE,PE-RCE,cnpj:10.565.000/0001-92,Prefeitura Municipal de Recife,53930910,http://www2.recife.pe.gov.br
+11,BR-PR-CSC,PR-CSC,cnpj:76.208.867/0001-07,Prefeitura Municipal de Cascavel,56450074,http://www.cascavel.pr.gov.br/
+12,BR-PR-CTA,PR-CTA,cnpj:76.417.005/0001-86,Prefeitura Municipal de Curitiba,53930907,https://www.curitiba.pr.gov.br/
+13,BR-PR-MRH,PR-MRH,cnpj:76.205.814/0001-24,Prefeitura Municipal de Marechal Cândido Rondon,97936438,https://marechalcandidorondon.atende.net/
+14,BR-PR-PIN,PR-PIN,cnpj:95.423.000/0001-00,Prefeitura Municipal de Pinhais,97631607,https://pinhais.atende.net/
+15,BR-PR-SJP,PR-SJP,cnpj:76.105.543/0001-35,Prefeitura Municipal de São José dos Pinhais,56450080,http://www.sjp.pr.gov.br/
+16,BR-RJ-NRI,RJ-NRI,cnpj:28.521.748/0001-59,Prefeitura Municipal de Niterói,56450021,http://www.niteroi.rj.gov.br/
+17,BR-RS-GTI,RS-GTI,cnpj:87.890.992/0001-58,Prefeitura Municipal de Gravataí,56450094,https://www.gravatai.rs.gov.br/
+18,BR-RS-PAE,RS-PAE,cnpj:92.963.560/0001-60,Prefeitura Municipal de Porto Alegre,53930913,https://prefeitura.poa.br/
+19,BR-RS-SMA,RS-SMA,cnpj:88.488.366/0001-00,Prefeitura Municipal de Santa Maria,56450092,https://www.santamaria.rs.gov.br/
+20,BR-SC-JGS,SC-JGS,cnpj:83.102.459/0001-23,Prefeitura Municipal de Jaraguá do Sul,97936645,https://www.jaraguadosul.sc.gov.br/
+21,BR-SP-ATB,SP-ATB,cnpj:45.279.635/0001-08,Prefeitura da Estância de Atibaia,97936697,http://www.prefeituradeatibaia.com.br/
+22,BR-SP-CAM,SP-CAM,cnpj:51.885.242/0001-40,Prefeitura Municipal de Campinas,53930937,http://www.campinas.sp.gov.br/
+23,BR-SP-GRJ,SP-GRJ,cnpj:44.959.021/0001-04,Prefeitura Municipal de Guarujá,56450076,https://www.guaruja.sp.gov.br/
+24,BR-SP-ITU,SP-ITU,cnpj:46.634.440/0001-00,Prefeitura da Estância Turística de Itu,95629648,https://itu.sp.gov.br/
+25,BR-SP-JUN,SP-JUN,cnpj:45.780.103/0001-50,Prefeitura Municipal de Jundiaí,56450042,https://jundiai.sp.gov.br/
+26,BR-SP-LIM,SP-LIM,cnpj:45.132.495/0001-40,Prefeitura Municipal de Limeira,56450084,https://www.limeira.sp.gov.br/
+27,BR-SP-LRP,SP-LRP,cnpj:46.634.606/0001-80,Prefeitura Municipal de Laranjal Paulista,95630587,https://www.laranjalpaulista.sp.gov.br/
+28,BR-SP-OSC,SP-OSC,cnpj:46.523.171/0001-04,Prefeitura Municipal de Osasco,56450001,http://www.osasco.sp.gov.br/home
+29,BR-SP-SAN,SP-SAN,cnpj:58.200.015/0001-83,Prefeitura Municipal de Santos,56450035,https://www.santos.sp.gov.br/
+30,BR-SP-SBC,SP-SBC,cnpj:46.523.239/0001-47,Prefeitura Municipal de São Bernardo do Campo,56449994,https://www.saobernardo.sp.gov.br/
+31,BR-SP-SCB,SP-SCB,cnpj:46.634.044/0001-74,Prefeitura Municipal de Sorocaba,56450008,http://www.sorocaba.sp.gov.br/
+32,BR-SP-SOV,SP-SOV,cnpj:46.177.523/0001-09,Prefeitura Municipal de São Vicente,56450055,http://www.saovicente.sp.gov.br/publico/
+33,BR-SP-SPA,SP-SPA,cnpj:46.395.000/0001-39,Prefeitura Municipal de São Paulo,10351100,http://www.capital.sp.gov.br/
+34,BR-MS-CPE,MS-CPE,cnpj:03.501.509/0001-06,Prefeitura Municipal de Campo Grande,56449991,http://www.campogrande.ms.gov.br/
+35,BR-SC-JVE,SC-JVE,cnpj:83.169.623/0001-10,Prefeitura Municipal de Joinville,56450014,https://www.joinville.sc.gov.br/
+36,BR-SP-SLT,SP-SLT,cnpj:46-634-507/0001-06,Prefeitura da Estância Turística de Salto,99199224,https://salto.sp.gov.br/
+37,BR-PR-PBC,PR-PBC,cnpj:76.995.448/0001-54,Prefeitura Municipal de Pato Branco,99199665,http://patobranco.pr.gov.br/
+38,BR-RJ-DQX,RJ-DQX,cnpj:29.138.328/0001-50,Prefeitura Municipal de Duque de Caxias,56449989,https://duquedecaxias.rj.gov.br/
+39,BR-MG-GVS,MG-GVS,cnpj:20.622.890/0001-80,Prefeitura Municipal de Governador Valadares,56450091,https://www.valadares.mg.gov.br/
+40,BR-SP-CBV,SP-CBV,cnpj:46.634.432/0001-55,Prefeitura Municipal de Cabreúva,99199749,https://www.cabreuva.sp.gov.br/
+41,BR-SP-PIR,SP-PIR,cnpj:46.341.038/0001-29,Prefeitura Municipal de Piracicaba,56450048,http://www.piracicaba.sp.gov.br/
+42,BR-AC-RBO,AC-RBO,cnpj:04.034.583/0001-22,Prefeitura Municipal de Rio Branco,56450051,http://www.riobranco.ac.gov.br/
+43,BR-SP-SJC,SP-SJC,cnpj:46.643.466/0001-06,Prefeitura Municipal de São José dos Campos,56450003,https://www.sjc.sp.gov.br/
+44,INT,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/
+45,BR-PI-TSA,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/
+46,BR,ECT,cnpj:34.028.316/0001-03,Empresa Brasileira de Correios e Telégrafos,3375004,http://www.correios.com.br/
+47,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/
+48,BR-MS-DOS,MS-DOS,cnpj:03.155.926/0001-44,Prefeitura de Dourados,60029408,http://www.dourados.ms.gov.br/
+49,BR-SP-CQH,SP-CQH,cnpj:46.634.614/0001-26,Prefeitura Municipal de Cerquilho,100154106,https://cerquilho.sp.gov.br/
+50,BR-BA-SDR,BA-SDR,cnpj:13.927.801/0001-49,Municipio de Salvador,53930901,http://www.salvador.ba.gov.br/
+51,BR,ClickSys-BR,cpf:115.658.347-04,ClickSistema,,clicksistema.com.br
+52,BR-SP-RPR,SP-RPR,cnpj:56.024.581/0001-56,Prefeitura Municipal de Ribeirão Preto,56450005,https://www.ribeiraopreto.sp.gov.br/portal/
+53,BR-SC-FNS,IPUF,cnpj:83.469.965/0001-55 ,Instituto de Pesquisa e Planejamento Urbano de Florianópolis,101575535,http://www.pmf.sc.gov.br/entidades/ipuf/
+54,BR-GO-GNA,GO-GNA,cnpj:14.185.071/0001-10,Prefeitura de Goiânia,53930914,https://www.goiania.go.gov.br/
+55,BR-MG-URA,MG-URA,cnpj:18.428.839/0001-90,Prefeitura Municipal de Uberaba,56450073,http://www.uberaba.mg.gov.br/portal/principal
+56,BR-PE-CRU,PE-CRU,cnpj:10.091.536/0001-13,Prefeitura de Caruaru,56450060,https://caruaru.pe.gov.br/
+57,BR-MG-ULA,MG-ULA,cnpj:18.431.312/0001-15,Prefeitura Municipal de Uberlândia,56450006,https://www.uberlandia.mg.gov.br/
+58,BR-SP-ITH,SP-ITH,cnpj:46.578.498/0001-75,Prefeitura de Itanhaém,104847769,http://www2.itanhaem.sp.gov.br/
+59,BR-PR,Paranacidade,cnpj:01.450.804/0001-55,Serviço Social Autônomo Paranacidade,104848282,http://www.paranacidade.org.br/
+60,BR-PE-PTA,PE-PTA,cnpj:10.358.190/0001-77,Prefeitura de Petrolina,56450068,https://petrolina.pe.gov.br/
+61,BR-PR-AUC,PR-AUC,cnpj:76.105.535/0001-99,Prefeitura do Município de Araucária,104848034,https://araucaria.atende.net/
+62,BR-RO-JIP,RO-JIP,cnpj: 04.092.672/0001-25,Prefeitura Municipal de Ji-Paraná,105008525,http://www.site.ji-parana.ro.gov.br/
+63,BR-RS-NHO,RS-NHO,cnpj: 07.044.304/0001-08,Prefeitura Municipal de Novo Hamburgo,105008951,https://www.novohamburgo.rs.gov.br/
+64,BR-RS-SCR,RS-SCR,cnpj: 95.440.517/0001-08,Prefeitura Municipal de Santa Cruz do Sul,105328349,https://www.santacruz.rs.gov.br
+65,BR-SP-CUB,SP-CUB,cnpj: 47.492.806/0001-08,Prefeitura Municipal de Cubatão,105453143,http://www.cubatao.sp.gov.br/

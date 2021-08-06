@@ -1,0 +1,34 @@
+pkid:      17
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31983
+files:
+  -
+    p:    1
+    file: 3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip
+    name: Lotes
+  -
+    p:    2
+    file: f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip
+    name: Eixos
+
+layers:
+
+  parcel: 
+    subtype: full
+    p: 1a   
+    file: 1
+    tabname:  parcel
+    sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
+    orig_filename: lotes_prediais
+
+  via:
+    subtype: full
+    p: 2a
+    file: 2
+    tabname:  via
+    sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
+    orig_filename: eixos_sorocaba

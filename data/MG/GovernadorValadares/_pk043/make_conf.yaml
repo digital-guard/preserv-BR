@@ -1,0 +1,72 @@
+pkid:      43
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31984
+files:
+  -
+    p:    1
+    file: 2e79fdf013a8de68e071c2f2a9911bc98196254bc9b9f39482cb0941a146b485.zip
+    name: Planilha de Endereços
+  -
+    p:    2
+    file: 98248f643e60829689b398b2852981cfd12b11799a640d93b27223dfc4346948.rar
+    name: Lotes
+  -
+    p:    3
+    file: 2bcdbd6a2ddf4fd810147a106616f404c69a9c38bc02531fe3fa9f27acab25a6.zip
+    name: Quadras
+  -
+    p:    4
+    file: 0cc1b05163361968a5681e971c8ab1395fcca1ba4b48150a7522a90b836727e3.zip
+    name: Bairros
+  -
+    p:    5
+    file: 437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip
+    name: Eixos
+#Correspondência entre AS colunas da planilha e colunas do shapefile:
+#    * `Setor` -> `cd_setor`
+#    * `Quadra` -> `nr_quadra`
+#    * `Lote` ->  `nr_lote`
+parts:
+  address:
+        subtype: noid
+        p: 1a   
+        file: 1
+        orig_filename: Logradouros - Gov. Valadares.xlsx
+        tabname:  address
+        sql_select: ['row_number() OVER () AS gid','"Logradouro" AS via_name', '"Número" AS house_number', '"Setor" AS setor', '"Quadra" AS quadra' , '"Lote" AS lote']
+  parcel:
+        subtype: ext
+        p: 2a
+        file: 2
+        tabname:  parcel
+        sql_select: ['gid', 'cd_distrit', 'cd_setor', 'nr_quadra', 'nr_lote', 'geom']
+        orig_filename: lote_inscricao_geometria
+  block: 
+        subtype: ext
+        p: 3a
+        file: 3
+        tabname:  genericvia
+        sql_select: ['gid', 'id_quadra', 'geom']
+        orig_filename: st_quadraPolygon
+  nsvia:
+        subtype: none
+        p: 4a
+        file: 4
+        tabname:  nsvia
+        sql_select: ['gid', 'geom']
+        orig_filename: st_bairroPolygon
+  via:
+        subtype: full
+        p: 5a
+        file: 5
+        tabname:  via
+        sql_select: ['gid', 'descricao AS via_name', 'geom']
+        orig_filename: view_st_logradouro_eixoLine
+        codec: -W iso-8859-1
+
+
+

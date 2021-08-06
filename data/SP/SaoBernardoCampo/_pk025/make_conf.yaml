@@ -1,0 +1,56 @@
+pkid:      25
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31983
+files:
+  -
+    p:    1
+    file: 22ecd5ef4ca76adef213fa422d9b5e4198f0667df598c511c30e512bb10aaedd.zip
+    name: Pontos de endereço
+  -
+    p:    2
+    file: d4985405060cc1887962a4278b4d68ada6ffd3ed72f296bd72d65abc4897cd2d.zip
+    name: Lotes 
+  -
+    p:    3
+    file: 3269bacc09d450b4d7496a2bc749ece94b1f48462ba0aae70d902404256bc433.zip
+    name: Eixos
+  -
+    p:    4
+    file: 350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip
+    name: Bairros
+
+parts:
+  geoaddress:
+        subtype: full
+        p: 1a   
+        file: 1
+        tabname:  geoaddress
+        sql_select: ['gid', 'NOME_COMPL as via_name', 'Numero as house_number', 'geom']
+        orig_filename: Q_Endereco_SBC
+        codec: -W iso-8859-1
+  parcel:
+        subtype: none
+        p: 2a
+        file: 2
+        tabname:  parcel
+        sql_select:  ['gid', 'ZONA','QUADRA', 'UNIDADE',  'geom']  
+        orig_filename: LOTE
+  via:
+        subtype: full
+        p: 3a
+        file: 3
+        tabname:  via
+        sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
+        orig_filename: LOGRADOURO
+  nsvia_full:
+        p: 4a
+        file: 4
+        tabname:  nsvia
+        sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
+        codec: -W iso-8859-1
+        orig_filename: BAIRRO
+        srid: 31982

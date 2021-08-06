@@ -1,0 +1,23 @@
+pkid:      20
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31983
+files:
+  -
+    p:    1
+    file: b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip
+    name: Pontos de endereço
+
+parts:
+  geoaddress: 
+        subtype: full
+        p: 1a   
+        file: 1
+        orig_filename: LOTES_PONTO_S2K
+        tabname:  geoaddress
+        sql_select: ['gid', 'L_NUMERO AS pointer_number','X', 'Y', 'geom']
+        codec: -W iso-8859-1
+        # não adicionei X e Y. Precisa?

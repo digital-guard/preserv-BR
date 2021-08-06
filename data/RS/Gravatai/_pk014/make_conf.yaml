@@ -1,0 +1,43 @@
+pkid:      14
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31982
+files:
+  -
+    p:    1
+    file: d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar
+    name: Lotes e Eixos
+  -
+    p:    2
+    file: 1ad669693352407105ccdeb37a4398d62b0accb25888122c84afe2788c121c7b.rar
+    name: Loteamentos
+
+layers:
+  parcel:
+        subtype: none
+        method: shp2sql
+        p: 1a
+        file: 1
+        tabname:  lotes
+        sql_select: ['gid', 'Cadastro AS cadastro', 'Número AS numero', 'geom']
+        orig_filename: lote_numero_predial
+  via:
+        subtype: full
+        method: shp2sql
+        p: 1b
+        file: 1
+        tabname:  via
+        query_view: |-
+                   SELECT gid, NOME || ' ' || TIPO AS via_name, geom FROM $(tabname)
+        orig_filename: sistema_viario
+  nsvia:
+        subtype: none
+        method: shp2sql
+        p: 2b
+        file: 2
+        tabname:  nsvia
+        sql_select: ['gid', 'geom']
+        orig_filename: PS_LOTEAMENTOS_SIRGAS 2000

@@ -1,0 +1,34 @@
+pkid:      37
+pkversion: "001"
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+thisTplFile_root: digital-preservation-BR
+need_commands:    7z psql shp2pgsql
+srid: 31981
+files:
+  -
+    p:    1
+    file: ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
+    name: Lotes e Loteamentos
+
+layers:
+
+  parcel: 
+        subtype: full
+        method: shp2sql
+        p: 1a   
+        file: 1
+        tabname:  genericvia
+        sql_select: ['gid', 'RUAIMO AS via_name', 'NRPORTA AS house_number', 'COMPLEMENT AS house_info','QUADRA','LOTE', 'geom']
+        orig_filename: Open Street/IMOVEL_2020_Logradouro
+
+  nsvia:
+        subtype: full
+        method: shp2sql
+        p: 1b
+        file: 1
+        tabname:  nsvia
+        sql_select: ['gid', 'NOME', 'BAIRRO AS nsvia_name', 'geom']
+        orig_filename: Open Street/PARCELAMENTOS
+        # Loteamentos são contornos das áreas loteadas e que compõem os bairros.
+
