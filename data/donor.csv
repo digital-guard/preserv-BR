@@ -48,7 +48,7 @@ id,escopo,shortName,vat_id,legalName,wikidata_id,url
 47,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/
 48,BR-MS-DOS,MS-DOS,cnpj:03.155.926/0001-44,Prefeitura de Dourados,60029408,http://www.dourados.ms.gov.br/
 49,BR-SP-CQH,SP-CQH,cnpj:46.634.614/0001-26,Prefeitura Municipal de Cerquilho,100154106,https://cerquilho.sp.gov.br/
-50,BR-BA-SDR,BA-SDR,cnpj:13.927.801/0001-49,Municipio de Salvador,53930901,http://www.salvador.ba.gov.br/
+50,BR-BA-SDR,BA-SDR,cnpj:13.927.801/0001-49,Prefeitura Municipal de Salvador,53930901,http://www.salvador.ba.gov.br/
 51,BR,ClickSys-BR,cpf:115.658.347-04,ClickSistema,,clicksistema.com.br
 52,BR-SP-RPR,SP-RPR,cnpj:56.024.581/0001-56,Prefeitura Municipal de Ribeirão Preto,56450005,https://www.ribeiraopreto.sp.gov.br/portal/
 53,BR-SC-FNS,IPUF,cnpj:83.469.965/0001-55 ,Instituto de Pesquisa e Planejamento Urbano de Florianópolis,101575535,http://www.pmf.sc.gov.br/entidades/ipuf/
@@ -64,3 +64,17 @@ id,escopo,shortName,vat_id,legalName,wikidata_id,url
 63,BR-RS-NHO,RS-NHO,cnpj: 07.044.304/0001-08,Prefeitura Municipal de Novo Hamburgo,105008951,https://www.novohamburgo.rs.gov.br/
 64,BR-RS-SCR,RS-SCR,cnpj: 95.440.517/0001-08,Prefeitura Municipal de Santa Cruz do Sul,105328349,https://www.santacruz.rs.gov.br
 65,BR-SP-CUB,SP-CUB,cnpj: 47.492.806/0001-08,Prefeitura Municipal de Cubatão,105453143,http://www.cubatao.sp.gov.br/
+66,BR-PE-BEZ,PE-BEZ,cnpj: 10.091.510/0001-75,Prefeitura Municipal dos Bezerros,107391603,https://bezerros.pe.gov.br/
+67,BR-SP-PLN,SP-PLN,cnpj: 45.751.435/0001-06,Prefeitura Municipal de Paulínia,107391609,http://www.paulinia.sp.gov.br/
+68,BR-DF-BSA,DF-BSA,cnpj: 00.394.601/0001-26,Governo do Distrito Federal,96572867,http://www.df.gov.br/
+69,BR-RS-CSL,RS-CSL,cnpj: 88.830.609/0001-39,Prefeitura Municipal de Caxias do Sul,56450027,https://caxias.rs.gov.br/
+70,BR-MG-IBA,MG-IBA,cnpj: 18.299.446/0001-24,Prefeitura Municipal de Itabira,107398095,https://www.itabira.mg.gov.br/
+71,BR-AM-MNS,AM-MNS,cnpj: 04.365.326/0001-73,Prefeitura Municipal de Manaus,53930905,https://www.manaus.am.gov.br/
+72,BR-PB-JPA,PB-JPA,cnpj: 08.806.721/0001-03,Prefeitura Municipal de João Pessoa,56449995,https://www.joaopessoa.pb.gov.br/
+73,BR-RN-NTL,RN-NTL,cnpj: 08.241.747/0001-43,Prefeitura Municipal de Natal,56449990,https://www.natal.rn.gov.br/
+74,BR-RN-SGM,RN-SGM,cnpj: 08.079.402/0001-35,Prefeitura Municipal de São Gonçalo do Amarante,107398099,https://saogoncalodoamarante.ce.gov.br/portal/
+75,BR-SC-BQE,SC-BQE,cnpj: 83.102.343/0001-94,Prefeitura Municipal de Brusque,107398109,https://portal.brusque.sc.gov.br/
+76,BR-RS-CAN,RS-CAN,cnpj: 88.577.416/0001-18,Prefeitura Municipal de Canoas,56450066,https://www.canoas.rs.gov.br/
+77,BR-SC-CCO,SC-CCO,cnpj: 83.021.808/0001-82,Prefeitura Municipal de Chapecó,107398118,https://www.chapeco.sc.gov.br/
+78,BR-RJ-RJO,RJ-RJO,cnpj: 42.498.733/0001-48,Prefeitura da Cidade do Rio de Janeiro,57349212,https://prefeitura.rio/
+79,BR-PR-TOO,PR-TOO,cnpj: 76.205.806/0001-88,Prefeitura Municipal de Toledo,107398664,https://www.toledo.pr.gov.br/
