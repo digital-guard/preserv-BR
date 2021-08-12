@@ -1,4 +1,28 @@
+# Dados e metados
+Dados de entrada são aqueles fornecidos pelos operadores autorizados.
 
-Dados de entrada (*in*) são aqueles fornecidos pelos operadores autorizados.
+Dados de saída (`_out`) são gerados automaticamente pela [*eclusa*](http://git.AddressForAll.org/digital-preservartion/blob/master/docs/eclusa.md) a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados.
 
-Dados de saída (*out*) são gerados automaticamente pela [*eclusa*](http://git.AddressForAll.org/digital-preservartion/blob/master/docs/eclusa.md) a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados.
+-----
+
+## Jurisdições
+
+Nomes e identificadores de regiões, estados e municípios, organizados conforme [datasets.OK.org.br](http://datasets.OK.org.br) e semântica de jurisdição fixada pela as [URNs LEX](https://en.wikipedia.org/wiki/Lex_(URN)).
+
+Para alterar Jurisdições fazer upload e editar em interface amigável [desta planilha online colaborativa](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/). Exemplos:
+
+* [`jurisdictionLevel3`](jurisdictionLevel3.csv): regiões (Sul, Norte, etc.), que no OpenStreetMap correspondem a jurisdição de nível 3 (`admin_level=3`).
+
+* [`jurisdictionLevel4`](jurisdictionLevel4.csv): estados (AC, AM, ES, etc.), que no OpenStreetMap correspondem a jurisdição de nível 4 (`admin_level=4`).
+
+* `$UF/jurisdictionLevel8`: municípios no contexto do estado (AM/Manaus, SP/Itu, etc.), que no OpenStreetMap correspondem a jurisdição de nível 8 (`admin_level=8`). Exemplo: [AC/jurisdictionLevel8](AC/jurisdictionLevel8.csv).
+
+## Packages e seus metadados
+
+Todo pacote de dados tem origem numa doação para o domínio público, ou cessão de direitos para a organização proprietária do domínio `Digital-guard.org`. E toda doação está relacionada ao seu doador. Em função deste arranjo são preservados os seguintes metadados neste git:
+
+* metadados do [**doador** (`donor`)](donor.csv): identificação interna sequencial (_donor_id_), identificação pública (ex. CNPJ), nome e demais metados essenciais da [organização](https://schema.org/Organization) doadora.
+
+* metadados do [**pacote doado** (`donatedPack`)](donatedPack.csv): identificador sequencial de pacote (_pack_id_), doador relacionado, data de homologação pela Curadoria, e demais metadados do pacote, que pode conter pode conter um ou mais arquivos compactados. Os pacotes podem ainda ser atualizados ao longo dos anos, resultando em versões mais atualizadas.  Neste repositório *git* tanto as correções como as novas versões se sobrepõe às antigas.
+
+* Demais metadados e descritores: ver cada pasta `_pk$id` em `preserv-$país`. Por exemplo na pasta [_pk056](data/_pk056) um pacote de escopo nacional e na pasta [RS/PortoAlegre/_pk027](https://github.com/digital-guard/preserv-BR/tree/main/data/RS/PortoAlegre/_pk027) um pacote de escopo municipal.

@@ -14,16 +14,12 @@ O território nacional e suas subdivisões adminisrativas representam **jurisdi�
 A jurisdição que atribui nomes às ruas e define o sistema de numeração predial é o município.
 
 ## Organização deste repositório
-Neste git são mantidos apenas metadados, ou seja, descritores das entidades, tais como nomes e geocódigos, mas mapas e outros dados, armazenados externamente por serem muito grandes. Os metadados foram organizados da seguinte forma, na pasta [`/data`](./data):
 
-* [`/data`](./data): dados originais de **entrada**, ou seja, metadados fornecidos para o sistema.
-   * [`jurisdiction.csv`](./data/jurisdiction.csv): jurisdições (de todos os níveis).
-   * [`donor.csv`](./data/donor.csv): doadores de pacotes de dados. Metadados das instituições que fornecem dados oficiais.
-   * [`donatedPack.csv`](./data/donatedPack.csv): descritores dos arquivos doados.
-   * *packages* (pastas `_packXX`): pacotes hash e demais descritores dos arquivos armazenados externamente, bem como `makefile` e demais descritores de processo para desempacotar esses arquivos e leva-los ao banco de dados (PostregSQL). Por exemplo [`/data/MG/BeloHorizonte/_pk012`](./data/MG/BeloHorizonte/_pk012).
+Neste *git* são mantidos apenas metadados, ou seja, descritores das entidades, tais como nomes e geocódigos, mas mapas e outros dados, armazenados externamente por serem muito grandes. Os metadados foram organizados da seguinte forma, na pasta [`/data`](./data):
 
-* [`/data/out`](./data/out): resultados gerados pelo sistema (**saída**), ou seja, metadados criados a partir dos algorimos e estatísticas aplicados aos dados.
+* [`/data`](./data#README.md): dados. Na raiz os dados originais de **entrada**, ou seja, metadados fornecidos para o sistema. Na pasta `/data/_out` alguns metadados de saída, principalmente comprovantes de integridade e outros metadados gerados pelo sistema.
 
+* [`/src`](./src#README.md): código-fonte dos algoritmos SQL, makefile e outros.
 
 ------
 
@@ -58,7 +54,7 @@ Os metadados dos arquivos preservados estão descritos no *git* do projeto, [git
 
 ### Fontes IBGE
 
-Fonte dos dados estatísticos oficiais do Brasil, bem como elementos de cartografia e localização de endereços. O IBGE - Instituto Brasileiro de Geografia e Estatística (*CNPJ  33.787.094/0001-40*)
+Fonte dos dados estatísticos oficiais do Brasil, bem como elementos de cartografia e localização de endereços. O IBGE - Instituto Brasileiro de Geografia e Estatística (*CNPJ  33.787.094/0001-40*).
 
 Por ser uma fonte muito extensa, requer  [curadoria e decisões de projeto](http://git.digital-guard.org/preserv-BR/issues/).
 
