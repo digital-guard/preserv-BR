@@ -4,11 +4,11 @@
 	@echo "Tudo bem até aqui?  [ENTER para continuar ou ^C para rodar WS/ingest-step1]"
 	@read _tudo_bem_
 {{/srid}}
-ifeq ('{{method}}','shp2sql')
+{{#isShp}}
 	@echo Executando shp2pgsql ...
 	cd $(sandbox);	shp2pgsql  {{{method_opts}}} -s {{srid}} "{{orig_filename}}.shp" $(tabname) | psql -q $(pg_uri_db) 2> /dev/null
-endif
-ifeq ('{{method}}','csv2sql')
+{{/isShp}}
+{{#isCsv}}
 	@echo Executando csc2sql ...
 	psql $(pg_uri_db) -c "SELECT ingest.fdw_generate_direct_csv( '$(sandbox)/{{orig_filename}}.csv', '$(tabname)' )"
-endif
+{{/isCsv}}
