@@ -20,8 +20,8 @@ layers:
     file: 1
     tabname:  via
     sql_select: ['gid', 'endereço AS via_name', 'geom']
-    orig_filename: Sistema Viário
-    7z_opts: -sccUTF-8
+    orig_filename: Sistema Vi rio
+    7z_opts: -sccUTF-8 -scsWIN
 
   nsvia:
     subtype: full
