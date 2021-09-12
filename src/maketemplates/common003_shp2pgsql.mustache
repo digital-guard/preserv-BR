@@ -12,3 +12,7 @@
 	@echo Executando csc2sql ...
 	psql $(pg_uri_db) -c "SELECT ingest.fdw_generate_direct_csv( '$(sandbox)/{{orig_filename}}.csv', '$(tabname)' )"
 {{/isCsv}}
+{{#isOgr}}
+	@echo Executando ogr2ogr ...
+	docker run --rm --network host -v $(sandbox):/tmp osgeo/gdal ogr2ogr -overwrite -f "PostgreSQL" PG:" dbname='$(pg_db)' host='localhost' port='5432' user='postgres' " "/tmp/{{orig_filename}}{{orig_ext}}" {{{orig_tabname}}} -nln $(tabname)
+{{/isOgr}}
