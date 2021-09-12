@@ -1,0 +1,54 @@
+pkid:      27
+pkversion: "001"
+schemaId_input:    ref027a
+schemaId_template: ref027a
+srid: 952013
+files:
+  -
+    p:    1
+    file: fbc62efdbd0f16a7db03b5b775c50c9425367a8dee8a85d9b53e4475bbdb99d2.zip
+    name: Imóveis
+  -
+    p:    2
+    file: 258772459588f7941ac6eeda7c6839df02d58741cf6bc3e48825aecd60418251.zip
+    name: Bairros
+  -
+    p:    3
+    file: c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip
+    name: Eixos
+
+layers:
+
+  geoaddress:
+    subtype: none
+    method: shp2sql
+    p: 1a
+    file: 1
+    sql_select: ['gid', 'textstring AS house_number', 'setor', 'last_edi_1 AS dateModified', 'geom']
+    orig_filename: NRO_IMOVEL
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    p: 2a
+    file: 2
+    query_view: |-
+        SELECT row_number() OVER () as gid, * \
+        FROM ( \
+          SELECT upper(trim(nome)) as nome, count(*) n, round(sum(st_area(geom))) area, \
+                 max(data_edica) dateModified, ST_UNION(geom) as geom \
+          FROM $(tabname)\
+          GROUP BY 1 ORDER BY 1 \
+        ) t
+    orig_filename: Bairros_LC12112_16
+
+  via:
+    subtype: full
+    method: shp2sql
+    p: 3a
+    file: 3
+    query_view: |-
+        SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via_name,\
+               NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
+        FROM $(tabname)
+    orig_filename: EixosLogradouros
