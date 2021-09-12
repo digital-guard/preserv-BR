@@ -55,7 +55,7 @@ geoaddress: tabname = pk$(fullPkID)_p{{file}}_geoaddress
 geoaddress: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "geoaddress" datatype (point with house_number but no via name)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}.*" ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -74,7 +74,7 @@ nsvia: tabname = pk$(fullPkID)_p{{file}}_nsvia
 nsvia: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "nsvia" datatype (zone with name)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}.*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -93,7 +93,7 @@ via: tabname = pk$(fullPkID)_p{{file}}_via
 via: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "via" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}.*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -112,7 +112,7 @@ parcel: tabname = pk$(fullPkID)_p{{file}}_parcel
 parcel: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "parcel" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}.*" ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -130,7 +130,7 @@ block: tabname = pk$(fullPkID)_p{{file}}_block
 block: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "block" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}.*" ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
