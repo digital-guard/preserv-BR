@@ -11,9 +11,12 @@ files:
     file: b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip
     name: Pontos de endereço
 
-parts:
+layers:
+
   geoaddress: 
         subtype: full
+        method: shp2sql
+        method_opts: -W latin1
         p: 1a   
         file: 1
         orig_filename: LOTES_PONTO_S2K
