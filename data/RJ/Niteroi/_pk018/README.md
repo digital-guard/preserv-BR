@@ -4,32 +4,32 @@ Foram renomeados os seguintes arquivos por simplicidade:
 * `Topon%C3%ADmias-shp.zip` -> `Toponimias-shp.zip`
 
 # Tarefas
-## 1. Atribuir endereços nos lotes
-Os lotes não possuem endereço, mas um número de inscrição `tx_insct`.
+## 1. Atribuir endereÃ§os nos lotes
+Os lotes nÃ£o possuem endereÃ§o, mas um nÃºmero de inscriÃ§Ã£o `tx_insct`.
 
-Os endereços poderão ser atribuídos via uma planilha relacionando o `tx_insct` aos endereços. A prefeitura não enviou planilha.
+Os endereÃ§os poderÃ£o ser atribuÃ­dos via uma planilha relacionando o `tx_insct` aos endereÃ§os. A prefeitura nÃ£o enviou planilha.
 
-Ver [Extração](#Extração) para detalhes.
+Ver [ExtraÃ§Ã£o](#ExtraÃ§Ã£o) para detalhes.
 
-## 2. Gerar ponto de endereço na testada do lote
+## 2. Gerar ponto de endereÃ§o na testada do lote
 Procedimento usando PostGIS com script desenvolvido pelo A4A.
 
-Cada ponto terá os dados:
+Cada ponto terÃ¡ os dados:
 * Nome do logradouro
-* Número predial
+* NÃºmero predial
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+# ExtraÃ§Ã£o
+Abaixo os passos para extraÃ§Ã£o por tipo de dado relevante.
 
 ## Lotes
 SRID: 4326
 1. Abrir `Lotes.zip`.
 2. Selecionar todos os arquivos `Lotes.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+3. Copiar arquivos selecionados para diretÃ³rio alvo.
 
 ### Dados relevantes
 Colunas da camada `Lotes`:
-* `tx_insct` (string): número de inscrição.
+* `tx_insct` (string): nÃºmero de inscriÃ§Ã£o.
 
 Os demais atributos possuem preenchimento incompleto (NULL).
 
@@ -37,33 +37,33 @@ Os demais atributos possuem preenchimento incompleto (NULL).
 SRID: 4326
 1. Abrir `Logradouro.zip`.
 2. Selecionar todos os arquivos `Logradouro.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+3. Copiar arquivos selecionados para diretÃ³rio alvo.
 
 ### Dados relevantes
 Colunas da camada `Logradouro`:
 * `ST_TYPE` (string): tipo de logradouro por extenso.
 * `ST_NO` (string): nome de logradouro por extenso.
-* `CMTY_L` (string): nome do bairro à esquerda do eixo.
-* `CMTY_R` (string): nome do bairro à direita do eixo.
-* `Legislacao` (string): lei da denominação (para outros projetos).
+* `CMTY_L` (string): nome do bairro Ã  esquerda do eixo.
+* `CMTY_R` (string): nome do bairro Ã  direita do eixo.
+* `Legislacao` (string): lei da denominaÃ§Ã£o (para outros projetos).
 
 ## Bairros
 SRID: 4326
 1. Abrir `Limite_de_Bairros-shp.zip`.
 2. Selecionar todos os arquivos `Limite_de_Bairros.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+3. Copiar arquivos selecionados para diretÃ³rio alvo.
 
-Não contém dados relevantes.
+NÃ£o contÃ©m dados relevantes.
 
 ## Outros
-Para outros projetos, há também dados/datasets sobre:
-* Empresas: pontos de empresas com endereços cobrindo cerca de 25% dos lotes.
-* Toponímia: pontos de equipamentos urbanos, como escolas, UBSs etc.
+Para outros projetos, hÃ¡ tambÃ©m dados/datasets sobre:
+* Empresas: pontos de empresas com endereÃ§os cobrindo cerca de 25% dos lotes.
+* ToponÃ­mia: pontos de equipamentos urbanos, como escolas, UBSs etc.
 
-Nota: o arquivo `METADADOS_Camadas SIGEONiteroi.xlsx.zip\METADADOS_Camadas SIGEONiteroi.xlsx` é uma biblioteca descrevendo cada dataset.
+Nota: o arquivo `METADADOS_Camadas SIGEONiteroi.xlsx.zip\METADADOS_Camadas SIGEONiteroi.xlsx` Ã© uma biblioteca descrevendo cada dataset.
 
-(!!! Havendo outros projetos, esta seção será detalhada !!!)
+(!! Havendo outros projetos, esta seÃ§Ã£o serÃ¡ detalhada !!)
 
-# Evidências de teste
+# EvidÃªncias de teste
 Teste no QGIS:
 ![](qgis.png)
