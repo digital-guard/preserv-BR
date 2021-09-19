@@ -1,8 +1,8 @@
 ##
-## Template file reference: digital-preservation-BR/data/in/RS/PortoAlegre/_pk027
-## tplId: 027a
+## Template file reference: preserv-BR/data/SP/SaoPaulo/_pk035
+## tplId: 035a
 ##
-tplInputSchema_id=027a
+tplInputSchema_id=035a
 
 
 ## BASIC CONFIG
@@ -27,8 +27,8 @@ thisTplFile_root = {{thisTplFile_root}}
 {{#files}}
 part{{p}}_file  ={{file}}
 part{{p}}_name  ={{name}}
-
 {{/files}}
+
 ## COMPOSED VARS
 pg_uri_db   =$(pg_uri)/$(pg_db)
 {{#files}}
@@ -64,9 +64,24 @@ geoaddress-clean: tabname = pk$(fullPkID)_p{{file}}_geoaddress
 geoaddress-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/geoaddress}}
 
+{{#building}}## ## ## ## sponsored by Project AddressForAll
+building: layername = building_{{subtype}}
+building: tabname = pk$(fullPkID)_p{{file}}_building
+building: makedirs $(part{{file}}_path)
+	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "building" datatype (point with house_number but no via name)
+{{>common002_layerHeader}}
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
+{{>common003_shp2pgsql_multiplefiles_zipped}}
+{{>common001_pgAny_load}}
+	@echo FIM.
+
+building-clean: tabname = pk$(fullPkID)_p{{file}}_building
+building-clean:
+	rm -f "$(sandbox)/{{orig_filename}}.*" || true
+	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
+{{/building}}
 
 {{#nsvia}}## ## ## ## sponsored by Project AddressForAll
 nsvia: layername = nsvia_{{subtype}}
@@ -83,9 +98,7 @@ nsvia-clean: tabname = pk$(fullPkID)_p{{file}}_nsvia
 nsvia-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
-
 {{/nsvia}}
-
 
 {{#via}}## ## ## ## sponsored by Project AddressForAll
 via: layername = via_{{subtype}}
@@ -102,9 +115,7 @@ via-clean: tabname = pk$(fullPkID)_p{{file}}_via
 via-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/via}}
-
 
 {{#parcel}}## ## ## ## sponsored by Project AddressForAll
 parcel: layername = parcel_{{subtype}}
@@ -113,7 +124,7 @@ parcel: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "parcel" datatype (street axes)
 {{>common002_layerHeader}}
 	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
-{{>common003_shp2pgsql}}
+{{>common003_shp2pgsql_multiplefiles_zipped}}
 {{>common001_pgAny_load}}
 	@echo FIM.
 
@@ -121,7 +132,6 @@ parcel-clean: tabname = pk$(fullPkID)_p{{file}}_parcel
 parcel-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/parcel}}
 
 {{#block}}## ## ## ## sponsored by Project AddressForAll
@@ -139,7 +149,6 @@ block-clean: tabname = pk$(fullPkID)_p{{file}}_block
 block-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/block}}
 
 {{/layers}}

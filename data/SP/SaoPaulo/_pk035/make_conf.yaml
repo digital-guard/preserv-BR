@@ -1,0 +1,33 @@
+pkid: 35
+pkversion: "001"
+schemaId_input:    ref035a
+schemaId_template: ref035a
+srid: 31984
+
+files:
+  -
+    p:    1
+    file: 8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
+    name: Edifícios
+  -
+    p:    2
+    file: bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
+    name: Lotes
+
+layers:
+
+  building:
+    subtype: none
+    method: shp2sql
+    p: 1a
+    file: 1
+    orig_filename: SHP_edificacao
+    orig_subfilename: SIRGAS_SHP_edificacao
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    p: 2a
+    file: 2
+    orig_filename: SIRGAS_SHP_LOTES
+    orig_subfilename: SIRGAS_SHP_LOTES
