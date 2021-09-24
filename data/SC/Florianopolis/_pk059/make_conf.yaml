@@ -1,7 +1,7 @@
 pkid:      59
 pkversion: "001"
-schemaId_input:    ref027a
-schemaId_template: ref027a
+schemaId_input:    ref059a
+schemaId_template: ref059a
 srid: 31982
 files:
   -
@@ -50,7 +50,8 @@ layers:
 
   cadvia:
     subtype: full
-    method: csv2sql
+    method: csv2unix2utf8
+    csv_encoding: utf-8
     p: 1b
     file: 1
     query_view: |-
