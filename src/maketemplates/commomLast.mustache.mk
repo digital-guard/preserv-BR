@@ -8,9 +8,9 @@ thisTplFile  = {{thisTplFile_root}}/src/maketemplates/make_{{schemaId_template}}
 country      = BR
 baseSrc      = /opt/gits/_a4a
 
-srcPy        =  $(baseSrc)/digital-preservation/src/run_mustache.py
-mkme_input0  =  $(baseSrc)/digital-preservation-$(country)/src/maketemplates/commomFirst.yaml
-mkme_srcTplLast  =  $(baseSrc)/digital-preservation-$(country)/src/maketemplates/commomLast.mustache.mk
+srcPy        =  $(baseSrc)/preserv/src/run_mustache.py
+mkme_input0  =  $(baseSrc)/preserv-$(country)/src/maketemplates/commomFirst.yaml
+mkme_srcTplLast  =  $(baseSrc)/preserv-$(country)/src/maketemplates/commomLast.mustache.mk
 mkme_srcTpl  =  $(baseSrc)/$(thisTplFile)
 mkme_input   = ./make_conf.yaml
 mkme_output  = /tmp/digitalPresservation-make_me.mk
