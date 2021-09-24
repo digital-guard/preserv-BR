@@ -1,0 +1,58 @@
+pkid:      59
+pkversion: "001"
+schemaId_input:    ref027a
+schemaId_template: ref027a
+srid: 31982
+files:
+  -
+    p:    1
+    file: 49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar
+    name: Multiplos arquivos
+  -
+    p:    2
+    file: cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip
+    name: Lotes
+
+layers:
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    p: 1a
+    file: 1
+    sql_select: ['gid', 'nm_bairro', 'label AS nsvia_name',  'geom']
+    orig_filename: bairro
+
+  genericvia:
+    subtype: full
+    method: shp2sql
+    p: 2a
+    file: 2
+    sql_select: ['gid', 'logradouro', 'bairro AS nsvia_name',  'geom']
+    orig_filename: view_cotr_imobliario_filtro
+
+  via:
+    subtype: full
+    method: shp2sql
+    p: 1b
+    file: 1
+    sql_select: ['gid', 'cd_logr', 'nome via_name',  'geom']
+    orig_filename: logradouros
+
+#  cadvia:
+#    subtype: full
+#    method: csv2sql
+#    p: 1b
+#    file: 1
+#    query_view: |-
+#            SELECT row_number() OVER () AS gid, \"nm_tipo\", \"nm_descricao\" FROM $(tabname)
+#    orig_filename: atributo__tipo_logradouro
+
+  cadvia:
+    subtype: full
+    method: csv2sql
+    p: 1b
+    file: 1
+    query_view: |-
+            SELECT row_number() OVER () AS gid, cd_atrb, nm_atrb, nm_descricao  FROM $(tabname)
+    orig_filename: atributo_logradouro
