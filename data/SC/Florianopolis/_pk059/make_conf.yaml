@@ -51,7 +51,7 @@ layers:
   cadvia:
     subtype: full
     method: csv2unix2utf8
-    csv_encoding: utf-8
+    csv_encoding: iso-8859-15
     p: 1b
     file: 1
     query_view: |-
