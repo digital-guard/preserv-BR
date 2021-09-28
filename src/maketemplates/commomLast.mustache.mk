@@ -6,7 +6,7 @@
 
 thisTplFile  = {{thisTplFile_root}}/src/maketemplates/make_{{schemaId_template}}.mustache.mk
 country      = BR
-baseSrc      = /opt/gits/_a4a
+baseSrc      = /opt/gits/_dg
 
 srcPy        =  $(baseSrc)/preserv/src/run_mustache.py
 mkme_input0  =  $(baseSrc)/preserv-$(country)/src/maketemplates/commomFirst.yaml
