@@ -1,5 +1,5 @@
 ##
-## Template file reference: digital-preservation-BR/data/in/RS/PortoAlegre/_pk027
+## Template file reference: preserv-BR/data/in/RS/PortoAlegre/_pk027
 ## tplId: 027a
 ##
 tplInputSchema_id=027a
@@ -27,8 +27,8 @@ thisTplFile_root = {{thisTplFile_root}}
 {{#files}}
 part{{p}}_file  ={{file}}
 part{{p}}_name  ={{name}}
-
 {{/files}}
+
 ## COMPOSED VARS
 pg_uri_db   =$(pg_uri)/$(pg_db)
 {{#files}}
@@ -64,9 +64,7 @@ geoaddress-clean: tabname = pk$(fullPkID)_p{{file}}_geoaddress
 geoaddress-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/geoaddress}}
-
 
 {{#nsvia}}## ## ## ## sponsored by Project AddressForAll
 nsvia: layername = nsvia_{{subtype}}
@@ -83,9 +81,24 @@ nsvia-clean: tabname = pk$(fullPkID)_p{{file}}_nsvia
 nsvia-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
-
 {{/nsvia}}
 
+{{#genericvia}}## ## ## ## sponsored by Project AddressForAll
+genericvia: layername = genericvia_{{subtype}}
+genericvia: tabname = pk$(fullPkID)_p{{file}}_genericvia
+genericvia: makedirs $(part{{file}}_path)
+	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "genericvia" datatype (zone with name)
+{{>common002_layerHeader}}
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+{{>common003_shp2pgsql}}
+{{>common001_pgAny_load}}
+	@echo FIM.
+
+genericvia-clean: tabname = pk$(fullPkID)_p{{file}}_genericvia
+genericvia-clean:
+	rm -f "$(sandbox)/{{orig_filename}}.*" || true
+	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
+{{/genericvia}}
 
 {{#via}}## ## ## ## sponsored by Project AddressForAll
 via: layername = via_{{subtype}}
@@ -102,7 +115,6 @@ via-clean: tabname = pk$(fullPkID)_p{{file}}_via
 via-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/via}}
 
 
@@ -121,7 +133,6 @@ parcel-clean: tabname = pk$(fullPkID)_p{{file}}_parcel
 parcel-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/parcel}}
 
 {{#block}}## ## ## ## sponsored by Project AddressForAll
@@ -139,7 +150,6 @@ block-clean: tabname = pk$(fullPkID)_p{{file}}_block
 block-clean:
 	rm -f "$(sandbox)/{{orig_filename}}.*" || true
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
-
 {{/block}}
 
 {{/layers}}

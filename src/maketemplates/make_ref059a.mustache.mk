@@ -27,8 +27,8 @@ thisTplFile_root = {{thisTplFile_root}}
 {{#files}}
 part{{p}}_file  ={{file}}
 part{{p}}_name  ={{name}}
-
 {{/files}}
+
 ## COMPOSED VARS
 pg_uri_db   =$(pg_uri)/$(pg_db)
 {{#files}}
