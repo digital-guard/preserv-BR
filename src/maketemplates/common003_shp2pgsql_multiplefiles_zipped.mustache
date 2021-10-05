@@ -2,5 +2,6 @@
 	@echo Extraindo ...
 	cd $(sandbox);  7z x -y "{{orig_filename}}*"
 	@echo Executando shp2pgsql ...
-	cd $(sandbox);	find $(sandbox) -iname "{{orig_subfilename}}*.shp" -exec sh -c "shp2pgsql {{{method_opts}}} -s {{srid}} {} $(tabname) | psql -q $(pg_uri_db) 2> /dev/null" \;
+	cd $(sandbox);	shp2pgsql -p {{{method_opts}}} -s {{srid}} {{some_filename}}.shp $(tabname) | psql -q $(pg_uri_db); chmod -R a+rx . 2> /dev/null
+	cd $(sandbox);	find $(sandbox) -iname "{{orig_subfilename}}*.shp" -exec sh -c "shp2pgsql -a {{{method_opts}}} -s {{srid}} {} $(tabname) | psql -q $(pg_uri_db); chmod -R a+rx . 2> /dev/null" \;
 {{/isShp}}

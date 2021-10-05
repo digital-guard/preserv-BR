@@ -74,7 +74,7 @@ building: makedirs $(part{{file}}_path)
 {{>common002_layerHeader}}
 	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql_multiplefiles_zipped}}
-{{>common001_pgAny_load}}
+{{>common001_pgAny_load_multiplefiles_zipped}}
 	@echo FIM.
 
 building-clean: tabname = pk$(fullPkID)_p{{file}}_building
@@ -125,7 +125,7 @@ parcel: makedirs $(part{{file}}_path)
 {{>common002_layerHeader}}
 	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql_multiplefiles_zipped}}
-{{>common001_pgAny_load}}
+{{>common001_pgAny_load_multiplefiles_zipped}}
 	@echo FIM.
 
 parcel-clean: tabname = pk$(fullPkID)_p{{file}}_parcel
