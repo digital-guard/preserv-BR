@@ -1,0 +1,88 @@
+# Tarefas
+
+## 1. 
+
+## 2. 
+
+{{#layers}}
+
+# Extração
+Abaixo os passos para extração por tipo de dado relevante.
+
+{{#nsvia}}
+## Bairros
+SRID: 
+1. Abrir ``.
+2. Selecionar arquivos `{{orig_filename}}`.
+3. Copiar arquivos selecionados para diretório alvo.
+
+### Dados relevantes
+Colunas da camada `{{orig_filename}}`:
+* ``;
+* ``.
+{{/nsvia}}
+
+{{#genericvia}}
+## Lotes
+SRID: 
+1. Abrir ``.
+2. Selecionar arquivos `{{orig_filename}}`.
+3. Copiar arquivos selecionados para diretório alvo.
+
+### Dados relevantes
+Colunas da camada `{{orig_filename}}`:
+* `` (): ;
+* `` (): .
+{{/genericvia}}
+
+{{#via}}
+## Eixos
+SRID: 
+1. Abrir ``.
+2. Selecionar arquivos `{{orig_filename}}`.
+3. Copiar arquivos selecionados para diretório alvo.
+
+### Dados relevantes
+Colunas da camada `{{orig_filename}}`:
+* `` (): ;
+* `` (): .
+{{/via}}
+
+{{#cadvia}}
+## Lista de abreviaturas de tipos de logradouros
+Charset: 
+1. Abrir `OSM_dados_solicitacao.rar`.
+2. Selecionar arquivos `atributo__tipo_logradouro.csv`.
+3. Copiar arquivos selecionados para diretório alvo.
+
+### Dados relevantes
+Colunas [número da coluna]:
+* `` []: ;
+* `` []: .
+
+## Lista de abreviaturas de nomes de logradouros
+Charset: 
+1. Abrir ``.
+2. Selecionar arquivos `{{orig_filename}}`.
+3. Copiar arquivos selecionados para diretório alvo.
+
+### Dados relevantes
+Colunas [número da coluna]:
+* `` []: ;
+* `` []: .
+{{/cadvia}}
+
+{{/layers}}
+
+## Outros
+Para outros projetos, há também dados sobre:
+* ``:
+  * 
+* ``:
+  * 
+
+(!!! Havendo outros projetos, esta seção será detalhada !!!)
+
+# Evidências de teste
+Teste no QGIS:
+![](qgis.png)
