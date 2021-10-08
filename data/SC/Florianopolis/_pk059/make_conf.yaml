@@ -39,18 +39,9 @@ layers:
     sql_select: ['gid', 'cd_logr', 'nome via_name',  'geom']
     orig_filename: logradouros
 
-#  cadvia:
-#    subtype: full
-#    method: csv2sql
-#    p: 1b
-#    file: 1
-#    query_view: |-
-#            SELECT row_number() OVER () AS gid, \"nm_tipo\", \"nm_descricao\" FROM $(tabname)
-#    orig_filename: atributo__tipo_logradouro
-
   cadvia:
-    subtype: full
-    method: csv2unix2utf8
+    subtype: noid
+    method: csv2sql
     csv_encoding: iso-8859-15
     p: 1b
     file: 1

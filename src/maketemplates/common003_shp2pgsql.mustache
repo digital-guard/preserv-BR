@@ -9,8 +9,16 @@
 	cd $(sandbox);	shp2pgsql  {{{method_opts}}} -s {{srid}} "{{orig_filename}}.shp" $(tabname) | psql -q $(pg_uri_db) 2> /dev/null
 {{/isShp}}
 {{#isCsv}}
+{{#csv_encoding}}
+	@echo Alterando codificação para UTF8 e o tipo de quebra de linha de CRLF para LF ...
+	iconv -f {{{csv_encoding}}} -t UTF-8 $(sandbox)/{{orig_filename}}.csv | dos2unix > $(sandbox)/{{orig_filename}}.unix_utf8.csv
+	@echo Executando csc2sql ...
+	psql $(pg_uri_db) -c "SELECT ingest.fdw_generate_direct_csv( '$(sandbox)/{{orig_filename}}.unix_utf8.csv', '$(tabname)' )"
+{{/csv_encoding}}
+{{^csv_encoding}}
 	@echo Executando csc2sql ...
 	psql $(pg_uri_db) -c "SELECT ingest.fdw_generate_direct_csv( '$(sandbox)/{{orig_filename}}.csv', '$(tabname)' )"
+{{/csv_encoding}}
 {{/isCsv}}
 {{#isOgr}}
 	@echo Executando ogr2ogr ...
@@ -20,9 +28,3 @@
 	@echo Executando ogr2ogr  ...
 	docker run --rm --network host -v $(sandbox):/tmp osgeo/gdal ogr2ogr -overwrite -f "PostgreSQL" PG:" dbname='$(pg_db)' host='localhost' port='5432' user='postgres' " /tmp/{{{orig_tabname}}} {{{orig_tabname}}} -nln $(tabname)
 {{/isOgrWithShp}}
-{{#isCsvNotUtf8AndDos}}
-	@echo Alterando codificação para UTF8 e o tipo de quebra de linha ...
-	iconv -f {{{csv_encoding}}} -t UTF-8 $(sandbox)/{{orig_filename}}.csv | dos2unix > $(sandbox)/{{orig_filename}}.unix_utf8.csv
-	@echo Executando csc2sql ...
-	psql $(pg_uri_db) -c "SELECT ingest.fdw_generate_direct_csv( '$(sandbox)/{{orig_filename}}.unix_utf8.csv', '$(tabname)' )"
-{{/isCsvNotUtf8AndDos}}
