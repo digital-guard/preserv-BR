@@ -1,0 +1,62 @@
+pkid:      27
+pkversion: "001"
+schemaId_input:    ref027a
+schemaId_template: ref027a
+srid: 31982
+files:
+  -
+    p:    1
+    file: 17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip
+    name: Bairros
+  -
+    p:    2
+    file: 09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip
+    name: Via
+  -
+    p:    3
+    file: ca028e7824a7489c9a406884b78fe83dfbc72f15471bd9651e636d8a8d2afd3a.zip
+    name: Eixos
+  -
+    p:    4
+    file: a9d2db675520121d4ed84084ae868d5868cbfc7516a8266eee30a15c651474dd.zip
+    name: Quadras
+  -
+    p:    5
+    file: d81af34bbbc6a890c56812d594c2e3040804b8f06d1d0223c128d4521ceeee86.csv
+    name: Quadras
+ 
+
+layers:
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    p: 1a
+    file: 1
+    sql_select: ['gid', 'nome AS nsvia_name', 'geom']
+    orig_filename: bairros
+
+  via:
+    subtype: full
+    method: shp2sql
+    p: 2a
+    file: 2
+    query_view: |-
+        SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via_name, nomeusual AS nomeusual, geom FROM $(tabname)
+    orig_filename: logradouros
+
+  genericvia:
+    subtype: ext
+    method: shp2sql
+    p: 3a
+    file: 3
+    sql_select: ['gid', 'inscrica_1', 'geom']
+    orig_filename: lotes
+
+  block:
+    subtype: none
+    method: shp2sql
+    p: 4a
+    file: 4
+    sql_select: ['gid', 'geom']
+    orig_filename: quadras
