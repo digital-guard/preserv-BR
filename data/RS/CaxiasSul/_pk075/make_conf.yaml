@@ -61,21 +61,13 @@ layers:
     sql_select: ['gid', 'geom']
     orig_filename: quadras
 
-  block:
-    subtype: none
-    method: shp2sql
-    p: 4a
-    file: 4
-    sql_select: ['gid', 'geom']
-    orig_filename: quadras
-
-  cadgenericvia:
-    subtype: full
+  address:
+    subtype: cmpl
     method: csv2sql
     p: 5a
     file: 5
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS house_number']
-    orig_filename: quadras
+    orig_filename: data-1626873935092
         
     # join genericvia:inscrica_1 == cadgenericvia:cod_localizacao_completo
 
