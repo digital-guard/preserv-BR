@@ -100,6 +100,23 @@ genericvia-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
 {{/genericvia}}
 
+{{#cadgenericvia}}## ## ## ## sponsored by Project AddressForAll
+cadgenericvia: layername = cadgenericvia_{{subtype}}
+cadgenericvia: tabname = pk$(fullPkID)_p{{file}}_cadgenericvia
+cadgenericvia: makedirs $(part{{file}}_path)
+	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "cadgenericvia" datatype (street axes)
+{{>common002_layerHeader}}
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+{{>common003_shp2pgsql}}
+{{>common001_pgAny_load}}
+	@echo FIM.
+
+cadgenericvia-clean: tabname = pk$(fullPkID)_p{{file}}_cadgenericvia
+cadgenericvia-clean:
+	rm -f "$(sandbox)/{{orig_filename}}.*" || true
+	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
+{{/cadgenericvia}}
+
 {{#via}}## ## ## ## sponsored by Project AddressForAll
 via: layername = via_{{subtype}}
 via: tabname = pk$(fullPkID)_p{{file}}_via
@@ -177,4 +194,4 @@ wget_files:
 clean_sandbox:
 	@rm -rf $(sandbox) || true
 
-clean: geoaddress-clean nsvia-clean via-clean
+clean: geoaddress-clean cadgenericvia-clean nsvia-clean via-clean parcel-clean block-clean
