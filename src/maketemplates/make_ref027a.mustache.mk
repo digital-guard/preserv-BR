@@ -48,6 +48,22 @@ all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 ## ## ## ## ## ## ## ## ##
 ## Make targets of the Project Digital Preservation
 {{#layers}}
+{{#address}}## ## ## ## sponsored by Project AddressForAll
+address: layername = address_{{subtype}}
+address: tabname = pk$(fullPkID)_p{{file}}_address
+address: makedirs $(part{{file}}_path)
+	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "address" datatype (street axes)
+{{>common002_layerHeader}}
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+{{>common003_shp2pgsql}}
+{{>common001_pgAny_load}}
+	@echo FIM.
+
+address-clean: tabname = pk$(fullPkID)_p{{file}}_address
+address-clean:
+	rm -f "$(sandbox)/{{orig_filename}}.*" || true
+	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
+{{/address}}
 
 {{#geoaddress}}## ## ## ## sponsored by Project AddressForAll
 geoaddress: layername = geoaddress_{{subtype}}
