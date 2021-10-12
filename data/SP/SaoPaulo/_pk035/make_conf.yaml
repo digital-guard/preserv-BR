@@ -31,5 +31,4 @@ layers:
     p: 2a
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
-    orig_subfilename: SIRGAS_SHP_LOTES
     sql_select: ['gid']
