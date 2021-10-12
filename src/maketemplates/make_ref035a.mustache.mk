@@ -4,7 +4,6 @@
 ##
 tplInputSchema_id=035a
 
-
 ## BASIC CONFIG
 pg_io  ={{pg_io}}
 orig   ={{orig}}
@@ -39,7 +38,7 @@ all:
 	@echo "=== Resumo deste makefile de recuperação de dados preservados ==="
 	@printf "Targets para a geração de layers:\n\tall_layers {{#layers_keys}}{{.}} {{/layers_keys}}\n"
 	@printf "Demais targets implementados:\n\tclean wget_files me\n"
-	@echo "A gereação de layers requer os seguintes comandos e versões:\n\t$(need_commands)"
+	@echo "A geração de layers requer os seguintes comandos e versões:\n\t$(need_commands)"
 
 all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 	@echo "--ALL LAYERS--"
@@ -47,9 +46,10 @@ all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 ## ## ## ## ## ## ## ## ##
 ## ## ## ## ## ## ## ## ##
 ## Make targets of the Project Digital Preservation
+## Sponsored by Project AddressForAll
 {{#layers}}
 
-{{#geoaddress}}## ## ## ## sponsored by Project AddressForAll
+{{#geoaddress}}
 geoaddress: layername = geoaddress_{{subtype}}
 geoaddress: tabname = pk$(fullPkID)_p{{file}}_geoaddress
 geoaddress: makedirs $(part{{file}}_path)
@@ -66,7 +66,7 @@ geoaddress-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/geoaddress}}
 
-{{#building}}## ## ## ## sponsored by Project AddressForAll
+{{#building}}
 building: layername = building_{{subtype}}
 building: tabname = pk$(fullPkID)_p{{file}}_building
 building: makedirs $(part{{file}}_path)
@@ -82,7 +82,7 @@ building-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/building}}
 
-{{#nsvia}}## ## ## ## sponsored by Project AddressForAll
+{{#nsvia}}
 nsvia: layername = nsvia_{{subtype}}
 nsvia: tabname = pk$(fullPkID)_p{{file}}_nsvia
 nsvia: makedirs $(part{{file}}_path)
@@ -99,7 +99,7 @@ nsvia-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
 {{/nsvia}}
 
-{{#via}}## ## ## ## sponsored by Project AddressForAll
+{{#via}}
 via: layername = via_{{subtype}}
 via: tabname = pk$(fullPkID)_p{{file}}_via
 via: makedirs $(part{{file}}_path)
@@ -116,7 +116,7 @@ via-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/via}}
 
-{{#parcel}}## ## ## ## sponsored by Project AddressForAll
+{{#parcel}}
 parcel: layername = parcel_{{subtype}}
 parcel: tabname = pk$(fullPkID)_p{{file}}_parcel
 parcel: makedirs $(part{{file}}_path)
@@ -132,7 +132,7 @@ parcel-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/parcel}}
 
-{{#block}}## ## ## ## sponsored by Project AddressForAll
+{{#block}}
 block: layername = block_{{subtype}}
 block: tabname = pk$(fullPkID)_p{{file}}_block
 block: makedirs $(part{{file}}_path)
@@ -174,4 +174,4 @@ wget_files:
 clean_sandbox:
 	@rm -rf $(sandbox) || true
 
-clean: geoaddress-clean nsvia-clean via-clean
+clean: geoaddress-clean building-clean nsvia-clean via-clean parcel-clean block-clean

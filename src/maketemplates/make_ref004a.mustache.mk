@@ -45,8 +45,9 @@ all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 
 ## ## ## ## ## ## ## ## ##
 ## Make targets of the Project Digital Preservation
+## Sponsored by Project AddressForAll
 {{#layers}}
-{{#openstreetmap}}## ## ## ## sponsored by Project AddressForAll
+{{#openstreetmap}}
 openstreetmap: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "openstreetmap" data
 	cd $(sandbox);  cp  $(part{{file}}_path) . ; chmod -R a+rx . > /dev/null

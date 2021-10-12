@@ -1,9 +1,8 @@
 ##
-## Template file reference: preserv-BR/data/in/RS/PortoAlegre/_pk027
+## Template file reference: preserv-BR/data/RS/PortoAlegre/_pk027
 ## tplId: 027a
 ##
 tplInputSchema_id=027a
-
 
 ## BASIC CONFIG
 pg_io  ={{pg_io}}
@@ -39,7 +38,7 @@ all:
 	@echo "=== Resumo deste makefile de recuperação de dados preservados ==="
 	@printf "Targets para a geração de layers:\n\tall_layers {{#layers_keys}}{{.}} {{/layers_keys}}\n"
 	@printf "Demais targets implementados:\n\tclean wget_files me\n"
-	@echo "A gereação de layers requer os seguintes comandos e versões:\n\t$(need_commands)"
+	@echo "A geração de layers requer os seguintes comandos e versões:\n\t$(need_commands)"
 
 all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 	@echo "--ALL LAYERS--"
@@ -47,14 +46,16 @@ all_layers: {{#layers_keys}}{{.}} {{/layers_keys}}
 ## ## ## ## ## ## ## ## ##
 ## ## ## ## ## ## ## ## ##
 ## Make targets of the Project Digital Preservation
+## Sponsored by Project AddressForAll
 {{#layers}}
-{{#address}}## ## ## ## sponsored by Project AddressForAll
+
+{{#address}}
 address: layername = address_{{subtype}}
 address: tabname = pk$(fullPkID)_p{{file}}_address
 address: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "address" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -65,7 +66,7 @@ address-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/address}}
 
-{{#geoaddress}}## ## ## ## sponsored by Project AddressForAll
+{{#geoaddress}}
 geoaddress: layername = geoaddress_{{subtype}}
 geoaddress: tabname = pk$(fullPkID)_p{{file}}_geoaddress
 geoaddress: makedirs $(part{{file}}_path)
@@ -82,13 +83,13 @@ geoaddress-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/geoaddress}}
 
-{{#nsvia}}## ## ## ## sponsored by Project AddressForAll
+{{#nsvia}}
 nsvia: layername = nsvia_{{subtype}}
 nsvia: tabname = pk$(fullPkID)_p{{file}}_nsvia
 nsvia: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "nsvia" datatype (zone with name)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -99,13 +100,13 @@ nsvia-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
 {{/nsvia}}
 
-{{#genericvia}}## ## ## ## sponsored by Project AddressForAll
+{{#genericvia}}
 genericvia: layername = genericvia_{{subtype}}
 genericvia: tabname = pk$(fullPkID)_p{{file}}_genericvia
 genericvia: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "genericvia" datatype (zone with name)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -116,13 +117,13 @@ genericvia-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE;  DROP VIEW IF EXISTS vw_$(tabname) CASCADE;"
 {{/genericvia}}
 
-{{#cadgenericvia}}## ## ## ## sponsored by Project AddressForAll
+{{#cadgenericvia}}
 cadgenericvia: layername = cadgenericvia_{{subtype}}
 cadgenericvia: tabname = pk$(fullPkID)_p{{file}}_cadgenericvia
 cadgenericvia: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "cadgenericvia" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -133,13 +134,13 @@ cadgenericvia-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/cadgenericvia}}
 
-{{#via}}## ## ## ## sponsored by Project AddressForAll
+{{#via}}
 via: layername = via_{{subtype}}
 via: tabname = pk$(fullPkID)_p{{file}}_via
 via: makedirs $(part{{file}}_path)
 	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "via" datatype (street axes)
 {{>common002_layerHeader}}
-	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*" ; chmod -R a+rx . > /dev/null
 {{>common003_shp2pgsql}}
 {{>common001_pgAny_load}}
 	@echo FIM.
@@ -150,8 +151,24 @@ via-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/via}}
 
+{{#cadvia}}
+cadvia: layername = cadvia_{{subtype}}
+cadvia: tabname = pk$(fullPkID)_p{{file}}_cadvia
+cadvia: makedirs $(part{{file}}_path)
+	@# pk{{pkid}}_p{{file}} - ETL extrating to PostgreSQL/PostGIS the "cadvia" datatype (street axes)
+{{>common002_layerHeader}}
+	cd $(sandbox);  7z {{7z_opts}} x -y  $(part{{file}}_path) "{{orig_filename}}*"  ; chmod -R a+rx . > /dev/null
+{{>common003_shp2pgsql}}
+{{>common001_pgAny_load}}
+	@echo FIM.
 
-{{#parcel}}## ## ## ## sponsored by Project AddressForAll
+cadvia-clean: tabname = pk$(fullPkID)_p{{file}}_cadvia
+cadvia-clean:
+	rm -f "$(sandbox)/{{orig_filename}}.*" || true
+	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
+{{/cadvia}}
+
+{{#parcel}}
 parcel: layername = parcel_{{subtype}}
 parcel: tabname = pk$(fullPkID)_p{{file}}_parcel
 parcel: makedirs $(part{{file}}_path)
@@ -168,7 +185,7 @@ parcel-clean:
 	psql $(pg_uri_db) -c "DROP TABLE IF EXISTS $(tabname) CASCADE"
 {{/parcel}}
 
-{{#block}}## ## ## ## sponsored by Project AddressForAll
+{{#block}}
 block: layername = block_{{subtype}}
 block: tabname = pk$(fullPkID)_p{{file}}_block
 block: makedirs $(part{{file}}_path)
@@ -210,4 +227,4 @@ wget_files:
 clean_sandbox:
 	@rm -rf $(sandbox) || true
 
-clean: geoaddress-clean cadgenericvia-clean nsvia-clean via-clean parcel-clean block-clean
+clean: address-clean geoaddress-clean nsvia-clean genericvia-clean cadgenericvia-clean via-clean cadvia-clean parcel-clean block-clean
