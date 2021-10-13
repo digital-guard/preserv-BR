@@ -2,9 +2,9 @@ pkid:      25
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
 srid: 31983
+
 files:
   -
     p:    1
@@ -23,7 +23,7 @@ files:
     file: 350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip
     name: Bairros
 
-parts:
+layers:
   geoaddress:
         subtype: full
         p: 1a   

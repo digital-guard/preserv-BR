@@ -2,9 +2,9 @@ pkid:      02
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
 srid: 31982
+
 files:
   -
     p:    1
@@ -15,7 +15,7 @@ files:
     file: 3b67226b43d2093e81204c1ed089eafafe0ffd92ce8fe98bd8db1f45b2e3bfb1.zip
     name: Lotes
 
-parts:
+layers:
   geoaddress:
         subtupe: full
         p: 1a

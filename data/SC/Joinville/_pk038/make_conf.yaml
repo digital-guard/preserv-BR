@@ -2,9 +2,9 @@ pkid:      38
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
 srid: 31982
+
 files:
   -
     p:    1
@@ -15,7 +15,7 @@ files:
     file: 207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip
     name: Eixos
 
-parts:
+layers:
   parcel:
         subtype: full
         p: 1a   

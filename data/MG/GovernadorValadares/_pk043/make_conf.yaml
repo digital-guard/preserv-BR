@@ -2,9 +2,9 @@ pkid:      43
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
 srid: 31984
+
 files:
   -
     p:    1
@@ -30,7 +30,8 @@ files:
 #    * `Setor` -> `cd_setor`
 #    * `Quadra` -> `nr_quadra`
 #    * `Lote` ->  `nr_lote`
-parts:
+
+layers:
   address:
         subtype: noid
         p: 1a   
@@ -67,6 +68,3 @@ parts:
         sql_select: ['gid', 'descricao AS via_name', 'geom']
         orig_filename: view_st_logradouro_eixoLine
         codec: -W iso-8859-1
-
-
-

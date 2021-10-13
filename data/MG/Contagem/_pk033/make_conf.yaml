@@ -2,8 +2,8 @@ pkid:      33
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
+
 files:
   -
     p:    1
@@ -11,7 +11,7 @@ files:
     name: GDB Geodatabase 
   -
 
-parts:
+layers:
   nsvia:
         subtype: full
         p: 1a   
@@ -53,4 +53,3 @@ parts:
         tabname:  genericvia
         sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']
         srid_local: 31983
-

@@ -2,9 +2,9 @@ pkid:      37
 pkversion: "001"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
-thisTplFile_root: digital-preservation-BR
 need_commands:    7z psql shp2pgsql
 srid: 31981
+
 files:
   -
     p:    1
@@ -12,7 +12,6 @@ files:
     name: Lotes e Loteamentos
 
 layers:
-
   parcel: 
         subtype: full
         method: shp2sql
@@ -31,4 +30,3 @@ layers:
         sql_select: ['gid', 'NOME', 'BAIRRO AS nsvia_name', 'geom']
         orig_filename: Open Street/PARCELAMENTOS
         # Loteamentos são contornos das áreas loteadas e que compõem os bairros.
-
