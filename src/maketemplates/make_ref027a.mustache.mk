@@ -225,6 +225,6 @@ wget_files:
 ## ## ## ##
 
 clean_sandbox:
-	@rm -rf $(sandbox) || true
+	@rm -rf $(sandbox_root) || true
 
 clean: address-clean geoaddress-clean nsvia-clean genericvia-clean cadgenericvia-clean via-clean cadvia-clean parcel-clean block-clean

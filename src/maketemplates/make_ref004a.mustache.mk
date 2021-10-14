@@ -78,6 +78,6 @@ wget_files:
 ## ## ## ##
 
 clean_sandbox:
-	@rm -rf $(sandbox) || true
+	@rm -rf $(sandbox_root) || true
 
 clean: openstreetmap-clean

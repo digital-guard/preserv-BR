@@ -154,6 +154,6 @@ wget_files:
 ## ## ## ##
 
 clean_sandbox:
-	@rm -rf $(sandbox) || true
+	@rm -rf $(sandbox_root) || true
 
 clean: geoaddress-clean nsvia-clean via-clean parcel-clean block-clean
