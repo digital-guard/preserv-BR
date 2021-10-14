@@ -14,7 +14,7 @@ thisTplFile       = $(thisTplFile_root)/src/maketemplates/make_$(schemaId_templa
 mkme_srcTpl       = $(baseSrc)/$(thisTplFile)
 mkme_output       = /tmp/digitalPresservation-make_me.mk
 
-readme_srcTpl     = $(baseSrc)/$(thisTplFile_root)/src/maketemplates/readme.mustache
+readme_srcTpl     = $(baseSrc)/preserv-$(country)/src/maketemplates/readme.mustache
 readme_output     = /tmp/README_me.md
 
 readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
