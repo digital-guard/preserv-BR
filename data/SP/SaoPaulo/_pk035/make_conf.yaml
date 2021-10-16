@@ -1,7 +1,7 @@
 pkid: 35
 pkversion: "001"
-schemaId_input:    ref035a
-schemaId_template: ref035a
+schemaId_input:    ref027a
+schemaId_template: ref027a
 srid: 31984
 
 files:
@@ -31,4 +31,5 @@ layers:
     p: 2a
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
+    orig_subfilename: SIRGAS_SHP_LOTES
     sql_select: ['gid']
