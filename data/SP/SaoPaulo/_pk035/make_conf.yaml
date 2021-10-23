@@ -23,6 +23,7 @@ layers:
     file: 1
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
+    multiple_files: true
     sql_select: ['gid']
 
   parcel:
@@ -32,4 +33,5 @@ layers:
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
+    multiple_files: true
     sql_select: ['gid']
