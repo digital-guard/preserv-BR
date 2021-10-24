@@ -3,6 +3,10 @@
 Foram renomeados os seguintes arquivos por simplicidade:
 * `Topon%C3%ADmias-shp.zip` -> `Toponimias-shp.zip`
 
+## Remessa de planilha de dados referente a Lotes
+Fazer a importação e tratamento do dado referente a camada de lotes
+Arquivo Solicitação0710_InscTec_LogNPorBairro.xlsx adicionado no zip Solicitação0710_InscTec_LogNPorBairro.zip para melhor armazenamento.
+
 # Tarefas
 ## 1. Atribuir endereços nos lotes
 Os lotes não possuem endereço, mas um número de inscrição `tx_insct`.

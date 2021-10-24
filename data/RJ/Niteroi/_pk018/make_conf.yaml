@@ -1,5 +1,5 @@
 pkid:      18
-pkversion: "001"
+pkversion: "002"
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
@@ -18,6 +18,10 @@ files:
     p:    3
     file: fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip
     name: Bairros
+  -
+    p:    4
+    file: 39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip
+    name: Dados de Lotes
 
 layers:
   parcel:
@@ -28,6 +32,7 @@ layers:
         orig_filename: Lotes
         tabname:  genericvia
         sql_select: ['gid', 'tx_insct', 'geom']
+        join_column: tx_insct
   via:
         subtype: full
         method: shp2sql
@@ -47,3 +52,14 @@ layers:
         orig_filename: Limite_de_Bairros
         tabname:  nsvia
         sql_select: ['gid', 'geom']
+
+  cadparcel:
+        subtype: cmpl 
+        method: csv2shp
+        p: 4a
+        file: 4
+        orig_filename: Solicitação0710_InscTec_LogNPorBairro
+        orig_ext: .xlsx
+        tabname:  cadparcel
+        sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia_name']
+        join_column: tx_insctec
