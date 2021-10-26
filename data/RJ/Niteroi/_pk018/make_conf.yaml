@@ -25,7 +25,7 @@ files:
 
 layers:
   parcel:
-        subtype: none
+        subtype: ext
         method: shp2sql
         p: 1a
         file: 1
@@ -55,7 +55,7 @@ layers:
 
   cadparcel:
         subtype: cmpl 
-        method: csv2shp
+        method: csv2sql
         p: 4a
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
