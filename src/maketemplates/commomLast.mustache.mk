@@ -21,6 +21,8 @@ mkme_output       = /tmp/digitalPresservation-make_me.mk
 readme_srcTpl     = $(baseSrc)/preserv-$(country)/src/maketemplates/readme.mustache
 readme_output     = /tmp/README_me.md
 
+script_quotes     = $(baseSrc)/preserv/src/quotes.bash
+
 readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 	@echo "-- Create basic readme.md template --"
 	python3 $(srcPy) -b $(baseSrc)/ -t $(readme_srcTpl) -i $(mkme_input)  > $(readme_output)
@@ -35,10 +37,11 @@ readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 	mv $(readme_output) ./README.md
 	chmod 777 ./README.md
 
-me: $(srcPy) $(mkme_input0) $(mkme_input) $(mkme_srcTpl)
+me: $(srcPy) $(mkme_input0) $(mkme_input) $(mkme_srcTpl) $(script_quotes)
 	@echo "-- Updating this make --"
 	python3 $(srcPy) -b $(baseSrc)/ -t $(mkme_srcTpl) --tplLast=$(mkme_srcTplLast) -i $(mkme_input) --input0=$(mkme_input0) > $(mkme_output)
 	chmod 777 $(mkme_output)
+	bash $(script_quotes) $(mkme_output)
 	@echo " Check diff, the '<' lines are the new ones... Something changed?"
 	@diff $(mkme_output) ./makefile || :
 	@echo "If some changes, and no error in the changes, move the script:"
