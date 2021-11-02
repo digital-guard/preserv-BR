@@ -18,6 +18,7 @@ files:
 layers:
   parcel:
         subtype: full
+        method: shp2sql
         p: 1a   
         file: 1
         tabname:  parcel
@@ -25,6 +26,7 @@ layers:
         orig_filename: lotes2020_uso
   parcel:
         subtype: none
+        method: shp2sql
         p: 1b
         file: 1
         tabname:  geoaddress
@@ -32,6 +34,7 @@ layers:
         orig_filename: Lotes_rurais
   via:
         subtype: full
+        method: shp2sql
         p: 2a
         file: 2
         tabname:  via
@@ -40,6 +43,7 @@ layers:
   building: # Verificar no README.md sobre outros arquivos e 
             # sobre a necessidade de importar esses arquivos
         subtype: none
+        method: shp2sql
         p: 1c
         file: 1
         tabname:  Edificacoes
@@ -47,6 +51,7 @@ layers:
         orig_filename: logradouros
   block:
         subtype: none
+        method: shp2sql
         p: 1c
         file: 1
         tabname:  block

@@ -26,6 +26,7 @@ files:
 layers:
   geoaddress:
         subtype: full
+        method: shp2sql
         p: 1a   
         file: 1
         tabname:  geoaddress
@@ -34,6 +35,7 @@ layers:
         codec: -W iso-8859-1
   parcel:
         subtype: none
+        method: shp2sql
         p: 2a
         file: 2
         tabname:  parcel
@@ -41,12 +43,15 @@ layers:
         orig_filename: LOTE
   via:
         subtype: full
+        method: shp2sql
         p: 3a
         file: 3
         tabname:  via
         sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
         orig_filename: LOGRADOURO
-  nsvia_full:
+  nsvia:
+        subtype: full
+        method: shp2sql
         p: 4a
         file: 4
         tabname:  nsvia

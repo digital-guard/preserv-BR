@@ -34,13 +34,15 @@ files:
 layers:
   address:
         subtype: noid
+        method: shp2sql
         p: 1a   
         file: 1
         orig_filename: Logradouros - Gov. Valadares.xlsx
         tabname:  address
         sql_select: ['row_number() OVER () AS gid','"Logradouro" AS via_name', '"Número" AS house_number', '"Setor" AS setor', '"Quadra" AS quadra' , '"Lote" AS lote']
   parcel:
-        subtype: ext
+        subtype: full
+        method: shp2sql
         p: 2a
         file: 2
         tabname:  parcel

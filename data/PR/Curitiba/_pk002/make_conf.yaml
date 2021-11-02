@@ -18,16 +18,17 @@ files:
 layers:
   geoaddress:
         subtupe: full
+        method: shp2sql
         p: 1a
         file: 1
         # tem que descompactar num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
-        orig_filename:
-                      - num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar 
-                      - num_predial_curitiba_201902_distancia_20metros_eixo_rua.geojson
+        orig_filename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
+        orig_subfilename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.geojson
         tabname:  lotes
         sql_select: ['gid', 'num_pred as house_number', 'logradouro', 'geom']
   parcel:
         subtupe: full
+        method: shp2sql
         p: 2a
         file: 2
         orig_filename: LOTES_201902
