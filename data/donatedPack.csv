@@ -79,4 +79,4 @@ pack_id,vers,donor_id,donor_label,user_resp,accepted_date,escopo,about,author,co
 83,001,77,SC-CCO,igor,2021-06-21,BR-SC-Chapeco,"Eixos, bairros e loteamentos",(self),2021,no,CC0,email,(anexo de email),no,,
 84,001,78,RJ-(RJO),igor,2021-06-22,BR-RJ-RioJaneiro,"Edificações, bairros",(self),2021,no,CC0,site,https://www.data.rio/,no,,
 85,001,79,PR-TOO,igor,2021-06-22,BR-PR-Toledo,"Eixos, quadras, bairros, loteamentos, limite de município e pontos de equipamentos urbanos.",(self),2021,no,CC0,email,(anexo de email),no,,
-86,001,80,RS-PLT,Carlos,2021-11-15,BR-RS-Pelotas,"Lotes, eixos e ponto de endereço",(self), no, CCO, email, (anexo de email), done
+86,001,80,RS-PLT,Carlos,2021-11-15,BR-RS-Pelotas,"Lotes, eixos e ponto de endereço",(self),2021, no, CCO, email, (anexo de email), done,,
