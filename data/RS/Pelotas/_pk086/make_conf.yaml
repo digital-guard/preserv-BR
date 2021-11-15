@@ -1,0 +1,36 @@
+pkid:      86
+pkversion: "001"
+schemaId_input:    ref027a
+schemaId_template: ref027a
+srid: 31982
+files:
+  -
+    p:    1
+    file: 3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip
+    name: Todos os arquivos
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    p: 1a
+    file: 1
+    sql_select: ['gid', 'text AS house_number', 'geom']
+    orig_filename: DADOS PELOTAS/numeracao_cadastral
+
+  via:
+    subtype: full
+    method: shp2sql
+    p: 1b
+    file: 1
+    sql_select: ['gid', 'nome_map AS via_name', 'geom']
+    orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
+
+  genericvia:
+    subtype: none
+    method: shp2sql
+    p: 1c
+    file: 1
+    sql_select: ['gid', 'geom']
+    orig_filename: DADOS PELOTAS/pelotas_lotes_cadastro
