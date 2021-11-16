@@ -19,7 +19,7 @@ mkme_srcTpl       = $(baseSrc)/$(thisTplFile)
 mkme_output       = /tmp/digitalPresservation-make_me.mk
 
 readme_srcTpl     = $(baseSrc)/preserv-$(country)/src/maketemplates/readme.mustache
-readme_output     = /tmp/README_me.md
+readme_output     = /tmp/README-draft.md
 
 script_quotes     = $(baseSrc)/preserv/src/quotes.bash
 
@@ -33,14 +33,13 @@ readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 	python3 $(srcPy) -b $(baseSrc)/ -t $(readme_srcTpl) -i $(mkme_input)  > $(readme_output)
 	chmod 777 $(readme_output)
 	@echo " Check diff, the '<' lines are the new ones... Something changed?"
-	@diff $(readme_output) ./README.md || :
+	@diff $(readme_output) ./README-draft.md || :
 	@echo "If some changes, and no error in the changes, move the readme:"
-	@echo " mv ./README.md ./bk-README.md"
-	@echo " mv $(readme_output) ./README.md"
+	@echo " mv $(readme_output) ./README-draft.md"
 	@echo "[ENTER para rodar mv ou ^C para sair]"
 	@read _tudo_bem_
-	mv $(readme_output) ./README.md
-	chmod 777 ./README.md
+	mv $(readme_output) ./README-draft.md
+	chmod 777 ./README-draft.md
 
 me: $(srcPy) $(mkme_input0) $(mkme_input) $(mkme_srcTpl) $(script_quotes)
 	@echo "-- Updating this make --"
