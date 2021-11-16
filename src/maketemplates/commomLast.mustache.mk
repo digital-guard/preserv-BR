@@ -23,6 +23,11 @@ readme_output     = /tmp/README_me.md
 
 script_quotes     = $(baseSrc)/preserv/src/quotes.bash
 
+info:
+	@echo "=== Targets  ==="
+	@printf "readme: gera rascunho de Readme.md para conjunto de dados.\n"
+	@printf "me: gera makefile para ingestão dos dados, a partir de make_conf.yaml\n"
+
 readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 	@echo "-- Create basic readme.md template --"
 	python3 $(srcPy) -b $(baseSrc)/ -t $(readme_srcTpl) -i $(mkme_input)  > $(readme_output)
