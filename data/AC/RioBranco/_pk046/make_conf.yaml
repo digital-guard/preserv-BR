@@ -51,7 +51,7 @@ layers:
         method: shp2sql
         p: 2b
         file: 2
-        tabname:  via
+        tabname:  block
         sql_select: ['gid', 'iq', 'geom']
         orig_filename: rb_20201111/quadras
   # Mão importei Loteamentos - funciona como Bairro
