@@ -25,7 +25,6 @@ layers:
         method: shp2sql
         p: 1a
         file: 1
-        tabname:  nsvia
         sql_select: ['gid', 'nmbairro AS ns_name', 'geom']
         orig_filename: Bairros
         method_opts: -W iso-8859-1
@@ -34,7 +33,6 @@ layers:
         method: shp2sql
         p: 2a
         file: 2
-        tabname:  via
         query_view: |-
                     SELECT gid, tipolograd || ' ' || nmlogradou AS via_name, geom  FROM $(tabname)
         orig_filename: Logradouros
@@ -44,6 +42,5 @@ layers:
         p: 3a
         file: 3
         orig_filename: Lotes
-        tabname:  via
         sql_select: ['gid', 'logradouro AS via_name', 'numerologr AS pointer_number', 'geom']
         method_opts: -W iso-8859-1

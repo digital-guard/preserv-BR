@@ -17,7 +17,6 @@ layers:
     method: shp2sql
     p: 1a
     file: 1
-    tabname:  via
     sql_select: [ 'gid', '"NOME_LOGR" AS via_name', '"COD_DV_LOG" AS cod_dv_log', 'geom']
     orig_filename: lograd
 
@@ -26,7 +25,6 @@ layers:
     method: shp2sql
     p: 1b
     file: 1
-    tabname:  lotes
     sql_select: ['gid', '"NRO_IMOV" AS house_number','"COD_DV_LOG" AS cod_dv_log', 'geom']
     orig_filename: lotes
 
@@ -35,6 +33,5 @@ layers:
     method: shp2sql
     p: 1c
     file: 1
-    tabname:  parcel
     sql_select: ['gid', '"QUADRA"', 'geom']
     orig_filename: quadras

@@ -21,7 +21,6 @@ layers:
         method: shp2sql
         p: 1a   
         file: 1
-        tabname:  parcel
         sql_select: ['gid', '_logradour', '_numero_25', '_bairro_28 AS ns_name', 'uso', 'geom']
         orig_filename: lotes2020_uso
   parcel:
@@ -29,7 +28,6 @@ layers:
         method: shp2sql
         p: 1b
         file: 1
-        tabname:  geoaddress
         sql_select: ['gid', 'iq_lote', 'geom']
         orig_filename: Lotes_rurais
   via:
@@ -37,7 +35,6 @@ layers:
         method: shp2sql
         p: 2a
         file: 2
-        tabname:  via
         sql_select:  ['gid','nomelog AS via_name', 'geom']
         orig_filename: logradouros
   building: # Verificar no README.md sobre outros arquivos e 
@@ -46,7 +43,6 @@ layers:
         method: shp2sql
         p: 1c
         file: 1
-        tabname:  Edificacoes
         sql_select:  ['gid', 'geom']
         orig_filename: logradouros
   block:
@@ -54,6 +50,5 @@ layers:
         method: shp2sql
         p: 1c
         file: 1
-        tabname:  block
         sql_select: ['gid','geom']
         orig_filename: Quadras

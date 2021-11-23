@@ -19,7 +19,6 @@ layers:
         p: 1a   
         file: 1
         orig_filename: LOTES_PONTO_S2K
-        tabname:  geoaddress
         sql_select: ['gid', 'L_NUMERO AS pointer_number','X', 'Y', 'geom']
         codec: -W iso-8859-1
         # não adicionei X e Y. Precisa?

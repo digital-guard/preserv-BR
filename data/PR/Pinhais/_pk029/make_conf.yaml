@@ -25,7 +25,6 @@ layers:
     method: shp2sql
     p: 1a   
     file: 1
-    tabname:  geoaddress
     query_view: |-
               SELECT gid, NOME_LOGRA || ' ' || TIPO_LOGRA AS via_name, NUMERO as house_number, NOME_BAIRR AS ns_name, geom FROM $(tabname)
     orig_filename: LOTES
@@ -36,7 +35,6 @@ layers:
     method: shp2sql
     p: 2a
     file: 2
-    tabname:  via
     sql_select: ['gid', 'NOME_RUA  AS via_name', 'geom']
     orig_filename: RUAS
     method_opts: -W iso-8859-1
@@ -46,7 +44,6 @@ layers:
     method: shp2sql
     p: 3a
     file: 3
-    tabname:  via
     sql_select: ['gid', 'BAIRRO AS ns_name', 'geom']
     orig_filename: BAIRROS
     method_opts: -W iso-8859-1

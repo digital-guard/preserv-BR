@@ -21,7 +21,6 @@ layers:
         method: shp2sql
         p: 1a
         file: 1
-        tabname:  lotes
         sql_select: ['gid', 'Cadastro AS cadastro', 'Número AS numero', 'geom']
         orig_filename: lote_numero_predial
   via:
@@ -29,7 +28,6 @@ layers:
         method: shp2sql
         p: 1b
         file: 1
-        tabname:  via
         query_view: |-
                    SELECT gid, NOME || ' ' || TIPO AS via_name, geom FROM $(tabname)
         orig_filename: sistema_viario
@@ -38,6 +36,5 @@ layers:
         method: shp2sql
         p: 2b
         file: 2
-        tabname:  nsvia
         sql_select: ['gid', 'geom']
         orig_filename: PS_LOTEAMENTOS_SIRGAS 2000

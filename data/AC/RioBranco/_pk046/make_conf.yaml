@@ -25,7 +25,6 @@ layers:
         method: shp2sql
         p: 1a
         file: 1
-        tabname:  parcel
         sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
         orig_filename: rb_20201116/lotes
   nsvia:
@@ -33,7 +32,6 @@ layers:
         method: shp2sql
         p: 2a
         file: 2
-        tabname:  nsvia
         sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
         orig_filename: rb_20201111/bairros
   via:
@@ -41,7 +39,6 @@ layers:
         method: shp2sql
         p: 3a
         file: 3
-        tabname:  via
         query_view: |-
                     SELECT gid, 'Nome' || ' ' || 'Tipo' AS via_name,  geom FROM $(tabname)
         orig_filename: logradouros
@@ -51,7 +48,6 @@ layers:
         method: shp2sql
         p: 2b
         file: 2
-        tabname:  block
         sql_select: ['gid', 'iq', 'geom']
         orig_filename: rb_20201111/quadras
   # Mão importei Loteamentos - funciona como Bairro

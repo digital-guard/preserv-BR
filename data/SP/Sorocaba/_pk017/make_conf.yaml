@@ -20,7 +20,6 @@ layers:
     subtype: full
     p: 1a   
     file: 1
-    tabname:  parcel
     sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
     orig_filename: lotes_prediais
 
@@ -28,6 +27,5 @@ layers:
     subtype: full
     p: 2a
     file: 2
-    tabname:  via
     sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
     orig_filename: eixos_sorocaba

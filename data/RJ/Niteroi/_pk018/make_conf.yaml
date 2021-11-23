@@ -30,7 +30,6 @@ layers:
         p: 1a
         file: 1
         orig_filename: Lotes
-        tabname:  genericvia
         sql_select: ['gid', 'tx_insct', 'geom']
         join_column: tx_insct
   via:
@@ -39,7 +38,6 @@ layers:
         p: 2b
         file: 2
         orig_filename: Logradouro
-        tabname:  via
         query_view: |-
                     SELECT gid, ST_TYPE || ' ' || ST_NO AS via_name, CMTY_L AS nsvia_name_left, CMTY_R AS nsvia_name_right, geom FROM $(tabname)
 
@@ -50,7 +48,6 @@ layers:
         p: 3a
         file: 3
         orig_filename: Limite_de_Bairros
-        tabname:  nsvia
         sql_select: ['gid', 'geom']
 
   cadparcel:
@@ -60,7 +57,6 @@ layers:
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
         orig_ext: .xlsx
-        tabname:  cadparcel
         sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia_name']
         join_column: tx_insctec
         method_opts: -i

@@ -24,7 +24,6 @@ layers:
         # tem que descompactar num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
         orig_filename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
         orig_subfilename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.geojson
-        tabname:  lotes
         sql_select: ['gid', 'num_pred as house_number', 'logradouro', 'geom']
   parcel:
         subtupe: full
@@ -32,5 +31,4 @@ layers:
         p: 2a
         file: 2
         orig_filename: LOTES_201902
-        tabname:  genericvia
         sql_select: ['gid', 'NME_LOGRAD AS via_name', 'NUM_PREDIA AS poiter_number']

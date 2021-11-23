@@ -21,7 +21,6 @@ layers:
     method: shp2sql
     p: 1a   
     file: 1
-    tabname:  geoaddress
     sql_select: ['gid', 'LOGRADOURO AS via_name', 'geom']
     orig_filename: 5486431b-c7fe-aec8-ab9c-00004b294da9
 
@@ -30,6 +29,5 @@ layers:
     method: shp2sql
     p: 2a
     file: 2
-    tabname:  via
     sql_select: ['gid', 'geom']
     orig_filename: 256b0041-6e29-1649-4b2b-00006944c8fb

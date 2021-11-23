@@ -16,7 +16,6 @@ layers:
         subtype: full
         p: 1a   
         file: 1
-        tabname:  nsvia
         sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
         orig_filename: OpenStreetMap.gdb/Bairros
         srid: 3857
@@ -24,7 +23,6 @@ layers:
         subtype: full
         p: 1b
         file: 1
-        tabname:  via
         sql_select:  ['gid', "TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name", 'geom']
         orig_filename: OpenStreetMap.gdb/Logradouros
         srid: 31983
@@ -33,14 +31,12 @@ layers:
         p: 1c
         file: 1
         orig_filename: OpenStreetMap.gdb/Endereco
-        tabname:  via
         sql_select:  ['gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
         srid_local: 31983
   parcel:
         subtype: ext # Ver Pontos de endereço.
         p: 1d
         file: 1
-        tabname:  parcel
         sql_select:  ['gid', 'BAIRRO AS namespace_name', 'geom']
         orig_filename: OpenStreetMap.gdb/Lotes
         srid_local: 31983
@@ -50,6 +46,5 @@ layers:
         p: 1d
         file: 1
         orig_filename: OpenStreetMap.gdb/Quadras
-        tabname:  genericvia
         sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']
         srid_local: 31983

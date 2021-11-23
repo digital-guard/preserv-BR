@@ -17,7 +17,6 @@ layers:
         method: shp2sql
         p: 1a
         file: 1
-        tabname:  parcel
         sql_select: ['gid', 'ENDNUMERO AS house_number','QTDPAVIMEN','NMEDIFICAC', 'geom']
         orig_filename: Lotes
         method_opts: -W iso-8859-1
@@ -26,7 +25,6 @@ layers:
         method: shp2sql
         p: 1b
         file: 1
-        tabname:  via
         sql_select: ['gid', 'NLGPAVOFIC AS via_name', 'geom']
         orig_filename: TrechoLogradouros
         method_opts: -W iso-8859-1
@@ -35,7 +33,6 @@ layers:
         method: shp2sql
         p: 1c
         file: 1
-        tabname:  nsvia
         sql_select: ['gid', 'EBAIRRNO_1 AS ns_name', 'geom']
         orig_filename: Bairros
         method_opts: -W iso-8859-1

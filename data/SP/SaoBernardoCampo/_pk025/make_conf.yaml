@@ -29,7 +29,6 @@ layers:
         method: shp2sql
         p: 1a   
         file: 1
-        tabname:  geoaddress
         sql_select: ['gid', 'NOME_COMPL as via_name', 'Numero as house_number', 'geom']
         orig_filename: Q_Endereco_SBC
         codec: -W iso-8859-1
@@ -38,7 +37,6 @@ layers:
         method: shp2sql
         p: 2a
         file: 2
-        tabname:  parcel
         sql_select:  ['gid', 'ZONA','QUADRA', 'UNIDADE',  'geom']  
         orig_filename: LOTE
   via:
@@ -46,7 +44,6 @@ layers:
         method: shp2sql
         p: 3a
         file: 3
-        tabname:  via
         sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
         orig_filename: LOGRADOURO
   nsvia:
@@ -54,7 +51,6 @@ layers:
         method: shp2sql
         p: 4a
         file: 4
-        tabname:  nsvia
         sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
         codec: -W iso-8859-1
         orig_filename: BAIRRO
