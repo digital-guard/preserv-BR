@@ -36,7 +36,6 @@ info:
 
 readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 	@echo "-- Create basic readme.md template --"
-# 	psql $(pg_uri_db) -c "SELECT ingest.generate_makefile('$(baseSrc)','$(readme_srcTpl)','$(mkme_input)')" > $(readme_output)
 	python3 $(srcPy) -b $(baseSrc)/ -t $(readme_srcTpl) -i $(mkme_input)  > $(readme_output)
 	chmod 777 $(readme_output)
 	@echo " Check diff, the '<' lines are the new ones... Something changed?"
@@ -49,7 +48,6 @@ readme: $(srcPy) $(mkme_input) $(readme_srcTpl)
 
 me: $(srcPy) $(mkme_input0) $(mkme_input) $(mkme_srcTpl) $(script_quotes)
 	@echo "-- Updating this make --"
-# 	psql $(pg_uri_db) -c "SELECT ingest.generate_makefile('$(baseSrc)','$(mkme_srcTpl)','$(mkme_srcTplLast)','$(mkme_input)','$(mkme_input0)')" > $(mkme_output)
 	python3 $(srcPy) -b $(baseSrc)/ -t $(mkme_srcTpl) --tplLast=$(mkme_srcTplLast) -i $(mkme_input) --input0=$(mkme_input0) > $(mkme_output)
 	chmod 777 $(mkme_output)
 	bash $(script_quotes) $(mkme_output)
@@ -61,3 +59,31 @@ me: $(srcPy) $(mkme_input0) $(mkme_input) $(mkme_srcTpl) $(script_quotes)
 	@echo "[ENTER para rodar mv ou ^C para sair]"
 	@read _tudo_bem_
 	mv $(mkme_output) ./makefile
+
+
+
+mkme_output2       = $(pg_io)/makeme_$(country)$(pkid)
+readme_output2     = $(pg_io)/README-draft_$(country)$(pkid)
+
+readme2:
+	@echo "-- Create basic readme.md template --"
+	psql $(pg_uri_db) -c "SELECT ingest.lix_generate_readme('$(baseSrc)','$(country)','$(pkid)');"
+	@echo " Check diff, the '<' lines are the new ones... Something changed?"
+	@diff $(readme_output2) ./README-draft.md || :
+	@echo "If some changes, and no error in the changes, move the readme:"
+	@echo " mv $(readme_output2) ./README-draft.md"
+	@echo "[ENTER para rodar mv ou ^C para sair]"
+	@read _tudo_bem_
+	mv $(readme_output2) ./README-draft.md
+
+me2: $(script_quotes)
+	@echo "-- Updating this make --"
+	psql $(pg_uri_db) -c "SELECT ingest.lix_generate_makefile('$(country)','$(pkid)');"
+	bash $(script_quotes) $(mkme_output2)
+	@echo " Check diff, the '<' lines are the new ones... Something changed?"
+	@diff $(mkme_output2) ./makefile || :
+	@echo "If some changes, and no error in the changes, move the script:"
+	@echo " mv $(mkme_output2) ./makefile"
+	@echo "[ENTER para rodar mv ou ^C para sair]"
+	@read _tudo_bem_
+	mv $(mkme_output2) ./makefile
