@@ -50,6 +50,6 @@ layers:
         method: shp2sql
         p: 4a
         file: 4
-        query_view: |-
+        sql_view: |-
                SELECT gid, tp_log || ' ' || nm_log AS via_name, id_log, geom FROM $(tabname)
         orig_filename: SEG

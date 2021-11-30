@@ -20,7 +20,7 @@ layers:
     method: csv2sql
     p: 1a
     file: 1
-    query_view: |-
+    sql_view: |-
       SELECT row_number() OVER () as gid, \\"SIGLA_TIPO_LOGRADOURO\\" \
            || CASE WHEN \\"SIGLA_TIPO_LOGRADOURO\\" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
            || \\"NOME_LOGRADOURO\\" AS via_name,\
@@ -36,5 +36,5 @@ layers:
     method_opts: -W latin1
     p: 2a
     file: 2
-    query_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)
+    sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)
     orig_filename: LOGRADOUROLine

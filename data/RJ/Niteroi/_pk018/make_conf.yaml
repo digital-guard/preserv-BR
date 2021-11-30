@@ -38,7 +38,7 @@ layers:
         p: 2b
         file: 2
         orig_filename: Logradouro
-        query_view: |-
+        sql_view: |-
                     SELECT gid, ST_TYPE || ' ' || ST_NO AS via_name, CMTY_L AS nsvia_name_left, CMTY_R AS nsvia_name_right, geom FROM $(tabname)
 
         # não coloquei Legislacao (string): lei da denominação (para outros projetos).

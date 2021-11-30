@@ -45,6 +45,6 @@ layers:
     csv_encoding: iso-8859-15
     p: 1b
     file: 1
-    query_view: |-
+    sql_view: |-
             SELECT row_number() OVER () AS gid, cd_atrb, nm_atrb, nm_descricao  FROM $(tabname)
     orig_filename: atributo_logradouro

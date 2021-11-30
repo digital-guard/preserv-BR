@@ -32,7 +32,7 @@ layers:
     method: shp2sql
     p: 2a
     file: 2
-    query_view: |-
+    sql_view: |-
         SELECT row_number() OVER () as gid, * \
         FROM ( \
           SELECT upper(trim(nome)) as nome, count(*) n, round(sum(st_area(geom))) area, \
@@ -47,7 +47,7 @@ layers:
     method: shp2sql
     p: 3a
     file: 3
-    query_view: |-
+    sql_view: |-
         SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via_name,\
                NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
         FROM $(tabname)
