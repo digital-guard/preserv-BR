@@ -79,7 +79,6 @@ readme2:
 me2: $(script_quotes)
 	@echo "-- Updating this make --"
 	psql $(pg_uri_db) -c "SELECT ingest.lix_generate_makefile('$(country)','$(pkid)');"
-	bash $(script_quotes) $(mkme_output2)
 	@echo " Check diff, the '<' lines are the new ones... Something changed?"
 	@diff $(mkme_output2) ./makefile || :
 	@echo "If some changes, and no error in the changes, move the script:"
