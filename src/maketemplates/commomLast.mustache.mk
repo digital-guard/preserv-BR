@@ -86,3 +86,11 @@ me2: $(script_quotes)
 	@echo "[ENTER para rodar mv ou ^C para sair]"
 	@read _tudo_bem_
 	mv $(mkme_output2) ./makefile
+
+insert_make_conf.yaml:
+	@echo "-- Carrega make_conf.yaml na base de dados. --"
+	@echo "Uso: make insert_make_conf.yaml"
+	@echo "pkid: $(pkid)"
+	@echo "[ENTER para continuar ou ^C para sair]"
+	@read _tudo_bem_
+	psql $(pg_uri_db) -c "SELECT ingest.lix_insert('${PWD}/make_conf.yaml','make_conf');"
