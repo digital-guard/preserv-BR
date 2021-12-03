@@ -27,7 +27,7 @@ layers:
         file: 1
         sql_select: ['gid','bairro_imo AS ns_name','cep_imovel', 'logradouro AS via_name', 'numero_imo AS house_number', 'unidades', 'geom']
         orig_filename: Cadastro de Imoveis
-        codec: -W iso-8859-1
+        codec: charset=latin1
   block:
         subtype: none
         method: shp2sql
@@ -35,7 +35,7 @@ layers:
         file: 2
         sql_select: ['gid', 'chave_qd','geom']
         orig_filename: Quadras
-        codec: -W iso-8859-1
+        codec: charset=latin1
   nsvia:
         subtype: none
         method: shp2sql
@@ -43,4 +43,4 @@ layers:
         file: 3
         sql_select: ['gid', 'bairro AS ns_name','geom']
         orig_filename: Bairros
-        codec: -W iso-8859-1
+        codec: charset=latin1

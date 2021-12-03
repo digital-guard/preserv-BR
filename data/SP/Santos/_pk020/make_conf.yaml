@@ -15,10 +15,9 @@ layers:
   geoaddress: 
         subtype: full
         method: shp2sql
-        method_opts: -W latin1
         p: 1a   
         file: 1
         orig_filename: LOTES_PONTO_S2K
         sql_select: ['gid', 'L_NUMERO AS pointer_number','X', 'Y', 'geom']
-        codec: -W iso-8859-1
+        codec: charset=latin1
         # não adicionei X e Y. Precisa?

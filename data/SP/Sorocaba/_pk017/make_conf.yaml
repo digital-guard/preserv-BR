@@ -24,7 +24,7 @@ layers:
     #sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
     sql_view: SELECT gid, Complement, 'Número Por' AS house_number, 'Tipo do Lo' || ' ' || 'Nome do Lo' AS via_name, geom FROM $(tabname)
     orig_filename: lotes_prediais
-    method_opts: -W iso-8859-1
+    codec: charset=latin1
 
   via:
     subtype: full
@@ -34,4 +34,4 @@ layers:
     #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
     sql_view: SELECT gid, TIPO || ' ' || NOME AS via_name, BAIRRO AS ns_name, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
     orig_filename: eixos_sorocaba
-    method_opts: -W iso-8859-1
+    codec: charset=latin1

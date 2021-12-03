@@ -19,7 +19,7 @@ layers:
         file: 1
         sql_select: ['gid', 'ENDNUMERO AS house_number','QTDPAVIMEN','NMEDIFICAC', 'geom']
         orig_filename: Lotes
-        method_opts: -W iso-8859-1
+        codec: charset=latin1
   via:
         subtype: full
         method: shp2sql
@@ -27,7 +27,7 @@ layers:
         file: 1
         sql_select: ['gid', 'NLGPAVOFIC AS via_name', 'geom']
         orig_filename: TrechoLogradouros
-        method_opts: -W iso-8859-1
+        codec: charset=latin1
   nsvia:
         subtype: full
         method: shp2sql
@@ -35,4 +35,4 @@ layers:
         file: 1
         sql_select: ['gid', 'EBAIRRNO_1 AS ns_name', 'geom']
         orig_filename: Bairros
-        method_opts: -W iso-8859-1
+        codec: charset=latin1
