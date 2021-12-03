@@ -1,7 +1,7 @@
 pkid:      17
-pkversion: "001"
-schemaId_input:    ref027a  # ID do JSON-schema de input, ref no preimeiro template a usar este padrão de input.
-schemaId_template: ref027a  # ID do makefile.mustache, ref no preimeiro package a usar o template.
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
 srid: 31983
 
@@ -18,14 +18,20 @@ files:
 layers:
   parcel: 
     subtype: full
+    method: shp2sql
     p: 1a   
     file: 1
-    sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
+    #sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
+    sql_view: SELECT gid, Complement, 'Número Por' AS house_number, 'Tipo do Lo' || ' ' || 'Nome do Lo' AS via_name, geom FROM $(tabname)
     orig_filename: lotes_prediais
+    method_opts: -W iso-8859-1
 
   via:
     subtype: full
+    method: shp2sql
     p: 2a
     file: 2
-    sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
+    #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
+    sql_view: SELECT gid, TIPO || ' ' || NOME AS via_name, BAIRRO AS ns_name, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
     orig_filename: eixos_sorocaba
+    method_opts: -W iso-8859-1

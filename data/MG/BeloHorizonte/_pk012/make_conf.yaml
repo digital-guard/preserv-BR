@@ -1,8 +1,9 @@
 pkid:      12
-pkversion: "001"
-schemaId_template: ref027a
+pkversion: 001
 schemaId_input:    ref027a
+schemaId_template: ref027a
 srid: 31983
+
 files:
   -
     p:    1
@@ -21,12 +22,12 @@ layers:
     p: 1a
     file: 1
     sql_view: |-
-      SELECT row_number() OVER () as gid, \\"SIGLA_TIPO_LOGRADOURO\\" \
-           || CASE WHEN \\"SIGLA_TIPO_LOGRADOURO\\" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
-           || \\"NOME_LOGRADOURO\\" AS via_name,\
-           \\"NUMERO_IMOVEL\\" || COALESCE(\\"LETRA_IMOVEL\\",'') AS house_number,\
-           \\"LETRA_IMOVEL\\">'' AS is_complemento_provavel,\
-           ST_GeomFromText(\\"GEOMETRIA\\",$(srid)) as geom \
+      SELECT row_number() OVER () as gid, "SIGLA_TIPO_LOGRADOURO" \
+           || CASE WHEN "SIGLA_TIPO_LOGRADOURO" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
+           || "NOME_LOGRADOURO" AS via_name,\
+           "NUMERO_IMOVEL" || COALESCE("LETRA_IMOVEL",'') AS house_number,\
+           "LETRA_IMOVEL">'' AS is_complemento_provavel,\
+           ST_GeomFromText("GEOMETRIA",$(srid)) as geom \
       FROM $(tabname)
     orig_filename: ENDERECO
 

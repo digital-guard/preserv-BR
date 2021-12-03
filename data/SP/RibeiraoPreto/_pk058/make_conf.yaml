@@ -1,7 +1,7 @@
 pkid:      58
-pkversion: "001"
-schemaId_template: ref027a
+pkversion: 001
 schemaId_input:    ref027a
+schemaId_template: ref027a
 srid: 31983
 
 files:
@@ -17,7 +17,7 @@ layers:
     method: shp2sql
     p: 1a
     file: 1
-    sql_select: [ 'gid', '"NOME_LOGR" AS via_name', '"COD_DV_LOG" AS cod_dv_log', 'geom']
+    sql_select: [ 'gid', 'NOME_LOGR AS via_name', 'COD_DV_LOG AS cod_dv_log', 'geom']
     orig_filename: lograd
 
   parcel:
@@ -25,7 +25,7 @@ layers:
     method: shp2sql
     p: 1b
     file: 1
-    sql_select: ['gid', '"NRO_IMOV" AS house_number','"COD_DV_LOG" AS cod_dv_log', 'geom']
+    sql_select: ['gid', 'NRO_IMOV AS house_number','COD_DV_LOG AS cod_dv_log', 'geom']
     orig_filename: lotes
 
   block:
@@ -33,5 +33,5 @@ layers:
     method: shp2sql
     p: 1c
     file: 1
-    sql_select: ['gid', '"QUADRA"', 'geom']
+    sql_select: ['gid', 'QUADRA', 'geom']
     orig_filename: quadras

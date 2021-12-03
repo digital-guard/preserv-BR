@@ -3,27 +3,28 @@
 ## SELF-GENERATE MAKE (make me) ##
 ## ############################ ##
 
-mkme_input        = $(shell ls -d "${PWD}/"make_conf.yaml)
-country           = $(shell ls -d "${PWD}" | cut -d'-' -f2 | cut -d'/' -f1)
-baseSrc           = /opt/gits/_dg
+mkme_input    = $(shell ls -d "${PWD}/"make_conf.yaml)
+country       = $(shell ls -d "${PWD}" | cut -d'-' -f2 | cut -d'/' -f1)
+baseSrc       = /opt/gits/_dg
 
-mkme_input0       = $(baseSrc)/preserv-$(country)/src/maketemplates/commomFirst.yaml
+mkme_input0   = $(baseSrc)/preserv-$(country)/src/maketemplates/commomFirst.yaml
 
-pg_io             = $(shell grep 'pg_io'  < $(mkme_input0) | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
-pg_uri            = $(shell grep 'pg_uri' < $(mkme_input0) | cut -f2- -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
-pg_db             = $(shell grep 'pg_db'  < $(mkme_input0) | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
-pkid              = $(shell grep 'pkid'   < $(mkme_input)  | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
+pg_io         = $(shell grep 'pg_io'  < $(mkme_input0) | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
+pg_uri        = $(shell grep 'pg_uri' < $(mkme_input0) | cut -f2- -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
+pg_db         = $(shell grep 'pg_db'  < $(mkme_input0) | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
+pkid          = $(shell grep 'pkid'   < $(mkme_input)  | cut -f2  -d':' | sed 's/^[ \t]*//' | sed 's/[\ \#].*//')
 
-pg_uri_db         = $(pg_uri)/$(pg_db)
+pg_uri_db     = $(pg_uri)/$(pg_db)
 
-mkme_output       = $(pg_io)/makeme_$(country)$(pkid)
-readme_output     = $(pg_io)/README-draft_$(country)$(pkid)
+mkme_output   = $(pg_io)/makeme_$(country)$(pkid)
+readme_output = $(pg_io)/README-draft_$(country)$(pkid)
 
 info:
-	@echo "=== Targets  ==="
+	@echo "=== Targets ==="
 	@printf "me: gera makefile para ingestão dos dados, a partir de make_conf.yaml.\n"
 	@printf "readme: gera rascunho de Readme.md para conjunto de dados.\n"
 	@printf "insert_make_conf.yaml: carrega na base de dados o arquivo make_conf.yaml.\n"
+	@printf "delete_file: deleta arquivo ingestado, a partir do sha256.\n"
 
 me:
 	@echo "-- Updating this make --"
@@ -56,3 +57,10 @@ insert_make_conf.yaml:
 	@echo "[ENTER para continuar ou ^C para sair]"
 	@read _tudo_bem_
 	psql $(pg_uri_db) -c "SELECT ingest.lix_insert('$(country)','$(mkme_input)','make_conf');"
+
+delete_file:
+	@echo "Uso: make delete_file hash=<inicio do hash do arquivo>"
+	@echo "hash: $(hash)"
+	@echo "[ENTER para continuar ou ^C para sair]"
+	@read _tudo_bem_
+	@[ "${hash}" ] && psql $(pg_uri_db) -c "DELETE FROM ingest.layer_file WHERE pck_fileref_sha256 LIKE '$(hash)%'" || ( echo "hash não informado.")
