@@ -46,6 +46,7 @@ layers:
         file: 3
         sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
         orig_filename: LOGRADOURO
+        codec: charset=latin1
   nsvia:
         subtype: full
         method: shp2sql
