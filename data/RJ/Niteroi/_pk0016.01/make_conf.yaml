@@ -56,7 +56,6 @@ layers:
         p: 4a
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
-        orig_ext: .xlsx
+        codec: XLSX
         sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia_name']
         join_column: tx_insctec
-        method_opts: -i

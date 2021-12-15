@@ -42,7 +42,7 @@ layers:
   cadvia:
     subtype: noid
     method: csv2sql
-    codec: charset=iso-8859-15
+    codec: CSV~Latin9
     p: 1b
     file: 1
     sql_view: |-

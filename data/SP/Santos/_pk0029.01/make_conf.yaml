@@ -19,5 +19,5 @@ layers:
         file: 1
         orig_filename: LOTES_PONTO_S2K
         sql_select: ['gid', 'L_NUMERO AS pointer_number','X', 'Y', 'geom']
-        codec: charset=latin1
+        codec: SHP~Latin1
         # não adicionei X e Y. Precisa?

@@ -65,7 +65,7 @@ layers:
   address:
     subtype: cmpl
     method: csv2sql
-    codec: charset=us-ascii
+    codec: CSV~ASCII
     p: 5a
     file: 5
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS house_number']

@@ -34,7 +34,7 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    codec: charset=latin1
+    codec: SHP~Latin1
     p: 2a
     file: 2
     sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)

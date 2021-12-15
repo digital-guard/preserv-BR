@@ -27,7 +27,7 @@ layers:
         file: 1
         sql_select: ['gid', 'nmbairro AS ns_name', 'geom']
         orig_filename: Bairros
-        codec: charset=latin1
+        codec: SHP~Latin1
   via:
         subtype: full
         method: shp2sql
@@ -43,4 +43,4 @@ layers:
         file: 3
         orig_filename: Lotes
         sql_select: ['gid', 'logradouro AS via_name', 'numerologr AS pointer_number', 'geom']
-        codec: charset=latin1
+        codec: SHP~Latin1

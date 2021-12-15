@@ -27,7 +27,7 @@ layers:
         file: 1
         sql_select: ['gid', 'CODGIS', 'LOTE', 'geom'] # tem que trabalhar nos códigos de CODGIS e LOTE
         orig_filename: LOTES/LOTES
-        codec: charset=latin1
+        codec: SHP~Latin1
 
   nsvia:
         subtype: full 
@@ -36,7 +36,7 @@ layers:
         file: 2
         sql_select: ['gid', 'BAIRRO AS nsvia_name','geom'] 
         orig_filename: BAIRROS/BAIRROS
-        codec: charset=latin1
+        codec: SHP~Latin1
 
   block:
         subtype: none 
@@ -45,4 +45,4 @@ layers:
         file: 3
         sql_select: ['gid', 'DISTR', 'SETOR', 'QUADRA', 'CODGIS','geom'] 
         orig_filename: QUADRAS/QUADRAS
-        codec: charset=latin1
+        codec: SHP~Latin1

@@ -64,4 +64,4 @@ layers:
         file: 5
         sql_select: ['gid', 'descricao AS via_name', 'geom']
         orig_filename: view_st_logradouro_eixoLine
-        codec: charset=latin1
+        codec: SHP~Latin1

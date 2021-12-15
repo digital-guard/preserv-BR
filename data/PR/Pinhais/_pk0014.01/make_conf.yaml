@@ -28,7 +28,7 @@ layers:
     sql_view: |-
               SELECT gid, NOME_LOGRA || ' ' || TIPO_LOGRA AS via_name, NUMERO as house_number, NOME_BAIRR AS ns_name, geom FROM $(tabname)
     orig_filename: LOTES
-    codec: charset=latin1
+    codec: SHP~Latin1
 
   via:
     subtype: full
@@ -37,7 +37,7 @@ layers:
     file: 2
     sql_select: ['gid', 'NOME_RUA  AS via_name', 'geom']
     orig_filename: RUAS
-    codec: charset=latin1
+    codec: SHP~Latin1
 
   nsvia:
     subtype: full
@@ -46,4 +46,4 @@ layers:
     file: 3
     sql_select: ['gid', 'BAIRRO AS ns_name', 'geom']
     orig_filename: BAIRROS
-    codec: charset=latin1
+    codec: SHP~Latin1

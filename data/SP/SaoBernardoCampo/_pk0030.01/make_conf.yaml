@@ -31,7 +31,7 @@ layers:
         file: 1
         sql_select: ['gid', 'NOME_COMPL as via_name', 'Numero as house_number', 'geom']
         orig_filename: Q_Endereco_SBC
-        codec: charset=latin1
+        codec: SHP~Latin1
   parcel:
         subtype: none
         method: shp2sql
@@ -46,13 +46,13 @@ layers:
         file: 3
         sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
         orig_filename: LOGRADOURO
-        codec: charset=latin1
+        codec: SHP~Latin1
   nsvia:
         subtype: full
         method: shp2sql
         p: 4a
         file: 4
         sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
-        codec: charset=latin1
+        codec: SHP~Latin1
         orig_filename: BAIRRO
         srid: 31982
