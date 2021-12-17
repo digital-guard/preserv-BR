@@ -1,7 +1,7 @@
 # Dados e metados
 Dados de entrada são aqueles fornecidos pelos operadores autorizados.
 
-Dados de saída (`_out`) são gerados automaticamente pela [*eclusa*](http://git.AddressForAll.org/digital-preservartion/blob/master/docs/eclusa.md) a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados.
+Dados de saída (`_out`) são gerados automaticamente pela [*eclusa*](http://git.digital-guard.org/preserv/blob/main/docs/pt/eclusa.md) a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados.
 
 -----
 
