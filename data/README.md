@@ -25,4 +25,4 @@ Todo pacote de dados tem origem numa doação para o domínio público, ou cess�
 
 * metadados do [**pacote doado** (`donatedPack`)](donatedPack.csv): identificador sequencial de pacote (_pack_id_), doador relacionado, data de homologação pela Curadoria, e demais metadados do pacote, que pode conter pode conter um ou mais arquivos compactados. Os pacotes podem ainda ser atualizados ao longo dos anos, resultando em versões mais atualizadas.  Neste repositório *git* tanto as correções como as novas versões se sobrepõe às antigas.
 
-* Demais metadados e descritores: ver cada pasta `_pk$id` em `preserv-$país`. Por exemplo na pasta [_pk056](data/_pk056) um pacote de escopo nacional e na pasta [RS/PortoAlegre/_pk027](https://github.com/digital-guard/preserv-BR/tree/main/data/RS/PortoAlegre/_pk027) um pacote de escopo municipal.
+* Demais metadados e descritores: ver cada pasta `_pk$id` em `preserv-$país`. Por exemplo na pasta [_pk0001.03](_pk0001.03) um pacote de escopo nacional e na pasta [RS/PortoAlegre/_pk0018.01](RS/PortoAlegre/_pk0018.01) um pacote de escopo municipal.
