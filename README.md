@@ -22,11 +22,11 @@ As jurisdições de comunidades locais recebem atribuições oficiais para a ger
 
 Neste *git* são mantidos apenas metadados, ou seja, descritores das entidades, tais como nomes e geocódigos, enquanto mapas e outros dados, são armazenados externamente por serem muito grandes.
 
-Os metadados foram organizados conforme [instruções Preserv](http://git.Digital-guard.org/preserv), na pasta [`/data`](./data):
+Os metadados foram organizados conforme [instruções Preserv](http://git.digital-guard.org/preserv-BR), na pasta [`/data`](./data):
 
-* [`/data`](./data#README.md): dados. Na raiz os dados originais de **entrada**, ou seja, metadados fornecidos para o sistema. Na pasta `/data/_out` alguns metadados de saída, principalmente comprovantes de integridade e relatórios automáticos de sumarização estatística, gerados pelo sistema.
+* [`/data`](./data#readme): dados. Na raiz os dados originais de **entrada**, ou seja, metadados fornecidos para o sistema. Na pasta `/data/_out` alguns metadados de saída, principalmente comprovantes de integridade e relatórios automáticos de sumarização estatística, gerados pelo sistema.
 
-* [`/src`](./src#README.md): código-fonte dos algoritmos SQL, makefile e outros.
+* [`/src`](./src#readme): código-fonte dos algoritmos SQL, makefile e outros.
 
 ## Mais detalhes
 
