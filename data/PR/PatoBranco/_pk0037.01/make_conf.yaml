@@ -2,7 +2,7 @@ pkid:      41
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
-srid: 952013
+codec:descr_encode: srid=952013
 
 files:
   -

@@ -3,7 +3,7 @@ pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
-srid: 31983
+codec:descr_encode: srid=31983
 
 files:
   -
@@ -53,6 +53,5 @@ layers:
         p: 4a
         file: 4
         sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
-        codec: SHP~Latin1
+        codec: SHP~Latin1;srid=31982
         orig_filename: BAIRRO
-        srid: 31982
