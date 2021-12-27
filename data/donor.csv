@@ -1,4 +1,4 @@
-id,escopo,shortName,vat_id,legalName,wikidata_id,url
+local_id,escopo,shortName,vat_id,legalName,wikidata_id,url
 1,BR,IBGE,cnpj:33.787.094/0001-40,Instituto Brasileiro de Geografia e Estatística,268072,https://ibge.gov.br/
 2,BR-PR-CTA,IPPUC,cnpj:76.582.337/0001-16,Inst. de Pesquisa e Plan Urbano de Curitiba,100641436,http://ippuc.org.br
 3,BR,OK-BR,cnpj:19.131.243/0001-97,Open Knowledge Foundation Brasil,73828324,http://ok.org.br
