@@ -1,4 +1,5 @@
-pkid:      18
+pack_id: 16.1
+#pkid:      18
 pkversion: 002
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -27,7 +28,6 @@ layers:
   parcel:
         subtype: ext
         method: shp2sql
-        p: 1a
         file: 1
         orig_filename: Lotes
         sql_select: ['gid', 'tx_insct', 'geom']
@@ -35,7 +35,6 @@ layers:
   via:
         subtype: full
         method: shp2sql
-        p: 2b
         file: 2
         orig_filename: Logradouro
         sql_view: |-
@@ -45,7 +44,6 @@ layers:
   nsvia:
         subtype: ext # Usar os dados de via para montar o poligono de bairro
         method: shp2sql
-        p: 3a
         file: 3
         orig_filename: Limite_de_Bairros
         sql_select: ['gid', 'geom']
@@ -53,7 +51,6 @@ layers:
   cadparcel:
         subtype: cmpl 
         method: csv2sql
-        p: 4a
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
         codec: XLSX
