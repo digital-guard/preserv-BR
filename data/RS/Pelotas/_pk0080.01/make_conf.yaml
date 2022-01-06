@@ -1,4 +1,4 @@
-pkid:      86
+pack_id: 80.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -15,7 +15,6 @@ layers:
   geoaddress:
     subtype: full
     method: shp2sql
-    p: 1a
     file: 1
     sql_select: ['gid', 'text AS house_number', 'geom']
     orig_filename: DADOS PELOTAS/numeracao_cadastral
@@ -23,7 +22,6 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    p: 1b
     file: 1
     sql_select: ['gid', 'nome_map AS via_name', 'geom']
     orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
@@ -31,7 +29,6 @@ layers:
   genericvia:
     subtype: none
     method: shp2sql
-    p: 1c
     file: 1
     sql_select: ['gid', 'geom']
     orig_filename: DADOS PELOTAS/pelotas_lotes_cadastro

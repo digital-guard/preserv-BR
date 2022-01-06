@@ -1,4 +1,4 @@
-pkid:      59
+pack_id: 53.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -18,7 +18,6 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    p: 1a
     file: 1
     sql_select: ['gid', 'nm_bairro', 'label AS nsvia_name',  'geom']
     orig_filename: bairro
@@ -26,7 +25,6 @@ layers:
   genericvia:
     subtype: full
     method: shp2sql
-    p: 2a
     file: 2
     sql_select: ['gid', 'logradouro', 'bairro AS nsvia_name',  'geom']
     orig_filename: view_cotr_imobliario_filtro
@@ -34,7 +32,6 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    p: 1b
     file: 1
     sql_select: ['gid', 'cd_logr', 'nome via_name',  'geom']
     orig_filename: logradouros
@@ -43,7 +40,6 @@ layers:
     subtype: noid
     method: csv2sql
     codec: CSV~Latin9
-    p: 1b
     file: 1
     sql_view: |-
             SELECT row_number() OVER () AS gid, cd_atrb, nm_atrb, nm_descricao  FROM $(tabname)

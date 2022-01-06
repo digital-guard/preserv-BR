@@ -1,4 +1,4 @@
-pkid:      12
+pack_id: 8.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -19,7 +19,6 @@ layers:
   geoaddress:
     subtype: full
     method: csv2sql
-    p: 1a
     file: 1
     sql_view: |-
       SELECT row_number() OVER () as gid, "SIGLA_TIPO_LOGRADOURO" \
@@ -35,7 +34,6 @@ layers:
     subtype: full
     method: shp2sql
     codec: SHP~Latin1
-    p: 2a
     file: 2
     sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)
     orig_filename: LOGRADOUROLine

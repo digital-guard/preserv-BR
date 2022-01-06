@@ -1,4 +1,4 @@
-pkid:      2
+pack_id: 2.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -19,7 +19,6 @@ layers:
   geoaddress:
         subtupe: full
         method: shp2sql
-        p: 1a
         file: 1
         # tem que descompactar num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
         orig_filename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
@@ -28,7 +27,6 @@ layers:
   parcel:
         subtupe: full
         method: shp2sql
-        p: 2a
         file: 2
         orig_filename: LOTES_201902
         sql_select: ['gid', 'NME_LOGRAD AS via_name', 'NUM_PREDIA AS poiter_number']

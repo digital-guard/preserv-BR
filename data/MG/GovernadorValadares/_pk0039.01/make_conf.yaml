@@ -1,4 +1,4 @@
-pkid:      43
+pack_id: 39.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -35,32 +35,27 @@ layers:
   address:
         subtype: noid
         method: shp2sql
-        p: 1a   
         file: 1
         orig_filename: Logradouros - Gov. Valadares.xlsx
         sql_select: ['row_number() OVER () AS gid','"Logradouro" AS via_name', '"Número" AS house_number', '"Setor" AS setor', '"Quadra" AS quadra' , '"Lote" AS lote']
   parcel:
         subtype: full
         method: shp2sql
-        p: 2a
         file: 2
         sql_select: ['gid', 'cd_distrit', 'cd_setor', 'nr_quadra', 'nr_lote', 'geom']
         orig_filename: lote_inscricao_geometria
   block: 
         subtype: ext
-        p: 3a
         file: 3
         sql_select: ['gid', 'id_quadra', 'geom']
         orig_filename: st_quadraPolygon
   nsvia:
         subtype: none
-        p: 4a
         file: 4
         sql_select: ['gid', 'geom']
         orig_filename: st_bairroPolygon
   via:
         subtype: full
-        p: 5a
         file: 5
         sql_select: ['gid', 'descricao AS via_name', 'geom']
         orig_filename: view_st_logradouro_eixoLine

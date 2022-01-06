@@ -1,4 +1,4 @@
-pkid:      25
+pack_id: 30.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -27,7 +27,6 @@ layers:
   geoaddress:
         subtype: full
         method: shp2sql
-        p: 1a   
         file: 1
         sql_select: ['gid', 'NOME_COMPL as via_name', 'Numero as house_number', 'geom']
         orig_filename: Q_Endereco_SBC
@@ -35,14 +34,12 @@ layers:
   parcel:
         subtype: none
         method: shp2sql
-        p: 2a
         file: 2
         sql_select:  ['gid', 'ZONA','QUADRA', 'UNIDADE',  'geom']  
         orig_filename: LOTE
   via:
         subtype: full
         method: shp2sql
-        p: 3a
         file: 3
         sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
         orig_filename: LOGRADOURO
@@ -50,7 +47,6 @@ layers:
   nsvia:
         subtype: full
         method: shp2sql
-        p: 4a
         file: 4
         sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
         codec: SHP~Latin1;srid=31982

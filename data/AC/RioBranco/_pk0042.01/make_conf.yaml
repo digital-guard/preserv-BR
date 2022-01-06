@@ -1,4 +1,4 @@
-pkid:      46
+pack_id: 42.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -23,21 +23,18 @@ layers:
   parcel:
         subtype: full
         method: shp2sql
-        p: 1a
         file: 1
         sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
         orig_filename: rb_20201116/lotes
   nsvia:
         subtype: full
         method: shp2sql
-        p: 2a
         file: 2
         sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
         orig_filename: rb_20201111/bairros
   via:
         subtype: full
         method: shp2sql
-        p: 3a
         file: 3
         sql_view: |-
                     SELECT gid, 'Nome' || ' ' || 'Tipo' AS via_name,  geom FROM $(tabname)
@@ -46,7 +43,6 @@ layers:
   block:
         subtype: full
         method: shp2sql
-        p: 2b
         file: 2
         sql_select: ['gid', 'iq', 'geom']
         orig_filename: rb_20201111/quadras

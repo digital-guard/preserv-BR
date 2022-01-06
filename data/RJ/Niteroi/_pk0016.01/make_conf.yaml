@@ -1,5 +1,4 @@
 pack_id: 16.1
-#pkid:      18
 pkversion: 002
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.

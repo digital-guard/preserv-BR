@@ -1,4 +1,4 @@
-pkid:      24
+pack_id: 7.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -23,7 +23,6 @@ layers:
   parcel:
         subtype: none 
         method: shp2sql
-        p: 1a   
         file: 1
         sql_select: ['gid', 'CODGIS', 'LOTE', 'geom'] # tem que trabalhar nos códigos de CODGIS e LOTE
         orig_filename: LOTES/LOTES
@@ -32,7 +31,6 @@ layers:
   nsvia:
         subtype: full 
         method: shp2sql
-        p: 2a
         file: 2
         sql_select: ['gid', 'BAIRRO AS nsvia_name','geom'] 
         orig_filename: BAIRROS/BAIRROS
@@ -41,7 +39,6 @@ layers:
   block:
         subtype: none 
         method: shp2sql
-        p: 3a
         file: 3
         sql_select: ['gid', 'DISTR', 'SETOR', 'QUADRA', 'CODGIS','geom'] 
         orig_filename: QUADRAS/QUADRAS

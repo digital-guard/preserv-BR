@@ -1,4 +1,4 @@
-pkid:      75
+pack_id: 69.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -32,7 +32,6 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    p: 1a
     file: 1
     sql_select: ['gid', 'nome AS nsvia_name', 'geom']
     orig_filename: bairros
@@ -40,7 +39,6 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    p: 2a
     file: 2
     sql_view: |-
         SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via_name, nomeusual AS nomeusual, geom FROM $(tabname)
@@ -49,7 +47,6 @@ layers:
   genericvia:
     subtype: ext
     method: shp2sql
-    p: 3a
     file: 3
     sql_select: ['gid', 'inscrica_1', 'geom']
     orig_filename: lotes
@@ -57,7 +54,6 @@ layers:
   block:
     subtype: none
     method: shp2sql
-    p: 4a
     file: 4
     sql_select: ['gid', 'geom']
     orig_filename: quadras
@@ -66,12 +62,8 @@ layers:
     subtype: cmpl
     method: csv2sql
     codec: CSV~ASCII
-    p: 5a
     file: 5
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS house_number']
     orig_filename: data-1626873935092
-        
+
     # join genericvia:inscrica_1 == cadgenericvia:cod_localizacao_completo
-
-
-

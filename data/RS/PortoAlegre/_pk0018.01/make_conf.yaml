@@ -1,4 +1,4 @@
-pkid:      27
+pack_id: 18.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -23,7 +23,6 @@ layers:
   geoaddress:
     subtype: none
     method: shp2sql
-    p: 1a
     file: 1
     sql_select: ['gid', 'textstring AS house_number', 'setor', 'last_edi_1 AS dateModified', 'geom']
     orig_filename: NRO_IMOVEL
@@ -31,7 +30,6 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    p: 2a
     file: 2
     sql_view: |-
         SELECT row_number() OVER () as gid, * \
@@ -46,7 +44,6 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    p: 3a
     file: 3
     sql_view: |-
         SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via_name,\

@@ -1,4 +1,4 @@
-pkid:      21
+pack_id: 10.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -15,7 +15,6 @@ layers:
   parcel:
         subtype: full
         method: shp2sql
-        p: 1a
         file: 1
         sql_select: ['gid', 'ENDNUMERO AS house_number','QTDPAVIMEN','NMEDIFICAC', 'geom']
         orig_filename: Lotes
@@ -23,7 +22,6 @@ layers:
   via:
         subtype: full
         method: shp2sql
-        p: 1b
         file: 1
         sql_select: ['gid', 'NLGPAVOFIC AS via_name', 'geom']
         orig_filename: TrechoLogradouros
@@ -31,7 +29,6 @@ layers:
   nsvia:
         subtype: full
         method: shp2sql
-        p: 1c
         file: 1
         sql_select: ['gid', 'EBAIRRNO_1 AS ns_name', 'geom']
         orig_filename: Bairros

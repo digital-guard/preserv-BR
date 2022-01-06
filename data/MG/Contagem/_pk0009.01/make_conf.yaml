@@ -1,4 +1,4 @@
-pkid:      33
+pack_id: 9.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -14,28 +14,24 @@ files:
 layers:
   nsvia:
         subtype: full
-        p: 1a   
         file: 1
         sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
         orig_filename: OpenStreetMap.gdb/Bairros
         srid: 3857
   via:
         subtype: full
-        p: 1b
         file: 1
         sql_select:  ['gid', "TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name", 'geom']
         orig_filename: OpenStreetMap.gdb/Logradouros
         srid: 31983
   geoaddress:
         subtype: full
-        p: 1c
         file: 1
         orig_filename: OpenStreetMap.gdb/Endereco
         sql_select:  ['gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
         srid_local: 31983
   parcel:
         subtype: ext # Ver Pontos de endereço.
-        p: 1d
         file: 1
         sql_select:  ['gid', 'BAIRRO AS namespace_name', 'geom']
         orig_filename: OpenStreetMap.gdb/Lotes
@@ -43,7 +39,6 @@ layers:
 # Não importei praça - Carlos 23/05/2021
   genericvia:
         subtype: full
-        p: 1d
         file: 1
         orig_filename: OpenStreetMap.gdb/Quadras
         sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']

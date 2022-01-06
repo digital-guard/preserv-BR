@@ -1,4 +1,4 @@
-pkid:      67
+pack_id: 61.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -15,7 +15,6 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    p: 1a
     file: 1
     sql_select: ['gid', 'endereço AS via_name', 'geom']
     orig_filename: Sistema Vi rio
@@ -24,15 +23,13 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    p: 3a
-    file: 3
+    file: 1
     sql_select: ['gid', 'nome AS ns_name', 'geom']
     orig_filename: Bairros
 
   nsvia: # rurais
     subtype: full
     method: shp2sql
-    p: 3a
-    file: 3
+    file: 1
     sql_select: ['gid', 'nome AS ns_name', 'geom']
     orig_filename: Localidades Rurais

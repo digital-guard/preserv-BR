@@ -1,4 +1,4 @@
-pkid:      35
+pack_id: 33.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
@@ -19,7 +19,6 @@ layers:
   building:
     subtype: none
     method: shp2sql
-    p: 1a
     file: 1
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
@@ -29,7 +28,6 @@ layers:
   parcel:
     subtype: full
     method: shp2sql
-    p: 2a
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES

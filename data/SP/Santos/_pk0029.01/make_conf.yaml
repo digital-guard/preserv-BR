@@ -1,4 +1,4 @@
-pkid:      20
+pack_id: 29.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -15,7 +15,6 @@ layers:
   geoaddress: 
         subtype: full
         method: shp2sql
-        p: 1a   
         file: 1
         orig_filename: LOTES_PONTO_S2K
         sql_select: ['gid', 'L_NUMERO AS pointer_number','X', 'Y', 'geom']

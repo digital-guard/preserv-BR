@@ -1,4 +1,4 @@
-pkid:      38
+pack_id: 35.1
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
@@ -19,21 +19,18 @@ layers:
   parcel:
         subtype: full
         method: shp2sql
-        p: 1a   
         file: 1
         sql_select: ['gid', '_logradour', '_numero_25', '_bairro_28 AS ns_name', 'uso', 'geom']
         orig_filename: lotes2020_uso
   parcel:
         subtype: none
         method: shp2sql
-        p: 1b
         file: 1
         sql_select: ['gid', 'iq_lote', 'geom']
         orig_filename: Lotes_rurais
   via:
         subtype: full
         method: shp2sql
-        p: 2a
         file: 2
         sql_select:  ['gid','nomelog AS via_name', 'geom']
         orig_filename: logradouros
@@ -41,14 +38,12 @@ layers:
             # sobre a necessidade de importar esses arquivos
         subtype: none
         method: shp2sql
-        p: 1c
         file: 1
         sql_select:  ['gid', 'geom']
         orig_filename: logradouros
   block:
         subtype: none
         method: shp2sql
-        p: 1c
         file: 1
         sql_select: ['gid','geom']
         orig_filename: Quadras
