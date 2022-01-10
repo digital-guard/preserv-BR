@@ -36,8 +36,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 3
-        sql_view: |-
-                    SELECT gid, 'Nome' || ' ' || 'Tipo' AS via_name,  geom FROM $(tabname)
+        sql_view: SELECT gid, Nome ||' '|| tipo AS via_name,  geom FROM $(tabname)
         orig_filename: logradouros
   # Não importei Eixos - planilha, precisa?
   block:
