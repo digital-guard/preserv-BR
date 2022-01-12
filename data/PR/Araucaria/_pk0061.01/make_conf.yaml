@@ -24,12 +24,5 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome AS ns_name', 'geom']
-    orig_filename: Bairros
-
-  nsvia: # rurais
-    subtype: full
-    method: shp2sql
-    file: 1
-    sql_select: ['gid', 'nome AS ns_name', 'geom']
-    orig_filename: Localidades Rurais
+    sql_select: [['gid', 'nome AS ns_name', 'geom'],['gid', 'nomes AS ns_name', 'geom']]
+    orig_filename: ["Bairros","Localidades Rurais"]
