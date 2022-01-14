@@ -43,7 +43,7 @@ local_id,scope_osm_id,kx_scope_label,shortName,vat_id,legalName,wikidata_id,url
 42,326253,BR-AC-RBO,AC-RBO,cnpj:04.034.583/0001-22,Prefeitura Municipal de Rio Branco,56450051,http://www.riobranco.ac.gov.br/
 43,298019,BR-SP-SJC,SP-SJC,cnpj:46.643.466/0001-06,Prefeitura Municipal de São José dos Campos,56450003,https://www.sjc.sp.gov.br/
 44,59470,INT,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/
-45,,BR-PI-TSA,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/
+45,302749,BR-PI-TSA,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/
 46,59470,BR,ECT,cnpj:34.028.316/0001-03,Empresa Brasileira de Correios e Telégrafos,3375004,http://www.correios.com.br/
 47,59470,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/
 48,334017,BR-MS-DOS,MS-DOS,cnpj:03.155.926/0001-44,Prefeitura de Dourados,60029408,http://www.dourados.ms.gov.br/
