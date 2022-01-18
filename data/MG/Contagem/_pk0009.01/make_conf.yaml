@@ -3,13 +3,13 @@ pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=31983
 
 files:
 - file: 058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
   name: GDB Geodatabase
   p: 1
   size: 24477090
-- null
 
 layers:
   nsvia:
@@ -18,28 +18,28 @@ layers:
         sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
         orig_filename: OpenStreetMap.gdb/Bairros
         srid: 3857
+
   via:
         subtype: full
         file: 1
         sql_select:  ['gid', "TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name", 'geom']
         orig_filename: OpenStreetMap.gdb/Logradouros
-        srid: 31983
+
   geoaddress:
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb/Endereco
         sql_select:  ['gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
-        srid_local: 31983
+
   parcel:
         subtype: ext # Ver Pontos de endereço.
         file: 1
         sql_select:  ['gid', 'BAIRRO AS namespace_name', 'geom']
         orig_filename: OpenStreetMap.gdb/Lotes
-        srid_local: 31983
+
 # Não importei praça - Carlos 23/05/2021
   genericvia:
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb/Quadras
         sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']
-        srid_local: 31983
