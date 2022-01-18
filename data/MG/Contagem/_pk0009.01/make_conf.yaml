@@ -13,33 +13,44 @@ files:
 
 layers:
   nsvia:
+        method: gdb2sql
         subtype: full
         file: 1
         sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
-        orig_filename: OpenStreetMap.gdb/Bairros
+        orig_filename: OpenStreetMap.gdb
+        orig_tabname: Bairros
         srid: 3857
+        codec: GDB;srid=3857
 
   via:
+        method: gdb2sql
         subtype: full
         file: 1
         sql_select:  ['gid', "TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name", 'geom']
-        orig_filename: OpenStreetMap.gdb/Logradouros
+        orig_filename: OpenStreetMap.gdb
+        orig_tabname: Logradouros
 
   geoaddress:
+        method: gdb2sql
         subtype: full
         file: 1
-        orig_filename: OpenStreetMap.gdb/Endereco
-        sql_select:  ['gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
+        orig_filename: OpenStreetMap.gdb
+        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
+        orig_tabname: Endereco
 
   parcel:
+        method: gdb2sql
         subtype: ext # Ver Pontos de endereço.
         file: 1
         sql_select:  ['gid', 'BAIRRO AS namespace_name', 'geom']
-        orig_filename: OpenStreetMap.gdb/Lotes
+        orig_filename: OpenStreetMap.gdb
+        orig_tabname: Lotes
 
 # Não importei praça - Carlos 23/05/2021
   genericvia:
+        method: gdb2sql
         subtype: full
         file: 1
-        orig_filename: OpenStreetMap.gdb/Quadras
+        orig_filename: OpenStreetMap.gdb
+        orig_tabname: Quadras
         sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']
