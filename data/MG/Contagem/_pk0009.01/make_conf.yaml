@@ -19,7 +19,6 @@ layers:
         sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Bairros
-        srid: 3857
         codec: GDB;srid=3857
 
   via:
