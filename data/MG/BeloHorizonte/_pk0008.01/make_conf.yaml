@@ -5,14 +5,14 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip
-    name: Pontos de Endereço
-  -
-    p:    2
-    file: 7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip
-    name: Vias
+- file: 1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip
+  name: Pontos de Endereço
+  p: 1
+  size: 42826370
+- file: 7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip
+  name: Vias
+  p: 2
+  size: 2637788
 
 layers:
 

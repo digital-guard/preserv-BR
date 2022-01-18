@@ -6,14 +6,14 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: a6f6dc4a8cd4bd9dcf19104bb409c2164fd07b53818a6e1c28c4aaab94f5c895.zip
-    name: Pontos de endereço
-  -
-    p:    2
-    file: 3b67226b43d2093e81204c1ed089eafafe0ffd92ce8fe98bd8db1f45b2e3bfb1.zip
-    name: Lotes
+- file: a6f6dc4a8cd4bd9dcf19104bb409c2164fd07b53818a6e1c28c4aaab94f5c895.zip
+  name: Pontos de endereço
+  p: 1
+  size: 11350182
+- file: 3b67226b43d2093e81204c1ed089eafafe0ffd92ce8fe98bd8db1f45b2e3bfb1.zip
+  name: Lotes
+  p: 2
+  size: 32308230
 
 layers:
   geoaddress:

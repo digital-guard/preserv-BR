@@ -5,11 +5,11 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 need_commands:    7z psql shp2pgsql
 
 files:
-  -
-    p:    1
-    file: 058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-    name: GDB Geodatabase 
-  -
+- file: 058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+  name: GDB Geodatabase
+  p: 1
+  size: 24477090
+- null
 
 layers:
   nsvia:

@@ -6,10 +6,10 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip
-    name: Pontos de endereço
+- file: b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip
+  name: Pontos de endereço
+  p: 1
+  size: 1922893
 
 layers:
   geoaddress: 
