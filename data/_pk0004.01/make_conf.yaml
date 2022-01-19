@@ -1,0 +1,31 @@
+pack_id: 4.1
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+    -
+        p:    1
+        file: 477b9c42709f3fd7f5e44dcb38752c1d4f4ef132b2cf39fa1015a742934b42db.pbf
+        name: Dados OpenStreetMap
+
+license_evidences:
+    definition: [ODbL-1.0, odbl, http://www.opendefinition.org/licenses/odc-odbl]
+    uri_evidency: http://web.archive.org/web/20181002092250/https://opendatacommons.org/licenses/odbl/
+
+layers:
+  geoaddress:
+    subtype: full
+    method: osm2sql
+    file: 1
+    orig_filename: brazil-2018-10-02.osm
+  via:
+    subtype: full
+    method: osm2sql
+    file: 1
+    orig_filename: brazil-2018-10-02.osm
+
+openstreetmap:
+    file: 1
+    method: none
