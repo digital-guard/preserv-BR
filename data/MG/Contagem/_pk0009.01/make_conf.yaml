@@ -16,7 +16,7 @@ layers:
         method: gdb2sql
         subtype: full
         file: 1
-        sql_select: ['gid','Teste2_P_1 AS namespace_name','geom']
+        sql_select: ['OBJECTID AS gid','Teste2_P_1 AS namespace_name','geom']
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Bairros
         codec: GDB;srid=3857
@@ -41,7 +41,7 @@ layers:
         method: gdb2sql
         subtype: ext # Ver Pontos de endereço.
         file: 1
-        sql_select:  ['gid', 'BAIRRO AS namespace_name', 'geom']
+        sql_select:  ['OBJECTID AS gid', 'BAIRRO AS namespace_name', 'geom']
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Lotes
 
@@ -52,4 +52,4 @@ layers:
         file: 1
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Quadras
-        sql_select:  ['gid', 'QUADRA AS genericvia_number', 'geom']
+        sql_select:  ['OBJECTID AS gid', 'QUADRA AS genericvia_number', 'geom']
