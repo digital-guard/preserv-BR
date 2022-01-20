@@ -25,7 +25,7 @@ layers:
         method: gdb2sql
         subtype: full
         file: 1
-        sql_select:  ['gid', "TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name", 'geom']
+        sql_view:  SELECT OBJECTID AS gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname) 
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
 
