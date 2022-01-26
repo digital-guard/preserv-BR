@@ -44,12 +44,13 @@ layers:
         SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via_name, nomeusual AS nomeusual, geom FROM $(tabname)
     orig_filename: logradouros
 
-  genericvia:
+  parcel:
     subtype: ext
     method: shp2sql
     file: 3
     sql_select: ['gid', 'inscrica_1', 'geom']
     orig_filename: lotes
+    join_column: inscrica_1
 
   block:
     subtype: none
@@ -58,12 +59,13 @@ layers:
     sql_select: ['gid', 'geom']
     orig_filename: quadras
 
-  address:
+  cadparcel:
     subtype: cmpl
     method: csv2sql
     codec: CSV~ASCII
     file: 5
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS house_number']
     orig_filename: data-1626873935092
+    join_column: cod_localizacao_completo
 
     # join genericvia:inscrica_1 == cadgenericvia:cod_localizacao_completo
