@@ -28,7 +28,7 @@ layers:
         subtype: none
         method: shp2sql
         file: 1
-        sql_select: ['gid','id', 'nm_lot', 'id_log', 'geom']
+        sql_select: ['gid','id', 'nm_lot', 'geom']
         orig_filename: LOT
   block:
         subtype: none
@@ -47,5 +47,5 @@ layers:
         method: shp2sql
         file: 4
         sql_view: |-
-               SELECT gid, tp_log || ' ' || nm_log AS via_name, id_log, geom FROM $(tabname)
+               SELECT gid, tp_log || ' ' || nm_log AS via_name, geom FROM $(tabname)
         orig_filename: SEG
