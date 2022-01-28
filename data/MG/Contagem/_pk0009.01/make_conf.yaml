@@ -28,6 +28,7 @@ layers:
         sql_view:  SELECT OBJECTID AS gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname) 
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
+        id_profile_params: 2
 
   geoaddress:
         method: gdb2sql
