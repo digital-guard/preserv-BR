@@ -27,6 +27,7 @@ layers:
     file: 1
     sql_select: ['gid', 'textstring AS house_number', 'setor', 'last_edi_1 AS dateModified', 'geom']
     orig_filename: NRO_IMOVEL
+    id_profile_params: 2
 
   nsvia:
     subtype: full
@@ -41,6 +42,7 @@ layers:
           GROUP BY 1 ORDER BY 1 \
         ) t
     orig_filename: Bairros_LC12112_16
+    id_profile_params: 4
 
   via:
     subtype: full
@@ -51,3 +53,4 @@ layers:
                NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
         FROM $(tabname)
     orig_filename: EixosLogradouros
+    id_profile_params: 5
