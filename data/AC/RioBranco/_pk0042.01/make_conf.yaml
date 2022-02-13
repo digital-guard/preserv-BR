@@ -26,19 +26,21 @@ layers:
         file: 1
         sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
         orig_filename: rb_20201116/lotes
-        id_profile_params: 3
+        id_profile_params: 5
   nsvia:
         subtype: full
         method: shp2sql
         file: 2
         sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
         orig_filename: rb_20201111/bairros
+        id_profile_params: 5
   via:
         subtype: full
         method: shp2sql
         file: 3
         sql_view: SELECT gid, Nome ||' '|| tipo AS via_name,  geom FROM $(tabname)
         orig_filename: logradouros
+        id_profile_params: 5
   # Não importei Eixos - planilha, precisa?
   block:
         subtype: full
@@ -46,5 +48,5 @@ layers:
         file: 2
         sql_select: ['gid', 'iq', 'geom']
         orig_filename: rb_20201111/quadras
-        id_profile_params: 2
+        id_profile_params: 5
   # Mão importei Loteamentos - funciona como Bairro
