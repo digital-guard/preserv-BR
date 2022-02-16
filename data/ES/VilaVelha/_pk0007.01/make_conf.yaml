@@ -27,7 +27,6 @@ layers:
         sql_select: ['gid', 'CODGIS', 'LOTE', 'geom'] # tem que trabalhar nos códigos de CODGIS e LOTE
         orig_filename: LOTES/LOTES
         codec: SHP~Latin1
-        id_profile_params: 3
 
   nsvia:
         subtype: full 
