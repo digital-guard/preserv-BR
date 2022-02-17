@@ -53,3 +53,4 @@ layers:
                NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
         FROM $(tabname)
     orig_filename: EixosLogradouros
+    id_profile_params: 4
