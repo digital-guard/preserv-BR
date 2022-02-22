@@ -29,6 +29,7 @@ layers:
         sql_view: |-
                    SELECT gid, NOME || ' ' || TIPO AS via_name, geom FROM $(tabname)
         orig_filename: sistema_viario
+        buffer_type: 2
   nsvia:
         subtype: none
         method: shp2sql

@@ -29,6 +29,7 @@ layers:
            ST_GeomFromText("GEOMETRIA",$(srid)) as geom \
       FROM $(tabname)
     orig_filename: ENDERECO
+    buffer_type: 2
 
   via:
     subtype: full

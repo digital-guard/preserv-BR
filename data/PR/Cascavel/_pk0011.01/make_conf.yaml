@@ -34,6 +34,7 @@ layers:
         sql_view: |-
                     SELECT gid, tipolograd || ' ' || nmlogradou AS via_name, geom  FROM $(tabname)
         orig_filename: Logradouros
+        buffer_type: 2
   parcel:
         subtype: full
         method: shp2sql

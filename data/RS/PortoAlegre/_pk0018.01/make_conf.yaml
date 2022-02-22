@@ -57,3 +57,4 @@ layers:
         FROM $(tabname)
     orig_filename: EixosLogradouros
     id_profile_params: 4
+    buffer_type: 2

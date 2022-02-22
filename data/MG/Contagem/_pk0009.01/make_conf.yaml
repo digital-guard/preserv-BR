@@ -29,6 +29,7 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
         id_profile_params: 2
+        buffer_type: 2
 
   geoaddress:
         method: gdb2sql
@@ -37,6 +38,7 @@ layers:
         orig_filename: OpenStreetMap.gdb
         sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
         orig_tabname: Endereco
+        buffer_type: 2
 
   parcel:
         method: gdb2sql
@@ -45,6 +47,7 @@ layers:
         sql_select:  ['OBJECTID AS gid', 'BAIRRO AS namespace_name', 'geom']
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Lotes
+        buffer_type: 2
 
 # Não importei praça - Carlos 23/05/2021
   genericvia:

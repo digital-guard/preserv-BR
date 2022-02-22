@@ -22,6 +22,7 @@ layers:
     file: 1
     sql_select: ['gid', 'LOGRADOURO AS via_name', 'geom']
     orig_filename: 5486431b-c7fe-aec8-ab9c-00004b294da9
+    buffer_type: 2
 
   geoaddress:
     subtype: none
@@ -30,3 +31,4 @@ layers:
     sql_select: ['gid', 'geom']
     orig_filename: 256b0041-6e29-1649-4b2b-00006944c8fb
     id_profile_params: 2
+    buffer_type: 2
