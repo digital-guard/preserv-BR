@@ -49,7 +49,7 @@ layers:
         buffer_type: 2
 
 # Não importei praça - Carlos 23/05/2021
-  genericvia:
+  block:
         method: gdb2sql
         subtype: full
         file: 1
