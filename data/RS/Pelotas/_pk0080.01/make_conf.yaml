@@ -26,7 +26,7 @@ layers:
     sql_select: ['gid', 'nome_map AS via_name', 'geom']
     orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
 
-  genericvia:
+  parcel:
     subtype: none
     method: shp2sql
     file: 1
