@@ -20,8 +20,8 @@ files:
     name: Bairros
 
 layers:
-  geoaddress: 
-    subtype: none
+  parcel:
+    subtype: full
     method: shp2sql
     file: 1
     sql_view: |-
