@@ -41,7 +41,7 @@ layers:
         FROM ( \
           SELECT upper(trim(nome)) as nome, count(*) n, round(sum(st_area(geom))) area, \
                  max(data_edica) dateModified, ST_UNION(geom) as geom \
-          FROM $(tabname)\
+          FROM $(tabname) \
           GROUP BY 1 ORDER BY 1 \
         ) t
     orig_filename: Bairros_LC12112_16
@@ -54,7 +54,8 @@ layers:
     sql_view: |-
         SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via_name,\
                NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
-        FROM $(tabname)
+        FROM $(tabname) \
+        WHERE CDIDECAT NOT IN ('AR','CN','I','LAGO','RIO') AND NOT(CDIDECAT='LE' AND NMIDELOG ='LIMITE DE PROPRIEDADE')
     orig_filename: EixosLogradouros
     id_profile_params: 4
     buffer_type: 2
