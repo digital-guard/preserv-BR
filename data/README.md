@@ -1,7 +1,8 @@
-# Dados e metados
-Dados de entrada são aqueles fornecidos pelos operadores autorizados.
+# Dados e metadados
 
-Dados de saída (`_out`) são gerados automaticamente pela [*eclusa*](http://git.digital-guard.org/preserv/blob/main/docs/pt/eclusa.md) a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados.
+Metadados de entrada são aqueles fornecidos pelos operadores autorizados.
+
+Metadados de saída (`_out`) são gerados automaticamente pelo [*software* do projeto Preserv](http://git.digital-guard.org/preserv), a partir da leitura dos arquivos no *filesystem* e cruzamento com demais dados. A saída de dados filtrados fica armazenada no [git preservCutGeo-BR2021](https://github.com/digital-guard/preservCutGeo-BR2021) e demais recortes e atualizações.
 
 -----
 
