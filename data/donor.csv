@@ -79,4 +79,4 @@ local_id,scope_osm_id,kx_scope_label,shortName,vat_id,legalName,wikidata_id,url
 78,2697338,BR-RJ-RJO,RJ-RJO,cnpj:42.498.733/0001-48,Prefeitura da Cidade do Rio de Janeiro,57349212,https://prefeitura.rio/
 79,297636,BR-PR-TOO,PR-TOO,cnpj:76.205.806/0001-88,Prefeitura Municipal de Toledo,107398664,https://www.toledo.pr.gov.br/
 80,361756,BR-RS-PLT,RS-PLT,cnpj:87.455.531/0001-57,Prefeitura Municipal de Pelotas,109188,https://www.pelotas.rs.gov.br/
-81,298165,,,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/
+81,298165,BR-SP-GRH,SP-GRH,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/

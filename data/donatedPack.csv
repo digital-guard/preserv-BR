@@ -80,7 +80,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,escopo,
 07701,77,1,001,SC-CCO,igor,2021-06-21,BR-SC-Chapeco,"Eixos, bairros e loteamentos",(self),2021,no,CC0,email,(anexo de email),no,,
 07801,78,1,001,RJ-(RJO),igor,2021-06-22,BR-RJ-RioJaneiro,"Edificações, bairros",(self),2021,no,CC0,site,https://www.data.rio/,no,,
 07901,79,1,001,PR-TOO,igor,2021-06-22,BR-PR-Toledo,"Eixos, quadras, bairros, loteamentos, limite de município e pontos de equipamentos urbanos.",(self),2021,no,CC0,email,(anexo de email),no,,
-08001,80,1,001,RS-PLT,Carlos,2021-11-15,BR-RS-Pelotas,"Lotes, eixos e ponto de endereço",(self),2021,no,CCO,email,(anexo de email),no,done,2021-11-15
+08001,80,1,001,RS-PLT,Carlos,2021-11-15,BR-RS-Pelotas,"Lotes, eixos e ponto de endereço",(self),2021,no,CC0,email,(anexo de email),no,done,2021-11-15
 7802,78,2,1,RJ-RJO,luis,2022-01-28,BR-RJ-RioJaneiro,Endereços,(self),2022,yes,CC-BY,email,(anexo de email),,,
 7803,78,3,1,RJ-RJO,luis,2022-02-11,BR-RJ-RioJaneiro,Eixos,(self),2022,yes,CC-BY,site,https://www.data.rio/,,,
-8101,81,1,1,,luis,,BR-SP-Guarulhos,"Lotes, eixos",,,,,,,,,
+8101,81,1,1,SP-GRH,luis,2022-03-11,BR-SP-Guarulhos,"Lotes, eixos",(self),2022,no,CC0,site;email,https://guarugeo.guarulhos.sp.gov.br/; (anexo de email),no,working-makefile,
