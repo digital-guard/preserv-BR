@@ -45,5 +45,4 @@ layers:
         file: 2
         sql_select: ['gid', 'iq', 'geom']
         orig_filename: rb_20201111/quadras
-        id_profile_params: 6
   # Mão importei Loteamentos - funciona como Bairro
