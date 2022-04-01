@@ -51,6 +51,56 @@ Colunas:
 * `NRPARINI` (int): numeração inicial - lado par.
 * `NRPARFIN` (int): numeração final - lado par.
 
+### Significado de abreviações em CDIDECAT
+
+Significados obtidos no código html do menu em http://cdlweb.procempa.com.br/cdlmapafotos/CDLPesquisaLogradouroAvancada.asp
+
+- AC: ACESSO
+- AL: ALAMEDA
+- **AR: ARROIO**
+- AS: ACESSO SECUNDARIO
+- AV: AVENIDA
+- BC: BECO
+- BV: BELVEDERE
+- CA: CAIS
+- CICL: CICLOVIA
+- **CN: CANAL**
+- DIR: DIRETRIZ
+- ESC: ESCADARIA
+- ESP: ESQUINA
+- EST: ESTACAO
+- ESTR: ESTRADA
+- GAL: GALERIA
+- **I: ILHA**
+- JAR: JARDIM
+- LAGO: LAGO
+- LE: LOGRADOURO ESPECIAL
+- LG: LARGO
+- MER: MERCADO
+- PCA: PRACA
+- PRQ: PARQUE
+- PSG: PASSAGEM
+- PSL: PASSARELA
+- R: RUA
+- RIO: RIO
+- RP: RUA DE PEDESTRES
+- RTL: ROTULA
+- TERM: TERMINAL
+- TRAV: TRAVESSA
+- TRVS: TRAVESSIA
+- TUN: TUNEL
+- VA: VIA ACESSO
+- VDT: VIADUTO
+- VE: VIELA
+- VIA: VIA
+- VP: VIA DE PEDESTRES
+- VTC: VIA TRAFEGO COMPARTILHADO
+
+### Filtragem de hidrografia e limites
+
+CDIDECAT mistura hidrografia, limites municipal e vias. Os valores AR, CN, I, LAGO, RIO e, ainda, `CDIDECAT='LE' AND NMIDELOG ='LIMITE DE PROPRIEDADE'` (que captura alguns limites dos município ao leste) podem ser filtrados.
+
+
 ### Expressões
 Expressão para construir a string do nome do logradouro:
 
