@@ -1,5 +1,5 @@
 pack_id: 61.1
-pkversion: 001
+pkversion: 002
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
