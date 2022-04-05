@@ -22,7 +22,7 @@ layers:
     sql_select: ['gid', 'nm_bairro', 'label AS nsvia_name',  'geom']
     orig_filename: bairro
 
-  genericvia:
+  parcel:
     subtype: full
     method: shp2sql
     file: 2
