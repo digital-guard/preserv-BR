@@ -20,7 +20,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: [['gid', '_logradour', '_numero_25', '_bairro_28 AS ns_name', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
+        sql_select: [['gid', '___logradour', '___numero_25', '___bairro_28 AS ns_name', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
         orig_filename: ['Malha Fundi ria/lotes2020_uso','Malha Fundi ria/Lotes_rurais']
   via:
         subtype: full
