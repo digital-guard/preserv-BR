@@ -23,7 +23,7 @@ layers:
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
     codec: SHP.ZIP
-    sql_select: ['gid']
+    sql_select: ['gid','geom']
 
   parcel:
     subtype: full
@@ -32,4 +32,4 @@ layers:
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
     codec: SHP.ZIP
-    sql_select: ['gid']
+    sql_select: ['gid','geom']
