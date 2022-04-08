@@ -2,7 +2,7 @@ pack_id: 33.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
-codec:descr_encode: srid=31984
+codec:descr_encode: srid=29193
 
 files:
   -
