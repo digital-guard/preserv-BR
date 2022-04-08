@@ -28,13 +28,13 @@ layers:
         file: 2
         sql_select:  ['gid','nomelog AS via_name', 'geom']
         orig_filename: Malha Vi ria/logradouros
-  building: # Verificar no README.md sobre outros arquivos e 
-            # sobre a necessidade de importar esses arquivos
-        subtype: none
-        method: shp2sql
-        file: 1
-        sql_select:  ['gid', 'geom']
-        orig_filename: logradouros
+#  building: # Verificar no README.md sobre outros arquivos e 
+#            # sobre a necessidade de importar esses arquivos
+#        subtype: none
+#        method: shp2sql
+#        file: 1
+#        sql_select:  ['gid', 'geom']
+#        orig_filename: logradouros
   block:
         subtype: none
         method: shp2sql
