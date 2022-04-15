@@ -30,7 +30,7 @@ layers:
     sql_select: ['gid','geom']
 
   parcel:
-    subtype: full
+    subtype: ext
     method: shp2sql
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
