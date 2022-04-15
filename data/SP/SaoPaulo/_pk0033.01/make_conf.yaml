@@ -36,8 +36,7 @@ layers:
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
     codec: SHP.ZIP
-    #sql_select: ['gid','geom']
-    sql_view: SELECT gid, to_char(lo_setor,'fm000') || to_char(lo_quadra,'fm000') || to_char(lo_lote,'fm0000') AS ref, geom FROM $(tabname)
+    sql_select: ['gid','lo_setor || lo_quadra || lo_lote AS ref','geom']
     join_column: ref
 
   cadparcel:
