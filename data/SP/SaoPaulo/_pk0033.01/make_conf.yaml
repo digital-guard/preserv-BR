@@ -13,6 +13,10 @@ files:
     p:    2
     file: bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
     name: Lotes
+  -
+    p:    3
+    file: 75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
+    name: Endereços
 
 layers:
 
@@ -32,4 +36,15 @@ layers:
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
     codec: SHP.ZIP
-    sql_select: ['gid','geom']
+    #sql_select: ['gid','geom']
+    sql_view: SELECT gid, to_char(lo_setor,'fm000') || to_char(lo_quadra,'fm000') || to_char(lo_lote,'fm0000') AS ref, geom FROM $(tabname)
+    join_column: ref
+
+  cadparcel:
+    subtype: cmpl 
+    method: csv2sql
+    file: 3
+    orig_filename: IPTU_2020
+    codec: CSV~Latin9
+    sql_select: ['row_number() OVER () AS gid', 'NUMERO DO CONTRIBUINTE AS ref' ,'NOME DE LOGRADOURO DO IMOVEL AS via_name' ,'NUMERO DO IMOVEL AS house_number','BAIRRO DO IMOVEL AS nsvia_name', 'CEP DO IMOVEL AS postcode']
+    join_column: ref
