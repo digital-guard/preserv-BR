@@ -44,6 +44,6 @@ layers:
     method: csv2sql
     file: 3
     orig_filename: IPTU_2020
-    codec: CSV~Latin9
+    codec: CSV~Latin1semicolon
     sql_select: ['row_number() OVER () AS gid', 'split_part(NUMERO DO CONTRIBUINTE, $$-$$, 1) AS ref' ,'NOME DE LOGRADOURO DO IMOVEL AS via_name' ,'NUMERO DO IMOVEL AS house_number','BAIRRO DO IMOVEL AS nsvia_name', 'CEP DO IMOVEL AS postcode']
     join_column: ref
