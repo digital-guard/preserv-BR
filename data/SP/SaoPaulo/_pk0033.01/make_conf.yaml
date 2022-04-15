@@ -45,5 +45,5 @@ layers:
     file: 3
     orig_filename: IPTU_2020
     codec: CSV~Latin9
-    sql_select: ['row_number() OVER () AS gid', 'NUMERO DO CONTRIBUINTE AS ref' ,'NOME DE LOGRADOURO DO IMOVEL AS via_name' ,'NUMERO DO IMOVEL AS house_number','BAIRRO DO IMOVEL AS nsvia_name', 'CEP DO IMOVEL AS postcode']
+    sql_select: ['row_number() OVER () AS gid', '(regexp_split_to_array(NUMERO DO CONTRIBUINTE, $$-$$))[1] AS ref' ,'NOME DE LOGRADOURO DO IMOVEL AS via_name' ,'NUMERO DO IMOVEL AS house_number','BAIRRO DO IMOVEL AS nsvia_name', 'CEP DO IMOVEL AS postcode']
     join_column: ref
