@@ -6,9 +6,9 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31983
 
 files:
-- file: a6f6dc4a8cd4bd9dcf19104bb409c2164fd07b53818a6e1c28c4aaab94f5c895.zip
-  name: Numero de Porta
-  p: 1
+#- file: a6f6dc4a8cd4bd9dcf19104bb409c2164fd07b53818a6e1c28c4aaab94f5c895.zip
+  #name: Numero de Porta
+  #p: 1
 - file: cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip
   name: Logradouros
   p: 2
@@ -23,14 +23,14 @@ files:
   p: 5
 
 layers:
-  geoaddress:
-        subtupe: full
-        method: shp2sql
-        file: 1
-        orig_filename: NUMERO_DE_PORTA
-        sql_view: |-
-              SELECT row_number() OVER () as gid, NP AS house_number, geom \
-              FROM $(tabname)
+  #geoaddress:
+        #subtupe: full
+        #method: shp2sql
+        #file: 1
+        #orig_filename: NUMERO_DE_PORTA
+        #sql_view: |-
+              #SELECT row_number() OVER () as gid, NP AS house_number, geom \
+              #FROM $(tabname)
 
   via:
         subtupe: full
@@ -65,7 +65,3 @@ layers:
         sql_view: |-
               SELECT row_number() OVER () as gid, geom \
               FROM $(tabname)
-
-
-
-
