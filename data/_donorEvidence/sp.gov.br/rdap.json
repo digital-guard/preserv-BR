@@ -1,0 +1,350 @@
+{
+  "objectClassName": "domain",
+  "handle": "sp.gov.br",
+  "ldhName": "sp.gov.br",
+  "nameservers": [
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "dns1e.sp.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "200.144.6.154"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-10T08:00:47Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-10T08:00:47Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "dns3e.sp.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "200.144.6.92"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-10T08:00:47Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-10T08:00:47Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "dns4e.sp.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "201.55.47.94"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-10T08:00:47Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-10T08:00:47Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "dns2e.sp.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "201.55.16.39"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-10T08:00:47Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-10T08:00:47Z"
+        }
+      ]
+    }
+  ],
+  "secureDNS": {
+    "delegationSigned": false
+  },
+  "links": [
+    {
+      "value": "https://rdap.registro.br/domain/sp.gov.br",
+      "rel": "self",
+      "href": "https://rdap.registro.br/domain/sp.gov.br",
+      "type": "application/rdap+json"
+    }
+  ],
+  "entities": [
+    {
+      "objectClassName": "entity",
+      "handle": "62577929000135",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "org"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "Cia Proc. de Dados do Estado de S Paulo - Prodesp"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "registrant"
+      ],
+      "publicIds": [
+        {
+          "type": "cnpj",
+          "identifier": "62.577.929/0001-35"
+        }
+      ],
+      "entities": [
+        {
+          "objectClassName": "entity",
+          "handle": "GEIPR",
+          "vcardArray": [
+            "vcard",
+            [
+              [
+                "version",
+                {},
+                "text",
+                "4.0"
+              ],
+              [
+                "kind",
+                {},
+                "text",
+                "individual"
+              ],
+              [
+                "fn",
+                {},
+                "text",
+                "Gerencia Internet PRODESP"
+              ],
+              [
+                "email",
+                {},
+                "text",
+                "csirt@sp.gov.br"
+              ],
+              [
+                "lang",
+                {},
+                "language-tag",
+                "pt"
+              ],
+              [
+                "adr",
+                {},
+                "text",
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "BR"
+                ]
+              ]
+            ]
+          ],
+          "roles": [
+            "administrative"
+          ],
+          "events": [
+            {
+              "eventAction": "registration",
+              "eventDate": "2008-10-14T14:10:11Z"
+            },
+            {
+              "eventAction": "last changed",
+              "eventDate": "2020-04-29T16:47:49Z"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "1998-03-13T12:00:00Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2011-10-05T13:43:34Z"
+        }
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/entity/62577929000135",
+          "rel": "self",
+          "href": "https://rdap.registro.br/entity/62577929000135",
+          "type": "application/rdap+json"
+        }
+      ],
+      "legalRepresentative": "CSIRT-Grupo de Resposta à Incidentes"
+    },
+    {
+      "objectClassName": "entity",
+      "handle": "GEIPR",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "individual"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "Gerencia Internet PRODESP"
+          ],
+          [
+            "email",
+            {},
+            "text",
+            "csirt@sp.gov.br"
+          ],
+          [
+            "lang",
+            {},
+            "language-tag",
+            "pt"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "technical"
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "2008-10-14T14:10:11Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2020-04-29T16:47:49Z"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "1995-07-06T12:00:00Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2020-11-06T03:20:15Z"
+    }
+  ],
+  "status": [
+    "active"
+  ],
+  "notices": [
+    {
+      "title": "Terms of Use",
+      "description": [
+        "Copyright (c) NIC.br",
+        "The use of the data is only permitted as described in",
+        "full by the terms of use, being prohibited its ",
+        "distribution, commercialization or reproduction, in ",
+        "particular, to use it for advertising or any similar ",
+        "purpose."
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/domain/sp.gov.br",
+          "rel": "alternate",
+          "href": "https://registro.br/termo/en.html",
+          "type": "text/html"
+        }
+      ]
+    }
+  ],
+  "rdapConformance": [
+    "rdap_level_0",
+    "nicbr_level_0"
+  ],
+  "port43": "whois.nic.br"
+}

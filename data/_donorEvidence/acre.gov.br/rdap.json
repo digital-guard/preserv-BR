@@ -1,0 +1,319 @@
+{
+  "objectClassName": "domain",
+  "handle": "acre.gov.br",
+  "ldhName": "acre.gov.br",
+  "nameservers": [
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns1.ac.gov.br",
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T08:04:05Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T08:04:05Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns2.ac.gov.br",
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T08:04:05Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T08:04:05Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns3.riobranco.ac.gov.br",
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T08:04:05Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T08:04:05Z"
+        }
+      ]
+    }
+  ],
+  "secureDNS": {
+    "delegationSigned": false
+  },
+  "links": [
+    {
+      "value": "https://rdap.registro.br/domain/acre.gov.br",
+      "rel": "self",
+      "href": "https://rdap.registro.br/domain/acre.gov.br",
+      "type": "application/rdap+json"
+    },
+    {
+      "value": "https://rdap.registro.br/domain/acre.gov.br",
+      "rel": "archives",
+      "href": "https://rdap.registro.br/domain/acre.gov.br?ticket=6434360",
+      "type": "application/rdap+json"
+    }
+  ],
+  "entities": [
+    {
+      "objectClassName": "entity",
+      "handle": "16958425000148",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "org"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "SECRETARIA DE ESTADO DE INDUSTRIA, CIENCIA E TECNO"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "registrant"
+      ],
+      "publicIds": [
+        {
+          "type": "cnpj",
+          "identifier": "16.958.425/0001-48"
+        }
+      ],
+      "entities": [
+        {
+          "objectClassName": "entity",
+          "handle": "ALQSI",
+          "vcardArray": [
+            "vcard",
+            [
+              [
+                "version",
+                {},
+                "text",
+                "4.0"
+              ],
+              [
+                "kind",
+                {},
+                "text",
+                "individual"
+              ],
+              [
+                "fn",
+                {},
+                "text",
+                "ALAN QUEIROZ DA SILVA"
+              ],
+              [
+                "email",
+                {},
+                "text",
+                "alanqsilva@gmail.com"
+              ],
+              [
+                "lang",
+                {},
+                "language-tag",
+                "pt"
+              ],
+              [
+                "adr",
+                {},
+                "text",
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "BR"
+                ]
+              ]
+            ]
+          ],
+          "roles": [
+            "administrative"
+          ],
+          "events": [
+            {
+              "eventAction": "registration",
+              "eventDate": "2007-11-22T19:17:30Z"
+            },
+            {
+              "eventAction": "last changed",
+              "eventDate": "2021-04-01T17:16:24Z"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "2021-10-04T17:31:22Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2021-10-04T17:31:22Z"
+        }
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/entity/16958425000148",
+          "rel": "self",
+          "href": "https://rdap.registro.br/entity/16958425000148",
+          "type": "application/rdap+json"
+        }
+      ],
+      "legalRepresentative": "Anderson Abreu de Lima"
+    },
+    {
+      "objectClassName": "entity",
+      "handle": "ALQSI",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "individual"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "ALAN QUEIROZ DA SILVA"
+          ],
+          [
+            "email",
+            {},
+            "text",
+            "alanqsilva@gmail.com"
+          ],
+          [
+            "lang",
+            {},
+            "language-tag",
+            "pt"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "technical"
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "2007-11-22T19:17:30Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2021-04-01T17:16:24Z"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "2010-01-26T13:24:19Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2021-10-04T17:31:22Z"
+    }
+  ],
+  "status": [
+    "active"
+  ],
+  "notices": [
+    {
+      "title": "Terms of Use",
+      "description": [
+        "Copyright (c) NIC.br",
+        "The use of the data is only permitted as described in",
+        "full by the terms of use, being prohibited its ",
+        "distribution, commercialization or reproduction, in ",
+        "particular, to use it for advertising or any similar ",
+        "purpose."
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/domain/acre.gov.br",
+          "rel": "alternate",
+          "href": "https://registro.br/termo/en.html",
+          "type": "text/html"
+        }
+      ]
+    }
+  ],
+  "rdapConformance": [
+    "rdap_level_0",
+    "nicbr_level_0"
+  ],
+  "port43": "whois.nic.br"
+}
