@@ -17,8 +17,30 @@ files:
     p:    3
     file: 75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
     name: Endereços
+  -
+    p:    4
+    file: ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
+    name: Eixos
+  -
+    p:    5
+    file: 0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
+    name: Quadras
 
 layers:
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    orig_filename: SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl
+    sql_view: SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)
+
+  block:
+    subtype: none
+    method: shp2sql
+    file: 5
+    orig_filename: SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon
+    sql_select: ['gid','qe_id AS ref', 'geom']
 
   building:
     subtype: none
