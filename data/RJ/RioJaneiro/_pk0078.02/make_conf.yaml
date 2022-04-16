@@ -24,7 +24,7 @@ files:
 
 layers:
   #geoaddress:
-        #subtupe: full
+        #subtype: full
         #method: shp2sql
         #file: 1
         #orig_filename: NUMERO_DE_PORTA
@@ -33,7 +33,7 @@ layers:
               #FROM $(tabname)
 
   via:
-        subtupe: full
+        subtype: full
         method: shp2sql
         file: 2
         orig_filename: Logradouros
@@ -41,7 +41,7 @@ layers:
               SELECT row_number() OVER () as gid, via_type || ' ' || COMPLETO AS via_name, geom \
               FROM $(tabname)
   parcel:
-        subtupe: none
+        subtype: none
         method: shp2sql
         file: 3
         orig_filename: Lotes_(2013)
@@ -50,7 +50,7 @@ layers:
               FROM $(tabname)
 
   nsvia:
-        subtupe: full
+        subtype: full
         method: shp2sql
         file: 4
         orig_filename: Lotes_(2013)
@@ -58,7 +58,7 @@ layers:
               SELECT row_number() OVER () as gid, NOME as nsvia_name, geom \
               FROM $(tabname)
   block:
-        subtupe: none
+        subtype: none
         method: shp2sql
         file: 5
         orig_filename: Quadras_(2013)
