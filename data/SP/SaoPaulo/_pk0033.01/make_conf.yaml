@@ -2,7 +2,7 @@ pack_id: 33.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
-codec:descr_encode: srid=29193
+codec:descr_encode: srid=31983
 
 files:
   -
@@ -48,7 +48,7 @@ layers:
     file: 1
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
-    codec: SHP.ZIP
+    codec: SHP.ZIP;charset=ISO-8859-1
     sql_select: ['gid','geom']
 
   parcel:
@@ -57,7 +57,7 @@ layers:
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
-    codec: SHP.ZIP
+    codec: SHP.ZIP;charset=ISO-8859-1
     sql_select: ['gid','lo_setor || lo_quadra || lo_lote AS ref','geom']
     join_column: ref
 
