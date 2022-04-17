@@ -1,5 +1,0 @@
-file_prefix,name,description
-domainWhoIs_screen,Domain WHOIS Screenshot,A print-screen capture of an official WHOIS of a domain
-whoIs_url,Domain name WHOIS URL,The URL of an official Whois
-whoIs_savedUrl,...,The URL in a Web_archiving service
-...
