@@ -1,5 +1,5 @@
 pack_id: 61.1
-pkversion: 001
+pkversion: 002
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
@@ -8,7 +8,7 @@ codec:descr_encode: srid=29192
 files:
   -
     p:    1
-    file: 39cfe0ef43045a9bfaf872ffc648b8294151f73d431607220141cd248b45e260.zip
+    file: 52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
     name: Todos os shapefiles
 
 layers:
@@ -17,8 +17,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'endereço AS via_name', 'geom']
-    orig_filename: Sistema Vi rio
-    7z_opts: -sccUTF-8 -scsWIN
+    orig_filename: Sistema Viario
 
   nsvia:
     subtype: full

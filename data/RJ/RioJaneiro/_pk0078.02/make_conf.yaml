@@ -1,0 +1,67 @@
+pack_id: 78.2
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=31983
+
+files:
+- file: ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.zip
+  name: Numero de Porta
+  p: 1
+- file: cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip
+  name: Logradouros
+  p: 2
+- file: c2febb1aa33dcf75c3a23f36c6c535e7223f219e1b71fa1121cf278623961a01.zip
+  name: Lotes
+  p: 3
+- file: ea44a4e799c709b77e0de02ca98c67895246bccc4634940c77e5e82ce1b61f31.zip
+  name: Bairros
+  p: 4
+- file: 6daa65d15bbda6b9d9959daf8d43c2063ed0410b643870c24d22af4fd149032d.zip
+  name: Quadras
+  p: 5
+
+layers:
+  geoaddress:
+        subtype: full
+        method: shp2sql
+        file: 1
+        orig_filename: NUMERO_DE_PORTA
+        sql_view: |-
+              SELECT row_number() OVER () as gid, NP AS house_number, geom \
+              FROM $(tabname)
+
+  via:
+        subtype: full
+        method: shp2sql
+        file: 2
+        orig_filename: Logradouros
+        sql_view: |-
+              SELECT row_number() OVER () as gid, via_type || ' ' || COMPLETO AS via_name, geom \
+              FROM $(tabname)
+  parcel:
+        subtype: none
+        method: shp2sql
+        file: 3
+        orig_filename: Lotes_(2013)
+        sql_view: |-
+              SELECT row_number() OVER () as gid, geom \
+              FROM $(tabname)
+
+  nsvia:
+        subtype: full
+        method: shp2sql
+        file: 4
+        orig_filename: Lotes_(2013)
+        sql_view: |-
+              SELECT row_number() OVER () as gid, NOME as nsvia_name, geom \
+              FROM $(tabname)
+  block:
+        subtype: none
+        method: shp2sql
+        file: 5
+        orig_filename: Quadras_(2013)
+        sql_view: |-
+              SELECT row_number() OVER () as gid, geom \
+              FROM $(tabname)

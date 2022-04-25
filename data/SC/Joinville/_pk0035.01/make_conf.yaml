@@ -20,30 +20,24 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', '_logradour', '_numero_25', '_bairro_28 AS ns_name', 'uso', 'geom']
-        orig_filename: lotes2020_uso
-  parcel:
-        subtype: none
-        method: shp2sql
-        file: 1
-        sql_select: ['gid', 'iq_lote', 'geom']
-        orig_filename: Lotes_rurais
+        sql_select: [['gid', '___logradour AS via_name', '___numero_25 AS house_number', '___bairro_28 AS ns_name', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
+        orig_filename: ['Malha Fundi ria/lotes2020_uso','Malha Fundi ria/Lotes_rurais']
   via:
         subtype: full
         method: shp2sql
         file: 2
         sql_select:  ['gid','nomelog AS via_name', 'geom']
-        orig_filename: logradouros
-  building: # Verificar no README.md sobre outros arquivos e 
-            # sobre a necessidade de importar esses arquivos
-        subtype: none
-        method: shp2sql
-        file: 1
-        sql_select:  ['gid', 'geom']
-        orig_filename: logradouros
+        orig_filename: Malha Vi ria/logradouros
+#  building: # Verificar no README.md sobre outros arquivos e 
+#            # sobre a necessidade de importar esses arquivos
+#        subtype: none
+#        method: shp2sql
+#        file: 1
+#        sql_select:  ['gid', 'geom']
+#        orig_filename: logradouros
   block:
         subtype: none
         method: shp2sql
         file: 1
         sql_select: ['gid','geom']
-        orig_filename: Quadras
+        orig_filename: Malha Fundi ria/Quadras

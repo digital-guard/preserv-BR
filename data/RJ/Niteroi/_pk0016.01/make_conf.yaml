@@ -31,7 +31,6 @@ layers:
         orig_filename: Lotes
         sql_select: ['gid', 'tx_insct', 'geom']
         join_column: tx_insct
-        id_profile_params: 7
   via:
         subtype: full
         method: shp2sql

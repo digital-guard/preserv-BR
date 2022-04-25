@@ -1,0 +1,350 @@
+{
+  "objectClassName": "domain",
+  "handle": "ibge.gov.br",
+  "ldhName": "ibge.gov.br",
+  "nameservers": [
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns15.ibge.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "170.84.41.78"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T21:54:27Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T21:54:27Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns16.ibge.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "170.84.41.81"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T21:54:27Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T21:54:27Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns10.ibge.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "170.84.43.196"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T21:54:27Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T21:54:27Z"
+        }
+      ]
+    },
+    {
+      "objectClassName": "nameserver",
+      "ldhName": "ns17.ibge.gov.br",
+      "ipAddresses": {
+        "v4": [
+          "170.84.43.198"
+        ]
+      },
+      "events": [
+        {
+          "eventAction": "delegation check",
+          "eventDate": "2022-04-14T21:54:27Z",
+          "status": [
+            "ns aa"
+          ]
+        },
+        {
+          "eventAction": "last correct delegation check",
+          "eventDate": "2022-04-14T21:54:27Z"
+        }
+      ]
+    }
+  ],
+  "secureDNS": {
+    "delegationSigned": false
+  },
+  "links": [
+    {
+      "value": "https://rdap.registro.br/domain/ibge.gov.br",
+      "rel": "self",
+      "href": "https://rdap.registro.br/domain/ibge.gov.br",
+      "type": "application/rdap+json"
+    }
+  ],
+  "entities": [
+    {
+      "objectClassName": "entity",
+      "handle": "33787094000140",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "org"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "FUNDACAO INST BRAS DE GEOGRAFIA E ESTATISTICA IBGE"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "registrant"
+      ],
+      "publicIds": [
+        {
+          "type": "cnpj",
+          "identifier": "33.787.094/0001-40"
+        }
+      ],
+      "entities": [
+        {
+          "objectClassName": "entity",
+          "handle": "ECO",
+          "vcardArray": [
+            "vcard",
+            [
+              [
+                "version",
+                {},
+                "text",
+                "4.0"
+              ],
+              [
+                "kind",
+                {},
+                "text",
+                "individual"
+              ],
+              [
+                "fn",
+                {},
+                "text",
+                "José Luiz Thomaselli Nogueira"
+              ],
+              [
+                "email",
+                {},
+                "text",
+                "SICIBGE@ibge.gov.br"
+              ],
+              [
+                "lang",
+                {},
+                "language-tag",
+                "pt"
+              ],
+              [
+                "adr",
+                {},
+                "text",
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "BR"
+                ]
+              ]
+            ]
+          ],
+          "roles": [
+            "administrative"
+          ],
+          "events": [
+            {
+              "eventAction": "registration",
+              "eventDate": "1998-01-21T12:00:00Z"
+            },
+            {
+              "eventAction": "last changed",
+              "eventDate": "2021-01-11T13:07:46Z"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "1998-01-27T12:00:00Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2021-01-11T13:05:43Z"
+        }
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/entity/33787094000140",
+          "rel": "self",
+          "href": "https://rdap.registro.br/entity/33787094000140",
+          "type": "application/rdap+json"
+        }
+      ],
+      "legalRepresentative": "Jose Luiz Thomaselli Nogueira"
+    },
+    {
+      "objectClassName": "entity",
+      "handle": "ECO",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "kind",
+            {},
+            "text",
+            "individual"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "José Luiz Thomaselli Nogueira"
+          ],
+          [
+            "email",
+            {},
+            "text",
+            "SICIBGE@ibge.gov.br"
+          ],
+          [
+            "lang",
+            {},
+            "language-tag",
+            "pt"
+          ],
+          [
+            "adr",
+            {},
+            "text",
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "BR"
+            ]
+          ]
+        ]
+      ],
+      "roles": [
+        "technical"
+      ],
+      "events": [
+        {
+          "eventAction": "registration",
+          "eventDate": "1998-01-21T12:00:00Z"
+        },
+        {
+          "eventAction": "last changed",
+          "eventDate": "2021-01-11T13:07:46Z"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "1996-01-01T12:00:00Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2022-04-14T21:54:27Z"
+    }
+  ],
+  "status": [
+    "active"
+  ],
+  "notices": [
+    {
+      "title": "Terms of Use",
+      "description": [
+        "Copyright (c) NIC.br",
+        "The use of the data is only permitted as described in",
+        "full by the terms of use, being prohibited its ",
+        "distribution, commercialization or reproduction, in ",
+        "particular, to use it for advertising or any similar ",
+        "purpose."
+      ],
+      "links": [
+        {
+          "value": "https://rdap.registro.br/domain/ibge.gov.br",
+          "rel": "alternate",
+          "href": "https://registro.br/termo/en.html",
+          "type": "text/html"
+        }
+      ]
+    }
+  ],
+  "rdapConformance": [
+    "rdap_level_0",
+    "nicbr_level_0"
+  ],
+  "port43": "whois.nic.br"
+}

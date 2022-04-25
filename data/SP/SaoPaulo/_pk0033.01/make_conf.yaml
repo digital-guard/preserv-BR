@@ -2,7 +2,7 @@ pack_id: 33.1
 pkversion: 001
 schemaId_input:    ref027a
 schemaId_template: ref027a
-codec:descr_encode: srid=31984
+codec:descr_encode: srid=31983
 
 files:
   -
@@ -13,8 +13,34 @@ files:
     p:    2
     file: bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
     name: Lotes
+  -
+    p:    3
+    file: 75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
+    name: Endereços
+  -
+    p:    4
+    file: ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
+    name: Eixos
+  -
+    p:    5
+    file: 0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
+    name: Quadras
 
 layers:
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    orig_filename: SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl
+    sql_view: SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)
+
+  block:
+    subtype: none
+    method: shp2sql
+    file: 5
+    orig_filename: SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon
+    sql_select: ['gid','qe_id AS ref', 'geom']
 
   building:
     subtype: none
@@ -22,14 +48,24 @@ layers:
     file: 1
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
-    codec: SHP.ZIP
-    sql_select: ['gid']
+    codec: SHP.ZIP;charset=ISO-8859-1
+    sql_select: ['gid','geom']
 
   parcel:
-    subtype: full
+    subtype: ext
     method: shp2sql
     file: 2
     orig_filename: SIRGAS_SHP_LOTES
     orig_subfilename: SIRGAS_SHP_LOTES
-    codec: SHP.ZIP
-    sql_select: ['gid']
+    codec: SHP.ZIP;charset=ISO-8859-1
+    sql_select: ['gid','lo_setor || lo_quadra || lo_lote AS ref','geom']
+    join_column: ref
+
+  cadparcel:
+    subtype: cmpl 
+    method: csv2sql
+    file: 3
+    orig_filename: IPTU_2020
+    codec: CSV~Latin1semicolon
+    sql_view: SELECT row_number() OVER () AS gid, split_part("NUMERO DO CONTRIBUINTE", '-', 1) AS ref, "NOME DE LOGRADOURO DO IMOVEL" AS via_name, "NUMERO DO IMOVEL" AS house_number, "BAIRRO DO IMOVEL" AS nsvia_name, "CEP DO IMOVEL" AS postcode FROM $(tabname)
+    join_column: ref

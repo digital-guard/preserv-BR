@@ -30,5 +30,4 @@ layers:
     file: 2
     sql_select: ['gid', 'geom']
     orig_filename: 256b0041-6e29-1649-4b2b-00006944c8fb
-    id_profile_params: 2
     buffer_type: 2
