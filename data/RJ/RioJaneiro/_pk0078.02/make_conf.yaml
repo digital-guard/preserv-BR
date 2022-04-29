@@ -34,7 +34,7 @@ layers:
 
   via:
         subtype: full
-        method: shp2sql
+        method: geojson2sql
         file: 2
         orig_filename: Logradouros
         sql_view: SELECT properties->'COMPLETO' AS via_name, properties->'COD_TRECHO' AS ref, jgeom AS geom FROM $(tabname)
