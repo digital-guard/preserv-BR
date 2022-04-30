@@ -6,7 +6,7 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31983
 
 files:
-- file: ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.zip
+- file: ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar
   name: Numero de Porta
   p: 1
 - file: cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip
@@ -34,34 +34,34 @@ layers:
 
   via:
         subtype: full
-        method: shp2sql
+        method: geojson2sql
         file: 2
         orig_filename: Logradouros
-        sql_view: |-
-              SELECT row_number() OVER () as gid, via_type || ' ' || COMPLETO AS via_name, geom \
-              FROM $(tabname)
+        sql_view: SELECT properties->'COMPLETO' AS via_name, properties->'COD_TRECHO' AS ref, jgeom AS geom FROM $(tabname)
+
   parcel:
-        subtype: none
-        method: shp2sql
+        subtype: full
+        method: geojson2sql
         file: 3
         orig_filename: Lotes_(2013)
         sql_view: |-
-              SELECT row_number() OVER () as gid, geom \
+              SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via_name, \
+              properties->'cod_np' AS house_number, geometry AS geom \
               FROM $(tabname)
 
   nsvia:
         subtype: full
-        method: shp2sql
+        method: geojson2sql
         file: 4
-        orig_filename: Lotes_(2013)
+        orig_filename: Limite_de_Bairros
         sql_view: |-
-              SELECT row_number() OVER () as gid, NOME as nsvia_name, geom \
+              SELECT row_number() OVER () as gid, properties->'NOME' as nsvia_name, jgeom AS geom \
               FROM $(tabname)
   block:
         subtype: none
-        method: shp2sql
+        method: geojson2sql
         file: 5
         orig_filename: Quadras_(2013)
         sql_view: |-
-              SELECT row_number() OVER () as gid, geom \
+              SELECT row_number() OVER () as gid, jgeom AS geom \
               FROM $(tabname)
