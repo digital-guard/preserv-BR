@@ -1,0 +1,42 @@
+pack_id: 81.1
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31983
+
+files:
+  -
+    p:    1
+    file: d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip
+    name: Bairros
+  -
+    p:    2
+    file: 47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip
+    name: Logradouros
+  -
+    p:    3
+    file: 1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip
+    name: Endereços
+
+layers:
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'bairro as nsvia_name', 'geom']
+    orig_filename: pg_cartografia_bairros
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'Logradouro as via_name', 'geom']
+    orig_filename: pg_cartografia_logradouros
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'Logradouro as via_name', 'geom']
+    orig_filename: pg_renumeracoes
