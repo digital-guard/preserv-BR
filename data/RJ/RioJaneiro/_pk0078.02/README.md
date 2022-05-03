@@ -1,125 +1,91 @@
 # Geral
 
-## Tareafas
-- Criar por software o campo via_name na camada geoaddress
-
-
 ## geoaddress
 
-**Arquivo `NUMERO_DE_PORTA.shp`**
+Abrir NUMERO_DE_PORTA.shp
 
-`SRID`: 31983
+Copiar para o diretório alvo
 
-- `gid`: COD_NP
+SRID: 31983
 
-- `via_name`: (buscar via_name através de join da coluna **COD_TRECHO** com via)
+row_number(): gid
 
-- `house_number`: NP
+NP: house_number
 
-**Outros comentários:**
+geom: geom
 
-- Possui 5 `gid` duplicados e algumas geometrias inválidas (pontos vazios).
+**Obs:**
 
-- COMPL_NP: complemento do endereço.
+COMPLETO: via_name (Obs: buscar no dataset via, através de join do campo COD_TRECHO)
 
-- COD_QUADRA: código quadra.
 
-- COD_FACE: código face de quadra.
-
-- COD_LOTE: código lote.
-
-- COD_TRECHO: código trecho do logradouro.
-
-- CEP: CEP.
 
 ## via
 
-**Arquivo `Logradouros.geojson`**
+Abrir Logradouros.geojson
 
-`SRID`: 4326
+Copiar para o diretório alvo
 
-- `gid`: COD_TRECHO
+SRID: 4326
 
-- `via_name`: COMPLETO
+row_number(): gid
 
-- `via_type`: TIPO_LOGRA_EXT
+COMPLETO: via_name
 
-- `name`: (é possivel construir a partir de `via_name` e `via_type`, **NOME_PARCIAL** está incompleto)
+COD_TRECHO: ref
 
-**Outros comentários**
+jgeom: geom
 
-- `gid` possui muitos valores duplicados.
 
-- NOME_PARCIAL (`name`) está incompleto, mas é possível construir a partir de `via_name` (Ex: Estrada da Vendinha vs Estrada Vendinha).
-
-- Cod_Bairro: código do bairro.
-
-- Nome: nome do bairro.
-
-- HIERARQUIA: se é arterial, coletora etc.
-
-- SIT_TRECHO: Ativo ou NA, ou seja, indica trechos que não devem ser priorizados nas rotas.
-
-## genericvia
-
-**Arquivo ``**
-
-SRID: 
-
-- `gid`:
-
-- `via_name`:
-
-- `via_type`:
-
-- `name`:
-
-## building
-
-**Arquivo ``**
-
-SRID: 
-
-- `gid`:
-
-- `via_name`:
-
-- `house_number`:
 
 ## parcel
 
-**Arquivo `Lotes_(2013).geojson`**
+Abrir Lotes_(2013).geojson
+
+Copiar para o diretório alvo
 
 SRID: 4326
 
-- `gid`: cod_lote ou cod_lote + cod_quadra
+row_number(): gid
 
-- `via_name`: (cod_trecho)
+cod_trecho: via_name
 
-- `house_number`: (cod_np)
+cod_np: house_number
 
-**Observações**
+geometry: geom
 
-- Possui muitos gid duplicados, mesmo utilizando cod_lot + cod_quadra. Desconfio que cod_lote deveria ser um id único.
 
-## nsvia
-
-**Arquivo `Limite_de_Bairros.geojson`**
-
-SRID: 4326
-
-- `gid`: CODBAIRRO_LONG
-
-- `name`: NOME
 
 ## block
 
-**Arquivo `Quadras_(2013).geojson`**
+Abrir Quadras_(2013).geojson
+
+Copiar para o diretório alvo
 
 SRID: 4326
 
-- `gid`: COD_QUADRA
+row_number(): gid
 
-**Observações**
+jgeom: geom
 
-- Possui 767 gid duplicados.
+
+
+## nsvia
+
+Abrir Limite_de_Bairros.geojson
+
+Copiar para o diretório alvo
+
+SRID: 4326
+
+CODBAIRRO_LONG: gid
+
+NOME: nsvia_name
+
+jgeom: geom
+
+
+
+## Outros arquivos:
+
+- Edificacoes.geojson

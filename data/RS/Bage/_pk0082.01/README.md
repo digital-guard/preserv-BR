@@ -12,11 +12,11 @@ Copiar para o diretório alvo
 
 SRID: 31981
 
-id = gid
+id: gid
 
-logradouro = name
+logradouro: via_name
 
-geometry = geom
+geometry: geom
 
 
 
@@ -28,13 +28,13 @@ Copiar para o diretório alvo
 
 SRID: 31981
 
-id = gid
+id: gid
 
-numero = house_number (numero de porta)
+numero: house_number (numero de porta)
 
-logradouro = via_name (nome do logradouro)
+logradouro: via_name (nome do logradouro)
 
-geometry = geom
+geometry: geom
 
 ----
 
@@ -44,9 +44,11 @@ Copiar para o diretório alvo
 
 SRID: 4326
 
-id = gid
+id: gid
 
-geometry = geom
+geometry: geom
+
+----
 
 Obs: necessário join entre lotes urbanos e rurais
 
@@ -77,17 +79,18 @@ data %>%
 
 
 
-## **BLOCK** (quarteirões)
+## BLOCK (quarteirões)
 
-Abrir `QUARTEIRAO.geojson`
+Abrir QUARTEIRAO.geojson
 
 Copiar para o diretório alvo
 
 SRID: 31981
 
-id = gid
+id: gid
 
-geometry = geom
+geometry: geom
+
 
 
 ## Outros arquivos:
@@ -131,9 +134,3 @@ geometry = geom
 - REGIOES_CENSITARIAS.geojson
 
 
-
-# Evidências de teste
-
-Teste no QGIS:
-
-![](qgis.png)
