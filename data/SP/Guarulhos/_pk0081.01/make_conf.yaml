@@ -38,5 +38,5 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Logradouro as via_name', 'geom']
+    sql_select: ['gid', 'numnovo AS house_number', 'geom']
     orig_filename: pg_renumeracoes
