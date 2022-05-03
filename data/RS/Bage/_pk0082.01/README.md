@@ -2,35 +2,41 @@
 
 Baixamos os dados que estão disponíveis no [GitHub](https://github.com/GGC-Bage/GeoDataBase) em 2022-04-25. Todas as camadas estão no formato `geojson`.
 
+
+
+## VIA (logradouros)
+
+Abrir LOGRADOUROS.geojson
+Copiar para o diretório alvo
 SRID: 31981
 
-
-
-## **VIA** (logradouros)
-
-1. Abrir `LOGRADOUROS.geojson`
-
-2. Copiar para o diretório alvo
-
-- `id` = gid (id)
-
-- `logradouro` = name
+id = gid
+logradouro = name
+geometry = geom
 
 
 
-## **PARCEL** (lotes)
+## PARCEL (lotes)
 
-1. Abrir `LOTES_URBANOS.geojson`
+Abrir LOTES_URBANOS.geojson
+Copiar para o diretório alvo
+SRID: 31981
 
-2. Copiar para o diretório alvo
+id = gid
+numero = house_number (numero de porta)
+logradouro = via_name (nome do logradouro)
+geometry = geom
 
-- `id` = gid
+Abrir LOTES_RURAIS.geojson
+Copiar para o diretório alvo
+SRID: 4326
 
-- `numero` = house_number (numero de porta)
+id = gid
+geometry = geom
 
-- `logradouro` = via_name (nome do logradouro)
+Obs: necessário join entre lotes urbanos e rurais
 
-**Atenção:** o nome do logradouro no arquivo de lotes não é igual ao nome do logradouro no arquivo de vias. Seguindo os passos abaixo é possível encontrar correspondência de 89%. Enquanto isso, questionei se eles têm a intenção de atualizar os nomes no arquivo de lotes.
+Obs2: o nome do logradouro no arquivo de lotes não é igual ao nome do logradouro no arquivo de vias. Seguindo os passos abaixo é possível encontrar correspondência de 89%. Enquanto isso, questionei se eles têm a intenção de atualizar os nomes no arquivo de lotes.
 
 1. Remover os primeiros três caracteres
 2. Separar a string em duas, utilizando a vírgula como separador
@@ -56,14 +62,17 @@ data %>%
 
 ## **BLOCK** (quarteirões)
 
-1. Abrir `QUARTEIRAO.geojson`
+Abrir `QUARTEIRAO.geojson`
+Copiar para o diretório alvo
+SRID: 31981
 
-2. Copiar para o diretório alvo
-
-- `id` = gid
+id = gid
+geometry = geom
 
 
 
 # Evidências de teste
+
 Teste no QGIS:
+
 ![](qgis.PNG)
