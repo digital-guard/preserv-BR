@@ -4,7 +4,7 @@ Baixamos os dados que estão disponíveis no [GitHub](https://github.com/GGC-Bag
 
 
 
-## VIA (logradouros)
+## via
 
 Abrir LOGRADOUROS.geojson
 
@@ -20,7 +20,7 @@ geometry: geom
 
 
 
-## PARCEL (lotes)
+## parcel
 
 Abrir LOTES_URBANOS.geojson
 
@@ -50,9 +50,9 @@ geometry: geom
 
 ----
 
-Obs: necessário join entre lotes urbanos e rurais
+**Obs:** necessário join entre lotes urbanos e rurais
 
-Obs2: o nome do logradouro no arquivo de lotes não é igual ao nome do logradouro no arquivo de vias. Seguindo os passos abaixo é possível encontrar correspondência de 89%. Enquanto isso, questionei se eles têm a intenção de atualizar os nomes no arquivo de lotes.
+**Obs2:** o nome do logradouro no arquivo de lotes não é igual ao nome do logradouro no arquivo de vias. Seguindo os passos abaixo é possível encontrar correspondência de 89%.
 
 1. Remover os primeiros três caracteres
 
@@ -79,7 +79,7 @@ data %>%
 
 
 
-## BLOCK (quarteirões)
+## block
 
 Abrir QUARTEIRAO.geojson
 

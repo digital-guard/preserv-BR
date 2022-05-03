@@ -1,61 +1,65 @@
 # Geral
 
-Recebemos os dados por e-mail em 2022-03-15. Os dados também estão disponíveis para download no portal [Guarugeo](https://guarugeo.guarulhos.sp.gov.br/). Todas as camadas estão no formato `shapefile`, cada uma armazenada em um arquivo `WinRAR ZIP`.
+Recebemos os dados por e-mail em 2022-03-15. Os dados também estão disponíveis para download no portal [Guarugeo](https://guarugeo.guarulhos.sp.gov.br/). Todas as camadas estão no formato `shapefile`.
 
 SRID: 31983
 
-## Bairros (nsvia)
-
-1. Abrir `pg_cartografia_bairros.zip`
-
-2. Selecionar todos os arquivos
-
-3. Copiar para o diretório alvo
-
-### Campos relevantes:
-
-- `id_bairro` = id do bairro
-
-- `bairro` = nome do bairro
 
 
+## nsvia
 
-## Logradouros (via)
+Abrir pg_cartografia_bairros.zip
 
-1. Abrir `pg_cartografia_logradouros.zip`
+Selecionar todos os arquivos
 
-2. Selecionar todos os arquivos
+Copiar para o diretório alvo
 
-3. Copiar para o diretório alvo
+gid: gid
 
-### Campos relevantes:
+bairro: nsvia_name
 
-- `cod_log` = id da via
-
-- `id_bairro` = id do bairro
-
-- `Logradouro` = nome do logradouro (via_name)
-
-- `gid` = identificador único do logradouro
-
-Obs: `cod_log` não é um id único, ele contempla vários segmentos de um mesmo logradouro. Ele é necessário para fazer join com o geoaddress. Existe um campo de id único chamado `gid`.
+geom: geom
 
 
 
-## Endereços (geoaddress)
+## via
 
-1. Abrir `pg_renumeracoes.zip`
+Abrir pg_cartografia_logradouros.zip
 
-2. Selecionar todos os arquivos
+Selecionar todos os arquivos
 
-3. Copiar para o diretório alvo
+Copiar para o diretório alvo
 
-### Campos relevantes:
+gid: gid
 
-- `numnovo` = numero de porta (house_number)
+Logradouro: via_name
 
-- `cod_log` = id da via
-
-- `gid` = identificador único do endereço
+geom: geom
 
 
+
+## geoaddress
+
+Abrir pg_renumeracoes.zip
+
+Selecionar todos os arquivos
+
+Copiar para o diretório alvo
+
+gid: gid
+
+numnovo: house_number
+
+geom: geom
+
+**Obs:**
+
+Logradouro: via_name (necessario buscar no arquivo via atraves de join com o campo cod_log)
+
+
+
+## Outros arquivos:
+
+- pg_div_municipio.zip
+
+- pg_cartografia_ct_vias.zip
