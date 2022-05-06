@@ -29,7 +29,7 @@ layers:
         file: 1
         orig_filename: NUMERO_DE_PORTA
         sql_view: |-
-              SELECT row_number() OVER () as gid, NP AS house_number, geom \
+              SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO, geom \
               FROM $(tabname)
 
   via:
@@ -37,7 +37,12 @@ layers:
         method: geojson2sql
         file: 2
         orig_filename: Logradouros
-        sql_view: SELECT properties->'COMPLETO' AS via_name, properties->'COD_TRECHO' AS ref, jgeom AS geom FROM $(tabname)
+        sql_view: |- 
+            SELECT  row_number() OVER () as gid, \
+            properties->'COMPLETO' AS via_name, \
+            properties->'COD_TRECHO' AS COD_TRECHO, \
+            jgeom AS geom FROM $(tabname)
+        codec: GeoJSON;srid=4326
 
   parcel:
         subtype: full
