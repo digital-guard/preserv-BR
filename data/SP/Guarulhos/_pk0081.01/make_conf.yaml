@@ -31,12 +31,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'Logradouro as via_name', 'geom']
+    sql_select: ['gid', 'Logradouro as via_name','cod_log', 'geom']
     orig_filename: pg_cartografia_logradouros
 
   geoaddress:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Logradouro as via_name', 'geom']
+    sql_select: ['gid', 'numnovo as house_number', 'cod_log', 'geom']
     orig_filename: pg_renumeracoes
