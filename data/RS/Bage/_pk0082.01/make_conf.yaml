@@ -23,19 +23,32 @@ layers:
         file: 1
         orig_filename: LOGRADOUROS
         sql_view: |-
-              SELECT id as gid, properties->'logradouro' AS via_name, geometry AS geom \
+          SELECT row_number() OVER () as gid, properties->'logradouro' AS via_name, \
+              properties->'geometry' AS geom \
               FROM $(tabname)
+# Join com SRID diferente não é suportado pelo programa
+#  parcel:
+#        subtype: full
+#        method: geojson2sql
+#        file: 2
+#        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
+#        sql_select: [['id AS gid','logradouro AS via_name','geometry AS geom'],['id AS gid','geometry AS geom']]
 
   parcel:
         subtype: full
         method: geojson2sql
         file: 2
-        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
-        sql_select: [['id AS gid','logradouro AS via_name','geometry AS geom'],['id AS gid','geometry AS geom']]
+        orig_filename: LOTES_URBANOS
+        sql_view: |-
+              SELECT row_number() OVER () as gid, properties->'logradouro' AS via_name, \
+              properties->'geometry' AS geom \
+              FROM $(tabname)
 
   block:
         subtype: none
         method: geojson2sql
         file: 3
         orig_filename: QUARTEIRAO
-        sql_select: ['id AS gid','geometry AS geom']
+        sql_view: |- 
+              SELECT row_number() OVER () as gid, properties->'geometry' AS geom \
+              FROM $(tabname)
