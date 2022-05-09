@@ -3,7 +3,7 @@ pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 need_commands:    7z psql shp2pgsql
-codec:descr_encode: srid=31983
+codec:descr_encode: srid=4326
 
 files:
 - file: ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar
@@ -31,6 +31,7 @@ layers:
         sql_view: |-
               SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO, geom \
               FROM $(tabname)
+        codec: GeoJSON;srid=31983
 
   via:
         subtype: full
@@ -42,7 +43,6 @@ layers:
             properties->'COMPLETO' AS via_name, \
             properties->'COD_TRECHO' AS COD_TRECHO, \
             jgeom AS geom FROM $(tabname)
-        codec: GeoJSON;srid=4326
 
   parcel:
         subtype: full
