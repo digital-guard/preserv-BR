@@ -51,7 +51,7 @@ layers:
         orig_filename: Lotes_(2013)
         sql_view: |-
               SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via_name, \
-              properties->'cod_np' AS house_number, geometry AS geom \
+              properties->'cod_np' AS house_number,  jgeom AS geom \
               FROM $(tabname)
 
   nsvia:
