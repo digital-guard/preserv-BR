@@ -1,0 +1,23 @@
+pack_id: 32.1
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=29193
+
+files:
+- file: 3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip
+  name: Pontos de Endereço
+  p: 1
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: csv2sql
+    file: 1
+    sql_view: |-
+      SELECT row_number() OVER () as gid, "HouseNumber" AS house_number, \
+           ST_GeomFromText("SRID_29193",$(srid)) as geom \
+      FROM $(tabname)
+    orig_filename: SaoVicente-Oficial
+
