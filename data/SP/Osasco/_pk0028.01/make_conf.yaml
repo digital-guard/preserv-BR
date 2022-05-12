@@ -1,0 +1,42 @@
+pack_id: 28.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=31983
+
+files:
+  -
+    p:    1
+    file: aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip
+    name: entrega_2020-11-04.zip
+  -
+    p:    2
+    file: 0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip
+    name: entrega_2020-10-02_recorte.zip
+
+layers:
+  parcel:
+        subtype: full
+        method: ogr2ogr
+        file: 1
+        sql_select: ['gid', 'num_loteam AS house_number', 'geom']
+        orig_filename: Loteamentos_sirgasUTM.gpkg
+  via:
+        subtype: full
+        method: ogr2ogr
+        file: 1
+        sql_select: ['gid', 'nome AS via_name','cep_correi', 'geom']
+        orig_filename: Eixo_Logradouros_sirgasUTM.gpkg
+  nsvia:
+        subtype: full
+        method: shp2sql
+        file: 2
+        sql_select: ['gid', 'nom_bairro AS ns_name', 'geom']
+        orig_filename: bairros
+  block:
+        subtype: full
+        method: ogr2ogr
+        file: 1
+        sql_select: ['gid', 'codquadra', 'geom']
+        orig_filename: Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg
