@@ -31,7 +31,7 @@ layers:
         sql_view: |-
               SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO, geom \
               FROM $(tabname)
-        codec: GeoJSON;srid=31983
+        codec: SHP;srid=31983
 
   via:
         subtype: full
