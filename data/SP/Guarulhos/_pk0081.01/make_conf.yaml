@@ -50,4 +50,3 @@ layers:
     #sql_select: ['gid', 'Logradouro as via_name','cod_log', 'geom']
     orig_filename: pg_cartografia_logradouros
     join_column: cod_log
-
