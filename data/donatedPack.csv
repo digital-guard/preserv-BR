@@ -1,4 +1,4 @@
-pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,escopo,about,author,contentReferenceTime,license_is_explicit,license,uri_objType,uri,isAt_UrbiGIS,status,statusUpdateDate
+pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,about,author,contentReferenceTime,license_is_explicit,license,uri_objType,uri,isAt_UrbiGIS,status,statusUpdateDate
 00101,1,1,001,IBGE,peter,1900-01-01,BR,original-addressPoint; Censo Agro 2017 do IBGE,(self),2017,yes,CC0,site,https://censos.ibge.gov.br/agro/2017/,no,working-stopByPlan,
 00102,1,2,001,IBGE,igor,2020-10-06,BR,Faces de quadras,(self),2019,,CC0,,https://www.ibge.gov.br/geociencias/downloads-geociencias.html?caminho=recortes_para_fins_estatisticos/malha_de_setores_censitarios/censo_2010/base_de_faces_de_logradouros_versao_2019,no,working-makefile,
 00103,1,3,001,IBGE,peter,2020-11-02,BR,Divisão Territorial Brasileira - DTB,(self),2019,no,CC0,site,https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/23701-divisao-territorial-brasileira.html?=&t=downloads&utm_source=landing&utm_medium=explica&utm_campaign=codmun,no,working-makefile,
