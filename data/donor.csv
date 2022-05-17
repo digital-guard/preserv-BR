@@ -2,7 +2,7 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url
 1,BR,IBGE,cnpj:33.787.094/0001-40,Instituto Brasileiro de Geografia e Estatística,268072,https://ibge.gov.br/
 2,BR-PR-CTA,IPPUC,cnpj:76.582.337/0001-16,Inst. de Pesquisa e Plan Urbano de Curitiba,100641436,http://ippuc.org.br
 3,BR,OK-BR,cnpj:19.131.243/0001-97,Open Knowledge Foundation Brasil,73828324,http://ok.org.br
-4,INT,OSM,wd:P2657:365969219933-54,OpenStreetMap Foundation,6542248,https://www.osmfoundation.org/
+4,BR,OSM,wd:P2657:365969219933-54,OpenStreetMap Foundation,6542248,https://www.osmfoundation.org/
 5,BR-ES-SEA,ES-SEA,cnpj:27.174.093/0001-27,Prefeitura Municipal de Serra,56450024,http://www.serra.es.gov.br/
 6,BR-ES-VTA,ES-VTA,cnpj:27.142.058/0001-26,Prefeitura Municipal de Vitória,30263900,https://www.vitoria.es.gov.br/
 7,BR-ES-VVA,ES-VVA,cnpj:27.165.554/0001-03,Prefeitura Municipal de Vila Velha,56450026,https://www.vilavelha.es.gov.br/
@@ -42,7 +42,7 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url
 41,BR-SP-PIR,SP-PIR,cnpj:46.341.038/0001-29,Prefeitura Municipal de Piracicaba,56450048,http://www.piracicaba.sp.gov.br/
 42,BR-AC-RBO,AC-RBO,cnpj:04.034.583/0001-22,Prefeitura Municipal de Rio Branco,56450051,http://www.riobranco.ac.gov.br/
 43,BR-SP-SJC,SP-SJC,cnpj:46.643.466/0001-06,Prefeitura Municipal de São José dos Campos,56450003,https://www.sjc.sp.gov.br/
-44,INT,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/
+44,BR,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/
 45,BR-PI-TSA,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/
 46,BR,ECT,cnpj:34.028.316/0001-03,Empresa Brasileira de Correios e Telégrafos,3375004,http://www.correios.com.br/
 47,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/
