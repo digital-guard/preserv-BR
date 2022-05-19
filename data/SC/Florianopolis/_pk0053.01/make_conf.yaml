@@ -19,21 +19,22 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nm_bairro', 'label AS nsvia_name',  'geom']
+    sql_select: ['gid', 'nm_bairro', 'label AS nsvia_name', 'geom']
     orig_filename: bairro
 
   parcel:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'logradouro', 'bairro AS nsvia_name',  'geom']
+    sql_view: SELECT gid, split_part(logradouro, ',', 1) AS via_name, split_part(logradouro, ',', 2) AS house_number, geom FROM $(tabname)
+    #sql_select: ['gid', 'logradouro', 'bairro AS nsvia_name', 'geom']
     orig_filename: view_cotr_imobliario_filtro
 
   via:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_logr', 'nome via_name',  'geom']
+    sql_select: ['gid', 'cd_logr', 'nome AS via_name', 'geom']
     orig_filename: logradouros
 
   cadvia:
