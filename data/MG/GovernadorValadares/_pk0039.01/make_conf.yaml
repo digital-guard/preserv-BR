@@ -26,31 +26,29 @@ files:
     p:    5
     file: 437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip
     name: Eixos
-#Correspondência entre AS colunas da planilha e colunas do shapefile:
-#    * `Setor` -> `cd_setor`
-#    * `Quadra` -> `nr_quadra`
-#    * `Lote` ->  `nr_lote`
 
 layers:
-  address:
-        subtype: noid
+  cadparcel:
+        subtype: cmpl
         method: csv2sql
         file: 1
         orig_filename: Logradouros - Gov. Valadares
-        sql_select: ['row_number() OVER () AS gid','"Logradouro" AS via_name', '"Número" AS house_number', '"Setor" AS setor', '"Quadra" AS quadra' , '"Lote" AS lote']
+        sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name, "Número" AS house_number, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
         codec: XLSX
+        join_column: ref
   parcel:
-        subtype: full
+        subtype: ext
         method: shp2sql
         file: 2
-        sql_select: ['gid', 'cd_distrit', 'cd_setor', 'nr_quadra', 'nr_lote', 'geom']
+        sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote AS ref', 'geom']
         orig_filename: lote_inscricao_geometria/lote_inscricao_geometriaPolygon
+        join_column: ref
   block: 
         subtype: none
         method: shp2sql
         file: 3
-        #sql_select: ['gid', 'id_quadra', 'geom']
-        sql_select: ['gid', 'geom']
+        sql_select: ['gid', 'id_quadra AS ref', 'geom']
+        #sql_select: ['gid', 'geom']
         orig_filename: st_quadraPolygon
   nsvia:
         subtype: none
