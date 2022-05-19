@@ -21,7 +21,7 @@ layers:
     method: shp2sql
     file: 1
     #sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
-    sql_view: SELECT gid, Complement, 'Número Por' AS house_number, 'Tipo do Lo' || ' ' || 'Nome do Lo' AS via_name, geom FROM $(tabname)
+    sql_view: SELECT gid, Complement, "Número Por" AS house_number, "Tipo do Lo" || ' ' || "Nome do Lo" AS via_name, geom FROM $(tabname)
     orig_filename: lotes_prediais
     codec: SHP~Latin1
 
