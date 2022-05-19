@@ -47,6 +47,5 @@ layers:
     method: shp2sql
     file: 2
     sql_view: SELECT DISTINCT Logradouro as via_name, cod_log FROM $(tabname) WHERE Logradouro IS NOT NULL
-    #sql_select: ['gid', 'Logradouro as via_name','cod_log', 'geom']
     orig_filename: pg_cartografia_logradouros
     join_column: cod_log

@@ -16,19 +16,29 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: [ 'gid', 'NOME_LOGR AS via_name', 'COD_DV_LOG AS cod_dv_log', 'geom']
+    sql_select: ['gid','NOME_LOGR AS via_name','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lograd
 
   parcel:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'NRO_IMOV AS house_number','COD_DV_LOG AS cod_dv_log', 'geom']
+    sql_select: ['gid','NRO_IMOV AS house_number','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lotes
+    join_column: cod_dv_log
 
   block:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'QUADRA', 'geom']
+    sql_select: ['gid','QUADRA','geom']
     orig_filename: quadras
+
+  cadparcel:
+    subtype: cmpl
+    method: shp2sql
+    file: 1
+    sql_view: SELECT DISTINCT NOME_LOGR AS via_name, COD_DV_LOG AS cod_dv_log FROM $(tabname)
+    orig_filename: lograd
+    join_column: cod_dv_log
+
