@@ -39,5 +39,5 @@ layers:
         method: ogr2ogr
         file: 1
         # gid e geom gerados automaticamente pelo software ingestão
-        sql_select: ['codquadra']
+        sql_select: ['codquadra AS ref']
         orig_filename: Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg
