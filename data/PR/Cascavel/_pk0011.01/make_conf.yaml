@@ -40,5 +40,5 @@ layers:
         method: shp2sql
         file: 3
         orig_filename: Lotes
-        sql_select: ['gid', 'logradouro AS via_name', 'numerologr AS pointer_number', 'geom']
+        sql_select: ['gid', 'logradouro AS via_name', 'numerologr AS house_number', 'geom']
         codec: SHP~Latin1
