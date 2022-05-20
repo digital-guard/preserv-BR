@@ -24,14 +24,23 @@ files:
 
 layers:
   geoaddress:
-        subtype: full
+        subtype: ext
         method: shp2sql
         file: 1
         orig_filename: NUMERO_DE_PORTA
         sql_view: |-
-              SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO, geom \
+              SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO AS cod_trecho, CEP AS postcode, geom \
               FROM $(tabname)
         codec: SHP;srid=31983
+        join_column: cod_trecho
+
+  address:
+        subtype: cmpl
+        method: geojson2sql
+        file: 2
+        orig_filename: Logradouros
+        sql_view: SELECT DISTINCT properties->'COD_TRECHO' AS ref, properties->'COMPLETO' AS via_name FROM $(tabname) WHERE properties->'COD_TRECHO' IS NOT NULL AND properties->'COMPLETO' IS NOT NULL
+        join_column: ref
 
   via:
         subtype: full
@@ -41,7 +50,7 @@ layers:
         sql_view: |- 
             SELECT  row_number() OVER () as gid, \
             properties->'COMPLETO' AS via_name, \
-            properties->'COD_TRECHO' AS COD_TRECHO, \
+            properties->'COD_TRECHO' AS ref, \
             jgeom AS geom FROM $(tabname)
 
   parcel:
