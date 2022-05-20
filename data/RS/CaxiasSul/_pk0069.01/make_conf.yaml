@@ -67,5 +67,3 @@ layers:
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS house_number']
     orig_filename: data-1626873935092
     join_column: cod_localizacao_completo
-
-    # join genericvia:inscrica_1 == cadgenericvia:cod_localizacao_completo
