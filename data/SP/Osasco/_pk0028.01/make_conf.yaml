@@ -21,7 +21,7 @@ layers:
         method: ogr2ogr
         file: 1
         sql_select: ['gid', 'num_loteam AS house_number', 'geom']
-        orig_filename: Loteamentos_sirgasUTM.gpkg
+        orig_filename: Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg
   via:
         subtype: full
         method: ogr2ogr
