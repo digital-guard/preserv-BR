@@ -35,7 +35,7 @@ layers:
         sql_select: ['gid', 'nom_bairro AS ns_name', 'geom']
         orig_filename: bairros
   block:
-        subtype: full
+        subtype: none
         method: ogr2ogr
         file: 1
         # gid e geom gerados automaticamente pelo software ingestão
