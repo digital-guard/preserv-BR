@@ -1,0 +1,49 @@
+pack_id: 24.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=32723
+
+files:
+  -
+    p:    1
+    file: 00f40e3731f0e04b8d1050a4716385f412aed5b32b560a47cc321ef4ea5413f8.rar
+    name: lotes_Itu.rar
+  -
+    p:    2
+    file: e10b14c4bfeaa6b40b725acc573a98fba308b72836002af3c7431982b74348f1.rar
+    name: LOGRADOURO_2019.rar
+  -
+    p:    3
+    file: 5041bf52dc6cbd99fb555180a3f34becae8c61352e975f61bfb9c56182e49749.rar
+    name: Shapefiles_-_Municipio_de_Itu.rar
+
+layers:
+  parcel:
+        subtype: full
+        method: ogr2ogr
+        file: 1
+        sql_select: ['Bairro as nsvia_name','Logradouro AS via_name','Numero AS house_number', 'geom']
+        orig_filename: lotes_Itu
+        extension: TAB 
+  via:
+        subtype: full
+        method: ogr2ogr
+        file: 2
+        sql_select: ['Logradouro AS via_name', 'geom']
+        orig_filename: LOGRADOURO_2019
+        extension: tab 
+        # -nlt CONVERT_TO_LINEAR -nlt PROMOTE_TO_MULTI
+  building:
+        subtype: none
+        method: shp2sql
+        file: 3
+        sql_select: ['geom']
+        orig_filename: Edificação/Edificação
+  block:
+        subtype: none
+        method: shp2sql
+        file: 3
+        sql_select: ['geom']
+        orig_filename: Quadra/Quadra
