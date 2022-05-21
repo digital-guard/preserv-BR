@@ -26,15 +26,15 @@ layers:
         file: 1
         sql_select: ['Bairro as nsvia_name','Logradouro AS via_name','Numero AS house_number', 'geom']
         orig_filename: lotes_Itu
-        extension: TAB 
+        codec: TAB
   via:
         subtype: full
         method: ogr2ogr
         file: 2
         sql_select: ['Logradouro AS via_name', 'geom']
         orig_filename: LOGRADOURO_2019
-        extension: tab 
-        # -nlt CONVERT_TO_LINEAR -nlt PROMOTE_TO_MULTI
+        codec: TAB
+        method_opts: -nlt CONVERT_TO_LINEAR -nlt PROMOTE_TO_MULTI
   building:
         subtype: none
         method: shp2sql
