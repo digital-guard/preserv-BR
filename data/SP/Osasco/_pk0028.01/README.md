@@ -43,7 +43,7 @@ Cada ponto terá os dados:
 # Extração
 Abaixo os passos para extração por tipo de dado relevante.
 
-## Lotes
+## Loteamento
 Arquivo GPKG (geopackage)
 SRID: 31983
 1. Abrir `entrega_2020-11-04.zip`.
@@ -52,9 +52,12 @@ SRID: 31983
 
 ### Dados relevantes
 Colunas da camada `Lotecadastral_numpredial_jun2018_SIRGAS2000`:
-* `num_loteam` (string): número predial.
+* `num_loteam` (string): número de lote.
 
 Alguns lotes possuem "S/N" e "s/n" como sem número.
+
+*Não importar essa camada, dado repetido da camada bairros*
+
 
 ## Eixos
 Arquivo GPKG (geopackage)
