@@ -16,7 +16,7 @@ files:
     name: entrega_2020-10-02_recorte.zip
 
 layers:
-parcel:
+  parcel:
         subtype: full
         method: ogr2ogr
         file: 1
