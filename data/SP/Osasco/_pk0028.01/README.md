@@ -43,11 +43,11 @@ Cada ponto terá os dados:
 # Extração
 Abaixo os passos para extração por tipo de dado relevante.
 
-## Loteamento
+## Lotes
 Arquivo GPKG (geopackage)
 SRID: 31983
 1. Abrir `entrega_2020-11-04.zip`.
-2. Selecionar todos os arquivos `Loteamentos_sirgasUTM.gpkg`.
+2. Selecionar todos os arquivos `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`.
 3. Copiar arquivos selecionados para diretório alvo. O diretório alvo precisa ser "writable" para o QGIS gerar os arquivos gpkg-shm e gpkg-wal enquanto a sessão estiver aberta.
 
 ### Dados relevantes
@@ -56,7 +56,6 @@ Colunas da camada `Lotecadastral_numpredial_jun2018_SIRGAS2000`:
 
 Alguns lotes possuem "S/N" e "s/n" como sem número.
 
-**Não importar essa camada, dado repetido da camada bairros**
 
 
 ## Eixos
