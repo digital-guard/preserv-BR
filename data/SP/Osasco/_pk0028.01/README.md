@@ -56,7 +56,7 @@ Colunas da camada `Lotecadastral_numpredial_jun2018_SIRGAS2000`:
 
 Alguns lotes possuem "S/N" e "s/n" como sem número.
 
-*Não importar essa camada, dado repetido da camada bairros*
+**Não importar essa camada, dado repetido da camada bairros**
 
 
 ## Eixos
