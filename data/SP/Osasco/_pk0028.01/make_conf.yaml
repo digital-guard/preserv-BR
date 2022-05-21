@@ -16,12 +16,13 @@ files:
     name: entrega_2020-10-02_recorte.zip
 
 layers:
-  parcel:
-        subtype: full
-        method: ogr2ogr
-        file: 1
-        sql_select: ['gid', 'num_loteam AS house_number', 'geom']
-        orig_filename: Loteamentos_sirgasUTM.gpkg
+# Não importar essa camada, dado repetido da camada bairros
+#  nsvia:
+#        subtype: full
+#        method: ogr2ogr
+#        file: 1
+#        sql_select: ['gid', 'num_loteam AS house_number', 'geom']
+#        orig_filename: Loteamentos_sirgasUTM.gpkg
   via:
         subtype: full
         method: ogr2ogr
