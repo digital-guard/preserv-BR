@@ -52,7 +52,7 @@ SRID: 31983
 
 ### Dados relevantes
 Colunas da camada `Lotecadastral_numpredial_jun2018_SIRGAS2000`:
-* `num_loteam` (string): número de lote.
+* `num_atual` (string): número de lote.
 
 Alguns lotes possuem "S/N" e "s/n" como sem número.
 
