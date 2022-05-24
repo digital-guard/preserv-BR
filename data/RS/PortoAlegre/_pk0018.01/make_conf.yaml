@@ -19,6 +19,10 @@ files:
     file: c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip
     name: Eixos
 
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: 3f04b132268e9924262327225ea8ac0914eb411307747ad93f19333e0d7d15dc.zip
+
 layers:
 
   geoaddress:

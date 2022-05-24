@@ -26,6 +26,10 @@ files:
     file: 0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
     name: Quadras
 
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: 679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip
+
 layers:
 
   via:
