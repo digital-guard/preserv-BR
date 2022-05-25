@@ -5,8 +5,6 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 00201,2,1,001,IPPUC,enio,1900-01-01,BR-PR-Curitiba,( REMOVIDO 29/12/2021 - USAR OSM-BR ) original-addressPoint-local; Dados Geográficos de Curitiba,(self),2018,yes,CC0; (non-standard),email;site,(anexo de email); http://ippuc.org.br/geodownloads/geo.htm,no,working-stopByPlan,
 00301,3,1,001,OK-BR,peter,1900-01-01,BR,controlledVoc; city-codes and state-codes,many,2020,yes,CC0,site,http://datasets.ok.org.br/city-codes,no,working-stopByPlan,
 00401,4,1,001,OSM,peter,1900-01-01,BR,original-addressPoint; OSMstable-BR de 2/10/2018,(self),2020,yes,ODbL,site,osm.org,-,working-stopByPlan,
-00402,4,2,001,OSM,peter,2020-10-04,BR,"Planet OSM, todos os dados ",(self),2020-09-25,yes,ODbL,site,http://download.geofabrik.de/south-america/brazil-latest.osm.pbf,no,working-makefile,
-00403,4,3,001,OSM,claiton,2022-01-31,BR,"Planet OSM, todos os dados ",(self),2022-02-01,yes,ODbL,site,http://download.geofabrik.de/south-america/brazil-latest.osm.pbf,no,working-makefile,
 00501,5,1,001,ES-SEA,igor,2020-05-14,BR-ES-Serra,"Bairros, eixos, lotes",(self),2019,no,CC0,email,http://drive.google.com/open?id=0ByzRD7X96jzScHJiNF9xaHpEcGM,yes,working-makefile,
 00601,6,1,001,ES-VTA,igor,2020-05-14,BR-ES-Vitoria,"Bairros, eixos, lotes",(self),2019,no,CC0,site,http://geoweb.vitoria.es.gov.br/#/shp,yes,working-makefile,
 00701,7,1,001,ES-VVA,igor,2020-05-14,BR-ES-VilaVelha,"Bairros, eixos, lotes",(self),2019,yes,CC0,site,https://www.vilavelha.es.gov.br/paginas/desenvolvimento-urbano-e-mobilidade-arquivos-de-georreferenciamento,yes,working-makefile,
