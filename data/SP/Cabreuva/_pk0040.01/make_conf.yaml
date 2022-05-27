@@ -13,11 +13,11 @@ files:
 layers:
 
   cadparcel:
-    subtype: ext 
+    subtype: cmpl
     method: csv2sql
     file: 1
-    orig_filename: relação_.csv
-    codec: CSV~Latin1
+    orig_filename: relação_
+    codec: CSV~Latin1semicolon
     sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name  FROM $(tabname)
     join_column: ref
 
