@@ -7,7 +7,7 @@ codec:descr_encode: srid=4326
 files:
     -
         p:    1
-        file: 477b9c42709f3fd7f5e44dcb38752c1d4f4ef132b2cf39fa1015a742934b42db.pbf
+        file: befb1a28910b56920b7c10b7ae1a25d5d32f1b13931463076adebc4ab33db114.pbf
         name: Dados OpenStreetMap
 
 license_evidences:
@@ -19,12 +19,12 @@ layers:
     subtype: full
     method: osm2sql
     file: 1
-    orig_filename: brazil-2018-10-02.osm
+    orig_filename: brazil-latest.osm
   via:
     subtype: full
     method: osm2sql
     file: 1
-    orig_filename: brazil-2018-10-02.osm
+    orig_filename: brazil-latest.osm
 
 openstreetmap:
     file: 1
