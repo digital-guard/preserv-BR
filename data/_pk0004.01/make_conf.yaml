@@ -1,5 +1,5 @@
 pack_id: 4.1
-pkversion: 001
+pkversion: 003
 schemaId_input:    ref027a
 schemaId_template: ref027a
 codec:descr_encode: srid=4326
