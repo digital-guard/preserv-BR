@@ -84,3 +84,4 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 08101,81,1,001,SP-GRH,luis,2022-03-11,BR-SP-Guarulhos,"Lotes, eixos",(self),2022,no,CC0,site;email,https://guarugeo.guarulhos.sp.gov.br/; (anexo de email),no,working-makefile,
 06101,61,1,002,PR-AUC,carlos,2022-04-01,BR-PR-Araucaria,"Lotes, eixos, bairros urbanos e bairros rurais",(self),2022,no,CC0,email,(anexo de email),no,working-makefile,
 08201,82,1,001,RS-BGE,luis,2022-04-25,BR-RS-Bage,"Lotes, eixos e quadras",(self),2022,no,CC0,GitHub,https://github.com/GGC-Bage/GeoDataBase,no,working-makefile,
+11001,110,1,001,PR-MGA,luis,2022-05-31,BR-PR-Maringa,"Numero de porta",(self),2022,no,,email,(anexo de email),no,,
