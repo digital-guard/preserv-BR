@@ -1,6 +1,6 @@
 # Geral
 
-Recebemos o arquivo por e-mail em 2022-03-21. É uma tabela, com coordenadas para construção dos pontos, nome do logradouro e número de porta.
+Recebemos o arquivo por e-mail em 2022-03-21. É uma tabela, com coordenadas para construção dos pontos + nome do logradouro e número de porta.
 
 
 
@@ -21,5 +21,3 @@ SRID: 4326
 'Tipo Logradouro' + 'Logradouro': via_name
 
 'Número Predial': house_number
-
-Obs: o arquivo em formato zip foi adicionado com servidor recentemente e possui o mesmo nome do arquivo xlsx.
