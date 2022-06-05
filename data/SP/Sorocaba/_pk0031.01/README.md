@@ -30,7 +30,7 @@ Colunas da camada `lotes_prediais`:
 * `Nome do Lo` (string): nome de logradouro em caixa alta, sem acento, por extenso.
 
 ## Eixos
-SRID: 31983
+SRID: 5533
 1. Abrir `shape_eixos_sorocaba.zip`.
 2. Selecionar todos os arquivos `eixos_sorocaba.*`.
 3. Copiar arquivos selecionados para diretório alvo.
