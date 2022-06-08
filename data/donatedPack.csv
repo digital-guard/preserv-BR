@@ -6,7 +6,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 00301,3,1,001,OK-BR,peter,1900-01-01,BR,controlledVoc; city-codes and state-codes,many,2020,yes,CC0,site,http://datasets.ok.org.br/city-codes,no,working-stopByPlan,
 00401,4,1,003,OSM,claiton,2022-01-31,BR,"Planet OSM, todos os dados",(self),2022-02-01,yes,ODbL,site,http://download.geofabrik.de/south-america/brazil-latest.osm.pbf,no,working-makefile,
 00501,5,1,001,ES-SEA,igor,2020-05-14,BR-ES-Serra,"Bairros, eixos, lotes",(self),2019,no,CC0,email,http://drive.google.com/open?id=0ByzRD7X96jzScHJiNF9xaHpEcGM,yes,working-makefile,
-00601,6,1,001,ES-VTA,igor,2020-05-14,BR-ES-Vitoria,"Bairros, eixos, lotes",(self),2019,no,CC0,site,http://geoweb.vitoria.es.gov.br/#/shp,yes,working-makefile,
+00601,6,1,001,ES-VTA,igor/luis,2020-05-14,BR-ES-Vitoria,"Bairros, eixos, lotes e edificacoes",(self),2020,yes,CC0,site,http://geoweb.vitoria.es.gov.br/#/shp,yes,working-makefile,
 00701,7,1,001,ES-VVA,igor,2020-05-14,BR-ES-VilaVelha,"Bairros, eixos, lotes",(self),2019,yes,CC0,site,https://www.vilavelha.es.gov.br/paginas/desenvolvimento-urbano-e-mobilidade-arquivos-de-georreferenciamento,yes,working-makefile,
 00801,8,1,001,MG-BHE,igor,2020-03-19,BR-MG-BeloHorizonte,"Pontos com rua e número, eixo",(self),2019,yes,CC0,"email,site","(anexo de email),https://bhmap.pbh.gov.br/",part,working-makefile,
 00901,9,1,001,MG-CEM,igor,2020-07-22,BR-MG-Contagem,"Bairros, eixos, endereços, lotes, quadras",(self),2019,yes,CC0,email,(anexo de email),yes,working-makefile,
