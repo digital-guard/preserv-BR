@@ -81,4 +81,5 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url
 80,BR-RS-Pelotas,RS-PLT,cnpj:87.455.531/0001-57,Prefeitura Municipal de Pelotas,109188,https://www.pelotas.rs.gov.br/
 81,BR-SP-Guarulhos,SP-GRH,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/
 82,BR-RS-Bage,RS-BGE,cnpj:88.073.291/0001-99,Prefeitura Municipal de Bagé,119140,https://www.bage.rs.gov.br/
+97,BR-CE-Fortaleza,,cnpj:07.954.605/0001-60,Prefeitura Municipal de Fortaleza,43463,https://www.fortaleza.ce.gov.br/
 110,BR-PR-Maringa,PR-MGA,cnpj:76.282.656/0001-06,Prefeitura do Município de Maringá,208669,
