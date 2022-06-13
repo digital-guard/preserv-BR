@@ -1,0 +1,24 @@
+pack_id: 110.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=4326
+
+files:
+  -
+    p:    1
+    file: 8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip
+    name: Num_Predial_14_03_2022.xlsx
+
+layers:
+  geoaddress:
+        subtype: full 
+        method: csv2sql
+        file: 1
+        orig_filename: Num_Predial_14_03_2022
+        codec: XLSX
+        sql_view: |-
+            SELECT row_number() OVER () AS gid, "Tipo Logradouro" || ' ' || "Logradouro" AS via_name,   \
+            ST_SetSRID(ST_MakePoint("Longitude"::decimal, "Latitude"::decimal),4326) as geom \
+            FROM $(tabname)
