@@ -1,85 +1,154 @@
-local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url
-1,BR,IBGE,cnpj:33.787.094/0001-40,Instituto Brasileiro de Geografia e Estatística,268072,https://ibge.gov.br/
-2,BR-PR-Curitiba,IPPUC,cnpj:76.582.337/0001-16,Inst. de Pesquisa e Plan Urbano de Curitiba,100641436,http://ippuc.org.br
-3,BR,OK-BR,cnpj:19.131.243/0001-97,Open Knowledge Foundation Brasil,73828324,http://ok.org.br
-4,BR,OSM,wd:P2657:365969219933-54,OpenStreetMap Foundation,6542248,https://www.osmfoundation.org/
-5,BR-ES-Serra,ES-SEA,cnpj:27.174.093/0001-27,Prefeitura Municipal de Serra,56450024,http://www.serra.es.gov.br/
-6,BR-ES-Vitoria,ES-VTA,cnpj:27.142.058/0001-26,Prefeitura Municipal de Vitória,30263900,https://www.vitoria.es.gov.br/
-7,BR-ES-VilaVelha,ES-VVA,cnpj:27.165.554/0001-03,Prefeitura Municipal de Vila Velha,56450026,https://www.vilavelha.es.gov.br/
-8,BR-MG-BeloHorizonte,MG-BHE,cnpj:18.715.383/0001-40,Prefeitura de Belo Horizonte,30263897,https://prefeitura.pbh.gov.br/
-9,BR-MG-Contagem,MG-CEM,cnpj:18.715.508/0001-31,Prefeitura Municipal de Contagem,56450007,http://www.contagem.mg.gov.br
-10,BR-PE-Recife,PE-RCE,cnpj:10.565.000/0001-92,Prefeitura Municipal de Recife,53930910,http://www2.recife.pe.gov.br
-11,BR-PR-Cascavel,PR-CSC,cnpj:76.208.867/0001-07,Prefeitura Municipal de Cascavel,56450074,http://www.cascavel.pr.gov.br/
-12,BR-PR-Curitiba,PR-CTA,cnpj:76.417.005/0001-86,Prefeitura Municipal de Curitiba,53930907,https://www.curitiba.pr.gov.br/
-13,BR-PR-MarechalCandidoRondon,PR-MRH,cnpj:76.205.814/0001-24,Prefeitura Municipal de Marechal Cândido Rondon,97936438,https://marechalcandidorondon.atende.net/
-14,BR-PR-Pinhais,PR-PIN,cnpj:95.423.000/0001-00,Prefeitura Municipal de Pinhais,97631607,https://pinhais.atende.net/
-15,BR-PR-SaoJosePinhais,PR-SJP,cnpj:76.105.543/0001-35,Prefeitura Municipal de São José dos Pinhais,56450080,http://www.sjp.pr.gov.br/
-16,BR-RJ-Niteroi,RJ-NRI,cnpj:28.521.748/0001-59,Prefeitura Municipal de Niterói,56450021,http://www.niteroi.rj.gov.br/
-17,BR-RS-Gravatai,RS-GTI,cnpj:87.890.992/0001-58,Prefeitura Municipal de Gravataí,56450094,https://www.gravatai.rs.gov.br/
-18,BR-RS-PortoAlegre,RS-PAE,cnpj:92.963.560/0001-60,Prefeitura Municipal de Porto Alegre,53930913,https://prefeitura.poa.br/
-19,BR-RS-SantaMaria,RS-SMA,cnpj:88.488.366/0001-00,Prefeitura Municipal de Santa Maria,56450092,https://www.santamaria.rs.gov.br/
-20,BR-SC-JaraguaSul,SC-JGS,cnpj:83.102.459/0001-23,Prefeitura Municipal de Jaraguá do Sul,97936645,https://www.jaraguadosul.sc.gov.br/
-21,BR-SP-Atibaia,SP-ATB,cnpj:45.279.635/0001-08,Prefeitura da Estância de Atibaia,97936697,http://www.prefeituradeatibaia.com.br/
-22,BR-SP-Campinas,SP-CAM,cnpj:51.885.242/0001-40,Prefeitura Municipal de Campinas,53930937,http://www.campinas.sp.gov.br/
-23,BR-SP-Guaruja,SP-GRJ,cnpj:44.959.021/0001-04,Prefeitura Municipal de Guarujá,56450076,https://www.guaruja.sp.gov.br/
-24,BR-SP-Itu,SP-ITU,cnpj:46.634.440/0001-00,Prefeitura da Estância Turística de Itu,95629648,https://itu.sp.gov.br/
-25,BR-SP-Jundiai,SP-JUN,cnpj:45.780.103/0001-50,Prefeitura Municipal de Jundiaí,56450042,https://jundiai.sp.gov.br/
-26,BR-SP-Limeira,SP-LIM,cnpj:45.132.495/0001-40,Prefeitura Municipal de Limeira,56450084,https://www.limeira.sp.gov.br/
-27,BR-SP-LaranjalPaulista,SP-LRP,cnpj:46.634.606/0001-80,Prefeitura Municipal de Laranjal Paulista,95630587,https://www.laranjalpaulista.sp.gov.br/
-28,BR-SP-Osasco,SP-OSC,cnpj:46.523.171/0001-04,Prefeitura Municipal de Osasco,56450001,http://www.osasco.sp.gov.br/home
-29,BR-SP-Santos,SP-SAN,cnpj:58.200.015/0001-83,Prefeitura Municipal de Santos,56450035,https://www.santos.sp.gov.br/
-30,BR-SP-SaoBernardoCampo,SP-SBC,cnpj:46.523.239/0001-47,Prefeitura Municipal de São Bernardo do Campo,56449994,https://www.saobernardo.sp.gov.br/
-31,BR-SP-Sorocaba,SP-SCB,cnpj:46.634.044/0001-74,Prefeitura Municipal de Sorocaba,56450008,http://www.sorocaba.sp.gov.br/
-32,BR-SP-SaoVicente,SP-SOV,cnpj:46.177.523/0001-09,Prefeitura Municipal de São Vicente,56450055,http://www.saovicente.sp.gov.br/publico/
-33,BR-SP-SaoPaulo,SP-SPA,cnpj:46.395.000/0001-39,Prefeitura Municipal de São Paulo,10351100,http://www.capital.sp.gov.br/
-34,BR-MS-CampoGrande,MS-CPE,cnpj:03.501.509/0001-06,Prefeitura Municipal de Campo Grande,56449991,http://www.campogrande.ms.gov.br/
-35,BR-SC-Joinville,SC-JVE,cnpj:83.169.623/0001-10,Prefeitura Municipal de Joinville,56450014,https://www.joinville.sc.gov.br/
-36,BR-SP-Salto,SP-SLT,cnpj:46-634-507/0001-06,Prefeitura da Estância Turística de Salto,99199224,https://salto.sp.gov.br/
-37,BR-PR-PatoBranco,PR-PBC,cnpj:76.995.448/0001-54,Prefeitura Municipal de Pato Branco,99199665,http://patobranco.pr.gov.br/
-38,BR-RJ-DuqueCaxias,RJ-DQX,cnpj:29.138.328/0001-50,Prefeitura Municipal de Duque de Caxias,56449989,https://duquedecaxias.rj.gov.br/
-39,BR-MG-GovernadorValadares,MG-GVS,cnpj:20.622.890/0001-80,Prefeitura Municipal de Governador Valadares,56450091,https://www.valadares.mg.gov.br/
-40,BR-SP-Cabreuva,SP-CBV,cnpj:46.634.432/0001-55,Prefeitura Municipal de Cabreúva,99199749,https://www.cabreuva.sp.gov.br/
-41,BR-SP-Piracicaba,SP-PIR,cnpj:46.341.038/0001-29,Prefeitura Municipal de Piracicaba,56450048,http://www.piracicaba.sp.gov.br/
-42,BR-AC-RioBranco,AC-RBO,cnpj:04.034.583/0001-22,Prefeitura Municipal de Rio Branco,56450051,http://www.riobranco.ac.gov.br/
-43,BR-SP-SaoJoseCampos,SP-SJC,cnpj:46.643.466/0001-06,Prefeitura Municipal de São José dos Campos,56450003,https://www.sjc.sp.gov.br/
-44,BR,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/
-45,BR-PI-Teresina,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/
-46,BR,ECT,cnpj:34.028.316/0001-03,Empresa Brasileira de Correios e Telégrafos,3375004,http://www.correios.com.br/
-47,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/
-48,BR-MS-Dourados,MS-DOS,cnpj:03.155.926/0001-44,Prefeitura de Dourados,60029408,http://www.dourados.ms.gov.br/
-49,BR-SP-Cerquilho,SP-CQH,cnpj:46.634.614/0001-26,Prefeitura Municipal de Cerquilho,100154106,https://cerquilho.sp.gov.br/
-50,BR-BA-Salvador,BA-SDR,cnpj:13.927.801/0001-49,Prefeitura Municipal de Salvador,53930901,http://www.salvador.ba.gov.br/
-51,BR,ClickSys-BR,cpf:115.658.347-04,ClickSistema,,clicksistema.com.br
-52,BR-SP-RibeiraoPreto,SP-RPR,cnpj:56.024.581/0001-56,Prefeitura Municipal de Ribeirão Preto,56450005,https://www.ribeiraopreto.sp.gov.br/portal/
-53,BR-SC-Florianopolis,IPUF,cnpj:83.469.965/0001-55 ,Instituto de Pesquisa e Planejamento Urbano de Florianópolis,101575535,http://www.pmf.sc.gov.br/entidades/ipuf/
-54,BR-GO-Goiania,GO-GNA,cnpj:14.185.071/0001-10,Prefeitura de Goiânia,53930914,https://www.goiania.go.gov.br/
-55,BR-MG-Uberaba,MG-URA,cnpj:18.428.839/0001-90,Prefeitura Municipal de Uberaba,56450073,http://www.uberaba.mg.gov.br/portal/principal
-56,BR-PE-Caruaru,PE-CRU,cnpj:10.091.536/0001-13,Prefeitura de Caruaru,56450060,https://caruaru.pe.gov.br/
-57,BR-MG-Uberlandia,MG-ULA,cnpj:18.431.312/0001-15,Prefeitura Municipal de Uberlândia,56450006,https://www.uberlandia.mg.gov.br/
-58,BR-SP-Itanhaem,SP-ITH,cnpj:46.578.498/0001-75,Prefeitura de Itanhaém,104847769,http://www2.itanhaem.sp.gov.br/
-59,BR-PR,Paranacidade,cnpj:01.450.804/0001-55,Serviço Social Autônomo Paranacidade,104848282,http://www.paranacidade.org.br/
-60,BR-PE-Petrolina,PE-PTA,cnpj:10.358.190/0001-77,Prefeitura de Petrolina,56450068,https://petrolina.pe.gov.br/
-61,BR-PR-Araucaria,PR-AUC,cnpj:76.105.535/0001-99,Prefeitura do Município de Araucária,104848034,https://araucaria.atende.net/
-62,BR-RO-JiParana,RO-JIP,cnpj:04.092.672/0001-25,Prefeitura Municipal de Ji-Paraná,105008525,http://www.site.ji-parana.ro.gov.br/
-63,BR-RS-NovoHamburgo,RS-NHO,cnpj:07.044.304/0001-08,Prefeitura Municipal de Novo Hamburgo,105008951,https://www.novohamburgo.rs.gov.br/
-64,BR-RS-SantaCruzSul,RS-SCR,cnpj:95.440.517/0001-08,Prefeitura Municipal de Santa Cruz do Sul,105328349,https://www.santacruz.rs.gov.br
-65,BR-SP-Cubatao,SP-CUB,cnpj:47.492.806/0001-08,Prefeitura Municipal de Cubatão,105453143,http://www.cubatao.sp.gov.br/
-66,BR-PE-Bezerros,PE-BEZ,cnpj:10.091.510/0001-75,Prefeitura Municipal dos Bezerros,107391603,https://bezerros.pe.gov.br/
-67,BR-SP-Paulinia,SP-PLN,cnpj:45.751.435/0001-06,Prefeitura Municipal de Paulínia,107391609,http://www.paulinia.sp.gov.br/
-68,BR-DF-Brasilia,DF-BSA,cnpj:00.394.601/0001-26,Governo do Distrito Federal,96572867,http://www.df.gov.br/
-69,BR-RS-CaxiasSul,RS-CSL,cnpj:88.830.609/0001-39,Prefeitura Municipal de Caxias do Sul,56450027,https://caxias.rs.gov.br/
-70,BR-MG-Itabira,MG-IBA,cnpj:18.299.446/0001-24,Prefeitura Municipal de Itabira,107398095,https://www.itabira.mg.gov.br/
-71,BR-AM-Manaus,AM-MNS,cnpj:04.365.326/0001-73,Prefeitura Municipal de Manaus,53930905,https://www.manaus.am.gov.br/
-72,BR-PB-JoaoPessoa,PB-JPA,cnpj:08.806.721/0001-03,Prefeitura Municipal de João Pessoa,56449995,https://www.joaopessoa.pb.gov.br/
-73,BR-RN-Natal,RN-NTL,cnpj:08.241.747/0001-43,Prefeitura Municipal de Natal,56449990,https://www.natal.rn.gov.br/
-74,BR-RN-SaoGoncaloAmarante,RN-SGM,cnpj:08.079.402/0001-35,Prefeitura Municipal de São Gonçalo do Amarante,107398099,https://saogoncalodoamarante.ce.gov.br/portal/
-75,BR-SC-Brusque,SC-BQE,cnpj:83.102.343/0001-94,Prefeitura Municipal de Brusque,107398109,https://portal.brusque.sc.gov.br/
-76,BR-RS-Canoas,RS-CAN,cnpj:88.577.416/0001-18,Prefeitura Municipal de Canoas,56450066,https://www.canoas.rs.gov.br/
-77,BR-SC-Chapeco,SC-CCO,cnpj:83.021.808/0001-82,Prefeitura Municipal de Chapecó,107398118,https://www.chapeco.sc.gov.br/
-78,BR-RJ-RioJaneiro,RJ-RJO,cnpj:42.498.733/0001-48,Prefeitura da Cidade do Rio de Janeiro,57349212,https://prefeitura.rio/
-79,BR-PR-Toledo,PR-TOO,cnpj:76.205.806/0001-88,Prefeitura Municipal de Toledo,107398664,https://www.toledo.pr.gov.br/
-80,BR-RS-Pelotas,RS-PLT,cnpj:87.455.531/0001-57,Prefeitura Municipal de Pelotas,109188,https://www.pelotas.rs.gov.br/
-81,BR-SP-Guarulhos,SP-GRH,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/
-82,BR-RS-Bage,RS-BGE,cnpj:88.073.291/0001-99,Prefeitura Municipal de Bagé,119140,https://www.bage.rs.gov.br/
-97,BR-CE-Fortaleza,,cnpj:07.954.605/0001-60,Prefeitura Municipal de Fortaleza,43463,https://www.fortaleza.ce.gov.br/
-110,BR-PR-Maringa,PR-MGA,cnpj:76.282.656/0001-06,Prefeitura do Município de Maringá,208669,
+local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url,donor_date,donor_status
+1,BR,IBGE,cnpj:33.787.094/0001-40,Instituto Brasileiro de Geografia e Estatística,268072,https://ibge.gov.br/,NA,3
+2,BR-PR-Curitiba,IPPUC,cnpj:76.582.337/0001-16,Inst. de Pesquisa e Plan Urbano de Curitiba,100641436,http://ippuc.org.br,NA,3
+3,BR,OK-BR,cnpj:19.131.243/0001-97,Open Knowledge Foundation Brasil,73828324,http://ok.org.br,NA,2
+4,BR,OSM,wd:P2657:365969219933-54,OpenStreetMap Foundation,6542248,https://www.osmfoundation.org/,NA,3
+5,BR-ES-Serra,ES-SEA,cnpj:27.174.093/0001-27,Prefeitura Municipal de Serra,56450024,http://www.serra.es.gov.br/,16/03/2020,2
+6,BR-ES-Vitoria,ES-VTA,cnpj:27.142.058/0001-26,Prefeitura Municipal de Vitória,30263900,https://www.vitoria.es.gov.br/,13/05/2020,2
+7,BR-ES-VilaVelha,ES-VVA,cnpj:27.165.554/0001-03,Prefeitura Municipal de Vila Velha,56450026,https://www.vilavelha.es.gov.br/,13/05/2020,3
+8,BR-MG-BeloHorizonte,MG-BHE,cnpj:18.715.383/0001-40,Prefeitura de Belo Horizonte,30263897,https://prefeitura.pbh.gov.br/,19/03/2020,3
+9,BR-MG-Contagem,MG-CEM,cnpj:18.715.508/0001-31,Prefeitura Municipal de Contagem,56450007,http://www.contagem.mg.gov.br,22/07/2020,3
+10,BR-PE-Recife,PE-RCE,cnpj:10.565.000/0001-92,Prefeitura Municipal de Recife,53930910,http://www2.recife.pe.gov.br,14/05/2020,3
+11,BR-PR-Cascavel,PR-CSC,cnpj:76.208.867/0001-07,Prefeitura Municipal de Cascavel,56450074,http://www.cascavel.pr.gov.br/,14/04/2020,3
+12,BR-PR-Curitiba,PR-CTA,cnpj:76.417.005/0001-86,Prefeitura Municipal de Curitiba,53930907,https://www.curitiba.pr.gov.br/,08/03/2020,2
+13,BR-PR-MarechalCandidoRondon,PR-MRH,cnpj:76.205.814/0001-24,Prefeitura Municipal de Marechal Cândido Rondon,97936438,https://marechalcandidorondon.atende.net/,02/07/2020,2
+14,BR-PR-Pinhais,PR-PIN,cnpj:95.423.000/0001-00,Prefeitura Municipal de Pinhais,97631607,https://pinhais.atende.net/,26/06/2020,3
+15,BR-PR-SaoJosePinhais,PR-SJP,cnpj:76.105.543/0001-35,Prefeitura Municipal de São José dos Pinhais,56450080,http://www.sjp.pr.gov.br/,16/04/2020,2
+16,BR-RJ-Niteroi,RJ-NRI,cnpj:28.521.748/0001-59,Prefeitura Municipal de Niterói,56450021,http://www.niteroi.rj.gov.br/,16/04/2020,3
+17,BR-RS-Gravatai,RS-GTI,cnpj:87.890.992/0001-58,Prefeitura Municipal de Gravataí,56450094,https://www.gravatai.rs.gov.br/,02/04/2020,3
+18,BR-RS-PortoAlegre,RS-PAE,cnpj:92.963.560/0001-60,Prefeitura Municipal de Porto Alegre,53930913,https://prefeitura.poa.br/,18/06/2020,3
+19,BR-RS-SantaMaria,RS-SMA,cnpj:88.488.366/0001-00,Prefeitura Municipal de Santa Maria,56450092,https://www.santamaria.rs.gov.br/,17/02/2020,3
+20,BR-SC-JaraguaSul,SC-JGS,cnpj:83.102.459/0001-23,Prefeitura Municipal de Jaraguá do Sul,97936645,https://www.jaraguadosul.sc.gov.br/,17/07/2020,2
+21,BR-SP-Atibaia,SP-ATB,cnpj:45.279.635/0001-08,Prefeitura da Estância de Atibaia,97936697,http://www.prefeituradeatibaia.com.br/,27/07/2020,2
+22,BR-SP-Campinas,SP-CAM,cnpj:51.885.242/0001-40,Prefeitura Municipal de Campinas,53930937,http://www.campinas.sp.gov.br/,14/08/2020,3
+23,BR-SP-Guaruja,SP-GRJ,cnpj:44.959.021/0001-04,Prefeitura Municipal de Guarujá,56450076,https://www.guaruja.sp.gov.br/,09/02/2020,2
+24,BR-SP-Itu,SP-ITU,cnpj:46.634.440/0001-00,Prefeitura da Estância Turística de Itu,95629648,https://itu.sp.gov.br/,05/07/2020,3
+25,BR-SP-Jundiai,SP-JUN,cnpj:45.780.103/0001-50,Prefeitura Municipal de Jundiaí,56450042,https://jundiai.sp.gov.br/,22/06/2020,2
+26,BR-SP-Limeira,SP-LIM,cnpj:45.132.495/0001-40,Prefeitura Municipal de Limeira,56450084,https://www.limeira.sp.gov.br/,04/08/2020,2
+27,BR-SP-LaranjalPaulista,SP-LRP,cnpj:46.634.606/0001-80,Prefeitura Municipal de Laranjal Paulista,95630587,https://www.laranjalpaulista.sp.gov.br/,20/07/2020,2
+28,BR-SP-Osasco,SP-OSC,cnpj:46.523.171/0001-04,Prefeitura Municipal de Osasco,56450001,http://www.osasco.sp.gov.br/home,22/06/2020,3
+29,BR-SP-Santos,SP-SAN,cnpj:58.200.015/0001-83,Prefeitura Municipal de Santos,56450035,https://www.santos.sp.gov.br/,24/04/2020,3
+30,BR-SP-SaoBernardoCampo,SP-SBC,cnpj:46.523.239/0001-47,Prefeitura Municipal de São Bernardo do Campo,56449994,https://www.saobernardo.sp.gov.br/,18/06/2020,3
+31,BR-SP-Sorocaba,SP-SCB,cnpj:46.634.044/0001-74,Prefeitura Municipal de Sorocaba,56450008,http://www.sorocaba.sp.gov.br/,16/03/2020,3
+32,BR-SP-SaoVicente,SP-SOV,cnpj:46.177.523/0001-09,Prefeitura Municipal de São Vicente,56450055,http://www.saovicente.sp.gov.br/publico/,20/03/2020,3
+33,BR-SP-SaoPaulo,SP-SPA,cnpj:46.395.000/0001-39,Prefeitura Municipal de São Paulo,10351100,http://www.capital.sp.gov.br/,24/07/2020,3
+34,BR-MS-CampoGrande,MS-CPE,cnpj:03.501.509/0001-06,Prefeitura Municipal de Campo Grande,56449991,http://www.campogrande.ms.gov.br/,07/09/2020,3
+35,BR-SC-Joinville,SC-JVE,cnpj:83.169.623/0001-10,Prefeitura Municipal de Joinville,56450014,https://www.joinville.sc.gov.br/,08/11/2020,3
+36,BR-SP-Salto,SP-SLT,cnpj:46-634-507/0001-06,Prefeitura da Estância Turística de Salto,99199224,https://salto.sp.gov.br/,07/08/2020,2
+37,BR-PR-PatoBranco,PR-PBC,cnpj:76.995.448/0001-54,Prefeitura Municipal de Pato Branco,99199665,http://patobranco.pr.gov.br/,08/12/2020,2
+38,BR-RJ-DuqueCaxias,RJ-DQX,cnpj:29.138.328/0001-50,Prefeitura Municipal de Duque de Caxias,56449989,https://duquedecaxias.rj.gov.br/,18/08/2020,2
+39,BR-MG-GovernadorValadares,MG-GVS,cnpj:20.622.890/0001-80,Prefeitura Municipal de Governador Valadares,56450091,https://www.valadares.mg.gov.br/,17/08/2020,3
+40,BR-SP-Cabreuva,SP-CBV,cnpj:46.634.432/0001-55,Prefeitura Municipal de Cabreúva,99199749,https://www.cabreuva.sp.gov.br/,27/08/2020,3
+41,BR-SP-Piracicaba,SP-PIR,cnpj:46.341.038/0001-29,Prefeitura Municipal de Piracicaba,56450048,http://www.piracicaba.sp.gov.br/,03/09/2020,3
+42,BR-AC-RioBranco,AC-RBO,cnpj:04.034.583/0001-22,Prefeitura Municipal de Rio Branco,56450051,http://www.riobranco.ac.gov.br/,10/09/2020,3
+43,BR-SP-SaoJoseCampos,SP-SJC,cnpj:46.643.466/0001-06,Prefeitura Municipal de São José dos Campos,56450003,https://www.sjc.sp.gov.br/,15/09/2020,2
+44,BR,Wikimedia,wd:P2657:596597913132-95,Wikimedia Foundation,180,https://wikimediafoundation.org/,NA,2
+45,BR-PI-Teresina,PI-TSA,cnpj:06.554.869/0001-64,Prefeitura Municipal de Teresina,56449993,https://pmt.pi.gov.br/,16/09/2020,2
+46,BR,ECT,cnpj:34.028.316/0001-03,Empresa Brasileira de Correios e Telégrafos,3375004,http://www.correios.com.br/,NA,2
+47,BR,A4A,cnpj:37.997.382/0001-80,Instituto AddressForAll,100155380,http://addressforall.org/,NA,2
+48,BR-MS-Dourados,MS-DOS,cnpj:03.155.926/0001-44,Prefeitura de Dourados,60029408,http://www.dourados.ms.gov.br/,30/11/2020,2
+49,BR-SP-Cerquilho,SP-CQH,cnpj:46.634.614/0001-26,Prefeitura Municipal de Cerquilho,100154106,https://cerquilho.sp.gov.br/,06/10/2020,2
+50,BR-BA-Salvador,BA-SDR,cnpj:13.927.801/0001-49,Prefeitura Municipal de Salvador,53930901,http://www.salvador.ba.gov.br/,12/10/2020,2
+51,BR,ClickSys-BR,cpf:115.658.347-04,ClickSistema,NA,clicksistema.com.br,NA,2
+52,BR-SP-RibeiraoPreto,SP-RPR,cnpj:56.024.581/0001-56,Prefeitura Municipal de Ribeirão Preto,56450005,https://www.ribeiraopreto.sp.gov.br/portal/,12/11/2020,3
+53,BR-SC-Florianopolis,IPUF,cnpj:83.469.965/0001-55,Instituto de Pesquisa e Planejamento Urbano de Florianópolis,101575535,http://www.pmf.sc.gov.br/entidades/ipuf/,09/11/2020,3
+54,BR-GO-Goiania,GO-GNA,cnpj:14.185.071/0001-10,Prefeitura de Goiânia,53930914,https://www.goiania.go.gov.br/,01/12/2020,3
+55,BR-MG-Uberaba,MG-URA,cnpj:18.428.839/0001-90,Prefeitura Municipal de Uberaba,56450073,http://www.uberaba.mg.gov.br/portal/principal,15/10/2020,2
+56,BR-PE-Caruaru,PE-CRU,cnpj:10.091.536/0001-13,Prefeitura de Caruaru,56450060,https://caruaru.pe.gov.br/,16/11/2020,2
+57,BR-MG-Uberlandia,MG-ULA,cnpj:18.431.312/0001-15,Prefeitura Municipal de Uberlândia,56450006,https://www.uberlandia.mg.gov.br/,12/03/2020,2
+58,BR-SP-Itanhaem,SP-ITH,cnpj:46.578.498/0001-75,Prefeitura de Itanhaém,104847769,http://www2.itanhaem.sp.gov.br/,12/07/2020,2
+59,BR-PR,Paranacidade,cnpj:01.450.804/0001-55,Serviço Social Autônomo Paranacidade,104848282,http://www.paranacidade.org.br/,08/12/2020,2
+60,BR-PE-Petrolina,PE-PTA,cnpj:10.358.190/0001-77,Prefeitura de Petrolina,56450068,https://petrolina.pe.gov.br/,16/09/2020,2
+61,BR-PR-Araucaria,PR-AUC,cnpj:76.105.535/0001-99,Prefeitura do Município de Araucária,104848034,https://araucaria.atende.net/,13/01/2021,3
+62,BR-RO-JiParana,RO-JIP,cnpj:04.092.672/0001-25,Prefeitura Municipal de Ji-Paraná,105008525,http://www.site.ji-parana.ro.gov.br/,19/01/2021,2
+63,BR-RS-NovoHamburgo,RS-NHO,cnpj:07.044.304/0001-08,Prefeitura Municipal de Novo Hamburgo,105008951,https://www.novohamburgo.rs.gov.br/,19/01/2021,2
+64,BR-RS-SantaCruzSul,RS-SCR,cnpj:95.440.517/0001-08,Prefeitura Municipal de Santa Cruz do Sul,105328349,https://www.santacruz.rs.gov.br,05/02/2021,2
+65,BR-SP-Cubatao,SP-CUB,cnpj:47.492.806/0001-08,Prefeitura Municipal de Cubatão,105453143,http://www.cubatao.sp.gov.br/,11/02/2021,2
+66,BR-PE-Bezerros,PE-BEZ,cnpj:10.091.510/0001-75,Prefeitura Municipal dos Bezerros,107391603,https://bezerros.pe.gov.br/,03/03/2021,2
+67,BR-SP-Paulinia,SP-PLN,cnpj:45.751.435/0001-06,Prefeitura Municipal de Paulínia,107391609,http://www.paulinia.sp.gov.br/,03/03/2021,2
+68,BR-DF-Brasilia,DF-BSA,cnpj:00.394.601/0001-26,Governo do Distrito Federal,96572867,http://www.df.gov.br/,NA,2
+69,BR-RS-CaxiasSul,RS-CSL,cnpj:88.830.609/0001-39,Prefeitura Municipal de Caxias do Sul,56450027,https://caxias.rs.gov.br/,29/03/2021,3
+70,BR-MG-Itabira,MG-IBA,cnpj:18.299.446/0001-24,Prefeitura Municipal de Itabira,107398095,https://www.itabira.mg.gov.br/,18/01/2021,2
+71,BR-AM-Manaus,AM-MNS,cnpj:04.365.326/0001-73,Prefeitura Municipal de Manaus,53930905,https://www.manaus.am.gov.br/,03/03/2021,2
+72,BR-PB-JoaoPessoa,PB-JPA,cnpj:08.806.721/0001-03,Prefeitura Municipal de João Pessoa,56449995,https://www.joaopessoa.pb.gov.br/,17/04/2022,2
+73,BR-RN-Natal,RN-NTL,cnpj:08.241.747/0001-43,Prefeitura Municipal de Natal,56449990,https://www.natal.rn.gov.br/,11/06/2021,2
+74,BR-RN-SaoGoncaloAmarante,RN-SGM,cnpj:08.079.402/0001-35,Prefeitura Municipal de São Gonçalo do Amarante,107398099,https://saogoncalodoamarante.ce.gov.br/portal/,01/06/2021,2
+75,BR-SC-Brusque,SC-BQE,cnpj:83.102.343/0001-94,Prefeitura Municipal de Brusque,107398109,https://portal.brusque.sc.gov.br/,21/06/2021,2
+76,BR-RS-Canoas,RS-CAN,cnpj:88.577.416/0001-18,Prefeitura Municipal de Canoas,56450066,https://www.canoas.rs.gov.br/,14/04/2021,2
+77,BR-SC-Chapeco,SC-CCO,cnpj:83.021.808/0001-82,Prefeitura Municipal de Chapecó,107398118,https://www.chapeco.sc.gov.br/,21/06/2021,2
+78,BR-RJ-RioJaneiro,RJ-RJO,cnpj:42.498.733/0001-48,Prefeitura da Cidade do Rio de Janeiro,57349212,https://prefeitura.rio/,22/06/2021,3
+79,BR-PR-Toledo,PR-TOO,cnpj:76.205.806/0001-88,Prefeitura Municipal de Toledo,107398664,https://www.toledo.pr.gov.br/,23/07/2020,2
+80,BR-RS-Pelotas,RS-PLT,cnpj:87.455.531/0001-57,Prefeitura Municipal de Pelotas,109188,https://www.pelotas.rs.gov.br/,17/12/2020,3
+81,BR-SP-Guarulhos,SP-GRH,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/,20/09/2021,3
+82,BR-RS-Bage,RS-BGE,cnpj:88.073.291/0001-99,Prefeitura Municipal de Bagé,119140,https://www.bage.rs.gov.br/,15/03/2021,2
+83,NA,NA,NA,Antônio Carlos,NA,NA,03/03/2021,1
+84,NA,NA,NA,Aparecida de Goiânia,NA,NA,11/09/2021,1
+85,NA,NA,NA,Apucarana,NA,NA,22/01/2021,1
+86,NA,NA,NA,Aracaju,NA,NA,05/04/2021,1
+87,NA,NA,NA,Barueri,NA,NA,16/11/2021,1
+88,NA,NA,NA,"Belém
+(pop. 2 milhões)",NA,NA,09/06/2021,1
+89,NA,NA,NA,Boa Vista,NA,NA,21/06/2021,1
+90,NA,NA,NA,Brasília - GDF e Gov.Br,NA,NA,26/03/2021,1
+91,NA,NA,NA,Cachoeiro de Itapemirim,NA,NA,21/02/2022,1
+92,NA,NA,NA,"Campo Largo
+(pop. 134.000)",NA,NA,22/02/2021,1
+93,NA,NA,NA,"Colatina
+(pop. 123.400)",NA,NA,25/05/2021,1
+94,NA,NA,NA,"Cuiabá
+(pop. 620.000)",NA,NA,05/04/2021,1
+95,NA,NA,NA,Diadema,NA,NA,04/04/2022,1
+96,NA,NA,NA,Divinopolis,NA,NA,17/11/2021,1
+97,BR-CE-Fortaleza,NA,cnpj:07.954.605/0001-60,Prefeitura Municipal de Fortaleza,43463,https://www.fortaleza.ce.gov.br/,18/06/2021,2
+98,NA,NA,NA,"Guarapari
+(pop. 127.000)",NA,NA,08/02/2021,1
+99,NA,NA,NA,Instituto Jones de Santos Neves,NA,NA,25/05/2021,1
+100,NA,NA,NA,"Itabuna
+215.000",NA,NA,17/11/2021,1
+101,NA,NA,NA,EMASA,NA,NA,29/11/2021,1
+102,NA,NA,NA,COELBA,NA,NA,15/02/2021,2
+103,NA,NA,NA,"Itaguaí
+(pop. 135000)",NA,NA,28/01/2021,1
+104,NA,NA,NA,Limoeiro do Norte,NA,NA,18/04/2022,1
+105,NA,NA,NA,Louveira,NA,NA,04/04/2022,1
+106,NA,NA,NA,Londrina-SANEPAR,NA,NA,27/01/2021,1
+107,NA,NA,NA,Maceió,NA,NA,21/06/2021,1
+108,NA,NA,NA,"Macapá
+(pop. 530.000)",NA,NA,05/04/2021,1
+109,NA,NA,NA,"Macaíba
+(pop. 82.000)",NA,NA,14/05/2021,1
+110,BR-PR-Maringa,PR-MGA,cnpj:76.282.656/0001-06,Prefeitura do Município de Maringá,208669,NA,29/09/2021,2
+111,NA,NA,NA,Mauá,NA,NA,11/04/2022,1
+112,NA,NA,NA,"Novo Gama
+(pop. 118.000)",NA,NA,06/01/2021,1
+113,NA,NA,NA,"Palmas [do Paraná]
+(pop. 52.000)",NA,NA,05/04/2021,1
+114,NA,NA,NA,Palmas,NA,NA,31/05/2021,1
+115,NA,NA,NA,Parauepebas,NA,NA,25/04/2022,1
+116,NA,NA,NA,"Porto Feliz
+(pop. 54.000)",NA,NA,14/08/2021,1
+117,NA,NA,NA,Porto Velho,NA,NA,24/06/2021,1
+118,NA,NA,NA,Ribeirão Pires,NA,NA,14/12/2021,1
+119,NA,NA,NA,Santana de Parnaiba,NA,NA,16/11/2021,1
+120,NA,NA,NA,São Luís,NA,NA,01/06/2021,1
+121,NA,NA,NA,"São Mateus 
+(pop. 133.000)",NA,NA,22/10/2020,1
+122,NA,NA,NA,Tietê,NA,NA,14/07/2020,1
+123,NA,NA,NA,"Três Lagoas
+(pop. 123.000)",NA,NA,06/01/2021,1
+124,NA,NA,NA,Valinhos,NA,NA,17/11/2021,1
+125,NA,NA,NA,DAEV Valinhos,NA,NA,29/11/2021,1
+126,NA,NA,NA,Vitoria da Conquista,NA,NA,18/04/2022,1
+127,NA,NA,NA,Associação dos Municipios da Região Metropolitana de Curitiba,NA,NA,21/12/2021,2
+128,NA,NA,NA,Consorcio intermunicipal do ABC,NA,NA,31/01/2022,1
+129,NA,NA,NA,Associação dos municipios do Noroeste de santa catarina,NA,NA,31/01/2022,1
+130,NA,NA,NA,Federação dos municipios do RN,NA,NA,05/04/2022,1
+131,NA,NA,NA,AMOSC Associao Mun Oeste de SC,NA,NA,21/03/2022,1
+132,NA,NA,NA,AMFRI  - Ass Mun da Frente do Rio Itajai,NA,NA,04/04/2022,1
+133,NA,NA,NA,AMAC - Associação dos municipios do Acre,NA,NA,19/04/2022,1
+134,NA,NA,NA,AESBE - Associação da empresas Estaduais de Saneamento,NA,NA,02/05/2022,1
+135,NA,NA,NA,Federeação dos municipios do RS FAMURS,NA,NA,02/05/2022,1
+136,NA,NA,NA,Assoica dos Munciios do E de Espirito Santo,NA,NA,09/05/2022,1
+137,NA,NA,NA,NEOENERGIA PERNAMBUCO,NA,NA,NA,1
+138,NA,NA,NA,ELEKTRO,NA,NA,NA,1
+139,NA,NA,NA,ASSOMASUL - Ass Munici Mato Grosso do Sul,NA,NA,23/05/2022,1
