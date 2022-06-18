@@ -27,3 +27,16 @@ Todo pacote de dados tem origem numa doação para o domínio público, ou cess�
 * metadados do [**pacote doado** (`donatedPack`)](donatedPack.csv): identificador sequencial de pacote (_pack_id_), doador relacionado, data de homologação pela Curadoria, e demais metadados do pacote, que pode conter pode conter um ou mais arquivos compactados. Os pacotes podem ainda ser atualizados ao longo dos anos, resultando em versões mais atualizadas.  Neste repositório *git* tanto as correções como as novas versões se sobrepõe às antigas.
 
 * Demais metadados e descritores: ver cada pasta `_pk$id` em `preserv-$país`. Por exemplo na pasta [_pk0001.03](_pk0001.03) um pacote de escopo nacional e na pasta [RS/PortoAlegre/_pk0018.01](RS/PortoAlegre/_pk0018.01) um pacote de escopo municipal.
+
+## Planilhas colaborativfas
+
+Favor usar APENAS OS LINKS ABAIXO para inicio de edição, antes de alterar o git:
+
+* [**donations-BR**](https://docs.google.com/spreadsheets/d/1-FQjjhHjJnAOxSWYEdFU_RePxAJDsJCnLviOyDo3QMM/): planilha colaborativa de doadores e pacotes, fonte para ser editada antes de  
+
+* [**preserv_BR-jurisdictions**](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/) .. antes de,
+   - Level3		https://github.com/digital-guard/preserv-BR/blob/main/data/jurisdictionLevel3.csv
+   - Level4		https://github.com/digital-guard/preserv-BR/blob/main/data/jurisdictionLevel4.csv
+   - Level8-AC		https://github.com/digital-guard/preserv-BR/blob/main/data/AC/jurisdictionLevel8.csv 
+   - Level8-AM		https://github.com/digital-guard/preserv-BR/blob/main/data/AM/jurisdictionLevel8.csv
+   - Level8-ES		https://github.com/digital-guard/preserv-BR/blob/main/data/ES/jurisdictionLevel8.csv
