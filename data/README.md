@@ -32,6 +32,6 @@ Todo pacote de dados tem origem numa doação para o domínio público, ou cess�
 
 Favor usar APENAS OS LINKS ABAIXO para inicio de edição, antes de alterar o git:
 
-* [**donations-BR**](https://docs.google.com/spreadsheets/d/1-FQjjhHjJnAOxSWYEdFU_RePxAJDsJCnLviOyDo3QMM/): planilha colaborativa de doadores e pacotes, fonte para ser editada antes de  
+* [**donations-BR**](https://docs.google.com/spreadsheets/d/1-FQjjhHjJnAOxSWYEdFU_RePxAJDsJCnLviOyDo3QMM/): planilha colaborativa de doadores e pacotes, fonte para ser editada antes de `donatedPack.csv`, `donor.csv`.
 
-* [**preserv_BR-jurisdictions**](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/): planilha colaborativa de jurisdições,  fonte para ser editada antes de data/jurisdictionLevel3.csv`, `data/jurisdictionLevel4.csv`, `data/*/jurisdictionLevel8.csv` (onde `*` é `AC`, `AM`, `ES`).
+* [**preserv_BR-jurisdictions**](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/): planilha colaborativa de jurisdições,  fonte para ser editada antes de `data/jurisdictionLevel3.csv`, `data/jurisdictionLevel4.csv`, `data/*/jurisdictionLevel8.csv` (onde `*` é `AC`, `AM`, `ES`).
