@@ -1,8 +1,10 @@
-ATENCAO REVISAR ESSE README:
+ATENCAO REVISAR ESSE README e usar NOVO número de pacote: pegar tudo de pasta *tratamento* 
 
-1. usar no make_conf o SHA256 dos pontos em CSV, feito pelo Igor através do CNPJ da AddressForAll
+1. Deletar pk32 de [donatedPack.csv](https://github.com/digital-guard/preserv-BR/blob/main/data/donatedPack.csv) e incluir AddressForAll
 
-2. Apenas indicar "para humano ver" aqui no Readme que antes existiu o `f90b25f2f94fdeadc8793266497250652488bf3cb0699c239b8bd59ed8fb67a5` relativo ao original *MAPA_DE_LOTEAMENTOS.dwg.zip*.
+2. usar no make_conf o SHA256 dos pontos em CSV, feito pelo Igor através do CNPJ da AddressForAll
+
+3. Apenas indicar "para humano ver" aqui no Readme que antes existiu o `f90b25f2f94fdeadc8793266497250652488bf3cb0699c239b8bd59ed8fb67a5` relativo ao original *MAPA_DE_LOTEAMENTOS.dwg.zip*.
 
  
 -----
