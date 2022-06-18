@@ -34,9 +34,4 @@ Favor usar APENAS OS LINKS ABAIXO para inicio de edição, antes de alterar o gi
 
 * [**donations-BR**](https://docs.google.com/spreadsheets/d/1-FQjjhHjJnAOxSWYEdFU_RePxAJDsJCnLviOyDo3QMM/): planilha colaborativa de doadores e pacotes, fonte para ser editada antes de  
 
-* [**preserv_BR-jurisdictions**](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/) .. antes de,
-   - Level3		https://github.com/digital-guard/preserv-BR/blob/main/data/jurisdictionLevel3.csv
-   - Level4		https://github.com/digital-guard/preserv-BR/blob/main/data/jurisdictionLevel4.csv
-   - Level8-AC		https://github.com/digital-guard/preserv-BR/blob/main/data/AC/jurisdictionLevel8.csv 
-   - Level8-AM		https://github.com/digital-guard/preserv-BR/blob/main/data/AM/jurisdictionLevel8.csv
-   - Level8-ES		https://github.com/digital-guard/preserv-BR/blob/main/data/ES/jurisdictionLevel8.csv
+* [**preserv_BR-jurisdictions**](https://docs.google.com/spreadsheets/d/1xibgSNwdbBbTS1Uv1eFfP_lWpiXYvGnhHBEP_bAPYwk/): planilha colaborativa de jurisdições,  fonte para ser editada antes de data/jurisdictionLevel3.csv`, `data/jurisdictionLevel4.csv`, `data/*/jurisdictionLevel8.csv` (onde `*` é `AC`, `AM`, `ES`).
