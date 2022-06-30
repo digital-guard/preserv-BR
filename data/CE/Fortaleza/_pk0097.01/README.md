@@ -54,7 +54,8 @@ SRID: 31984
 
 **Obs2:** necessário separar nome do logradouro e número de porta
 
-Ver [figura](https://github.com/digital-guard/preserv-BR/blob/main/data/CE/Fortaleza/_pk0097.01/qgis.PNG).
+### Evidencia de teste
+![](https://github.com/digital-guard/preserv-BR/blob/main/data/CE/Fortaleza/_pk0097.01/qgis.PNG).
 
 
 
