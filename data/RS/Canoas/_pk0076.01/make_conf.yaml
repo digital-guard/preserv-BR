@@ -1,0 +1,84 @@
+pack_id: 76.1
+pkversion: 001
+schemaId_input: 
+schemaId_template: 
+codec:descr_encode: 31982
+
+files:
+  -
+    p:    1
+    file: 23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
+    name: Quadras
+  -
+    p:    2
+    file: 6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
+    name: Edificações
+  -
+    p:    3
+    file: 62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
+    name: Bairros
+  -
+    p:    4
+    file: 4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
+    name: Lotes
+  -
+    p:    5
+    file: 8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
+    name: Vias
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry']
+    orig_filename: quadra
+      
+  building:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'geometry']
+    orig_filename: Edificacao
+      
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'Bairro as nsvia_name', 'geometry']
+    orig_filename: LIMITE_BAIRROS
+    comments: Não é polígono, os bairros foram desenhados com linhas.
+    standardized_fields:
+     -
+      name: Bairro
+      standard: nsvia_name
+      
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'LOGRNOME as via_name', 'ECONUMERO as house_number', 'geometry']
+    orig_filename: lote_com_rua
+    standardized_fields:
+     -
+      name: LOGRNOME
+      standard: via_name
+     -
+      name: ECONUMERO
+      standard: house_number
+      
+  via:
+    subtype: full
+    method: shp2sql
+    file: 5
+    sql_select: ['gid', 'ds_logrado as via_name', 'geometry']
+    orig_filename: sistema_viario_atualizado
+    standardized_fields:
+     -
+      name: ds_logrado
+      standard: via_name
+
+comments: Vários outros arquivos com pontos de interesse (escolas, bibliotecas, UPAs etc.).
+
+test_evidence: qgis.png
