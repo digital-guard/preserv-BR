@@ -1,0 +1,73 @@
+pack_id: 26.1
+pkversion: 001
+schemaId_input: 
+schemaId_template: 
+codec:descr_encode: srid=31983
+
+files:
+  -
+    p:    1
+    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
+    name: Quadras
+  -
+    p:    2
+    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
+    name: Bairros
+  -
+    p:    3
+    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
+    name: Lotes
+  -
+    p:    4
+    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
+    name: Vias
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry']
+    orig_filename: quadras
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'nome as nsvia_name', 'geometry']
+    orig_filename: loteamentos
+    standardized_fields:
+     -
+      name: nome
+      standard: nsvia_name
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geometry']
+    orig_filename: lotes
+    comments: Nome possui formato estranho, verificar se é possível arrumar com regular expression (ver qgis.png).
+    standardized_fields:
+     -
+      name: ENDER_IMOV
+      standard: via_name
+     -
+      name: NRO_IMOV
+      standard: house_number
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'tipo + nome_1 + compl_1 + compl_2 as via_name', 'geometry']
+    orig_filename: eixo
+    standardized_fields:
+     -
+      name: tipo + nome_1 + compl_1 + compl_2
+      standard: via_name
+      
+comments: Outros arquivos descrevem pontos de interesse.
+
+test_evidence: qgis.png
