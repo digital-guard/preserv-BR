@@ -1,0 +1,71 @@
+pack_id: 64.1
+pkversion: 001
+schemaId_input: 
+schemaId_template: 
+codec:descr_encode: srid=31982
+
+files:
+  -
+    p:    1
+    file: a3eab1ae42ce304d9bbd119ebb769b6c93c40f04b1f09c6e0e9ec322320da7ff.zip
+    name: Quadras
+  -
+    p:    2
+    file: 8cfffc8d4ab052dd653748fd22c52ad708609e8c3c30283f57a7b2627fbf8aca.zip
+    name: Bairros
+  -
+    p:    3
+    file: 3b4634f38fafd4d3a779b1f7a1075ab2fd6b951509290849f26813319920b2fa.zip
+    name: Lotes
+  -
+    p:    4
+    file: 5c7bc9d5d753681db743235e647cb653efe34404aad61b040af89cc2ec68bbe2.zip
+    name: Vias
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry']
+    orig_filename: santa_cruz_do_sul_rs_quadras
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'NAME1_ as nsvia_name', 'geometry']
+    orig_filename: santa_cruz_do_sul_rs_bairros
+    standardized_fields:
+     -
+      name: NAME1_
+      standard: nsvia_name
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'logradouro as via_name', 'numeracao as house_number', 'geometry']
+    orig_filename: rs_scs_lotes_com_ceps_e_numeracao
+    comments: Existem polígonos de lote com mais de um número de porta, separados por barra.
+    standardized_fields:
+     -
+      name: logradouro
+      standard: via_name
+     -
+      name: numeracao
+      standard: house_number
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'logradouro as via_name', 'geometry']
+    orig_filename: santa_cruz_do_sul_rs_eixos
+    standardized_fields:
+     -
+      name: logradouro
+      standard: via_name
+
+test_evidence: qgis.png

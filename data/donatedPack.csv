@@ -62,7 +62,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 06101,61,1,001,PR-AUC,igor,2020-01-13,BR-PR-Araucaria,"Lotes, eixos, bairros urbanos e bairros rurais",(self),2021,no,CC0,email,(anexo de email),no,working-makefile,
 06201,62,1,001,RO-JIP,igor,2020-01-19,BR-RO-JiParana,Eixos,(self),2021,no,CC0,site,(anexo de email),no,working-makefile,
 06301,63,1,001,RS-NHO,igor,2021-06-23,BR-RS-NovoHamburgo,"Bairros, lotes (inscrição) e POIs.",(self),2021,no,CC0,"site,email","https://signh.novohamburgo.rs.gov.br/,(anexo de email)",no,working-makefile,
-06401,64,1,001,RS-SCR,igor,2021-06-18,BR-RS-SantaCruzSul,"Eixos, lotes, bairros, quadras",(self),2021,no,CC0,email,(anexo de email),no,working-makefile,
+06401,64,1,001,RS-SCR,igor,2022-03-08,BR-RS-SantaCruzSul,"Eixos, lotes, bairros, quadras",(self),2022,no,CC0,email,(anexo de email),no,working-makefile,
 06501,65,1,001,SP-CUB,igor,2021-02-12,BR-SP-Cubatao,"Eixos, loteamentos, hidrografia, meios-fios, divisa de município, muros, PDFs de turismo e POIs.",(self),2021,no,CC0,email,(anexo de email),no,working-makefile,
 06601,66,1,001,PE-(BEZ),igor,2021-03-03,BR-PE-Bezerros,Mapa cadastral em DWG,(self),2001,no,CC0,email,(anexo de email),no,,
 06701,67,1,001,SP-PLN,igor,2021-06-24,BR-SP-Paulinia,"Quadras, bairros, limite de município e loteamentos.",(self),2021,no,CC0,email,(anexo de email),no,,
