@@ -20,7 +20,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 01801,18,1,001,RS-PAE,igor,2020-07-27,BR-RS-PortoAlegre,"Bairros, eixos, pontos de numeração de casa",(self),2019,yes,CC0,email,(anexo de email),no,working-makefile,
 01901,19,1,001,RS-SMA,igor,2020-07-15,BR-RS-SantaMaria,Bairros,(self),2019,yes,CC0,email,(anexo de email),no,working-makefile,
 02001,20,1,001,SC-JGS,igor,2020-07-23,BR-SC-JaraguaSul,"Eixos, edificação, quadras",(self),2019,no,"CC0,(decreto municipal)","osm,email",(anexo de email),yes,working-makefile,
-02101,21,1,001,SP-ATB,igor,2020-07-29,BR-SP-Atibaia,Eixos,(self),2019,yes,CC0,email,(anexo de email),no,working-makefile,
+02101,21,1,001,SP-ATB,igor,2020-09-10,BR-SP-Atibaia,"Via,parcel,building",(self),2019,yes,CC0,email,(anexo de email),no,working-makefile,
 02201,22,1,001,SP-CAM,igor,2020-08-14,BR-SP-Campinas,"Eixos, loteamentos, pontos de lotes",(self),2019,no,CC0,site,https://informacao-didc.campinas.sp.gov.br/metadados.php,no,working-makefile,
 02301,23,1,001,SP-GRJ,igor,2020-10-01,BR-SP-Guaruja,Mapa em DWG,(self),2019,,CC0,email,(anexo de email),no,working-makefile,
 02401,24,1,001,SP-ITU,igor,2020-05-07,BR-SP-Itu,"Loteamento, edificação, eixo, lote e quadra",(self),2019,yes,CC0,email,(anexo de email),yes,working-makefile,

@@ -1,0 +1,60 @@
+pack_id: 21.1
+pkversion: 001
+schemaId_input: 
+schemaId_template: 
+
+files:
+  -
+    p:    1
+    file: 
+    name: Logradouros
+  -
+    p:    2
+    file: 
+    name: Lotes
+  -
+    p:    3
+    file: 
+    name: Edificações
+
+layers:
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'log_nome_c as name', 'geometry']
+    orig_filename: CAD_LOG
+    codec: 29193
+    standardized_fields:
+     -
+      name: log_nome_c
+      standard: name
+
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'num as house_number', 'geometry']
+    orig_filename: lotes
+    codec: 29193
+    standardized_fields:
+     -
+      name: num
+      standard: house_number
+
+  building:
+    subtype: none
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'numero as house_number', 'geometry']
+    orig_filename: pg_cartografia_logradouros
+    codec: 3857
+    standardized_fields:
+     -
+      name: numero
+      standard: house_number
+
+comments: Parcel e building incompletos. Sem nome de logradouro, alguns número de porta nulos ("0") e cobertura parcial de lotes (veja evidências).
+
+test_evidence: qgis.png

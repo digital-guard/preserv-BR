@@ -1,0 +1,4 @@
+0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804 *logradouros.zip
+b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488 *lotes.zip
+6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab *edificacoes.zip
+7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af *BR-SP-Atibaia-license-2020-09-10.eml
