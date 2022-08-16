@@ -1,0 +1,82 @@
+pack_id: 58.1
+pkversion: 001
+schemaId_input: 
+schemaId_template: 
+
+files:
+  -
+    p:    1
+    file: 78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip
+    name: Geoaddress
+  -
+    p:    2
+    file: 023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip
+    name: Bairros
+  -
+    p:    3
+    file: 7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip
+    name: Lotes
+  -
+    p:    4
+    file: 3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip
+    name: Vias
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry']
+    orig_filename: CENTROIDES
+    codec: 31983
+    standardized_fields:
+     -
+      name: Cadastro_7
+      standard: via_name
+     -
+      name: Cadastro_8
+      standard: house_number
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'NOME as nsvia_name', 'geometry']
+    orig_filename: ABAIRRAMENTO
+    codec: 31983
+    standardized_fields:
+     -
+      name: NOME
+      standard: nsvia_name
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry']
+    orig_filename: LOTES_2020
+    codec: 29193
+    standardized_fields:
+     -
+      name: Cadastro_7
+      standard: via_name
+     -
+      name: Cadastro_8
+      standard: house_number
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'tr_tipo + tr_descric as via_name', 'geometry']
+    orig_filename: ARRUAMENTO
+    codec: 31983
+    standardized_fields:
+     -
+      name: tr_tipo + tr_descric
+      standard: via_name
+      
+comments: Arquivos loteamentos e limites municipais não listados acima.
+
+test_evidence: qgis.png
