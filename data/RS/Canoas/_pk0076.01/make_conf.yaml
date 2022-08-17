@@ -1,8 +1,8 @@
 pack_id: 76.1
 pkversion: 001
-schemaId_input: 
-schemaId_template: 
-codec:descr_encode: 31982
+schemaId_input: ref027a
+schemaId_template: ref027a 
+codec:descr_encode: srid=31982
 
 files:
   -
@@ -32,21 +32,21 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'geometry']
+    sql_select: ['gid', 'geometry as geom']
     orig_filename: quadra
       
   building:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'geometry']
+    sql_select: ['gid', 'geometry as geom']
     orig_filename: Edificacao
       
   nsvia:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Bairro as nsvia_name', 'geometry']
+    sql_select: ['gid', 'Bairro as nsvia_name', 'geometry as geom']
     orig_filename: LIMITE_BAIRROS
     comments: Não é polígono, os bairros foram desenhados com linhas.
     standardized_fields:
@@ -58,7 +58,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'LOGRNOME as via_name', 'ECONUMERO as house_number', 'geometry']
+    sql_select: ['gid', 'LOGRNOME as via_name', 'ECONUMERO as house_number', 'geometry as geom']
     orig_filename: lote_com_rua
     standardized_fields:
      -
@@ -72,7 +72,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_select: ['gid', 'ds_logrado as via_name', 'geometry']
+    sql_select: ['gid', 'ds_logrado as via_name', 'geometry as geom']
     orig_filename: sistema_viario_atualizado
     standardized_fields:
      -

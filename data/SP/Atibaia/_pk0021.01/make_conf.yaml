@@ -1,7 +1,8 @@
 pack_id: 21.1
 pkversion: 001
-schemaId_input: 
-schemaId_template: 
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=29193
 
 files:
   -
@@ -23,9 +24,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'log_nome_c as name', 'geometry']
+    sql_select: ['gid', 'log_nome_c as name', 'geometry as geom']
     orig_filename: CAD_LOG
-    codec: 29193
     standardized_fields:
      -
       name: log_nome_c
@@ -35,9 +35,8 @@ layers:
     subtype: none
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'num as house_number', 'geometry']
+    sql_select: ['gid', 'num as house_number', 'geometry as geom']
     orig_filename: lotes
-    codec: 29193
     standardized_fields:
      -
       name: num
@@ -47,9 +46,9 @@ layers:
     subtype: none
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'numero as house_number', 'geometry']
+    sql_select: ['gid', 'numero as house_number', 'geometry as geom']
     orig_filename: pg_cartografia_logradouros
-    codec: 3857
+    codec: SHP;srid=3857
     standardized_fields:
      -
       name: numero

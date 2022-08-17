@@ -1,7 +1,8 @@
 pack_id: 58.1
 pkversion: 001
-schemaId_input: 
-schemaId_template: 
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31983
 
 files:
   -
@@ -27,9 +28,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry']
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry as geom']
     orig_filename: CENTROIDES
-    codec: 31983
     standardized_fields:
      -
       name: Cadastro_7
@@ -42,9 +42,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME as nsvia_name', 'geometry']
+    sql_select: ['gid', 'NOME as nsvia_name', 'geometry as geom']
     orig_filename: ABAIRRAMENTO
-    codec: 31983
     standardized_fields:
      -
       name: NOME
@@ -54,9 +53,9 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry']
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry as geom']
     orig_filename: LOTES_2020
-    codec: 29193
+    codec: SHP;srid=29193
     standardized_fields:
      -
       name: Cadastro_7
@@ -69,9 +68,9 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'tr_tipo + tr_descric as via_name', 'geometry']
+    sql_select: ['gid', 'tr_tipo + tr_descric as via_name', 'geometry as geom']
     orig_filename: ARRUAMENTO
-    codec: 31983
+    comments: Compor nome com sql view.
     standardized_fields:
      -
       name: tr_tipo + tr_descric

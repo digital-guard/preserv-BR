@@ -1,7 +1,7 @@
 pack_id: 26.1
 pkversion: 001
-schemaId_input: 
-schemaId_template: 
+schemaId_input: ref027a
+schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
@@ -28,25 +28,26 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'geometry']
+    sql_select: ['gid', 'geometry as geom']
     orig_filename: quadras
 
   nsvia:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'nome as nsvia_name', 'geometry']
+    sql_select: ['gid', 'Tipo + Nome as nsvia_name', 'geometry as geom']
     orig_filename: loteamentos
+    comments: Necessario compor nome com regular expression.
     standardized_fields:
      -
-      name: nome
+      name: Tipo + Nome
       standard: nsvia_name
 
   parcel:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geometry']
+    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geometry as geom']
     orig_filename: lotes
     comments: Nome possui formato estranho, verificar se é possível arrumar com regular expression (ver qgis.png).
     standardized_fields:
@@ -61,8 +62,9 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'tipo + nome_1 + compl_1 + compl_2 as via_name', 'geometry']
+    sql_select: ['gid', 'tipo + nome_1 + compl_1 + compl_2 as via_name', 'geometry as geom']
     orig_filename: eixo
+    comments: Necessario arrumar nome do logradouro por regular expression.
     standardized_fields:
      -
       name: tipo + nome_1 + compl_1 + compl_2
