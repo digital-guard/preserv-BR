@@ -62,7 +62,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'tipo + nome_1 + compl_1 + compl_2 as via_name', 'geometry as geom']
+    sql_select: ['gid', 'tipo + compl_1 + compl_2 + nome_1 as via_name', 'geometry as geom']
     orig_filename: eixo
     comments: Necessario arrumar nome do logradouro por regular expression.
     standardized_fields:
