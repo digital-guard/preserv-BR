@@ -1,0 +1,93 @@
+pack_id: 91.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: custom_crs.md
+
+files:
+  -
+    p:    1
+    file: 8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip
+    name: Quadras
+  -
+    p:    2
+    file: 4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip
+    name: Geoenderecos
+  -
+    p:    3
+    file: 5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar
+    name: Bairros
+  -
+    p:    4
+    file: 81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip
+    name: Lotes
+  -
+    p:    5
+    file: 7dbb469cf4affc5e9d0486712553ed2c635a2a33e3e2389c660ceabc209e59c7.zip
+    name: Logradouros urbanos
+  -
+    p:    6
+    file: 3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip
+    name: Logradouros rurais
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry as geom']
+    orig_filename: levels_3Polygon
+      
+  geoaddress:
+    subtype: none
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'inscricao', 'geometry as geom']
+    orig_filename: inscricao_fiscal_cigeo
+    other_fields:
+     -
+      name: inscricao
+      comments: IPTU.
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'NOME as nsvia_name', 'geometry as geom']
+    orig_filename: LIMITE_BAIRROS_7915_2021
+    codec: SHP;srid=31984
+    standardized_fields:
+     -
+      name: NOME
+      standard: nsvia_name
+
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'num01', 'geometry as geom']
+    orig_filename: numeroinicioefim1
+    standardized_fields:
+     -
+      name: num01
+      standard: Numero inicial e final (ficticio, nao corresponde aos numeros reais).
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 5
+    sql_select: ['gid', 'geometry as geom']
+    orig_filename: logradouros_rurais_cigeo
+    file: 6
+    sql_select: ['gid', 'tip_logr + textstring as via_name', 'geometry as geom']
+    orig_filename: axisLine
+    comments: Necessario fazer join entre logradouros urbanos e rurais. Logradouros rurais nao possuem nome de logradouro.
+    standardized_fields:
+     -
+      name: tip_logr + textstring
+      standard: via_name
+      
+comments: Existem muitos outros arquivos, incluindo faces de quadras, iptu em linhas, metadados do street view, pontos de interesse.
+
+test_evidence: qgis.png
