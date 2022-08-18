@@ -1,0 +1,83 @@
+pack_id: 84.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31982
+
+files:
+  -
+    p:    1
+    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
+    name: Quadras
+  -
+    p:    2
+    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
+    name: Bairros
+  -
+    p:    3
+    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
+    name: Lotes
+  -
+    p:    4
+    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
+    name: Logradouros
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'num_qdr', 'geometry as geom']
+    orig_filename: QUADRAS
+    other_fields:
+     -
+      name: num_qdr
+      comments: Numero da quadra.
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'nm_bai as nsvia_name', 'num_bai', 'geometry as geom']
+    orig_filename: BAIRROS
+    standardized_fields:
+     -
+      name: nm_bai
+      standard: nsvia_name
+    other_fields:
+     -
+      name: num_bai
+      comments: Numero do bairro.
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'num_lot as house_number', 'num_qdr', 'num_bai', 'nm_bai', 'geometry as geom']
+    orig_filename: LOTES
+    standardized_fields:
+     -
+      name: num_lot
+      standard: house_number
+    other_fields:
+     -
+      name: num_qdr
+      comments: Numero da quadra.
+     -
+      name: num_bai
+      comments: Numero do bairro.
+     -
+      name: nm_bai
+      comments: Nome do bairro.
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'logradouro as via_name', 'geometry as geom']
+    orig_filename: LOGRADOUROS
+    standardized_fields:
+     -
+      name: logradouro
+      standard: via_name
