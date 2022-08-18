@@ -68,7 +68,7 @@ layers:
     file: 4
     sql_select: ['gid', 'num01', 'geometry as geom']
     orig_filename: numeroinicioefim1
-    standardized_fields:
+    other_fields:
      -
       name: num01
       standard: Numero inicial e final (ficticio, nao corresponde aos numeros reais).
