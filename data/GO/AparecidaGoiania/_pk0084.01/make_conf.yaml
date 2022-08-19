@@ -8,19 +8,7 @@ files:
   -
     p:    1
     file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
-    name: Quadras
-  -
-    p:    2
-    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
-    name: Bairros
-  -
-    p:    3
-    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
-    name: Lotes
-  -
-    p:    4
-    file: 607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar
-    name: Logradouros
+    name: Quadras, bairros, lotes e logradouros
 
 layers:
 
@@ -38,7 +26,7 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    file: 2
+    file: 1
     sql_select: ['gid', 'nm_bai as nsvia_name', 'num_bai', 'geometry as geom']
     orig_filename: BAIRROS
     standardized_fields:
@@ -53,7 +41,7 @@ layers:
   parcel:
     subtype: full
     method: shp2sql
-    file: 3
+    file: 1
     sql_select: ['gid', 'num_lot as house_number', 'num_qdr', 'num_bai', 'nm_bai', 'geometry as geom']
     orig_filename: LOTES
     standardized_fields:
@@ -74,7 +62,7 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    file: 4
+    file: 1
     sql_select: ['gid', 'logradouro as via_name', 'geometry as geom']
     orig_filename: LOGRADOUROS
     standardized_fields:
