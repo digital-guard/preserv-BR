@@ -8,19 +8,7 @@ files:
   -
     p:    1
     file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
-    name: Quadras
-  -
-    p:    2
-    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
-    name: Bairros
-  -
-    p:    3
-    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
-    name: Lotes
-  -
-    p:    4
-    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
-    name: Vias
+    name: Quadras, bairros, lotes e vias
 
 layers:
 
@@ -34,7 +22,7 @@ layers:
   nsvia:
     subtype: full
     method: shp2sql
-    file: 2
+    file: 1
     sql_select: ['gid', 'Tipo + Nome as nsvia_name', 'geometry as geom']
     orig_filename: loteamentos
     comments: Necessario compor nome com regular expression.
@@ -46,7 +34,7 @@ layers:
   parcel:
     subtype: full
     method: shp2sql
-    file: 3
+    file: 1
     sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geometry as geom']
     orig_filename: lotes
     comments: Nome possui formato estranho, verificar se é possível arrumar com regular expression (ver qgis.png).
@@ -61,7 +49,7 @@ layers:
   via:
     subtype: full
     method: shp2sql
-    file: 4
+    file: 1
     sql_select: ['gid', 'tipo + compl_1 + compl_2 + nome_1 as via_name', 'geometry as geom']
     orig_filename: eixo
     comments: Necessario arrumar nome do logradouro por regular expression.
