@@ -1,4 +1,5 @@
 # Tarefas
+## 0. Esperar receber melhores dados da prefeitura
 ## 1. Gerar eixos de vias com nomes do OpenStreetMap
 Obter eixos de vias do mapa OpenStreeMap, dentro do limite do município de Cabreúva.
 
