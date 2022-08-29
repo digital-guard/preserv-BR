@@ -10,7 +10,8 @@ jurisdiction_isolevel_names: {"Estado":26,"Município":5570}
 jurisdiction_isolevel_names_en: ["State","Municípality"]
 srid_official:
   equalarea: 952019
-  utm_quadrants: {}
+  utm_zones: {"18":31972,"19":31979,"20":31980,"21":31981,"22":31982,"23":31983,"24":31984,"25":31985}  
+utm_grid_cover: ["18L","18M","19L","19M","20K","20L","20M","20N","21J","21K","21L","21M","21N","22H","22J","22K","22L","22M","22N","23K","23L","23M","24K","24L","24M","25K","25L"]
 preserv_sponsors_project_percent: {"AddressForAll":99,"_others":1}
 
 local_srid_def:
