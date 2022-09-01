@@ -9,9 +9,9 @@
 # Camadas de dados
 ## building
 
-Nome do arquivo: `pg_cartografia_logradouros`.
-Download: <a title="SHA256" href="http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip">6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip</a>
-Name; Edificações
+Nome do arquivo: `pg_cartografia_logradouros`.<br/>
+Download: <a title="SHA256" href="http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip">6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip</a><br />
+Name: Edificações
 
 SRID: 3857
 
@@ -22,9 +22,9 @@ SRID: 3857
 
 ## parcel
 
-Nome do arquivo: `lotes`.
-Download: <a title="SHA256" href="http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip">b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip</a>
-Name; Lotes
+Nome do arquivo: `lotes`.<br/>
+Download: <a title="SHA256" href="http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip">b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip</a><br />
+Name: Lotes
 
 SRID: 29193
 
@@ -35,9 +35,9 @@ SRID: 29193
 
 ## via
 
-Nome do arquivo: `CAD_LOG`.
-Download: <a title="SHA256" href="http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip">0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip</a>
-Name; Logradouros
+Nome do arquivo: `CAD_LOG`.<br/>
+Download: <a title="SHA256" href="http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip">0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip</a><br />
+Name: Logradouros
 Comentário: exemplo de comentário em files.
 SRID: 29193
 
