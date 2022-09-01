@@ -1,88 +1,73 @@
-# Tarefas
+<aside style="float:right;">
+<h1>{{isolabel_ext}}</h1>
+<p>Dados doados por <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a> (<small>{{vat_id}} • Wikidtata <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{wikidata_id}}">Q{{wikidata_id}}</a></small>).</p>
+<p>Pacote obtido por <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b>, sob testemunho e tutela de {{user_resp}} (avaliação técnica) e Thierry (representação institucional), que confirmaram com Fulano{{#license}} a licença <b>{{license}}</b>{{/license}}.</p>
+</aside>
 
-## 1. 
+<section style="float:left;">
 
-## 2. 
-
+# Camadas de dados
 {{#layers}}
+{{#value}}
+## {{layername_root}}
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+Nome do arquivo: `{{orig_filename}}`.
+<a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{sha256file}}</a>
+{{#sha256file_name}}{{sha256file_name}}{{/sha256file_name}}
+{{#sha256file_comments}}{{sha256file_comments}}{{/sha256file_comments}}
+{{#srid}}SRID: {{srid}}{{/srid}}
 
-{{#nsvia}}
-## Bairros
-SRID: 
-1. Abrir ``.
-2. Selecionar arquivos `{{orig_filename}}`.
-3. Copiar arquivos selecionados para diretório alvo.
-
+{{#has_standardized_fields}}
 ### Dados relevantes
-Colunas da camada `{{orig_filename}}`:
-* ``;
-* ``.
-{{/nsvia}}
+{{#standardized_fields}}
+* `{{name}}` ({{standard}}){{#comment}}: {{comments}}{{/comment}}
+{{/standardized_fields}}
+{{/has_standardized_fields}}
+{{#has_other_fields}}
+### Outros dados relevantes
+{{#other_fields}}
+* `{{name}}`{{.}} {{#comment}}: {{comment}}{{/comment}}
+{{/other_fields}}
+{{/has_other_fields}}
 
-{{#genericvia}}
-## Lotes
-SRID: 
-1. Abrir ``.
-2. Selecionar arquivos `{{orig_filename}}`.
-3. Copiar arquivos selecionados para diretório alvo.
+{{#value.test_evidence}}
+### Evidência de teste
+![]({{layers.test_evidence}})
+{{/value.test_evidence}}
 
-### Dados relevantes
-Colunas da camada `{{orig_filename}}`:
-* `` (): ;
-* `` (): .
-{{/genericvia}}
+{{#value.comments}}
+### Comentários
+{{value.comments}}
+{{/value.comments}}
 
-{{#via}}
-## Eixos
-SRID: 
-1. Abrir ``.
-2. Selecionar arquivos `{{orig_filename}}`.
-3. Copiar arquivos selecionados para diretório alvo.
-
-### Dados relevantes
-Colunas da camada `{{orig_filename}}`:
-* `` (): ;
-* `` (): .
-{{/via}}
-
-{{#cadvia}}
-## Lista de abreviaturas de tipos de logradouros
-Charset: 
-1. Abrir `OSM_dados_solicitacao.rar`.
-2. Selecionar arquivos `atributo__tipo_logradouro.csv`.
-3. Copiar arquivos selecionados para diretório alvo.
-
-### Dados relevantes
-Colunas [número da coluna]:
-* `` []: ;
-* `` []: .
-
-## Lista de abreviaturas de nomes de logradouros
-Charset: 
-1. Abrir ``.
-2. Selecionar arquivos `{{orig_filename}}`.
-3. Copiar arquivos selecionados para diretório alvo.
-
-### Dados relevantes
-Colunas [número da coluna]:
-* `` []: ;
-* `` []: .
-{{/cadvia}}
-
+{{#value.publication_summary}}
+### Dados publicados
+({{bytes}} bytes • {{bytes_mb}} <abbr title="mebibyte">MiB</abbr>)<br />
+{{itens}} {{geom_type}}{{^isGeoaddress}}, totalizando {{size}} <abbr title="{{geom_unit_ext}}">{{geom_unit_abr}}</abbr> de {{geom_type}};<br/>densidade média de {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}{{#isGeoaddress}};<br/>densidade média de {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}
+{{/value.publication_summary}}
+{{/value}}
 {{/layers}}
 
-## Outros
-Para outros projetos, há também dados sobre:
-* ``:
-  * 
-* ``:
-  * 
-
-(!!! Havendo outros projetos, esta seção será detalhada !!!)
-
+{{#test_evidence}}
 # Evidências de teste
-Teste no QGIS:
-![](qgis.png)
+![]({{test_evidence}})
+{{/test_evidence}}
+
+{{#comments}}
+# Comentários gerais
+{{comments}}
+{{/comments}}
+
+{{#has_other_files}}
+# Outros dados relevantes
+{{#other_files}}
+* `{{name}}`{{#other_files.0.comments}}: {{other_files.0.comments}}{{/other_files.0.comments}}
+{{/other_files}}
+{{/has_other_files}}
+{{#has_to-do}}
+# Tarefas
+{{#to-do}}
+* {{.}}
+{{/to-do}}
+{{/has_to-do}}
+</section>
