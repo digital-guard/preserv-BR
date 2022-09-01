@@ -9,7 +9,7 @@ Avaliação técnica: igor<br/>
 Representação institucional: Thierry<br/>
 Licença: <b>CC0</b>
 </td></tr>
-</table> 
+</table>
 </aside>
 
 <section>
@@ -53,7 +53,7 @@ Comentário: exemplo de comentário em files.<br/>
 SRID: 29193
 
 ### Dados relevantes
-* `log_nome_c` (name): exemplo de comentário em layer.
+* `log_nome_c` (name): exemplo de comentário em standardized_fields.
 ### Outros dados relevantes
 * `exemplo de other_fields.`: exemplo de comentário em other_fields.
 * `exemplo de +1 other_fields.`: exemplo +1 de comentário em other_fields.
