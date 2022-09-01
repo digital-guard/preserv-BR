@@ -12,9 +12,9 @@
 ## {{layername_root}}
 
 Nome do arquivo: `{{orig_filename}}`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{sha256file}}</a><br />
-{{#sha256file_name}}Name: {{sha256file_name}}{{/sha256file_name}}
-{{#sha256file_comments}}Comentário: {{sha256file_comments}}{{/sha256file_comments}}
+Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{sha256file}}</a><br/>
+{{#sha256file_name}}Descrição: {{sha256file_name}}<br/>{{/sha256file_name}}
+{{#sha256file_comments}}Comentário: {{sha256file_comments}}<br/>{{/sha256file_comments}}
 {{#srid}}SRID: {{srid}}{{/srid}}
 
 {{#has_standardized_fields}}
@@ -26,7 +26,7 @@ Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{
 {{#has_other_fields}}
 ### Outros dados relevantes
 {{#other_fields}}
-* `{{name}}`{{.}} {{#comment}}: {{comment}}{{/comment}}
+* `{{name}}`{{#comment}}: {{comment}}{{/comment}}
 {{/other_fields}}
 {{/has_other_fields}}
 

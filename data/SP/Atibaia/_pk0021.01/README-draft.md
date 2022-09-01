@@ -10,8 +10,8 @@
 ## building
 
 Nome do arquivo: `pg_cartografia_logradouros`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip">6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip</a><br />
-Name: Edificações
+Download: <a title="SHA256" href="http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip">6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip</a><br/>
+Descrição: Edificações<br/>
 
 SRID: 3857
 
@@ -23,8 +23,8 @@ SRID: 3857
 ## parcel
 
 Nome do arquivo: `lotes`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip">b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip</a><br />
-Name: Lotes
+Download: <a title="SHA256" href="http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip">b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip</a><br/>
+Descrição: Lotes<br/>
 
 SRID: 29193
 
@@ -36,17 +36,17 @@ SRID: 29193
 ## via
 
 Nome do arquivo: `CAD_LOG`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip">0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip</a><br />
-Name: Logradouros
-Comentário: exemplo de comentário em files.
+Download: <a title="SHA256" href="http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip">0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip</a><br/>
+Descrição: Logradouros<br/>
+Comentário: exemplo de comentário em files.<br/>
 SRID: 29193
 
 ### Dados relevantes
 * `log_nome_c` (name): exemplo de comentário em layer.
 ### Outros dados relevantes
-* `exemplo de other_fields.`{'name': 'exemplo de other_fields.', 'comment': 'exemplo de comentário em other_fields.'} : exemplo de comentário em other_fields.
-* `exemplo de +1 other_fields.`{'name': 'exemplo de +1 other_fields.', 'comment': 'exemplo +1 de comentário em other_fields.'} : exemplo +1 de comentário em other_fields.
-* `exemplo de +2 other_fields.`{'name': 'exemplo de +2 other_fields.'} 
+* `exemplo de other_fields.`: exemplo de comentário em other_fields.
+* `exemplo de +1 other_fields.`: exemplo +1 de comentário em other_fields.
+* `exemplo de +2 other_fields.`
 
 ### Evidência de teste
 ![](qgis.png)
