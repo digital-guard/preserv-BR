@@ -6,18 +6,18 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=4326
 
 files:
-  -
-    p:    1
-    file: f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
-    name: Lotes
-  -
-    p:    2
-    file: 23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
-    name: Quadras
-  -
-    p:    3
-    file: 2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
-    name: Bairros
+- file: f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
+  name: Lotes
+  p: 1
+  size: 13629703
+- file: 23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
+  name: Quadras
+  p: 2
+  size: 6444085
+- file: 2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
+  name: Bairros
+  p: 3
+  size: 381036
 
 layers:
   parcel:

@@ -5,10 +5,10 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
-    name: Quadras, bairros, lotes e vias
+- file: 529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip
+  name: Quadras, bairros, lotes e vias
+  p: 1
+  size: 112972140
 
 layers:
 

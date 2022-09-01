@@ -6,14 +6,14 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: 3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip
-    name: Lotes
-  -
-    p:    2
-    file: 207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip
-    name: Eixos
+- file: 3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip
+  name: Lotes
+  p: 1
+  size: 37194488
+- file: 207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip
+  name: Eixos
+  p: 2
+  size: 8100838
 
 layers:
   parcel:

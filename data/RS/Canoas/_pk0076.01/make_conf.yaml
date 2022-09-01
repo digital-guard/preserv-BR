@@ -5,26 +5,26 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: 23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
-    name: Quadras
-  -
-    p:    2
-    file: 6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
-    name: Edificações
-  -
-    p:    3
-    file: 62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
-    name: Bairros
-  -
-    p:    4
-    file: 4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
-    name: Lotes
-  -
-    p:    5
-    file: 8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
-    name: Vias
+- file: 23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
+  name: Quadras
+  p: 1
+  size: 1860161
+- file: 6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
+  name: Edificações
+  p: 2
+  size: 22036142
+- file: 62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
+  name: Bairros
+  p: 3
+  size: 349550
+- file: 4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
+  name: Lotes
+  p: 4
+  size: 11632446
+- file: 8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
+  name: Vias
+  p: 5
+  size: 727978
 
 layers:
 

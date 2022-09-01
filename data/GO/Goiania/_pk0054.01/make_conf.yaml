@@ -6,22 +6,22 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: db2d3b64a2494ff53212d276645986490890025d2b5d1fc5a1b90af7e7bbdf39.zip
-    name: Lotes
-  -
-    p:    2
-    file: 1fd83fa52b1a8b9179f8e38703b1a33a30256f68994794404acde1ad786dac7e.zip
-    name: Lotes
-  -
-    p:    3
-    file: 981d55ac26d0131ff4040aeca1444ad2310e20b89ceeac70c9d4ca12caf5151b.zip
-    name: Bairros
-  -
-    p:    4
-    file: 926566fc01aa45a22ede663e66e371ce9e70e730e7f4e28b10b3bdf19d67fd38.zip
-    name: Eixos
+- file: db2d3b64a2494ff53212d276645986490890025d2b5d1fc5a1b90af7e7bbdf39.zip
+  name: Lotes
+  p: 1
+  size: 53017065
+- file: 1fd83fa52b1a8b9179f8e38703b1a33a30256f68994794404acde1ad786dac7e.zip
+  name: Lotes
+  p: 2
+  size: 8757528
+- file: 981d55ac26d0131ff4040aeca1444ad2310e20b89ceeac70c9d4ca12caf5151b.zip
+  name: Bairros
+  p: 3
+  size: 1260874
+- file: 926566fc01aa45a22ede663e66e371ce9e70e730e7f4e28b10b3bdf19d67fd38.zip
+  name: Eixos
+  p: 4
+  size: 6634769
 
 layers:
   parcel:

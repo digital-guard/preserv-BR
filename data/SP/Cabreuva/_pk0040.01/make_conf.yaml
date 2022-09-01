@@ -5,10 +5,10 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 28ad2bab16b023135e52a101d2e1ddf3337806de3922599a10598b9f2131e3d2.zip
-    name: Edifícios
+- file: 28ad2bab16b023135e52a101d2e1ddf3337806de3922599a10598b9f2131e3d2.zip
+  name: Edifícios
+  p: 1
+  size: 113802
 
 layers:
 

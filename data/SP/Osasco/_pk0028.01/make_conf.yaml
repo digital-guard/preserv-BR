@@ -6,14 +6,14 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip
-    name: entrega_2020-11-04.zip
-  -
-    p:    2
-    file: 0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip
-    name: entrega_2020-10-02_recorte.zip
+- file: aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip
+  name: entrega_2020-11-04.zip
+  p: 1
+  size: 27891388
+- file: 0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip
+  name: entrega_2020-10-02_recorte.zip
+  p: 2
+  size: 119677
 
 layers:
   parcel:

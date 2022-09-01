@@ -6,14 +6,14 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar
-    name: Lotes e Eixos
-  -
-    p:    2
-    file: 1ad669693352407105ccdeb37a4398d62b0accb25888122c84afe2788c121c7b.rar
-    name: Loteamentos
+- file: d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar
+  name: Lotes e Eixos
+  p: 1
+  size: 7445892
+- file: 1ad669693352407105ccdeb37a4398d62b0accb25888122c84afe2788c121c7b.rar
+  name: Loteamentos
+  p: 2
+  size: 1172335
 
 layers:
   parcel:

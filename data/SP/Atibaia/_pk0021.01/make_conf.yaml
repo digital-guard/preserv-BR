@@ -5,19 +5,19 @@ schemaId_template: ref027a
 codec:descr_encode: srid=29193
 
 files:
-  -
-    p:    1
-    file: 0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip
-    name: Logradouros
-    comments: exemplo de comentário em files.
-  -
-    p:    2
-    file: b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip
-    name: Lotes
-  -
-    p:    3
-    file: 6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip
-    name: Edificações
+- comments: exemplo de comentário em files.
+  file: 0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip
+  name: Logradouros
+  p: 1
+  size: 1241211
+- file: b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip
+  name: Lotes
+  p: 2
+  size: 889309
+- file: 6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip
+  name: Edificações
+  p: 3
+  size: 11032539
 
 layers:
 

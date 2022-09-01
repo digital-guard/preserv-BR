@@ -6,18 +6,18 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=32723
 
 files:
-  -
-    p:    1
-    file: 00f40e3731f0e04b8d1050a4716385f412aed5b32b560a47cc321ef4ea5413f8.rar
-    name: lotes_Itu.rar
-  -
-    p:    2
-    file: e10b14c4bfeaa6b40b725acc573a98fba308b72836002af3c7431982b74348f1.rar
-    name: LOGRADOURO_2019.rar
-  -
-    p:    3
-    file: 5041bf52dc6cbd99fb555180a3f34becae8c61352e975f61bfb9c56182e49749.rar
-    name: Shapefiles_-_Municipio_de_Itu.rar
+- file: 00f40e3731f0e04b8d1050a4716385f412aed5b32b560a47cc321ef4ea5413f8.rar
+  name: lotes_Itu.rar
+  p: 1
+  size: 4338330
+- file: e10b14c4bfeaa6b40b725acc573a98fba308b72836002af3c7431982b74348f1.rar
+  name: LOGRADOURO_2019.rar
+  p: 2
+  size: 1199739
+- file: 5041bf52dc6cbd99fb555180a3f34becae8c61352e975f61bfb9c56182e49749.rar
+  name: Shapefiles_-_Municipio_de_Itu.rar
+  p: 3
+  size: 33760966
 
 layers:
   parcel:

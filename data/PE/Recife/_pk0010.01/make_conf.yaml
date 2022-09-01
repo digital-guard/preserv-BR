@@ -6,10 +6,10 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31985
 
 files:
-  -
-    p:    1
-    file: 04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip
-    name: Todos os shapes
+- file: 04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip
+  name: Todos os shapes
+  p: 1
+  size: 27828321
 
 layers:
   parcel:

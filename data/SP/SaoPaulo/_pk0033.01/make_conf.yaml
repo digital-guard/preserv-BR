@@ -5,26 +5,26 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
-    name: Edifícios
-  -
-    p:    2
-    file: bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
-    name: Lotes
-  -
-    p:    3
-    file: 75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
-    name: Endereços
-  -
-    p:    4
-    file: ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
-    name: Eixos
-  -
-    p:    5
-    file: 0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
-    name: Quadras
+- file: 8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
+  name: Edifícios
+  p: 1
+  size: 702426931
+- file: bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
+  name: Lotes
+  p: 2
+  size: 234218427
+- file: 75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
+  name: Endereços
+  p: 3
+  size: 125696085
+- file: ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
+  name: Eixos
+  p: 4
+  size: 23673744
+- file: 0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
+  name: Quadras
+  p: 5
+  size: 70291605
 
 license_evidences:
   definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]

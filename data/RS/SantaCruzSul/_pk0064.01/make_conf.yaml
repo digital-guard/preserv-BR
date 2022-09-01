@@ -5,22 +5,22 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: a3eab1ae42ce304d9bbd119ebb769b6c93c40f04b1f09c6e0e9ec322320da7ff.zip
-    name: Quadras
-  -
-    p:    2
-    file: 8cfffc8d4ab052dd653748fd22c52ad708609e8c3c30283f57a7b2627fbf8aca.zip
-    name: Bairros
-  -
-    p:    3
-    file: 3b4634f38fafd4d3a779b1f7a1075ab2fd6b951509290849f26813319920b2fa.zip
-    name: Lotes
-  -
-    p:    4
-    file: 5c7bc9d5d753681db743235e647cb653efe34404aad61b040af89cc2ec68bbe2.zip
-    name: Vias
+- file: a3eab1ae42ce304d9bbd119ebb769b6c93c40f04b1f09c6e0e9ec322320da7ff.zip
+  name: Quadras
+  p: 1
+  size: 2534948
+- file: 8cfffc8d4ab052dd653748fd22c52ad708609e8c3c30283f57a7b2627fbf8aca.zip
+  name: Bairros
+  p: 2
+  size: 512506
+- file: 3b4634f38fafd4d3a779b1f7a1075ab2fd6b951509290849f26813319920b2fa.zip
+  name: Lotes
+  p: 3
+  size: 7563664
+- file: 5c7bc9d5d753681db743235e647cb653efe34404aad61b040af89cc2ec68bbe2.zip
+  name: Vias
+  p: 4
+  size: 544243
 
 layers:
 

@@ -6,10 +6,10 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=29192
 
 files:
-  -
-    p:    1
-    file: 52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
-    name: Todos os shapefiles
+- file: 52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
+  name: Todos os shapefiles
+  p: 1
+  size: 850728
 
 layers:
   via:

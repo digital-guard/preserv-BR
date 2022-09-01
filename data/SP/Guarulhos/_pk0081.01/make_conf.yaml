@@ -5,18 +5,18 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip
-    name: Bairros
-  -
-    p:    2
-    file: 47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip
-    name: Logradouros
-  -
-    p:    3
-    file: 1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip
-    name: Endereços
+- file: d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip
+  name: Bairros
+  p: 1
+  size: 217773
+- file: 47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip
+  name: Logradouros
+  p: 2
+  size: 3760005
+- file: 1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip
+  name: Endereços
+  p: 3
+  size: 11934534
 
 layers:
 

@@ -6,10 +6,10 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31981
 
 files:
-  -
-    p:    1
-    file: ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
-    name: Lotes e Loteamentos
+- file: ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
+  name: Lotes e Loteamentos
+  p: 1
+  size: 17402700
 
 layers:
   parcel: 

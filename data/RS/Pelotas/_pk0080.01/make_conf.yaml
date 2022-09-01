@@ -5,10 +5,10 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: 3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip
-    name: Todos os arquivos
+- file: 3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip
+  name: Todos os arquivos
+  p: 1
+  size: 9022446
 
 layers:
 

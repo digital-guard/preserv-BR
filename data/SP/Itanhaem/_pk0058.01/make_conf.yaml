@@ -5,22 +5,22 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip
-    name: Geoaddress
-  -
-    p:    2
-    file: 023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip
-    name: Bairros
-  -
-    p:    3
-    file: 7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip
-    name: Lotes
-  -
-    p:    4
-    file: 3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip
-    name: Vias
+- file: 78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip
+  name: Geoaddress
+  p: 1
+  size: 3431030
+- file: 023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip
+  name: Bairros
+  p: 2
+  size: 221789
+- file: 7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip
+  name: Lotes
+  p: 3
+  size: 18397666
+- file: 3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip
+  name: Vias
+  p: 4
+  size: 376218
 
 layers:
 

@@ -9,12 +9,15 @@ files:
 - file: 5816997b063b62b3d3d15ba8339a05ab1bbac651b645fddbea194d4b8a445932.zip
   name: LOGRADOUROS
   p: 1
+  size: 456311
 - file: 7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip
   name: LOTES
   p: 2
+  size: 10319163
 - file: 47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip
-  name: quarteirões 
+  name: quarteirões
   p: 3
+  size: 1496124
 
 layers:
   via:

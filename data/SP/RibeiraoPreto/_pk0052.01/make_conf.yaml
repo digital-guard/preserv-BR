@@ -5,10 +5,10 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip
-    name: Todos os shapes
+- file: 6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip
+  name: Todos os shapes
+  p: 1
+  size: 34004455
 
 layers:
 
