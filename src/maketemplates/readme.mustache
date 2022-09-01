@@ -1,20 +1,31 @@
-<aside style="float:right;">
-<h1>{{isolabel_ext}}</h1>
-<p>Dados doados por <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a> (<small>{{vat_id}} • Wikidtata <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{wikidata_id}}">Q{{wikidata_id}}</a></small>).</p>
-<p>Pacote obtido por <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b>, sob testemunho e tutela de {{user_resp}} (avaliação técnica) e Thierry (representação institucional), que confirmaram com Fulano{{#license}} a licença <b>{{license}}</b>{{/license}}.</p>
+<aside>
+<table align="right">
+<tr><th>{{isolabel_ext}}</th></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a><br/>
+<small>{{vat_id}}</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{wikidata_id}}">Q{{wikidata_id}}</a></small><br/>
+Obtido via <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b><br/>
+Avaliação técnica: {{user_resp}}<br/>
+Representação institucional: Thierry<br/>
+{{#license}}Licença: <b>{{license}}</b>{{/license}}
+</td></tr>
+</table>
 </aside>
 
-<section style="float:left;">
+<section>
 
 # Camadas de dados
 {{#layers}}
 {{#value}}
-## {{layername_root}}
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{layername_root}}.png" alt="{{layername_root}}" width="20"/> {{layername_root}}
 
+{{#file_data}}
 Nome do arquivo: `{{orig_filename}}`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{sha256file}}</a><br/>
-{{#sha256file_name}}Descrição: {{sha256file_name}}<br/>{{/sha256file_name}}
-{{#sha256file_comments}}Comentário: {{sha256file_comments}}<br/>{{/sha256file_comments}}
+Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}">{{file_data.file}}</a><br/>
+{{#file_data.name}}Descrição: {{file_data.name}}<br/>{{/file_data.name}}
+{{#file_data.comments}}Comentário: {{file_data.comments}}<br/>{{/file_data.comments}}
+{{#file_data.size}}Tamanho do arquivo: {{file_data.size}}<br/>{{/file_data.size}}
+{{/file_data}}
 {{#srid}}SRID: {{srid}}{{/srid}}
 
 {{#has_standardized_fields}}
@@ -32,7 +43,7 @@ Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{
 
 {{#value.test_evidence}}
 ### Evidência de teste
-![]({{value.test_evidence}})
+<img src="{{value.test_evidence}}" width="400"/>
 {{/value.test_evidence}}
 
 {{#value.comments}}
@@ -50,7 +61,7 @@ Download: <a title="SHA256" href="http://dl.digital-guard.org/{{sha256file}}">{{
 
 {{#test_evidence}}
 # Evidências de teste
-![]({{test_evidence}})
+<img src="{{test_evidence}}" width="400"/>
 {{/test_evidence}}
 
 {{#comments}}
