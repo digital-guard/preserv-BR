@@ -2,12 +2,16 @@
 <table align="right">
 <tr><th>{{isolabel_ext}}</th></tr>
 <tr><td>
+Pacote: <a target="_git" href="{{path_preserv_git}}"><small>_pk{{pack_number}}</small></a>
+</td></tr>
+<tr><td>
 Doador: <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a><br/>
 <small>{{vat_id}}</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{wikidata_id}}">Q{{wikidata_id}}</a></small><br/>
 Obtido via <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b><br/>
 Avaliação técnica: {{user_resp}}<br/>
 Representação institucional: Thierry<br/>
-{{#license}}Licença: <b>{{license}}</b>{{/license}}
+{{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{hashedfname_without_ext}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file}}</code></a>{{/license_evidences.file}} {{#license_evidences.uri_evidency}}<a title="SHA256 {{hashedfname_without_ext}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency}}</code></a>{{/license_evidences.uri_evidency}}){{/license_evidences}}
+{{^license_evidences}}{{#license}}Licença: <b>{{license}}</b>{{/license}}{{/license_evidences}}
 </td></tr>
 </table>
 </aside>
@@ -24,7 +28,7 @@ Nome do arquivo: `{{orig_filename}}`.<br/>
 Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}">{{file_data.file}}</a><br/>
 {{#file_data.name}}Descrição: {{file_data.name}}<br/>{{/file_data.name}}
 {{#file_data.comments}}Comentário: {{file_data.comments}}<br/>{{/file_data.comments}}
-{{#file_data.size}}Tamanho do arquivo: {{file_data.size}}<br/>{{/file_data.size}}
+{{#file_data.size}}Tamanho do arquivo: {{file_data.size}} bytes<br/>{{/file_data.size}}
 {{/file_data}}
 {{#srid}}SRID: {{srid}}{{/srid}}
 
