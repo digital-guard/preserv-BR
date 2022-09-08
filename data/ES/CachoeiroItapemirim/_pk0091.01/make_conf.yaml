@@ -48,7 +48,7 @@ layers:
     other_fields:
      -
       name: inscricao
-      comments: IPTU.
+      comment: IPTU.
 
   nsvia:
     subtype: full

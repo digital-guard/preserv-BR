@@ -21,7 +21,7 @@ layers:
     other_fields:
      -
       name: num_qdr
-      comments: Numero da quadra.
+      comment: Numero da quadra.
 
   nsvia:
     subtype: full
@@ -36,7 +36,7 @@ layers:
     other_fields:
      -
       name: num_bai
-      comments: Numero do bairro.
+      comment: Numero do bairro.
 
   parcel:
     subtype: full
@@ -51,13 +51,13 @@ layers:
     other_fields:
      -
       name: num_qdr
-      comments: Numero da quadra.
+      comment: Numero da quadra.
      -
       name: num_bai
-      comments: Numero do bairro.
+      comment: Numero do bairro.
      -
       name: nm_bai
-      comments: Nome do bairro.
+      comment: Nome do bairro.
 
   via:
     subtype: full

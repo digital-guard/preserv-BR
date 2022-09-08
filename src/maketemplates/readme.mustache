@@ -30,6 +30,7 @@ Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}
 {{#file_data.comments}}Comentário: {{file_data.comments}}<br/>{{/file_data.comments}}
 {{#file_data.size}}Tamanho do arquivo: {{file_data.size}} bytes<br/>{{/file_data.size}}
 {{/file_data}}
+Formato: {{#extension}}{{extension}}{{/extension}}
 {{#srid}}SRID: {{srid}}{{/srid}}
 
 {{#has_standardized_fields}}
@@ -76,7 +77,7 @@ Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}
 {{#has_other_files}}
 # Outros dados relevantes
 {{#other_files}}
-* `{{name}}`{{#other_files.0.comments}}: {{other_files.0.comments}}{{/other_files.0.comments}}
+* `{{file}}`{{#comment}}: {{comment}}{{/comment}}
 {{/other_files}}
 {{/has_other_files}}
 {{#has_to-do}}
