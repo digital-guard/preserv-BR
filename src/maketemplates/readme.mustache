@@ -24,14 +24,14 @@ Representação institucional: Thierry<br/>
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{layername_root}}.png" alt="{{layername_root}}" width="20"/> {{layername_root}}
 
 {{#file_data}}
-Nome do arquivo: `{{orig_filename}}`.<br/>
-Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}">{{file_data.file}}</a><br/>
-{{#file_data.name}}Descrição: {{file_data.name}}<br/>{{/file_data.name}}
-{{#file_data.comments}}Comentário: {{file_data.comments}}<br/>{{/file_data.comments}}
-{{#file_data.size}}Tamanho do arquivo: {{file_data.size}} bytes<br/>{{/file_data.size}}
+Nome do arquivo: `{{orig_filename}}`.
+<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/{{file_data.file}}">{{file_data.file}}</a>
+{{#file_data.name}}<br/>Descrição: {{file_data.name}}{{/file_data.name}}
+{{#file_data.comments}}<br/>Comentário: {{file_data.comments}}{{/file_data.comments}}
+{{#file_data.size}}<br/>Tamanho do arquivo: {{file_data.size}} bytes{{/file_data.size}}
 {{/file_data}}
-Formato: {{#extension}}{{extension}}{{/extension}}
-{{#srid}}SRID: {{srid}}{{/srid}}
+<br/>Formato: {{#extension}}{{extension}}{{/extension}}
+{{#srid}}<br/>SRID: {{srid}}{{/srid}}
 
 {{#has_standardized_fields}}
 ### Dados relevantes
