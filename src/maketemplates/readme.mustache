@@ -47,11 +47,13 @@ Representação institucional: Thierry<br/>
 {{value.comments}}
 {{/value.comments}}
 
-{{#value.publication_summary}}
+{{#value.publication_data}}
+{{#value.publication_data.publication_summary}}
 ### Dados publicados
 ({{bytes}} bytes • {{bytes_mb}} <abbr title="mebibyte">MiB</abbr>)<br />
 {{itens}} {{geom_type}}{{^isGeoaddress}}, totalizando {{size}} <abbr title="{{geom_unit_ext}}">{{geom_unit_abr}}</abbr> de {{geom_type}};<br/>densidade média de {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}{{#isGeoaddress}};<br/>densidade média de {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}
-{{/value.publication_summary}}
+{{/value.publication_data.publication_summary}}
+{{/value.publication_data}}
 {{/value}}
 {{/layers}}
 
