@@ -10,7 +10,7 @@ Doador: <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a><br/>
 Obtido via <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b><br/>
 Avaliação técnica: {{user_resp}}<br/>
 Representação institucional: Thierry<br/>
-{{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{hashedfname_without_ext}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file}}</code></a>{{/license_evidences.file}} {{#license_evidences.uri_evidency}}<a title="SHA256 {{hashedfname_without_ext}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency}}</code></a>{{/license_evidences.uri_evidency}}){{/license_evidences}}
+{{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{file}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file_7_ext}}</code></a>{{/license_evidences.file}} {{#license_evidences.uri_evidency}}<a title="SHA256 {{uri_evidency}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency_7_ext}}</code></a>{{/license_evidences.uri_evidency}}){{/license_evidences}}
 {{^license_evidences}}{{#license}}Licença: <b>{{license}}</b>{{/license}}{{/license_evidences}}
 </td></tr>
 </table>
