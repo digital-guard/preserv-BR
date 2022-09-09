@@ -12,6 +12,7 @@ Avaliação técnica: {{user_resp}}<br/>
 Representação institucional: Thierry<br/>
 {{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{file}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file_7_ext}}</code></a>{{/license_evidences.file}}{{#license_evidences.uri_evidency}}{{#license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency_7_ext}}</code></a>{{/license_evidences.is_uri_evidency_eml}}{{^license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="{{uri_evidency}}"><code>webarchive</code></a>{{/license_evidences.is_uri_evidency_eml}}{{/license_evidences.uri_evidency}}){{/license_evidences}}{{^license_evidences}}{{#license}}Licença: <b>{{license}}</b>{{/license}}{{/license_evidences}}
 </td></tr>
+{{#path_cutgeo_git}}<tr><td><a href="{{path_cutgeo_git}}">Dados publicados</a></td></tr>{{/path_cutgeo_git}}
 </table>
 </aside>
 
@@ -48,10 +49,10 @@ Representação institucional: Thierry<br/>
 {{/value.comments}}
 
 {{#value.publication_data}}
-<a href="{{path_cutgeo_git}}">{{path_cutgeo_git}}</a>
 {{#value.publication_data.publication_summary}}
 ### Dados publicados
-{{bytes}} bytes ({{bytes_mb}} <abbr title="mebibyte">MiB</abbr>)<br />
+<a href="{{path_cutgeo_git}}">{{path_cutgeo_git}}</a><br/>
+{{bytes}} bytes ({{bytes_mb}} <abbr title="mebibyte">MiB</abbr>)<br/>
 {{itens}} {{geom_type}}{{^isGeoaddress}} com {{size}} <abbr title="{{geom_unit_ext}}">{{geom_unit_abr}}</abbr>;<br/>densidade média: {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}{{#isGeoaddress}};<br/>densidade média de {{avg_density}} {{geom_type}}/km².{{/isGeoaddress}}
 {{/value.publication_data.publication_summary}}
 {{/value.publication_data}}
@@ -81,4 +82,5 @@ Representação institucional: Thierry<br/>
 {{/to-do}}
 {{/has_to-do}}
 </section>
+
 
