@@ -5,8 +5,7 @@ schemaId_template: ref027a
 codec:descr_encode: srid=29193
 
 files:
-- comments: exemplo de comentário em files.
-  file: 0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip
+- file: 0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip
   name: Logradouros
   p: 1
   size: 1241211
@@ -27,20 +26,10 @@ layers:
     file: 1
     sql_select: ['gid', 'log_nome_c as name', 'geometry as geom']
     orig_filename: CAD_LOG
-    comments: exemplo de comentário em layer.
-    test_evidence: qgis.png
     standardized_fields:
      -
       name: log_nome_c
       standard: name
-      comment: exemplo de comentário em standardized_fields.
-    other_fields:
-     -
-      name: exemplo de other_fields.
-      comment: exemplo de comentário em other_fields.
-     -
-      name: exemplo de +1 other_fields.
-      comment: exemplo +1 de comentário em other_fields.
 
   parcel:
     subtype: none
@@ -68,7 +57,3 @@ layers:
 comments: Parcel e building incompletos. Sem nome de logradouro, alguns número de porta nulos ("0") e cobertura parcial de lotes (veja evidências).
 
 test_evidence: qgis.png
-
-to-do:
-  - Tarefa 1. Exemplo de lista de tarefas;
-  - Tarefa 2. Exemplo de lista de tarefas;
