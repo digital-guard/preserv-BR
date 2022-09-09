@@ -37,7 +37,9 @@ Representação institucional: Thierry<br/>
 * `{{name}}`{{#comment}}: {{comment}}{{/comment}}
 {{/other_fields}}
 {{/has_other_fields}}
-
+{{#isCadLayer}}Complementa <a href="#-{{join_data.cadLayer}}">{{join_data.cadLayer}}</a> por meio de `{{join_column}}` e `{{join_data.cadLayerColumn}}`{{/isCadLayer}}
+{{^isCadLayer}}{{#join_column}}Complementado por <a href="#-{{join_data.cadLayer}}">{{join_data.cadLayer}}</a> por meio de `{{join_column}}` e `{{join_data.cadLayerColumn}}`{{/join_column}}
+{{/isCadLayer}}
 {{#value.test_evidence}}
 ### Evidência de teste
 <img src="{{value.test_evidence}}" width="400"/>
