@@ -13,6 +13,7 @@ Representação institucional: Thierry<br/>
 Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)
 </td></tr>
 <tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01">Dados publicados</a></td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="building" href="#-building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> <a title="cadparcel" href="#-cadparcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/></a> </td></tr>
 </table>
 </aside>
 
@@ -29,6 +30,7 @@ Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<
 
 
 
+
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block</a><br/>
 119088160 bytes (113.57131958007812 <abbr title="mebibyte">MiB</abbr>)<br/>
@@ -36,6 +38,7 @@ Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
 Nome do arquivo: `SHP_edificacao`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip">8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip</a><br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes<br/>Formato: shp<br/>SRID: 31983
+
 
 
 
@@ -51,6 +54,7 @@ Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: <a title="SHA256" href="http:
 
 ### Dados relevantes
 * `lo_setor || lo_quadra || lo_lote` (ref)
+
 
 Complementado por <a href="#-cadparcel">cadparcel</a> por meio de `ref` e `ref`
 
@@ -71,6 +75,7 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Downlo
 
 
 
+
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via</a><br/>
 36896770 bytes (35.18750190734863 <abbr title="mebibyte">MiB</abbr>)<br/>
@@ -85,6 +90,7 @@ Nome do arquivo: `IPTU_2020`.<br/>Download: <a title="SHA256" href="http://dl.di
 * `NUMERO DO IMOVEL` (house_number)
 * `BAIRRO DO IMOVEL` (nsvia_name)
 * `CEP DO IMOVEL` (postcode)
+
 Complementa <a href="#-parcel">parcel</a> por meio de `ref` e `ref`
 
 
@@ -92,5 +98,6 @@ Complementa <a href="#-parcel">parcel</a> por meio de `ref` e `ref`
 
 
 </section>
+
 
 
