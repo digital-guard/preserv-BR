@@ -21,28 +21,80 @@ files:
 
 layers:
   parcel:
-        subtype: full
-        method: shp2sql
-        file: 1
-        sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
-        orig_filename: rb_20201116/lotes
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
+    orig_filename: rb_20201116/lotes
+    standardized_fields:
+     -
+      name: nomelog
+      standard: via_name
+      comment: tipo e nome do logradouro em caixa alta, com acentuação.
+     -
+      name: endereco_n
+      standard: house_number
+      comment: 'número predial. Sem número pode ser representado como "S/N", "s/n", "SN" etc.'
+
   nsvia:
-        subtype: full
-        method: shp2sql
-        file: 2
-        sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
-        orig_filename: rb_20201111/bairros
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
+    orig_filename: rb_20201111/bairros
+    standardized_fields:
+     -
+      name: name
+      standard: ns_name
+      comment: nome do bairro em caixa alta, com acentuação.
+
   via:
-        subtype: full
-        method: shp2sql
-        file: 3
-        sql_view: SELECT gid, tipo ||' '|| Nome AS via_name,  geom FROM $(tabname)
-        orig_filename: logradouros
-  # Não importei Eixos - planilha, precisa?
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_view: SELECT gid, tipo ||' '|| Nome AS via_name,  geom FROM $(tabname)
+    orig_filename: logradouros
+    comments: Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
+    standardized_fields:
+     -
+      name: "tipo ||' '|| Nome"
+      standard: via_name
+      comment: tipo e nome do logradouro em caixa alta, com acentuação.
+
   block:
-        subtype: full
-        method: shp2sql
-        file: 2
-        sql_select: ['gid', 'iq AS ref', 'geom']
-        orig_filename: rb_20201111/quadras
-  # Mão importei Loteamentos - funciona como Bairro
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'iq AS ref', 'geom']
+    orig_filename: rb_20201111/quadras
+    standardized_fields:
+     -
+      name: iq
+      standard: ref
+      comment: número de setor e quadra.
+
+test_evidence: qgis.png
+
+other_files:
+  -
+    file: logradouros.csv (rb_20201111.zip)
+    name: logradouros
+    format: csv
+    comment: 'campo nome com tipo de via abreviado e nome do logradouro em caixa alta. Há inconsistências: pontos finais soltos, aspas etc.'
+  -
+    file: loteamentos (rb_20201111.zip)
+    name: loteamentos
+    format: shp
+    comment: coluna name com nome do loteamento em formatos diversos, incluindo caixa alta, acentuação e abreviação. Funciona como bairro.
+
+  -
+    file: pg_cartografia_ct_vias.zip
+    comment: Perímetro urbano.
+
+to-do:
+  - 'Corrigir a string dos nomes de logradouro nos lotes. Os lotes possuem erros de nome de logradouros, nestes casos:
+        1. na maioria está faltando um espaço entre o tipo de via e o nome (ex.\: "RUACECÍLIA MEIRELES").
+        2. em alguns há dois espaços entre o tipo de via e o nome (ex.\: "ALA  MATRINCHÃ").
+        3. e em alguns há uma vírgula ou ponto no final do nome (ex.\: "VIAVERDE.").'
+  - 'Gerar ponto de endereço na testada do lote com script desenvolvido pelo A4A.'
+
