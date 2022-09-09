@@ -29,7 +29,7 @@ Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block</a><br/>
 119088160 bytes (113.57131958007812 <abbr title="mebibyte">MiB</abbr>)<br/>
-59568 polígonos com 1254.2100635706217 <abbr title="quilômetros quadrados">km2</abbr>;<br/>densidade média: 0.7815890009341224 polígonos/km².
+59568 polígonos com 1254.2100635706217 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.7815890009341224 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
 Nome do arquivo: `SHP_edificacao`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip">8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip</a><br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes<br/>Formato: shp<br/>SRID: 31983
@@ -40,7 +40,7 @@ Nome do arquivo: `SHP_edificacao`.<br/>Download: <a title="SHA256" href="http://
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building</a><br/>
 752549843 bytes (717.6874570846558 <abbr title="mebibyte">MiB</abbr>)<br/>
-2764457 polígonos com 309.55454671924275 <abbr title="quilômetros quadrados">km2</abbr>;<br/>densidade média: 0.38052136788607843 polígonos/km².
+2764457 polígonos com 309.55454671924275 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.38052136788607843 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip">bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip</a><br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes<br/>Formato: shp<br/>SRID: 31983
@@ -51,7 +51,7 @@ Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: <a title="SHA256" href="http:
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/parcel">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/parcel</a><br/>
 476608646 bytes (454.5294246673584 <abbr title="mebibyte">MiB</abbr>)<br/>
-1653077 polígonos com 646.9647532796976 <abbr title="quilômetros quadrados">km2</abbr>;<br/>densidade média: 0.6879545657475451 polígonos/km².
+1653077 polígonos com 646.9647532796976 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.6879545657475451 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip">ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip</a><br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes<br/>Formato: shp<br/>SRID: 31983
@@ -62,7 +62,7 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Downlo
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via</a><br/>
 36896770 bytes (35.18750190734863 <abbr title="mebibyte">MiB</abbr>)<br/>
-230553 segmentos com 19233.98973198564 <abbr title="quilômetros">km</abbr>;<br/>densidade média: 17.133927577301268 segmentos/km².
+230553 segmentos com 19233.98973198564 <abbr title="quilômetros">km</abbr><br/>densidade média: 17.133927577301268 segmentos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
 Nome do arquivo: `IPTU_2020`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip">75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip</a><br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes<br/>Formato: csv<br/>SRID: 31983
