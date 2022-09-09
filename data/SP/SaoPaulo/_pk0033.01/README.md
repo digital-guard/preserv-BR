@@ -23,6 +23,9 @@ Licença <a rel="external" target="_doador" href="https://creativecommons.org/pu
 
 Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip">0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip</a><br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes<br/>Formato: shp<br/>SRID: 31983
 
+### Dados relevantes
+* `qe_id` (ref)
+
 
 
 
@@ -37,6 +40,7 @@ Nome do arquivo: `SHP_edificacao`.<br/>Download: <a title="SHA256" href="http://
 
 
 
+
 ### Dados publicados
 <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building</a><br/>
 752549843 bytes (717.6874570846558 <abbr title="mebibyte">MiB</abbr>)<br/>
@@ -45,7 +49,10 @@ Nome do arquivo: `SHP_edificacao`.<br/>Download: <a title="SHA256" href="http://
 
 Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip">bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip</a><br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes<br/>Formato: shp<br/>SRID: 31983
 
+### Dados relevantes
+* `lo_setor || lo_quadra || lo_lote` (ref)
 
+Complementado por <a href="#-cadparcel">cadparcel</a> por meio de `ref` e `ref`
 
 
 ### Dados publicados
@@ -55,6 +62,11 @@ Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: <a title="SHA256" href="http:
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip">ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip</a><br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes<br/>Formato: shp<br/>SRID: 31983
+
+### Dados relevantes
+* `lg_tipo || ' ' || lg_nome` (via_name)
+### Outros dados relevantes
+* `cod_log`: Identificador, usado para join.
 
 
 
@@ -67,7 +79,13 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Downlo
 
 Nome do arquivo: `IPTU_2020`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip">75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip</a><br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes<br/>Formato: csv<br/>SRID: 31983
 
-
+### Dados relevantes
+* `split_part(&quot;NUMERO DO CONTRIBUINTE&quot;, '-', 1)` (ref)
+* `NOME DE LOGRADOURO DO IMOVEL` (via_name)
+* `NUMERO DO IMOVEL` (house_number)
+* `BAIRRO DO IMOVEL` (nsvia_name)
+* `CEP DO IMOVEL` (postcode)
+Complementa <a href="#-parcel">parcel</a> por meio de `ref` e `ref`
 
 
 

@@ -38,6 +38,14 @@ layers:
     file: 4
     orig_filename: SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl
     sql_view: SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)
+    standardized_fields:
+     -
+      name: "lg_tipo || ' ' || lg_nome"
+      standard: via_name
+    other_fields:
+     -
+      name: cod_log
+      comment: Identificador, usado para join.
 
   block:
     subtype: none
@@ -45,6 +53,10 @@ layers:
     file: 5
     orig_filename: SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon
     sql_select: ['gid','qe_id AS ref', 'geom']
+    standardized_fields:
+     -
+      name: 'qe_id'
+      standard: ref
 
   building:
     subtype: none
@@ -64,6 +76,10 @@ layers:
     codec: SHP.ZIP;charset=ISO-8859-1
     sql_select: ['gid','lo_setor || lo_quadra || lo_lote AS ref','geom']
     join_column: ref
+    standardized_fields:
+     -
+      name: 'lo_setor || lo_quadra || lo_lote'
+      standard: ref
 
   cadparcel:
     subtype: cmpl 
@@ -73,3 +89,20 @@ layers:
     codec: CSV~Latin1semicolon
     sql_view: SELECT row_number() OVER () AS gid, split_part("NUMERO DO CONTRIBUINTE", '-', 1) AS ref, "NOME DE LOGRADOURO DO IMOVEL" AS via_name, "NUMERO DO IMOVEL" AS house_number, "BAIRRO DO IMOVEL" AS nsvia_name, "CEP DO IMOVEL" AS postcode FROM $(tabname)
     join_column: ref
+    standardized_fields:
+     -
+      name: 'split_part("NUMERO DO CONTRIBUINTE", ''-'', 1)'
+      standard: ref
+     -
+      name: 'NOME DE LOGRADOURO DO IMOVEL'
+      standard: via_name
+     -
+      name: 'NUMERO DO IMOVEL'
+      standard: house_number
+     -
+      name: 'BAIRRO DO IMOVEL'
+      standard: nsvia_name
+     -
+      name: 'CEP DO IMOVEL'
+      standard: postcode
+
