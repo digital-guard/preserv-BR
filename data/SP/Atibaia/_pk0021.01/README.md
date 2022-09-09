@@ -64,6 +64,3 @@ Parcel e building incompletos. Sem nome de logradouro, alguns número de porta n
 
 
 
-# Anexo
-
-Exemplo de arquivo _attachment.md_ anexado ao final do readme gerado.
