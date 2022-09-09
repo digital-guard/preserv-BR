@@ -42,10 +42,6 @@ layers:
      -
       name: "lg_tipo || ' ' || lg_nome"
       standard: via_name
-    other_fields:
-     -
-      name: cod_log
-      comment: Identificador, usado para join.
 
   block:
     subtype: none

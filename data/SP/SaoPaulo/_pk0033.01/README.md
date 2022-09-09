@@ -69,8 +69,6 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Downlo
 
 ### Dados relevantes
 * `lg_tipo || ' ' || lg_nome` (via_name)
-### Outros dados relevantes
-* `cod_log`: Identificador, usado para join.
 
 
 
