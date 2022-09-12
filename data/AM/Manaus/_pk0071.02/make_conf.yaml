@@ -1,0 +1,28 @@
+pack_id: 71.2
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+#codec:descr_encode: 
+srid_proj: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+
+files:
+  -
+    p:    1
+    file: 92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
+    name: Lotes
+
+layers:
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via_name, IMO_NUMERO as house_number, geometry as geom FROM $(tabname)
+    orig_filename: Lotes
+    standardized_fields:
+     -
+      name: "LOG_TIPO ||' '|| LOG_NOME"
+      standard: via_name
+     -
+      name: IMO_NUMERO
+      standard: house_number

@@ -1,0 +1,73 @@
+pack_id: 71.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+#codec:descr_encode: 
+srid_proj: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+
+files:
+  -
+    p:    1
+    file: 4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+    name: 'Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros'
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'ENDEREÇO as via_name', 'NUMERACAO as house_number', 'geometry as geom']
+    orig_filename: NUMERACAO
+    comments: Parcial / não contém todos os endereços de Manaus.
+    standardized_fields:
+     -
+      name: ENDEREÇO
+      standard: via_name
+     -
+      name: NUMERACAO
+      standard: house_number
+      
+  building:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry as geom']
+    orig_filename: EDIFICACOES
+      
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry as geom']
+    orig_filename: LOTES
+    
+  via:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_view: SELECT gid, TIPO ||' '|| LOGRADOURO AS via_name, geometry as geom FROM $(tabname)
+    orig_filename: LOGRADOUROS
+    standardized_fields:
+     -
+      name: "TIPO ||' '|| LOGRADOURO"
+      standard: via_name
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geometry as geom']
+    orig_filename: QUADRAS
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'NOME_BAIRR as nsvia_name', 'geometry as geom']
+    orig_filename: BAIRROS
+    standardized_fields:
+     -
+      name: NOME_BAIRR
+      standard: nsvia_name
+      
