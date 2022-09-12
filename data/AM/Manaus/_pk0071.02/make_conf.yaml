@@ -18,7 +18,7 @@ layers:
     method: shp2sql
     file: 1
     sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via_name, IMO_NUMERO as house_number, geom FROM $(tabname)
-    orig_filename: OSM_Lotes/Lotes
+    orig_filename: OSM_Lotes/shape/Lotes
     standardized_fields:
      -
       name: "LOG_TIPO ||' '|| LOG_NOME"
