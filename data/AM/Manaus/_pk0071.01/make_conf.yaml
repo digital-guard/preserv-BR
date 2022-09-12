@@ -18,9 +18,8 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', '"ENDEREÇO" as via_name', 'NUMERACAO as house_number', 'geometry as geom']
-    orig_filename: NUMERACAO
+    orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
-    
     standardized_fields:
      -
       name: 'ENDEREÇO'
@@ -34,21 +33,21 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'geometry as geom']
-    orig_filename: EDIFICACOES
+    orig_filename: OpenStreetMap_Shapefiles/EDIFICACOES
       
   parcel:
     subtype: none
     method: shp2sql
     file: 1
     sql_select: ['gid', 'geometry as geom']
-    orig_filename: LOTES
+    orig_filename: OpenStreetMap_Shapefiles/LOTES
     
   via:
     subtype: full
     method: shp2sql
     file: 1
     sql_view: SELECT gid, TIPO ||' '|| LOGRADOURO AS via_name, geometry as geom FROM $(tabname)
-    orig_filename: LOGRADOUROS
+    orig_filename: OpenStreetMap_Shapefiles/LOGRADOUROS
     standardized_fields:
      -
       name: "TIPO ||' '|| LOGRADOURO"
@@ -59,14 +58,14 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'geometry as geom']
-    orig_filename: QUADRAS
+    orig_filename: OpenStreetMap_Shapefiles/QUADRAS
 
   nsvia:
     subtype: full
     method: shp2sql
     file: 1
     sql_select: ['gid', 'NOME_BAIRR as nsvia_name', 'geometry as geom']
-    orig_filename: BAIRROS
+    orig_filename: OpenStreetMap_Shapefiles/BAIRROS
     standardized_fields:
      -
       name: NOME_BAIRR
