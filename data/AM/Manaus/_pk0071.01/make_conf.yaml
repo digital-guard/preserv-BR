@@ -19,7 +19,7 @@ layers:
     file: 1
     sql_select: ['gid', 'ENDEREÇO as via_name', 'NUMERACAO as house_number', 'geometry as geom']
     orig_filename: NUMERACAO
-    comments: Parcial / não contém todos os endereços de Manaus.
+    comments: 'Parcial não contém todos os endereços de Manaus.'
     standardized_fields:
      -
       name: ENDEREÇO
