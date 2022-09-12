@@ -22,7 +22,7 @@ layers:
     comments: 'Parcial não contém todos os endereços de Manaus.'
     standardized_fields:
      -
-      name: ENDEREÇO
+      name: 'ENDEREÇO'
       standard: via_name
      -
       name: NUMERACAO
