@@ -17,7 +17,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', '"ENDEREÇO" as via_name', 'NUMERACAO as house_number', 'geom']
+    sql_select: ['gid', 'ENDEREÇO as via_name', 'NUMERACAO as house_number', 'geom']
     orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
     standardized_fields:
