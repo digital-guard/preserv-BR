@@ -71,7 +71,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: sql_view: |-
+    sql_view: |-
      SELECT gid, tr_tipo || ' ' || tr_descric AS via_name, geom FROM $(tabname)
     orig_filename: ARRUAMENTO/ARRUAMENTO
     standardized_fields:
