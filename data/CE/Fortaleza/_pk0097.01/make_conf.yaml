@@ -9,22 +9,30 @@ files:
     p:    1
     file: 8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip
     name: Edificações
+    
   -
     p:    2
     file: d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip
     name: Lotes
+    
   -
     p:    3
     file: 86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip
     name: Logradouros
+    
   -
     p:    4
     file: 82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip
     name: Quadras
+    
   -
     p:    5
     file: 4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip
     name: Bairros
+    
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: 87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml
 
 layers:
 
@@ -33,14 +41,14 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'geom']
-    orig_filename: edificacoes.shp
+    orig_filename: edificacoes
     
   parcel:
     subtype: full
     method: shp2sql
     file: 2
     sql_select: ['gid', 'endereco as house_number', 'geom']
-    orig_filename: lotes_fiscais.shp
+    orig_filename: lotes_fiscais
     standardized_fields:
      -
       name: endereco
@@ -51,7 +59,7 @@ layers:
     method: shp2sql
     file: 3
     sql_select: ['gid', 'nome_compl as via_name', 'geom']
-    orig_filename: logradouros.shp
+    orig_filename: logradouros
     standardized_fields:
      -
       name: nome_compl
@@ -62,14 +70,14 @@ layers:
     method: shp2sql
     file: 4
     sql_select: ['gid', 'geom']
-    orig_filename: quadras.shp
+    orig_filename: quadras
       
   nsvia:
     subtype: full
     method: shp2sql
     file: 5
     sql_select: ['gid', 'nome_bairr as nsvia_name', 'geom']
-    orig_filename: bairros.shp
+    orig_filename: bairros
     standardized_fields:
      -
       name: nome_bairr
