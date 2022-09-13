@@ -44,7 +44,7 @@ layers:
     orig_filename: edificacoes
     
   parcel:
-    subtype: full
+    subtype: none
     method: shp2sql
     file: 2
     sql_select: ['gid', 'endereco as house_number', 'geom']
