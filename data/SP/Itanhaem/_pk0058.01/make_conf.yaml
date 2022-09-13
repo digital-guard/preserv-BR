@@ -32,7 +32,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
-    orig_filename: LOTES_CENTROIDES/CENTROIDES
+    orig_filename: CENTROIDES
     standardized_fields:
      -
       name: Cadastro_7
@@ -57,7 +57,7 @@ layers:
     method: shp2sql
     file: 3
     sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
-    orig_filename: LOTES/LOTES_2020
+    orig_filename: LOTES_2020
     codec: SHP;srid=29193
     standardized_fields:
      -
@@ -73,7 +73,7 @@ layers:
     file: 4
     sql_view: |-
      SELECT gid, tr_tipo || ' ' || tr_descric AS via_name, geom FROM $(tabname)
-    orig_filename: ARRUAMENTO/ARRUAMENTO
+    orig_filename: ARRUAMENTO
     standardized_fields:
      -
       name: "tr_tipo || ' ' || tr_descric"
