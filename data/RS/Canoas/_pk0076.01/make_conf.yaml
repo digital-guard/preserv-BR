@@ -75,7 +75,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_select: ['gid', 'ds_logrado as via_name', 'geometry as geom']
+    sql_select: ['gid', 'ds_logrado as via_name', 'geom']
     orig_filename: sistema_viario_atualizado
     standardized_fields:
      -
