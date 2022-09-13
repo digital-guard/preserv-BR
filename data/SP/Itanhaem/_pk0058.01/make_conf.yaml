@@ -6,17 +6,20 @@ codec:descr_encode: srid=31983
 
 files:
 - file: 78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip
-  name: Geoaddress
+  name: Geo-endereços
   p: 1
   size: 3431030
+  
 - file: 023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip
   name: Bairros
   p: 2
   size: 221789
+  
 - file: 7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip
   name: Lotes
   p: 3
   size: 18397666
+  
 - file: 3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip
   name: Vias
   p: 4
@@ -28,8 +31,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry as geom']
-    orig_filename: CENTROIDES
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
+    orig_filename: LOTES_CENTROIDES/CENTROIDES
     standardized_fields:
      -
       name: Cadastro_7
@@ -42,8 +45,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME as nsvia_name', 'geometry as geom']
-    orig_filename: ABAIRRAMENTO
+    sql_select: ['gid', 'NOME as nsvia_name', 'geom']
+    orig_filename: ABAIRRAMENTO/ABAIRRAMENTO
     standardized_fields:
      -
       name: NOME
@@ -53,8 +56,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geometry as geom']
-    orig_filename: LOTES_2020
+    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
+    orig_filename: LOTES/LOTES_2020
     codec: SHP;srid=29193
     standardized_fields:
      -
@@ -68,14 +71,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'tr_tipo + tr_descric as via_name', 'geometry as geom']
-    orig_filename: ARRUAMENTO
-    comments: Compor nome com sql view.
+    sql_select: sql_view: |-
+     SELECT gid, tr_tipo || ' ' || tr_descric AS via_name, geom FROM $(tabname)
+    orig_filename: ARRUAMENTO/ARRUAMENTO
     standardized_fields:
      -
-      name: tr_tipo + tr_descric
+      name: "tr_tipo || ' ' || tr_descric"
       standard: via_name
-      
-comments: Arquivos loteamentos e limites municipais não listados acima.
 
 test_evidence: qgis.png

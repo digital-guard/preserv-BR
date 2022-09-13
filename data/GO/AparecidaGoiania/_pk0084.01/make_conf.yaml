@@ -16,8 +16,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'num_qdr', 'geometry as geom']
-    orig_filename: QUADRAS
+    sql_select: ['gid', 'num_qdr', 'geom']
+    orig_filename: "GEO-SOCIAIS ADDRESSFORALL/QUADRAS"
     other_fields:
      -
       name: num_qdr
@@ -27,8 +27,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nm_bai as nsvia_name', 'num_bai', 'geometry as geom']
-    orig_filename: BAIRROS
+    sql_select: ['gid', 'nm_bai as nsvia_name', 'num_bai', 'geom']
+    orig_filename: "GEO-SOCIAIS ADDRESSFORALL/BAIRROS"
     standardized_fields:
      -
       name: nm_bai
@@ -42,8 +42,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'num_lot as house_number', 'num_qdr', 'num_bai', 'nm_bai', 'geometry as geom']
-    orig_filename: LOTES
+    sql_select: ['gid', 'num_lot as house_number', 'num_qdr', 'num_bai', 'nm_bai', 'geom']
+    orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOTES"
     standardized_fields:
      -
       name: num_lot
@@ -63,8 +63,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'logradouro as via_name', 'geometry as geom']
-    orig_filename: LOGRADOUROS
+    sql_select: ['gid', 'logradouro as via_name', 'geom']
+    orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOGRADOUROS"
     standardized_fields:
      -
       name: logradouro

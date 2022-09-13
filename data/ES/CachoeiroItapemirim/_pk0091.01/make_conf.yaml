@@ -42,14 +42,14 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'geometry as geom']
+    sql_select: ['gid', 'geom']
     orig_filename: levels_3Polygon
       
   geoaddress:
     subtype: none
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'inscricao', 'geometry as geom']
+    sql_select: ['gid', 'inscricao', 'geom']
     orig_filename: inscricao_fiscal_cigeo
     other_fields:
      -
@@ -60,7 +60,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'NOME as nsvia_name', 'geometry as geom']
+    sql_select: ['gid', 'NOME as nsvia_name', 'geom']
     orig_filename: LIMITE_BAIRROS_7915_2021
     codec: SHP;srid=31984
     standardized_fields:
@@ -72,7 +72,7 @@ layers:
     subtype: none
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'num01', 'geometry as geom']
+    sql_select: ['gid', 'num01', 'geom']
     orig_filename: numeroinicioefim1
     other_fields:
      -
