@@ -42,7 +42,7 @@ layers:
     method: shp2sql
     file: 2
     sql_select: ['gid', 'num as house_number', 'geom']
-    orig_filename: lotes
+    orig_filename: lotes/lotes
     standardized_fields:
      -
       name: num
@@ -53,7 +53,7 @@ layers:
     method: shp2sql
     file: 3
     sql_select: ['gid', 'numero as house_number', 'geom']
-    orig_filename: pg_cartografia_logradouros
+    orig_filename: edificacoes/edificacoes
     codec: SHP;srid=3857
     standardized_fields:
      -
