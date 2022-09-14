@@ -2,8 +2,7 @@ pack_id: 6.1
 pkversion: 001
 schemaId_input: ref027a
 schemaId_template: ref027a
-#codec:descr_encode: srid=31999
-srid_proj: +proj=utm +zone=24 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+codec:descr_encode: srid=31999
 
 files:
 - file: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
@@ -21,6 +20,10 @@ files:
 - file: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
   name: Lotes
   p: 4
+  
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml
 
 layers:
 
