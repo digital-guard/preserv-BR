@@ -21,11 +21,6 @@ files:
     name: Logradouros
 
   -
-    p:    4
-    file: 56e363e177410861a561dda1fa065f6e6cce5033b970dc5cc652ae9155c11fc1.zip
-    name: 'Estrutura viária'
-
-  -
     p:    5
     file: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
     name: Lotes
@@ -74,11 +69,4 @@ layers:
      -
       name: logradouro
       standard: via_name
-
-other_files:
-  -
-    p: 4
-    file: estrutura_viaria.zip
-    name: estrutura_viaria
-    format: shp
-    comment: 'Delimitação de vias/quadras'
+  
