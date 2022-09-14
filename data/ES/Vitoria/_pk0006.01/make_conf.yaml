@@ -23,7 +23,7 @@ files:
   -
     p:    4
     file: 56e363e177410861a561dda1fa065f6e6cce5033b970dc5cc652ae9155c11fc1.zip
-    name: Estrutura viária
+    name: 'Estrutura viária'
 
   -
     p:    5
@@ -85,4 +85,4 @@ other_files:
     file: estrutura_viaria.zip
     name: estrutura_viaria
     format: shp
-    comment: Delimitação de vias/quadras
+    comment: 'Delimitação de vias/quadras'
