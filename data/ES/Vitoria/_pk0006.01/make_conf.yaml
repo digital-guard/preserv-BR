@@ -1,29 +1,25 @@
 pack_id: 6.1
 pkversion: 001
-schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
-schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+schemaId_input: ref027a
+schemaId_template: ref027a
 codec:descr_encode: srid=31999
 
 files:
-  -
-    p:    1
-    file: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
-    name: Bairros
+- file: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
+  name: Bairros
+  p: 1
 
-  -
-    p:    2
-    file: 58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
-    name: Edificações
+- file: 58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
+  name: Edificações
+  p: 2
 
-  -
-    p:    3
-    file: 252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
-    name: Logradouros
+- file: 252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
+  name: Logradouros
+  p: 3
 
-  -
-    p:    5
-    file: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
-    name: Lotes
+- file: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
+  name: Lotes
+  p: 4
 
 layers:
 
@@ -59,7 +55,7 @@ layers:
   parcel:
     subtype: full
     method: shp2sql
-    file: 5
+    file: 4
     sql_select: ['gid', 'numero as house_number', 'logradouro as via_name', 'geom']
     orig_filename: lote
     standardized_fields:
