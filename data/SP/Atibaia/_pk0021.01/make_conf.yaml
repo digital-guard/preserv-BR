@@ -31,7 +31,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'log_nome_c as name', 'geometry as geom']
-    orig_filename: CAD_LOG
+    orig_filename: logradouros/CAD_LOG
     standardized_fields:
      -
       name: log_nome_c
