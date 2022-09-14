@@ -2,7 +2,8 @@ pack_id: 6.1
 pkversion: 001
 schemaId_input: ref027a
 schemaId_template: ref027a
-codec:descr_encode: srid=31999
+#codec:descr_encode: srid=31999
+srid_proj: +proj=utm +zone=24 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 
 files:
 - file: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
