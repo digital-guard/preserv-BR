@@ -30,12 +30,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'log_nome_c as name', 'geometry as geom']
+    sql_select: ['gid', 'log_nome_c as via_name', 'geometry as geom']
     orig_filename: logradouros/CAD_LOG
     standardized_fields:
      -
       name: log_nome_c
-      standard: name
+      standard: via_name
 
   parcel:
     subtype: none
