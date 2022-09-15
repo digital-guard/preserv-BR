@@ -89,3 +89,8 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 09701,97,1,001,,luis,2022-09-12,BR-CE-Fortaleza,"Edificações, lotes, logradouros, quadras e bairros",(self),2022,yes,CC0,website,"https://ide.sefin.fortaleza.ce.gov.br/",no,working-makefile,2022-07-06
 08401,84,1,001,GO-ACG,luis,2021-09-01,BR-GO-AparecidaGoiania,"Lotes, logradouros, quadras, bairros",(self),2021,no,CC0,"email","(anexo de email)",no,,
 11001,110,1,001,PR-MGA,luis,2022-05-31,BR-PR-Maringa,"Numero de porta",(self),2022,no,,email,(anexo de email),no,,
+14001,140,1,1,RS-CIO,luis,2022-09-15,BR-RS-Carazinho,"Lotes, edificações, distritos, quadras, setores, logradouros.",(self),2022,no,cc0,site,http://geo.carazinho.rs.gov.br/,no,1,
+14101,141,1,1,SC-IAI,luis,2022-09-15,BR-SC-Itajai,"Lotes, edificações, bairros, logradouros, outros.",(self),2022,no,cc0,site,https://arcgis.itajai.sc.gov.br/portal/apps/experiencebuilder/experience/?id=8898a2215b2348f590d3a69414c7d610,no,1,
+14201,142,1,1,SC-LGS,luis,2022-09-15,BR-SC-Lages,"Lotes, edificações, quadras, outros.",(self),2022,no,cc0,site,http://geo.lages.sc.gov.br/,no,1,
+14301,143,1,1,RS-SRO,luis,2022-09-15,BR-RS-SantaRosa,"Lotes, edificações, bairros, quadras, outros.",(self),2022,no,cc0,site,https://geo.santarosa.rs.gov.br/,no,1,
+14401,144,1,1,SC-XXE,luis,2022-09-15,BR-SC-Xanxere,"Lotes, edificações, bairros, outros.",(self),2022,no,cc0,site,http://geo.xanxere.sc.gov.br:8878/,no,1,
