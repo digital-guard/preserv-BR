@@ -152,8 +152,8 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url,donor_date,donor
 137,NA,NA,NA,NEOENERGIA PERNAMBUCO,NA,NA,NA,1
 138,NA,NA,NA,ELEKTRO,NA,NA,NA,1
 139,NA,NA,NA,ASSOMASUL - Ass Munici Mato Grosso do Sul,NA,NA,23/05/2022,1
-140,BR-RS-Carazinho,RS-CIO,cnpj:87.613.535/0001-16,Prefeitura Municipal de Carazinho,772910,https://www.carazinho.rs.gov.br/
-141,BR-SC-Itajai,SC-IAI,cnpj:83.102.277/0001-52,Município de Itajaí,842713,https://itajai.sc.gov.br/
-142,BR-SC-Lages,SC-LGS,cnpj:82.777.301/0001-90,Prefeitura Municipal de Lages,762009,https://www.lages.sc.gov.br/
-143,BR-RS-SantaRosa,RS-SRO,cnpj:88.546.890/0001-82,Municipio de Santa Rosa,995326,https://prefeitura.santarosa.rs.gov.br/
-144,BR-SC-Xanxere,SC-XXE,cnpj:83.009.860/0001-13,Prefeitura Municipal de Xanxere,22063751,https://xanxere.sc.gov.br/
+140,BR-RS-Carazinho,RS-CIO,cnpj:87.613.535/0001-16,Prefeitura Municipal de Carazinho,772910,https://www.carazinho.rs.gov.br/,,
+141,BR-SC-Itajai,SC-IAI,cnpj:83.102.277/0001-52,Município de Itajaí,842713,https://itajai.sc.gov.br/,,
+142,BR-SC-Lages,SC-LGS,cnpj:82.777.301/0001-90,Prefeitura Municipal de Lages,762009,https://www.lages.sc.gov.br/,,
+143,BR-RS-SantaRosa,RS-SRO,cnpj:88.546.890/0001-82,Municipio de Santa Rosa,995326,https://prefeitura.santarosa.rs.gov.br/,,
+144,BR-SC-Xanxere,SC-XXE,cnpj:83.009.860/0001-13,Prefeitura Municipal de Xanxere,22063751,https://xanxere.sc.gov.br/,,
