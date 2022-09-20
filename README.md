@@ -4,7 +4,7 @@
 
 ## Organização territorial e seus geocódigos
 
-Os registros de controle da preservação são baseados em códigos e identificadores persistentes, atribuídos oficialmente pela ISO e outras iniciativas internacionais. Ao Brasil foram atribuídos: no contexto [ISO&nbsp;3166](https://en.wikipedia.org/wiki/ISO_3166) o geocódigo [**BR**](https://en.wikipedia.org/wiki/ISO_3166-2:BR) e número  [**76**](https://en.wikipedia.org/wiki/ISO_3166-1_numeric); na [Wikidata](http://Wikidata.org) o identificador	[Q155](http://wikidata.org/entity/Q155); no [OpenStreetMap](http://OSM.org) o identificador de [*relation* 59470](http://osm.org/relation/59470).
+Os registros de controle da preservação são baseados em códigos e identificadores persistentes, atribuídos oficialmente pela ISO e outras iniciativas internacionais. Ao Brasil foram atribuídos: no contexto [ISO&nbsp;3166](https://en.wikipedia.org/wiki/ISO_3166) o geocódigo [**BR**](https://en.wikipedia.org/wiki/ISO_3166-2:BR) e número  [**76**](https://en.wikipedia.org/wiki/ISO_3166-1_numeric); na [Wikidata](https://wikidata.org) o identificador	[Q155](http://wikidata.org/entity/Q155); no [OpenStreetMap](https://OSM.org) o identificador de [*relation* 59470](http://osm.org/relation/59470).
 
 O território nacional e suas subdivisões adminisrativas representam **jurisdições**:
 
