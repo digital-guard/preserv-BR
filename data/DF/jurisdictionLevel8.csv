@@ -1,0 +1,2 @@
+osm_id,jurisd_base_id,jurisd_local_id,name,parent_abbrev,abbrev,wikidata_id,lexlabel,isolabel_ext,ddd,info
+2758138,76,5300108,Brasília,DF,BSA,2844,brasilia,BR-DF-Brasilia,61,"{""area_sr"": 0.03785, ""area_km2"": 449, ""fat_deg_m"": 0.0000092, ""side_estim_km"": 21.2, ""side_estim_deg"": 0.1945, ""elongation_factor"": 2.77, ""postalCode_ranges"": ""[70000-001 72799-999] [73000-001 73699-999]""}"
