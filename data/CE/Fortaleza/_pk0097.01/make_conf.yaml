@@ -50,6 +50,7 @@ layers:
     file: 2
     sql_select: ['gid', 'endereco as house_number', 'geom']
     orig_filename: lotes_fiscais
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: endereco
@@ -61,6 +62,7 @@ layers:
     file: 3
     sql_select: ['gid', 'nome_compl as via_name', 'geom']
     orig_filename: logradouros
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: nome_compl
@@ -72,6 +74,7 @@ layers:
     file: 4
     sql_select: ['gid', 'geom']
     orig_filename: quadras
+    codec: SHP~Latin1
       
   nsvia:
     subtype: full
@@ -79,6 +82,7 @@ layers:
     file: 5
     sql_select: ['gid', 'nome_bairr as nsvia_name', 'geom']
     orig_filename: bairros
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: nome_bairr
