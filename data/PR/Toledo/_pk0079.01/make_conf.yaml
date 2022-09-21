@@ -46,13 +46,6 @@ layers:
      -
       name: nm_bairro
       standard: 'nsvia_name'
-      
-  block:
-    subtype: full
-    method: shp2sql
-    file: 4
-    sql_select: ['gid', 'geom']
-    orig_filename: DELIM QUADRAS
 
 # Lista de tarefas
 to-do: 
