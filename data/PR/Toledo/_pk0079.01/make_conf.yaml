@@ -25,6 +25,17 @@ files:
 
 layers:
 
+  geoaddress:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'numero_pre as house_number', 'geom']
+    orig_filename: 'NUM PREDIAIS'
+    standardized_fields:
+     -
+      name: numero_pre
+      standard: 'house_number'
+
   via:
     subtype: full
     method: shp2sql
@@ -46,6 +57,13 @@ layers:
      -
       name: nm_bairro
       standard: 'nsvia_name'
+      
+  block:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'geom']
+    orig_filename: DELIM QUADRAS
 
 # Lista de tarefas
 to-do: 
