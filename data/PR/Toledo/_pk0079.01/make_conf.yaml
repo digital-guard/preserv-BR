@@ -1,0 +1,70 @@
+pack_id: 79.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+  -
+    p:    1
+    file: e17bb963a4bf4f48743c5a60ac6ab91a88b6aff8b3ef7045a34bde155dbef1b9.zip
+    name: Geoendereços
+  -
+    p:    2
+    file: 497e972dd7415c9465e32e95d87d88d927327d5469d3c4f5a2aac306b6966404.zip
+    name: Logradouros
+  -
+    p:    3
+    file: 54e8c962d93c5075b58656b0d935889e21ea340f97c0603be1ef5f1ee07d6805.zip
+    name: Bairros
+  -
+    p:    4
+    file: 6cf7e47ce736468fb740f4f6f884464e81f8ff3a9682f92c38d041825ebb4a39.zip
+    name: Quadras
+
+
+layers:
+
+  geoaddress:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'numero_pre as house_number', 'geom']
+    orig_filename: 'NUM PREDIAIS'
+    standardized_fields:
+     -
+      name: numero_pre
+      standard: 'house_number'
+  
+  via:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'nomelogr as via_name', 'geom']
+    orig_filename: 'LOGRADOUROS'
+    standardized_fields:
+     -
+      name: nomelogr
+      standard: 'via_name'
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'nm_bairro as nsvia_name', 'geom']
+    orig_filename: 'Bairros'
+    standardized_fields:
+     -
+      name: nm_bairro
+      standard: 'nsvia_name'
+      
+  block:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'geom']
+    orig_filename: 'DELIM QUADRAS'
+
+# Lista de tarefas
+to-do: 
+  - É possível identificar o logradouro de cada geoendereço no futuro, utilizando o ângulo e uma tabela de referencia (arquivo sem sha256sum).
