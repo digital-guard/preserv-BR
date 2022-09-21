@@ -49,7 +49,7 @@ layers:
       standard: house_number
 
   building:
-    subtype: none
+    subtype: full
     method: shp2sql
     file: 3
     sql_select: ['gid', 'numero as house_number', 'geom']
