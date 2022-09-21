@@ -16,28 +16,28 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'geometry as geom']
+    sql_select: ['gid', 'geom']
     orig_filename: quadras
 
   nsvia:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Tipo + Nome as nsvia_name', 'geometry as geom']
+    sql_view: |-
+     SELECT gid, Tipo || ' ' || Nome AS nsvia_name, geom FROM $(tabname)
     orig_filename: loteamentos
     comments: Necessario compor nome com regular expression.
     standardized_fields:
      -
-      name: Tipo + Nome
+      name: "Tipo || ' ' || Nome"
       standard: nsvia_name
 
   parcel:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geometry as geom']
+    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geom']
     orig_filename: lotes
-    comments: Nome possui formato estranho, verificar se é possível arrumar com regular expression (ver qgis.png).
     standardized_fields:
      -
       name: ENDER_IMOV
@@ -50,14 +50,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'tipo + compl_1 + compl_2 + nome_1 as via_name', 'geometry as geom']
+    sql_view: |-
+     SELECT gid, tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1 AS via_name, geom FROM $(tabname)
     orig_filename: eixo
-    comments: Necessario arrumar nome do logradouro por regular expression.
     standardized_fields:
      -
-      name: tipo + nome_1 + compl_1 + compl_2
+      name: "tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1"
       standard: via_name
       
-comments: Outros arquivos descrevem pontos de interesse.
-
 test_evidence: qgis.png
