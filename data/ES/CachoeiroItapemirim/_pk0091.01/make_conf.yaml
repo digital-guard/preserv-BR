@@ -62,7 +62,7 @@ layers:
     file: 3
     sql_select: ['gid', 'NOME as nsvia_name', 'geom']
     orig_filename: LIMITE_BAIRROS_7915_2021
-    codec: SHP;srid=31984
+    codec: SHP~Latin1;srid=31984
     standardized_fields:
      -
       name: NOME
@@ -87,6 +87,7 @@ layers:
     sql_view: |-
      SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)
     orig_filename: axisLine
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: "tip_logr || ' ' || textstring"
