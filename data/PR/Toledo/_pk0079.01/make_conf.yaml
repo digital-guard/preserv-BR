@@ -25,23 +25,12 @@ files:
 
 layers:
 
-  geoaddress:
-    subtype: none
-    method: shp2sql
-    file: 1
-    sql_select: ['gid', 'numero_pre as house_number', 'geom']
-    orig_filename: 'NUM PREDIAIS'
-    standardized_fields:
-     -
-      name: numero_pre
-      standard: 'house_number'
-  
   via:
     subtype: full
     method: shp2sql
     file: 2
     sql_select: ['gid', 'nomelogr as via_name', 'geom']
-    orig_filename: 'LOGRADOUROS'
+    orig_filename: LOGRADOUROS
     standardized_fields:
      -
       name: nomelogr
@@ -52,7 +41,7 @@ layers:
     method: shp2sql
     file: 3
     sql_select: ['gid', 'nm_bairro as nsvia_name', 'geom']
-    orig_filename: 'Bairros'
+    orig_filename: Bairros
     standardized_fields:
      -
       name: nm_bairro
@@ -63,7 +52,7 @@ layers:
     method: shp2sql
     file: 4
     sql_select: ['gid', 'geom']
-    orig_filename: 'DELIM QUADRAS'
+    orig_filename: DELIM QUADRAS
 
 # Lista de tarefas
 to-do: 
