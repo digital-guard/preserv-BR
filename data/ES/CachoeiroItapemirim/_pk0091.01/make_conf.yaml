@@ -87,7 +87,7 @@ layers:
     sql_view: |-
      SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)
     orig_filename: axisLine
-    codec: SHP~Latin1noSrid
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: "tip_logr || ' ' || textstring"
