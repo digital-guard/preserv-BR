@@ -21,8 +21,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'Rua as via_name', 'geom']
-    orig_filename: Ruas Matriz
-    codec: SHP~Latin1
+    orig_filename: Ruas Matriz nova
     standardized_fields:
      -
       name: Rua
@@ -35,7 +34,6 @@ layers:
     sql_view: |-
      SELECT gid, LOTES_TIPO || ' ' || LOTES_ENDE AS via_name, LOTES_NUME AS house_number, geom FROM $(tabname)
     orig_filename: Lotes basicos
-    codec: SHP~Latin1
     standardized_fields:
      -
       name: LOTES_TIPO || ' ' || LOTES_ENDE
