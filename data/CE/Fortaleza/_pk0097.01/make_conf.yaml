@@ -50,6 +50,7 @@ layers:
     file: 2
     sql_view: SELECT gid, split_part(endereco,',',1) AS house_number, split_part(endereco,',',2) AS via_name, geom FROM $(tabname)
     orig_filename: lotes_fiscais
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: split_part(endereco,',',1)
