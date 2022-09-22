@@ -1,0 +1,25 @@
+pack_id: 59.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+  -
+    p:    1
+    file: 47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip
+    name: Geo-endereços
+
+layers:
+
+  geoaddress:
+    subtype: none
+    method: gdb2sql
+    file: 1
+    sql_select: ['gid', 'NrPredial as house_number', 'geom']
+    orig_filename: New File Geodatabase (2).gdb
+    orig_tabname: LOTES_PR
+    standardized_fields:
+     -
+      name: NrPredial
+      standard: 'house_number'
