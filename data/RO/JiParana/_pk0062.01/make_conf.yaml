@@ -1,0 +1,44 @@
+pack_id: 62.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=32720
+
+files:
+  -
+    p:    1
+    file: 910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip
+    name: Logradouros
+  -
+    p:    2
+    file: 67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip
+    name: Geo-endereços
+
+layers:
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'Rua as via_name', 'geom']
+    orig_filename: Ruas Matriz
+    standardized_fields:
+     -
+      name: Rua
+      standard: 'via_name'
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_view: |-
+     SELECT gid, LOTES_TIPO || ' ' || LOTES_ENDE AS via_name, LOTES_NUME AS house_number, geom FROM $(tabname)
+    orig_filename: Lotes basicos
+    standardized_fields:
+     -
+      name: LOTES_TIPO || ' ' || LOTES_ENDE
+      standard: 'via_name'
+     -
+      name: LOTES_NUME
+      standard: 'house_number'
+      
