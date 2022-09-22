@@ -17,12 +17,12 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-     SELECT gid, "tipo de lo" || ' ' || logradouro AS via_name, "numero do" AS house_number, geom FROM $(tabname)
+     SELECT gid, tipo de lo || ' ' || logradouro AS via_name, numero do AS house_number, geom FROM $(tabname)
     orig_filename: Lotes_endereco
     standardized_fields:
      -
-      name: "tipo de lo" || ' ' || logradouro
+      name: tipo de lo || ' ' || logradouro
       standard: 'via_name'
      -
-      name: "numero do"
+      name: numero do
       standard: 'house_number'
