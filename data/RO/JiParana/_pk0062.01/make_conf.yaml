@@ -2,7 +2,7 @@ pack_id: 62.1
 pkversion: 001
 schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
-codec: SHP~Latin1;srid=32720
+codec:descr_encode: srid=32720
 
 files:
   -
@@ -22,6 +22,7 @@ layers:
     file: 1
     sql_select: ['gid', 'Rua as via_name', 'geom']
     orig_filename: Ruas Matriz
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: Rua
@@ -34,6 +35,7 @@ layers:
     sql_view: |-
      SELECT gid, LOTES_TIPO || ' ' || LOTES_ENDE AS via_name, LOTES_NUME AS house_number, geom FROM $(tabname)
     orig_filename: Lotes basicos
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: LOTES_TIPO || ' ' || LOTES_ENDE
