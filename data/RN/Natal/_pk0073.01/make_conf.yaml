@@ -1,0 +1,79 @@
+pack_id: 73.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31985
+
+files:
+  -
+    p:    1
+    file: 63f265730d08e440bbfaf630a78c053968ee7ec12447b19af9554f5a8a78614f.zip
+    name: Quadras
+  -
+    p:    2
+    file: 2a5181306cd0b82550fa9901efd9dfa8d2865a053537c5ab6b784b06edbbd568.zip
+    name: Edificações
+  -
+    p:    3
+    file: 2abd24ace6842e2257f9e89bc7137de259ab9a1ea6175b3486911b99fca6dfdc.zip
+    name: Bairros
+  -
+    p:    4
+    file: 4fb50d5099297049dab0406a2ff86b78328062b2834b7a6943e256c9dd82cb31.zip
+    name: Lotes
+  -
+    p:    5
+    file: 3939095828b4c0ec81efbcfca8f718d33e503dd8689e06d624c7957ba7fbb918.zip
+    name: Logradouros
+
+layers:
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geom']
+    orig_filename: QUADRAS
+
+  building:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_view: SELECT gid, Tipo || ' ' || Nome AS via_name, Nº AS house_number, geom FROM $(tabname)
+    orig_filename: Natal_Edif
+    standardized_fields:
+     -
+      name: Tipo || ' ' || Nome
+      standard: 'via_name'
+     -
+      name: Nº
+      standard: 'house_number'
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'BAIRRO as nsvia_name', 'geom']
+    orig_filename: Limite_de_Bairros
+    standardized_fields:
+     -
+      name: BAIRRO
+      standard: 'nsvia_name'      
+
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'geom']
+    orig_filename: Natal_Lotes
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 5
+    sql_view: SELECT gid, TIPO || ' ' || NOME_1 AS via_name, geom FROM $(tabname)
+    orig_filename: Logradouros_2019_SIRGAS2000
+    standardized_fields:
+     -
+      name: TIPO || ' ' || NOME_1
+      standard: 'via_name'
