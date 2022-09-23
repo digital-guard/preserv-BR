@@ -16,10 +16,10 @@ layers:
     subtype: none
     method: gdb2sql
     file: 1
-    sql_select: ['gid', 'NrPredial as house_number', 'geom']
+    sql_select: ['objectid AS gid', 'nrpredial AS house_number', 'geom']
     orig_filename: New File Geodatabase (2).gdb
     orig_tabname: LOTES_PR
     standardized_fields:
      -
-      name: NrPredial
+      name: nrpredial
       standard: 'house_number'
