@@ -8,11 +8,11 @@ files:
   -
     p:    1
     file: 47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip
-    name: Geo-endereços
+    name: Lotes
 
 layers:
 
-  geoaddress:
+  parcel:
     subtype: none
     method: gdb2sql
     file: 1
