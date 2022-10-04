@@ -50,7 +50,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Bairro as nsvia_name', 'geom']
+    sql_view: SELECT gid, 'Bairro' AS nsvia_name, ST_MakePolygon(ST_LineMerge(geom)) AS geom FROM $(tabname) WHERE ST_IsClosed(geom) IS TRUE
     orig_filename: LIMITE_BAIRROS
     standardized_fields:
      -
