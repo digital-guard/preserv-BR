@@ -12,7 +12,7 @@ files:
   -
     p:    2
     file: 67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip
-    name: Geo-endereços
+    name: Lotes
 
 layers:
 
@@ -27,7 +27,7 @@ layers:
       name: Rua
       standard: 'via_name'
 
-  geoaddress:
+  parcel:
     subtype: full
     method: shp2sql
     file: 2
