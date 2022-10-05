@@ -12,8 +12,8 @@ Avaliação técnica: igor<br/>
 Representação institucional: Thierry<br/>
 Licença: <b>CC0</b>
 </td></tr>
-<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">Dados publicados</a></td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">Dados publicados</a></td></tr>
 </table>
 </aside>
 
@@ -22,67 +22,72 @@ Licença: <b>CC0</b>
 # Camadas de dados
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `rb_20201111/quadras`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip">73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip</a><br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
-### Dados relevantes
+#### Dados relevantes
 * `iq` (ref): número de setor e quadra.
 
 
 
 
 
-### Dados publicados
-<a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block</a><br/>
-6846707 bytes (6.529528617858887 <abbr title="mebibyte">MiB</abbr>)<br/>
-4864 polígonos com 71.00460576577822 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.23285664177177143 polígonos/km²
+
+
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)<br/>6846707 bytes (6.53 <abbr title="mebibyte">MiB</abbr>)<br/>4864 polígonos com 71.0 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.23 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `rb_20201111/bairros`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip">73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip</a><br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
-### Dados relevantes
+#### Dados relevantes
 * `name` (ns_name): nome do bairro em caixa alta, com acentuação.
 
 
 
 
 
-### Dados publicados
-<a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia</a><br/>
-550635 bytes (0.5251264572143555 <abbr title="mebibyte">MiB</abbr>)<br/>
-129 polígonos com 153.708270348938 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.022421402355481634 polígonos/km²
+
+
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>550635 bytes (0.53 <abbr title="mebibyte">MiB</abbr>)<br/>129 polígonos com 153.71 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.02 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `rb_20201116/lotes`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip">d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip</a><br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
-### Dados relevantes
+#### Dados relevantes
 * `nomelog` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
+
 * `endereco_n` (house_number): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
 
 
 
 
 
-### Dados publicados
-<a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel</a><br/>
-23988306 bytes (22.877031326293945 <abbr title="mebibyte">MiB</abbr>)<br/>
-99701 polígonos com 66.26792555068822 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.5156650992071041 polígonos/km²
+
+
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23988306 bytes (22.88 <abbr title="mebibyte">MiB</abbr>)<br/>99701 polígonos com 66.27 <abbr title="quilômetros quadrados">km2</abbr><br/>densidade média: 0.52 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`.<br/>Download: <a title="SHA256" href="http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar">29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar</a><br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `logradouros`.<br/>Download: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
-### Dados relevantes
+#### Dados relevantes
 * `tipo ||' '|| Nome` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
 
 
 
 
-### Comentários
+
+
+#### Comentários
 Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
 
-### Dados publicados
-<a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via">http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via</a><br/>
-618898 bytes (0.5902271270751953 <abbr title="mebibyte">MiB</abbr>)<br/>
-3172 segmentos com 1030.7940693842563 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15036177638875078 segmentos/km²
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via)<br/>618898 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>3172 segmentos com 1030.79 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15 segmentos/km²
+
 
 # Evidências de teste
 <img src="qgis.png" width="400"/>
