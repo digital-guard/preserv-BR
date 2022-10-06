@@ -121,16 +121,16 @@ sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/8d0400b
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101101_p1_block CASCADE"
 cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip "*levels_3Polygon*" ; chmod -R a+rwx . > /dev/null
 " --}}
-psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952042,'carlos',952042,'+proj=longlat +datum=WGS84 +no_defs',null);"
  está configurado:" --}}
-psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "levels_3Polygon.shp" pk7600009101101_p1_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952042"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952042 "levels_3Polygon.shp" pk7600009101101_p1_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/levels_3Polygon.shp','block_full','pk7600009101101_p1_block','7600009101101','8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip',array['gid', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "Delete SRID 952042 configurado via PROJ.4 string:"
 @echo "+proj=longlat +datum=WGS84 +no_defs"
-psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952042;"
 rm -f "/tmp/sandbox/_pkBR911_001/*levels_3Polygon.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101101_p1_block CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block
@@ -152,16 +152,16 @@ sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4b8f5c5
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE"
 cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip "*inscricao_fiscal_cigeo*" ; chmod -R a+rwx . > /dev/null
 " --}}
-psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952042,'carlos',952042,'+proj=longlat +datum=WGS84 +no_defs',null);"
  está configurado:" --}}
-psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "inscricao_fiscal_cigeo.shp" pk7600009101201_p2_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952042"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952042 "inscricao_fiscal_cigeo.shp" pk7600009101201_p2_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/inscricao_fiscal_cigeo.shp','geoaddress_none','pk7600009101201_p2_geoaddress','7600009101201','4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip',array['gid', 'inscricao', 'geom'],1,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "Delete SRID 952042 configurado via PROJ.4 string:"
 @echo "+proj=longlat +datum=WGS84 +no_defs"
-psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952042;"
 
 rm -f "/tmp/sandbox/_pkBR911_001/*inscricao_fiscal_cigeo.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE"
@@ -205,16 +205,16 @@ sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/81db1f1
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE"
 cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip "*numeroinicioefim1*" ; chmod -R a+rwx . > /dev/null
 " --}}
-psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952042,'carlos',952042,'+proj=longlat +datum=WGS84 +no_defs',null);"
  está configurado:" --}}
-psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "numeroinicioefim1.shp" pk7600009101401_p4_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952042"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952042 "numeroinicioefim1.shp" pk7600009101401_p4_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/numeroinicioefim1.shp','parcel_none','pk7600009101401_p4_parcel','7600009101401','81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip',array['gid', 'num01', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "Delete SRID 952042 configurado via PROJ.4 string:"
 @echo "+proj=longlat +datum=WGS84 +no_defs"
-psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952042;"
 
 rm -f "/tmp/sandbox/_pkBR911_001/*numeroinicioefim1.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE"
@@ -233,18 +233,18 @@ sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/3a300c9
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101601_p6_via CASCADE"
 cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip "*axisLine*" ; chmod -R a+rwx . > /dev/null
 " --}}
-psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952042,'carlos',952042,'+proj=longlat +datum=WGS84 +no_defs',null);"
  está configurado:" --}}
-psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D -W ISO-8859-1  -s 952110 "axisLine.shp" pk7600009101601_p6_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952042"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D -W ISO-8859-1  -s 952042 "axisLine.shp" pk7600009101601_p6_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
 psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw6_pk7600009101601_p6_via AS SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/axisLine.shp','via_full','vw6_pk7600009101601_p6_via','7600009101601','3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw6_pk7600009101601_p6_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "Delete SRID 952042 configurado via PROJ.4 string:"
 @echo "+proj=longlat +datum=WGS84 +no_defs"
-psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952042;"
 
 rm -f "/tmp/sandbox/_pkBR911_001/*axisLine.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101601_p6_via CASCADE"
@@ -257,6 +257,5 @@ cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservC
 
 ```
 </section>
-
 
 

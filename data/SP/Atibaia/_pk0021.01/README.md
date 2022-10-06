@@ -37,7 +37,7 @@ Nome do arquivo: `edificacoes/edificacoes`.<br/>Download: [6d741572b6c31ffd82cf0
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes/lotes`.<br/>Download: [b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip](http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 889309 bytes (0.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `lotes/lotes`.<br/>Download: [b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip](http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 889309 bytes (0.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `num` (house_number)
@@ -52,7 +52,7 @@ Nome do arquivo: `lotes/lotes`.<br/>Download: [b6221fa57754ec8c4db284591a6ceeea7
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros/CAD_LOG`.<br/>Download: [0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip](http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 1241211 bytes (1.18 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `logradouros/CAD_LOG`.<br/>Download: [0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip](http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 1241211 bytes (1.18 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `log_nome_c` (via_name)
@@ -158,6 +158,5 @@ cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservC
 
 ```
 </section>
-
 
 

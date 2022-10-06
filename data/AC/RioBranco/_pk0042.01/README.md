@@ -22,7 +22,7 @@ Licença: <b>CC0</b>
 # Camadas de dados
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `iq` (ref): número de setor e quadra.
@@ -38,7 +38,7 @@ Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)<br/>6846707 bytes (6.53 <abbr title="mebibyte">MiB</abbr>)<br/>4864 polígonos com 71 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `name` (ns_name): nome do bairro em caixa alta, com acentuação.
@@ -54,7 +54,7 @@ Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>550635 bytes (0.53 <abbr title="mebibyte">MiB</abbr>)<br/>129 polígonos com 153.71 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `nomelog` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
@@ -72,7 +72,7 @@ Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23988306 bytes (22.88 <abbr title="mebibyte">MiB</abbr>)<br/>99701 polígonos com 66.27 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.52 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`.<br/>Download: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
+Nome do arquivo: `logradouros`.<br/>Download: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `tipo ||' '|| Nome` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
@@ -204,7 +204,6 @@ cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservC
 
 ```
 </section>
-
 
 
 # Anexo
