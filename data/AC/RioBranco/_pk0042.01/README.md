@@ -27,13 +27,6 @@ Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 #### Dados relevantes
 * `iq` (ref): número de setor e quadra.
 
-
-
-
-
-
-
-
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)<br/>6846707 bytes (6.53 <abbr title="mebibyte">MiB</abbr>)<br/>4864 polígonos com 71 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
@@ -42,13 +35,6 @@ Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 
 #### Dados relevantes
 * `name` (ns_name): nome do bairro em caixa alta, com acentuação.
-
-
-
-
-
-
-
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>550635 bytes (0.53 <abbr title="mebibyte">MiB</abbr>)<br/>129 polígonos com 153.71 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²
@@ -61,13 +47,6 @@ Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae
 
 * `endereco_n` (house_number): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
 
-
-
-
-
-
-
-
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23988306 bytes (22.88 <abbr title="mebibyte">MiB</abbr>)<br/>99701 polígonos com 66.27 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.52 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
@@ -77,21 +56,14 @@ Nome do arquivo: `logradouros`.<br/>Download: [29d68e5ce006079b06b710cc2df3aa08d
 #### Dados relevantes
 * `tipo ||' '|| Nome` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
 
-
-
-
-
-
 #### Comentários
 Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via)<br/>618898 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>3172 segmentos com 1030.79 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15 segmentos/km²
 
-
 # Evidências de teste
 <img src="qgis.png" width="400"/>
-
 
 # Tarefas
 * Corrigir a string dos nomes de logradouro nos lotes. Os lotes possuem erros de nome de logradouros, nestes casos: 1. na maioria está faltando um espaço entre o tipo de via e o nome (ex.\: &quot;RUACECÍLIA MEIRELES&quot;). 2. em alguns há dois espaços entre o tipo de via e o nome (ex.\: &quot;ALA  MATRINCHÃ&quot;). 3. e em alguns há uma vírgula ou ponto no final do nome (ex.\: &quot;VIAVERDE.&quot;).
@@ -112,7 +84,6 @@ wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/
 sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600004201201_p2_block CASCADE"
 cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip "*rb_20201111/quadras*" ; chmod -R a+rwx . > /dev/null
- está configurado:" --}}
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201111/quadras.shp" pk7600004201201_p2_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
@@ -125,11 +96,6 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/block/*.g
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('block','BR-AC-RioBranco','/var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/block','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/block
 
-
-
-
-
-
 nsvia:
 rm -rf /tmp/sandbox/_pkBR421_001 || true
 mkdir -m 777 -p /tmp/sandbox
@@ -139,7 +105,6 @@ wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/
 sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600004201201_p2_nsvia CASCADE"
 cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/download/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip "*rb_20201111/bairros*" ; chmod -R a+rwx . > /dev/null
- está configurado:" --}}
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201111/bairros.shp" pk7600004201201_p2_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
@@ -161,13 +126,11 @@ wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/
 sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600004201101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/download/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip "*rb_20201116/lotes*" ; chmod -R a+rwx . > /dev/null
- está configurado:" --}}
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201116/lotes.shp" pk7600004201101_p1_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201116/lotes.shp','parcel_full','pk7600004201101_p1_parcel','7600004201101','d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip',array['gid', 'nomelog AS via_name', 'endereco_n AS house_number'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-
 rm -f "/tmp/sandbox/_pkBR421_001/*rb_20201116/lotes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600004201101_p1_parcel CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/parcel
@@ -184,7 +147,6 @@ wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/
 sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600004201301_p3_via CASCADE"
 cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/download/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar "*logradouros*" ; chmod -R a+rwx . > /dev/null
- está configurado:" --}}
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "logradouros.shp" pk7600004201301_p3_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
@@ -192,7 +154,6 @@ psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600004201301_p
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/logradouros.shp','via_full','vw3_pk7600004201301_p3_via','7600004201301','29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw3_pk7600004201301_p3_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-
 rm -f "/tmp/sandbox/_pkBR421_001/*logradouros.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600004201301_p3_via CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/via
@@ -200,11 +161,8 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/via/*.geo
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('via','BR-AC-RioBranco','/var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/via','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/AC/RioBranco/_pk0042.01/via
 
-
-
 ```
 </section>
-
 
 # Anexo
 
