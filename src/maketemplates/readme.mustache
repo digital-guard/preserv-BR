@@ -22,7 +22,7 @@ Representação institucional: Thierry<br/>
 # Camadas de dados
 {{#layers}}{{#value}}## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{layername_root}}.png" alt="{{layername_root}}" width="20"/> {{layername_root}}
 
-{{#file_data}}Nome do arquivo: `{{orig_filename}}`.<br/>Download: [{{file_data.file}}](http://dl.digital-guard.org/{{file_data.file}}){{#file_data.name}}<br/>Descrição: {{file_data.name}}{{/file_data.name}}{{#file_data.comments}}<br/>Comentário: {{file_data.comments}}{{/file_data.comments}}{{#file_data.size}}<br/>Tamanho do arquivo: {{file_data.size}} bytes{{#file_data.size_mb_round2}} ({{file_data.size_mb_round2}} <abbr title="mebibyte">MiB</abbr>){{/file_data.size_mb_round2}}{{/file_data.size}}{{/file_data}}<br/>Formato: {{#extension}}{{extension}}{{/extension}}{{#srid}}SRID: {{#insertSrid}}{{srid_proj}}{{/insertSrid}}{{^insertSrid}}{{srid}}{{/insertSrid}}{{/srid}}
+{{#file_data}}Nome do arquivo: `{{orig_filename}}`.<br/>Download: [{{file_data.file}}](http://dl.digital-guard.org/{{file_data.file}}){{#file_data.name}}<br/>Descrição: {{file_data.name}}{{/file_data.name}}{{#file_data.comments}}<br/>Comentário: {{file_data.comments}}{{/file_data.comments}}{{#file_data.size}}<br/>Tamanho do arquivo: {{file_data.size}} bytes{{#file_data.size_mb_round2}} ({{file_data.size_mb_round2}} <abbr title="mebibyte">MiB</abbr>){{/file_data.size_mb_round2}}{{/file_data.size}}{{/file_data}}<br/>Formato: {{#extension}}{{extension}}{{/extension}}{{#srid}}<br/>SRID: {{#insertSrid}}{{srid_proj}}{{/insertSrid}}{{^insertSrid}}{{srid}}{{/insertSrid}}{{/srid}}
 
 {{#has_standardized_fields}}#### Dados relevantes{{#standardized_fields}}
 * `{{name}}` ({{standard}}){{#comment}}: {{comment}}{{/comment}}
