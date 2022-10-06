@@ -203,9 +203,6 @@ cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D -W ISO-8859-1  -s 31983 "SIRGAS_SHP_L
 
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_LOTES.shp','parcel_ext','pk7600003301201_p2_parcel','7600003301201','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip',array['gid', 'lo_setor || lo_quadra || lo_lote AS ref', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-
-psql $(pg_uri_db) -c "SELECT ingest.join('parcel_ext','ref','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip','cadparcel_cmpl','ref','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip')"
-
 rm -f "/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_LOTES.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301201_p2_parcel CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel
@@ -230,9 +227,6 @@ psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw4_pk7600003301401_p
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp','via_full','vw4_pk7600003301401_p4_via','7600003301401','ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw4_pk7600003301401_p4_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
-
-psql $(pg_uri_db) -c "SELECT ingest.join('','','','','','')"
-
 rm -f "/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301401_p4_via CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via
@@ -240,6 +234,12 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via/*.geoj
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('via','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via
 
+
+
+
+
+
+psql $(pg_uri_db) -c "SELECT ingest.join('parcel_ext','ref','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip','cadparcel_cmpl','ref','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip')"
 
 
 ```
