@@ -22,7 +22,7 @@ Licença: <b>CC0</b>
 # Camadas de dados
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `levels_3Polygon`.<br/>Download: [8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip](http://dl.digital-guard.org/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 984417 bytes (0.94 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 952055
+Nome do arquivo: `levels_3Polygon`.<br/>Download: [8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip](http://dl.digital-guard.org/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 984417 bytes (0.94 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=longlat +datum=WGS84 +no_defs
 
 
 
@@ -36,7 +36,7 @@ Nome do arquivo: `levels_3Polygon`.<br/>Download: [8d0400b02d594228c5a43df5e5bcd
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/block)<br/>1799230 bytes (1.72 <abbr title="mebibyte">MiB</abbr>)<br/>2289 polígonos com 67.42 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `inscricao_fiscal_cigeo`.<br/>Download: [4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip](http://dl.digital-guard.org/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip)<br/>Descrição: Geoenderecos<br/>Tamanho do arquivo: 1872639 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 952055
+Nome do arquivo: `inscricao_fiscal_cigeo`.<br/>Download: [4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip](http://dl.digital-guard.org/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip)<br/>Descrição: Geoenderecos<br/>Tamanho do arquivo: 1872639 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=longlat +datum=WGS84 +no_defs
 
 
 #### Outros dados relevantes
@@ -67,7 +67,7 @@ Nome do arquivo: `Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia)<br/>356930 bytes (0.34 <abbr title="mebibyte">MiB</abbr>)<br/>76 polígonos com 34.29 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.04 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `numeroinicioefim1`.<br/>Download: [81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip](http://dl.digital-guard.org/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4617404 bytes (4.4 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 952055
+Nome do arquivo: `numeroinicioefim1`.<br/>Download: [81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip](http://dl.digital-guard.org/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4617404 bytes (4.4 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=longlat +datum=WGS84 +no_defs
 
 
 #### Outros dados relevantes
@@ -82,7 +82,7 @@ Nome do arquivo: `numeroinicioefim1`.<br/>Download: [81db1f1d79472aa7e664a00e012
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/parcel)<br/>10052688 bytes (9.59 <abbr title="mebibyte">MiB</abbr>)<br/>51234 polígonos com 64.53 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.48 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `axisLine`.<br/>Download: [3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip](http://dl.digital-guard.org/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip)<br/>Descrição: Logradouros urbanos<br/>Tamanho do arquivo: 500230 bytes (0.48 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 952055
+Nome do arquivo: `axisLine`.<br/>Download: [3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip](http://dl.digital-guard.org/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip)<br/>Descrição: Logradouros urbanos<br/>Tamanho do arquivo: 500230 bytes (0.48 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=longlat +datum=WGS84 +no_defs
 
 #### Dados relevantes
 * `tip_logr || ' ' || textstring` (via_name)
@@ -117,25 +117,25 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR911_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600009101101_p1_block CASCADE&quot;
-cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip &quot;*levels_3Polygon*&quot; ; chmod -R a+rwx . &gt; /dev/null
-&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952030,'carlos',952030,'+proj=longlat +datum=WGS84 +no_defs',null);&quot;
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=952030&quot;
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952030 &quot;levels_3Polygon.shp&quot; pk7600009101101_p1_block | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101101_p1_block CASCADE"
+cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip "*levels_3Polygon*" ; chmod -R a+rwx . > /dev/null
+" --}}
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "levels_3Polygon.shp" pk7600009101101_p1_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/levels_3Polygon.shp','block_full','pk7600009101101_p1_block','7600009101101','8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip',array['gid', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-@echo &quot;Delete SRID 952030 configurado via PROJ.4 string:&quot;
-@echo &quot;+proj=longlat +datum=WGS84 +no_defs&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DELETE FROM spatial_ref_sys WHERE srid=952030;&quot;
-rm -f &quot;/tmp/sandbox/_pkBR911_001/*levels_3Polygon.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600009101101_p1_block CASCADE&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/levels_3Polygon.shp','block_full','pk7600009101101_p1_block','7600009101101','8d0400b02d594228c5a43df5e5bcdbbb620bce1175fac22fb2f196768159d53f.zip',array['gid', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "+proj=longlat +datum=WGS84 +no_defs"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
+rm -f "/tmp/sandbox/_pkBR911_001/*levels_3Polygon.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101101_p1_block CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('block','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('block','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/block
 
 
@@ -148,26 +148,26 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR911_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE&quot;
-cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip &quot;*inscricao_fiscal_cigeo*&quot; ; chmod -R a+rwx . &gt; /dev/null
-&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952030,'carlos',952030,'+proj=longlat +datum=WGS84 +no_defs',null);&quot;
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=952030&quot;
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952030 &quot;inscricao_fiscal_cigeo.shp&quot; pk7600009101201_p2_geoaddress | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE"
+cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip "*inscricao_fiscal_cigeo*" ; chmod -R a+rwx . > /dev/null
+" --}}
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "inscricao_fiscal_cigeo.shp" pk7600009101201_p2_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/inscricao_fiscal_cigeo.shp','geoaddress_none','pk7600009101201_p2_geoaddress','7600009101201','4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip',array['gid', 'inscricao', 'geom'],1,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-@echo &quot;Delete SRID 952030 configurado via PROJ.4 string:&quot;
-@echo &quot;+proj=longlat +datum=WGS84 +no_defs&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DELETE FROM spatial_ref_sys WHERE srid=952030;&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/inscricao_fiscal_cigeo.shp','geoaddress_none','pk7600009101201_p2_geoaddress','7600009101201','4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip',array['gid', 'inscricao', 'geom'],1,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "+proj=longlat +datum=WGS84 +no_defs"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
 
-rm -f &quot;/tmp/sandbox/_pkBR911_001/*inscricao_fiscal_cigeo.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE&quot;
+rm -f "/tmp/sandbox/_pkBR911_001/*inscricao_fiscal_cigeo.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101201_p2_geoaddress CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/geoaddress
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/geoaddress/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('geoaddress','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/geoaddress','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('geoaddress','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/geoaddress','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/geoaddress
 
 nsvia:
@@ -176,23 +176,23 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR911_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600009101301_p3_nsvia CASCADE&quot;
-cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar &quot;*Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31984&quot;
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 31984 &quot;Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp&quot; pk7600009101301_p3_nsvia | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101301_p3_nsvia CASCADE"
+cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar "*Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31984"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 31984 "Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp" pk7600009101301_p3_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp','nsvia_full','pk7600009101301_p3_nsvia','7600009101301','5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar',array['gid', 'NOME as nsvia_name', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-@echo &quot;Delete SRID 31984 configurado via PROJ.4 string:&quot;
-@echo &quot;+proj=longlat +datum=WGS84 +no_defs&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DELETE FROM spatial_ref_sys WHERE srid=31984;&quot;
-rm -f &quot;/tmp/sandbox/_pkBR911_001/*Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600009101301_p3_nsvia CASCADE&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp','nsvia_full','pk7600009101301_p3_nsvia','7600009101301','5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar',array['gid', 'NOME as nsvia_name', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+@echo "Delete SRID 31984 configurado via PROJ.4 string:"
+@echo "+proj=longlat +datum=WGS84 +no_defs"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=31984;"
+rm -f "/tmp/sandbox/_pkBR911_001/*Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101301_p3_nsvia CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('nsvia','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('nsvia','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia
 
 parcel:
@@ -201,26 +201,26 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR911_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE&quot;
-cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip &quot;*numeroinicioefim1*&quot; ; chmod -R a+rwx . &gt; /dev/null
-&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952030,'carlos',952030,'+proj=longlat +datum=WGS84 +no_defs',null);&quot;
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=952030&quot;
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952030 &quot;numeroinicioefim1.shp&quot; pk7600009101401_p4_parcel | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE"
+cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip "*numeroinicioefim1*" ; chmod -R a+rwx . > /dev/null
+" --}}
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 952110 "numeroinicioefim1.shp" pk7600009101401_p4_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/numeroinicioefim1.shp','parcel_none','pk7600009101401_p4_parcel','7600009101401','81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip',array['gid', 'num01', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-@echo &quot;Delete SRID 952030 configurado via PROJ.4 string:&quot;
-@echo &quot;+proj=longlat +datum=WGS84 +no_defs&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DELETE FROM spatial_ref_sys WHERE srid=952030;&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/numeroinicioefim1.shp','parcel_none','pk7600009101401_p4_parcel','7600009101401','81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip',array['gid', 'num01', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "+proj=longlat +datum=WGS84 +no_defs"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
 
-rm -f &quot;/tmp/sandbox/_pkBR911_001/*numeroinicioefim1.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE&quot;
+rm -f "/tmp/sandbox/_pkBR911_001/*numeroinicioefim1.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101401_p4_parcel CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/parcel
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/parcel/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('parcel','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/parcel','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('parcel','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/parcel','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/parcel
 
 via:
@@ -229,28 +229,28 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR911_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600009101601_p6_via CASCADE&quot;
-cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip &quot;*axisLine*&quot; ; chmod -R a+rwx . &gt; /dev/null
-&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952030,'carlos',952030,'+proj=longlat +datum=WGS84 +no_defs',null);&quot;
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=952030&quot;
-cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D -W ISO-8859-1  -s 952030 &quot;axisLine.shp&quot; pk7600009101601_p6_via | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600009101601_p6_via CASCADE"
+cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/download/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip "*axisLine*" ; chmod -R a+rwx . > /dev/null
+" --}}
+psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952110,'carlos',952110,'+proj=longlat +datum=WGS84 +no_defs',null);"
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952110"
+cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D -W ISO-8859-1  -s 952110 "axisLine.shp" pk7600009101601_p6_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;CREATE VIEW vw6_pk7600009101601_p6_via AS SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/axisLine.shp','via_full','vw6_pk7600009101601_p6_via','7600009101601','3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip',array[]::text[],5,1)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DROP VIEW vw6_pk7600009101601_p6_via&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-@echo &quot;Delete SRID 952030 configurado via PROJ.4 string:&quot;
-@echo &quot;+proj=longlat +datum=WGS84 +no_defs&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DELETE FROM spatial_ref_sys WHERE srid=952030;&quot;
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw6_pk7600009101601_p6_via AS SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/axisLine.shp','via_full','vw6_pk7600009101601_p6_via','7600009101601','3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw6_pk7600009101601_p6_via"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+@echo "Delete SRID 952110 configurado via PROJ.4 string:"
+@echo "+proj=longlat +datum=WGS84 +no_defs"
+psql postgres://postgres@localhost/ingest1 -c "DELETE FROM spatial_ref_sys WHERE srid=952110;"
 
-rm -f &quot;/tmp/sandbox/_pkBR911_001/*axisLine.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600009101601_p6_via CASCADE&quot;
+rm -f "/tmp/sandbox/_pkBR911_001/*axisLine.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600009101601_p6_via CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/via
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/via/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('via','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/via','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('via','BR-ES-CachoeiroItapemirim','/var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/via','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/ES/CachoeiroItapemirim/_pk0091.01/via
 
 

@@ -22,7 +22,7 @@ Licença <a rel="external" target="_doador" href="https://creativecommons.org/pu
 # Camadas de dados
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<br/>Download: [0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip](http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes (67.04 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<br/>Download: [0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip](http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes (67.04 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
 
 #### Dados relevantes
 * `qe_id` (ref)
@@ -38,7 +38,7 @@ Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/block)<br/>119088160 bytes (113.57 <abbr title="mebibyte">MiB</abbr>)<br/>59568 polígonos com 1254.21 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.78 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `SHP_edificacao`.<br/>Download: [8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip](http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip)<br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes (669.89 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SHP_edificacao`.<br/>Download: [8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip](http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip)<br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes (669.89 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
 
 
 
@@ -52,7 +52,7 @@ Nome do arquivo: `SHP_edificacao`.<br/>Download: [8e7be760f94bb385bb1b6a47feee3a
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building)<br/>752549843 bytes (717.69 <abbr title="mebibyte">MiB</abbr>)<br/>2764457 polígonos com 309.55 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.38 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: [bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip](http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes (223.37 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: [bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip](http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes (223.37 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
 
 #### Dados relevantes
 * `lo_setor || lo_quadra || lo_lote` (ref)
@@ -68,7 +68,7 @@ Nome do arquivo: `SIRGAS_SHP_LOTES`.<br/>Download: [bae2054448855305db0fc855d285
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/parcel)<br/>476608646 bytes (454.53 <abbr title="mebibyte">MiB</abbr>)<br/>1653077 polígonos com 646.96 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.69 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Download: [ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip](http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes (22.58 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Download: [ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip](http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes (22.58 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 
 
 #### Dados relevantes
 * `lg_tipo || ' ' || lg_nome` (via_name)
@@ -84,7 +84,7 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.<br/>Downlo
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via)<br/>36896770 bytes (35.19 <abbr title="mebibyte">MiB</abbr>)<br/>230553 segmentos com 19233.99 <abbr title="quilômetros">km</abbr><br/>densidade média: 17.13 segmentos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `IPTU_2020`.<br/>Download: [75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip](http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes (119.87 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
+Nome do arquivo: `IPTU_2020`.<br/>Download: [75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip](http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes (119.87 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 
 
 #### Dados relevantes
 * `split_part(&quot;NUMERO DO CONTRIBUINTE&quot;, '-', 1)` (ref)
@@ -122,20 +122,20 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600003301501_p5_block CASCADE&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip &quot;*SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31983&quot;
-cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D   -s 31983 &quot;SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.shp&quot; pk7600003301501_p5_block | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600003301501_p5_block CASCADE"
+cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip "*SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
+cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D   -s 31983 "SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.shp" pk7600003301501_p5_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.shp','block_none','pk7600003301501_p5_block','7600003301501','0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip',array['gid', 'qe_id AS ref', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-rm -f &quot;/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600003301501_p5_block CASCADE&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.shp','block_none','pk7600003301501_p5_block','7600003301501','0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip',array['gid', 'qe_id AS ref', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+rm -f "/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301501_p5_block CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('block','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('block','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block
 
 building:
@@ -144,21 +144,21 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600003301101_p1_building CASCADE&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip &quot;*SHP_edificacao*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31983&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z x -y &quot;*SHP_edificacao*&quot; ; chmod -R a+rx . &gt; /dev/null
-cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D -W ISO-8859-1  -s 31983 &quot;SHP_edificacao.shp&quot; pk7600003301101_p1_building | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600003301101_p1_building CASCADE"
+cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip "*SHP_edificacao*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
+cd /tmp/sandbox/_pkBR331_001; 7z x -y "*SHP_edificacao*" ; chmod -R a+rx . > /dev/null
+cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D -W ISO-8859-1  -s 31983 "SHP_edificacao.shp" pk7600003301101_p1_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SHP_edificacao.shp','building_none','pk7600003301101_p1_building','7600003301101','8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip',array['gid', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
-rm -f &quot;/tmp/sandbox/_pkBR331_001/*SHP_edificacao.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600003301101_p1_building CASCADE&quot;
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SHP_edificacao.shp','building_none','pk7600003301101_p1_building','7600003301101','8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip',array['gid', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
+rm -f "/tmp/sandbox/_pkBR331_001/*SHP_edificacao.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301101_p1_building CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('building','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('building','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building
 
 cadparcel:
@@ -167,21 +167,21 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
-psql $(pg_uri_db) -c &quot;DROP FOREIGN TABLE IF EXISTS pk7600003301301_p3_cadparcel CASCADE&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip &quot;*IPTU_2020*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31983&quot;
-iconv -f ISO-8859-1 -t UTF-8 /tmp/sandbox/_pkBR331_001/IPTU_2020.csv | dos2unix &gt; /tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv', 'pk7600003301301_p3_cadparcel',';' )&quot;
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip
+psql $(pg_uri_db) -c "DROP FOREIGN TABLE IF EXISTS pk7600003301301_p3_cadparcel CASCADE"
+cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip "*IPTU_2020*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
+iconv -f ISO-8859-1 -t UTF-8 /tmp/sandbox/_pkBR331_001/IPTU_2020.csv | dos2unix > /tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv', 'pk7600003301301_p3_cadparcel',';' )"
 
-psql postgres://postgres@localhost/ingest1 -c &quot;CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\&quot;NUMERO DO CONTRIBUINTE\&quot;, '-', 1) AS ref, \&quot;NOME DE LOGRADOURO DO IMOVEL\&quot; AS via_name, \&quot;NUMERO DO IMOVEL\&quot; AS house_number, \&quot;BAIRRO DO IMOVEL\&quot; AS nsvia_name, \&quot;CEP DO IMOVEL\&quot; AS postcode FROM $(tabname)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('csv2sql','/tmp/sandbox/_pkBR331_001/IPTU_2020.csv','cadparcel_cmpl','vw3_pk7600003301301_p3_cadparcel','7600003301301','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip',array[]::text[],5,1)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DROP VIEW vw3_pk7600003301301_p3_cadparcel&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis&quot;.
-psql postgres://postgres@localhost/ingest1 -c &quot;DROP FOREIGN TABLE IF EXISTS pk7600003301301_p3_cadparcel&quot;
-rm -f &quot;/tmp/sandbox/_pkBR331_001/*IPTU_2020.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600003301301_p3_cadparcel CASCADE&quot;
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\"NUMERO DO CONTRIBUINTE\", '-', 1) AS ref, \"NOME DE LOGRADOURO DO IMOVEL\" AS via_name, \"NUMERO DO IMOVEL\" AS house_number, \"BAIRRO DO IMOVEL\" AS nsvia_name, \"CEP DO IMOVEL\" AS postcode FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('csv2sql','/tmp/sandbox/_pkBR331_001/IPTU_2020.csv','cadparcel_cmpl','vw3_pk7600003301301_p3_cadparcel','7600003301301','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw3_pk7600003301301_p3_cadparcel"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis".
+psql postgres://postgres@localhost/ingest1 -c "DROP FOREIGN TABLE IF EXISTS pk7600003301301_p3_cadparcel"
+rm -f "/tmp/sandbox/_pkBR331_001/*IPTU_2020.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301301_p3_cadparcel CASCADE"
 
 
 
@@ -193,24 +193,24 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600003301201_p2_parcel CASCADE&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip &quot;*SIRGAS_SHP_LOTES*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31983&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z x -y &quot;*SIRGAS_SHP_LOTES*&quot; ; chmod -R a+rx . &gt; /dev/null
-cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D -W ISO-8859-1  -s 31983 &quot;SIRGAS_SHP_LOTES.shp&quot; pk7600003301201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600003301201_p2_parcel CASCADE"
+cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip "*SIRGAS_SHP_LOTES*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
+cd /tmp/sandbox/_pkBR331_001; 7z x -y "*SIRGAS_SHP_LOTES*" ; chmod -R a+rx . > /dev/null
+cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D -W ISO-8859-1  -s 31983 "SIRGAS_SHP_LOTES.shp" pk7600003301201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_LOTES.shp','parcel_ext','pk7600003301201_p2_parcel','7600003301201','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip',array['gid', 'lo_setor || lo_quadra || lo_lote AS ref', 'geom'],5,1)&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_LOTES.shp','parcel_ext','pk7600003301201_p2_parcel','7600003301201','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip',array['gid', 'lo_setor || lo_quadra || lo_lote AS ref', 'geom'],5,1)"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 
-psql $(pg_uri_db) -c &quot;SELECT ingest.join('parcel_ext','ref','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip','cadparcel_cmpl','ref','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip')&quot;
+psql $(pg_uri_db) -c "SELECT ingest.join('parcel_ext','ref','bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip','cadparcel_cmpl','ref','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip')"
 
-rm -f &quot;/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_LOTES.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600003301201_p2_parcel CASCADE&quot;
+rm -f "/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_LOTES.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301201_p2_parcel CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('parcel','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('parcel','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel
 
 via:
@@ -219,25 +219,25 @@ mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
 mkdir -p /tmp/pg_io
 wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip &amp;&amp; sudo chmod 664 /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
-psql $(pg_uri_db) -c &quot;DROP  TABLE IF EXISTS pk7600003301401_p4_via CASCADE&quot;
-cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip &quot;*SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl*&quot; ; chmod -R a+rwx . &gt; /dev/null
- está configurado:&quot; --}}
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT srid, proj4text FROM spatial_ref_sys where srid=31983&quot;
-cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D   -s 31983 &quot;SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp&quot; pk7600003301401_p4_via | psql -q postgres://postgres@localhost/ingest1 2&gt; /dev/null
+sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip && sudo chmod 664 /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip
+psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600003301401_p4_via CASCADE"
+cd /tmp/sandbox/_pkBR331_001; 7z  x -y /var/www/preserv.addressforall.org/download/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip "*SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl*" ; chmod -R a+rwx . > /dev/null
+ está configurado:" --}}
+psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
+cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D   -s 31983 "SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp" pk7600003301401_p4_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c &quot;CREATE VIEW vw4_pk7600003301401_p4_via AS SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp','via_full','vw4_pk7600003301401_p4_via','7600003301401','ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip',array[]::text[],5,1)&quot;
-psql postgres://postgres@localhost/ingest1 -c &quot;DROP VIEW vw4_pk7600003301401_p4_via&quot;
-@echo &quot;Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis&quot;.
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw4_pk7600003301401_p4_via AS SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp','via_full','vw4_pk7600003301401_p4_via','7600003301401','ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw4_pk7600003301401_p4_via"
+@echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 
-psql $(pg_uri_db) -c &quot;SELECT ingest.join('','','','','','')&quot;
+psql $(pg_uri_db) -c "SELECT ingest.join('','','','','','')"
 
-rm -f &quot;/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.*&quot; || true
-psql $(pg_uri_db) -c &quot;DROP TABLE IF EXISTS pk7600003301401_p4_via CASCADE&quot;
+rm -f "/tmp/sandbox/_pkBR331_001/*SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.*" || true
+psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301401_p4_via CASCADE"
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via/*.geojson
-psql $(pg_uri_db) -c &quot;SELECT ingest.publicating_geojsons('via','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via','1',9,3);&quot;
+psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('via','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/via
 
 
