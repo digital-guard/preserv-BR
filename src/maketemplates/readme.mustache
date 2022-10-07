@@ -1,19 +1,19 @@
 <aside>
 <table align="right">
-<tr><th>{{isolabel_ext}}</th></tr>
+<tr><th>{{data_packtpl.isolabel_ext}}</th></tr>
 <tr><td>
-Pacote: <a target="_git" href="{{path_preserv_git}}"><small>_pk{{pack_number}}</small></a>
+Pacote: <a target="_git" href="{{data_packtpl.path_preserv_git}}"><small>_pk{{data_packtpl.pack_number}}</small></a>
 </td></tr>
 <tr><td>
-Doador: <a rel="external" target="_doador" href="{{url}}">{{legalName}}</a><br/>
-<small>{{vat_id}}</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{wikidata_id}}">Q{{wikidata_id}}</a></small><br/>
-Obtido via <i>{{uri_objtype}}</i> em <b>{{accepted_date}}</b><br/>
-Avaliação técnica: {{user_resp}}<br/>
+Doador: <a rel="external" target="_doador" href="{{data_packtpl.url}}">{{data_packtpl.legalname}}</a><br/>
+<small>{{data_packtpl.vat_id}}</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{data_packtpl.wikidata_id}}">Q{{data_packtpl.wikidata_id}}</a></small><br/>
+Obtido via <i>{{data_packcsv.uri_objtype}}</i> em <b>{{data_packcsv.accepted_date}}</b><br/>
+Avaliação técnica: {{data_packtpl.user_resp_packtpl_initcap}}<br/>
 Representação institucional: Thierry<br/>
 {{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{file}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file_7_ext}}</code></a>{{/license_evidences.file}}{{#license_evidences.uri_evidency}}{{#license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency_7_ext}}</code></a>{{/license_evidences.is_uri_evidency_eml}}{{^license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="{{uri_evidency}}"><code>webarchive</code></a>{{/license_evidences.is_uri_evidency_eml}}{{/license_evidences.uri_evidency}}){{/license_evidences}}{{^license_evidences}}{{#license}}Licença: <b>{{license}}</b>{{/license}}{{/license_evidences}}
 </td></tr>
 <tr><td>Camadas: {{#layers_keys}}<a title="{{.}}" href="#-{{.}}"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{.}}.png" alt="{{.}}" width="20"/></a> {{/layers_keys}}</td></tr>
-{{#path_cutgeo_git}}<tr><td><a href="{{path_cutgeo_git}}">Dados publicados</a></td></tr>{{/path_cutgeo_git}}
+{{#data_packtpl.path_cutgeo_git}}<tr><td><a href="{{data_packtpl.path_cutgeo_git}}">Dados publicados</a></td></tr>{{/data_packtpl.path_cutgeo_git}}
 </table>
 </aside>
 
