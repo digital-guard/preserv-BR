@@ -5,11 +5,11 @@ Pacote <a target="_git" title="link canônico para o git deste pacote" href="htt
  de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SP-SaoPaulo">BR-SP-SaoPaulo</a></small></td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" title="site oficial do doador" href="http://www.capital.sp.gov.br/">Prefeitura Municipal de São Paulo</a>
-<br/>&nbsp; <small>CNPJ 46.395.000/0001-39</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q10351100">Q10351100</a></small><br/>
-Obtido via <i>site</i> em <b>2020-07-26</b><br/>
-Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
-Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
-Licença família cc0: <a rel="external" target="_licence" title="link oficial dos termos da licença" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (<a title="arquivo de evidência da licença no pacote" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)
+<br/>&nbsp; <small>CNPJ 46.395.000/0001-39</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q10351100">Q10351100</a></small>
+<br/>Licença família cc0: <a rel="external" target="_licence" title="link oficial dos termos da licença" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (<a title="arquivo de evidência da licença no pacote" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)
+<br/>Obtido via <i>site</i> em <b>2020-07-26</b> por:
+<br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
+<br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="building" href="#-building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> <a title="cadparcel" href="#-cadparcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/></a> </td></tr>
 <tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01">Dados publicados</a></td></tr>
