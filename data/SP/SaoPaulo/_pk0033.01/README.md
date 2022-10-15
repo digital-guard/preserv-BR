@@ -1,16 +1,15 @@
 <aside>
 <table align="right">
-<tr><th>BR-SP-SaoPaulo</th></tr>
+<tr><td align="center">
+Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoPaulo/_pk0033.01"><big><b>pk0033.01</b></big></a>
+ de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SP-SaoPaulo">BR-SP-SaoPaulo</a></small></td></tr>
 <tr><td>
-Pacote: <a target="_git" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoPaulo/_pk0033.01"><small>_pk0033.01</small></a>
-</td></tr>
-<tr><td>
-Doador: <a rel="external" target="_doador" href="http://www.capital.sp.gov.br/">Prefeitura Municipal de São Paulo</a><br/>
-<small>cnpj:46.395.000/0001-39</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q10351100">Q10351100</a></small><br/>
+Doador: <a rel="external" target="_doador" title="site oficial do doador" href="http://www.capital.sp.gov.br/">Prefeitura Municipal de São Paulo</a>
+<br/>&nbsp; <small>CNPJ 46.395.000/0001-39</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q10351100">Q10351100</a></small><br/>
 Obtido via <i>site</i> em <b>2020-07-26</b><br/>
-Avaliação técnica: igor<br/>
-Representação institucional: Thierry<br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)
+Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
+Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+Licença família cc0: <a rel="external" target="_licence" title="link oficial dos termos da licença" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (<a title="arquivo de evidência da licença no pacote" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="building" href="#-building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> <a title="cadparcel" href="#-cadparcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/></a> </td></tr>
 <tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01">Dados publicados</a></td></tr>
@@ -19,7 +18,11 @@ Licença <a rel="external" target="_doador" href="https://creativecommons.org/pu
 
 <section>
 
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs). 
+  
 # Camadas de dados
+Os arquivos contém "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
+
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
 Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`.<br/>Download: [0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip](http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes (67.04 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
@@ -76,10 +79,15 @@ Complementa [parcel](#-parcel) por meio de `ref` e `ref`
 <section>
 
 # Reprodutibilidade
+  
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a  [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [softwares e versões empregados](https://github.com/AddressForAll/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar exatamente os mesmos resultados.
 
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos abaixo, depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.  
+  
 ```bash
-
-block:
+# block:
 rm -rf /tmp/sandbox/_pkBR331_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
@@ -100,7 +108,7 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block/*.ge
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('block','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/block
 
-building:
+# building:
 rm -rf /tmp/sandbox/_pkBR331_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
@@ -122,7 +130,7 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building/*
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('building','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/building
 
-cadparcel:
+# cadparcel:
 rm -rf /tmp/sandbox/_pkBR331_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
@@ -143,7 +151,7 @@ psql postgres://postgres@localhost/ingest1 -c "DROP FOREIGN TABLE IF EXISTS pk76
 rm -f "/tmp/sandbox/_pkBR331_001/*IPTU_2020.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600003301301_p3_cadparcel CASCADE"
 
-parcel:
+# parcel:
 rm -rf /tmp/sandbox/_pkBR331_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
@@ -165,7 +173,7 @@ rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel/*.g
 psql $(pg_uri_db) -c "SELECT ingest.publicating_geojsons('parcel','BR-SP-SaoPaulo','/var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel','1',9,3);"
 cd /var/gits/_dg/preserv/src; sudo bash fixaPermissoes.sh /var/gits/_dg/preservCutGeo-BR2021/data/SP/SaoPaulo/_pk0033.01/parcel
 
-via:
+# via:
 rm -rf /tmp/sandbox/_pkBR331_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pkBR331_001
