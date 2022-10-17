@@ -1,0 +1,37 @@
+pack_id: 68.1
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31983
+
+files:
+- file: c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip
+  name: Edificações
+  p: 1
+- filename: b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip
+  name: lotes
+  p: 2
+
+
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: 3f04b132268e9924262327225ea8ac0914eb411307747ad93f19333e0d7d15dc.zip
+
+layers:
+
+  building:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'nome', 'geom']
+    orig_filename: edificacoes
+
+  parcel:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: [
+        ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto'],
+        ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto']]
+    orig_filename: ['Lotes Registrados','Lotes implantados']
+   
