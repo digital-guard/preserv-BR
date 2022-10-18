@@ -29,7 +29,7 @@ layers:
   parcel:
     subtype: full
     method: shp2sql
-    file: 1
+    file: 2
     sql_select: [
         ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto'],
         ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto']]
