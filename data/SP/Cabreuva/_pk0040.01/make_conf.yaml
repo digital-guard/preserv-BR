@@ -18,6 +18,7 @@ layers:
     file: 1
     orig_filename: relação_
     codec: CSV~Latin1semicolon
-    sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name  FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name, 
+      CASE WHEN 'Nº Imóvel' like '%S/N%' THEN NULL ELSE 'Nº Imóvel' END  as house_number  FROM $(tabname)
     join_column: ref
 
