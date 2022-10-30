@@ -30,12 +30,12 @@ layers:
               jgeom AS geom \
               FROM $(tabname)
 # Join com SRID diferente não é suportado pelo programa
-#  parcel:
-#        subtype: full
-#        method: geojson2sql
-#        file: 2
-#        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
-#        sql_select: [['id AS gid','logradouro AS via_name','geometry AS geom'],['id AS gid','geometry AS geom']]
+  parcel:
+        subtype: full
+        method: geojson2sql
+        file: 2
+        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
+        sql_select: [['id AS gid','logradouro AS via_name','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
 
   parcel:
         subtype: full
