@@ -37,7 +37,6 @@ layers:
       [ 'name as via_name' ]
       ]
     orig_filename: ['logradouro','v_logr_ortofoto','L_8683-2016_m12_vias_func_urbanistica']
-    codec: SHP~Latin1
 
   building:
     subtype: none
@@ -52,3 +51,4 @@ layers:
     file: 4
     sql_select: ['nmbairro as ns_name','populacao']
     orig_filename: v_bairros_populacao
+    codec: SHP~Latin1
