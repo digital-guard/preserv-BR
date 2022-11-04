@@ -6,7 +6,7 @@ need_commands:    7z psql shp2pgsql
 codec:descr_encode: srid=31981
 
 files:
-- file: 5816997b063b62b3d3d15ba8339a05ab1bbac651b645fddbea194d4b8a445932.zip
+- file: e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip
   name: LOGRADOUROS
   p: 1
   size: 456311
@@ -24,7 +24,7 @@ layers:
         subtype: full
         method: geojson2sql
         file: 1
-        orig_filename: LOGRADOUROS
+        orig_filename: LOGRADOUROS-utf8
         sql_view: |-
           SELECT row_number() OVER () as gid, properties->'logradouro' AS via_name, \
               jgeom AS geom \
