@@ -11,6 +11,12 @@ files:
 - file: b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip
   name: lotes
   p: 2
+- file: 12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip
+  name: nsvia
+  p: 3
+- file: 0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip
+  name: block
+  p: 4
 
 
 license_evidences:
@@ -30,8 +36,28 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: [
-        ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto'],
-        ['ciu', 'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto']]
-    orig_filename: ['Lotes Registrados','Lotes implantados']
-   
+    #sql_select: [
+    #    ['ciu AS gid', \"ra_nome || ' ' quadra || ' ' || conjunto as nsref\", \"conjunto || ' ' || lote as house_number\",'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto'],
+    #    ['ct_ciu']]
+    #orig_filename: ['Lotes Registrados','Lotes implantados']
+    # Não importado Lotes implantados.shp, não é possivel usar sql_view com Union de shapefiles
+    # https://github.com/digital-guard/preserv-BR/issues/115
+    sql_view: SELECT row_number() OVER () as gid, 
+      ra_nome || ' ' || quadra || ' ' || conjunto as nsref,
+      conjunto || ' ' || lote as house_number,
+      norma_ante, padrao_cor, ra_nome, quadra, conjunto, end_cart, projeto, geom FROM $(tabname)
+    orig_filename: Lotes Registrados
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: [['ra as ns_via'],['sde_siturb as ns_via','sde_situ_1']]
+    orig_filename: ['Administrativas','Quadras']
+
+  block:
+    subtype: full
+    method: shp2sql
+    file: 4
+    sql_select: ['sde_siturb','sde_situ_1','sde_situ_2']
+    orig_filename: Quadras
