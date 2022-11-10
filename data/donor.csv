@@ -81,7 +81,7 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url,donor_date,donor
 80,BR-RS-Pelotas,RS-PLT,cnpj:87.455.531/0001-57,Prefeitura Municipal de Pelotas,109188,https://www.pelotas.rs.gov.br/,17/12/2020,3
 81,BR-SP-Guarulhos,SP-GRH,cnpj:46.319.000.0001-50,Prefeitura de Guarulhos,53930928,https://www.guarulhos.sp.gov.br/,20/09/2021,3
 82,BR-RS-Bage,RS-BGE,cnpj:88.073.291/0001-99,Prefeitura Municipal de Bagé,119140,https://www.bage.rs.gov.br/,15/03/2021,2
-83,NA,NA,NA,Antônio Carlos,NA,NA,03/03/2021,1
+83,BR-SC-AntonioCarlos,SC-AIC,cnpj:82.892.290/0001-90,Prefeitura Municipal de Antônio Carlos,4201208,https://www.antoniocarlos.sc.gov.br/,03/03/2021,1
 84,BR-GO-AparecidaGoiania,GO-ACG,cnpj:01.005.727/0001-24,Prefeitura Municipal de Aparecida de Goiânia,459711,https://www.aparecida.go.gov.br/,11/09/2021,1
 85,NA,NA,NA,Apucarana,NA,NA,22/01/2021,1
 86,NA,NA,NA,Aracaju,NA,NA,05/04/2021,1
