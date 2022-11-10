@@ -86,7 +86,8 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 06101,61,1,002,PR-AUC,carlos,2022-04-01,BR-PR-Araucaria,"Lotes, eixos, bairros urbanos e bairros rurais",(self),2022,no,CC0,email,(anexo de email),no,working-makefile,
 08201,82,1,001,RS-BGE,luis,2022-04-25,BR-RS-Bage,"Lotes, eixos e quadras",(self),2022,no,CC0,GitHub,https://github.com/GGC-Bage/GeoDataBase,no,working-makefile,
 09101,91,1,001,ES-CIM,luis,2022-04-05,BR-ES-CachoeiroItapemirim,"Numero fiscal, lotes, eixos, quadras, bairros",(self),2022,no,CC0,site;email,http://siggeo.cachoeiro.es.gov.br/,,,
-09701,97,1,001,,luis,2022-09-12,BR-CE-Fortaleza,"Edificações, lotes, logradouros, quadras e bairros",(self),2022,yes,CC0,website,"https://ide.sefin.fortaleza.ce.gov.br/",no,working-makefile,2022-07-06
+09701,97,1,001,CE-FLA,luis,2022-09-12,BR-CE-Fortaleza,"Edificações, lotes, logradouros, quadras e bairros",(self),2022,yes,CC0,website,"https://ide.sefin.fortaleza.ce.gov.br/",no,working-makefile,2022-07-06
+08301,83,1,001,SC-AIC,luis,2022-10-25,BR-SC-AntonioCarlos,"parcel none, via full, outros",(self),2022,no,cc0,site,http://geo.antoniocarlos.sc.gov.br:8888/sistema/mapa,no,1,
 08401,84,1,001,GO-ACG,luis,2021-09-01,BR-GO-AparecidaGoiania,"Lotes, logradouros, quadras, bairros",(self),2021,no,CC0,email,(anexo de email),no,,
 10601,106,1,001,PR-LDA,luis,2022-11-10,BR-PR-Londrina,"parcel none, via full, outros",(self),2022,no,cc0,site,https://portal.londrina.pr.gov.br/downloads-siglon,no,1,
 11001,110,1,001,PR-MGA,luis,2022-05-31,BR-PR-Maringa,"Numero de porta",(self),2022,no,,email,(anexo de email),no,,
