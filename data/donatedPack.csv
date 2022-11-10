@@ -61,7 +61,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 06001,60,1,001,PE-PTA,igor,2020-09-16,BR-PE-Petrolina,Mapa básico em DWG e PDF,(self),2020,no,CC0,email,(anexo de email),no,working-makefile,
 06101,61,1,001,PR-AUC,igor,2020-01-13,BR-PR-Araucaria,"Lotes, eixos, bairros urbanos e bairros rurais",(self),2021,no,CC0,email,(anexo de email),no,working-makefile,
 06201,62,1,001,RO-JIP,igor,2020-01-19,BR-RO-JiParana,Eixos,(self),2021,no,CC0,site,(anexo de email),no,working-makefile,
-06301,63,1,001,RS-NHO,igor,2021-06-23,BR-RS-NovoHamburgo,"Bairros, lotes (inscrição) e POIs.",(self),2021,no,CC0,site;email,(anexo de email);https://signh.novohamburgo.rs.gov.br/,no,working-makefile,
+06301,63,1,001,RS-NHO,igor,2022-11-10,BR-RS-NovoHamburgo,"parcel none, via full, outros",(self),2022,no,CC0,site,https://signh.novohamburgo.rs.gov.br/,no,1,
 06401,64,1,001,RS-SCR,igor,2022-03-08,BR-RS-SantaCruzSul,"Eixos, lotes, bairros, quadras",(self),2022,no,CC0,email,(anexo de email),no,working-makefile,
 06501,65,1,001,SP-CUB,igor,2021-02-12,BR-SP-Cubatao,"Eixos, loteamentos, hidrografia, meios-fios, divisa de município, muros, PDFs de turismo e POIs.",(self),2021,no,CC0,email,(anexo de email),no,working-makefile,
 06601,66,1,001,PE-(BEZ),igor,2021-03-03,BR-PE-Bezerros,Mapa cadastral em DWG,(self),2001,no,CC0,email,(anexo de email),no,,
@@ -88,6 +88,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 09101,91,1,001,ES-CIM,luis,2022-04-05,BR-ES-CachoeiroItapemirim,"Numero fiscal, lotes, eixos, quadras, bairros",(self),2022,no,CC0,site;email,http://siggeo.cachoeiro.es.gov.br/,,,
 09701,97,1,001,,luis,2022-09-12,BR-CE-Fortaleza,"Edificações, lotes, logradouros, quadras e bairros",(self),2022,yes,CC0,website,"https://ide.sefin.fortaleza.ce.gov.br/",no,working-makefile,2022-07-06
 08401,84,1,001,GO-ACG,luis,2021-09-01,BR-GO-AparecidaGoiania,"Lotes, logradouros, quadras, bairros",(self),2021,no,CC0,email,(anexo de email),no,,
+10601,106,1,001,PR-LDA,luis,2022-11-10,BR-PR-Londrina,"parcel none, via full, outros",(self),2022,no,cc0,site,https://portal.londrina.pr.gov.br/downloads-siglon,no,1,
 11001,110,1,001,PR-MGA,luis,2022-05-31,BR-PR-Maringa,"Numero de porta",(self),2022,no,,email,(anexo de email),no,,
 14001,140,1,1,RS-CIO,luis,2022-09-15,BR-RS-Carazinho,"Lotes, edificações, distritos, quadras, setores, logradouros.",(self),2022,no,CC0,site,http://geo.carazinho.rs.gov.br/,no,1,
 14101,141,1,1,SC-IAI,luis,2022-09-15,BR-SC-Itajai,"Lotes, edificações, bairros, logradouros, outros.",(self),2022,no,CC0,site,https://arcgis.itajai.sc.gov.br/portal/apps/experiencebuilder/experience/?id=8898a2215b2348f590d3a69414c7d610,no,1,
