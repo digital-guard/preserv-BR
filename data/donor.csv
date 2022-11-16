@@ -86,56 +86,42 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url,donor_date,donor
 85,NA,NA,NA,Apucarana,NA,NA,22/01/2021,1
 86,NA,NA,NA,Aracaju,NA,NA,05/04/2021,1
 87,NA,NA,NA,Barueri,NA,NA,16/11/2021,1
-88,NA,NA,NA,"Belém
-(pop. 2 milhões)",NA,NA,09/06/2021,1
+88,NA,NA,NA,"Belém (pop. 2 milhões)",NA,NA,09/06/2021,1
 89,NA,NA,NA,Boa Vista,NA,NA,21/06/2021,1
 90,NA,NA,NA,Brasília - GDF e Gov.Br,NA,NA,26/03/2021,1
 91,BR-ES-CachoeiroItapemirim,ES-CIM,cnpj:27.165.588/0001-90,Municipio De Cachoeiro De Itapemirim,1439193,https://www.cachoeiro.es.gov.br/,21/02/2022,1
-92,NA,NA,NA,"Campo Largo
-(pop. 134.000)",NA,NA,22/02/2021,1
-93,NA,NA,NA,"Colatina
-(pop. 123.400)",NA,NA,25/05/2021,1
-94,NA,NA,NA,"Cuiabá
-(pop. 620.000)",NA,NA,05/04/2021,1
+92,NA,NA,NA,"Campo Largo (pop. 134.000)",NA,NA,22/02/2021,1
+93,NA,NA,NA,"Colatina (pop. 123.400)",NA,NA,25/05/2021,1
+94,NA,NA,NA,"Cuiabá (pop. 620.000)",NA,NA,05/04/2021,1
 95,NA,NA,NA,Diadema,NA,NA,04/04/2022,1
 96,NA,NA,NA,Divinopolis,NA,NA,17/11/2021,1
 97,BR-CE-Fortaleza,NA,cnpj:07.954.605/0001-60,Prefeitura Municipal de Fortaleza,43463,https://www.fortaleza.ce.gov.br/,18/06/2021,2
-98,NA,NA,NA,"Guarapari
-(pop. 127.000)",NA,NA,08/02/2021,1
+98,NA,NA,NA,"Guarapari (pop. 127.000)",NA,NA,08/02/2021,1
 99,NA,NA,NA,Instituto Jones de Santos Neves,NA,NA,25/05/2021,1
-100,NA,NA,NA,"Itabuna
-215.000",NA,NA,17/11/2021,1
+100,NA,NA,NA,"Itabuna 215.000",NA,NA,17/11/2021,1
 101,NA,NA,NA,EMASA,NA,NA,29/11/2021,1
 102,NA,NA,NA,COELBA,NA,NA,15/02/2021,2
-103,NA,NA,NA,"Itaguaí
-(pop. 135000)",NA,NA,28/01/2021,1
+103,NA,NA,NA,"Itaguaí (pop. 135000)",NA,NA,28/01/2021,1
 104,NA,NA,NA,Limoeiro do Norte,NA,NA,18/04/2022,1
 105,NA,NA,NA,Louveira,NA,NA,04/04/2022,1
 106,BR-PR-Londrina,PR-LDA,cnpj:75.771.477/0001-70,Prefeitura do Município de Londrina,192387,https://www.londrina.pr.gov.br/,,
 107,NA,NA,NA,Maceió,NA,NA,21/06/2021,1
-108,NA,NA,NA,"Macapá
-(pop. 530.000)",NA,NA,05/04/2021,1
-109,NA,NA,NA,"Macaíba
-(pop. 82.000)",NA,NA,14/05/2021,1
+108,NA,NA,NA,"Macapá (pop. 530.000)",NA,NA,05/04/2021,1
+109,NA,NA,NA,"Macaíba (pop. 82.000)",NA,NA,14/05/2021,1
 110,BR-PR-Maringa,PR-MGA,cnpj:76.282.656/0001-06,Prefeitura do Município de Maringá,208669,NA,29/09/2021,2
 111,NA,NA,NA,Mauá,NA,NA,11/04/2022,1
-112,NA,NA,NA,"Novo Gama
-(pop. 118.000)",NA,NA,06/01/2021,1
-113,NA,NA,NA,"Palmas [do Paraná]
-(pop. 52.000)",NA,NA,05/04/2021,1
+112,NA,NA,NA,"Novo Gama (pop. 118.000)",NA,NA,06/01/2021,1
+113,NA,NA,NA,"Palmas [do Paraná] (pop. 52.000)",NA,NA,05/04/2021,1
 114,NA,NA,NA,Palmas,NA,NA,31/05/2021,1
 115,NA,NA,NA,Parauepebas,NA,NA,25/04/2022,1
-116,NA,NA,NA,"Porto Feliz
-(pop. 54.000)",NA,NA,14/08/2021,1
+116,NA,NA,NA,"Porto Feliz (pop. 54.000)",NA,NA,14/08/2021,1
 117,NA,NA,NA,Porto Velho,NA,NA,24/06/2021,1
 118,NA,NA,NA,Ribeirão Pires,NA,NA,14/12/2021,1
 119,NA,NA,NA,Santana de Parnaiba,NA,NA,16/11/2021,1
 120,NA,NA,NA,São Luís,NA,NA,01/06/2021,1
-121,NA,NA,NA,"São Mateus 
-(pop. 133.000)",NA,NA,22/10/2020,1
+121,NA,NA,NA,"São Mateus (pop. 133.000)",NA,NA,22/10/2020,1
 122,NA,NA,NA,Tietê,NA,NA,14/07/2020,1
-123,NA,NA,NA,"Três Lagoas
-(pop. 123.000)",NA,NA,06/01/2021,1
+123,NA,NA,NA,"Três Lagoas (pop. 123.000)",NA,NA,06/01/2021,1
 124,NA,NA,NA,Valinhos,NA,NA,17/11/2021,1
 125,NA,NA,NA,DAEV Valinhos,NA,NA,29/11/2021,1
 126,NA,NA,NA,Vitoria da Conquista,NA,NA,18/04/2022,1
