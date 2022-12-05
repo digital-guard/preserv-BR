@@ -1,16 +1,14 @@
 <aside>
-<table align="right">
-<tr><th>{{data_packtpl.isolabel_ext}}</th></tr>
-<tr><td>
-Pacote: <a target="_git" href="{{data_packtpl.path_preserv_git}}"><small>_pk{{data_packtpl.pack_number}}</small></a>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="{{data_packtpl.path_preserv_git}}"><big><b>pk{{data_packtpl.pack_number}}</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/{{data_packtpl.isolabel_ext}}">{{data_packtpl.isolabel_ext}}</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="{{data_packtpl.url}}">{{data_packtpl.legalname}}</a><br/>
-<small>{{data_packtpl.vat_id}}</small> • <a rel="external" target="_doador" href="https://www.wikidata.org/wiki/Q{{data_packtpl.wikidata_id}}">Q{{data_packtpl.wikidata_id}}</a></small><br/>
-Obtido via <i>{{data_packcsv.uri_objtype}}</i> em <b>{{data_packcsv.accepted_date}}</b><br/>
-Avaliação técnica: {{data_packtpl.user_resp_packtpl_initcap}}<br/>
-Representação institucional: Thierry<br/>
+<small>{{data_packtpl.vat_id}}</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q{{data_packtpl.wikidata_id}}">Q{{data_packtpl.wikidata_id}}</a></small><br/>
 {{#license_evidences}}Licença <a rel="external" target="_doador" href="{{definition.2}}"><b>{{definition.0}}</b></a> ({{definition.1}} {{#license_evidences.file}}<a title="SHA256 {{file}}" href="http://dl.digital-guard.org/{{license_evidences.file}}"><code>{{license_evidences.file_7_ext}}</code></a>{{/license_evidences.file}}{{#license_evidences.uri_evidency}}{{#license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="http://dl.digital-guard.org/{{license_evidences.uri_evidency}}"><code>{{license_evidences.uri_evidency_7_ext}}</code></a>{{/license_evidences.is_uri_evidency_eml}}{{^license_evidences.is_uri_evidency_eml}}<a title="SHA256 {{uri_evidency}}" href="{{uri_evidency}}"><code>webarchive</code></a>{{/license_evidences.is_uri_evidency_eml}}{{/license_evidences.uri_evidency}}){{/license_evidences}}{{^license_evidences}}{{#license}}Licença: <b>{{license}}</b>{{/license}}{{/license_evidences}}
+Obtido via <i>{{data_packcsv.uri_objtype}}</i> em <b>{{data_packcsv.accepted_date}}</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/{{data_packtpl.user_resp_packtpl_info.git_user}}">{{data_packtpl.user_resp_packtpl_info.git_user}}</a><br/>
+ Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: {{#layers_keys}}<a title="{{.}}" href="#-{{.}}"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{.}}.png" alt="{{.}}" width="20"/></a> {{/layers_keys}}</td></tr>
 {{#data_packtpl.path_cutgeo_git}}<tr><td><a href="{{data_packtpl.path_cutgeo_git}}">Dados publicados</a></td></tr>{{/data_packtpl.path_cutgeo_git}}
@@ -19,10 +17,17 @@ Representação institucional: Thierry<br/>
 
 <section>
 
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs).
+
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
+
 # Camadas de dados
+
+Os arquivos contém "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
+
 {{#layers}}{{#value}}## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-{{layername_root}}.png" alt="{{layername_root}}" width="20"/> {{layername_root}}
 
-{{#file_data}}Nome do arquivo: `{{orig_filename}}`.<br/>Download: [{{file_data.file}}](http://dl.digital-guard.org/{{file_data.file}}){{#file_data.name}}<br/>Descrição: {{file_data.name}}{{/file_data.name}}{{#file_data.comments}}<br/>Comentário: {{file_data.comments}}{{/file_data.comments}}{{#file_data.size}}<br/>Tamanho do arquivo: {{file_data.size}} bytes{{#file_data.size_mb_round2}} ({{file_data.size_mb_round2}} <abbr title="mebibyte">MiB</abbr>){{/file_data.size_mb_round2}}{{/file_data.size}}{{/file_data}}<br/>Formato: {{#extension}}{{extension}}{{/extension}}{{#srid}}<br/>SRID: {{#srid_proj}}{{#insertSrid}}{{srid_proj}}{{/insertSrid}}{{^insertSrid}}{{srid}}{{/insertSrid}}{{/srid_proj}}{{^srid_proj}}{{srid}}{{/srid_proj}}{{/srid}}
+{{#file_data}}Nome do arquivo: `{{orig_filename}}`.<br/>*Download* e integridade: [{{file_data.file}}](http://dl.digital-guard.org/{{file_data.file}}){{#file_data.name}}<br/>Descrição: {{file_data.name}}{{/file_data.name}}{{#file_data.comments}}<br/>Comentário: {{file_data.comments}}{{/file_data.comments}}{{#file_data.size}}<br/>Tamanho do arquivo: {{file_data.size}} bytes{{#file_data.size_mb_round2}} ({{file_data.size_mb_round2}} <abbr title="mebibyte">MiB</abbr>){{/file_data.size_mb_round2}}{{/file_data.size}}{{/file_data}}<br/>Formato: {{#extension}}{{extension}}{{/extension}}{{#srid}}<br/>SRID: {{#srid_proj}}{{#insertSrid}}{{srid_proj}}{{/insertSrid}}{{^insertSrid}}{{srid}}{{/insertSrid}}{{/srid_proj}}{{^srid_proj}}{{srid}}{{/srid_proj}}{{/srid}}
 
 {{#has_standardized_fields}}#### Dados relevantes{{#standardized_fields}}
 * `{{name}}` ({{standard}}){{#comment}}: {{comment}}{{/comment}}
