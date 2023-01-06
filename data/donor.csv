@@ -143,3 +143,5 @@ local_id,scope_label,shortName,vat_id,legalName,wikidata_id,url,donor_date,donor
 142,BR-SC-Lages,SC-LGS,cnpj:82.777.301/0001-90,Prefeitura Municipal de Lages,762009,https://www.lages.sc.gov.br/,,
 143,BR-RS-SantaRosa,RS-SRO,cnpj:88.546.890/0001-82,Municipio de Santa Rosa,995326,https://prefeitura.santarosa.rs.gov.br/,,
 144,BR-SC-Xanxere,SC-XXE,cnpj:83.009.860/0001-13,Prefeitura Municipal de Xanxere,22063751,https://xanxere.sc.gov.br/,,
+145,BR-SP-Jacarei,SP-JCR,cnpj:46.694.139/0001-83,Município de Jacareí,655363,https://www.jacarei.sp.gov.br/,,
+146,BR-PR-Umuarama,PR-UMR,cnpj:76.247.378/0001-56,Prefeitura Municipal de Umuarama,593948,https://www.umuarama.pr.gov.br/,,
