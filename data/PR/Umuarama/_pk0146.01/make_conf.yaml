@@ -16,7 +16,7 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote as inscricao_lote', 'cod_log', 'geom']
+    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote as inscricao_lote', 'geom']
     orig_filename: lote_inscricao_geometriaPolygon
     other_fields:
      -
