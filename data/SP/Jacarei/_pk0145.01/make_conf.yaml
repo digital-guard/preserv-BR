@@ -1,0 +1,65 @@
+pack_id: 145.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31983
+
+files:
+  -
+    p:    1
+    file: 16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+    name: Lotes, logradouros, bairros e endereços
+
+layers:
+
+  parcel:
+    subtype: ext
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'INSCLOTE', 'geom']
+    orig_filename: LOTES_2021
+    other_fields:
+     -
+      name: INSCLOTE
+      comment: Inscrição do lote
+      
+  address:
+    subtype: cmpl
+    method: shp2sql
+    file: 1
+    sql_view: 
+    orig_filename: LOTES_COM_NUMERO_TODOS
+    join_column: INSCLOTE
+    standardized_fields:
+     -
+      name: 
+      standard: via_name
+     -
+      name: 
+      standard: house_number
+    other_fields:
+     -
+      name: 
+      comment: Inscrição do lote
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'Nome_LOG as via_name', 'geom']
+    orig_filename: Eixo_logradouros_nomes
+    standardized_fields:
+     -
+      name: Nome_LOG
+      standard: via_name
+      
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'LOTEAMENTO as nsvia_name', 'geom']
+    orig_filename: Loteamentos_2017
+    standardized_fields:
+     -
+      name: LOTEAMENTO
+      standard: nsvia_name
