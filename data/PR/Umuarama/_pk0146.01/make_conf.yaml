@@ -1,0 +1,67 @@
+pack_id: 146.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+  -
+    p:    1
+    file: c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip
+    name: Lotes, edificações, bairros e endereços
+
+layers:
+
+  parcel:
+    subtype: ext
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote as inscricao_lote', 'cod_log', 'geom']
+    orig_filename: lote_inscricao_geometriaPolygon
+    other_fields:
+     -
+      name: inscricao_lote
+      comment: Número de inscrição do lote.
+
+  building:
+    subtype: ext
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote + nr_edifica + nr_unidade as inscricao_edificacao', 'geom']
+    orig_filename: unidade_inscricao_geometriaPolygon
+    other_fields:
+      -
+        name: inscricao_edificacao
+        comment: Número de inscrição da edificação.
+        
+  address:
+    subtype: cmpl
+    method: shp2sql
+    file: 1
+    sql_view: 
+    orig_filename: TABELA IMOVEL
+    join_column: inscricao_lote
+    standardized_fields:
+     -
+      name: LOGRADOURO
+      standard: via_name
+     -
+      name: NUMERO
+      standard: house_number
+    other_fields:
+     -
+      name: ... as inscricao_lote
+      comment: Inscrição do lote
+     -
+      name: ... as inscricao_edificacao
+      comment: Inscrição da edificação
+  
+  nsvia:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geom']
+    orig_filename: st_bairroPolygon
+
+to-do: 
+  -Fazer join das edificações com os endereços.
