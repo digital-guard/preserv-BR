@@ -17,29 +17,31 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'INSCLOTE', 'geom']
-    orig_filename: LOTES_2021
+    orig_filename: AddressForAll/LOTES_2021
+    join_column: insclote
     other_fields:
      -
       name: INSCLOTE
       comment: Inscrição do lote
       
-  address:
+  cadparcel:
     subtype: cmpl
-    method: shp2sql
+    method: csv2sql
     file: 1
-    sql_view: 
-    orig_filename: LOTES_COM_NUMERO_TODOS
-    join_column: INSCLOTE
+    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via_name, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia_name FROM $(tabname)
+    codec: XLSX
+    orig_filename: AddressForAll/LOTES_COM_NUMERO_TODOS
+    join_column: insclote
     standardized_fields:
      -
-      name: 
+      name: Endereço
       standard: via_name
      -
-      name: 
+      name: Endereço
       standard: house_number
     other_fields:
      -
-      name: 
+      name: Endereço
       comment: Inscrição do lote
 
   via:
@@ -47,7 +49,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'Nome_LOG as via_name', 'geom']
-    orig_filename: Eixo_logradouros_nomes
+    orig_filename: AddressForAll/Eixo_logradouros_nomes
     standardized_fields:
      -
       name: Nome_LOG
@@ -58,7 +60,7 @@ layers:
     method: shp2sql
     file: 1
     sql_select: ['gid', 'LOTEAMENTO as nsvia_name', 'geom']
-    orig_filename: Loteamentos_2017
+    orig_filename: AddressForAll/Loteamentos_2017
     standardized_fields:
      -
       name: LOTEAMENTO
