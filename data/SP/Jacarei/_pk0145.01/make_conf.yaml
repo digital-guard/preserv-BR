@@ -39,9 +39,12 @@ layers:
      -
       name: Endereço
       standard: house_number
-    other_fields:
      -
       name: Endereço
+      standard: nsvia_name
+    other_fields:
+     -
+      name: Inscrição Imobiliária
       comment: Inscrição do lote
 
   via:
