@@ -16,8 +16,9 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote as inscricao_lote', 'geom']
+    sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote AS inscricao_lote', 'geom']
     orig_filename: lote_inscricao_geometriaPolygon
+    join_column: inscricao_lote
     other_fields:
      -
       name: inscricao_lote
@@ -27,19 +28,20 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_distrit + cd_setor + nr_quadra + nr_lote + nr_edifica + nr_unidade as inscricao_edificacao', 'geom']
+    sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote || nr_edifica || nr_unidade AS inscricao_edificacao', 'geom']
     orig_filename: unidade_inscricao_geometriaPolygon
     other_fields:
       -
         name: inscricao_edificacao
         comment: Número de inscrição da edificação.
         
-  address:
+  cadparcel:
     subtype: cmpl
-    method: shp2sql
+    method: csv2sql
     file: 1
-    sql_view: 
+    sql_view: SELECT DISTINCT "LOGRADOURO" as via_name, "NUMERO" as house_number, substring("INSCRIÇÃO",1,14) AS inscricao_lote FROM $(tabname)
     orig_filename: TABELA IMOVEL
+    codec: XLSX
     join_column: inscricao_lote
     standardized_fields:
      -
@@ -50,11 +52,8 @@ layers:
       standard: house_number
     other_fields:
      -
-      name: ... as inscricao_lote
-      comment: Inscrição do lote
-     -
-      name: ... as inscricao_edificacao
-      comment: Inscrição da edificação
+      name: INSCRIÇÃO
+      comment: Inscrição do lote e da edificação
   
   nsvia:
     subtype: none
@@ -64,4 +63,4 @@ layers:
     orig_filename: st_bairroPolygon
 
 to-do: 
-  -Fazer join das edificações com os endereços.
+  - Fazer join das edificações com os endereços.
