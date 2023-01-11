@@ -68,3 +68,4 @@ layers:
      -
       name: LOTEAMENTO
       standard: nsvia_name
+      comment: nome de bairro sem acentuação
