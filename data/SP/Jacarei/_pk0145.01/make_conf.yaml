@@ -5,10 +5,10 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
-    name: Lotes, logradouros, bairros e endereços
+- file: 16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+  name: Lotes, logradouros, bairros e endereços
+  p: 1
+  size: 12508908
 
 layers:
 

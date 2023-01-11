@@ -25,9 +25,38 @@ Nota. O presente documento README foi gerado por software a partir das informaç
 
 Os arquivos contém "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
+
+Nome do arquivo: `AddressForAll/Loteamentos_2017`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `LOTEAMENTO` (nsvia_name): nome de bairro sem acentuação
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/nsvia)<br/>326619 bytes (0.31 <abbr title="mebibyte">MiB</abbr>)<br/>206 polígonos com 80.33 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.17 polígonos/km²
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
+
+Nome do arquivo: `AddressForAll/LOTES_2021`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Outros dados relevantes
+* `INSCLOTE`: Inscrição do lote
+
+<br/>Complementado por [cadparcel](#-cadparcel) por meio de `insclote` e `insclote`
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/parcel)<br/>16853927 bytes (16.07 <abbr title="mebibyte">MiB</abbr>)<br/>80723 polígonos com 82.72 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.58 polígonos/km²
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
+
+Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `Nome_LOG` (via_name)
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/via)<br/>1377723 bytes (1.31 <abbr title="mebibyte">MiB</abbr>)<br/>6225 segmentos com 1096.74 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.28 segmentos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Formato: xlsx<br/>SRID: 31983
+Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31983
 
 #### Dados relevantes
 * `Endereço` (via_name)
@@ -40,29 +69,6 @@ Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`.<br/>*Download* e integr
 * `Inscrição Imobiliária`: Inscrição do lote
 
 Complementa [parcel](#-parcel) por meio de `insclote` e `insclote`
-
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
-
-Nome do arquivo: `AddressForAll/LOTES_2021`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Formato: shp<br/>SRID: 31983
-
-#### Outros dados relevantes
-* `INSCLOTE`: Inscrição do lote
-
-<br/>Complementado por [cadparcel](#-cadparcel) por meio de `insclote` e `insclote`
-
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
-
-Nome do arquivo: `AddressForAll/Loteamentos_2017`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Formato: shp<br/>SRID: 31983
-
-#### Dados relevantes
-* `LOTEAMENTO` (nsvia_name): nome de bairro sem acentuação
-
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
-
-Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Formato: shp<br/>SRID: 31983
-
-#### Dados relevantes
-* `Nome_LOG` (via_name)
 
 </section>
 <section>
