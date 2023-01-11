@@ -1,5 +1,5 @@
 pack_id: 71.1
-pkversion: 001
+pkversion: 002
 schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
 #codec:descr_encode: 
@@ -10,6 +10,10 @@ files:
     p:    1
     file: 4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
     name: 'Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros'
+  -
+    p:    2
+    file: 92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
+    name: Lotes
 
 layers:
 
@@ -35,13 +39,27 @@ layers:
     sql_select: ['gid', 'geom']
     orig_filename: OpenStreetMap_Shapefiles/EDIFICACOES
       
+  # parcel:
+  #   subtype: none
+  #   method: shp2sql
+  #   file: 1
+  #   sql_select: ['gid', 'geom']
+  #   orig_filename: OpenStreetMap_Shapefiles/LOTES
+
   parcel:
-    subtype: none
+    subtype: full
     method: shp2sql
-    file: 1
-    sql_select: ['gid', 'geom']
-    orig_filename: OpenStreetMap_Shapefiles/LOTES
-    
+    file: 2
+    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via_name, IMO_NUMERO as house_number, geom FROM $(tabname)
+    orig_filename: OSM_Lotes/shape/Lotes
+    standardized_fields:
+     -
+      name: "LOG_TIPO ||' '|| LOG_NOME"
+      standard: via_name
+     -
+      name: IMO_NUMERO
+      standard: house_number
+
   via:
     subtype: full
     method: shp2sql
