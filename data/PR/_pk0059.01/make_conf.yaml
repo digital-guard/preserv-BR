@@ -16,9 +16,10 @@ layers:
     subtype: none
     method: gdb2sql
     file: 1
-    sql_select: ['objectid AS gid', 'nrpredial AS house_number', 'NmMunicipio', 'geom']
+    sql_view: SELECT objectid AS gid, nrpredial AS house_number, NmMunicipio, geom FROM $(tabname)
     orig_filename: New File Geodatabase (2).gdb
     orig_tabname: LOTES_PR
+    partition_by: NmMunicipio
     standardized_fields:
      -
       name: nrpredial
