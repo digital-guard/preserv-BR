@@ -36,18 +36,6 @@ Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [
 * `NmMunicipio`: Nome do município
 
 #### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel)<br/>470112234 bytes (448.33 <abbr title="mebibyte">MiB</abbr>)<br/>2546286 polígonos com 2589.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.39 polígonos/km²
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
-
-Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
-
-#### Dados relevantes
-* `nrpredial` (house_number)
-
-#### Outros dados relevantes
-* `NmMunicipio`: Nome do município
-
-#### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel)<br/>470094182 bytes (448.32 <abbr title="mebibyte">MiB</abbr>)<br/>2546286 polígonos com 2589.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.39 polígonos/km²
 
 </section>
