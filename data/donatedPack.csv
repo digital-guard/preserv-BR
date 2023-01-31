@@ -98,3 +98,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 14401,144,1,001,SC-XXE,luis,2022-09-15,BR-SC-Xanxere,"Lotes, edificações, bairros, outros.",(self),2022,no,CC0,site,http://geo.xanxere.sc.gov.br:8878/,no,1,
 14501,145,1,001,SP-JCR,luis,2022-12-15,BR-SP-Jacarei,"Lotes e logradouros",(self),2022,no,cc0,email,(anexo de email),no,working-ingestao,
 14601,146,1,001,PR-UMR,luis,2022-11-16,BR-PR-Umuarama,"Lotes, edificações, bairros e endereços",(self),2022,no,cc0,email,(anexo de email),no,working-ingestao,
+14701,147,1,001,Neoenergia-Elektro,luis,2022-05-13,BR,Pontos,(self),2022,no,cc0,email,(anexo de email),no,working-make_conf,
+14801,148,1,001,Neoenergia-Pernambuco,luis,2022-12-19,BR-PE,Pontos,(self),2022,no,cc0,email,(anexo de email),no,working-make_conf,
+14901,149,1,001,Neoenergia-Cosern,luis,2022-11-08,BR-RN,Pontos,(self),2022,no,cc0,email,(anexo de email),no,working-make_conf,
+15001,150,1,001,Neoenergia-Coelba,luis,2021-11-08,BR-BA,Pontos,(self),2021,no,cc0,email,(anexo de email),no,working-make_conf,
