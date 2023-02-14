@@ -43,3 +43,5 @@ layers:
     file: 2
     sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)
     orig_filename: LOGRADOUROLine
+    
+test_evidence: qgis.png
