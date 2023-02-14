@@ -53,7 +53,6 @@ layers:
         orig_tabname: Lotes
         buffer_type: 2
 
-# Não importei praça - Carlos 23/05/2021
   block:
         method: gdb2sql
         subtype: full
@@ -62,3 +61,6 @@ layers:
         orig_tabname: Quadras
         sql_select:  ['OBJECTID AS gid', 'QUADRA AS ref', 'geom']
 
+comments: Tambem possui pracas.
+
+test_evidence: qgis.png
