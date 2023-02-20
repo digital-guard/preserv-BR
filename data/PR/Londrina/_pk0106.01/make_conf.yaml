@@ -1,0 +1,56 @@
+pack_id: 106.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31982
+
+files:
+- file: b1cc16e9070aa2c624d1eeebde8a00e4b9bea471fb76a79c4f8ec5902c250c3e.rar
+  name: arruamento-05-22-shapefile.rar
+  p: 1
+  
+- file: e5b42971d89614a91b1f503345be4248b73cee7528a93a3b0bbd519ed972ce91.rar
+  name: bairros.rar
+  p: 2
+  
+- file: 8826fc166ad990ec171f0671ee193f79d2a5f35dbc93c227cd7097e7fe19b525.rar
+  name: bcarshp.rar
+  p: 3
+  
+license_evidences:
+  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  file: 7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af.eml
+
+layers:
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: [ 'NOME as via_name']
+    orig_filename: Export_Output
+    standardized_fields:
+     -
+      name: NOME
+      standard: via_name
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['BAIRROS as ns_name']
+    orig_filename: LIM_Bairros_V1
+    standardized_fields:
+     -
+      name: BAIRROS
+      standard: ns_name
+
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 3
+    sql_select: ['gid','geom']
+    orig_filename: shp/bclotes
+
+comments: 
+test_evidence: evidencia.png
