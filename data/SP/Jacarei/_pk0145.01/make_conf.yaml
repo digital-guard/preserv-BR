@@ -18,7 +18,7 @@ layers:
     file: 1
     sql_select: ['gid', 'INSCLOTE', 'geom']
     orig_filename: AddressForAll/LOTES_2021
-    join_column: insclote
+    join_id: insclote
     other_fields:
      -
       name: INSCLOTE
@@ -31,7 +31,7 @@ layers:
     sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via_name, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia_name FROM $(tabname)
     codec: XLSX
     orig_filename: AddressForAll/LOTES_COM_NUMERO_TODOS
-    join_column: insclote
+    join_id: insclote
     standardized_fields:
      -
       name: Endereço

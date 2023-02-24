@@ -25,7 +25,7 @@ layers:
     file: 1
     sql_select: ['gid','NRO_IMOV AS house_number','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lotes
-    join_column: cod_dv_log
+    join_id: cod_dv_log
 
   block:
     subtype: full
@@ -40,5 +40,5 @@ layers:
     file: 1
     sql_view: SELECT DISTINCT NOME_LOGR AS via_name, COD_DV_LOG AS cod_dv_log FROM $(tabname)
     orig_filename: lograd
-    join_column: cod_dv_log
+    join_id: cod_dv_log
 

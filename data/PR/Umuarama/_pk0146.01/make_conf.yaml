@@ -18,7 +18,7 @@ layers:
     file: 1
     sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote AS inscricao_lote', 'geom']
     orig_filename: lote_inscricao_geometriaPolygon
-    join_column: inscricao_lote
+    join_id: inscricao_lote
     other_fields:
      -
       name: inscricao_lote
@@ -42,7 +42,7 @@ layers:
     sql_view: SELECT DISTINCT "LOGRADOURO" as via_name, "NUMERO" as house_number, substring("INSCRIÇÃO",1,14) AS inscricao_lote FROM $(tabname)
     orig_filename: TABELA IMOVEL
     codec: XLSX
-    join_column: inscricao_lote
+    join_id: inscricao_lote
     standardized_fields:
      -
       name: LOGRADOURO

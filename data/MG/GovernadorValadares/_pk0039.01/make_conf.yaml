@@ -35,14 +35,14 @@ layers:
         orig_filename: Logradouros - Gov. Valadares
         sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name, "Número" AS house_number, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
         codec: XLSX
-        join_column: ref
+        join_id: ref
   parcel:
         subtype: ext
         method: shp2sql
         file: 2
         sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote AS ref', 'geom']
         orig_filename: lote_inscricao_geometria/lote_inscricao_geometriaPolygon
-        join_column: ref
+        join_id: ref
   block: 
         subtype: none
         method: shp2sql

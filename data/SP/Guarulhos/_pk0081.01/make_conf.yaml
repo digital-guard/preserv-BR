@@ -40,7 +40,7 @@ layers:
     file: 3
     sql_select: ['gid', 'numnovo as house_number', 'cod_log', 'geom']
     orig_filename: pg_renumeracoes
-    join_column: cod_log
+    join_id: cod_log
 
   address:
     subtype: cmpl
@@ -48,4 +48,4 @@ layers:
     file: 2
     sql_view: SELECT DISTINCT Logradouro as via_name, cod_log FROM $(tabname) WHERE Logradouro IS NOT NULL
     orig_filename: pg_cartografia_logradouros
-    join_column: cod_log
+    join_id: cod_log

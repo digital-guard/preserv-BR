@@ -37,7 +37,7 @@ layers:
               SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO AS cod_trecho, CEP AS postcode, geom \
               FROM $(tabname)
         codec: SHP;srid=31983
-        join_column: cod_trecho
+        join_id: cod_trecho
 
   address:
         subtype: cmpl
@@ -45,7 +45,7 @@ layers:
         file: 2
         orig_filename: Logradouros
         sql_view: SELECT DISTINCT properties->'COD_TRECHO' AS ref, properties->'COMPLETO' AS via_name FROM $(tabname) WHERE properties->'COD_TRECHO' IS NOT NULL AND properties->'COMPLETO' IS NOT NULL
-        join_column: ref
+        join_id: ref
 
   via:
         subtype: full

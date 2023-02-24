@@ -30,7 +30,7 @@ layers:
         file: 1
         orig_filename: Lotes
         sql_select: ['gid', 'tx_insct', 'geom']
-        join_column: tx_insct
+        join_id: tx_insct
   via:
         subtype: full
         method: shp2sql
@@ -54,4 +54,4 @@ layers:
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
         codec: XLSX
         sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia_name']
-        join_column: tx_insctec
+        join_id: tx_insctec
