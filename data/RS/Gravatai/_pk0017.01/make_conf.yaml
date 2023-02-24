@@ -10,29 +10,33 @@ files:
   name: Lotes e Eixos
   p: 1
   size: 7445892
-- file: 1ad669693352407105ccdeb37a4398d62b0accb25888122c84afe2788c121c7b.rar
-  name: Loteamentos
-  p: 2
-  size: 1172335
 
 layers:
+
   parcel:
         subtype: none
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'Cadastro AS cadastro', 'Número AS numero', 'geom']
+        sql_select: ['gid', 'Número AS hnum', 'geom']
         orig_filename: lote_numero_predial
+        
+        standardized_fields:
+          -
+          name: Número
+          standard: 'hnum'
+          
   via:
         subtype: full
         method: shp2sql
         file: 1
         sql_view: |-
-                   SELECT gid, NOME || ' ' || TIPO AS via_name, geom FROM $(tabname)
+                   SELECT gid, TIPO || ' ' || NOME AS via, geom FROM $(tabname)
         orig_filename: sistema_viario
         buffer_type: 2
-  nsvia:
-        subtype: none
-        method: shp2sql
-        file: 2
-        sql_select: ['gid', 'geom']
-        orig_filename: PS_LOTEAMENTOS_SIRGAS 2000
+        
+        standardized_fields:
+          -
+          name: TIPO || ' ' || NOME
+          standard: 'via'
+
+test_evidence: qgis.png
