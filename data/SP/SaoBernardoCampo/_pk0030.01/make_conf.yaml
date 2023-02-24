@@ -32,12 +32,22 @@ layers:
         orig_filename: Q_Endereco_SBC
         codec: SHP~Latin1
         buffer_type: 2
+        
+        standardized_fields:
+         -
+          name: NOME_COMPL
+          standard: 'via'
+         -
+          name: Numero
+          standard: 'hnum'
+          
   parcel:
         subtype: none
         method: shp2sql
         file: 2
         sql_select:  ['gid', 'geom']  
         orig_filename: LOTE
+        
   via:
         subtype: full
         method: shp2sql
@@ -45,6 +55,12 @@ layers:
         sql_select:  ['gid','NOME as via', 'geom']
         orig_filename: LOGRADOURO
         codec: SHP~Latin1
+        
+        standardized_fields:
+         -
+          name: NOME
+          standard: 'via'
+        
   nsvia:
         subtype: full
         method: shp2sql
@@ -53,3 +69,10 @@ layers:
         #codec: SHP~Latin1;srid=31982
         codec: SHP;srid=31983;charset=ISO-8859-1
         orig_filename: BAIRRO
+
+        standardized_fields:
+         -
+          name: NOME
+          standard: 'nsvia_name'
+          
+test_evidence: qgis.png
