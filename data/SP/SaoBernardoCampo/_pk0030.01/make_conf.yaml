@@ -28,7 +28,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'NOME_COMPL as via_name', 'Numero as house_number', 'geom']
+        sql_select: ['gid', 'NOME_COMPL as via', 'Numero as hnum', 'geom']
         orig_filename: Q_Endereco_SBC
         codec: SHP~Latin1
         buffer_type: 2
@@ -36,20 +36,20 @@ layers:
         subtype: none
         method: shp2sql
         file: 2
-        sql_select:  ['gid', 'ZONA','QUADRA', 'UNIDADE',  'geom']  
+        sql_select:  ['gid', 'geom']  
         orig_filename: LOTE
   via:
         subtype: full
         method: shp2sql
         file: 3
-        sql_select:  ['gid','NOME as via_name', 'DENOMINADA as via_type', 'ORIGEM as via_original']
+        sql_select:  ['gid','NOME as via', 'geom']
         orig_filename: LOGRADOURO
         codec: SHP~Latin1
   nsvia:
         subtype: full
         method: shp2sql
         file: 4
-        sql_select:  ['gid','NOME as nsvia_name', 'ZONA as nsvia_type', 'geom']
+        sql_select:  ['gid','NOME as nsvia_name', 'geom']
         #codec: SHP~Latin1;srid=31982
         codec: SHP;srid=31983;charset=ISO-8859-1
         orig_filename: BAIRRO
