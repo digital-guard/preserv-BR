@@ -29,19 +29,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome', 'geom']
+    sql_select: ['gid', 'nome as poi', 'geom']
     orig_filename: edificacoes
 
   parcel:
     subtype: full
     method: shp2sql
     file: 2
-    #sql_select: [
-    #    ['ciu AS gid', \"ra_nome || ' ' quadra || ' ' || conjunto as nsref\", \"conjunto || ' ' || lote as house_number\",'norma_vige', 'norma_ante', 'padrao_cor','ra_nome','quadra','conjunto','end_cart','projeto'],
-    #    ['ct_ciu']]
-    #orig_filename: ['Lotes Registrados','Lotes implantados']
-    # Não importado Lotes implantados.shp, não é possivel usar sql_view com Union de shapefiles
-    # https://github.com/digital-guard/preserv-BR/issues/115
     sql_view: SELECT row_number() OVER () as gid, 
       ra_nome || ' ' || quadra || ' ' || conjunto as nsref,
       conjunto || ' ' || lote as house_number,
@@ -52,12 +46,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: [['ra as ns_via'],['sde_siturb as ns_via','sde_situ_1']]
-    orig_filename: ['Administrativas','Quadras']
+    sql_select: ['gid', 'sde_siturb as nsvia_name', 'geom']
+    orig_filename: Setor
 
   block:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['sde_siturb','sde_situ_1','sde_situ_2']
+    sql_select: ['gid','sde_siturb as via_name', 'geom']
     orig_filename: Quadras
