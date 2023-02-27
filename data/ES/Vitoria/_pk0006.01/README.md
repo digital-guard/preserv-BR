@@ -46,7 +46,7 @@ sha256sum: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
 
 SRID: 31999
 
-'numero': house_number
+'numero': hnum
 
 'logradouro': via
 

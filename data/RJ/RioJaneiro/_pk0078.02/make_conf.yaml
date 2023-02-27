@@ -34,7 +34,7 @@ layers:
         file: 1
         orig_filename: NUMERO_DE_PORTA
         sql_view: |-
-              SELECT row_number() OVER () as gid, NP AS house_number, COD_TRECHO AS cod_trecho, CEP AS postcode, geom \
+              SELECT row_number() OVER () as gid, NP AS hnum, COD_TRECHO AS cod_trecho, CEP AS postcode, geom \
               FROM $(tabname)
         codec: SHP;srid=31983
         join_id: cod_trecho
@@ -65,7 +65,7 @@ layers:
         orig_filename: Lotes_(2013)
         sql_view: |-
               SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via, \
-              properties->'cod_np' AS house_number,  jgeom AS geom \
+              properties->'cod_np' AS hnum,  jgeom AS geom \
               FROM $(tabname)
 
   nsvia:

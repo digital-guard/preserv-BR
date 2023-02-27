@@ -30,7 +30,7 @@ SRID: 31981
 
 id: gid
 
-numero: house_number (numero de porta)
+numero: hnum (numero de porta)
 
 logradouro: via (nome do logradouro)
 

@@ -61,7 +61,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'LOGRNOME as via', 'ECONUMERO as house_number', 'geom']
+    sql_select: ['gid', 'LOGRNOME as via', 'ECONUMERO as hnum', 'geom']
     orig_filename: lote_com_rua
     standardized_fields:
      -
@@ -69,7 +69,7 @@ layers:
       standard: via
      -
       name: ECONUMERO
-      standard: house_number
+      standard: hnum
       
   via:
     subtype: full

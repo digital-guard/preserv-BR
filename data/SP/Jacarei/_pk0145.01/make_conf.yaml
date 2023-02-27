@@ -28,7 +28,7 @@ layers:
     subtype: cmpl
     method: csv2sql
     file: 1
-    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS hnum, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)
     codec: XLSX
     orig_filename: AddressForAll/LOTES_COM_NUMERO_TODOS
     join_id: insclote
@@ -38,7 +38,7 @@ layers:
       standard: via
      -
       name: Endereço
-      standard: house_number
+      standard: hnum
      -
       name: Endereço
       standard: nsvia

@@ -10,7 +10,7 @@ SRID: 31983
 
 row_number(): gid
 
-NP: house_number
+NP: hnum
 
 geom: geom
 
@@ -50,7 +50,7 @@ row_number(): gid
 
 cod_trecho: via
 
-cod_np: house_number
+cod_np: hnum
 
 geometry: geom
 

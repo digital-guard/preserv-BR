@@ -102,7 +102,7 @@ cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Endereco -nln pk7600000901101_p1_geoaddress 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('gdb2sql','/tmp/sandbox/_pk7600000901_001/OpenStreetMap.gdb/timestamps','geoaddress_full','pk7600000901101_p1_geoaddress','7600000901101','058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar',array['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS house_number', 'geom'],1,2)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('gdb2sql','/tmp/sandbox/_pk7600000901_001/OpenStreetMap.gdb/timestamps','geoaddress_full','pk7600000901101_p1_geoaddress','7600000901101','058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar',array['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom'],1,2)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pk7600000901_001/*OpenStreetMap.gdb.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600000901101_p1_geoaddress CASCADE"

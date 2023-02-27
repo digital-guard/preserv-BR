@@ -60,12 +60,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'numero as house_number', 'logradouro as via', 'geom']
+    sql_select: ['gid', 'numero as hnum', 'logradouro as via', 'geom']
     orig_filename: lote
     standardized_fields:
      -
       name: numero
-      standard: house_number
+      standard: hnum
      -
       name: logradouro
       standard: via

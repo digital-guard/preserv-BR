@@ -41,24 +41,24 @@ layers:
     subtype: none
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'num as house_number', 'geom']
+    sql_select: ['gid', 'num as hnum', 'geom']
     orig_filename: lotes/lotes
     standardized_fields:
      -
       name: num
-      standard: house_number
+      standard: hnum
 
   building:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'numero as house_number', 'geom']
+    sql_select: ['gid', 'numero as hnum', 'geom']
     orig_filename: edificacoes/edificacoes
     codec: SHP;srid=3857
     standardized_fields:
      -
       name: numero
-      standard: house_number
+      standard: hnum
 
 comments: Parcel e building incompletos. Sem nome de logradouro, alguns número de porta nulos ("0") e cobertura parcial de lotes (veja evidências).
 

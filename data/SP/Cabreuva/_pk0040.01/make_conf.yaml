@@ -19,6 +19,6 @@ layers:
     orig_filename: relação_
     codec: CSV~Latin1semicolon
     sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, 
-      CASE WHEN 'Nº Imóvel' like '%S/N%' THEN NULL ELSE 'Nº Imóvel' END  as house_number  FROM $(tabname)
+      CASE WHEN 'Nº Imóvel' like '%S/N%' THEN NULL ELSE 'Nº Imóvel' END  as hnum  FROM $(tabname)
     join_id: ref
 

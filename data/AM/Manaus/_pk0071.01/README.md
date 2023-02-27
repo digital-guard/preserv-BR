@@ -44,7 +44,7 @@ Nome do arquivo: `OpenStreetMap_Shapefiles/NUMERACAO`.<br/>*Download* e integrid
 #### Dados relevantes
 * `ENDEREÇO` (via)
 
-* `NUMERACAO` (house_number)
+* `NUMERACAO` (hnum)
 
 #### Comentários
 Parcial, não contém todos os endereços de Manaus.
@@ -67,7 +67,7 @@ Nome do arquivo: `OSM_Lotes/shape/Lotes`.<br/>*Download* e integridade: [92954f4
 #### Dados relevantes
 * `LOG_TIPO ||' '|| LOG_NOME` (via)
 
-* `IMO_NUMERO` (house_number)
+* `IMO_NUMERO` (hnum)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/parcel)<br/>75090852 bytes (71.61 <abbr title="mebibyte">MiB</abbr>)<br/>407023 polígonos com 437.94 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²
@@ -151,7 +151,7 @@ psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/NUMERACAO.shp" pk7600007101101_p1_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600007101_002/OpenStreetMap_Shapefiles/NUMERACAO.shp','geoaddress_full','pk7600007101101_p1_geoaddress','7600007101101','4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar',array['gid', 'ENDEREÇO as via', 'NUMERACAO as house_number', 'geom'],1,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600007101_002/OpenStreetMap_Shapefiles/NUMERACAO.shp','geoaddress_full','pk7600007101101_p1_geoaddress','7600007101101','4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar',array['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom'],1,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 @echo "Delete SRID 952069 configurado via PROJ.4 string:"
 @echo "+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
@@ -201,7 +201,7 @@ psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OSM_Lotes/shape/Lotes.shp" pk7600007101201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600007101201_p2_parcel AS SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via, IMO_NUMERO as house_number, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600007101201_p2_parcel AS SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via, IMO_NUMERO as hnum, geom FROM $(tabname)"
 psql $(pg_uri_db) -c "SELECT ingest.any_load('shp2sql','$(sandbox)/OSM_Lotes/shape/Lotes.shp','parcel_full','vw2_pk7600007101201_p2_parcel','7600007101201','92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600007101201_p2_parcel"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

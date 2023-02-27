@@ -49,7 +49,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'logradouro as via', 'numeracao as house_number', 'geom']
+    sql_select: ['gid', 'logradouro as via', 'numeracao as hnum', 'geom']
     orig_filename: rs_scs_lotes_com_ceps_e_numeracao
     standardized_fields:
      -
@@ -57,7 +57,7 @@ layers:
       standard: via
      -
       name: numeracao
-      standard: house_number
+      standard: hnum
 
   via:
     subtype: full

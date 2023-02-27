@@ -24,9 +24,9 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        #sql_select: ['gid', "Tipo || ' ' || Logradouro AS via", 'Numero AS house_number', 'Bairro AS nsvia', 'geom']
+        #sql_select: ['gid', "Tipo || ' ' || Logradouro AS via", 'Numero AS hnum', 'Bairro AS nsvia', 'geom']
         #orig_filename: lote
-        sql_view: SELECT gid, Tipo || ' ' || Logradouro AS via, Numero AS house_number, Bairro AS nsvia, geom FROM $(tabname)
+        sql_view: SELECT gid, Tipo || ' ' || Logradouro AS via, Numero AS hnum, Bairro AS nsvia, geom FROM $(tabname)
         orig_filename: Lotes/lote
   via:
         subtype: full

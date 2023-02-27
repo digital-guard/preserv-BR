@@ -20,4 +20,4 @@ SRID: 4326
 
 'Tipo Logradouro' + 'Logradouro': via
 
-'Número Predial': house_number
+'Número Predial': hnum

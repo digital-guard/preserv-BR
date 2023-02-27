@@ -17,6 +17,6 @@ layers:
         method: shp2sql
         file: 1
         orig_filename: LOTES_PONTO_S2K
-        sql_select: ['gid', 'L_NUMERO AS house_number','X', 'Y', 'geom']
+        sql_select: ['gid', 'L_NUMERO AS hnum','X', 'Y', 'geom']
         codec: SHP~Latin1
         # não adicionei X e Y. Precisa?

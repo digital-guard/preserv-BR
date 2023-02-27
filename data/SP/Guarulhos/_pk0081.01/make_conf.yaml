@@ -38,7 +38,7 @@ layers:
     subtype: ext
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'numnovo as house_number', 'cod_log', 'geom']
+    sql_select: ['gid', 'numnovo as hnum', 'cod_log', 'geom']
     orig_filename: pg_renumeracoes
     join_id: cod_log
 

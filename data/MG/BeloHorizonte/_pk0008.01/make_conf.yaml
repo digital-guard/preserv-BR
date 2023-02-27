@@ -29,7 +29,7 @@ layers:
       SELECT row_number() OVER () as gid, "SIGLA_TIPO_LOGRADOURO" \
            || CASE WHEN "SIGLA_TIPO_LOGRADOURO" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
            || "NOME_LOGRADOURO" AS via,\
-           "NUMERO_IMOVEL" || COALESCE("LETRA_IMOVEL",'') AS house_number,\
+           "NUMERO_IMOVEL" || COALESCE("LETRA_IMOVEL",'') AS hnum,\
            "LETRA_IMOVEL">'' AS is_complemento_provavel,\
            ST_GeomFromText("GEOMETRIA",$(srid)) as geom \
       FROM $(tabname)

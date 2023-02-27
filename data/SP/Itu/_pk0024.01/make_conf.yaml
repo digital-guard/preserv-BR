@@ -24,7 +24,7 @@ layers:
         subtype: full
         method: ogr2ogr
         file: 1
-        sql_select: ['Bairro as nsvia','Logradouro AS via','Numero AS house_number', 'geom']
+        sql_select: ['Bairro as nsvia','Logradouro AS via','Numero AS hnum', 'geom']
         orig_filename: lotes_Itu
         extension: TAB # deveria ser codec, mas ogr2ogr é sensível ao case no arquivo de entrada.
   via:

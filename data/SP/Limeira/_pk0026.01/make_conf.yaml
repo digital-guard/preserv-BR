@@ -36,7 +36,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDER_IMOV as via', 'NRO_IMOV as house_number', 'geom']
+    sql_select: ['gid', 'ENDER_IMOV as via', 'NRO_IMOV as hnum', 'geom']
     orig_filename: lotes
     standardized_fields:
      -
@@ -44,7 +44,7 @@ layers:
       standard: via
      -
       name: NRO_IMOV
-      standard: house_number
+      standard: hnum
 
   via:
     subtype: full

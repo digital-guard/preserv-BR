@@ -39,7 +39,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, Tipo || ' ' || Nome AS via, Nº AS house_number, geom FROM $(tabname)
+    sql_view: SELECT gid, Tipo || ' ' || Nome AS via, Nº AS hnum, geom FROM $(tabname)
     orig_filename: Natal_Edif
     codec: SHP~Latin1
     standardized_fields:
@@ -48,7 +48,7 @@ layers:
       standard: 'via'
      -
       name: Nº
-      standard: 'house_number'
+      standard: 'hnum'
 
   nsvia:
     subtype: full

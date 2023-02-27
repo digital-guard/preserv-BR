@@ -16,7 +16,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'text AS house_number', 'geom']
+    sql_select: ['gid', 'text AS hnum', 'geom']
     orig_filename: DADOS PELOTAS/numeracao_cadastral
 
   via:

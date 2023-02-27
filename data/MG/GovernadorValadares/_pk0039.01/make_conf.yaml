@@ -33,7 +33,7 @@ layers:
         method: csv2sql
         file: 1
         orig_filename: Logradouros - Gov. Valadares
-        sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, "Número" AS house_number, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
+        sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, "Número" AS hnum, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
         codec: XLSX
         join_id: ref
   parcel:

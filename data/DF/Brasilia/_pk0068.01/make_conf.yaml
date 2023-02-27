@@ -38,7 +38,7 @@ layers:
     file: 2
     sql_view: SELECT row_number() OVER () as gid, 
       ra_nome || ' ' || quadra || ' ' || conjunto as nsref,
-      conjunto || ' ' || lote as house_number,
+      conjunto || ' ' || lote as hnum,
       norma_ante, padrao_cor, ra_nome, quadra, conjunto, end_cart, projeto, geom FROM $(tabname)
     orig_filename: Lotes Registrados
 

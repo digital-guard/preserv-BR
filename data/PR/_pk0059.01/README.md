@@ -30,7 +30,7 @@ Os arquivos contém "camadas de dados" temáticas. Os metadados também descreve
 Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
 
 #### Dados relevantes
-* `nrpredial` (house_number)
+* `nrpredial` (hnum)
 
 #### Outros dados relevantes
 * `NmMunicipio`: Nome do município
@@ -57,7 +57,7 @@ cd /tmp/sandbox/_pk7600005901_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31982"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600005901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/New File Geodatabase (2).gdb" LOTES_PR -nln pk7600005901101_p1_parcel 
 dd if=/dev/random of='$(sandbox)/New File Geodatabase (2).gdb/random_data_file' bs=1M count=1
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600005901101_p1_parcel AS SELECT objectid AS gid, nrpredial AS house_number, NmMunicipio, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600005901101_p1_parcel AS SELECT objectid AS gid, nrpredial AS hnum, NmMunicipio, geom FROM $(tabname)"
 psql $(pg_uri_db) -c "CALL ingest.any_load_loop('gdb2sql','$(sandbox)/New File Geodatabase (2).gdb/random_data_file','parcel_none','vw1_pk7600005901101_p1_parcel','7600005901101','47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip',array[]::text[],5,1,false,'geom',true,'NmMunicipio')"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600005901101_p1_parcel"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

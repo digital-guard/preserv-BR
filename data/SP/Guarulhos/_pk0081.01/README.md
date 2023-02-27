@@ -88,7 +88,7 @@ cd /tmp/sandbox/_pk7600008101_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600008101_001; shp2pgsql -D   -s 31983 "pg_renumeracoes.shp" pk7600008101301_p3_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_renumeracoes.shp','geoaddress_ext','pk7600008101301_p3_geoaddress','7600008101301','1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip',array['gid', 'numnovo as house_number', 'cod_log', 'geom'],1,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_renumeracoes.shp','geoaddress_ext','pk7600008101301_p3_geoaddress','7600008101301','1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip',array['gid', 'numnovo as hnum', 'cod_log', 'geom'],1,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pk7600008101_001/*pg_renumeracoes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600008101301_p3_geoaddress CASCADE"

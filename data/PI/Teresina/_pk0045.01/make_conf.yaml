@@ -17,7 +17,7 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-     SELECT gid, "tipo de lo" || ' ' || logradouro AS via, "numero do" AS house_number, geom FROM $(tabname)
+     SELECT gid, "tipo de lo" || ' ' || logradouro AS via, "numero do" AS hnum, geom FROM $(tabname)
     orig_filename: Lotes_endereco
     standardized_fields:
      -
@@ -25,4 +25,4 @@ layers:
       standard: 'via'
      -
       name: numero do
-      standard: 'house_number'
+      standard: 'hnum'

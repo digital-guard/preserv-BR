@@ -45,7 +45,7 @@ Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae
 #### Dados relevantes
 * `nomelog` (via): tipo e nome do logradouro em caixa alta, com acentuação.
 
-* `endereco_n` (house_number): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
+* `endereco_n` (hnum): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23988306 bytes (22.88 <abbr title="mebibyte">MiB</abbr>)<br/>99701 polígonos com 66.27 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.52 polígonos/km²
@@ -129,7 +129,7 @@ cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201116/lotes.shp" pk7600004201101_p1_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201116/lotes.shp','parcel_full','pk7600004201101_p1_parcel','7600004201101','d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip',array['gid', 'nomelog AS via', 'endereco_n AS house_number'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201116/lotes.shp','parcel_full','pk7600004201101_p1_parcel','7600004201101','d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip',array['gid', 'nomelog AS via', 'endereco_n AS hnum'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR421_001/*rb_20201116/lotes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600004201101_p1_parcel CASCADE"

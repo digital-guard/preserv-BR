@@ -39,7 +39,7 @@ layers:
     subtype: cmpl
     method: csv2sql
     file: 1
-    sql_view: SELECT DISTINCT "LOGRADOURO" as via, "NUMERO" as house_number, substring("INSCRIÇÃO",1,14) AS inscricao_lote FROM $(tabname)
+    sql_view: SELECT DISTINCT "LOGRADOURO" as via, "NUMERO" as hnum, substring("INSCRIÇÃO",1,14) AS inscricao_lote FROM $(tabname)
     orig_filename: TABELA IMOVEL
     codec: XLSX
     join_id: inscricao_lote
@@ -49,7 +49,7 @@ layers:
       standard: via
      -
       name: NUMERO
-      standard: house_number
+      standard: hnum
     other_fields:
      -
       name: INSCRIÇÃO

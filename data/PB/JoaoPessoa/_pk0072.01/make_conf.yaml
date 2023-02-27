@@ -50,12 +50,12 @@ layers:
     subtype: none
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Nume_Imov as house_number', 'geom']
+    sql_select: ['gid', 'Nume_Imov as hnum', 'geom']
     orig_filename: Lotes
     standardized_fields:
      -
       name: Nume_Imov
-      standard: 'house_number'
+      standard: 'hnum'
 
   block:
     subtype: full

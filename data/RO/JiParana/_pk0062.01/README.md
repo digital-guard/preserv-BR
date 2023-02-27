@@ -19,7 +19,7 @@ SRID: 32720
 ### Dados relevantes
 Colunas da camada `Lotes basicos.shp`:
 * `LOTES_TIPO` + `LOTES_ENDE`: gid;
-* `LOTES_NUME`: house_number.
+* `LOTES_NUME`: hnum.
 {{/parcel}}
 
 {{#via}}

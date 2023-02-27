@@ -16,7 +16,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'ENDNUMERO AS house_number','QTDPAVIMEN','NMEDIFICAC', 'geom']
+        sql_select: ['gid', 'ENDNUMERO AS hnum','QTDPAVIMEN','NMEDIFICAC', 'geom']
         orig_filename: Lotes
         codec: SHP~Latin1
   via:

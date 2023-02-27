@@ -25,14 +25,14 @@ Licença <a rel="external" target="_doador" href="https://creativecommons.org/pu
 Nome do arquivo: `edificacoes/edificacoes`.<br/>Download: [6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip](http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 11032539 bytes (10.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
-* `numero` (house_number)
+* `numero` (hnum)
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `lotes/lotes`.<br/>Download: [b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip](http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 889309 bytes (0.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
-* `num` (house_number)
+* `num` (hnum)
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
@@ -66,7 +66,7 @@ cd /tmp/sandbox/_pkBR211_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=3857"
 cd /tmp/sandbox/_pkBR211_001; shp2pgsql -D   -s 3857 "edificacoes/edificacoes.shp" pk7600002101301_p3_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/edificacoes/edificacoes.shp','building_full','pk7600002101301_p3_building','7600002101301','6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip',array['gid', 'numero as house_number', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/edificacoes/edificacoes.shp','building_full','pk7600002101301_p3_building','7600002101301','6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip',array['gid', 'numero as hnum', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR211_001/*edificacoes/edificacoes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600002101301_p3_building CASCADE"
@@ -87,7 +87,7 @@ cd /tmp/sandbox/_pkBR211_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=29193"
 cd /tmp/sandbox/_pkBR211_001; shp2pgsql -D   -s 29193 "lotes/lotes.shp" pk7600002101201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/lotes/lotes.shp','parcel_none','pk7600002101201_p2_parcel','7600002101201','b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip',array['gid', 'num as house_number', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/lotes/lotes.shp','parcel_none','pk7600002101201_p2_parcel','7600002101201','b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip',array['gid', 'num as hnum', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR211_001/*lotes/lotes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600002101201_p2_parcel CASCADE"

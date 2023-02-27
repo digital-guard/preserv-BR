@@ -23,7 +23,7 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid','NRO_IMOV AS house_number','COD_DV_LOG AS cod_dv_log','geom']
+    sql_select: ['gid','NRO_IMOV AS hnum','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lotes
     join_id: cod_dv_log
 

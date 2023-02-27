@@ -16,12 +16,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'numero as house_number', 'nomevia as via', 'geom']
+    sql_select: ['gid', 'numero as hnum', 'nomevia as via', 'geom']
     orig_filename: Municipio de Itajai_SC/lotes
     standardized_fields:
      -
       name: numero
-      standard: 'house_number'
+      standard: 'hnum'
      -
       name: nomevia
       standard: 'via'

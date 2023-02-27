@@ -16,7 +16,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'RUAIMO AS via', 'NRPORTA AS house_number', 'COMPLEMENT AS house_info','QUADRA','LOTE', 'geom']
+        sql_select: ['gid', 'RUAIMO AS via', 'NRPORTA AS hnum', 'COMPLEMENT AS house_info','QUADRA','LOTE', 'geom']
         orig_filename: Open Street/IMOVEL_2020_Logradouro
 
   nsvia:

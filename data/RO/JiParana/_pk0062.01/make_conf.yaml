@@ -32,7 +32,7 @@ layers:
     method: shp2sql
     file: 2
     sql_view: |-
-     SELECT gid, LOTES_TIPO || ' ' || LOTES_ENDE AS via, LOTES_NUME AS house_number, geom FROM $(tabname)
+     SELECT gid, LOTES_TIPO || ' ' || LOTES_ENDE AS via, LOTES_NUME AS hnum, geom FROM $(tabname)
     orig_filename: Lotes basicos
     codec: SHP~Latin1
     standardized_fields:
@@ -41,5 +41,5 @@ layers:
       standard: 'via'
      -
       name: LOTES_NUME
-      standard: 'house_number'
+      standard: 'hnum'
       

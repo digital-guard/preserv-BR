@@ -29,12 +29,12 @@ layers:
     subtype: none
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'numero_pre as house_number', 'geom']
+    sql_select: ['gid', 'numero_pre as hnum', 'geom']
     orig_filename: 'NUM PREDIAIS'
     standardized_fields:
      -
       name: numero_pre
-      standard: 'house_number'
+      standard: 'hnum'
 
   via:
     subtype: full

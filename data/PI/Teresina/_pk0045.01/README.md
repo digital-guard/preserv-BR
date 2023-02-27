@@ -32,7 +32,7 @@ Nome do arquivo: `Lotes_endereco`.<br/>*Download* e integridade: [6d00a6246765ac
 #### Dados relevantes
 * `tipo de lo || ' ' || logradouro` (via)
 
-* `numero do` (house_number)
+* `numero do` (hnum)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress)<br/>11417502 bytes (10.89 <abbr title="mebibyte">MiB</abbr>)<br/>216334 pontos<br/>densidade média de 1577.61 pontos/km²
@@ -56,7 +56,7 @@ cd /tmp/sandbox/_pk7600004501_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600004501_001; shp2pgsql -D   -s 31983 "Lotes_endereco.shp" pk7600004501101_p1_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600004501101_p1_geoaddress AS SELECT gid, \"tipo de lo\" || ' ' || logradouro AS via, \"numero do\" AS house_number, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600004501101_p1_geoaddress AS SELECT gid, \"tipo de lo\" || ' ' || logradouro AS via, \"numero do\" AS hnum, geom FROM $(tabname)"
 psql $(pg_uri_db) -c "SELECT ingest.any_load('shp2sql','$(sandbox)/Lotes_endereco.shp','geoaddress_full','vw1_pk7600004501101_p1_geoaddress','7600004501101','6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip',array[]::text[],1,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600004501101_p1_geoaddress"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

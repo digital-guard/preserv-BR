@@ -28,7 +28,7 @@ SRID: 31985
 
 ### Dados relevantes
 Colunas da camada `Lotes.shp`:
-* `Nume_Imov`: house_number.
+* `Nume_Imov`: hnum.
 {{/parcel}}
 
 {{#nsvia}}

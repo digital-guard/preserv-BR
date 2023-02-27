@@ -17,7 +17,7 @@ layers:
     method: csv2sql
     file: 1
     sql_view: |-
-      SELECT row_number() OVER () as gid, "HouseNumber" AS house_number, \
+      SELECT row_number() OVER () as gid, "HouseNumber" AS hnum, \
            ST_GeomFromText("SRID_29193",$(srid)) as geom \
       FROM $(tabname)
     orig_filename: SaoVicente-Oficial

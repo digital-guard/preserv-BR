@@ -29,11 +29,11 @@ SRID: 31983
 4. Abrir `parcel2.zip`.
 5. Selecionar arquivos `Lotes Implantados.shp`.
 6. Deletar geometrias repetidas.
-7. Copiar arquivos selecionados para diretório alvo (sem house_number).
+7. Copiar arquivos selecionados para diretório alvo (sem hnum).
 
 ### Dados relevantes
 Colunas da camada `Lotes Registrados.shp`:
-* `end_cart`: house_number.
+* `end_cart`: hnum.
 Outras colunas:
 * `lote`: numero do lote.
 * `ciu`: id do lote (nao e um id unico por geometria).

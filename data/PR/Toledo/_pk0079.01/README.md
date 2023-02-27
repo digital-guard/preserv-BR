@@ -17,7 +17,7 @@ SRID: 31982
 ### Dados relevantes
 Colunas da camada `NUM PREDIAIS.shp`:
 * `id`: gid;
-* `numero_pre`: house_number.
+* `numero_pre`: hnum.
 {{/geoaddress}}
 
 {{#via}}

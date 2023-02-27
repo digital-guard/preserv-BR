@@ -40,7 +40,7 @@ layers:
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb
-        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS house_number', 'geom']
+        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom']
         orig_tabname: Endereco
         buffer_type: 2
 

@@ -24,7 +24,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nomelog AS via', 'endereco_n AS house_number']
+    sql_select: ['gid', 'nomelog AS via', 'endereco_n AS hnum']
     orig_filename: rb_20201116/lotes
     standardized_fields:
      -
@@ -33,7 +33,7 @@ layers:
       comment: tipo e nome do logradouro em caixa alta, com acentuação.
      -
       name: endereco_n
-      standard: house_number
+      standard: hnum
       comment: 'número predial. Sem número pode ser representado como "S/N", "s/n", "SN" etc.'
 
   nsvia:

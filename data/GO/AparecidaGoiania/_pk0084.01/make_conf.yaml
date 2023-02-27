@@ -42,12 +42,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'num_lot as house_number', 'num_qdr', 'num_bai', 'nm_bai', 'geom']
+    sql_select: ['gid', 'num_lot as hnum', 'num_qdr', 'num_bai', 'nm_bai', 'geom']
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOTES"
     standardized_fields:
      -
       name: num_lot
-      standard: house_number
+      standard: hnum
     other_fields:
      -
       name: num_qdr

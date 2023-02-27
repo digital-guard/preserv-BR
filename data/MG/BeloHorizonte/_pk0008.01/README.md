@@ -63,7 +63,7 @@ psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct
 psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600000801101_p1_geoaddress AS SELECT row_number() OVER () as gid, \"SIGLA_TIPO_LOGRADOURO\" \
      || CASE WHEN \"SIGLA_TIPO_LOGRADOURO\" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
      || \"NOME_LOGRADOURO\" AS via,\
-     \"NUMERO_IMOVEL\" || COALESCE(\"LETRA_IMOVEL\",'') AS house_number,\
+     \"NUMERO_IMOVEL\" || COALESCE(\"LETRA_IMOVEL\",'') AS hnum,\
      \"LETRA_IMOVEL\">'' AS is_complemento_provavel,\
      ST_GeomFromText(\"GEOMETRIA\",$(srid)) as geom \
 FROM $(tabname)"

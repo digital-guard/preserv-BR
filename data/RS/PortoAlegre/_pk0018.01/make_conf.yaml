@@ -30,8 +30,8 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-        SELECT gid, textstring AS house_number, setor, last_edi_1 AS dateModified, ST_Centroid(geom) AS geom FROM $(tabname)
-    #sql_select: ['gid', 'textstring AS house_number', 'setor', 'last_edi_1 AS dateModified', 'geom']
+        SELECT gid, textstring AS hnum, setor, last_edi_1 AS dateModified, ST_Centroid(geom) AS geom FROM $(tabname)
+    #sql_select: ['gid', 'textstring AS hnum', 'setor', 'last_edi_1 AS dateModified', 'geom']
     orig_filename: NRO_IMOVEL
     buffer_type: 2
 

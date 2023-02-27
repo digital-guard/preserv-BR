@@ -31,7 +31,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as house_number', 'geom']
+    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as hnum', 'geom']
     orig_filename: CENTROIDES
     standardized_fields:
      -
@@ -39,7 +39,7 @@ layers:
       standard: via
      -
       name: Cadastro_8
-      standard: house_number
+      standard: hnum
 
   nsvia:
     subtype: full
@@ -56,7 +56,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as house_number', 'geom']
+    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as hnum', 'geom']
     orig_filename: LOTES_2020
     codec: SHP;srid=29193
     standardized_fields:
@@ -65,7 +65,7 @@ layers:
       standard: via
      -
       name: Cadastro_8
-      standard: house_number
+      standard: hnum
 
   via:
     subtype: full

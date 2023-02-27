@@ -83,7 +83,7 @@ layers:
     file: 3
     orig_filename: IPTU_2020
     codec: CSV~Latin1semicolon
-    sql_view: SELECT row_number() OVER () AS gid, split_part("NUMERO DO CONTRIBUINTE", '-', 1) AS ref, "NOME DE LOGRADOURO DO IMOVEL" AS via, "NUMERO DO IMOVEL" AS house_number, "BAIRRO DO IMOVEL" AS nsvia, "CEP DO IMOVEL" AS postcode FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, split_part("NUMERO DO CONTRIBUINTE", '-', 1) AS ref, "NOME DE LOGRADOURO DO IMOVEL" AS via, "NUMERO DO IMOVEL" AS hnum, "BAIRRO DO IMOVEL" AS nsvia, "CEP DO IMOVEL" AS postcode FROM $(tabname)
     join_id: ref
     standardized_fields:
      -
@@ -94,7 +94,7 @@ layers:
       standard: via
      -
       name: 'NUMERO DO IMOVEL'
-      standard: house_number
+      standard: hnum
      -
       name: 'BAIRRO DO IMOVEL'
       standard: nsvia

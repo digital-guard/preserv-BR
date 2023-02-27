@@ -22,7 +22,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as house_number', 'geom']
+    sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom']
     orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
     standardized_fields:
@@ -31,7 +31,7 @@ layers:
       standard: via
      -
       name: NUMERACAO
-      standard: house_number
+      standard: hnum
       
   building:
     subtype: none
@@ -51,7 +51,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via, IMO_NUMERO as house_number, geom FROM $(tabname)
+    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via, IMO_NUMERO as hnum, geom FROM $(tabname)
     orig_filename: OSM_Lotes/shape/Lotes
     standardized_fields:
      -
@@ -59,7 +59,7 @@ layers:
       standard: via
      -
       name: IMO_NUMERO
-      standard: house_number
+      standard: hnum
 
   via:
     subtype: full
