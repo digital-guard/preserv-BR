@@ -34,7 +34,7 @@ Nome do arquivo: `rb_20201111/quadras`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
-* `name` (ns_name): nome do bairro em caixa alta, com acentuação.
+* `name` (nsvia): nome do bairro em caixa alta, com acentuação.
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>550635 bytes (0.53 <abbr title="mebibyte">MiB</abbr>)<br/>129 polígonos com 153.71 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²
@@ -108,7 +108,7 @@ cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201111/bairros.shp" pk7600004201201_p2_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201111/bairros.shp','nsvia_full','pk7600004201201_p2_nsvia','7600004201201','73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip',array['gid', 'name AS ns_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201111/bairros.shp','nsvia_full','pk7600004201201_p2_nsvia','7600004201201','73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip',array['gid', 'name AS nsvia', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR421_001/*rb_20201111/bairros.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600004201201_p2_nsvia CASCADE"

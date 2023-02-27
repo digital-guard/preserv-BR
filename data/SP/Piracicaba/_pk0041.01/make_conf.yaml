@@ -24,7 +24,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid','bairro_imo AS ns_name','cep_imovel', 'logradouro AS via', 'numero_imo AS house_number', 'unidades', 'geom']
+        sql_select: ['gid','bairro_imo AS nsvia','cep_imovel', 'logradouro AS via', 'numero_imo AS house_number', 'unidades', 'geom']
         orig_filename: Cadastro de Imoveis
         codec: SHP~Latin1
   block:
@@ -38,6 +38,6 @@ layers:
         subtype: none
         method: shp2sql
         file: 3
-        sql_select: ['gid', 'bairro AS ns_name','geom']
+        sql_select: ['gid', 'bairro AS nsvia','geom']
         orig_filename: Bairros
         codec: SHP~Latin1

@@ -32,7 +32,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 2
-        sql_select: ['gid', 'nom_bairro AS ns_name', 'geom']
+        sql_select: ['gid', 'nom_bairro AS nsvia', 'geom']
         orig_filename: bairros
   block:
         subtype: none

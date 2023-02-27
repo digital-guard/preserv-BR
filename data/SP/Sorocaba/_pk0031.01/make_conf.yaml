@@ -29,7 +29,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
-    sql_view: SELECT gid, TIPO || ' ' || NOME AS via, BAIRRO AS ns_name, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
+    #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via ", 'CEP', 'BAIRRO AS nsvia','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
+    sql_view: SELECT gid, TIPO || ' ' || NOME AS via, BAIRRO AS nsvia, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
     orig_filename: eixos_sorocaba
     codec: SHP;srid=5533;charset=ISO-8859-1

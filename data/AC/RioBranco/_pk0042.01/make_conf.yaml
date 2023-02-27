@@ -40,12 +40,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: [ 'gid', 'name AS ns_name', 'geom' ]
+    sql_select: [ 'gid', 'name AS nsvia', 'geom' ]
     orig_filename: rb_20201111/bairros
     standardized_fields:
      -
       name: name
-      standard: ns_name
+      standard: nsvia
       comment: nome do bairro em caixa alta, com acentuação.
 
   via:

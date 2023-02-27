@@ -38,12 +38,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['BAIRROS as ns_name']
+    sql_select: ['BAIRROS as nsvia']
     orig_filename: LIM_Bairros_V1
     standardized_fields:
      -
       name: BAIRROS
-      standard: ns_name
+      standard: nsvia
 
   parcel:
     subtype: none
