@@ -61,12 +61,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'LOGRNOME as via_name', 'ECONUMERO as house_number', 'geom']
+    sql_select: ['gid', 'LOGRNOME as via', 'ECONUMERO as house_number', 'geom']
     orig_filename: lote_com_rua
     standardized_fields:
      -
       name: LOGRNOME
-      standard: via_name
+      standard: via
      -
       name: ECONUMERO
       standard: house_number
@@ -75,12 +75,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_select: ['gid', 'ds_logrado as via_name', 'geom']
+    sql_select: ['gid', 'ds_logrado as via', 'geom']
     orig_filename: sistema_viario_atualizado
     standardized_fields:
      -
       name: ds_logrado
-      standard: via_name
+      standard: via
 
 comments: Existem vários outros arquivos com pontos de interesse (escolas, bibliotecas, UPAs etc.).
 

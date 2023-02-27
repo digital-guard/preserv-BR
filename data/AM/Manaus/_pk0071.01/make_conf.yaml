@@ -22,13 +22,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDEREÇO as via_name', 'NUMERACAO as house_number', 'geom']
+    sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as house_number', 'geom']
     orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
     standardized_fields:
      -
       name: 'ENDEREÇO'
-      standard: via_name
+      standard: via
      -
       name: NUMERACAO
       standard: house_number
@@ -51,12 +51,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via_name, IMO_NUMERO as house_number, geom FROM $(tabname)
+    sql_view: SELECT gid, LOG_TIPO ||' '|| LOG_NOME AS via, IMO_NUMERO as house_number, geom FROM $(tabname)
     orig_filename: OSM_Lotes/shape/Lotes
     standardized_fields:
      -
       name: "LOG_TIPO ||' '|| LOG_NOME"
-      standard: via_name
+      standard: via
      -
       name: IMO_NUMERO
       standard: house_number
@@ -65,12 +65,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_view: SELECT gid, TIPO ||' '|| LOGRADOURO AS via_name, geom FROM $(tabname)
+    sql_view: SELECT gid, TIPO ||' '|| LOGRADOURO AS via, geom FROM $(tabname)
     orig_filename: OpenStreetMap_Shapefiles/LOGRADOUROS
     standardized_fields:
      -
       name: "TIPO ||' '|| LOGRADOURO"
-      standard: via_name
+      standard: via
 
   block:
     subtype: full

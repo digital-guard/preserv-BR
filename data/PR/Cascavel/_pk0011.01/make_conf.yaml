@@ -32,7 +32,7 @@ layers:
         method: shp2sql
         file: 2
         sql_view: |-
-                    SELECT gid, tipolograd || ' ' || nmlogradou AS via_name, geom  FROM $(tabname)
+                    SELECT gid, tipolograd || ' ' || nmlogradou AS via, geom  FROM $(tabname)
         orig_filename: Logradouros
         buffer_type: 2
   parcel:
@@ -40,5 +40,5 @@ layers:
         method: shp2sql
         file: 3
         orig_filename: Lotes
-        sql_select: ['gid', 'logradouro AS via_name', 'numerologr AS house_number', 'geom']
+        sql_select: ['gid', 'logradouro AS via', 'numerologr AS house_number', 'geom']
         codec: SHP~Latin1

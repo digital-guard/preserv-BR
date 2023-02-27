@@ -33,8 +33,8 @@ layers:
     file: 2
     sql_select: [
       [ 'fromleft', 'toleft', 'fromright', 'toright', 'codlogr' ],
-      [ 'Codigo_do_', 'REGEXP_REPLACE(logrtotal, "[[:space:]]+", " ") as via_name'],
-      [ 'name as via_name' ]
+      [ 'Codigo_do_', 'REGEXP_REPLACE(logrtotal, "[[:space:]]+", " ") as via'],
+      [ 'name as via' ]
       ]
     orig_filename: ['logradouro','v_logr_ortofoto','L_8683-2016_m12_vias_func_urbanistica']
 

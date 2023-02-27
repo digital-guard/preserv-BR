@@ -55,7 +55,7 @@ layers:
     method: shp2sql
     file: 3
     sql_view: |-
-        SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via_name,\
+        SELECT gid, CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG AS via,\
                NRIMPINI, NRIMPFIN, NRPARINI, NRPARFIN, geom \
         FROM $(tabname) \
         WHERE CDIDECAT NOT IN ('AR','CN','I','LAGO','RIO') AND NOT(CDIDECAT='LE' AND NMIDELOG ='LIMITE DE PROPRIEDADE')

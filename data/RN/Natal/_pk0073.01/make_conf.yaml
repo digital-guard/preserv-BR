@@ -39,13 +39,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, Tipo || ' ' || Nome AS via_name, Nº AS house_number, geom FROM $(tabname)
+    sql_view: SELECT gid, Tipo || ' ' || Nome AS via, Nº AS house_number, geom FROM $(tabname)
     orig_filename: Natal_Edif
     codec: SHP~Latin1
     standardized_fields:
      -
       name: Tipo || ' ' || Nome
-      standard: 'via_name'
+      standard: 'via'
      -
       name: Nº
       standard: 'house_number'
@@ -72,9 +72,9 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_view: SELECT gid, TIPO || ' ' || NOME_1 AS via_name, geom FROM $(tabname)
+    sql_view: SELECT gid, TIPO || ' ' || NOME_1 AS via, geom FROM $(tabname)
     orig_filename: Logradouros_2019_SIRGAS2000
     standardized_fields:
      -
       name: TIPO || ' ' || NOME_1
-      standard: 'via_name'
+      standard: 'via'

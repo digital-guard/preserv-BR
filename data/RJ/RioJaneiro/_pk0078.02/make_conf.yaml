@@ -44,7 +44,7 @@ layers:
         method: geojson2sql
         file: 2
         orig_filename: Logradouros
-        sql_view: SELECT DISTINCT properties->'COD_TRECHO' AS ref, properties->'COMPLETO' AS via_name FROM $(tabname) WHERE properties->'COD_TRECHO' IS NOT NULL AND properties->'COMPLETO' IS NOT NULL
+        sql_view: SELECT DISTINCT properties->'COD_TRECHO' AS ref, properties->'COMPLETO' AS via FROM $(tabname) WHERE properties->'COD_TRECHO' IS NOT NULL AND properties->'COMPLETO' IS NOT NULL
         join_id: ref
 
   via:
@@ -54,7 +54,7 @@ layers:
         orig_filename: Logradouros
         sql_view: |- 
             SELECT  row_number() OVER () as gid, \
-            properties->'COMPLETO' AS via_name, \
+            properties->'COMPLETO' AS via, \
             properties->'COD_TRECHO' AS ref, \
             jgeom AS geom FROM $(tabname)
 
@@ -64,7 +64,7 @@ layers:
         file: 3
         orig_filename: Lotes_(2013)
         sql_view: |-
-              SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via_name, \
+              SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via, \
               properties->'cod_np' AS house_number,  jgeom AS geom \
               FROM $(tabname)
 

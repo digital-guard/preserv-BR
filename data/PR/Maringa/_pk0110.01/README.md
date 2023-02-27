@@ -18,6 +18,6 @@ SRID: 4326
 
 'Longitude': longitude
 
-'Tipo Logradouro' + 'Logradouro': via_name
+'Tipo Logradouro' + 'Logradouro': via
 
 'Número Predial': house_number

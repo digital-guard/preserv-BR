@@ -23,7 +23,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome_map AS via_name', 'geom']
+    sql_select: ['gid', 'nome_map AS via', 'geom']
     orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
 
   parcel:

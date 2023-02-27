@@ -53,5 +53,5 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid','sde_siturb as via_name', 'geom']
+    sql_select: ['gid','sde_siturb as via', 'geom']
     orig_filename: Quadras

@@ -34,7 +34,7 @@ sha256sum: 252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
 
 SRID: 31999
 
-'Nome': via_name
+'Nome': via
 
 
 
@@ -48,7 +48,7 @@ SRID: 31999
 
 'numero': house_number
 
-'logradouro': via_name
+'logradouro': via
 
 'bairro': nsvia
 

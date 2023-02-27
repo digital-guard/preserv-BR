@@ -33,7 +33,7 @@ layers:
         method: csv2sql
         file: 1
         orig_filename: Logradouros - Gov. Valadares
-        sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via_name, "Número" AS house_number, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
+        sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, "Número" AS house_number, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
         codec: XLSX
         join_id: ref
   parcel:
@@ -60,6 +60,6 @@ layers:
         subtype: full
         method: shp2sql
         file: 5
-        sql_select: ['gid', 'descricao AS via_name', 'geom']
+        sql_select: ['gid', 'descricao AS via', 'geom']
         orig_filename: view_st_logradouro_eixoLine
         codec: SHP~Latin1

@@ -25,7 +25,7 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-              SELECT gid, NOME_LOGRA || ' ' || TIPO_LOGRA AS via_name, NUMERO as house_number, NOME_BAIRR AS ns_name, geom FROM $(tabname)
+              SELECT gid, NOME_LOGRA || ' ' || TIPO_LOGRA AS via, NUMERO as house_number, NOME_BAIRR AS ns_name, geom FROM $(tabname)
     orig_filename: LOTES
     codec: SHP~Latin1
 
@@ -33,7 +33,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME_RUA  AS via_name', 'geom']
+    sql_select: ['gid', 'NOME_RUA  AS via', 'geom']
     orig_filename: RUAS
     codec: SHP~Latin1
 

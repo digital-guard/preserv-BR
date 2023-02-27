@@ -30,7 +30,7 @@ layers:
         method: gdb2sql
         subtype: full
         file: 1
-        sql_view:  SELECT OBJECTID AS gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname) 
+        sql_view:  SELECT OBJECTID AS gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via, geom FROM $(tabname)
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
         buffer_type: 2
@@ -40,7 +40,7 @@ layers:
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb
-        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via_name', 'Num_imovel AS house_number', 'geom']
+        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS house_number', 'geom']
         orig_tabname: Endereco
         buffer_type: 2
 

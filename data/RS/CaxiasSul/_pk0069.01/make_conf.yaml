@@ -42,7 +42,7 @@ layers:
     method: shp2sql
     file: 2
     sql_view: |-
-        SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via_name, nomeusual AS nomeusual, geom FROM $(tabname)
+        SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via, nomeusual AS nomeusual, geom FROM $(tabname)
     orig_filename: logradouros
 
   parcel:

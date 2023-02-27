@@ -40,12 +40,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'nomelogr as via_name', 'geom']
+    sql_select: ['gid', 'nomelogr as via', 'geom']
     orig_filename: LOGRADOUROS
     standardized_fields:
      -
       name: nomelogr
-      standard: 'via_name'
+      standard: 'via'
 
   nsvia:
     subtype: full

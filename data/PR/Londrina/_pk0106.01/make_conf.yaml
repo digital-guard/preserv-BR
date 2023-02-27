@@ -27,12 +27,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: [ 'NOME as via_name']
+    sql_select: [ 'NOME as via']
     orig_filename: Export_Output
     standardized_fields:
      -
       name: NOME
-      standard: via_name
+      standard: via
 
   nsvia:
     subtype: full

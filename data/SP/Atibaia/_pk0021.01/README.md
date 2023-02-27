@@ -39,7 +39,7 @@ Nome do arquivo: `lotes/lotes`.<br/>Download: [b6221fa57754ec8c4db284591a6ceeea7
 Nome do arquivo: `logradouros/CAD_LOG`.<br/>Download: [0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip](http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 1241211 bytes (1.18 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
-* `log_nome_c` (via_name)
+* `log_nome_c` (via)
 
 # Evidências de teste
 <img src="qgis.png" width="400"/>
@@ -108,7 +108,7 @@ cd /tmp/sandbox/_pkBR211_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=29193"
 cd /tmp/sandbox/_pkBR211_001; shp2pgsql -D   -s 29193 "logradouros/CAD_LOG.shp" pk7600002101101_p1_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/logradouros/CAD_LOG.shp','via_full','pk7600002101101_p1_via','7600002101101','0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip',array['gid', 'log_nome_c as via_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR211_001/logradouros/CAD_LOG.shp','via_full','pk7600002101101_p1_via','7600002101101','0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip',array['gid', 'log_nome_c as via', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR211_001/*logradouros/CAD_LOG.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600002101101_p1_via CASCADE"

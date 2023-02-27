@@ -20,8 +20,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    #sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via_name ", 'geom']
-    sql_view: SELECT gid, complement, "número por" AS house_number, split_part("tipo do lo",'|',2) || ' ' || "nome do lo" AS via_name, geom FROM $(tabname)
+    #sql_select: ['gid', 'Complement', " 'Número Por' AS house_number ", " 'Tipo do Lo' || ' ' || 'Nome do Lo' AS  via ", 'geom']
+    sql_view: SELECT gid, complement, "número por" AS house_number, split_part("tipo do lo",'|',2) || ' ' || "nome do lo" AS via, geom FROM $(tabname)
     orig_filename: lotes_prediais
     codec: SHP~Latin1
 
@@ -29,7 +29,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via_name ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
-    sql_view: SELECT gid, TIPO || ' ' || NOME AS via_name, BAIRRO AS ns_name, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
+    #sql_select: ['gid', " 'TIPO' || ' ' NOME AS via ", 'CEP', 'BAIRRO AS ns_name','IMPLANTADO', 'CLANDESTIN', 'SITUACAO', 'geom']
+    sql_view: SELECT gid, TIPO || ' ' || NOME AS via, BAIRRO AS ns_name, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
     orig_filename: eixos_sorocaba
     codec: SHP;srid=5533;charset=ISO-8859-1

@@ -47,5 +47,5 @@ layers:
         method: shp2sql
         file: 4
         sql_view: |-
-               SELECT gid, tp_log || ' ' || nm_log AS via_name, geom FROM $(tabname)
+               SELECT gid, tp_log || ' ' || nm_log AS via, geom FROM $(tabname)
         orig_filename: SEG

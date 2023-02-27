@@ -20,7 +20,7 @@ layers:
     subtype: none
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'LOGRADOURO AS via_name', 'geom']
+    sql_select: ['gid', 'LOGRADOURO AS via', 'geom']
     orig_filename: 5486431b-c7fe-aec8-ab9c-00004b294da9
     buffer_type: 2
 

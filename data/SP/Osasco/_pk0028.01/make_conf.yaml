@@ -26,7 +26,7 @@ layers:
         subtype: full
         method: ogr2ogr
         file: 1
-        sql_select: ['gid', 'nome AS via_name','cep_correi AS postcode', 'geom']
+        sql_select: ['gid', 'nome AS via','cep_correi AS postcode', 'geom']
         orig_filename: Eixo_Logradouros_sirgasUTM.gpkg
   nsvia:
         subtype: full

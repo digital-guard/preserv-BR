@@ -85,13 +85,13 @@ layers:
     method: shp2sql
     file: 6
     sql_view: |-
-     SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)
+     SELECT gid, tip_logr || ' ' || textstring AS via, geom FROM $(tabname)
     orig_filename: axisLine
     codec: SHP~Latin1
     standardized_fields:
      -
       name: "tip_logr || ' ' || textstring"
-      standard: via_name
+      standard: via
       
 comments: Além dos arquivos preservados, existe base de logradouros rurais, faces de quadras, iptu (como linhas), metadados do street view, pontos de interesse e outros.
 

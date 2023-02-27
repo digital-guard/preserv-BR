@@ -23,7 +23,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'NLGPAVOFIC AS via_name', 'geom']
+        sql_select: ['gid', 'NLGPAVOFIC AS via', 'geom']
         orig_filename: TrechoLogradouros
         codec: SHP~Latin1
   nsvia:

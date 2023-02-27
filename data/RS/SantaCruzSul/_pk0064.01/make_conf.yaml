@@ -49,12 +49,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'logradouro as via_name', 'numeracao as house_number', 'geom']
+    sql_select: ['gid', 'logradouro as via', 'numeracao as house_number', 'geom']
     orig_filename: rs_scs_lotes_com_ceps_e_numeracao
     standardized_fields:
      -
       name: logradouro
-      standard: via_name
+      standard: via
      -
       name: numeracao
       standard: house_number
@@ -63,11 +63,11 @@ layers:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid', 'logradouro as via_name', 'geom']
+    sql_select: ['gid', 'logradouro as via', 'geom']
     orig_filename: santa_cruz_do_sul_rs_eixos
     standardized_fields:
      -
       name: logradouro
-      standard: via_name
+      standard: via
 
 test_evidence: qgis.png

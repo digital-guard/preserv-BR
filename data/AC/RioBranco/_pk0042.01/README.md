@@ -43,7 +43,7 @@ Nome do arquivo: `rb_20201111/bairros`.<br/>Download: [73d02ba0ae4b0a994a629f7d0
 Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
-* `nomelog` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
+* `nomelog` (via): tipo e nome do logradouro em caixa alta, com acentuação.
 
 * `endereco_n` (house_number): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
 
@@ -54,7 +54,7 @@ Nome do arquivo: `rb_20201116/lotes`.<br/>Download: [d96f47270e22336cf4660f742ae
 Nome do arquivo: `logradouros`.<br/>Download: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
-* `tipo ||' '|| Nome` (via_name): tipo e nome do logradouro em caixa alta, com acentuação.
+* `tipo ||' '|| Nome` (via): tipo e nome do logradouro em caixa alta, com acentuação.
 
 #### Comentários
 Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
@@ -129,7 +129,7 @@ cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "rb_20201116/lotes.shp" pk7600004201101_p1_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201116/lotes.shp','parcel_full','pk7600004201101_p1_parcel','7600004201101','d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip',array['gid', 'nomelog AS via_name', 'endereco_n AS house_number'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/rb_20201116/lotes.shp','parcel_full','pk7600004201101_p1_parcel','7600004201101','d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip',array['gid', 'nomelog AS via', 'endereco_n AS house_number'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pkBR421_001/*rb_20201116/lotes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600004201101_p1_parcel CASCADE"
@@ -150,7 +150,7 @@ cd /tmp/sandbox/_pkBR421_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=32719"
 cd /tmp/sandbox/_pkBR421_001; shp2pgsql -D   -s 32719 "logradouros.shp" pk7600004201301_p3_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600004201301_p3_via AS SELECT gid, tipo ||' '|| Nome AS via_name,  geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600004201301_p3_via AS SELECT gid, tipo ||' '|| Nome AS via,  geom FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR421_001/logradouros.shp','via_full','vw3_pk7600004201301_p3_via','7600004201301','29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw3_pk7600004201301_p3_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

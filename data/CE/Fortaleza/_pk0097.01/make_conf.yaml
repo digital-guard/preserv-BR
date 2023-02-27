@@ -48,7 +48,7 @@ layers:
     subtype: none
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, split_part(endereco,',',1) AS house_number, split_part(endereco,',',2) AS via_name, geom FROM $(tabname)
+    sql_view: SELECT gid, split_part(endereco,',',1) AS house_number, split_part(endereco,',',2) AS via, geom FROM $(tabname)
     orig_filename: lotes_fiscais
     codec: SHP~Latin1
     standardized_fields:
@@ -57,19 +57,19 @@ layers:
       standard: house_number
      -
       name: split_part(endereco,',',2)
-      standard: via_name
+      standard: via
       
   via:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'nome_compl as via_name', 'geom']
+    sql_select: ['gid', 'nome_compl as via', 'geom']
     orig_filename: logradouros
     codec: SHP~Latin1
     standardized_fields:
      -
       name: nome_compl
-      standard: via_name
+      standard: via
       
   block:
     subtype: full

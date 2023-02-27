@@ -44,7 +44,7 @@ SRID: 31985
 
 ### Dados relevantes
 Colunas da camada `Natal_Edif.shp`:
-* `Tipo` + `Nome`: via_name;
+* `Tipo` + `Nome`: via;
 * `Nº`: house_number.
 {{/building}}
 

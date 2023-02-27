@@ -31,12 +31,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
+    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as house_number', 'geom']
     orig_filename: CENTROIDES
     standardized_fields:
      -
       name: Cadastro_7
-      standard: via_name
+      standard: via
      -
       name: Cadastro_8
       standard: house_number
@@ -56,13 +56,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'Cadastro_7 as via_name', 'Cadastro_8 as house_number', 'geom']
+    sql_select: ['gid', 'Cadastro_7 as via', 'Cadastro_8 as house_number', 'geom']
     orig_filename: LOTES_2020
     codec: SHP;srid=29193
     standardized_fields:
      -
       name: Cadastro_7
-      standard: via_name
+      standard: via
      -
       name: Cadastro_8
       standard: house_number
@@ -72,11 +72,11 @@ layers:
     method: shp2sql
     file: 4
     sql_view: |-
-     SELECT gid, tr_tipo || ' ' || tr_descric AS via_name, geom FROM $(tabname)
+     SELECT gid, tr_tipo || ' ' || tr_descric AS via, geom FROM $(tabname)
     orig_filename: ARRUAMENTO
     standardized_fields:
      -
       name: "tr_tipo || ' ' || tr_descric"
-      standard: via_name
+      standard: via
 
 test_evidence: qgis.png

@@ -28,14 +28,14 @@ layers:
     subtype: cmpl
     method: csv2sql
     file: 1
-    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via_name, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)
     codec: XLSX
     orig_filename: AddressForAll/LOTES_COM_NUMERO_TODOS
     join_id: insclote
     standardized_fields:
      -
       name: Endereço
-      standard: via_name
+      standard: via
      -
       name: Endereço
       standard: house_number
@@ -51,12 +51,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'Nome_LOG as via_name', 'geom']
+    sql_select: ['gid', 'Nome_LOG as via', 'geom']
     orig_filename: AddressForAll/Eixo_logradouros_nomes
     standardized_fields:
      -
       name: Nome_LOG
-      standard: via_name
+      standard: via
       
   nsvia:
     subtype: full

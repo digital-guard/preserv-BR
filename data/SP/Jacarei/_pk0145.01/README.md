@@ -50,7 +50,7 @@ Nome do arquivo: `AddressForAll/LOTES_2021`.<br/>*Download* e integridade: [1607
 Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
-* `Nome_LOG` (via_name)
+* `Nome_LOG` (via)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Jacarei/_pk0145.01/via)<br/>1377723 bytes (1.31 <abbr title="mebibyte">MiB</abbr>)<br/>6225 segmentos com 1096.74 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.28 segmentos/km²
@@ -59,7 +59,7 @@ Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`.<br/>*Download* e integr
 Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`.<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31983
 
 #### Dados relevantes
-* `Endereço` (via_name)
+* `Endereço` (via)
 
 * `Endereço` (house_number)
 
@@ -90,7 +90,7 @@ psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spati
 xlsx2csv -i  "/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.xlsx" "/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.csv"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.csv', 'pk7600014501101_p1_cadparcel' )"
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600014501101_p1_cadparcel AS SELECT row_number() OVER () AS gid, trim(replace(\"Inscrição Imobiliária\",'.','')) AS insclote, trim(split_part(\"Endereço\", ',', 1)) AS via_name, trim(split_part(split_part(\"Endereço\", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part(\"Endereço\", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600014501101_p1_cadparcel AS SELECT row_number() OVER () AS gid, trim(replace(\"Inscrição Imobiliária\",'.','')) AS insclote, trim(split_part(\"Endereço\", ',', 1)) AS via, trim(split_part(split_part(\"Endereço\", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part(\"Endereço\", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)"
 psql $(pg_uri_db) -c "SELECT ingest.any_load('csv2sql','$(sandbox)/AddressForAll/LOTES_COM_NUMERO_TODOS.xlsx','cadparcel_cmpl','vw1_pk7600014501101_p1_cadparcel','7600014501101','16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600014501101_p1_cadparcel"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis".
@@ -152,7 +152,7 @@ cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600014501_001; shp2pgsql -D   -s 31983 "AddressForAll/Eixo_logradouros_nomes.shp" pk7600014501101_p1_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600014501_001/AddressForAll/Eixo_logradouros_nomes.shp','via_full','pk7600014501101_p1_via','7600014501101','16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar',array['gid', 'Nome_LOG as via_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600014501_001/AddressForAll/Eixo_logradouros_nomes.shp','via_full','pk7600014501101_p1_via','7600014501101','16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar',array['gid', 'Nome_LOG as via', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pk7600014501_001/*AddressForAll/Eixo_logradouros_nomes.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600014501101_p1_via CASCADE"

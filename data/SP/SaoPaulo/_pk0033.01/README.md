@@ -78,7 +78,7 @@ Complementado por [cadparcel](#-cadparcel) por meio de `ref` e `ref`
 Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`.
 <br/>*Download* e integridade: [ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip](http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes (22.58 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 <br/>Critérios de filtragem:
-* `lg_tipo || ' ' || lg_nome` (via_name)
+* `lg_tipo || ' ' || lg_nome` (via)
 
 #### Resultados da filtragem e sua publicação
 GeoJSONs em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/via)<br/>36896770 bytes (35.19 <abbr title="mebibyte">MiB</abbr>)<br/>230553 segmentos com 19233.99 <abbr title="quilômetros">km</abbr><br/>densidade média: 17.13 segmentos/km²
@@ -89,7 +89,7 @@ Nome do arquivo: `IPTU_2020`.
 <br/>*Download* e integridade: [75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip](http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes (119.87 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
 <br/>Critérios de filtragem:
 * `split_part(&quot;NUMERO DO CONTRIBUINTE&quot;, '-', 1)` (ref)
-* `NOME DE LOGRADOURO DO IMOVEL` (via_name)
+* `NOME DE LOGRADOURO DO IMOVEL` (via)
 * `NUMERO DO IMOVEL` (house_number)
 * `BAIRRO DO IMOVEL` (nsvia)
 * `CEP DO IMOVEL` (postcode)
@@ -148,7 +148,7 @@ psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spati
 iconv -f ISO-8859-1 -t UTF-8 /tmp/sandbox/_pkBR331_001/IPTU_2020.csv | dos2unix > /tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv', 'pk7600003301301_p3_cadparcel',';' )"
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\"NUMERO DO CONTRIBUINTE\", '-', 1) AS ref, \"NOME DE LOGRADOURO DO IMOVEL\" AS via_name, \"NUMERO DO IMOVEL\" AS house_number, \"BAIRRO DO IMOVEL\" AS nsvia, \"CEP DO IMOVEL\" AS postcode FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\"NUMERO DO CONTRIBUINTE\", '-', 1) AS ref, \"NOME DE LOGRADOURO DO IMOVEL\" AS via, \"NUMERO DO IMOVEL\" AS house_number, \"BAIRRO DO IMOVEL\" AS nsvia, \"CEP DO IMOVEL\" AS postcode FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('csv2sql','/tmp/sandbox/_pkBR331_001/IPTU_2020.csv','cadparcel_cmpl','vw3_pk7600003301301_p3_cadparcel','7600003301301','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw3_pk7600003301301_p3_cadparcel"
 echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis".
@@ -178,7 +178,7 @@ cd /tmp/sandbox/_pkBR331_001; 7z  x -y /tmp/sandbox/downloads/ef12421332aca1f534
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pkBR331_001; shp2pgsql -D   -s 31983 "SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp" pk7600003301401_p4_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw4_pk7600003301401_p4_via AS SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via_name, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw4_pk7600003301401_p4_via AS SELECT row_number() OVER () as gid, lg_tipo || ' ' || lg_nome AS via, geom FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR331_001/SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl.shp','via_full','vw4_pk7600003301401_p4_via','7600003301401','ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw4_pk7600003301401_p4_via"
 echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

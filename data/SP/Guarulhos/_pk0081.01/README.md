@@ -69,7 +69,7 @@ cd /tmp/sandbox/_pk7600008101_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600008101_001; shp2pgsql -D   -s 31983 "pg_cartografia_logradouros.shp" pk7600008101201_p2_address | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600008101201_p2_address AS SELECT DISTINCT Logradouro as via_name, cod_log FROM $(tabname) WHERE Logradouro IS NOT NULL"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600008101201_p2_address AS SELECT DISTINCT Logradouro as via, cod_log FROM $(tabname) WHERE Logradouro IS NOT NULL"
 psql $(pg_uri_db) -c "SELECT ingest.any_load('shp2sql','$(sandbox)/pg_cartografia_logradouros.shp','address_cmpl','vw2_pk7600008101201_p2_address','7600008101201','47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600008101201_p2_address"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis".
@@ -130,7 +130,7 @@ cd /tmp/sandbox/_pk7600008101_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600008101_001; shp2pgsql -D   -s 31983 "pg_cartografia_logradouros.shp" pk7600008101201_p2_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_cartografia_logradouros.shp','via_full','pk7600008101201_p2_via','7600008101201','47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip',array['gid', 'Logradouro as via_name', 'cod_log', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_cartografia_logradouros.shp','via_full','pk7600008101201_p2_via','7600008101201','47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip',array['gid', 'Logradouro as via', 'cod_log', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pk7600008101_001/*pg_cartografia_logradouros.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600008101201_p2_via CASCADE"

@@ -26,7 +26,7 @@ layers:
         file: 1
         orig_filename: LOGRADOUROS-utf8
         sql_view: |-
-          SELECT row_number() OVER () as gid, properties->'logradouro' AS via_name, \
+          SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
 # Join com SRID diferente não é suportado pelo programa
@@ -35,7 +35,7 @@ layers:
         method: geojson2sql
         file: 2
         orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
-        sql_select: [['id AS gid','logradouro AS via_name','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
+        sql_select: [['id AS gid','logradouro AS via','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
 
   parcel:
         subtype: full
@@ -43,7 +43,7 @@ layers:
         file: 2
         orig_filename: LOTES_URBANOS
         sql_view: |-
-              SELECT row_number() OVER () as gid, properties->'logradouro' AS via_name, \
+              SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
 

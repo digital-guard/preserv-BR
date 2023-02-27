@@ -62,7 +62,7 @@ psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct
 
 psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600000801101_p1_geoaddress AS SELECT row_number() OVER () as gid, \"SIGLA_TIPO_LOGRADOURO\" \
      || CASE WHEN \"SIGLA_TIPO_LOGRADOURO\" IN ('RUA','VIA') THEN ' ' ELSE '. ' END \
-     || \"NOME_LOGRADOURO\" AS via_name,\
+     || \"NOME_LOGRADOURO\" AS via,\
      \"NUMERO_IMOVEL\" || COALESCE(\"LETRA_IMOVEL\",'') AS house_number,\
      \"LETRA_IMOVEL\">'' AS is_complemento_provavel,\
      ST_GeomFromText(\"GEOMETRIA\",$(srid)) as geom \
@@ -90,7 +90,7 @@ cd /tmp/sandbox/_pk7600000801_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600000801_001; shp2pgsql -D -W ISO-8859-1  -s 31983 "LOGRADOUROLine.shp" pk7600000801201_p2_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600000801201_p2_via AS SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via_name, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600000801201_p2_via AS SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via, geom FROM $(tabname)"
 psql $(pg_uri_db) -c "SELECT ingest.any_load('shp2sql','$(sandbox)/LOGRADOUROLine.shp','via_full','vw2_pk7600000801201_p2_via','7600000801201','7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600000801201_p2_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

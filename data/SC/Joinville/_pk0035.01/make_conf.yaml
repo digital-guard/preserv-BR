@@ -20,13 +20,13 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: [['gid', '___logradour AS via_name', '___numero_25 AS house_number', '___bairro_28 AS ns_name', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
+        sql_select: [['gid', '___logradour AS via', '___numero_25 AS house_number', '___bairro_28 AS ns_name', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
         orig_filename: ['Malha Fundi ria/lotes2020_uso','Malha Fundi ria/Lotes_rurais']
   via:
         subtype: full
         method: shp2sql
         file: 2
-        sql_select:  ['gid','nomelog AS via_name', 'geom']
+        sql_select:  ['gid','nomelog AS via', 'geom']
         orig_filename: Malha Vi ria/logradouros
 #  building: # Verificar no README.md sobre outros arquivos e 
 #            # sobre a necessidade de importar esses arquivos

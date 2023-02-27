@@ -63,9 +63,9 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'logradouro as via_name', 'geom']
+    sql_select: ['gid', 'logradouro as via', 'geom']
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOGRADOUROS"
     standardized_fields:
      -
       name: logradouro
-      standard: via_name
+      standard: via

@@ -16,7 +16,7 @@ geom: geom
 
 **Obs:**
 
-COMPLETO: via_name (Obs: buscar no dataset via, através de join do campo COD_TRECHO)
+COMPLETO: via (Obs: buscar no dataset via, através de join do campo COD_TRECHO)
 
 
 
@@ -30,7 +30,7 @@ SRID: 4326
 
 row_number(): gid
 
-COMPLETO: via_name
+COMPLETO: via
 
 COD_TRECHO: ref
 
@@ -48,7 +48,7 @@ SRID: 4326
 
 row_number(): gid
 
-cod_trecho: via_name
+cod_trecho: via
 
 cod_np: house_number
 

@@ -24,12 +24,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nomelog AS via_name', 'endereco_n AS house_number']
+    sql_select: ['gid', 'nomelog AS via', 'endereco_n AS house_number']
     orig_filename: rb_20201116/lotes
     standardized_fields:
      -
       name: nomelog
-      standard: via_name
+      standard: via
       comment: tipo e nome do logradouro em caixa alta, com acentuação.
      -
       name: endereco_n
@@ -52,13 +52,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_view: SELECT gid, tipo ||' '|| Nome AS via_name,  geom FROM $(tabname)
+    sql_view: SELECT gid, tipo ||' '|| Nome AS via,  geom FROM $(tabname)
     orig_filename: logradouros
     comments: Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
     standardized_fields:
      -
       name: "tipo ||' '|| Nome"
-      standard: via_name
+      standard: via
       comment: tipo e nome do logradouro em caixa alta, com acentuação.
 
   block:

@@ -36,12 +36,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDER_IMOV as via_name', 'NRO_IMOV as house_number', 'geom']
+    sql_select: ['gid', 'ENDER_IMOV as via', 'NRO_IMOV as house_number', 'geom']
     orig_filename: lotes
     standardized_fields:
      -
       name: ENDER_IMOV
-      standard: via_name
+      standard: via
      -
       name: NRO_IMOV
       standard: house_number
@@ -51,11 +51,11 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-     SELECT gid, tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1 AS via_name, geom FROM $(tabname)
+     SELECT gid, tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1 AS via, geom FROM $(tabname)
     orig_filename: eixo
     standardized_fields:
      -
       name: "tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1"
-      standard: via_name
+      standard: via
       
 test_evidence: qgis.png

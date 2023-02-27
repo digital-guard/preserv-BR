@@ -58,7 +58,7 @@ Nome do arquivo: `numeroinicioefim1`.<br/>Download: [81db1f1d79472aa7e664a00e012
 Nome do arquivo: `axisLine`.<br/>Download: [3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip](http://dl.digital-guard.org/3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip)<br/>Descrição: Logradouros urbanos<br/>Tamanho do arquivo: 500230 bytes (0.48 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=longlat +datum=WGS84 +no_defs
 
 #### Dados relevantes
-* `tip_logr || ' ' || textstring` (via_name)
+* `tip_logr || ' ' || textstring` (via)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/via)<br/>825874 bytes (0.79 <abbr title="mebibyte">MiB</abbr>)<br/>2937 segmentos com 680.82 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.76 segmentos/km²
@@ -188,7 +188,7 @@ psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952096"
 cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D -W ISO-8859-1  -s 952096 "axisLine.shp" pk7600009101601_p6_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw6_pk7600009101601_p6_via AS SELECT gid, tip_logr || ' ' || textstring AS via_name, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw6_pk7600009101601_p6_via AS SELECT gid, tip_logr || ' ' || textstring AS via, geom FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/axisLine.shp','via_full','vw6_pk7600009101601_p6_via','7600009101601','3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw6_pk7600009101601_p6_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

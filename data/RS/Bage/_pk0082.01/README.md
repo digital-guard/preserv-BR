@@ -14,7 +14,7 @@ SRID: 31981
 
 id: gid
 
-logradouro: via_name
+logradouro: via
 
 geometry: geom
 
@@ -32,7 +32,7 @@ id: gid
 
 numero: house_number (numero de porta)
 
-logradouro: via_name (nome do logradouro)
+logradouro: via (nome do logradouro)
 
 geometry: geom
 

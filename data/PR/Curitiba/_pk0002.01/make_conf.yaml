@@ -29,4 +29,4 @@ layers:
         method: shp2sql
         file: 2
         orig_filename: LOTES_201902
-        sql_select: ['gid', 'NME_LOGRAD AS via_name', 'NUM_PREDIA AS poiter_number']
+        sql_select: ['gid', 'NME_LOGRAD AS via', 'NUM_PREDIA AS poiter_number']
