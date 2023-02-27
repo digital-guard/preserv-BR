@@ -27,12 +27,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nm_bai as nsvia_name', 'num_bai', 'geom']
+    sql_select: ['gid', 'nm_bai as nsvia', 'num_bai', 'geom']
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/BAIRROS"
     standardized_fields:
      -
       name: nm_bai
-      standard: nsvia_name
+      standard: nsvia
     other_fields:
      -
       name: num_bai

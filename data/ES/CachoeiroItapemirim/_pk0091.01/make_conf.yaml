@@ -60,13 +60,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'NOME as nsvia_name', 'geom']
+    sql_select: ['gid', 'NOME as nsvia', 'geom']
     orig_filename: Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021
     codec: SHP~Latin1;srid=31984
     standardized_fields:
      -
       name: NOME
-      standard: nsvia_name
+      standard: nsvia
 
   parcel:
     subtype: none

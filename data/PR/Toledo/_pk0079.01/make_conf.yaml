@@ -51,12 +51,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'nm_bairro as nsvia_name', 'geom']
+    sql_select: ['gid', 'nm_bairro as nsvia', 'geom']
     orig_filename: Bairros
     standardized_fields:
      -
       name: nm_bairro
-      standard: 'nsvia_name'
+      standard: 'nsvia'
       
   block:
     subtype: full

@@ -46,7 +46,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'sde_siturb as nsvia_name', 'geom']
+    sql_select: ['gid', 'sde_siturb as nsvia', 'geom']
     orig_filename: Setor
 
   block:

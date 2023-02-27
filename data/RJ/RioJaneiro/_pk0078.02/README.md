@@ -80,7 +80,7 @@ SRID: 4326
 
 CODBAIRRO_LONG: gid
 
-NOME: nsvia_name
+NOME: nsvia
 
 jgeom: geom
 

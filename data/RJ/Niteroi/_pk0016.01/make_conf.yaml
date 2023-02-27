@@ -37,7 +37,7 @@ layers:
         file: 2
         orig_filename: Logradouro
         sql_view: |-
-                    SELECT gid, ST_TYPE || ' ' || ST_NO AS via_name, CMTY_L AS nsvia_name_left, CMTY_R AS nsvia_name_right, geom FROM $(tabname)
+                    SELECT gid, ST_TYPE || ' ' || ST_NO AS via_name, CMTY_L AS nsvia_left, CMTY_R AS nsvia_right, geom FROM $(tabname)
 
         # não coloquei Legislacao (string): lei da denominação (para outros projetos).
   nsvia:
@@ -53,5 +53,5 @@ layers:
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
         codec: XLSX
-        sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia_name']
+        sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via_name' ,'nm_lgrd_nr AS house_number','nm_cd_bair AS nsvia']
         join_id: tx_insctec

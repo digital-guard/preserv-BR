@@ -23,6 +23,6 @@ layers:
         subtype: full
         method: shp2sql
         file: 1
-        sql_select: ['gid', 'NOME', 'BAIRRO AS nsvia_name', 'geom']
+        sql_select: ['gid', 'NOME', 'BAIRRO AS nsvia', 'geom']
         orig_filename: Open Street/PARCELAMENTOS
         # Loteamentos são contornos das áreas loteadas e que compõem os bairros.

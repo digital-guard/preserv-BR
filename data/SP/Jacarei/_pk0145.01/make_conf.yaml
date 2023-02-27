@@ -28,7 +28,7 @@ layers:
     subtype: cmpl
     method: csv2sql
     file: 1
-    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via_name, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia_name FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, trim(replace("Inscrição Imobiliária",'.','')) AS insclote, trim(split_part("Endereço", ',', 1)) AS via_name, trim(split_part(split_part("Endereço", ',', 2),'-',1)) AS house_number, trim(split_part(regexp_replace (split_part("Endereço", ',', 2),'\-', ';'),';',2)) AS nsvia FROM $(tabname)
     codec: XLSX
     orig_filename: AddressForAll/LOTES_COM_NUMERO_TODOS
     join_id: insclote
@@ -41,7 +41,7 @@ layers:
       standard: house_number
      -
       name: Endereço
-      standard: nsvia_name
+      standard: nsvia
     other_fields:
      -
       name: Inscrição Imobiliária
@@ -62,10 +62,10 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'LOTEAMENTO as nsvia_name', 'geom']
+    sql_select: ['gid', 'LOTEAMENTO as nsvia', 'geom']
     orig_filename: AddressForAll/Loteamentos_2017
     standardized_fields:
      -
       name: LOTEAMENTO
-      standard: nsvia_name
+      standard: nsvia
       comment: nome de bairro sem acentuação

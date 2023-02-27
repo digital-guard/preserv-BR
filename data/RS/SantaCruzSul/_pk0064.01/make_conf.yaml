@@ -38,12 +38,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NAME1_ as nsvia_name', 'geom']
+    sql_select: ['gid', 'NAME1_ as nsvia', 'geom']
     orig_filename: santa_cruz_do_sul_rs_bairros
     standardized_fields:
      -
       name: NAME1_
-      standard: nsvia_name
+      standard: nsvia
 
   parcel:
     subtype: full

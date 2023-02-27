@@ -83,12 +83,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_select: ['gid', 'nome_bairr as nsvia_name', 'geom']
+    sql_select: ['gid', 'nome_bairr as nsvia', 'geom']
     orig_filename: bairros
     codec: SHP~Latin1
     standardized_fields:
      -
       name: nome_bairr
-      standard: nsvia_name
+      standard: nsvia
 
 test_evidence: qgis.png

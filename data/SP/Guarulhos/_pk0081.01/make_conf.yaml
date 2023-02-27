@@ -24,7 +24,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'bairro as nsvia_name', 'geom']
+    sql_select: ['gid', 'bairro as nsvia', 'geom']
     orig_filename: pg_cartografia_bairros
 
   via:

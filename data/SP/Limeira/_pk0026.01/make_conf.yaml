@@ -24,13 +24,13 @@ layers:
     method: shp2sql
     file: 1
     sql_view: |-
-     SELECT gid, Tipo || ' ' || Nome AS nsvia_name, geom FROM $(tabname)
+     SELECT gid, Tipo || ' ' || Nome AS nsvia, geom FROM $(tabname)
     orig_filename: loteamentos
     comments: Necessario compor nome com regular expression.
     standardized_fields:
      -
       name: "Tipo || ' ' || Nome"
-      standard: nsvia_name
+      standard: nsvia
 
   parcel:
     subtype: full

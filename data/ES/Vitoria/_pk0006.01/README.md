@@ -12,7 +12,7 @@ sha256sum: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
 
 SRID: 31999
 
-'BAIRRO': nsvia_name
+'BAIRRO': nsvia
 
 
 
@@ -50,7 +50,7 @@ SRID: 31999
 
 'logradouro': via_name
 
-'bairro': nsvia_name
+'bairro': nsvia
 
 
 

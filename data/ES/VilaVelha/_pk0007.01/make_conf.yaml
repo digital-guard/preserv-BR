@@ -32,7 +32,7 @@ layers:
         subtype: full 
         method: shp2sql
         file: 2
-        sql_select: ['gid', 'BAIRRO AS nsvia_name','geom'] 
+        sql_select: ['gid', 'BAIRRO AS nsvia','geom'] 
         orig_filename: BAIRROS/BAIRROS
         codec: SHP~Latin1
 

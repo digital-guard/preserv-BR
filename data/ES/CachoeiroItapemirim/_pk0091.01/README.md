@@ -40,7 +40,7 @@ Nome do arquivo: `inscricao_fiscal_cigeo`.<br/>Download: [4b8f5c5264e567014e98d3
 Nome do arquivo: `Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021`.<br/>Download: [5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar](http://dl.digital-guard.org/5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 6289596 bytes (6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
-* `NOME` (nsvia_name)
+* `NOME` (nsvia)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/CachoeiroItapemirim/_pk0091.01/nsvia)<br/>356930 bytes (0.34 <abbr title="mebibyte">MiB</abbr>)<br/>76 polígonos com 34.29 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.04 polígonos/km²
@@ -138,7 +138,7 @@ cd /tmp/sandbox/_pkBR911_001; 7z  x -y /var/www/preserv.addressforall.org/downlo
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31984"
 cd /tmp/sandbox/_pkBR911_001; shp2pgsql -D   -s 31984 "Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp" pk7600009101301_p3_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp','nsvia_full','pk7600009101301_p3_nsvia','7600009101301','5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar',array['gid', 'NOME as nsvia_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pkBR911_001/Camadas_Shap_base_Cachoeiro de Itpemirim/LIMITE_BAIRROS_7915_2021.shp','nsvia_full','pk7600009101301_p3_nsvia','7600009101301','5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar',array['gid', 'NOME as nsvia', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 @echo "Delete SRID 31984 configurado via PROJ.4 string:"
 @echo "+proj=longlat +datum=WGS84 +no_defs"

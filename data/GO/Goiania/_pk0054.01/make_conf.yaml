@@ -40,7 +40,7 @@ layers:
         subtype: full
         method: shp2sql
         file: 3
-        sql_select: ['gid', 'nm AS nsvia_name', 'geom']
+        sql_select: ['gid', 'nm AS nsvia', 'geom']
         orig_filename: BAI
   via:
         subtype: full

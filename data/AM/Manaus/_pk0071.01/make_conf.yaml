@@ -83,10 +83,10 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'NOME_BAIRR as nsvia_name', 'geom']
+    sql_select: ['gid', 'NOME_BAIRR as nsvia', 'geom']
     orig_filename: OpenStreetMap_Shapefiles/BAIRROS
     standardized_fields:
      -
       name: NOME_BAIRR
-      standard: nsvia_name
+      standard: nsvia
       

@@ -91,7 +91,7 @@ Nome do arquivo: `IPTU_2020`.
 * `split_part(&quot;NUMERO DO CONTRIBUINTE&quot;, '-', 1)` (ref)
 * `NOME DE LOGRADOURO DO IMOVEL` (via_name)
 * `NUMERO DO IMOVEL` (house_number)
-* `BAIRRO DO IMOVEL` (nsvia_name)
+* `BAIRRO DO IMOVEL` (nsvia)
 * `CEP DO IMOVEL` (postcode)
 
 Complementa [parcel](#-parcel) por meio de `ref` e `ref`
@@ -148,7 +148,7 @@ psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spati
 iconv -f ISO-8859-1 -t UTF-8 /tmp/sandbox/_pkBR331_001/IPTU_2020.csv | dos2unix > /tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pkBR331_001/IPTU_2020.unix_utf8.csv', 'pk7600003301301_p3_cadparcel',';' )"
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\"NUMERO DO CONTRIBUINTE\", '-', 1) AS ref, \"NOME DE LOGRADOURO DO IMOVEL\" AS via_name, \"NUMERO DO IMOVEL\" AS house_number, \"BAIRRO DO IMOVEL\" AS nsvia_name, \"CEP DO IMOVEL\" AS postcode FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw3_pk7600003301301_p3_cadparcel AS SELECT row_number() OVER () AS gid, split_part(\"NUMERO DO CONTRIBUINTE\", '-', 1) AS ref, \"NOME DE LOGRADOURO DO IMOVEL\" AS via_name, \"NUMERO DO IMOVEL\" AS house_number, \"BAIRRO DO IMOVEL\" AS nsvia, \"CEP DO IMOVEL\" AS postcode FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('csv2sql','/tmp/sandbox/_pkBR331_001/IPTU_2020.csv','cadparcel_cmpl','vw3_pk7600003301301_p3_cadparcel','7600003301301','75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw3_pk7600003301301_p3_cadparcel"
 echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.cadastral_asis".

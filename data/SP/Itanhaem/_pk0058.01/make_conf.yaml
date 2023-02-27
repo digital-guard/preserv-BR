@@ -45,12 +45,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME as nsvia_name', 'geom']
+    sql_select: ['gid', 'NOME as nsvia', 'geom']
     orig_filename: ABAIRRAMENTO
     standardized_fields:
      -
       name: NOME
-      standard: nsvia_name
+      standard: nsvia
 
   parcel:
     subtype: full

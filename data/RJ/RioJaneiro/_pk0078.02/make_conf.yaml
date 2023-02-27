@@ -74,7 +74,7 @@ layers:
         file: 4
         orig_filename: Limite_de_Bairros
         sql_view: |-
-              SELECT row_number() OVER () as gid, properties->'NOME' as nsvia_name, jgeom AS geom \
+              SELECT row_number() OVER () as gid, properties->'NOME' as nsvia, jgeom AS geom \
               FROM $(tabname)
   block:
         subtype: none

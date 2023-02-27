@@ -109,7 +109,7 @@ cd /tmp/sandbox/_pk7600008101_001; 7z  x -y /var/www/preserv.addressforall.org/d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600008101_001; shp2pgsql -D   -s 31983 "pg_cartografia_bairros.shp" pk7600008101101_p1_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_cartografia_bairros.shp','nsvia_full','pk7600008101101_p1_nsvia','7600008101101','d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip',array['gid', 'bairro as nsvia_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600008101_001/pg_cartografia_bairros.shp','nsvia_full','pk7600008101101_p1_nsvia','7600008101101','d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip',array['gid', 'bairro as nsvia', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 rm -f "/tmp/sandbox/_pk7600008101_001/*pg_cartografia_bairros.*" || true
 psql $(pg_uri_db) -c "DROP TABLE IF EXISTS pk7600008101101_p1_nsvia CASCADE"
