@@ -22,8 +22,8 @@ layers:
         
         standardized_fields:
           -
-          name: Número
-          standard: 'hnum'
+           name: Número
+           standard: 'hnum'
           
   via:
         subtype: full
@@ -36,7 +36,7 @@ layers:
         
         standardized_fields:
           -
-          name: TIPO || ' ' || NOME
-          standard: 'via'
+           name: TIPO || ' ' || NOME
+           standard: 'via'
 
 test_evidence: qgis.png
