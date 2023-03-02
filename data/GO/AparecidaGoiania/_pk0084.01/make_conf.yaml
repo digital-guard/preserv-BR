@@ -16,11 +16,12 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_view: SELECT gid, 'QD '|| num_qdr AS ref, geom FROM $(tabname)
+    sql_select: ['gid', 'num_qdr AS ref', 'geom']
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/QUADRAS"
-    other_fields:
+    standardized_fields:
      -
       name: num_qdr
+      standard: ref
       comment: Numero da quadra.
 
   nsvia:
@@ -33,30 +34,33 @@ layers:
      -
       name: nm_bai
       standard: nsvia
-    other_fields:
      -
       name: num_bai
+      standard: ref
       comment: Numero do bairro.
 
   parcel:
     subtype: none
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'num_lot as hnum', 'num_qdr', 'num_bai', 'nm_bai AS nsvia', 'geom']
+    sql_select: ['gid', 'num_lot AS pnum', 'num_qdr AS blref', 'num_bai AS nsref', 'nm_bai AS nsvia', 'geom']
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOTES"
     standardized_fields:
      -
       name: num_lot
-      standard: hnum
+      standard: pnum
     other_fields:
      -
       name: num_qdr
-      comment: Numero da quadra.
+      standard: blref
+      comment: Número da quadra.
      -
       name: num_bai
-      comment: Numero do bairro.
+      standard: nsref
+      comment: Número do bairro.
      -
       name: nm_bai
+      standard: nsvia
       comment: Nome do bairro.
 
   via:
