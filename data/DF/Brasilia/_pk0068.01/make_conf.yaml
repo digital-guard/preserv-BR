@@ -29,29 +29,26 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome as poi', 'geom']
+    sql_select: ['gid', 'nome AS name', 'geom']
     orig_filename: edificacoes
 
   parcel:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT row_number() OVER () as gid, 
-      ra_nome || ' ' || quadra || ' ' || conjunto as nsref,
-      conjunto || ' ' || lote as hnum,
-      norma_ante, padrao_cor, ra_nome, quadra, conjunto, end_cart, projeto, geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, ciu AS ref, lote AS pnum, conjunto AS conjunto, quadra AS blref, trim((regexp_match(end_cart, '(.*)'||end_cart))[1]) AS setor, sde_situ_2 AS ra_name, end_cart AS address, projeto, norma_ante, padrao_cor geom FROM $(tabname)
     orig_filename: Lotes Registrados
-
-  nsvia:
-    subtype: full
-    method: shp2sql
-    file: 3
-    sql_select: ['gid', 'sde_siturb as nsvia', 'geom']
-    orig_filename: Setor
 
   block:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['gid','sde_siturb as via', 'geom']
+    sql_select: ['gid','sde_siturb AS ref', 'sde_situ_1 AS nsref', 'sde_situ_2 AS ra_name', 'geom']
     orig_filename: Quadras
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'sde_siturb AS ref', 'sde_situ_1 AS ra_name', 'geom']
+    orig_filename: Setor
