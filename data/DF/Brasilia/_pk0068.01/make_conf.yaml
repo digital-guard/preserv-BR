@@ -36,7 +36,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT row_number() OVER () AS gid, ciu AS ref, lote AS pnum, conjunto AS conjunto, quadra AS blref, trim((regexp_match(end_cart, '(.*)'||end_cart))[1]) AS setor, sde_situ_2 AS ra_name, end_cart AS address, projeto, norma_ante, padrao_cor geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, ciu AS ref, lote AS pnum, conjunto AS conjunto, quadra AS blref, trim((regexp_match(end_cart, '(.*)'||quadra || ' ' || conjunto || ' ' || lote))[1]) AS nsvia, ra_nome AS ra_name, end_cart AS address, projeto, norma_ante, padrao_cor, geom FROM $(tabname)
     orig_filename: Lotes Registrados
 
   block:
