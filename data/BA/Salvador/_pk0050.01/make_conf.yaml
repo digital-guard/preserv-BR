@@ -1,0 +1,41 @@
+pack_id: 50.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+need_commands:    7z psql shp2pgsql
+codec:descr_encode: srid=31984
+
+files:
+- file: 2dd6c00405143aa6378b38a80eb5a7f4d7ce201d31e99c60b4a5bf4ad5bf98de.zip
+  name: PrefeituraBairro.zip
+  p: 1
+- file: 58c2353cf924694da728d1107e71e9deb67d39c1f9ffd65a2eaffed32b4d253a.zip
+  name: Trecho_de_Arruamento_2021-08-20.zip
+  p: 2
+- file: e8326aac43117a60b0f6294ecc579e7c2bdaee704206a86d03edcff9a5f9db04.zip
+  name: Edificacao_sem_acentos.zip
+  p: 3
+
+layers:
+  parcel:
+        subtype: none
+        method: ogr2ogr
+        file: 3
+        sql_select: ['row_number() OVER () as gid', 'ST_MakePolygon(geom) as geom']
+        orig_filename: edf_edificacao_a.dxf
+  via:
+        subtype: none
+        method: shp2sql
+        file: 2
+        sql_view: |-
+          SELECT gid, \
+          ST_Boundary(geom) As geom \
+          FROM $(tabname) 
+
+        orig_filename: Trecho_de_Arruamento_2021-08-20
+  nsvia:
+        subtype: full
+        method: shp2sql
+        file: 1
+        sql_select: ['gid', 'subclasses AS nsvia', 'geom']
+        orig_filename: Prefeituras_Bairro
