@@ -24,7 +24,7 @@ pack_id,donor_id,pack_count,lst_vers,donor_label,user_resp,accepted_date,scope,a
 02201,22,1,001,SP-CAM,igor,2020-08-14,BR-SP-Campinas,"Eixos, loteamentos, pontos de lotes",(self),2019,no,CC0,site,https://informacao-didc.campinas.sp.gov.br/metadados.php,no,working-makefile,
 02301,23,1,001,SP-GRJ,igor,2020-10-01,BR-SP-Guaruja,Mapa em DWG,(self),2019,,CC0,email,(anexo de email),no,working-makefile,
 02401,24,1,001,SP-ITU,igor,2020-05-07,BR-SP-Itu,"Loteamento, edificação, eixo, lote e quadra",(self),2019,yes,CC0,email,(anexo de email),yes,working-makefile,
-02501,25,1,001,SP-JUN,igor,2020-06-22,BR-SP-Jundiai,"Bairros, eixos, lotes, edificação",(self),2019,no,CC0,site,https://geo.jundiai.sp.gov.br/geoserver/web/,yes,working-makefile,
+02501,25,1,001,SP-JUN,igor,2021-10-13,BR-SP-Jundiai,"Bairros, eixos, lotes, edificação, geo-enderecos",(self),2021,no,CC0,"site,e-mail",https://geo.jundiai.sp.gov.br/geoserver/web/,yes,working-makefile,
 02601,26,1,001,SP-LIM,igor,2021-02-01,BR-SP-Limeira,"Lotes, eixos, quadras, loteamentos, equipamentos, mapa urbano básico",(self),2021,no,CC0,site;email,https://www.limeira.sp.gov.br/sitenovo/simple_hotsite.php?id=29&simple=118,no,working-makefile,
 02701,27,1,001,SP-LRP,igor,2020-07-17,BR-SP-LaranjalPaulista,"Eixos, edificação, lotes",(self),2019,yes,CC0,email,(anexo de email),yes,working-makefile,
 02801,28,1,001,SP-OSC,igor,2020-06-22,BR-SP-Osasco,"Bairros, eixos, lotes, limite de município",(self),2019,no,CC0,email,(anexo de email),yes,working-makefile,
