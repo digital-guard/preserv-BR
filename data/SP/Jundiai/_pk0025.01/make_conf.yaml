@@ -18,37 +18,72 @@ files:
 - file: 7995d41f628e31599f80b367650d363f47e75e1515be9fefabefca91189608a5.zip
   name: Bairros
   p: 4
+- file: c26c149b65a42e9de131145b8db24aed006f37c5f44c625c835df2fc359f4763.zip
+  name: Números prediais
+  p: 5
 
 layers:
-  parcel:
-    subtype: none
+  geoaddress:
+    subtype: full
     method: shp2sql
-    file: 1
-    sql_select: ['gid']
-    orig_filename: lotes_jund
-
+    file: 5
+    sql_view:
+    orig_filename: numerosprediais
+    standardized_fields:
+     -
+      name: numero_int
+      standard: 'hnum'
+     -
+      name: logradouro
+      standard: 'via'
+     -
+      name: bairro
+      standard: 'nsvia'
+     -
+      name: complement
+      standard: 'COMPLEMENTO'
+     -
+      name: loteamento
+      standard: 'LOTEAMENTO'
+     -
+      name: cep
+      standard: 'CEP'
+    
   via:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: [
-      [ 'fromleft', 'toleft', 'fromright', 'toright', 'codlogr' ],
-      [ 'Codigo_do_', 'REGEXP_REPLACE(logrtotal, "[[:space:]]+", " ") as via'],
-      [ 'name as via' ]
-      ]
-    orig_filename: ['logradouro','v_logr_ortofoto','L_8683-2016_m12_vias_func_urbanistica']
+    sql_view: 
+    orig_filename: v_logr_ortofoto-utf8
+    standardized_fields:
+     -
+      name: logrtotal
+      standard: 'via'
 
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'geom']
+    orig_filename: lotes_jund
+    
   building:
     subtype: none
     method: shp2sql
     file: 3
-    sql_select: ['gid'] 
+    sql_select: ['gid', 'geom'] 
     orig_filename: edificacoes
 
   nsvia:
     subtype: full
     method: shp2sql
     file: 4
-    sql_select: ['nmbairro as nsvia','populacao']
+    sql_select: ['gid','nmbairro as nsvia','geom']
     orig_filename: v_bairros_populacao
     codec: SHP~Latin1
+    standardized_fields:
+     -
+      name: nmbairro
+      standard: 'nsvia'
+
+test_evidence: qgis.png
