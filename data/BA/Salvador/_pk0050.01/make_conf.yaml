@@ -21,7 +21,7 @@ layers:
         subtype: none
         method: ogr2ogr
         file: 3
-        sql_select: ['row_number() OVER () as gid', 'ST_MakePolygon(geom) as geom']
+        sql_view: SELECT row_number() OVER () AS gid, ST_MakePolygon(geom) AS geom FROM $(tabname)
         orig_filename: edf_edificacao_a.dxf
   via:
         subtype: none
