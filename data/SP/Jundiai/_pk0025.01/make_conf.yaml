@@ -27,33 +27,34 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_view:
+    sql_view: SELECT row_number() OVER () AS gid, numero_int AS hnum, REGEXP_REPLACE(replace(logradouro,'.', ' '), '[[:space:]]+', ' ','g') AS via, bairro AS nsvia, complement, loteamento, cep AS postcode, geom FROM $(tabname)
     orig_filename: numerosprediais
+    codec: SHP~Latin1
     standardized_fields:
      -
       name: numero_int
-      standard: 'hnum'
+      standard: hnum
      -
       name: logradouro
-      standard: 'via'
+      standard: via
      -
       name: bairro
-      standard: 'nsvia'
+      standard: nsvia
      -
       name: complement
-      standard: 'COMPLEMENTO'
+      standard: complement
      -
       name: loteamento
-      standard: 'LOTEAMENTO'
+      standard: loteamento
      -
       name: cep
-      standard: 'CEP'
+      standard: postcode
     
   via:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: 
+    sql_view: SELECT row_number() OVER () AS gid, REGEXP_REPLACE(logrtotal, '[[:space:]]+', ' ','g') AS via, geom FROM $(tabname)
     orig_filename: v_logr_ortofoto-utf8
     standardized_fields:
      -
