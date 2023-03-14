@@ -93,10 +93,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101101_p1_block CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/QUADRAS*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/QUADRAS*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/QUADRAS.shp" pk7600007101101_p1_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
@@ -118,10 +118,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101101_p1_building CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/EDIFICACOES*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/EDIFICACOES*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/EDIFICACOES.shp" pk7600007101101_p1_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
@@ -143,10 +143,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101101_p1_geoaddress CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/NUMERACAO*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/NUMERACAO*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/NUMERACAO.shp" pk7600007101101_p1_geoaddress | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
@@ -168,10 +168,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101101_p1_nsvia CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/BAIRROS*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/BAIRROS*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/BAIRROS.shp" pk7600007101101_p1_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
@@ -193,10 +193,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar && sudo chmod 664 /var/www/dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101201_p2_parcel CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar "*OSM_Lotes/shape/Lotes*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar "*OSM_Lotes/shape/Lotes*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OSM_Lotes/shape/Lotes.shp" pk7600007101201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
@@ -220,10 +220,10 @@ rm -rf /tmp/sandbox/_pk7600007101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar && sudo chmod 664 /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600007101101_p1_via CASCADE"
-cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/preserv.addressforall.org/download/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/LOGRADOUROS*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600007101_002; 7z  x -y /var/www/dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar "*OpenStreetMap_Shapefiles/LOGRADOUROS*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "INSERT INTO spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) VALUES (952069,'carlos',952069,'+proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs',null);"
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=952069"
 cd /tmp/sandbox/_pk7600007101_002; shp2pgsql -D   -s 952069 "OpenStreetMap_Shapefiles/LOGRADOUROS.shp" pk7600007101101_p1_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null

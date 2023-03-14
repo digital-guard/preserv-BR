@@ -82,10 +82,10 @@ rm -rf /tmp/sandbox/_pk7600014501_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014501_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
 psql $(pg_uri_db) -c "DROP FOREIGN TABLE IF EXISTS pk7600014501101_p1_cadparcel CASCADE"
-cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/LOTES_COM_NUMERO_TODOS*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/LOTES_COM_NUMERO_TODOS*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 xlsx2csv -i  "/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.xlsx" "/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.csv"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pk7600014501_001/AddressForAll/LOTES_COM_NUMERO_TODOS.csv', 'pk7600014501101_p1_cadparcel' )"
@@ -103,10 +103,10 @@ rm -rf /tmp/sandbox/_pk7600014501_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014501_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600014501101_p1_nsvia CASCADE"
-cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/Loteamentos_2017*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/Loteamentos_2017*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600014501_001; shp2pgsql -D   -s 31983 "AddressForAll/Loteamentos_2017.shp" pk7600014501101_p1_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
@@ -124,10 +124,10 @@ rm -rf /tmp/sandbox/_pk7600014501_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014501_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600014501101_p1_parcel CASCADE"
-cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/LOTES_2021*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/LOTES_2021*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600014501_001; shp2pgsql -D   -s 31983 "AddressForAll/LOTES_2021.shp" pk7600014501101_p1_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
@@ -145,10 +145,10 @@ rm -rf /tmp/sandbox/_pk7600014501_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014501_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar && sudo chmod 664 /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600014501101_p1_via CASCADE"
-cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/preserv.addressforall.org/download/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/Eixo_logradouros_nomes*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600014501_001; 7z  x -y /var/www/dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar "*AddressForAll/Eixo_logradouros_nomes*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600014501_001; shp2pgsql -D   -s 31983 "AddressForAll/Eixo_logradouros_nomes.shp" pk7600014501101_p1_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 

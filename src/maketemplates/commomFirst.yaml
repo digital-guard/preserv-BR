@@ -1,5 +1,5 @@
 pg_io:   /tmp/pg_io
-orig:    /var/www/preserv.addressforall.org/download
+orig:    /var/www/dl.digital-guard.org
 pg_uri:  postgres://postgres@localhost
 pg_db:   ingest1
 sandbox: /tmp/sandbox

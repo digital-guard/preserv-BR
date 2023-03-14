@@ -74,10 +74,10 @@ rm -rf /tmp/sandbox/_pk7600000901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600000901101_p1_block CASCADE"
-cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Quadras -nln pk7600000901101_p1_block 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
@@ -95,10 +95,10 @@ rm -rf /tmp/sandbox/_pk7600000901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600000901101_p1_geoaddress CASCADE"
-cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Endereco -nln pk7600000901101_p1_geoaddress 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
@@ -116,10 +116,10 @@ rm -rf /tmp/sandbox/_pk7600000901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600000901101_p1_nsvia CASCADE"
-cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=3857"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Bairros -nln pk7600000901101_p1_nsvia 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
@@ -137,10 +137,10 @@ rm -rf /tmp/sandbox/_pk7600000901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600000901101_p1_parcel CASCADE"
-cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Lotes -nln pk7600000901101_p1_parcel 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
@@ -158,10 +158,10 @@ rm -rf /tmp/sandbox/_pk7600000901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/preserv.addressforall.org/download http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
-sudo chown postgres:www-data /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
+sudo chown postgres:www-data /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar && sudo chmod 664 /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar
 psql $(pg_uri_db) -c "DROP  TABLE IF EXISTS pk7600000901101_p1_via CASCADE"
-cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/preserv.addressforall.org/download/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar "*OpenStreetMap.gdb*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox/_pk7600000901_001:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Logradouros -nln pk7600000901101_p1_via 
 dd if=/dev/random of='$(sandbox)/OpenStreetMap.gdb/random_data_file' bs=1M count=1
