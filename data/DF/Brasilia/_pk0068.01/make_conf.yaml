@@ -31,6 +31,11 @@ layers:
     file: 1
     sql_select: ['gid', 'nome AS name', 'geom']
     orig_filename: edificacoes
+    standardized_fields:
+     -
+      name: nome
+      standard: name
+      comment: Nome do prédio.
 
   parcel:
     subtype: full
@@ -38,6 +43,45 @@ layers:
     file: 2
     sql_view: SELECT row_number() OVER () AS gid, ciu AS ref, lote AS pnum, conjunto AS set, quadra AS blref, trim((regexp_match(end_cart, '(.*)'||quadra || ' ' || conjunto || ' ' || lote))[1]) AS nsvia, ra_nome AS ra_name, end_cart AS address, projeto, norma_ante, padrao_cor, geom FROM $(tabname)
     orig_filename: Lotes Registrados
+    standardized_fields:
+     -
+      name: ciu
+      standard: ref
+     -
+      name: lote
+      standard: pnum
+      comment: Número do lote.
+     -
+      name: conjunto
+      standard: set
+      comment: Número do conjunto.
+     -
+      name: quadra
+      standard: blref
+      comment: Número da quadra.
+     -
+      name: sde_situ_1
+      standard: nsref
+      comment: Número da quadra.
+     -
+      name: "trim((regexp_match(end_cart, '(.*)'||quadra || ' ' || conjunto || ' ' || lote))[1])"
+      standard: nsvia
+      comment: Nome do bairro.
+     -
+      name: end_cart
+      standard: address
+      comment: Endereço cartorial.
+    other_fields:
+     -
+      name: sde_situ_2
+      standard: ra_name
+      comment: Nome da Região Administrativa.
+     -
+      name: projeto
+     -
+      name: norma_ante
+     -
+      name: padrao_cor
 
   block:
     subtype: full
@@ -45,6 +89,20 @@ layers:
     file: 4
     sql_select: ['gid','sde_siturb AS ref', 'sde_situ_1 AS nsref', 'sde_situ_2 AS ra_name', 'geom']
     orig_filename: Quadras
+    standardized_fields:
+     -
+      name: sde_siturb
+      standard: ref
+      comment: Número da quadra.
+     -
+      name: sde_situ_1
+      standard: nsref
+      comment: Nome do bairro.
+    other_fields:
+     -
+      name: sde_situ_2
+      standard: ra_name
+      comment: Nome da Região Administrativa.
 
   nsvia:
     subtype: full
@@ -52,3 +110,13 @@ layers:
     file: 3
     sql_select: ['gid', 'sde_siturb AS ref', 'sde_situ_1 AS ra_name', 'geom']
     orig_filename: Setor
+    standardized_fields:
+     -
+      name: sde_siturb
+      standard: ref
+      comment: Número do bairro.
+    other_fields:
+     -
+      name: sde_situ_1
+      standard: ra_name
+      comment: Nome da Região Administrativa.

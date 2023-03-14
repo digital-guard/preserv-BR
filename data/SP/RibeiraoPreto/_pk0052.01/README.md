@@ -106,6 +106,6 @@ k058/block_6unp2.geojson"><code>6unp2</code></a>: 12%, <a href="http://git.Addre
 </tr>
 <tr><td colspan="2">
   Package files:
-  <br/>&#160;&#160;<b>file-1</b>: <a href="http://preserv.addressforall.org/download/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip"><code>6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip</code></a>
+  <br/>&#160;&#160;<b>file-1</b>: <a href="http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip"><code>6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip</code></a>
  </td></tr>
 </table>

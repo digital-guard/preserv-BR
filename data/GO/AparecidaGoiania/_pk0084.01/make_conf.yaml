@@ -49,11 +49,11 @@ layers:
      -
       name: num_lot
       standard: pnum
-    other_fields:
      -
       name: num_qdr
       standard: blref
       comment: Número da quadra.
+    other_fields:
      -
       name: num_bai
       standard: nsref
