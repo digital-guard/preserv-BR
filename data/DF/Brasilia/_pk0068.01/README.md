@@ -38,7 +38,7 @@ Nome do arquivo: `Quadras`.<br/>*Download* e integridade: [0e5c2d6d8728b11d7a89a
 * `sde_situ_2`: Nome da Região Administrativa.
 
 #### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block)<br/>4564091 bytes (4.35 <abbr title="mebibyte">MiB</abbr>)<br/>5128 polígonos com 272.54 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block)<br/>4561001 bytes (4.35 <abbr title="mebibyte">MiB</abbr>)<br/>5128 polígonos com 272.54 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
 Nome do arquivo: `edificacoes`.<br/>*Download* e integridade: [c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip](http://dl.digital-guard.org/c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip)<br/>Descrição: Edificações<br/>Formato: shp<br/>SRID: 31983
@@ -47,7 +47,7 @@ Nome do arquivo: `edificacoes`.<br/>*Download* e integridade: [c9aca8c68c827c3a7
 * `nome` (name): Nome do prédio.
 
 #### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building)<br/>242446823 bytes (231.22 <abbr title="mebibyte">MiB</abbr>)<br/>759826 polígonos com 121.94 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.26 polígonos/km²
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building)<br/>242496255 bytes (231.26 <abbr title="mebibyte">MiB</abbr>)<br/>759854 polígonos com 121.94 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.26 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
 Nome do arquivo: `Setor`.<br/>*Download* e integridade: [12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip](http://dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip)<br/>Descrição: nsvia<br/>Formato: shp<br/>SRID: 31983
@@ -59,7 +59,7 @@ Nome do arquivo: `Setor`.<br/>*Download* e integridade: [12a8253e85ad740a408c73d
 * `sde_situ_1`: Nome da Região Administrativa.
 
 #### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia)<br/>6423403 bytes (6.13 <abbr title="mebibyte">MiB</abbr>)<br/>5161 polígonos com 5389.35 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.94 polígonos/km²
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia)<br/>581990 bytes (0.56 <abbr title="mebibyte">MiB</abbr>)<br/>260 polígonos com 426.73 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `Lotes Registrados`.<br/>*Download* e integridade: [b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip](http://dl.digital-guard.org/b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip)<br/>Descrição: lotes<br/>Formato: shp<br/>SRID: 31983
@@ -86,7 +86,7 @@ Nome do arquivo: `Lotes Registrados`.<br/>*Download* e integridade: [b55567b8f4b
 * `padrao_cor`
 
 #### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel)<br/>63967676 bytes (61 <abbr title="mebibyte">MiB</abbr>)<br/>387392 polígonos com 291.06 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel)<br/>63922412 bytes (60.96 <abbr title="mebibyte">MiB</abbr>)<br/>387392 polígonos com 291.06 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²
 
 </section>
 <section>
