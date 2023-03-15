@@ -1,90 +1,117 @@
-# Tarefas
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/DF/Brasilia/_pk0068.01"><big><b>pk0068.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-DF-Brasilia">BR-DF-Brasilia</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="http://www.df.gov.br/">Governo do Distrito Federal</a><br/>
+<small>cnpj:00.394.601/0001-26</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q96572867">Q96572867</a></small><br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip" href="http://dl.digital-guard.org/0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip"><code>0b0f9b5...zip</code></a>)
+Obtido via <i>site</i> em <b>2021-03-26</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
+ Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="building" href="#-building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> </td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01">Dados publicados</a></td></tr>
+</table>
+</aside>
 
-## 1. Os enderecos de Brasilia nao seguem o tradicional [nome de logradouro] [numero de porta]. Dessa forma, "endereco de cartorio" pode ser equivalente ao numero de porta e os arquivos nao possuem "nome de logradouro".
+<section>
 
-## 2. Os enderecos estao em dois arquivos: um possui o "endereco de cartorio" e outro apenas a geometria. Se formos fazer o upload do arquivo apenas com a geometria, precisamos excluir as geometrias ja contempladas no primeiro arquivo.
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs).
 
-## 3. nsvia esta dividido em dois arquivos (com geometrias que podem coincidir): Regioes Administrativas seria equivalente aos bairros e Setor uma subdivisao das Regioes Administrativas (apenas para algumas porcoes do territorio).
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-{{#layers}}
+# Camadas de dados
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-{{#building}}
-## Edificacoes
-SRID: 31983
-1. Abrir `building.zip`.
-2. Selecionar arquivos `Edificação.shp`.
-3. Copiar arquivos selecionados para diretório alvo.
-{{/building}}
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-{{#parcel}}
-## Lotes
-SRID: 31983
-1. Abrir `parcel.zip`.
-2. Selecionar arquivos `Lotes Registrados.shp`.
-3. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `Quadras`.<br/>*Download* e integridade: [0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip](http://dl.digital-guard.org/0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip)<br/>Descrição: block<br/>Formato: shp<br/>SRID: 31983
 
-4. Abrir `parcel2.zip`.
-5. Selecionar arquivos `Lotes Implantados.shp`.
-6. Deletar geometrias repetidas.
-7. Copiar arquivos selecionados para diretório alvo (sem hnum).
+#### Dados relevantes
+* `sde_siturb` (ref): Número da quadra.
 
-### Dados relevantes
-Colunas da camada `Lotes Registrados.shp`:
-* `end_cart`: hnum.
-Outras colunas:
-* `lote`: numero do lote.
-* `ciu`: id do lote (nao e um id unico por geometria).
+* `sde_situ_1` (nsref): Nome do bairro.
 
-Colunas da camada `Lotes Implantados.shp`:
-Outras colunas:
-* `ct_ciu`: id do lote (nao e um id unico por geometria).
-{{/parcel}}
+#### Outros dados relevantes
+* `sde_situ_2`: Nome da Região Administrativa.
 
-{{#nsvia}}
-## Bairros
-SRID: 31983
-1. Abrir `nsvia.zip`.
-2. Selecionar arquivos `Regiões Administrativas.shp`.
-3. Copiar arquivos selecionados para diretório alvo.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/block)<br/>4564091 bytes (4.35 <abbr title="mebibyte">MiB</abbr>)<br/>5128 polígonos com 272.54 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-4. Abrir `nsvia2.zip`.
-5. Selecionar arquivos `Setor.shp`.
-6. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `edificacoes`.<br/>*Download* e integridade: [c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip](http://dl.digital-guard.org/c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip)<br/>Descrição: Edificações<br/>Formato: shp<br/>SRID: 31983
 
-### Dados relevantes
-Colunas da camada `Regiões Administrativas.shp`:
-* `ra_num`: gid (unico, pode utilizar);
-* `ra`: name.
+#### Dados relevantes
+* `nome` (name): Nome do prédio.
 
-Colunas da camada `Setor.shp`:
-* `sde_siturb`: name;
-* `sde_situ_1`: name (da nsvia acima).
-{{/nsvia}}
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building)<br/>242446823 bytes (231.22 <abbr title="mebibyte">MiB</abbr>)<br/>759826 polígonos com 121.94 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.26 polígonos/km²
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-{{#block}}
-## Quadras
-SRID: 31983
-1. Abrir `block.zip`.
-2. Selecionar arquivos `Quadras.shp`.
-3. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `Setor`.<br/>*Download* e integridade: [12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip](http://dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip)<br/>Descrição: nsvia<br/>Formato: shp<br/>SRID: 31983
 
-Colunas da camada `Quadras.shp`:
-* `sde_siturb`: nome da quadra, equivalente ao nome do logradouro.
-{{/block}}
+#### Dados relevantes
+* `sde_siturb` (ref): Número do bairro.
 
-{{/layers}}
+#### Outros dados relevantes
+* `sde_situ_1`: Nome da Região Administrativa.
 
-{{#license}}
-## Licenca
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/nsvia)<br/>6423403 bytes (6.13 <abbr title="mebibyte">MiB</abbr>)<br/>5161 polígonos com 5389.35 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.94 polígonos/km²
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
+
+Nome do arquivo: `Lotes Registrados`.<br/>*Download* e integridade: [b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip](http://dl.digital-guard.org/b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip)<br/>Descrição: lotes<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `ciu` (ref)
+
+* `lote` (pnum): Número do lote.
+
+* `conjunto` (set): Número do conjunto.
+
+* `quadra` (blref): Número da quadra.
+
+* `sde_situ_1` (nsref): Número da quadra.
+
+* `trim((regexp_match(end_cart, '(.*)'||quadra || ' ' || conjunto || ' ' || lote))[1])` (nsvia): Nome do bairro.
+
+* `end_cart` (address): Endereço cartorial.
+
+#### Outros dados relevantes
+* `sde_situ_2`: Nome da Região Administrativa.
+* `projeto`
+* `norma_ante`
+* `padrao_cor`
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/parcel)<br/>63967676 bytes (61 <abbr title="mebibyte">MiB</abbr>)<br/>387392 polígonos com 291.06 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+Ver detalhes em [reproducibility.sh](reproducibility.sh).
+
+</section>
+
+## Tarefas
+
+### 1. Os enderecos de Brasilia nao seguem o tradicional [nome de logradouro] [numero de porta]. Dessa forma, "endereco de cartorio" pode ser equivalente ao numero de porta e os arquivos nao possuem "nome de logradouro".
+
+### 2. Os enderecos estao em dois arquivos: um possui o "endereco de cartorio" e outro apenas a geometria. Se formos fazer o upload do arquivo apenas com a geometria, precisamos excluir as geometrias ja contempladas no primeiro arquivo.
+
+### 3. nsvia esta dividido em dois arquivos (com geometrias que podem coincidir): Regioes Administrativas seria equivalente aos bairros e Setor uma subdivisao das Regioes Administrativas (apenas para algumas porcoes do territorio).
+
+### Licenca
 Nome do zip: license.zip
 Nome do arquivo: BR-DF-Brasilia-license-2021-05-06.eml
 Tipo do arquivo: eml (email)
 {{/license}}
 
-## Outros
+### Outros
 Para outros projetos, há também dados sobre:
 * Logradouros: divididos em 8 arquivos (por tipo). Como a maioria das vias nao possui nome de logradouro, optei por nao indicar para upload. OSM e melhor.
 * Lotes ocupados: geometria redundante. Adiciona apenas a condicao (ocupado, vazio ou subutilizado).
