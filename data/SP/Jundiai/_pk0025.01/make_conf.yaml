@@ -40,11 +40,11 @@ layers:
       name: bairro
       standard: nsvia
      -
+      name: loteamento
+      standard: nsvia2
+     -
       name: complement
       standard: complement
-     -
-      name: loteamento
-      standard: loteamento
      -
       name: cep
       standard: postcode
