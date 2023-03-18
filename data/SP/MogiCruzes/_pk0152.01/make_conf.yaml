@@ -1,0 +1,18 @@
+pack_id: 152.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=4760
+
+files:
+- file: ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip
+  name: eixos.zip
+  p: 1
+
+layers:
+  via:
+        subtype: none
+        method: shp2sql
+        file: 2
+        sql_select: ['gid', 'nome AS via_name','cep','lorteamoento as nsvia_name', 'geom']
+        orig_filename: eixos
