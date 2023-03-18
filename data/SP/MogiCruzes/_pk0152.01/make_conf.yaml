@@ -11,8 +11,8 @@ files:
 
 layers:
   via:
-        subtype: none
-        method: shp2sql
-        file: 2
-        sql_select: ['gid', 'nome AS via_name','cep','lorteamoento as nsvia_name', 'geom']
-        orig_filename: eixos
+    subtype: none
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'nome AS via_name','cep','lorteamoento as nsvia_name', 'geom']
+    orig_filename: eixos
