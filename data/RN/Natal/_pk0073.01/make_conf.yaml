@@ -82,7 +82,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_view: SELECT gid, TIPO || ' ' || NOME_1 AS via, Bairro AS nsvia, CEP AS postcode geom FROM $(tabname)
+    sql_view: SELECT gid, TIPO || ' ' || NOME_1 AS via, Bairro AS nsvia, CEP AS postcode, geom FROM $(tabname)
     orig_filename: Logradouros_2019_SIRGAS2000
     standardized_fields:
      -
