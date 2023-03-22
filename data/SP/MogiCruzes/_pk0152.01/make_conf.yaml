@@ -15,5 +15,5 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome AS via_name','cep','loteamento as nsvia_name', 'geom']
+    sql_select: ['gid', 'nome AS via','cep AS postcode','loteamento as nsvia', 'geom']
     orig_filename: eixos
