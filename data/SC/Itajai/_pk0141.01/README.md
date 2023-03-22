@@ -1,17 +1,17 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/RS/Gravatai/_pk0017.01"><big><b>pk0017.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-RS-Gravatai">BR-RS-Gravatai</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SC/Itajai/_pk0141.01"><big><b>pk0141.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SC-Itajai">BR-SC-Itajai</a></small>
 </td></tr>
 <tr><td>
-Doador: <a rel="external" target="_doador" href="https://www.gravatai.rs.gov.br/">Prefeitura Municipal de Gravataí</a><br/>
-<small>cnpj:87.890.992/0001-58</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450094">Q56450094</a></small><br/>
+Doador: <a rel="external" target="_doador" href="https://itajai.sc.gov.br/">Município de Itajaí</a><br/>
+<small>cnpj:83.102.277/0001-52</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q842713">Q842713</a></small><br/>
 
-Obtido via <i>email</i> em <b>2021-06-23</b> por:<br/>
- Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
+Obtido via <i>email</i> em <b>2022-10-28</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a><br/>
  Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
-<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01">Dados publicados</a></td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Itajai/_pk0141.01">Dados publicados</a></td></tr>
 </table>
 </aside>
 
@@ -27,20 +27,19 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote_numero_predial`.<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Municipio de Itajai_SC/lotes`.<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
-* `Número` (hnum)
+* `numero` (hnum)
+
+* `nomevia` (via)
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `sistema_viario`.<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Municipio de Itajai_SC/vias`.<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
-* `TIPO || ' ' || NOME` (via)
-
-# Evidências de teste
-<img src="qgis.png" width="400"/>
+* `nome` (via)
 
 </section>
 <section>

@@ -13,7 +13,7 @@ cd /tmp/sandbox/_pk7600006801_001; 7z  x -y /var/www/dl.digital-guard.org/0e5c2d
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600006801_001; shp2pgsql -D   -s 31983 "Quadras.shp" pk7600006801401_p4_block | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006801_001/Quadras.shp','block_full','pk7600006801401_p4_block','7600006801401','0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip',array['gid', 'sde_siturb AS ref', 'sde_situ_1 AS nsref', 'sde_situ_2 AS ra_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006801_001/Quadras.shp','block_full','pk7600006801401_p4_block','7600006801401','0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip',array['gid', 'sde_siturb AS bnum', 'sde_situ_2 AS nsvia', 'sde_situ_1 AS nsvia2', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006801401_p4_block CASCADE"
 rm -f /tmp/sandbox/_pk7600006801_001/*Quadras.* || true
@@ -59,14 +59,14 @@ mkdir -p /tmp/pg_io
 wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip && sudo chmod 664 /var/www/dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006801301_p3_nsvia CASCADE"
-cd /tmp/sandbox/_pk7600006801_001; 7z  x -y /var/www/dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip "*Setor*" ; chmod -R a+rwx . > /dev/null
+cd /tmp/sandbox/_pk7600006801_001; 7z  x -y /var/www/dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip "*Administrativas*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
-cd /tmp/sandbox/_pk7600006801_001; shp2pgsql -D   -s 31983 "Setor.shp" pk7600006801301_p3_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
+cd /tmp/sandbox/_pk7600006801_001; shp2pgsql -D   -s 31983 "Administrativas.shp" pk7600006801301_p3_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006801_001/Setor.shp','nsvia_full','pk7600006801301_p3_nsvia','7600006801301','12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip',array['gid', 'sde_siturb AS ref', 'sde_situ_1 AS ra_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006801_001/Administrativas.shp','nsvia_full','pk7600006801301_p3_nsvia','7600006801301','12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip',array['gid', 'ra AS nsvia', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006801301_p3_nsvia CASCADE"
-rm -f /tmp/sandbox/_pk7600006801_001/*Setor.* || true
+rm -f /tmp/sandbox/_pk7600006801_001/*Administrativas.* || true
 mkdir -m777 -p /var/gits/_dg/preservCutGeo-BR2021/data/DF/Brasilia/_pk0068.01/nsvia
 rm -rf /var/gits/_dg/preservCutGeo-BR2021/data/DF/Brasilia/_pk0068.01/nsvia/*.geojson
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.publicating_geojsons('nsvia','BR-DF-Brasilia','/var/gits/_dg/preservCutGeo-BR2021/data/DF/Brasilia/_pk0068.01/nsvia','1',9,3);"
@@ -86,7 +86,11 @@ cd /tmp/sandbox/_pk7600006801_001; 7z  x -y /var/www/dl.digital-guard.org/b55567
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 cd /tmp/sandbox/_pk7600006801_001; shp2pgsql -D   -s 31983 "Lotes Registrados.shp" pk7600006801201_p2_parcel | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600006801201_p2_parcel AS SELECT row_number() OVER () AS gid, ciu AS ref, lote AS pnum, conjunto AS set, quadra AS blref, trim((regexp_match(end_cart, '(.*)'||quadra || ' ' || conjunto || ' ' || lote))[1]) AS nsvia, ra_nome AS ra_name, end_cart AS address, projeto, norma_ante, padrao_cor, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600006801201_p2_parcel AS SELECT gid, ciu AS ref, end_cart, ra_nome AS nsvia, \
+  ( CASE WHEN ((trim(quadra)  = '') IS FALSE) THEN trim(quadra) ELSE '?' END || ', ' || CASE WHEN ((trim(conjunto) = '') IS FALSE) THEN trim(conjunto) ELSE '-' END ) AS via, \
+  lote AS sup, \
+  geom \
+  FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/Lotes Registrados.shp','parcel_full','vw2_pk7600006801201_p2_parcel','7600006801201','b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600006801201_p2_parcel"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".

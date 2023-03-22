@@ -8,18 +8,23 @@ files:
 - file: 4c4a1565e1f7d5675ff2d546d0e6a85acd7bbaa018503601dd07e1be80dee130.zip
   name: Lotes
   p: 1
+  size: 14025525
 - file: 062c98c3fc074c76a5ff8d1bb3ad97b120d4a60d2e75c835fd6ff096f466da58.zip
   name: Eixos
   p: 2
+  size: 9640530
 - file: 512fe4c44525a211c68415da0ab06d565a6ba3653739809d46404d6653ce5064.zip
   name: Edificações
   p: 3
+  size: 24138706
 - file: 7995d41f628e31599f80b367650d363f47e75e1515be9fefabefca91189608a5.zip
   name: Bairros
   p: 4
+  size: 145376
 - file: c26c149b65a42e9de131145b8db24aed006f37c5f44c625c835df2fc359f4763.zip
   name: Números prediais
   p: 5
+  size: 4056242
 
 layers:
   geoaddress:

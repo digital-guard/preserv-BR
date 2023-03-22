@@ -30,7 +30,11 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/QUADRAS`.<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
-* `num_qdr` (ref): Numero da quadra.
+* `'Q ' || num_qdr` (name): Nome ou número da quadra.
+
+* `tp_bai ||' '|| nm_bai` (nsvia): Nome da quadra.
+
+* `num_bai` (nsref): Referencia quadra.
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/block)<br/>12332709 bytes (11.76 <abbr title="mebibyte">MiB</abbr>)<br/>11777 polígonos com 149.66 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.53 polígonos/km²
@@ -50,13 +54,9 @@ Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/BAIRROS`.<br/>*Download* e integrida
 Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOTES`.<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
-* `num_lot` (pnum)
+* `( CASE WHEN ((trim(num_qdr)  = '') IS FALSE) THEN 'Q '|| trim(num_qdr)  ELSE '?' END || ', ' || CASE WHEN ((trim(num_lot) = '') IS FALSE) THEN 'LT '|| trim(num_lot) ELSE '?' END )` (sup): Quadra concatenada com lote foram o complemento do endereço.
 
-* `num_qdr` (blref): Número da quadra.
-
-#### Outros dados relevantes
-* `num_bai`: Número do bairro.
-* `nm_bai`: Nome do bairro.
+* `tp_bai ||' '|| nm_bai` (nsvia): Nome do bairro.
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/parcel)<br/>42142868 bytes (40.19 <abbr title="mebibyte">MiB</abbr>)<br/>218516 polígonos com 163.6 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.66 polígonos/km²
@@ -65,7 +65,7 @@ Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOTES`.<br/>*Download* e integridade
 Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOGRADOUROS`.<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
-* `logradouro` (via)
+* `tp_log ||' '|| nm_log` (via)
 
 #### Dados publicados
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/AparecidaGoiania/_pk0084.01/via)<br/>3831822 bytes (3.65 <abbr title="mebibyte">MiB</abbr>)<br/>27997 segmentos com 2998.87 <abbr title="quilômetros">km</abbr><br/>densidade média: 11.37 segmentos/km²
