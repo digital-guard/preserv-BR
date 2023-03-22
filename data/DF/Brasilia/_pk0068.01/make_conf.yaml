@@ -46,7 +46,7 @@ layers:
     file: 2
     sql_view: |-
       SELECT gid, ciu AS ref, end_cart, ra_nome AS nsvia, \
-        ( CASE WHEN ((trim(quadra)  = '') IS FALSE) THEN trim(quadra) ELSE '?' END || ', ' || CASE WHEN ((trim(conjunto) = '') IS FALSE) THEN trim(conjunto) ELSE '-' END ) AS via \
+        ( CASE WHEN ((trim(quadra)  = '') IS FALSE) THEN trim(quadra) ELSE '?' END || ', ' || CASE WHEN ((trim(conjunto) = '') IS FALSE) THEN trim(conjunto) ELSE '-' END ) AS via, \
         lote AS sup, \
         geom \
         FROM $(tabname)
