@@ -16,17 +16,21 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    #sql_view: SELECT gid, ||'Q '|| num_qdr AS bnum, tp_bai ||' '|| nm_bai AS nsvia, num_bai AS ref, geom FROM $(tabname)
+    sql_view: SELECT gid, 'Q '|| num_qdr AS name, tp_bai ||' '|| nm_bai AS nsvia, num_bai AS nsref, geom FROM $(tabname)
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/QUADRAS"
     standardized_fields:
      -
-     #name: ||'Q '|| num_qdr
-      standard: bnum
-      comment: Número da quadra.
+      name: "'Q ' || num_qdr"
+      standard: name
+      comment: Nome ou número da quadra.
      -
       name: tp_bai ||' '|| nm_bai
       standard: nsvia
-      comment: Número da quadra.
+      comment: Nome da quadra.
+     -
+      name: num_bai
+      standard: nsref
+      comment: Referencia quadra.
 
   nsvia:
     subtype: full
@@ -47,16 +51,13 @@ layers:
     subtype: none
     method: shp2sql
     file: 1
-    #sql_view: SELECT gid, ||'LT '|| num_lot AS pnum, ||'Q '|| num_qdr AS bnum, tp_bai ||' '|| nm_bai AS nsvia, geom FROM $(tabname)
+    sql_view: SELECT gid, ( CASE WHEN ((trim(num_qdr)  = '') IS FALSE) THEN 'Q '|| trim(num_qdr)  ELSE '?' END || ', ' || CASE WHEN ((trim(num_lot) = '') IS FALSE) THEN 'LT '|| trim(num_lot) ELSE '?' END ) AS sup, tp_bai ||' '|| nm_bai AS nsvia, geom FROM $(tabname)
     orig_filename: "GEO-SOCIAIS ADDRESSFORALL/LOTES"
     standardized_fields:
      -
-     #name: ||'LT '|| num_lot
-      standard: pnum
-     -
-     #name: ||'Q '|| num_qdr
-      standard: bnum
-      comment: Número da quadra.
+      name: ( CASE WHEN ((trim(num_qdr)  = '') IS FALSE) THEN 'Q '|| trim(num_qdr)  ELSE '?' END || ', ' || CASE WHEN ((trim(num_lot) = '') IS FALSE) THEN 'LT '|| trim(num_lot) ELSE '?' END )
+      standard: sup
+      comment: Quadra concatenada com lote foram o complemento do endereço.
      -
       name: tp_bai ||' '|| nm_bai
       standard: nsvia
