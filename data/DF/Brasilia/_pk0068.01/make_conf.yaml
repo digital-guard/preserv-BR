@@ -44,32 +44,33 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid','ciu AS ref', 'end_cart AS address', 'lote AS pnum', 'conjunto AS cnum', 'quadra AS bnum', 'ra_nome AS nsvia', 'geom']
+    sql_view: |-
+      SELECT gid, ciu AS ref, end_cart, ra_nome AS nsvia, \
+        ( CASE WHEN ((trim(quadra)  = '') IS FALSE) THEN trim(quadra) ELSE '?' END || ', ' || CASE WHEN ((trim(conjunto) = '') IS FALSE) THEN trim(conjunto) ELSE '-' END ) AS via \
+        lote AS sup, \
+        geom \
+        FROM $(tabname)
     orig_filename: Lotes Registrados
     standardized_fields:
      -
       name: ciu
       standard: ref
      -
-      name: end_cart
-      standard: address
-      comment: Endereço cartorial.
+      name: CASE WHEN ((trim(quadra)  = '') IS FALSE) THEN trim(quadra) ELSE '?' END || ', ' || CASE WHEN ((trim(conjunto) = '') IS FALSE) THEN trim(conjunto) ELSE '-' END
+      standard: via
+      comment: quadra e conjunto concatenados.
      -
       name: lote
-      standard: pnum
-      comment: Número do lote.
-     -
-      name: conjunto
-      standard: cnum
-      comment: Número do conjunto.
-     -
-      name: quadra
-      standard: bnum
-      comment: Número da quadra.
+      standard: sup
+      comment: Complemento.
      -
       name: ra_nome
       standard: nsvia
-      comment: Nome do bairro.
+      comment: Nome da Região Administrativa.
+    other_fields:
+     -
+      name: end_cart
+      comment: Endereço cartorial.
 
   block:
     subtype: full
@@ -102,4 +103,4 @@ layers:
      -
       name: ra
       standard: nsvia
-      comment: Nome do Bairro.
+      comment: Nome do Região Administrativa.
