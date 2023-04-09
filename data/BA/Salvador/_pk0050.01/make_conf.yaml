@@ -22,6 +22,8 @@ layers:
         file: 3
         sql_view: SELECT row_number() OVER () AS gid, ST_MakePolygon(geom) AS geom FROM $(tabname)
         orig_filename: edf_edificacao_a.dxf
+        comments: foi necessário usar a função ST_MakePolygon(geom) sobre a geometia do dado para criar polignos uteis
+       
   via:
         subtype: none
         method: shp2sql
@@ -30,6 +32,7 @@ layers:
           SELECT gid, \
           ST_Boundary(geom) As geom \
           FROM $(tabname) 
+        comments: foi necessário usar a função ST_Boundary(geom) sobre a geometia do dado para criar polignos uteis
 
         orig_filename: Trecho_de_Arruamento_2021-08-20
   nsvia:
@@ -38,3 +41,8 @@ layers:
         file: 1
         sql_select: ['gid', 'subclasses AS nsvia', 'geom']
         orig_filename: Prefeituras_Bairro
+        standardized_fields:
+        -
+          name: subclasses
+          standard: nsvia
+          
