@@ -32,8 +32,7 @@ layers:
           SELECT gid, \
           ST_Boundary(geom) As geom \
           FROM $(tabname) 
-        comments: foi necessário usar a função ST_Boundary(geom) sobre a geometia do dado para criar polignos uteis
-
+        comments: foi necessário usar a função ST_Boundary(geom) sobre a geometia do dado para criar linhas, uteis para o mapa 
         orig_filename: Trecho_de_Arruamento_2021-08-20
   nsvia:
         subtype: full
