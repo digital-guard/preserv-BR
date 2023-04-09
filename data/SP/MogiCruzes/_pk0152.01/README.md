@@ -29,6 +29,13 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `eixos`.<br/>*Download* e integridade: [ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip](http://dl.digital-guard.org/ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip)<br/>Descrição: eixos.zip<br/>Tamanho do arquivo: 513477 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4760
 
+#### Dados relevantes
+* `nome` (via)
+
+* `cep` (postcode)
+
+* `loteamento` (nsvia)
+
 </section>
 <section>
 
