@@ -18,3 +18,13 @@ layers:
     file: 1
     sql_select: ['gid', 'nome AS via','cep AS postcode','loteamento as nsvia', 'geom']
     orig_filename: eixos
+    standardized_fields:
+     -
+      name: nome
+      standard: via
+     -
+      name: cep
+      standard: postcode
+     -
+      name: loteamento
+      standard: nsvia
