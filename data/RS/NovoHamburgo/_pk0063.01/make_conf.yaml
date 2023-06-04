@@ -1,0 +1,50 @@
+pack_id: 63.1
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=31982
+
+files:
+- file: 830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip
+  name: shp_edificacoes.zip
+  p: 1
+- file: 375a3906c90abe84e3dc3a6e7dbc81d985dc3779b00e4c3cebf35bcc6ff2067f.zip
+  name: shp_bairros.zip
+  p: 2
+- file: 920d3a2f5e1c031a965f94ea48b243018780712c21a02903e7d0cec4d7cea06f.zip
+  name: shp_logradouros.zip
+  p: 3
+- file: eb69ff81ddacf4fc1c1eb0a099102f365646d8bd4d227f27d930ad78c22ff9b5.zip
+  name: shp_lotes.zip
+  p: 4
+
+layers:
+
+  building:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'tx_numero AS house_number', 'geom']
+    orig_filename: edificacoes
+
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', 'chave as nsvia_name', 'geom']
+    orig_filename: bairros
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 3
+    sql_select: ['gid', 'nome AS via', 'geom']
+    orig_filename: logradouros
+
+  parcel:
+    subtype: none
+    method: shp2sql
+    file: 4
+    sql_select: ['gid', 'geom']
+    orig_filename: lotes
+
