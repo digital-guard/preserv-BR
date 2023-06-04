@@ -5,6 +5,7 @@ schemaId_template: ref027a
 codec:descr_encode: srid=31982
 
 files:
+<<<<<<< HEAD
 - file: 830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip
   name: shp_edificacoes.zip
   p: 1
@@ -33,18 +34,45 @@ layers:
     file: 2
     sql_select: ['gid', 'chave as nsvia_name', 'geom']
     orig_filename: bairros
+=======
+- file: 3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip
+  name: Todos os arquivos
+  p: 1
+  size: 9022446
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'text AS hnum', 'geom']
+    orig_filename: DADOS PELOTAS/numeracao_cadastral
+>>>>>>> f6e9a45e4e292a31c8ee9ba3b5db39a1e52d7e06
 
   via:
     subtype: full
     method: shp2sql
+<<<<<<< HEAD
     file: 3
     sql_select: ['gid', 'nome AS via', 'geom']
     orig_filename: logradouros
+=======
+    file: 1
+    sql_select: ['gid', 'nome_map AS via', 'geom']
+    orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
+>>>>>>> f6e9a45e4e292a31c8ee9ba3b5db39a1e52d7e06
 
   parcel:
     subtype: none
     method: shp2sql
+<<<<<<< HEAD
     file: 4
     sql_select: ['gid', 'geom']
     orig_filename: lotes
 
+=======
+    file: 1
+    sql_select: ['gid', 'geom']
+    orig_filename: DADOS PELOTAS/pelotas_lotes_cadastro
+>>>>>>> f6e9a45e4e292a31c8ee9ba3b5db39a1e52d7e06
