@@ -61,3 +61,4 @@ layers:
     sql_select: ['gid', 'geom']
     orig_filename: lotes
 
+test_evidence: qgis.png
