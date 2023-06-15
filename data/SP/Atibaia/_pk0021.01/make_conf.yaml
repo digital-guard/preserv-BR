@@ -9,17 +9,15 @@ files:
   name: Logradouros
   p: 1
   size: 1241211
-  
 - file: b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip
   name: Lotes
   p: 2
   size: 889309
-  
 - file: 6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip
   name: Edificações
   p: 3
   size: 11032539
-  
+
 license_evidences:
   definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
   file: 7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af.eml

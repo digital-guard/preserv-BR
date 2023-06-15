@@ -5,10 +5,10 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip
-    name: Geo-endereços
+- file: 6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip
+  name: Geo-endereços
+  p: 1
+  size: 13201744
 
 layers:
 

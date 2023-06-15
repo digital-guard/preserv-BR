@@ -5,23 +5,22 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: e17bb963a4bf4f48743c5a60ac6ab91a88b6aff8b3ef7045a34bde155dbef1b9.zip
-    name: Geoendereços
-  -
-    p:    2
-    file: 497e972dd7415c9465e32e95d87d88d927327d5469d3c4f5a2aac306b6966404.zip
-    name: Logradouros
-  -
-    p:    3
-    file: 54e8c962d93c5075b58656b0d935889e21ea340f97c0603be1ef5f1ee07d6805.zip
-    name: Bairros
-  -
-    p:    4
-    file: 6cf7e47ce736468fb740f4f6f884464e81f8ff3a9682f92c38d041825ebb4a39.zip
-    name: Quadras
-
+- file: e17bb963a4bf4f48743c5a60ac6ab91a88b6aff8b3ef7045a34bde155dbef1b9.zip
+  name: Geoendereços
+  p: 1
+  size: 1809756
+- file: 497e972dd7415c9465e32e95d87d88d927327d5469d3c4f5a2aac306b6966404.zip
+  name: Logradouros
+  p: 2
+  size: 91050
+- file: 54e8c962d93c5075b58656b0d935889e21ea340f97c0603be1ef5f1ee07d6805.zip
+  name: Bairros
+  p: 3
+  size: 34050
+- file: 6cf7e47ce736468fb740f4f6f884464e81f8ff3a9682f92c38d041825ebb4a39.zip
+  name: Quadras
+  p: 4
+  size: 298828
 
 layers:
 

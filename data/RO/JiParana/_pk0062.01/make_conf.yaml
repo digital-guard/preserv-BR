@@ -5,14 +5,14 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=32720
 
 files:
-  -
-    p:    1
-    file: 910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip
-    name: Logradouros
-  -
-    p:    2
-    file: 67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip
-    name: Lotes
+- file: 910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip
+  name: Logradouros
+  p: 1
+  size: 363191
+- file: 67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip
+  name: Lotes
+  p: 2
+  size: 4634935
 
 layers:
 

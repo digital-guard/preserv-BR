@@ -5,31 +5,27 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31984
 
 files:
-  -
-    p:    1
-    file: 8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip
-    name: Edificações
-    
-  -
-    p:    2
-    file: d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip
-    name: Lotes
-    
-  -
-    p:    3
-    file: 86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip
-    name: Logradouros
-    
-  -
-    p:    4
-    file: 82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip
-    name: Quadras
-    
-  -
-    p:    5
-    file: 4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip
-    name: Bairros
-    
+- file: 8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip
+  name: Edificações
+  p: 1
+  size: 129751437
+- file: d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip
+  name: Lotes
+  p: 2
+  size: 57886654
+- file: 86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip
+  name: Logradouros
+  p: 3
+  size: 2292206
+- file: 82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip
+  name: Quadras
+  p: 4
+  size: 8398313
+- file: 4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip
+  name: Bairros
+  p: 5
+  size: 342881
+
 license_evidences:
   definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
   file: 87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml

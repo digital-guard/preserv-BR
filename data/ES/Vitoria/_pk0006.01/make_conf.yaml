@@ -8,19 +8,20 @@ files:
 - file: 307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
   name: Bairros
   p: 1
-
+  size: 233211
 - file: 58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
   name: Edificações
   p: 2
-
+  size: 9782721
 - file: 252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
   name: Logradouros
   p: 3
-
+  size: 998723
 - file: 3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
   name: Lotes
   p: 4
-  
+  size: 8069890
+
 license_evidences:
   definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
   file: ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml
