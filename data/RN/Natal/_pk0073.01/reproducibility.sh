@@ -111,7 +111,7 @@ cd /tmp/sandbox/_pk7600007301_001; 7z  x -y /var/www/dl.digital-guard.org/393909
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31985"
 cd /tmp/sandbox/_pk7600007301_001; shp2pgsql -D   -s 31985 "Logradouros_2019_SIRGAS2000.shp" pk7600007301501_p5_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw5_pk7600007301501_p5_via AS SELECT gid, TIPO || ' ' || NOME_1 AS via, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw5_pk7600007301501_p5_via AS SELECT gid, TIPO || ' ' || NOME_1 AS via, Bairro AS nsvia, CEP AS postcode, geom FROM $(tabname)"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/Logradouros_2019_SIRGAS2000.shp','via_full','vw5_pk7600007301501_p5_via','7600007301501','3939095828b4c0ec81efbcfca8f718d33e503dd8689e06d624c7957ba7fbb918.zip',array[]::text[],5,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw5_pk7600007301501_p5_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
