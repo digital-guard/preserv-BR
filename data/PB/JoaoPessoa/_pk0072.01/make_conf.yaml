@@ -39,7 +39,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME_LOGR as via', 'geom']
+    #sql_select: ['gid', 'NOME_LOGR as via', 'geom']
+    sql_view: SELECT gid, NOME_LOGR as via, geom FROM $(tabname) WHERE gid NOT IN (21751)
     orig_filename: Logradouro_gerais
     standardized_fields:
      -
