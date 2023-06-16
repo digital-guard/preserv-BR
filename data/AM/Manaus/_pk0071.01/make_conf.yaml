@@ -22,7 +22,8 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom']
+    #sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom']
+    sql_view: SELECT gid, ENDEREÇO as via, NUMERACAO as hnum, geom FROM $(tabname) WHERE gid NOT IN (15703, 15767, 15780, 15879, 15937, 16211, 16395, 18290, 18420, 18449, 18450, 18704, 18874, 18931, 18932, 19198, 19199, 19203)
     orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
     standardized_fields:
