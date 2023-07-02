@@ -28,13 +28,13 @@ layers:
           SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
-# Join com SRID diferente não é suportado pelo programa
-  parcel:
-        subtype: full
-        method: geojson2sql
-        file: 2
-        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
-        sql_select: [['id AS gid','logradouro AS via','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
+# Fazer apenas ingestão de lotes urbanos, o sistema não está preparado para esse tipo de ingestão 
+#  parcel:
+#        subtype: full
+#        method: geojson2sql
+#        file: 2
+#        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
+#        sql_select: [['id AS gid','logradouro AS via','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
 
   parcel:
         subtype: full
