@@ -39,7 +39,8 @@ layers:
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb
-        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom']
+        #sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom']
+        sql_view: SELECT OBJECTID AS gid, Nome_logra AS via, Num_imovel AS hnum, geom FROM $(tabname) WHERE OBJECTID NOT IN (103847)
         orig_tabname: Endereco
         buffer_type: 2
 
