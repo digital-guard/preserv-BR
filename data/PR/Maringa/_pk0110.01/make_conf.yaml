@@ -19,5 +19,14 @@ layers:
         codec: XLSX
         sql_view: |-
             SELECT row_number() OVER () AS gid, "Tipo Logradouro" || ' ' || "Logradouro" AS via,   \
-            ST_SetSRID(ST_MakePoint(round("Longitude"::float,8),round("Latitude"::float,8)),4326) as geom \
+            ST_SetSRID(ST_MakePoint(round("Longitude"::float,8),round("Latitude"::float,8)),4326) as geom, \
+            "Número Predial" as house_number
             FROM $(tabname) where "Longitude"::float <= 90 and "Latitude"::float <= 90
+        standardized_fields:
+         -
+          name: Tipo Logradouro || ' ' || Logradouro
+          standard: via
+         -
+          name: Número Predial
+          standard: house_number
+
