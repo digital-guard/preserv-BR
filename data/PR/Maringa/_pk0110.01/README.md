@@ -1,23 +1,51 @@
-# Geral
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/PR/Maringa/_pk0110.01"><big><b>pk0110.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-PR-Maringa">BR-PR-Maringa</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="NA">Prefeitura do Município de Maringá</a><br/>
+<small>cnpj:76.282.656/0001-06</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q208669">Q208669</a></small><br/>
 
-Recebemos o arquivo por e-mail em 2022-03-21. É uma tabela, com coordenadas para construção dos pontos + nome do logradouro e número de porta.
+Obtido via <i>email</i> em <b>2022-05-31</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a><br/>
+ Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="geoaddress" href="#-geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a> </td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Maringa/_pk0110.01">Dados publicados</a></td></tr>
+</table>
+</aside>
 
+<section>
 
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs).
 
-## geoaddress
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-Arquivo: Num_Predial_14_03_2022.xlsx compactado em Num_Predial_14_03_2022.zip
+# Camadas de dados
 
-sha256sum: 8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-Construir a geometria dos pontos a partir das coordenadas
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-SRID: 4326
+Nome do arquivo: `Num_Predial_14_03_2022`.<br/>*Download* e integridade: [8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip](http://dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip)<br/>Descrição: Num_Predial_14_03_2022.xlsx<br/>Tamanho do arquivo: 9843403 bytes (9.39 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 4326
 
-'Latitude': latitude
+#### Dados relevantes
+* `Tipo Logradouro || ' ' || Logradouro` (via)
 
-'Longitude': longitude
+* `Número Predial` (house_number)
 
-'Tipo Logradouro' + 'Logradouro': via
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Maringa/_pk0110.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Maringa/_pk0110.01/geoaddress)<br/>5974936 bytes (5.7 <abbr title="mebibyte">MiB</abbr>)<br/>111103 pontos<br/>densidade média de 1076.42 pontos/km²
 
-'Número Predial': hnum
+#### Visualização
+[BR-PR-Maringa_pk0110.01/geoaddress](https://viz.addressforall.org/BR-PR-Maringa_pk0110.01/geoaddress)
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+Ver detalhes em [reproducibility.sh](reproducibility.sh).
+
+</section>
+
