@@ -35,6 +35,16 @@ layers:
       FROM $(tabname)
     orig_filename: ENDERECO
     buffer_type: 2
+    standardized_fields:
+     - 
+      name: expressão complexa, consultar o make_conf.yaml
+      standard: hnum
+    other_fields: 
+     - 
+      name: LETRA_IMOVEL
+      standard: is_complemento_provavel
+
+
 
   via:
     subtype: full
@@ -43,5 +53,8 @@ layers:
     file: 2
     sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via, geom FROM $(tabname)
     orig_filename: LOGRADOUROLine
-    
-test_evidence: qgis.png
+
+    standardized_fields:
+     - 
+      name: TIPO_LOGRA || ' ' || NOME_LOGRA
+      standard: via
