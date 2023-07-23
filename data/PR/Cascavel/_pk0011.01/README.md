@@ -67,9 +67,7 @@ Nome do arquivo: `Logradouros`.<br/>*Download* e integridade: [f4fe1f604f927b1d0
 # Tarefas
 * Completar nome de logradouro nos lotes.  Os lotes possuem numeração predial e o nome do logradouro sem o tipo de via (R, AV, ROD etc).  Por exemplo, &quot;Pernambuco&quot; ao invés de &quot;Rua Pernambuco&quot;.  Adicionar o tipo de via do shapefile de eixos (ver Eixos, coluna tipolograd) nos lotes.
 
-* Gerar ponto de endereço na testada do lote.  Procedimento usando PostGIS com script desenvolvido pelo A4A.  Cada ponto terá os dados:
-  Nome do logradouro 
-  Número predial.
+* Gerar ponto de endereço na testada do lote.  Procedimento usando PostGIS com script desenvolvido pelo A4A.  Cada ponto terá os dados de Nome do logradouro e Número predial.
 
 </section>
 <section>

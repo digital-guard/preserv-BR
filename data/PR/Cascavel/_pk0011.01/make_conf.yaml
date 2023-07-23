@@ -66,6 +66,4 @@ to-do:
   - >
     Gerar ponto de endereço na testada do lote. 
     Procedimento usando PostGIS com script desenvolvido pelo A4A. 
-    Cada ponto terá os dados:
-      Nome do logradouro 
-      Número predial.
+    Cada ponto terá os dados de Nome do logradouro e Número predial.
