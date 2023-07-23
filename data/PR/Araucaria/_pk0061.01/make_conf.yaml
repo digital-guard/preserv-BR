@@ -17,6 +17,10 @@ layers:
     file: 1
     sql_select: ['gid', 'endereço AS via', 'geom']
     orig_filename: Sistema Viario
+    standardized_fields: 
+     -
+      name: endereço 
+      standard: via
 
   nsvia:
     subtype: full
@@ -24,3 +28,8 @@ layers:
     file: 1
     sql_select: [['gid', 'nome AS nsvia', 'geom'],['gid', 'nomes AS nsvia', 'geom']]
     orig_filename: ["Bairros","Localidades Rurais"]
+    standardized_fields: 
+     -
+      name: nome
+      standard: nsvia
+test_evidence: qgis.png
