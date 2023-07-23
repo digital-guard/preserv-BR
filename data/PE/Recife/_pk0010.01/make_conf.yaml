@@ -18,6 +18,18 @@ layers:
         sql_select: ['gid', 'ENDNUMERO AS hnum','QTDPAVIMEN','NMEDIFICAC', 'geom']
         orig_filename: Lotes
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: ENDNUMERO
+          standard: hnum
+        other_fields:
+         -
+          name: QTDPAVIMEN
+          comment: quantidade de pavimentos.
+         -
+          name: NMEDIFICAC
+          comment: nome da edificação em caixa alta (ex. EDF CAMACARI).
+
   via:
         subtype: full
         method: shp2sql
@@ -25,6 +37,11 @@ layers:
         sql_select: ['gid', 'NLGPAVOFIC AS via', 'geom']
         orig_filename: TrechoLogradouros
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: NLGPAVOFIC
+          standard: via
+
   nsvia:
         subtype: full
         method: shp2sql
@@ -32,3 +49,14 @@ layers:
         sql_select: ['gid', 'EBAIRRNO_1 AS nsvia', 'geom']
         orig_filename: Bairros
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: EBAIRRNO_1
+          standard: nsvia
+other_files:
+  -
+    file: ProjetoRecife_SHP.zip
+    comment: Meio-fio, em shapefile, Rede Referência, em shapefile, Quadra viária, em shapefile. Não são quadras formadas pela junção dos lotes, mas o contorno formado pelos meios-fios ao redor das quadras. Incluindo as calçadas
+  -
+    file: Projeto_Recife_CAD.zip
+    comment: Mapa da cidade, em arquivo CAD/DWG e Topografia, em em arquivo CAD/DXF

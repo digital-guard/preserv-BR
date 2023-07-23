@@ -1,67 +1,77 @@
-# Tarefas
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/PE/Recife/_pk0010.01"><big><b>pk0010.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-PE-Recife">BR-PE-Recife</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="http://www2.recife.pe.gov.br">Prefeitura Municipal de Recife</a><br/>
+<small>cnpj:10.565.000/0001-92</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q53930910">Q53930910</a></small><br/>
 
-## 1. Atribuir nome de logradouro nos lotes
-Os lotes possuem somente numeração predial.
+Obtido via <i>site</i> em <b>2020-05-14</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
+ Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01">Dados publicados</a></td></tr>
+</table>
+</aside>
 
-Atribuir nome de logradouro dos eixos próximos.
+<section>
 
-## 2. Gerar ponto de endereço na testada do lote
-Procedimento usando PostGIS com script desenvolvido pelo A4A.
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs).
 
-Cada ponto terá os dados:
-* Nome do logradouro
-* Número predial
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+# Camadas de dados
 
-## Lotes
-SRID: 31985
-Codificação: ISO-8859-1
-1. Abrir `ProjetoRecife_SHP.zip`.
-2. Selecionar todos os arquivos `Lotes.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-### Dados relevantes
-Colunas da camada `Lotes`:
-* `ENDNUMERO` (int): número predial. Lotes sem número são representados por "0".
-* `QTDPAVIMEN` (int): quantidade de pavimentos.
-* `NMEDIFICAC` (string): nome da edificação em caixa alta (ex.: "EDF CAMACARI").
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-## Eixos
-SRID: 31985
-Codificação: ISO-8859-1
-1. Abrir `ProjetoRecife_SHP.zip`.
-2. Selecionar todos os arquivos `TrechoLogradouros.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `Bairros`.<br/>*Download* e integridade: [04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip](http://dl.digital-guard.org/04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 27828321 bytes (26.54 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31985
 
-### Dados relevantes
-Colunas da camada `TrechoLogradouros`:
-* `NLGPAVOFIC` (string): tipo e nome de logradouro em caixa alta e baixa e por extenso. Alguns casos têm os títulos abrevidados (ex.: "Dr", "Prof" etc).
+#### Dados relevantes
+* `EBAIRRNO_1` (nsvia)
 
-## Bairros
-SRID: 31985
-Codificação: ISO-8859-1
-1. Abrir `ProjetoRecife_SHP.zip`.
-2. Selecionar todos os arquivos `Bairros.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/nsvia)<br/>602245 bytes (0.57 <abbr title="mebibyte">MiB</abbr>)<br/>93 polígonos com 221.11 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.96 polígonos/km²
 
-### Dados relevantes
-Colunas da camada `Bairros`:
-* `EBAIRRNO_1` (string): nome do bairro em caixa alta e baixa e por extenso.
+#### Visualização
+[BR-PE-Recife_pk0010.01/nsvia](https://viz.addressforall.org/BR-PE-Recife_pk0010.01/nsvia)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-## Outros
-Em `ProjetoRecife_SHP.zip`:
-* Meio-fio, em shapefile;
-* Rede Referência, em shapefile;
-* Quadra viária, em shapefile. Não são quadras formadas pela junção dos lotes, mas o contorno formado pelos meios-fios ao redor das quadras, incluindo as calçadas.
+Nome do arquivo: `Lotes`.<br/>*Download* e integridade: [04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip](http://dl.digital-guard.org/04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 27828321 bytes (26.54 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31985
 
-Em `Projeto_Recife_CAD.zip`:
-* Mapa da cidade, em arquivo CAD/DWG;
-* Topografia, em em arquivo CAD/DXF.
+#### Dados relevantes
+* `ENDNUMERO` (hnum)
 
-(!!! Havendo outros projetos, esta seção será detalhada !!!)
+#### Outros dados relevantes
+* `QTDPAVIMEN`: quantidade de pavimentos.
+* `NMEDIFICAC`: nome da edificação em caixa alta (ex. EDF CAMACARI).
 
-# Evidências de teste
-Teste no QGIS:
-![](qgis.png)
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/parcel)<br/>25507652 bytes (24.33 <abbr title="mebibyte">MiB</abbr>)<br/>97577 polígonos com 56.48 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.51 polígonos/km²
+
+#### Visualização
+[BR-PE-Recife_pk0010.01/parcel](https://viz.addressforall.org/BR-PE-Recife_pk0010.01/parcel)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
+
+Nome do arquivo: `TrechoLogradouros`.<br/>*Download* e integridade: [04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip](http://dl.digital-guard.org/04fffd56aef1c5a53cb35e5864b940b0b103e6e4752adcff7d4f30a2cb99ddb6.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 27828321 bytes (26.54 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31985
+
+#### Dados relevantes
+* `NLGPAVOFIC` (via)
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PE/Recife/_pk0010.01/via)<br/>4787168 bytes (4.57 <abbr title="mebibyte">MiB</abbr>)<br/>9872 segmentos com 2525.25 <abbr title="quilômetros">km</abbr><br/>densidade média: 14.4 segmentos/km²
+
+#### Visualização
+[BR-PE-Recife_pk0010.01/via](https://viz.addressforall.org/BR-PE-Recife_pk0010.01/via)
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+Ver detalhes em [reproducibility.sh](reproducibility.sh).
+
+</section>
+
