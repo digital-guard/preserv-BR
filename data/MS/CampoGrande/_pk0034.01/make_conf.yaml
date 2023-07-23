@@ -17,6 +17,22 @@ layers:
         file: 1
         sql_select: ['gid', 'RUAIMO AS via', 'NRPORTA AS hnum', 'COMPLEMENT AS house_info','QUADRA','LOTE', 'geom']
         orig_filename: Open Street/IMOVEL_2020_Logradouro
+        standardized_fields:
+         -
+          name: RUAIMO
+          standard: via
+         -
+          name: NRPORTA
+          standard: hnum
+         -
+          name: COMPLEMENT
+          standard: house_info
+        other_fields:
+         -
+          name: QUADRA
+         - 
+          name: LOTE
+
 
   nsvia:
         subtype: full
@@ -24,4 +40,12 @@ layers:
         file: 1
         sql_select: ['gid', 'NOME', 'BAIRRO AS nsvia', 'geom']
         orig_filename: Open Street/PARCELAMENTOS
+        standardized_fields:
+         -
+          name: BAIRRO
+          standard: nsvia
         # Loteamentos são contornos das áreas loteadas e que compõem os bairros.
+to-do:
+  - Os lotes possuem numeração predial e o nome do logradouro sem o tipo de via. Por exemplo, "Treze de Maio" ao invés de "Rua Treze de Maio".
+  - Adicionar o tipo de via dos eixos do OpenStreetMap nos lotes. Se isso não for viável, entraremos em contato com a prefeitura para solicitar outros materiais.
+   
