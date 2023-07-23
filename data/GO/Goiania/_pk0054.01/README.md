@@ -1,96 +1,82 @@
-# Sobre
-## Sistema de endereçamento
-Goiânia possui um sistema que usa logradouro, quadra e lote. Exemplo: Avenida 10, Quadra 10, Lote 18.
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/GO/Goiania/_pk0054.01"><big><b>pk0054.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-GO-Goiania">BR-GO-Goiania</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="https://www.goiania.go.gov.br/">Prefeitura de Goiânia</a><br/>
+<small>cnpj:14.185.071/0001-10</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q53930914">Q53930914</a></small><br/>
 
-A Prefeitura não entregou nenhuma planilha DE-PARA.
+Obtido via <i>site</i> em <b>2020-12-01</b> por:<br/>
+ Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a><br/>
+ Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td><a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01">Dados publicados</a></td></tr>
+</table>
+</aside>
 
-# Tarefas
-## 1. Atribuir número de quadra nos lotes contidos
-Lotes somente possuem número de lote. Precisa atribuir o número de quadra.
+<section>
 
-Ver [Extração](#Extração) para dados.
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://git.digital-guard.org/preserv/tree/main/docs).
 
-## 2. Atribuir nome de logradouro nos lotes
-Atribuir o nome do eixo de logradouro mais próximo aos lotes.
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-Ver [Extração](#Extração) para dados.
+# Camadas de dados
 
-## 3. Gerar ponto de endereço na testada do lote
-Procedimento usando PostGIS com script desenvolvido pelo A4A.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-Cada ponto terá os dados:
-* Nome do logradouro
-* Número de lote
-* Número de quadra
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+Nome do arquivo: `QDR`.<br/>*Download* e integridade: [1fd83fa52b1a8b9179f8e38703b1a33a30256f68994794404acde1ad786dac7e.zip](http://dl.digital-guard.org/1fd83fa52b1a8b9179f8e38703b1a33a30256f68994794404acde1ad786dac7e.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 8757528 bytes (8.35 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-## Lotes
-SRID: 31982
-1. Abrir `lot.zip`.
-2. Selecionar todos os arquivos shapefile.
-3. Copiar arquivos selecionados para diretório alvo.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/block)<br/>15136347 bytes (14.44 <abbr title="mebibyte">MiB</abbr>)<br/>24543 polígonos com 313.75 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.58 polígonos/km²
 
-### Dados relevantes
-Colunas da camada `LOT`:
-* `id` (string): identificador, no caso de haver planilha DE-PARA.
-* `nm_lot` (string): número de lote.
+#### Visualização
+[BR-GO-Goiania_pk0054.01/block](https://viz.addressforall.org/BR-GO-Goiania_pk0054.01/block)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-N.B.1: a coluna `id_seg` supostamente seria o ID do segmento do logradouro, mas está com valor NULL ou 0 em toda a cidade.
+Nome do arquivo: `BAI`.<br/>*Download* e integridade: [981d55ac26d0131ff4040aeca1444ad2310e20b89ceeac70c9d4ca12caf5151b.zip](http://dl.digital-guard.org/981d55ac26d0131ff4040aeca1444ad2310e20b89ceeac70c9d4ca12caf5151b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 1260874 bytes (1.2 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-N.B.2: Alguns lotes são originados de englobamento (fusão) de lotes. Estes terão como numeração "1;2" (fusão dos lotes 1 e 2) ou "1-3" (fusão dos lotes 1, 2 e 3).
+#### Dados relevantes
+* `nm` (nsvia)
 
-## Quadra
-SRID: 31982
-1. Abrir `qdr.zip`.
-2. Selecionar todos os arquivos shapefile.
-3. Copiar arquivos selecionados para diretório alvo.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/nsvia)<br/>2591981 bytes (2.47 <abbr title="mebibyte">MiB</abbr>)<br/>1154 polígonos com 419.35 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.56 polígonos/km²
 
-### Dados relevantes
-Colunas da camada `QDR`:
-* `nm_qdr` (string): número de lote.
+#### Visualização
+[BR-GO-Goiania_pk0054.01/nsvia](https://viz.addressforall.org/BR-GO-Goiania_pk0054.01/nsvia)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-## Bairros
-SRID: 31982
-1. Abrir `bai.zip`.
-2. Selecionar todos os arquivos shapefile.
-3. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `LOT`.<br/>*Download* e integridade: [db2d3b64a2494ff53212d276645986490890025d2b5d1fc5a1b90af7e7bbdf39.zip](http://dl.digital-guard.org/db2d3b64a2494ff53212d276645986490890025d2b5d1fc5a1b90af7e7bbdf39.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 53017065 bytes (50.56 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-### Dados relevantes
-Colunas da camada `BAI`:
-* `tp_bai` (string): tipo de bairro abreviado (Prq, Bro, Jd, etc).
-* `nm_bai` (string): nome de bairro.
-* `nm` (string): tipo de bairro abreviado e nome de bairro.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/parcel)<br/>73501329 bytes (70.1 <abbr title="mebibyte">MiB</abbr>)<br/>388832 polígonos com 312.07 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.64 polígonos/km²
 
-## Eixos
-SRID: 31982
-1. Abrir `seg.zip`.
-2. Selecionar todos os arquivos shapefile.
-3. Copiar arquivos selecionados para diretório alvo.
+#### Visualização
+[BR-GO-Goiania_pk0054.01/parcel](https://viz.addressforall.org/BR-GO-Goiania_pk0054.01/parcel)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-### Dados relevantes
-Colunas da camada `logradouros`:
-* `tp_log` (string): tipo de logradouro caixa alta e abreviado (R, AV, PÇ, etc).
-* `nm_log` (string): nome de logradouro sem tipo.
+Nome do arquivo: `SEG`.<br/>*Download* e integridade: [926566fc01aa45a22ede663e66e371ce9e70e730e7f4e28b10b3bdf19d67fd38.zip](http://dl.digital-guard.org/926566fc01aa45a22ede663e66e371ce9e70e730e7f4e28b10b3bdf19d67fd38.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 6634769 bytes (6.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-### Expressões
-Para contruir o nome do logradouro, usar:
+#### Dados relevantes
+* `tp_log || ' ' || nm_log` (via)
 
-`tp_log  +  ' '  + nm_log`
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/GO/Goiania/_pk0054.01/via)<br/>7980622 bytes (7.61 <abbr title="mebibyte">MiB</abbr>)<br/>65436 segmentos com 6554.87 <abbr title="quilômetros">km</abbr><br/>densidade média: 12.71 segmentos/km²
 
-## Outros
-Para outros projetos, há também dados sobre:
-* Divisas de municípios do entorno: em `mun.zip`;
-* Meios-fios: em `mfi.zip`;
-* Hidrografia: em `hdi.zip`;
-* Pontos de interesse: em `pti.zip`;
-* Pontos de praças: em `prc.zip`;
-* Grandes equipamentos: em `gre.zip`;
-* Pontos de estabelecimentos de educação: em `edm.zip`.
-
-(!!! Havendo outros projetos, esta seção será detalhada !!!)
+#### Visualização
+[BR-GO-Goiania_pk0054.01/via](https://viz.addressforall.org/BR-GO-Goiania_pk0054.01/via)
 
 # Evidências de teste
-Teste no QGIS:
-![](qgis.png)
+<img src="qgis.png" width="400"/>
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+Ver detalhes em [reproducibility.sh](reproducibility.sh).
+
+</section>
+
