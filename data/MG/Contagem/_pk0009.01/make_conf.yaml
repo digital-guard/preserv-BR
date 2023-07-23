@@ -24,6 +24,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Bairros
         codec: GDB;srid=3857
+        standardized_fields:
+         -
+           name: Teste2_P_1
+           standard: nsvia
 
   via:
         method: gdb2sql
@@ -33,6 +37,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
         buffer_type: 2
+        standardized_fields:
+         -
+           name: TIPO_LOGRA || ' ' || NOME_LOGRA
+           standard: via
 
   geoaddress:
         method: gdb2sql
@@ -43,6 +51,13 @@ layers:
         sql_view: SELECT OBJECTID AS gid, Nome_logra AS via, Num_imovel AS hnum, geom FROM $(tabname) WHERE OBJECTID NOT IN (103847)
         orig_tabname: Endereco
         buffer_type: 2
+        standardized_fields:
+         -
+           name: Nome_logra
+           standard: via
+         -
+           name: Num_imovel
+           standard: hnum
 
   parcel:
         method: gdb2sql
@@ -52,6 +67,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Lotes
         buffer_type: 2
+        standardized_fields:
+         -
+           name: BAIRRO
+           standard: nsvia
 
   block:
         method: gdb2sql
@@ -60,6 +79,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Quadras
         sql_select:  ['OBJECTID AS gid', 'QUADRA AS ref', 'geom']
+        standardized_fields:
+         -
+           name: QUADRA
+           standard: ref
 
 comments: Tambem possui pracas.
 
