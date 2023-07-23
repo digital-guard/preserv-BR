@@ -66,6 +66,9 @@ Nome do arquivo: `RUAS`.<br/>*Download* e integridade: [27c0c467222a668837f62e9f
 #### Visualização
 [BR-PR-Pinhais_pk0014.01/via](https://viz.addressforall.org/BR-PR-Pinhais_pk0014.01/via)
 
+# Evidências de teste
+<img src="qgis.png" width="400"/>
+
 </section>
 <section>
 

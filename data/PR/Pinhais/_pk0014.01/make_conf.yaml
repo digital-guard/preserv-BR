@@ -61,3 +61,4 @@ layers:
      -
       name: BAIRRO
       standard: nsvia
+test_evidence: qgis.png
