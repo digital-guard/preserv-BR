@@ -40,7 +40,9 @@ cd /tmp/sandbox/_pk7600000901_001; 7z  x -y /var/www/dl.digital-guard.org/058a60
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31983"
 sudo docker run --rm --network host -v /tmp/sandbox:/tmp osgeo/gdal ogr2ogr -lco GEOMETRY_NAME=geom -overwrite -f "PostgreSQL" PG:" dbname='ingest1' host='localhost' port='5432' user='postgres' " "/tmp/OpenStreetMap.gdb" Endereco -nln pk7600000901101_p1_geoaddress -a_srs EPSG:31983  
 dd if=/dev/random of='/tmp/sandbox/OpenStreetMap.gdb/random_data_file' bs=1M count=1
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('gdb2sql','/tmp/sandbox/_pk7600000901_001/OpenStreetMap.gdb/timestamps','geoaddress_full','pk7600000901101_p1_geoaddress','7600000901101','058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar',array['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom'],1,2)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600000901101_p1_geoaddress AS SELECT OBJECTID AS gid, Nome_logra AS via, Num_imovel AS hnum, geom FROM $(tabname) WHERE OBJECTID NOT IN (103847)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('gdb2sql','/tmp/sandbox/OpenStreetMap.gdb/random_data_file','geoaddress_full','vw1_pk7600000901101_p1_geoaddress','7600000901101','058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar',array[]::text[],1,2)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600000901101_p1_geoaddress"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000901101_p1_geoaddress CASCADE"
 rm -f /tmp/sandbox/_pk7600000901_001/*OpenStreetMap.gdb.* || true

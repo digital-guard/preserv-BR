@@ -87,7 +87,9 @@ cd /tmp/sandbox/_pk7600007201_001; 7z  x -y /var/www/dl.digital-guard.org/393dc2
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31985"
 cd /tmp/sandbox/_pk7600007201_001; shp2pgsql -D   -s 31985 "Logradouro_gerais.shp" pk7600007201201_p2_via | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600007201_001/Logradouro_gerais.shp','via_full','pk7600007201201_p2_via','7600007201201','393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip',array['gid', 'NOME_LOGR as via', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600007201201_p2_via AS SELECT gid, NOME_LOGR as via, geom FROM $(tabname) WHERE gid NOT IN (21751)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/Logradouro_gerais.shp','via_full','vw2_pk7600007201201_p2_via','7600007201201','393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600007201201_p2_via"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007201201_p2_via CASCADE"
 rm -f /tmp/sandbox/_pk7600007201_001/*Logradouro_gerais.* || true

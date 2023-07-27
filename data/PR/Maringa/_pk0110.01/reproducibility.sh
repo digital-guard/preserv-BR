@@ -20,7 +20,8 @@ xlsx2csv -i  "/tmp/sandbox/_pk7600011001_001/Num_Predial_14_03_2022.xlsx" "/tmp/
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.fdw_generate_direct_csv( '/tmp/sandbox/_pk7600011001_001/Num_Predial_14_03_2022.csv', 'pk7600011001101_p1_geoaddress' )"
 
 psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600011001101_p1_geoaddress AS SELECT row_number() OVER () AS gid, \"Tipo Logradouro\" || ' ' || \"Logradouro\" AS via,   \
-ST_SetSRID(ST_MakePoint(round(\"Longitude\"::float,8),round(\"Latitude\"::float,8)),4326) as geom \
+ST_SetSRID(ST_MakePoint(round(\"Longitude\"::float,8),round(\"Latitude\"::float,8)),4326) as geom, \
+\"Número Predial\" as house_number
 FROM $(tabname) where \"Longitude\"::float <= 90 and \"Latitude\"::float <= 90"
 psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('csv2sql','/tmp/sandbox/Num_Predial_14_03_2022.xlsx','geoaddress_full','vw1_pk7600011001101_p1_geoaddress','7600011001101','8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip',array[]::text[],1,1)"
 psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600011001101_p1_geoaddress"
