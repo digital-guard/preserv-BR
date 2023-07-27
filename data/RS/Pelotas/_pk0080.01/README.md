@@ -5,14 +5,14 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.pelotas.rs.gov.br/">Prefeitura Municipal de Pelotas</a>
 <br/>&nbsp; <small>CNPJ 87.455.531/0001-57</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q109188">Q109188</a></small><br/>
-<br/>
+
 Obtido via <i>email</i> em <b>2021-11-15</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/crebollobr">crebollobr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="geoaddress" href="#-geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a> </td></tr>
 <tr><td>Dados publicados em <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
-<tr><td>Visualização: <a title="geoaddress" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a><a title="parcel" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a><a title="via" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a></td></tr>
+<tr><td>Visualização: <a title="geoaddress" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a> <a title="parcel" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
 </table>
 </aside>
 

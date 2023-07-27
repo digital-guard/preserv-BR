@@ -5,14 +5,14 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.paranacidade.org.br/">Serviço Social Autônomo Paranacidade</a>
 <br/>&nbsp; <small>CNPJ 01.450.804/0001-55</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q104848282">Q104848282</a></small><br/>
-<br/>
+
 Obtido via <i>email</i> em <b>2020-12-08</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
 <tr><td>Dados publicados em <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
-<tr><td>Visualização: <a title="parcel" href="https://viz.addressforall.org/BR-PR/_pk0059.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a></td></tr>
+<tr><td>Visualização: <a title="parcel" href="https://viz.addressforall.org/BR-PR/_pk0059.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
 </table>
 </aside>
 

@@ -5,14 +5,14 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://araucaria.atende.net/">Prefeitura do Município de Araucária</a>
 <br/>&nbsp; <small>CNPJ 76.105.535/0001-99</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q104848034">Q104848034</a></small><br/>
-<br/>
+
 Obtido via <i>email</i> em <b>2022-04-01</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/crebollobr">crebollobr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> </td></tr>
 <tr><td>Dados publicados em <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
-<tr><td>Visualização: <a title="nsvia" href="https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a><a title="via" href="https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a></td></tr>
+<tr><td>Visualização: <a title="nsvia" href="https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
 </table>
 </aside>
 

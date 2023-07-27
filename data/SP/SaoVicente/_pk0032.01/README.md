@@ -5,14 +5,14 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.saovicente.sp.gov.br/publico/">Prefeitura Municipal de São Vicente</a>
 <br/>&nbsp; <small>CNPJ 46.177.523/0001-09</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450055">Q56450055</a></small><br/>
-<br/>
+
 Obtido via <i>email</i> em <b>2020-04-02</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="geoaddress" href="#-geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a> </td></tr>
 <tr><td>Dados publicados em <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
-<tr><td>Visualização: <a title="geoaddress" href="https://viz.addressforall.org/BR-SP-SaoVicente/_pk0032.01/geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a></td></tr>
+<tr><td>Visualização: <a title="geoaddress" href="https://viz.addressforall.org/BR-SP-SaoVicente/_pk0032.01/geoaddress"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/></a> </td></tr>
 </table>
 </aside>
 
