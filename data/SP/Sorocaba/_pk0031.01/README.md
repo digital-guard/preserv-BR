@@ -1,53 +1,56 @@
-# Tarefas
-## 1. Limpar nomes de logradouros dos lotes
-Os tipos de logradouro dos lotes possuem a string  `TLOG|` no início. Isso precisa ser removido.
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Sorocaba/_pk0031.01"><big><b>pk0031.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SP-Sorocaba">BR-SP-Sorocaba</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="http://www.sorocaba.sp.gov.br/">Prefeitura Municipal de Sorocaba</a>
+<br/>&nbsp; <small>CNPJ 46.634.044/0001-74</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450008">Q56450008</a></small><br/>
 
-Então, `TLOG|AVENIDA` passaria a ser `AVENIDA`.
+Obtido via <i>email</i> em <b>2020-04-20</b> por:
+<br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
+<br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td>Dados publicados em <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
+<tr><td>Visualização: <a title="parcel" href="https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a><a title="via" href="https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a></td></tr>
+</table>
+</aside>
 
-## 2. Gerar ponto de endereço na testada do lote
-Procedimento usando PostGIS com script desenvolvido pelo A4A.
+<section>
 
-Cada ponto terá os dados:
-* Nome do logradouro: composto de tipo de logradouro e nome de logradouro.
-* Número predial
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://wiki.addressforall.org/doc/Documentação_Digital-guard).
 
-Ver [Extração](#Extração) para detalhes.
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+# Camadas de dados
 
-## Lotes
-SRID: 31983
-1. Abrir `lotes_prediais.zip`.
-2. Selecionar todos os arquivos `lotes_prediais.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-### Dados relevantes
-Colunas da camada `lotes_prediais`:
-* `Complement` (string): complemento de endereço.
-* `Número Por` (int): número predial.
-* `Tipo do Lo` (string): texto composto de `TLOG|` seguido do tipo de logradouro em caixa alta, sem acento, por extenso.
-* `Nome do Lo` (string): nome de logradouro em caixa alta, sem acento, por extenso.
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-## Eixos
-SRID: 5533
-1. Abrir `shape_eixos_sorocaba.zip`.
-2. Selecionar todos os arquivos `eixos_sorocaba.*`.
-3. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `lotes_prediais`.<br/>*Download* e integridade: [3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip](http://dl.digital-guard.org/3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 14476669 bytes (13.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
-### Dados relevantes
-Colunas da camada `eixos_sorocaba`:
-* `TIPO` (string): tipo de logradouro em caixa alta, sem acento, abreviado. Somente rua tem ponto (`R.`).
-* `NOME` (string): nome de logradouro em caixa alta, sem acento, por extenso, exceto os títulos (DR, PROF etc).
-* `CEP` (string): CEP da rua.
-* `BAIRRO` (string): nome do bairro caixa alta, sem acento, com o tipo de bairro abreviado (JD, V etc).
-* `IMPLANTADO` (string): se a via foi implantada.
-* `CLANDESTIN` (string): se a via é clandestina.
-* `SITUACAO` (string): se a via possui denominação.
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/parcel)<br/>33803305 bytes (32.24 <abbr title="mebibyte">MiB</abbr>)<br/>175605 polígonos com 127.03 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.51 polígonos/km²
 
-## Bairros
-(não há divisas de bairros)
+#### Visualização
+[https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/parcel](https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/parcel)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-# Evidências de teste
-Teste no QGIS:
-![](qgis.png)
+Nome do arquivo: `eixos_sorocaba`.<br/>*Download* e integridade: [f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip](http://dl.digital-guard.org/f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1880173 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 5533
+
+#### Dados publicados
+[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/via)<br/>2315448 bytes (2.21 <abbr title="mebibyte">MiB</abbr>)<br/>21599 segmentos com 2668.16 <abbr title="quilômetros">km</abbr><br/>densidade média: 5.75 segmentos/km²
+
+#### Visualização
+[https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/via](https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/via)
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+Ver detalhes em [reproducibility.sh](reproducibility.sh).
+
+</section>
+
