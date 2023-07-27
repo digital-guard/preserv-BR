@@ -11,8 +11,8 @@ Obtido via <i>email</i> em <b>2020-09-10</b> por:<br/>
  Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
-<tr><td>Dados publicados em <a href="block">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em <a href="nsvia">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em <a href="parcel">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em <a href="via">preservCutGeo-BR2021</a></td></tr>
-<tr><td>Visualização: <a title="block" href="https://viz.addressforall.org/block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a></td></tr><tr><td>Visualização: <a title="nsvia" href="https://viz.addressforall.org/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a></td></tr><tr><td>Visualização: <a title="parcel" href="https://viz.addressforall.org/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a></td></tr><tr><td>Visualização: <a title="via" href="https://viz.addressforall.org/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a></td></tr>
+<tr><td>Dados publicados em  <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em  <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em  <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">preservCutGeo-BR2021</a></td></tr><tr><td>Dados publicados em  <a href="http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01">preservCutGeo-BR2021</a></td></tr>
+<tr><td>Visualização: <a title="block" href="https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a>Visualização: <a title="nsvia" href="https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a>Visualização: <a title="parcel" href="https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a>Visualização: <a title="via" href="https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a></td></tr>
 </table>
 </aside>
 
@@ -37,7 +37,7 @@ Nome do arquivo: `rb_20201111/quadras`.<br/>*Download* e integridade: [73d02ba0a
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)<br/>6690558 bytes (6.38 <abbr title="mebibyte">MiB</abbr>)<br/>4789 polígonos com 69.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²
 
 #### Visualização
-[BR-AC-RioBranco/_pk0042.01/block](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block)
+[https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
 Nome do arquivo: `rb_20201111/bairros`.<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
@@ -49,7 +49,7 @@ Nome do arquivo: `rb_20201111/bairros`.<br/>*Download* e integridade: [73d02ba0a
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>537156 bytes (0.51 <abbr title="mebibyte">MiB</abbr>)<br/>127 polígonos com 149.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²
 
 #### Visualização
-[BR-AC-RioBranco/_pk0042.01/nsvia](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia)
+[https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `rb_20201116/lotes`.<br/>*Download* e integridade: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
@@ -63,7 +63,7 @@ Nome do arquivo: `rb_20201116/lotes`.<br/>*Download* e integridade: [d96f47270e2
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23348544 bytes (22.27 <abbr title="mebibyte">MiB</abbr>)<br/>96883 polígonos com 64.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.5 polígonos/km²
 
 #### Visualização
-[BR-AC-RioBranco/_pk0042.01/parcel](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel)
+[https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
@@ -78,7 +78,7 @@ Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do ma
 [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via)<br/>618898 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>3172 segmentos com 1030.79 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15 segmentos/km²
 
 #### Visualização
-[BR-AC-RioBranco/_pk0042.01/via](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via)
+[https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via)
 
 # Evidências de teste
 <img src="qgis.png" width="400"/>
