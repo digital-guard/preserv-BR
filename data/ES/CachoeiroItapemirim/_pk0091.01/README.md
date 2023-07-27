@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.cachoeiro.es.gov.br/">Municipio De Cachoeiro De Itapemirim</a>
 <br/>&nbsp; <small>CNPJ 27.165.588/0001-90</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q1439193">Q1439193</a></small><br/>
-
+<br/>
 Obtido via <i>site;email</i> em <b>2022-04-05</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

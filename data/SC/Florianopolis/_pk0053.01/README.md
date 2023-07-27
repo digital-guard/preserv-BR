@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.pmf.sc.gov.br/entidades/ipuf/">Instituto de Pesquisa e Planejamento Urbano de Florianópolis</a>
 <br/>&nbsp; <small>CNPJ 83.469.965/0001-55</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q101575535">Q101575535</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-11-13</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

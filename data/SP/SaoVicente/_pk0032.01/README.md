@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.saovicente.sp.gov.br/publico/">Prefeitura Municipal de São Vicente</a>
 <br/>&nbsp; <small>CNPJ 46.177.523/0001-09</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450055">Q56450055</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-04-02</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.riobranco.ac.gov.br/">Prefeitura Municipal de Rio Branco</a>
 <br/>&nbsp; <small>CNPJ 04.034.583/0001-22</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450051">Q56450051</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-09-10</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

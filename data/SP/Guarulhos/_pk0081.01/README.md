@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.guarulhos.sp.gov.br/">Prefeitura de Guarulhos</a>
 <br/>&nbsp; <small>CNPJ 46.319.000.0001-50</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q53930928">Q53930928</a></small><br/>
-
+<br/>
 Obtido via <i>site;email</i> em <b>2022-03-11</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

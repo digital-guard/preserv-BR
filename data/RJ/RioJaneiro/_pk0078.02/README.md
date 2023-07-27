@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://prefeitura.rio/">Prefeitura da Cidade do Rio de Janeiro</a>
 <br/>&nbsp; <small>CNPJ 42.498.733/0001-48</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q57349212">Q57349212</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2022-01-28</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

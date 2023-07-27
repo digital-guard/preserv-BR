@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.saobernardo.sp.gov.br/">Prefeitura Municipal de São Bernardo do Campo</a>
 <br/>&nbsp; <small>CNPJ 46.523.239/0001-47</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56449994">Q56449994</a></small><br/>
-
+<br/>
 Obtido via <i>site;email</i> em <b>2020-06-18</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.santamaria.rs.gov.br/">Prefeitura Municipal de Santa Maria</a>
 <br/>&nbsp; <small>CNPJ 88.488.366/0001-00</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450092">Q56450092</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-07-15</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

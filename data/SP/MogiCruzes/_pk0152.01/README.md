@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.mogidascruzes.sp.gov.br/">Mogi das Cruzes</a>
 <br/>&nbsp; <small>CNPJ 46.523.270/0001-88</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q194332">Q194332</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2023-03-18</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/crebollobr">crebollobr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

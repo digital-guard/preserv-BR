@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.site.ji-parana.ro.gov.br/">Prefeitura Municipal de Ji-Paraná</a>
 <br/>&nbsp; <small>CNPJ 04.092.672/0001-25</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q105008525">Q105008525</a></small><br/>
-
+<br/>
 Obtido via <i>site</i> em <b>2020-01-19</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

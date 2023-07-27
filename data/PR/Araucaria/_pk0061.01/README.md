@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://araucaria.atende.net/">Prefeitura do Município de Araucária</a>
 <br/>&nbsp; <small>CNPJ 76.105.535/0001-99</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q104848034">Q104848034</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2022-04-01</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/crebollobr">crebollobr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

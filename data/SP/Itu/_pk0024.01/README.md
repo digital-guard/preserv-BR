@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://itu.sp.gov.br/">Prefeitura da Estância Turística de Itu</a>
 <br/>&nbsp; <small>CNPJ 46.634.440/0001-00</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q95629648">Q95629648</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-05-07</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

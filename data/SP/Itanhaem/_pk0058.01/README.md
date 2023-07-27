@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www2.itanhaem.sp.gov.br/">Prefeitura de Itanhaém</a>
 <br/>&nbsp; <small>CNPJ 46.578.498/0001-75</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q104847769">Q104847769</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-12-07</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

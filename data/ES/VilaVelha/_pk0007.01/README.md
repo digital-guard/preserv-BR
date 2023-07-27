@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.vilavelha.es.gov.br/">Prefeitura Municipal de Vila Velha</a>
 <br/>&nbsp; <small>CNPJ 27.165.554/0001-03</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450026">Q56450026</a></small><br/>
-
+<br/>
 Obtido via <i>site</i> em <b>2020-05-14</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

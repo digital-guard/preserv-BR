@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.cascavel.pr.gov.br/">Prefeitura Municipal de Cascavel</a>
 <br/>&nbsp; <small>CNPJ 76.208.867/0001-07</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450074">Q56450074</a></small><br/>
-
+<br/>
 Obtido via <i>email</i> em <b>2020-04-14</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
