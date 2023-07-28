@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `ENDERECO`.<br/>*Download* e integridade: [1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip](http://dl.digital-guard.org/1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 42826370 bytes (40.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
+Nome do arquivo: `ENDERECO`<br/>*Download* e integridade: [1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip](http://dl.digital-guard.org/1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 42826370 bytes (40.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
 
 #### Dados relevantes
 * `expressão complexa, consultar o make_conf.yaml` (hnum)
@@ -36,20 +36,20 @@ Nome do arquivo: `ENDERECO`.<br/>*Download* e integridade: [1ce29a555565be5f540a
 #### Outros dados relevantes
 * `LETRA_IMOVEL`
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/geoaddress)<br/>37140899 bytes (35.42 <abbr title="mebibyte">MiB</abbr>)<br/>690656 pontos<br/>densidade média de 3135.37 pontos/km²
+#### Resultados da filtragem e sua publicação
+37140899 bytes (35.42 <abbr title="mebibyte">MiB</abbr>)<br/>690656 pontos<br/>densidade média: 3135.37 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/geoaddress)
 
 #### Visualização
 [https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/geoaddress](https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `LOGRADOUROLine`.<br/>*Download* e integridade: [7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip](http://dl.digital-guard.org/7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 2637788 bytes (2.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOGRADOUROLine`<br/>*Download* e integridade: [7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip](http://dl.digital-guard.org/7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 2637788 bytes (2.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `TIPO_LOGRA || ' ' || NOME_LOGRA` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/via)<br/>3958782 bytes (3.78 <abbr title="mebibyte">MiB</abbr>)<br/>16075 segmentos com 4635.78 <abbr title="quilômetros">km</abbr><br/>densidade média: 13.45 segmentos/km²
+#### Resultados da filtragem e sua publicação
+3958782 bytes (3.78 <abbr title="mebibyte">MiB</abbr>)<br/>16075 segmentos com 4635.78 <abbr title="quilômetros">km</abbr><br/>densidade média: 13.45 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/BeloHorizonte/_pk0008.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/via](https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/via)
@@ -59,7 +59,11 @@ Nome do arquivo: `LOGRADOUROLine`.<br/>*Download* e integridade: [7d7d0661683a8e
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/MG/BeloHorizonte/_pk0008.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

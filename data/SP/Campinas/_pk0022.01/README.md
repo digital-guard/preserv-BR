@@ -28,19 +28,19 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `256b0041-6e29-1649-4b2b-00006944c8fb`.<br/>*Download* e integridade: [6bb020e023ffd10570d887f907fdad909eecde1003c8911ef64ac63d48f5fe8b.zip](http://dl.digital-guard.org/6bb020e023ffd10570d887f907fdad909eecde1003c8911ef64ac63d48f5fe8b.zip)<br/>Descrição: Pontos de lotes<br/>Tamanho do arquivo: 3115901 bytes (2.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `256b0041-6e29-1649-4b2b-00006944c8fb`<br/>*Download* e integridade: [6bb020e023ffd10570d887f907fdad909eecde1003c8911ef64ac63d48f5fe8b.zip](http://dl.digital-guard.org/6bb020e023ffd10570d887f907fdad909eecde1003c8911ef64ac63d48f5fe8b.zip)<br/>Descrição: Pontos de lotes<br/>Tamanho do arquivo: 3115901 bytes (2.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/geoaddress)<br/>10105340 bytes (9.64 <abbr title="mebibyte">MiB</abbr>)<br/>187929 pontos<br/>densidade média de 804.21 pontos/km²
+#### Resultados da filtragem e sua publicação
+10105340 bytes (9.64 <abbr title="mebibyte">MiB</abbr>)<br/>187929 pontos<br/>densidade média: 804.21 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/geoaddress)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Campinas/_pk0022.01/geoaddress](https://viz.addressforall.org/BR-SP-Campinas/_pk0022.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `5486431b-c7fe-aec8-ab9c-00004b294da9`.<br/>*Download* e integridade: [b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip](http://dl.digital-guard.org/b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 3462351 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `5486431b-c7fe-aec8-ab9c-00004b294da9`<br/>*Download* e integridade: [b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip](http://dl.digital-guard.org/b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 3462351 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via)<br/>7513141 bytes (7.17 <abbr title="mebibyte">MiB</abbr>)<br/>49876 segmentos com 5860.05 <abbr title="quilômetros">km</abbr><br/>densidade média: 9.98 segmentos/km²
+#### Resultados da filtragem e sua publicação
+7513141 bytes (7.17 <abbr title="mebibyte">MiB</abbr>)<br/>49876 segmentos com 5860.05 <abbr title="quilômetros">km</abbr><br/>densidade média: 9.98 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Campinas/_pk0022.01/via](https://viz.addressforall.org/BR-SP-Campinas/_pk0022.01/via)
@@ -50,7 +50,11 @@ Nome do arquivo: `5486431b-c7fe-aec8-ab9c-00004b294da9`.<br/>*Download* e integr
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Campinas/_pk0022.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

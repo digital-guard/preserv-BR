@@ -28,37 +28,37 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `edificacoes/edificacoes`.<br/>*Download* e integridade: [6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip](http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 11032539 bytes (10.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
+Nome do arquivo: `edificacoes/edificacoes`<br/>*Download* e integridade: [6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip](http://dl.digital-guard.org/6d741572b6c31ffd82cf004b92fa98056545df805bcb64afba5e7b26e32b62ab.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 11032539 bytes (10.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
 * `numero` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/building)<br/>19455134 bytes (18.55 <abbr title="mebibyte">MiB</abbr>)<br/>79791 polígonos com 9.82 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.15 polígonos/km²
+#### Resultados da filtragem e sua publicação
+19455134 bytes (18.55 <abbr title="mebibyte">MiB</abbr>)<br/>79791 polígonos com 9.82 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.15 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/building)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/building](https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes/lotes`.<br/>*Download* e integridade: [b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip](http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 889309 bytes (0.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
+Nome do arquivo: `lotes/lotes`<br/>*Download* e integridade: [b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip](http://dl.digital-guard.org/b6221fa57754ec8c4db284591a6ceeea7acf986eb215b2e521647e32fb175488.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 889309 bytes (0.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `num` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/parcel)<br/>1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>6581 polígonos com 3.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.01 polígonos/km²
+#### Resultados da filtragem e sua publicação
+1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>6581 polígonos com 3.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.01 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/parcel](https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros/CAD_LOG`.<br/>*Download* e integridade: [0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip](http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 1241211 bytes (1.18 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
+Nome do arquivo: `logradouros/CAD_LOG`<br/>*Download* e integridade: [0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip](http://dl.digital-guard.org/0a7fedd6e8e30541f706fa7f77166a183a3cc43d2b1d3d3d0a8d3fb7f077e804.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 1241211 bytes (1.18 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `log_nome_c` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/via)<br/>1805056 bytes (1.72 <abbr title="mebibyte">MiB</abbr>)<br/>8831 segmentos com 1655.36 <abbr title="quilômetros">km</abbr><br/>densidade média: 3.36 segmentos/km²
+#### Resultados da filtragem e sua publicação
+1805056 bytes (1.72 <abbr title="mebibyte">MiB</abbr>)<br/>8831 segmentos com 1655.36 <abbr title="quilômetros">km</abbr><br/>densidade média: 3.36 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Atibaia/_pk0021.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/via](https://viz.addressforall.org/BR-SP-Atibaia/_pk0021.01/via)
@@ -74,7 +74,11 @@ Parcel e building incompletos. Sem nome de logradouro, alguns número de porta n
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Atibaia/_pk0021.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

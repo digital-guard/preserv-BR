@@ -28,25 +28,25 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote_numero_predial`.<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `lote_numero_predial`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `Número` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/parcel)<br/>15048410 bytes (14.35 <abbr title="mebibyte">MiB</abbr>)<br/>85144 polígonos com 103.93 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.45 polígonos/km²
+#### Resultados da filtragem e sua publicação
+15048410 bytes (14.35 <abbr title="mebibyte">MiB</abbr>)<br/>85144 polígonos com 103.93 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.45 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/parcel](https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `sistema_viario`.<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `sistema_viario`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `TIPO || ' ' || NOME` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/via)<br/>1747356 bytes (1.67 <abbr title="mebibyte">MiB</abbr>)<br/>9512 segmentos com 1470.44 <abbr title="quilômetros">km</abbr><br/>densidade média: 3.1 segmentos/km²
+#### Resultados da filtragem e sua publicação
+1747356 bytes (1.67 <abbr title="mebibyte">MiB</abbr>)<br/>9512 segmentos com 1470.44 <abbr title="quilômetros">km</abbr><br/>densidade média: 3.1 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Gravatai/_pk0017.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/via](https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/via)
@@ -59,7 +59,11 @@ Nome do arquivo: `sistema_viario`.<br/>*Download* e integridade: [d101e729d51ddf
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/RS/Gravatai/_pk0017.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

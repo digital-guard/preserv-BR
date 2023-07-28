@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
+Nome do arquivo: `New File Geodatabase (2).gdb`<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
 
 #### Dados relevantes
 * `nrpredial` (hnum)
@@ -36,8 +36,8 @@ Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [
 #### Outros dados relevantes
 * `NmMunicipio`: Nome do município
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel)<br/>470024630 bytes (448.25 <abbr title="mebibyte">MiB</abbr>)<br/>2546286 polígonos com 2589.16 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.39 polígonos/km²
+#### Resultados da filtragem e sua publicação
+470024630 bytes (448.25 <abbr title="mebibyte">MiB</abbr>)<br/>2546286 polígonos com 2589.16 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.39 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/_pk0059.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR/_pk0059.01/parcel](https://viz.addressforall.org/BR-PR/_pk0059.01/parcel)
@@ -47,7 +47,11 @@ Nome do arquivo: `New File Geodatabase (2).gdb`.<br/>*Download* e integridade: [
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PR/_pk0059.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixos`.<br/>*Download* e integridade: [ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip](http://dl.digital-guard.org/ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip)<br/>Descrição: eixos.zip<br/>Tamanho do arquivo: 513477 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4760
+Nome do arquivo: `eixos`<br/>*Download* e integridade: [ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip](http://dl.digital-guard.org/ca1f57eb1c709894fdb12d88899343c92ad07fc997b4d838ee1b89aec3320536.zip)<br/>Descrição: eixos.zip<br/>Tamanho do arquivo: 513477 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4760
 
 #### Dados relevantes
 * `nome` (via)
@@ -37,8 +37,8 @@ Nome do arquivo: `eixos`.<br/>*Download* e integridade: [ca1f57eb1c709894fdb12d8
 
 * `loteamento` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/MogiCruzes/_pk0152.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/MogiCruzes/_pk0152.01/via)<br/>771150 bytes (0.74 <abbr title="mebibyte">MiB</abbr>)<br/>3063 segmentos com 1310.38 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.79 segmentos/km²
+#### Resultados da filtragem e sua publicação
+771150 bytes (0.74 <abbr title="mebibyte">MiB</abbr>)<br/>3063 segmentos com 1310.38 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.79 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/MogiCruzes/_pk0152.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/MogiCruzes/_pk0152.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-MogiCruzes/_pk0152.01/via](https://viz.addressforall.org/BR-SP-MogiCruzes/_pk0152.01/via)
@@ -48,7 +48,11 @@ Nome do arquivo: `eixos`.<br/>*Download* e integridade: [ca1f57eb1c709894fdb12d8
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/MogiCruzes/_pk0152.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

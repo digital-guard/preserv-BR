@@ -28,15 +28,15 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `Lotes_endereco`.<br/>*Download* e integridade: [6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip](http://dl.digital-guard.org/6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 13201744 bytes (12.59 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `Lotes_endereco`<br/>*Download* e integridade: [6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip](http://dl.digital-guard.org/6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 13201744 bytes (12.59 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `tipo de lo || ' ' || logradouro` (via)
 
 * `numero do` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress)<br/>11417502 bytes (10.89 <abbr title="mebibyte">MiB</abbr>)<br/>216334 pontos<br/>densidade média de 1577.61 pontos/km²
+#### Resultados da filtragem e sua publicação
+11417502 bytes (10.89 <abbr title="mebibyte">MiB</abbr>)<br/>216334 pontos<br/>densidade média: 1577.61 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PI/Teresina/_pk0045.01/geoaddress)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PI-Teresina/_pk0045.01/geoaddress](https://viz.addressforall.org/BR-PI-Teresina/_pk0045.01/geoaddress)
@@ -46,7 +46,11 @@ Nome do arquivo: `Lotes_endereco`.<br/>*Download* e integridade: [6d00a6246765ac
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PI/Teresina/_pk0045.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

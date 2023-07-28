@@ -28,25 +28,25 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `['Bairros', 'Localidades Rurais']`.<br/>*Download* e integridade: [52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip](http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip)<br/>Descrição: Todos os shapefiles<br/>Tamanho do arquivo: 850728 bytes (0.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29192
+Nome do arquivo: `['Bairros', 'Localidades Rurais']`<br/>*Download* e integridade: [52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip](http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip)<br/>Descrição: Todos os shapefiles<br/>Tamanho do arquivo: 850728 bytes (0.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29192
 
 #### Dados relevantes
 * `nome` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/nsvia)<br/>916689 bytes (0.87 <abbr title="mebibyte">MiB</abbr>)<br/>56 polígonos com 449.01 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.93 polígonos/km²
+#### Resultados da filtragem e sua publicação
+916689 bytes (0.87 <abbr title="mebibyte">MiB</abbr>)<br/>56 polígonos com 449.01 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.93 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/nsvia](https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Sistema Viario`.<br/>*Download* e integridade: [52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip](http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip)<br/>Descrição: Todos os shapefiles<br/>Tamanho do arquivo: 850728 bytes (0.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29192
+Nome do arquivo: `Sistema Viario`<br/>*Download* e integridade: [52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip](http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip)<br/>Descrição: Todos os shapefiles<br/>Tamanho do arquivo: 850728 bytes (0.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29192
 
 #### Dados relevantes
 * `endereço` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/via)<br/>932490 bytes (0.89 <abbr title="mebibyte">MiB</abbr>)<br/>1582 segmentos com 1289.28 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.68 segmentos/km²
+#### Resultados da filtragem e sua publicação
+932490 bytes (0.89 <abbr title="mebibyte">MiB</abbr>)<br/>1582 segmentos com 1289.28 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.68 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Araucaria/_pk0061.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/via](https://viz.addressforall.org/BR-PR-Araucaria/_pk0061.01/via)
@@ -59,7 +59,11 @@ Nome do arquivo: `Sistema Viario`.<br/>*Download* e integridade: [52302cd28b0d4e
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PR/Araucaria/_pk0061.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

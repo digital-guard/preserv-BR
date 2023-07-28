@@ -28,45 +28,45 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `rb_20201111/quadras`.<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/quadras`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `iq` (ref): número de setor e quadra.
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)<br/>6690558 bytes (6.38 <abbr title="mebibyte">MiB</abbr>)<br/>4789 polígonos com 69.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²
+#### Resultados da filtragem e sua publicação
+6690558 bytes (6.38 <abbr title="mebibyte">MiB</abbr>)<br/>4789 polígonos com 69.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/block)
 
 #### Visualização
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `rb_20201111/bairros`.<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/bairros`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `name` (nsvia): nome do bairro em caixa alta, com acentuação.
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)<br/>537156 bytes (0.51 <abbr title="mebibyte">MiB</abbr>)<br/>127 polígonos com 149.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²
+#### Resultados da filtragem e sua publicação
+537156 bytes (0.51 <abbr title="mebibyte">MiB</abbr>)<br/>127 polígonos com 149.84 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `rb_20201116/lotes`.<br/>*Download* e integridade: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201116/lotes`<br/>*Download* e integridade: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `nomelog` (via): tipo e nome do logradouro em caixa alta, com acentuação.
 
 * `endereco_n` (hnum): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)<br/>23348544 bytes (22.27 <abbr title="mebibyte">MiB</abbr>)<br/>96883 polígonos com 64.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.5 polígonos/km²
+#### Resultados da filtragem e sua publicação
+23348544 bytes (22.27 <abbr title="mebibyte">MiB</abbr>)<br/>96883 polígonos com 64.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.5 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `tipo ||' '|| Nome` (via): tipo e nome do logradouro em caixa alta, com acentuação.
@@ -74,8 +74,8 @@ Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [29d68e5ce006079b0
 #### Comentários
 Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do material e com a imagem área, mesmo com a projeção indicada no arquivo PRJ. Há lugares em que o eixo da rua atravessa lotes e quadras.
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via)<br/>618898 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>3172 segmentos com 1030.79 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15 segmentos/km²
+#### Resultados da filtragem e sua publicação
+618898 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>3172 segmentos com 1030.79 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.15 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/via)
@@ -91,7 +91,11 @@ Os eixos de ruas possui, em algumas áreas, desalinhamentos com o restante do ma
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/AC/RioBranco/_pk0042.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

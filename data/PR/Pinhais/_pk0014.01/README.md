@@ -28,19 +28,19 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `BAIRROS`.<br/>*Download* e integridade: [7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar](http://dl.digital-guard.org/7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 35685 bytes (0.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `BAIRROS`<br/>*Download* e integridade: [7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar](http://dl.digital-guard.org/7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 35685 bytes (0.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `BAIRRO` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/nsvia)<br/>65687 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>15 polígonos com 60.9 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.94 polígonos/km²
+#### Resultados da filtragem e sua publicação
+65687 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>15 polígonos com 60.9 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.94 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/nsvia](https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTES`.<br/>*Download* e integridade: [56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar](http://dl.digital-guard.org/56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 2061575 bytes (1.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `LOTES`<br/>*Download* e integridade: [56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar](http://dl.digital-guard.org/56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 2061575 bytes (1.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME_LOGRA || ' ' || TIPO_LOGRA` (via)
@@ -49,20 +49,20 @@ Nome do arquivo: `LOTES`.<br/>*Download* e integridade: [56d32368409f4ba2c99afad
 
 * `NOME_BAIRR` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/parcel)<br/>5677620 bytes (5.41 <abbr title="mebibyte">MiB</abbr>)<br/>31540 polígonos com 50.99 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.78 polígonos/km²
+#### Resultados da filtragem e sua publicação
+5677620 bytes (5.41 <abbr title="mebibyte">MiB</abbr>)<br/>31540 polígonos com 50.99 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.78 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/parcel](https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `RUAS`.<br/>*Download* e integridade: [27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar](http://dl.digital-guard.org/27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 97648 bytes (0.09 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `RUAS`<br/>*Download* e integridade: [27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar](http://dl.digital-guard.org/27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 97648 bytes (0.09 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME_RUA` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/via)<br/>154764 bytes (0.15 <abbr title="mebibyte">MiB</abbr>)<br/>684 segmentos com 414.54 <abbr title="quilômetros">km</abbr><br/>densidade média: 6.41 segmentos/km²
+#### Resultados da filtragem e sua publicação
+154764 bytes (0.15 <abbr title="mebibyte">MiB</abbr>)<br/>684 segmentos com 414.54 <abbr title="quilômetros">km</abbr><br/>densidade média: 6.41 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Pinhais/_pk0014.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/via](https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/via)
@@ -75,7 +75,11 @@ Nome do arquivo: `RUAS`.<br/>*Download* e integridade: [27c0c467222a668837f62e9f
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PR/Pinhais/_pk0014.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

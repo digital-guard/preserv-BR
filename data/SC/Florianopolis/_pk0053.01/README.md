@@ -28,34 +28,34 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairro`.<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `bairro`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia)<br/>215555 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>20 polígonos com 59.12 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.09 polígonos/km²
+#### Resultados da filtragem e sua publicação
+215555 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>20 polígonos com 59.12 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.09 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/nsvia](https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `view_cotr_imobliario_filtro`.<br/>*Download* e integridade: [cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip](http://dl.digital-guard.org/cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 15147324 bytes (14.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `view_cotr_imobliario_filtro`<br/>*Download* e integridade: [cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip](http://dl.digital-guard.org/cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 15147324 bytes (14.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel)<br/>26579471 bytes (25.35 <abbr title="mebibyte">MiB</abbr>)<br/>119531 polígonos com 182.67 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.36 polígonos/km²
+#### Resultados da filtragem e sua publicação
+26579471 bytes (25.35 <abbr title="mebibyte">MiB</abbr>)<br/>119531 polígonos com 182.67 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.36 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/parcel](https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via)<br/>2858886 bytes (2.73 <abbr title="mebibyte">MiB</abbr>)<br/>14875 segmentos com 1791.32 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.62 segmentos/km²
+#### Resultados da filtragem e sua publicação
+2858886 bytes (2.73 <abbr title="mebibyte">MiB</abbr>)<br/>14875 segmentos com 1791.32 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.62 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/via](https://viz.addressforall.org/BR-SC-Florianopolis/_pk0053.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadvia.png" alt="cadvia" width="20"/> cadvia
 
-Nome do arquivo: `atributo_logradouro`.<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31982
+Nome do arquivo: `atributo_logradouro`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31982
 
 Complementa [](#-) por meio de `` e ``
 
@@ -64,7 +64,11 @@ Complementa [](#-) por meio de `` e ``
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SC/Florianopolis/_pk0053.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

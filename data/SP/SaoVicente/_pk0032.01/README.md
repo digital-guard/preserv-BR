@@ -28,10 +28,10 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `SaoVicente-Oficial`.<br/>*Download* e integridade: [3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip](http://dl.digital-guard.org/3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 628580 bytes (0.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 29193
+Nome do arquivo: `SaoVicente-Oficial`<br/>*Download* e integridade: [3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip](http://dl.digital-guard.org/3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 628580 bytes (0.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 29193
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress)<br/>2160276 bytes (2.06 <abbr title="mebibyte">MiB</abbr>)<br/>40169 pontos<br/>densidade média de 624.02 pontos/km²
+#### Resultados da filtragem e sua publicação
+2160276 bytes (2.06 <abbr title="mebibyte">MiB</abbr>)<br/>40169 pontos<br/>densidade média: 624.02 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-SaoVicente/_pk0032.01/geoaddress](https://viz.addressforall.org/BR-SP-SaoVicente/_pk0032.01/geoaddress)
@@ -41,7 +41,11 @@ Nome do arquivo: `SaoVicente-Oficial`.<br/>*Download* e integridade: [3d5bc83bbb
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoVicente/_pk0032.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

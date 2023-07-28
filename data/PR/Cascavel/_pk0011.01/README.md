@@ -28,39 +28,39 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Bairros`.<br/>*Download* e integridade: [305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip](http://dl.digital-guard.org/305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 109452 bytes (0.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Bairros`<br/>*Download* e integridade: [305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip](http://dl.digital-guard.org/305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 109452 bytes (0.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `nmbairro` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/nsvia)<br/>247482 bytes (0.24 <abbr title="mebibyte">MiB</abbr>)<br/>32 polígonos com 107.29 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.05 polígonos/km²
+#### Resultados da filtragem e sua publicação
+247482 bytes (0.24 <abbr title="mebibyte">MiB</abbr>)<br/>32 polígonos com 107.29 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.05 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/nsvia](https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes`.<br/>*Download* e integridade: [ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip](http://dl.digital-guard.org/ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 10174579 bytes (9.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip](http://dl.digital-guard.org/ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 10174579 bytes (9.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `logradouro` (via)
 
 * `numerologr` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/parcel)<br/>15012400 bytes (14.32 <abbr title="mebibyte">MiB</abbr>)<br/>85802 polígonos com 245.16 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.38 polígonos/km²
+#### Resultados da filtragem e sua publicação
+15012400 bytes (14.32 <abbr title="mebibyte">MiB</abbr>)<br/>85802 polígonos com 245.16 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.38 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/parcel](https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Logradouros`.<br/>*Download* e integridade: [f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip](http://dl.digital-guard.org/f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1928343 bytes (1.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip](http://dl.digital-guard.org/f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1928343 bytes (1.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `tipolograd || ' ' || nmlogradou` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/via)<br/>2991722 bytes (2.85 <abbr title="mebibyte">MiB</abbr>)<br/>5155 segmentos com 3581.12 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.75 segmentos/km²
+#### Resultados da filtragem e sua publicação
+2991722 bytes (2.85 <abbr title="mebibyte">MiB</abbr>)<br/>5155 segmentos com 3581.12 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.75 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Cascavel/_pk0011.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/via](https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/via)
@@ -75,7 +75,11 @@ Nome do arquivo: `Logradouros`.<br/>*Download* e integridade: [f4fe1f604f927b1d0
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PR/Cascavel/_pk0011.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

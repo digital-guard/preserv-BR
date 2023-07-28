@@ -28,57 +28,57 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`.<br/>*Download* e integridade: [82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip](http://dl.digital-guard.org/82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 8398313 bytes (8.01 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip](http://dl.digital-guard.org/82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 8398313 bytes (8.01 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block)<br/>15357290 bytes (14.65 <abbr title="mebibyte">MiB</abbr>)<br/>18222 polígonos com 237.32 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.74 polígonos/km²
+#### Resultados da filtragem e sua publicação
+15357290 bytes (14.65 <abbr title="mebibyte">MiB</abbr>)<br/>18222 polígonos com 237.32 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.74 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block)
 
 #### Visualização
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/block](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `edificacoes`.<br/>*Download* e integridade: [8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip](http://dl.digital-guard.org/8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 129751437 bytes (123.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip](http://dl.digital-guard.org/8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 129751437 bytes (123.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building)<br/>248783984 bytes (237.26 <abbr title="mebibyte">MiB</abbr>)<br/>922127 polígonos com 77.89 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²
+#### Resultados da filtragem e sua publicação
+248783984 bytes (237.26 <abbr title="mebibyte">MiB</abbr>)<br/>922127 polígonos com 77.89 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building)
 
 #### Visualização
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/building](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairros`.<br/>*Download* e integridade: [4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip](http://dl.digital-guard.org/4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 342881 bytes (0.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `bairros`<br/>*Download* e integridade: [4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip](http://dl.digital-guard.org/4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 342881 bytes (0.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `nome_bairr` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/nsvia)<br/>633562 bytes (0.6 <abbr title="mebibyte">MiB</abbr>)<br/>121 polígonos com 312.42 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.96 polígonos/km²
+#### Resultados da filtragem e sua publicação
+633562 bytes (0.6 <abbr title="mebibyte">MiB</abbr>)<br/>121 polígonos com 312.42 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.96 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/nsvia](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes_fiscais`.<br/>*Download* e integridade: [d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip](http://dl.digital-guard.org/d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 57886654 bytes (55.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `lotes_fiscais`<br/>*Download* e integridade: [d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip](http://dl.digital-guard.org/d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 57886654 bytes (55.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `split_part(endereco,',',1)` (hnum)
 
 * `split_part(endereco,',',2)` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/parcel)<br/>90396502 bytes (86.21 <abbr title="mebibyte">MiB</abbr>)<br/>374580 polígonos com 194.51 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²
+#### Resultados da filtragem e sua publicação
+90396502 bytes (86.21 <abbr title="mebibyte">MiB</abbr>)<br/>374580 polígonos com 194.51 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/parcel](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip](http://dl.digital-guard.org/86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 2292206 bytes (2.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip](http://dl.digital-guard.org/86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 2292206 bytes (2.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `nome_compl` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/via)<br/>3455551 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>10608 segmentos com 4496.6 <abbr title="quilômetros">km</abbr><br/>densidade média: 13.06 segmentos/km²
+#### Resultados da filtragem e sua publicação
+3455551 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>10608 segmentos com 4496.6 <abbr title="quilômetros">km</abbr><br/>densidade média: 13.06 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/via](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/via)
@@ -91,7 +91,11 @@ Nome do arquivo: `logradouros`.<br/>*Download* e integridade: [86c7283d4dc0351e3
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/CE/Fortaleza/_pk0097.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

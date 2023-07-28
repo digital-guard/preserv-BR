@@ -28,27 +28,27 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Limite_de_Bairros`.<br/>*Download* e integridade: [fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip](http://dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 245039 bytes (0.23 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
+Nome do arquivo: `Limite_de_Bairros`<br/>*Download* e integridade: [fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip](http://dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 245039 bytes (0.23 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/nsvia)<br/>511439 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>65 polígonos com 132.62 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.91 polígonos/km²
+#### Resultados da filtragem e sua publicação
+511439 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>65 polígonos com 132.62 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.91 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/nsvia](https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes`.<br/>*Download* e integridade: [4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip](http://dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 9126004 bytes (8.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
+Nome do arquivo: `Lotes`<br/>*Download* e integridade: [4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip](http://dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 9126004 bytes (8.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
 
 <br/>Complementado por [cadparcel](#-cadparcel) por meio de `tx_insct` e `tx_insctec`
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/parcel)<br/>17647601 bytes (16.83 <abbr title="mebibyte">MiB</abbr>)<br/>74804 polígonos com 61.24 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.54 polígonos/km²
+#### Resultados da filtragem e sua publicação
+17647601 bytes (16.83 <abbr title="mebibyte">MiB</abbr>)<br/>74804 polígonos com 61.24 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.54 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/parcel](https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Logradouro`.<br/>*Download* e integridade: [5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip](http://dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1079420 bytes (1.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
+Nome do arquivo: `Logradouro`<br/>*Download* e integridade: [5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip](http://dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1079420 bytes (1.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
 
 #### Dados relevantes
 * `ST_TYPE || ' ' || ST_NO` (via)
@@ -57,14 +57,14 @@ Nome do arquivo: `Logradouro`.<br/>*Download* e integridade: [5f7e5ecf8e15a9c133
 * `CMTY_L`
 * `CMTY_R`
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/via)<br/>1121332 bytes (1.07 <abbr title="mebibyte">MiB</abbr>)<br/>2602 segmentos com 772.66 <abbr title="quilômetros">km</abbr><br/>densidade média: 5.32 segmentos/km²
+#### Resultados da filtragem e sua publicação
+1121332 bytes (1.07 <abbr title="mebibyte">MiB</abbr>)<br/>2602 segmentos com 772.66 <abbr title="quilômetros">km</abbr><br/>densidade média: 5.32 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/Niteroi/_pk0016.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/via](https://viz.addressforall.org/BR-RJ-Niteroi/_pk0016.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `Solicitação0710_InscTec_LogNPorBairro`.<br/>*Download* e integridade: [39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip](http://dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip)<br/>Descrição: Dados de Lotes<br/>Tamanho do arquivo: 3197132 bytes (3.05 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 4326
+Nome do arquivo: `Solicitação0710_InscTec_LogNPorBairro`<br/>*Download* e integridade: [39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip](http://dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip)<br/>Descrição: Dados de Lotes<br/>Tamanho do arquivo: 3197132 bytes (3.05 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 4326
 
 #### Dados relevantes
 * `tx_lgrd_no` (via)
@@ -80,7 +80,11 @@ Complementa [parcel](#-parcel) por meio de `tx_insctec` e `tx_insct`
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/RJ/Niteroi/_pk0016.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

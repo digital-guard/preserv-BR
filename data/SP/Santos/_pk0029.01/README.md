@@ -28,10 +28,10 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `LOTES_PONTO_S2K`.<br/>*Download* e integridade: [b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip](http://dl.digital-guard.org/b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 1922893 bytes (1.83 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOTES_PONTO_S2K`<br/>*Download* e integridade: [b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip](http://dl.digital-guard.org/b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 1922893 bytes (1.83 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress)<br/>2321232 bytes (2.21 <abbr title="mebibyte">MiB</abbr>)<br/>43161 pontos<br/>densidade média de 505.74 pontos/km²
+#### Resultados da filtragem e sua publicação
+2321232 bytes (2.21 <abbr title="mebibyte">MiB</abbr>)<br/>43161 pontos<br/>densidade média: 505.74 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Santos/_pk0029.01/geoaddress](https://viz.addressforall.org/BR-SP-Santos/_pk0029.01/geoaddress)
@@ -41,7 +41,11 @@ Nome do arquivo: `LOTES_PONTO_S2K`.<br/>*Download* e integridade: [b192fba419ef8
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Santos/_pk0029.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

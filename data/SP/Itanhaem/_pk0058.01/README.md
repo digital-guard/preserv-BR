@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `CENTROIDES`.<br/>*Download* e integridade: [78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip](http://dl.digital-guard.org/78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 3431030 bytes (3.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `CENTROIDES`<br/>*Download* e integridade: [78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip](http://dl.digital-guard.org/78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 3431030 bytes (3.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `Cadastro_7` (via)
@@ -39,19 +39,19 @@ Nome do arquivo: `CENTROIDES`.<br/>*Download* e integridade: [78f10da32c1dfab83b
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/geoaddress](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `ABAIRRAMENTO`.<br/>*Download* e integridade: [023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip](http://dl.digital-guard.org/023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 221789 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `ABAIRRAMENTO`<br/>*Download* e integridade: [023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip](http://dl.digital-guard.org/023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 221789 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME` (nsvia)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/nsvia)<br/>379708 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>45 polígonos com 172.87 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.28 polígonos/km²
+#### Resultados da filtragem e sua publicação
+379708 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>45 polígonos com 172.87 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.28 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/nsvia](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTES_2020`.<br/>*Download* e integridade: [7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip](http://dl.digital-guard.org/7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 18397666 bytes (17.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
+Nome do arquivo: `LOTES_2020`<br/>*Download* e integridade: [7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip](http://dl.digital-guard.org/7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 18397666 bytes (17.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `Cadastro_7` (via)
@@ -62,13 +62,13 @@ Nome do arquivo: `LOTES_2020`.<br/>*Download* e integridade: [7e8269d4c80f9a03cc
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/parcel](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `ARRUAMENTO`.<br/>*Download* e integridade: [3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip](http://dl.digital-guard.org/3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 376218 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `ARRUAMENTO`<br/>*Download* e integridade: [3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip](http://dl.digital-guard.org/3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 376218 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `tr_tipo || ' ' || tr_descric` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/via)<br/>573413 bytes (0.55 <abbr title="mebibyte">MiB</abbr>)<br/>4646 segmentos com 1833.25 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.98 segmentos/km²
+#### Resultados da filtragem e sua publicação
+573413 bytes (0.55 <abbr title="mebibyte">MiB</abbr>)<br/>4646 segmentos com 1833.25 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.98 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itanhaem/_pk0058.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/via](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/via)
@@ -81,7 +81,11 @@ Nome do arquivo: `ARRUAMENTO`.<br/>*Download* e integridade: [3137911874246d45f0
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Itanhaem/_pk0058.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

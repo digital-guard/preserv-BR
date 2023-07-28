@@ -28,16 +28,16 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`.<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block)<br/>7634050 bytes (7.28 <abbr title="mebibyte">MiB</abbr>)<br/>4797 polígonos com 100.61 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²
+#### Resultados da filtragem e sua publicação
+7634050 bytes (7.28 <abbr title="mebibyte">MiB</abbr>)<br/>4797 polígonos com 100.61 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/block](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `loteamentos`.<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `loteamentos`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `Tipo || ' ' || Nome` (nsvia)
@@ -45,34 +45,34 @@ Nome do arquivo: `loteamentos`.<br/>*Download* e integridade: [529f86b71a936bfdb
 #### Comentários
 Necessario compor nome com regular expression.
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/nsvia)<br/>1131120 bytes (1.08 <abbr title="mebibyte">MiB</abbr>)<br/>335 polígonos com 61.74 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.11 polígonos/km²
+#### Resultados da filtragem e sua publicação
+1131120 bytes (1.08 <abbr title="mebibyte">MiB</abbr>)<br/>335 polígonos com 61.74 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.11 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/nsvia](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes`.<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lotes`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `ENDER_IMOV` (via)
 
 * `NRO_IMOV` (hnum)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/parcel)<br/>21561791 bytes (20.56 <abbr title="mebibyte">MiB</abbr>)<br/>100984 polígonos com 101.7 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.6 polígonos/km²
+#### Resultados da filtragem e sua publicação
+21561791 bytes (20.56 <abbr title="mebibyte">MiB</abbr>)<br/>100984 polígonos com 101.7 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.6 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/parcel)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/parcel](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixo`.<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `eixo`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1` (via)
 
-#### Dados publicados
-[http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/via)<br/>762920 bytes (0.73 <abbr title="mebibyte">MiB</abbr>)<br/>3137 segmentos com 1152.54 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.06 segmentos/km²
+#### Resultados da filtragem e sua publicação
+762920 bytes (0.73 <abbr title="mebibyte">MiB</abbr>)<br/>3137 segmentos com 1152.54 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.06 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/via)
 
 #### Visualização
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/via](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/via)
@@ -85,7 +85,11 @@ Nome do arquivo: `eixo`.<br/>*Download* e integridade: [529f86b71a936bfdbca3d633
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Limeira/_pk0026.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 

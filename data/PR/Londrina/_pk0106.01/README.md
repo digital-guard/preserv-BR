@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `LIM_Bairros_V1`.<br/>*Download* e integridade: [e5b42971d89614a91b1f503345be4248b73cee7528a93a3b0bbd519ed972ce91.rar](http://dl.digital-guard.org/e5b42971d89614a91b1f503345be4248b73cee7528a93a3b0bbd519ed972ce91.rar)<br/>Descrição: bairros.rar<br/>Tamanho do arquivo: 61248 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `LIM_Bairros_V1`<br/>*Download* e integridade: [e5b42971d89614a91b1f503345be4248b73cee7528a93a3b0bbd519ed972ce91.rar](http://dl.digital-guard.org/e5b42971d89614a91b1f503345be4248b73cee7528a93a3b0bbd519ed972ce91.rar)<br/>Descrição: bairros.rar<br/>Tamanho do arquivo: 61248 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `BAIRROS` (nsvia)
@@ -37,13 +37,13 @@ Nome do arquivo: `LIM_Bairros_V1`.<br/>*Download* e integridade: [e5b42971d89614
 [https://viz.addressforall.org/BR-PR-Londrina/_pk0106.01/nsvia](https://viz.addressforall.org/BR-PR-Londrina/_pk0106.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `shp/bclotes`.<br/>*Download* e integridade: [8826fc166ad990ec171f0671ee193f79d2a5f35dbc93c227cd7097e7fe19b525.rar](http://dl.digital-guard.org/8826fc166ad990ec171f0671ee193f79d2a5f35dbc93c227cd7097e7fe19b525.rar)<br/>Descrição: bcarshp.rar<br/>Tamanho do arquivo: 13751947 bytes (13.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `shp/bclotes`<br/>*Download* e integridade: [8826fc166ad990ec171f0671ee193f79d2a5f35dbc93c227cd7097e7fe19b525.rar](http://dl.digital-guard.org/8826fc166ad990ec171f0671ee193f79d2a5f35dbc93c227cd7097e7fe19b525.rar)<br/>Descrição: bcarshp.rar<br/>Tamanho do arquivo: 13751947 bytes (13.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Visualização
 [https://viz.addressforall.org/BR-PR-Londrina/_pk0106.01/parcel](https://viz.addressforall.org/BR-PR-Londrina/_pk0106.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Export_Output`.<br/>*Download* e integridade: [b1cc16e9070aa2c624d1eeebde8a00e4b9bea471fb76a79c4f8ec5902c250c3e.rar](http://dl.digital-guard.org/b1cc16e9070aa2c624d1eeebde8a00e4b9bea471fb76a79c4f8ec5902c250c3e.rar)<br/>Descrição: arruamento-05-22-shapefile.rar<br/>Tamanho do arquivo: 1004732 bytes (0.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Export_Output`<br/>*Download* e integridade: [b1cc16e9070aa2c624d1eeebde8a00e4b9bea471fb76a79c4f8ec5902c250c3e.rar](http://dl.digital-guard.org/b1cc16e9070aa2c624d1eeebde8a00e4b9bea471fb76a79c4f8ec5902c250c3e.rar)<br/>Descrição: arruamento-05-22-shapefile.rar<br/>Tamanho do arquivo: 1004732 bytes (0.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME` (via)
@@ -59,7 +59,11 @@ Nome do arquivo: `Export_Output`.<br/>*Download* e integridade: [b1cc16e9070aa2c
 
 # Reprodutibilidade
 
-Ver detalhes em [reproducibility.sh](reproducibility.sh).
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/PR/Londrina/_pk0106.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
 </section>
 
