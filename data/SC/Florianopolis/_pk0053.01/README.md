@@ -30,6 +30,12 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `bairro`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `label` (nsvia)
+
+#### Outros dados relevantes
+* `nm_bairro`
+
 #### Resultados da filtragem e sua publicação
 215555 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>20 polígonos com 59.12 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.09 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/nsvia)
 
@@ -39,6 +45,11 @@ Nome do arquivo: `bairro`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f3
 
 Nome do arquivo: `view_cotr_imobliario_filtro`<br/>*Download* e integridade: [cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip](http://dl.digital-guard.org/cb4f94bedbafd003b4791954e07b05a591a36bbace9cd6ca6576ed840b32bd8c.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 15147324 bytes (14.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `split_part(logradouro, ',', 1)` (via)
+
+* `split_part(logradouro, ',', 2)` (hnum)
+
 #### Resultados da filtragem e sua publicação
 26579471 bytes (25.35 <abbr title="mebibyte">MiB</abbr>)<br/>119531 polígonos com 182.67 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.36 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/parcel)
 
@@ -47,6 +58,9 @@ Nome do arquivo: `view_cotr_imobliario_filtro`<br/>*Download* e integridade: [cb
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `logradouros`<br/>*Download* e integridade: [49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar](http://dl.digital-guard.org/49c6dd8968a97b80ddd50f37db3204ae63278f7a9cda94fa35b03429d53a96a6.rar)<br/>Descrição: Multiplos arquivos<br/>Tamanho do arquivo: 12653049 bytes (12.07 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `nome` (via)
 
 #### Resultados da filtragem e sua publicação
 2858886 bytes (2.73 <abbr title="mebibyte">MiB</abbr>)<br/>14875 segmentos com 1791.32 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.62 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Florianopolis/_pk0053.01/via)
