@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `Quadras`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](http://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Outros dados relevantes
+* `NumQuadra`
+
 #### Resultados da filtragem e sua publicação
 3144960 bytes (3 <abbr title="mebibyte">MiB</abbr>)<br/>3512 polígonos com 79.2 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/block)
 
@@ -38,6 +41,9 @@ Nome do arquivo: `Quadras`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
 Nome do arquivo: `Bairros`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](http://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `NOME` (nsvia)
 
 #### Resultados da filtragem e sua publicação
 1127785 bytes (1.08 <abbr title="mebibyte">MiB</abbr>)<br/>42 polígonos com 134.52 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.07 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/nsvia)
@@ -48,6 +54,11 @@ Nome do arquivo: `Bairros`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a
 
 Nome do arquivo: `Lotes/lote`<br/>*Download* e integridade: [51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar](http://dl.digital-guard.org/51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4656161 bytes (4.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `Tipo || ' ' || Logradouro AS via, Numero` (hnum)
+
+* `Bairro` (nsvia)
+
 #### Resultados da filtragem e sua publicação
 12385593 bytes (11.81 <abbr title="mebibyte">MiB</abbr>)<br/>68998 polígonos com 68.66 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.43 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/parcel)
 
@@ -56,6 +67,9 @@ Nome do arquivo: `Lotes/lote`<br/>*Download* e integridade: [51a6beb9fca43e0fb45
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `Ruas`<br/>*Download* e integridade: [9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip](http://dl.digital-guard.org/9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 5204795 bytes (4.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `NOME` (via)
 
 #### Resultados da filtragem e sua publicação
 1559564 bytes (1.49 <abbr title="mebibyte">MiB</abbr>)<br/>9343 segmentos com 1010.23 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.56 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/SantaMaria/_pk0019.01/via)
