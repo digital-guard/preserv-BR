@@ -30,6 +30,12 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `NRO_IMOVEL`<br/>*Download* e integridade: [fbc62efdbd0f16a7db03b5b775c50c9425367a8dee8a85d9b53e4475bbdb99d2.zip](http://dl.digital-guard.org/fbc62efdbd0f16a7db03b5b775c50c9425367a8dee8a85d9b53e4475bbdb99d2.zip)<br/>Descrição: Imóveis<br/>Tamanho do arquivo: 13959059 bytes (13.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-51 +k=0.999995 +x_0=300000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 
+#### Dados relevantes
+* `textstring` (hnum)
+
+#### Outros dados relevantes
+* `last_edi_1`
+
 #### Resultados da filtragem e sua publicação
 8117444 bytes (7.74 <abbr title="mebibyte">MiB</abbr>)<br/>150941 pontos<br/>densidade média: 605.33 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/geoaddress)
 
@@ -39,6 +45,9 @@ Nome do arquivo: `NRO_IMOVEL`<br/>*Download* e integridade: [fbc62efdbd0f16a7db0
 
 Nome do arquivo: `Bairros_LC12112_16`<br/>*Download* e integridade: [258772459588f7941ac6eeda7c6839df02d58741cf6bc3e48825aecd60418251.zip](http://dl.digital-guard.org/258772459588f7941ac6eeda7c6839df02d58741cf6bc3e48825aecd60418251.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 3464865 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-51 +k=0.999995 +x_0=300000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 
+#### Dados relevantes
+* `nome` (nome)
+
 #### Resultados da filtragem e sua publicação
 4036694 bytes (3.85 <abbr title="mebibyte">MiB</abbr>)<br/>94 polígonos com 434.8 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.82 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/nsvia)
 
@@ -47,6 +56,9 @@ Nome do arquivo: `Bairros_LC12112_16`<br/>*Download* e integridade: [25877245958
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `EixosLogradouros`<br/>*Download* e integridade: [c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip](http://dl.digital-guard.org/c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 7306124 bytes (6.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-51 +k=0.999995 +x_0=300000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+
+#### Dados relevantes
+* `CDIDECAT || iif(NMIDEPRE&gt;'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG` (via)
 
 #### Resultados da filtragem e sua publicação
 6399136 bytes (6.1 <abbr title="mebibyte">MiB</abbr>)<br/>31076 segmentos com 3579.64 <abbr title="quilômetros">km</abbr><br/>densidade média: 7.14 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/via)

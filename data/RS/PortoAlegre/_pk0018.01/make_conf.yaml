@@ -34,6 +34,13 @@ layers:
     #sql_select: ['gid', 'textstring AS hnum', 'setor', 'last_edi_1 AS dateModified', 'geom']
     orig_filename: NRO_IMOVEL
     buffer_type: 2
+    standardized_fields:
+     -
+      name: textstring
+      standard: hnum
+    other_fields:
+     -
+      name: last_edi_1
 
   nsvia:
     subtype: full
@@ -49,7 +56,10 @@ layers:
         ) t
     orig_filename: Bairros_LC12112_16
     id_profile_params: 4
-
+    standardized_fields:
+     -
+      name: nome
+      standard: nome
   via:
     subtype: full
     method: shp2sql
@@ -62,3 +72,7 @@ layers:
     orig_filename: EixosLogradouros
     id_profile_params: 4
     buffer_type: 2
+    standardized_fields:
+     -
+      name: CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG
+      standard: via
