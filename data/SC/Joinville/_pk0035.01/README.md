@@ -39,6 +39,14 @@ Nome do arquivo: `Malha Fundi ria/Quadras`<br/>*Download* e integridade: [3d4a6
 
 Nome do arquivo: `['Malha Fundi\xa0ria/lotes2020_uso', 'Malha Fundi\xa0ria/Lotes_rurais']`<br/>*Download* e integridade: [3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip](http://dl.digital-guard.org/3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 37194488 bytes (35.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `___logradour` (via)
+
+* `___numero_25` (hnum)
+
+#### Outros dados relevantes
+* `uso`
+
 #### Resultados da filtragem e sua publicação
 36055129 bytes (34.38 <abbr title="mebibyte">MiB</abbr>)<br/>144323 polígonos com 1072.74 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.79 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/parcel)
 
@@ -47,6 +55,9 @@ Nome do arquivo: `['Malha Fundi\xa0ria/lotes2020_uso', 'Malha Fundi\xa0ria/Lotes
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `Malha Vi ria/logradouros`<br/>*Download* e integridade: [207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip](http://dl.digital-guard.org/207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 8100838 bytes (7.73 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `nomelog` (via)
 
 #### Resultados da filtragem e sua publicação
 1884297 bytes (1.8 <abbr title="mebibyte">MiB</abbr>)<br/>16364 segmentos com 1980.05 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.72 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/via)
