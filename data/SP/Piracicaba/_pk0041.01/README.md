@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `Quadras`<br/>*Download* e integridade: [23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip](http://dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 6444085 bytes (6.15 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
 
+#### Outros dados relevantes
+* `chave_qd`
+
 #### Resultados da filtragem e sua publicação
 11342814 bytes (10.82 <abbr title="mebibyte">MiB</abbr>)<br/>7180 polígonos com 171.41 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.43 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/block)
 
@@ -39,6 +42,9 @@ Nome do arquivo: `Quadras`<br/>*Download* e integridade: [23f703b7d1611ea29f53fe
 
 Nome do arquivo: `Bairros`<br/>*Download* e integridade: [2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip](http://dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 381036 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
 
+#### Dados relevantes
+* `bairro` (nsvia)
+
 #### Resultados da filtragem e sua publicação
 778807 bytes (0.74 <abbr title="mebibyte">MiB</abbr>)<br/>71 polígonos com 225.66 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.28 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/nsvia)
 
@@ -47,6 +53,18 @@ Nome do arquivo: `Bairros`<br/>*Download* e integridade: [2137f68df828ce00c276a3
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `Cadastro de Imoveis`<br/>*Download* e integridade: [f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip](http://dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 13629703 bytes (13 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 4326
+
+#### Dados relevantes
+* `bairro_imo` (nsvia)
+
+* `cep_imovel` (postcode)
+
+* `logradouro` (via)
+
+* `numero_imo` (hnum)
+
+#### Outros dados relevantes
+* `unidades`
 
 #### Resultados da filtragem e sua publicação
 32805628 bytes (31.29 <abbr title="mebibyte">MiB</abbr>)<br/>149640 polígonos com 170.51 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Piracicaba/_pk0041.01/parcel)

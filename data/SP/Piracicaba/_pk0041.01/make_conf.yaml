@@ -26,6 +26,22 @@ layers:
         sql_select: ['gid','bairro_imo AS nsvia','cep_imovel AS postcode', 'logradouro AS via', 'numero_imo AS hnum', 'unidades', 'geom']
         orig_filename: Cadastro de Imoveis
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: bairro_imo
+          standard: nsvia
+         -
+          name: cep_imovel
+          standard: postcode
+         -
+          name: logradouro
+          standard: via
+         -
+          name: numero_imo
+          standard: hnum
+        other_fields:
+         -
+          name: unidades
   block:
         subtype: none
         method: shp2sql
@@ -33,6 +49,9 @@ layers:
         sql_select: ['gid', 'chave_qd','geom']
         orig_filename: Quadras
         codec: SHP~Latin1
+        other_fields:
+         -
+          name: chave_qd
   nsvia:
         subtype: none
         method: shp2sql
@@ -40,3 +59,7 @@ layers:
         sql_select: ['gid', 'bairro AS nsvia','geom']
         orig_filename: Bairros
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: bairro
+          standard: nsvia
