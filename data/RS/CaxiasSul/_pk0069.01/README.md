@@ -39,6 +39,9 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [a9d2db675520121d4ed840
 
 Nome do arquivo: `bairros`<br/>*Download* e integridade: [17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip](http://dl.digital-guard.org/17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 150919 bytes (0.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `nome` (nsvia)
+
 #### Resultados da filtragem e sua publicação
 303482 bytes (0.29 <abbr title="mebibyte">MiB</abbr>)<br/>70 polígonos com 221.43 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.13 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/nsvia)
 
@@ -59,6 +62,12 @@ Nome do arquivo: `lotes`<br/>*Download* e integridade: [ca028e7824a7489c9a406884
 
 Nome do arquivo: `logradouros`<br/>*Download* e integridade: [09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip](http://dl.digital-guard.org/09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip)<br/>Descrição: Via<br/>Tamanho do arquivo: 3642414 bytes (3.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `tipolograd || ' ' || nomeoficia` (via)
+
+#### Outros dados relevantes
+* `nomeusual`
+
 #### Resultados da filtragem e sua publicação
 4295690 bytes (4.1 <abbr title="mebibyte">MiB</abbr>)<br/>18545 segmentos com 3462.98 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.78 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/via)
 
@@ -67,6 +76,12 @@ Nome do arquivo: `logradouros`<br/>*Download* e integridade: [09e01c7ab557f61a35
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
 Nome do arquivo: `data-1626873935092`<br/>*Download* e integridade: [58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip](http://dl.digital-guard.org/58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip)<br/>Descrição: Endereço<br/>Tamanho do arquivo: 429082 bytes (0.41 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31982
+
+#### Dados relevantes
+* `nr_imovel` (hnum)
+
+#### Outros dados relevantes
+* `cod_localizacao_completo`
 
 Complementa [parcel](#-parcel) por meio de `cod_localizacao_completo` e `inscrica_1`
 

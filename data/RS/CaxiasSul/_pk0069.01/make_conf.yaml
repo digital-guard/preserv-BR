@@ -36,6 +36,10 @@ layers:
     file: 1
     sql_select: ['gid', 'nome AS nsvia', 'geom']
     orig_filename: bairros
+    standardized_fields:
+     -
+      name: nome
+      standard: nsvia
 
   via:
     subtype: full
@@ -44,6 +48,13 @@ layers:
     sql_view: |-
         SELECT row_number() OVER () as gid, tipolograd || ' ' || nomeoficia AS via, nomeusual AS nomeusual, geom FROM $(tabname)
     orig_filename: logradouros
+    standardized_fields:
+     -
+      name: tipolograd || ' ' || nomeoficia
+      standard: via
+    other_fields:
+     -
+      name: nomeusual
 
   parcel:
     subtype: ext
@@ -68,3 +79,10 @@ layers:
     sql_select: ['cod_localizacao_completo', 'nr_imovel AS hnum']
     orig_filename: data-1626873935092
     join_id: cod_localizacao_completo
+    standardized_fields:
+     -
+      name: nr_imovel
+      standard: hnum
+    other_fields:
+     -
+      name: cod_localizacao_completo
