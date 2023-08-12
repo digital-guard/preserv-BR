@@ -37,6 +37,16 @@ layers:
               FROM $(tabname)
         codec: SHP;srid=31983
         join_id: cod_trecho
+        standardized_fields:
+         -
+          name: NP
+          standard: hnum
+         -
+          name: CEP
+          standard: postcode
+        other_fields:
+         -
+          name: cod_trecho
 
   address:
         subtype: cmpl
@@ -45,6 +55,11 @@ layers:
         orig_filename: Logradouros
         sql_view: SELECT DISTINCT properties->'COD_TRECHO' AS ref, properties->'COMPLETO' AS via FROM $(tabname) WHERE properties->'COD_TRECHO' IS NOT NULL AND properties->'COMPLETO' IS NOT NULL
         join_id: ref
+        standardized_fields:
+         -
+          name: properties->'COMPLETO'
+          standard: via
+
 
   via:
         subtype: full
@@ -56,6 +71,10 @@ layers:
             properties->'COMPLETO' AS via, \
             properties->'COD_TRECHO' AS ref, \
             jgeom AS geom FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'COMPLETO'
+          standard: via
 
   parcel:
         subtype: full
@@ -66,6 +85,13 @@ layers:
               SELECT row_number() OVER () as gid, properties->'cod_trecho' AS via, \
               properties->'cod_np' AS hnum,  jgeom AS geom \
               FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'cod_trecho'
+          standard: via
+         -
+          name: properties->'cod_np'
+          standard: hnum
 
   nsvia:
         subtype: full
@@ -75,6 +101,10 @@ layers:
         sql_view: |-
               SELECT row_number() OVER () as gid, properties->'NOME' as nsvia, jgeom AS geom \
               FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'NOME'
+          standard: nsvia
   block:
         subtype: none
         method: geojson2sql
