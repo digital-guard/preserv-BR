@@ -1,43 +1,51 @@
-# Tarefas
-## 0. Esperar receber melhores dados da prefeitura
-## 1. Gerar eixos de vias com nomes do OpenStreetMap
-Obter eixos de vias do mapa OpenStreeMap, dentro do limite do município de Cabreúva.
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Cabreuva/_pk0040.01"><big><b>pk0040.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SP-Cabreuva">BR-SP-Cabreuva</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="https://www.cabreuva.sp.gov.br/">Prefeitura Municipal de Cabreúva</a>
+<br/>&nbsp; <small>CNPJ 46.634.432/0001-55</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q99199749">Q99199749</a></small><br/>
 
-Os eixos de vias são obtidos das ways com a chave `highway`, conforme filtro que exclua vias não necessárias (e.g. trilhas, passeios etc).
+Obtido via <i>email</i> em <b>2020-08-27</b> por:
+<br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
+<br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="cadparcel" href="#-cadparcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/></a> </td></tr>
 
-Etiquetas relevantes:
-* `name` (string): nome do logradouro.
+</table>
+</aside>
 
-## 2. Distribuir pontos de endereço ao longo dos eixos
-Gerar e distribuir por interpolação pontos de endereço ao longo dos eixos de vias da tarefa 1.
+<section>
 
-Cada ponto terá os dados:
-* Nome do logradouro
-* Número predial
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://wiki.addressforall.org/doc/Documentação_Digital-guard).
 
-O nome do logradouro e a numeração predial são obtidos da planilha `relação_.csv`.
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Cabreuva/_pk0040.01/make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-Extração da planilha:
-1. Abrir `relacao_.csv.zip`.
-2. Selecionar arquivo `relação_.csv`.
-3. Copiar arquivos selecionados para diretório alvo.
+# Camadas de dados
 
-Dados relevantes:
-* Nome do logradouro: coluna 2 `Logradouro`, texto em caixa alta.
-* Número predial: coluna 6 `Nº Imóvel`.
-* Número de quadra: coluna 8 `Quadra`.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-Devido à inconsistência entre os nomes dos eixos de vias e os da planilha (abreviação etc), deverá haver uma planilha DE-PARA.
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Os pontos serão distribuidos ao longo da via, do centro para periferia, usando o número predial como distância de interpolação.
+Nome do arquivo: `relação_`<br/>*Download* e integridade: [28ad2bab16b023135e52a101d2e1ddf3337806de3922599a10598b9f2131e3d2.zip](http://dl.digital-guard.org/28ad2bab16b023135e52a101d2e1ddf3337806de3922599a10598b9f2131e3d2.zip)<br/>Descrição: Edifícios<br/>Tamanho do arquivo: 113802 bytes (0.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
 
-Para limitar a interpolação em trechos menores, use a coluna `Quadra`.
+#### Dados relevantes
+* `Logradouro` (via)
 
-O doador não forneceu mapa de numeração de quadras, então use a coluna `Quadra` como forma de agrupar numerações prediais da mesma quadra e supor os trechos.
+* `Nº Imóvel` (hnum)
 
-# GitHub
-Issues:
-* https://github.com/AddressForAll/digital-preservation-BR/issues/4
+Complementa [](#-) por meio de `ref` e ``
 
-# Evidências de teste
-(vazio)
+</section>
+<section>
+
+# Reprodutibilidade
+
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](http://git.digital-guard.org/preserv-BR/blob/main/data/SP/Cabreuva/_pk0040.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
+
+</section>
+

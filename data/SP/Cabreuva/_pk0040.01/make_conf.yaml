@@ -21,4 +21,11 @@ layers:
     sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, 
       CASE WHEN 'Nº Imóvel' like '%S/N%' THEN NULL ELSE 'Nº Imóvel' END  as hnum  FROM $(tabname)
     join_id: ref
+    standardized_fields:
+     -
+      name: Logradouro
+      standard: via
+     -
+      name: Nº Imóvel
+      standard: hnum
 
