@@ -23,6 +23,13 @@ layers:
     sql_view: SELECT gid, complement, "número por" AS hnum, split_part("tipo do lo",'|',2) || ' ' || "nome do lo" AS via, geom FROM $(tabname)
     orig_filename: lotes_prediais
     codec: SHP~Latin1
+    standardized_fields:
+     -
+      name: número por
+      standard: hnum
+     -
+      name: nome do lo
+      standard: via
 
   via:
     subtype: full
@@ -32,3 +39,17 @@ layers:
     sql_view: SELECT gid, TIPO || ' ' || NOME AS via, BAIRRO AS nsvia, IMPLANTADO, CLANDESTIN, SITUACAO, geom FROM $(tabname)
     orig_filename: eixos_sorocaba
     codec: SHP;srid=5533;charset=ISO-8859-1
+    standardized_fields:
+     -
+      name: TIPO || ' ' || NOME
+      standard: via
+     -
+      name: BAIRRO
+      standard: nsvia
+    other_fields:
+     -
+      name: IMPLANTADO
+     -
+      name: CLANDESTIN
+     -
+      name: SITUACAO

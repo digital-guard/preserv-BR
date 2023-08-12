@@ -30,6 +30,11 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `lotes_prediais`<br/>*Download* e integridade: [3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip](http://dl.digital-guard.org/3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 14476669 bytes (13.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `número por` (hnum)
+
+* `nome do lo` (via)
+
 #### Resultados da filtragem e sua publicação
 33803305 bytes (32.24 <abbr title="mebibyte">MiB</abbr>)<br/>175605 polígonos com 127.03 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.51 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/parcel)
 
@@ -38,6 +43,16 @@ Nome do arquivo: `lotes_prediais`<br/>*Download* e integridade: [3c89fd728a33d78
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `eixos_sorocaba`<br/>*Download* e integridade: [f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip](http://dl.digital-guard.org/f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1880173 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 5533
+
+#### Dados relevantes
+* `TIPO || ' ' || NOME` (via)
+
+* `BAIRRO` (nsvia)
+
+#### Outros dados relevantes
+* `IMPLANTADO`
+* `CLANDESTIN`
+* `SITUACAO`
 
 #### Resultados da filtragem e sua publicação
 2315448 bytes (2.21 <abbr title="mebibyte">MiB</abbr>)<br/>21599 segmentos com 2668.16 <abbr title="quilômetros">km</abbr><br/>densidade média: 5.75 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Sorocaba/_pk0031.01/via)
