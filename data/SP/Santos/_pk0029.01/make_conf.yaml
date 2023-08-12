@@ -19,3 +19,7 @@ layers:
         sql_select: ['gid', 'L_NUMERO AS hnum','X', 'Y', 'geom']
         codec: SHP~Latin1
         # não adicionei X e Y. Precisa?
+        standardized_fields:
+         -
+          name: L_NUMERO
+          standard: hnum

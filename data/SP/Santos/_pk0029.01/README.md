@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `LOTES_PONTO_S2K`<br/>*Download* e integridade: [b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip](http://dl.digital-guard.org/b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 1922893 bytes (1.83 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `L_NUMERO` (hnum)
+
 #### Resultados da filtragem e sua publicação
 2321232 bytes (2.21 <abbr title="mebibyte">MiB</abbr>)<br/>43161 pontos<br/>densidade média: 505.74 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Santos/_pk0029.01/geoaddress)
 
