@@ -21,4 +21,8 @@ layers:
            ST_GeomFromText("SRID_29193",$(srid)) as geom \
       FROM $(tabname)
     orig_filename: SaoVicente-Oficial
+    standardized_fields:
+     -
+      name: HouseNumber
+      standard: hnum
 

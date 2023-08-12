@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `SaoVicente-Oficial`<br/>*Download* e integridade: [3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip](http://dl.digital-guard.org/3d5bc83bbbfd7e28857d36e6cf9df06bcd1d9de257018d684a3dd91608c55742.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 628580 bytes (0.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 29193
 
+#### Dados relevantes
+* `HouseNumber` (hnum)
+
 #### Resultados da filtragem e sua publicação
 2160276 bytes (2.06 <abbr title="mebibyte">MiB</abbr>)<br/>40169 pontos<br/>densidade média: 624.02 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoVicente/_pk0032.01/geoaddress)
 
