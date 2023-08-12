@@ -65,6 +65,9 @@ Nome do arquivo: `Malha Vi ria/logradouros`<br/>*Download* e integridade: [207c
 #### Visualização
 [https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/via](https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/via)
 
+# Evidências de teste
+<img src="qgis.png" width="400"/>
+
 </section>
 <section>
 

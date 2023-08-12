@@ -54,3 +54,4 @@ layers:
         file: 1
         sql_select: ['gid','geom']
         orig_filename: Malha Fundi ria/Quadras
+test_evidence: qgis.png
