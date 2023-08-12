@@ -39,6 +39,9 @@ Nome do arquivo: `256b0041-6e29-1649-4b2b-00006944c8fb`<br/>*Download* e integri
 
 Nome do arquivo: `5486431b-c7fe-aec8-ab9c-00004b294da9`<br/>*Download* e integridade: [b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip](http://dl.digital-guard.org/b594f8717d9912e25938029f8ac55eb5842b561ff29d9768c5b77489945a9c1c.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 3462351 bytes (3.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `LOGRADOURO` (via)
+
 #### Resultados da filtragem e sua publicação
 7513141 bytes (7.17 <abbr title="mebibyte">MiB</abbr>)<br/>49876 segmentos com 5860.05 <abbr title="quilômetros">km</abbr><br/>densidade média: 9.98 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Campinas/_pk0022.01/via)
 
