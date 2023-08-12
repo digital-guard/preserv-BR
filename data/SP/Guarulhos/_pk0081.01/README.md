@@ -30,6 +30,12 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `pg_renumeracoes`<br/>*Download* e integridade: [1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip](http://dl.digital-guard.org/1641b8c5fe5a2e9141939bb7353bda4fda1ea04d7a631a4d012e4759d1bf8447.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 11934534 bytes (11.38 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `numnovo` (hnum)
+
+#### Outros dados relevantes
+* `cod_log`
+
 <br/>Complementado por [address](#-address) por meio de `cod_log` e ``
 
 #### Resultados da filtragem e sua publicação
@@ -41,6 +47,9 @@ Nome do arquivo: `pg_renumeracoes`<br/>*Download* e integridade: [1641b8c5fe5a2e
 
 Nome do arquivo: `pg_cartografia_bairros`<br/>*Download* e integridade: [d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip](http://dl.digital-guard.org/d9cddc63f7782d250fc80f0572b9fb884ee7ec1911e19deea4381a4ad5d0a172.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 217773 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `bairro` (nsvia)
+
 #### Resultados da filtragem e sua publicação
 513210 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>47 polígonos com 318.93 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.96 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/nsvia)
 
@@ -50,6 +59,12 @@ Nome do arquivo: `pg_cartografia_bairros`<br/>*Download* e integridade: [d9cddc6
 
 Nome do arquivo: `pg_cartografia_logradouros`<br/>*Download* e integridade: [47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip](http://dl.digital-guard.org/47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 3760005 bytes (3.59 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `Logradouro` (via)
+
+#### Outros dados relevantes
+* `cod_log`
+
 #### Resultados da filtragem e sua publicação
 4972741 bytes (4.74 <abbr title="mebibyte">MiB</abbr>)<br/>27876 segmentos com 2743.96 <abbr title="quilômetros">km</abbr><br/>densidade média: 10.04 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/via)
 
@@ -58,6 +73,12 @@ Nome do arquivo: `pg_cartografia_logradouros`<br/>*Download* e integridade: [479
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-address.png" alt="address" width="20"/> address
 
 Nome do arquivo: `pg_cartografia_logradouros`<br/>*Download* e integridade: [47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip](http://dl.digital-guard.org/47910adcd297a9ba875d89dacc91bc6b2a37d6eab4910964253e117c1484b4c5.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 3760005 bytes (3.59 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `Logradouro` (via)
+
+#### Outros dados relevantes
+* `cod_log`
 
 Complementa [](#-) por meio de `cod_log` e ``
 
