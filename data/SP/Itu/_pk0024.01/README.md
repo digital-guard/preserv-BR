@@ -48,6 +48,13 @@ Nome do arquivo: `Edificação/Edificação`<br/>*Download* e integridade: [5041
 
 Nome do arquivo: `lotes_Itu`<br/>*Download* e integridade: [00f40e3731f0e04b8d1050a4716385f412aed5b32b560a47cc321ef4ea5413f8.rar](http://dl.digital-guard.org/00f40e3731f0e04b8d1050a4716385f412aed5b32b560a47cc321ef4ea5413f8.rar)<br/>Descrição: lotes_Itu.rar<br/>Tamanho do arquivo: 4338330 bytes (4.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: TAB<br/>SRID: 32723
 
+#### Dados relevantes
+* `Bairro` (nsvia)
+
+* `Logradouro` (via)
+
+* `Numero` (hnum)
+
 #### Resultados da filtragem e sua publicação
 13278973 bytes (12.66 <abbr title="mebibyte">MiB</abbr>)<br/>63179 polígonos com 147.54 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.59 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itu/_pk0024.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itu/_pk0024.01/parcel)
 
@@ -56,6 +63,9 @@ Nome do arquivo: `lotes_Itu`<br/>*Download* e integridade: [00f40e3731f0e04b8d10
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `LOGRADOURO_2019`<br/>*Download* e integridade: [e10b14c4bfeaa6b40b725acc573a98fba308b72836002af3c7431982b74348f1.rar](http://dl.digital-guard.org/e10b14c4bfeaa6b40b725acc573a98fba308b72836002af3c7431982b74348f1.rar)<br/>Descrição: LOGRADOURO_2019.rar<br/>Tamanho do arquivo: 1199739 bytes (1.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: tab<br/>SRID: 32723
+
+#### Dados relevantes
+* `Logradouro` (via)
 
 #### Resultados da filtragem e sua publicação
 2623584 bytes (2.5 <abbr title="mebibyte">MiB</abbr>)<br/>8523 segmentos com 1800.41 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.74 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itu/_pk0024.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Itu/_pk0024.01/via)

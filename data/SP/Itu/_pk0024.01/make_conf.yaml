@@ -26,6 +26,16 @@ layers:
         sql_select: ['Bairro as nsvia','Logradouro AS via','Numero AS hnum', 'geom']
         orig_filename: lotes_Itu
         extension: TAB # deveria ser codec, mas ogr2ogr é sensível ao case no arquivo de entrada.
+        standardized_fields:
+         -
+          name: Bairro
+          standard: nsvia
+         -
+          name: Logradouro
+          standard: via
+         -
+          name: Numero
+          standard: hnum
   via:
         subtype: full
         method: ogr2ogr
@@ -34,6 +44,10 @@ layers:
         orig_filename: LOGRADOURO_2019
         codec: TAB
         method_opts: -nlt CONVERT_TO_LINEAR -nlt PROMOTE_TO_MULTI
+        standardized_fields:
+         -
+          name: Logradouro
+          standard: via
   building:
         subtype: none
         method: shp2sql
