@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
 
+#### Dados relevantes
+* `codquadra` (ref)
+
 #### Resultados da filtragem e sua publicação
 2202480 bytes (2.1 <abbr title="mebibyte">MiB</abbr>)<br/>4304 polígonos com 46.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.67 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/block)
 
@@ -38,6 +41,9 @@ Nome do arquivo: `Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg`<br/>*D
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
 Nome do arquivo: `bairros`<br/>*Download* e integridade: [0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip](http://dl.digital-guard.org/0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip)<br/>Descrição: entrega_2020-10-02_recorte.zip<br/>Tamanho do arquivo: 119677 bytes (0.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `nome` (via)
 
 #### Resultados da filtragem e sua publicação
 207950 bytes (0.2 <abbr title="mebibyte">MiB</abbr>)<br/>60 polígonos com 64.96 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.94 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/nsvia](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/nsvia)
@@ -48,6 +54,9 @@ Nome do arquivo: `bairros`<br/>*Download* e integridade: [0332a2f00b8cd344818b1b
 
 Nome do arquivo: `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
 
+#### Dados relevantes
+* `num_atual` (hnum)
+
 #### Resultados da filtragem e sua publicação
 19861414 bytes (18.94 <abbr title="mebibyte">MiB</abbr>)<br/>108102 polígonos com 44.02 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/parcel)
 
@@ -56,6 +65,11 @@ Nome do arquivo: `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`<br/>*Download
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `Eixo_Logradouros_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
+
+#### Dados relevantes
+* `nome` (via)
+
+* `cep_correi` (postcode)
 
 #### Resultados da filtragem e sua publicação
 1223800 bytes (1.17 <abbr title="mebibyte">MiB</abbr>)<br/>4132 segmentos com 1106.17 <abbr title="quilômetros">km</abbr><br/>densidade média: 15.94 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Osasco/_pk0028.01/via)
