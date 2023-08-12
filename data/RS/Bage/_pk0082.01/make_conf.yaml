@@ -28,6 +28,10 @@ layers:
           SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'logradouro'
+          standard: via
 # Fazer apenas ingestão de lotes urbanos, o sistema não está preparado para esse tipo de ingestão 
 #  parcel:
 #        subtype: full
@@ -45,6 +49,10 @@ layers:
               SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'logradouro'
+          standard: via
 
   block:
         subtype: none

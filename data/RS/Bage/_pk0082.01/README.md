@@ -29,6 +29,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `LOTES_URBANOS`<br/>*Download* e integridade: [7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip](http://dl.digital-guard.org/7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip)<br/>Descrição: LOTES<br/>Tamanho do arquivo: 10319163 bytes (9.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
 
+#### Dados relevantes
+* `properties-&gt;'logradouro'` (via)
+
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
 Nome do arquivo: `QUARTEIRAO`<br/>*Download* e integridade: [47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip](http://dl.digital-guard.org/47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip)<br/>Descrição: quarteirões<br/>Tamanho do arquivo: 1496124 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
@@ -36,6 +39,9 @@ Nome do arquivo: `QUARTEIRAO`<br/>*Download* e integridade: [47063f994f552e27c3b
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `LOGRADOUROS-utf8`<br/>*Download* e integridade: [e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip](http://dl.digital-guard.org/e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip)<br/>Descrição: LOGRADOUROS<br/>Tamanho do arquivo: 456311 bytes (0.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
+
+#### Dados relevantes
+* `properties-&gt;'logradouro'` (via)
 
 </section>
 <section>
