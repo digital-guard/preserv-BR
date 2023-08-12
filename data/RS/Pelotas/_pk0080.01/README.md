@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `DADOS PELOTAS/numeracao_cadastral`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](http://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
+#### Dados relevantes
+* `text` (hnum)
+
 #### Resultados da filtragem e sua publicação
 5262178 bytes (5.02 <abbr title="mebibyte">MiB</abbr>)<br/>94205 pontos<br/>densidade média: 1129.28 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/geoaddress)
 
@@ -47,6 +50,9 @@ Nome do arquivo: `DADOS PELOTAS/pelotas_lotes_cadastro`<br/>*Download* e integri
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `DADOS PELOTAS/pelotas_eixos_viarios`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](http://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `nome_map` (via)
 
 #### Resultados da filtragem e sua publicação
 376167 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>1599 segmentos com 1030.76 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.66 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/via)

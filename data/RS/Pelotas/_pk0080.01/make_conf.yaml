@@ -18,6 +18,11 @@ layers:
     file: 1
     sql_select: ['gid', 'text AS hnum', 'geom']
     orig_filename: DADOS PELOTAS/numeracao_cadastral
+    standardized_fields:
+     -
+      name: text
+      standard: hnum
+
 
   via:
     subtype: full
@@ -25,6 +30,10 @@ layers:
     file: 1
     sql_select: ['gid', 'nome_map AS via', 'geom']
     orig_filename: DADOS PELOTAS/pelotas_eixos_viarios
+    standardized_fields:
+     -
+      name: nome_map
+      standard: via
 
   parcel:
     subtype: none
