@@ -18,6 +18,14 @@ layers:
     file: 1
     sql_select: ['gid','NOME_LOGR AS via','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lograd
+    standardized_fields:
+     -
+      name: NOME_LOGR
+      standard: via
+    other_fields:
+     -
+      name: cod_dv_log
+
 
   parcel:
     subtype: ext
@@ -26,6 +34,13 @@ layers:
     sql_select: ['gid','NRO_IMOV AS hnum','COD_DV_LOG AS cod_dv_log','geom']
     orig_filename: lotes
     join_id: cod_dv_log
+    standardized_fields:
+     -
+      name: NRO_IMOV
+      standard: hnum
+    other_fields:
+     -
+      name: cod_dv_log
 
   block:
     subtype: full
@@ -33,6 +48,9 @@ layers:
     file: 1
     sql_select: ['gid','QUADRA','geom']
     orig_filename: quadras
+    other_fields:
+     -
+      name: QUADRA
 
   cadparcel:
     subtype: cmpl
@@ -41,4 +59,11 @@ layers:
     sql_view: SELECT DISTINCT NOME_LOGR AS via, COD_DV_LOG AS cod_dv_log FROM $(tabname)
     orig_filename: lograd
     join_id: cod_dv_log
+    standardized_fields:
+     -
+      name: NOME_LOGR
+      standard: via
+    other_fields:
+     -
+      name: cod_dv_log
 

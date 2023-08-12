@@ -30,6 +30,9 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 Nome do arquivo: `quadras`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Outros dados relevantes
+* `QUADRA`
+
 #### Resultados da filtragem e sua publicação
 16392225 bytes (15.63 <abbr title="mebibyte">MiB</abbr>)<br/>10622 polígonos com 179.54 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.42 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/RibeiraoPreto/_pk0052.01/block](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/RibeiraoPreto/_pk0052.01/block)
 
@@ -38,6 +41,12 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd0787
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `lotes`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `NRO_IMOV` (hnum)
+
+#### Outros dados relevantes
+* `cod_dv_log`
 
 <br/>Complementado por [cadparcel](#-cadparcel) por meio de `cod_dv_log` e `cod_dv_log`
 
@@ -50,6 +59,12 @@ Nome do arquivo: `lotes`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787
 
 Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
+#### Dados relevantes
+* `NOME_LOGR` (via)
+
+#### Outros dados relevantes
+* `cod_dv_log`
+
 #### Resultados da filtragem e sua publicação
 7599389 bytes (7.25 <abbr title="mebibyte">MiB</abbr>)<br/>32003 segmentos com 3216.63 <abbr title="quilômetros">km</abbr><br/>densidade média: 7.66 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/RibeiraoPreto/_pk0052.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/RibeiraoPreto/_pk0052.01/via)
 
@@ -58,6 +73,12 @@ Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd07878
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
 Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `NOME_LOGR` (via)
+
+#### Outros dados relevantes
+* `cod_dv_log`
 
 Complementa [parcel](#-parcel) por meio de `cod_dv_log` e `cod_dv_log`
 
