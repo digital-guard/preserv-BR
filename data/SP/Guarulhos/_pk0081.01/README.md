@@ -36,7 +36,7 @@ Nome do arquivo: `pg_renumeracoes`<br/>*Download* e integridade: [1641b8c5fe5a2e
 #### Outros dados relevantes
 * `cod_log`
 
-<br/>Complementado por [address](#-address) por meio de `cod_log` e ``
+<br/>Complementado por [address](#-address) por meio de `cod_log` e `cod_log`
 
 #### Resultados da filtragem e sua publicação
 15590490 bytes (14.87 <abbr title="mebibyte">MiB</abbr>)<br/>289917 pontos<br/>densidade média: 2884.15 pontos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/geoaddress](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Guarulhos/_pk0081.01/geoaddress)
@@ -80,7 +80,7 @@ Nome do arquivo: `pg_cartografia_logradouros`<br/>*Download* e integridade: [479
 #### Outros dados relevantes
 * `cod_log`
 
-Complementa [](#-) por meio de `cod_log` e ``
+Complementa [geoaddress](#-geoaddress) por meio de `cod_log` e `cod_log`
 
 </section>
 <section>

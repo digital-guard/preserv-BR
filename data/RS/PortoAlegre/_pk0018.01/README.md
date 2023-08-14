@@ -58,7 +58,7 @@ Nome do arquivo: `Bairros_LC12112_16`<br/>*Download* e integridade: [25877245958
 Nome do arquivo: `EixosLogradouros`<br/>*Download* e integridade: [c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip](http://dl.digital-guard.org/c35e3b2825d3da122a74c6c8dd5f3157a3bd6201208d2a6d13dec433a6ded9fc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 7306124 bytes (6.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-51 +k=0.999995 +x_0=300000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 
 #### Dados relevantes
-* `CDIDECAT || iif(NMIDEPRE&gt;'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG` (via)
+* `CDIDECAT || iif(NMIDEPRE>'',' ' || NMIDEPRE,''::text) || ' ' || NMIDELOG` (via)
 
 #### Resultados da filtragem e sua publicação
 6399136 bytes (6.1 <abbr title="mebibyte">MiB</abbr>)<br/>31076 segmentos com 3579.64 <abbr title="quilômetros">km</abbr><br/>densidade média: 7.14 segmentos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/via](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/PortoAlegre/_pk0018.01/via)

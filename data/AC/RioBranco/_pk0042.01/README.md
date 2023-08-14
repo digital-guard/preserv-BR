@@ -57,7 +57,7 @@ Nome do arquivo: `rb_20201116/lotes`<br/>*Download* e integridade: [d96f47270e22
 #### Dados relevantes
 * `nomelog` (via): tipo e nome do logradouro em caixa alta, com acentuação.
 
-* `endereco_n` (hnum): número predial. Sem número pode ser representado como &quot;S/N&quot;, &quot;s/n&quot;, &quot;SN&quot; etc.
+* `endereco_n` (hnum): número predial. Sem número pode ser representado como "S/N", "s/n", "SN" etc.
 
 #### Resultados da filtragem e sua publicação
 23348544 bytes (22.27 <abbr title="mebibyte">MiB</abbr>)<br/>96883 polígonos com 64.18 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.5 polígonos/km²<br/>GeoJSONs publicados em [http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel](http://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AC/RioBranco/_pk0042.01/parcel)
