@@ -5,22 +5,21 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31985
 
 files:
-  -
-    p:    1
-    file: 07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip
-    name: Bairros
-  -
-    p:    2
-    file: 393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip
-    name: Logradouros
-  -
-    p:    3
-    file: ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip
-    name: Lotes
-  -
-    p:    4
-    file: 31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip
-    name: Quadras
+- file: 07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip
+  name: Bairros
+  p: 1
+- file: 393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip
+  name: Logradouros
+  p: 2
+- file: ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip
+  name: Lotes
+  p: 3
+- file: 31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip
+  name: Quadras
+  p: 4
+
+license_evidences:
+  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
 
 layers:
 

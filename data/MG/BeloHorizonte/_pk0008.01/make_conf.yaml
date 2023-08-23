@@ -15,7 +15,7 @@ files:
   size: 2637788
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip
   uri_evidency: https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about
 

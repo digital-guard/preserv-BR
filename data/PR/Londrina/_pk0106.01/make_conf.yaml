@@ -19,7 +19,7 @@ files:
   size: 13751947
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
   file: 7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af.eml
 
 layers:

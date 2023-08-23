@@ -10,6 +10,9 @@ files:
   p: 1
   size: 9022446
 
+license_evidences:
+  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
+
 layers:
 
   geoaddress:

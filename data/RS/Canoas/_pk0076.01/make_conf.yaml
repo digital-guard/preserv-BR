@@ -26,6 +26,9 @@ files:
   p: 5
   size: 727978
 
+license_evidences:
+  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
+
 layers:
 
   block:

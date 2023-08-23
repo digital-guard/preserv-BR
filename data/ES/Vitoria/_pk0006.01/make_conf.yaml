@@ -23,7 +23,7 @@ files:
   size: 8069890
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml
 
 layers:

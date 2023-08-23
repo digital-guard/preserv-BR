@@ -18,6 +18,9 @@ files:
   p: 3
   size: 2327148
 
+license_evidences:
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
+
 layers:
   parcel:
         subtype: none 

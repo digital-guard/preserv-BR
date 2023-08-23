@@ -20,7 +20,7 @@ files:
   size: 7306124
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: 3f04b132268e9924262327225ea8ac0914eb411307747ad93f19333e0d7d15dc.zip
 
 layers:
