@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoPaulo/_pk0033.01"><big><b>pk0033.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-SP-SaoPaulo">BR-SP-SaoPaulo</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="http://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoPaulo/_pk0033.01"><big><b>pk0033.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-SP-SaoPaulo">BR-SP-SaoPaulo</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.capital.sp.gov.br/">Prefeitura Municipal de São Paulo</a> (<b>SP-SPA</b>)
