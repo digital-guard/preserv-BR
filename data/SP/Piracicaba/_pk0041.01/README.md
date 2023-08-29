@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/SP/Piracicaba/_pk0041.01"><big><b>pk0041.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-SP-Piracicaba">BR-SP-Piracicaba</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/SP/Piracicaba/_pk0041.01"><big><b>pk0041.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-SP-Piracicaba">BR-SP-Piracicaba</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.piracicaba.sp.gov.br/">Prefeitura Municipal de Piracicaba</a>

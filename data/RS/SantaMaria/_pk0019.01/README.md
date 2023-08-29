@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/RS/SantaMaria/_pk0019.01"><big><b>pk0019.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-RS-SantaMaria">BR-RS-SantaMaria</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/RS/SantaMaria/_pk0019.01"><big><b>pk0019.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-RS-SantaMaria">BR-RS-SantaMaria</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.santamaria.rs.gov.br/">Prefeitura Municipal de Santa Maria</a>

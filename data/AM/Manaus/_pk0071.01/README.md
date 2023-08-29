@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/AM/Manaus/_pk0071.01"><big><b>pk0071.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-AM-Manaus">BR-AM-Manaus</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/AM/Manaus/_pk0071.01"><big><b>pk0071.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-AM-Manaus">BR-AM-Manaus</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.manaus.am.gov.br/">Prefeitura Municipal de Manaus</a>
