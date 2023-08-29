@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/AC/RioBranco/_pk0042.01"><big><b>pk0042.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-AC-RioBranco">BR-AC-RioBranco</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/AC/RioBranco/_pk0042.01"><big><b>pk0042.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-AC-RioBranco">BR-AC-RioBranco</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.riobranco.ac.gov.br/">Prefeitura Municipal de Rio Branco</a>

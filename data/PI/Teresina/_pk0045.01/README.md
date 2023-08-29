@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/PI/Teresina/_pk0045.01"><big><b>pk0045.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-PI-Teresina">BR-PI-Teresina</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/PI/Teresina/_pk0045.01"><big><b>pk0045.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-PI-Teresina">BR-PI-Teresina</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://pmt.pi.gov.br/">Prefeitura Municipal de Teresina</a>

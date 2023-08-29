@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/RS/NovoHamburgo/_pk0063.01"><big><b>pk0063.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-RS-NovoHamburgo">BR-RS-NovoHamburgo</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/RS/NovoHamburgo/_pk0063.01"><big><b>pk0063.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-RS-NovoHamburgo">BR-RS-NovoHamburgo</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.novohamburgo.rs.gov.br/">Prefeitura Municipal de Novo Hamburgo</a>

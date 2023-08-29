@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/SC/Florianopolis/_pk0053.01"><big><b>pk0053.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://osm.codes/BR-SC-Florianopolis">BR-SC-Florianopolis</a></small>
+<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/SC/Florianopolis/_pk0053.01"><big><b>pk0053.01</b></big></a> de <small><a target="_osmcodes" title="Jurisdição" href="https://afa.codes/BR-SC-Florianopolis">BR-SC-Florianopolis</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.pmf.sc.gov.br/entidades/ipuf/">Instituto de Pesquisa e Planejamento Urbano de Florianópolis</a>
