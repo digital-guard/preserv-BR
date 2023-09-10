@@ -2,7 +2,7 @@ pack_id: 75.2
 pkversion: 001
 schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
 schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
-codec:descr_encode: srid=32982
+codec:descr_encode: srid=31982
 
 files:
 - file: c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip
@@ -14,7 +14,7 @@ layers:
         subtype: full
         method: geojson2sql
         file: 1
-        orig_filename: no.porta-brusque-maio2023.geojson
+        orig_filename: no.porta-brusque-maio2023
         sql_view: |-
               SELECT row_number() OVER () as gid, properties->'nr_porta' as hnum, \
               jgeom AS geom \
@@ -27,12 +27,13 @@ layers:
         subtype: full
         method: geojson2sql
         file: 1
-        orig_filename: eixo_logradouro-brusque-maio2023.geojson
+        orig_filename: eixo_logradouro-brusque-maio2023
         sql_view: |- 
             SELECT  row_number() OVER () as gid, \
-            properties->'tipo_logr' || ' ' || properties->'logr' AS via, \
-            properties->'categ_via' categ_via, \
+            CONCAT(properties->'tipo_logr', ' ', properties->'logr') AS via,  \
+            properties->'categ_via' as categ_via, \
             jgeom AS geom FROM $(tabname)
+        # como fazer properties->'tipo_logr' || ' ' || properties->'logr' AS via, ?
         standardized_fields:
          -
           name: properties->'COMPLETO'
