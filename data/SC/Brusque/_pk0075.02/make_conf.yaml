@@ -8,6 +8,10 @@ files:
 - file: c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip
   name: email.zip
   p: 1
+  size: 1524507
+
+license_evidences:
+  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
 
 layers:
   geoaddress:
