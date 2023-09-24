@@ -1,0 +1,62 @@
+pack_id: 5.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31984
+
+files:
+- file: b18fc8ebe8bccc2cfdbbbd5f4896d5f6573033ebfa80061d1d86550c5ae8521d.zip
+  name: GDB Geodatabase
+  p: 1
+
+license_evidences:
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
+  file: 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip
+  uri_evidency: d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml
+
+layers:
+  nsvia:
+        method: gdb2sql
+        subtype: full
+        file: 1
+        sql_select: ['OBJECTID_1 AS gid','TX_BAIRRO AS nsvia','geom']
+        orig_filename: 2018-01-05.gdb
+        orig_tabname: Bairro
+        standardized_fields:
+         -
+           name: TX_BAIRRO
+           standard: nsvia
+
+  via:
+        method: gdb2sql
+        subtype: full
+        file: 1
+        sql_select: ['OBJECTID AS gid','TX_TOPONIMIA_EXTENSO AS via','geom']
+        orig_filename: 2018-01-05.gdb
+        orig_tabname: Arruamento
+        method_opts: -nlt CONVERT_TO_LINEAR -nlt PROMOTE_TO_MULTI
+        standardized_fields:
+         -
+           name: TX_TOPONIMIA_EXTENSO
+           standard: via
+
+  parcel:
+        method: gdb2sql
+        subtype: none
+        file: 1
+        sql_select:  ['OBJECTID AS gid', 'geom']
+        orig_filename: 2018-01-05.gdb
+        orig_tabname: ParcelamentoSolo
+        method_opts: -nlt POLYGON
+
+  block:
+        method: gdb2sql
+        subtype: none
+        file: 1
+        orig_filename: 2018-01-05.gdb
+        orig_tabname: Quadra
+        method_opts: -nlt POLYGON
+        sql_select:  ['OBJECTID AS gid', 'geom']
+
+
+test_evidence: qgis.png
