@@ -8,6 +8,7 @@ files:
 - file: b18fc8ebe8bccc2cfdbbbd5f4896d5f6573033ebfa80061d1d86550c5ae8521d.zip
   name: GDB Geodatabase
   p: 1
+  size: 24218623
 
 license_evidences:
   definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
