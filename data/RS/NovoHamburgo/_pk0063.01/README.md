@@ -12,7 +12,7 @@ Obtido via <i>site</i> em <b>10/11/2022</b> por:
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="nsvia" href="#-nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="building" href="#-building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> </td></tr>
 <tr><td>Dados publicados em <a href="https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
-<tr><td>Visualização: <a title="building" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> <a title="nsvia" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
+<tr><td>Visualização: <a title="building" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/building"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/></a> <a title="nsvia" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/nsvia"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/></a> <a title="parcel" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
 </table>
 </aside>
 
@@ -33,6 +33,8 @@ Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [830b546ac5cdc4290f
 #### Dados relevantes
 * `tx_numero` (house_number)
 
+* `building` (building)
+
 #### Resultados da filtragem e sua publicação
 23275379 bytes (22.2 <abbr title="mebibyte">MiB</abbr>)<br/>111053 polígonos com 10.63 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/building)
 
@@ -43,13 +45,22 @@ Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [830b546ac5cdc4290f
 Nome do arquivo: `bairros`<br/>*Download* e integridade: [375a3906c90abe84e3dc3a6e7dbc81d985dc3779b00e4c3cebf35bcc6ff2067f.zip](http://dl.digital-guard.org/375a3906c90abe84e3dc3a6e7dbc81d985dc3779b00e4c3cebf35bcc6ff2067f.zip)<br/>Descrição: shp_bairros.zip<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
-* `chave` (nsvia_name)
+* `chave` (nsvia)
 
 #### Resultados da filtragem e sua publicação
 271452 bytes (0.26 <abbr title="mebibyte">MiB</abbr>)<br/>27 polígonos com 222.66 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.95 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/nsvia](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/nsvia)
 
 #### Visualização
 [https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/nsvia](https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/nsvia)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
+
+Nome do arquivo: `lotes`<br/>*Download* e integridade: [eb69ff81ddacf4fc1c1eb0a099102f365646d8bd4d227f27d930ad78c22ff9b5.zip](http://dl.digital-guard.org/eb69ff81ddacf4fc1c1eb0a099102f365646d8bd4d227f27d930ad78c22ff9b5.zip)<br/>Descrição: shp_lotes.zip<br/>Formato: shp<br/>SRID: 31982
+
+#### Resultados da filtragem e sua publicação
+11124424 bytes (10.61 <abbr title="mebibyte">MiB</abbr>)<br/>60876 polígonos com 81.9 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.64 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/NovoHamburgo/_pk0063.01/parcel)
+
+#### Visualização
+[https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/parcel](https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `logradouros`<br/>*Download* e integridade: [920d3a2f5e1c031a965f94ea48b243018780712c21a02903e7d0cec4d7cea06f.zip](http://dl.digital-guard.org/920d3a2f5e1c031a965f94ea48b243018780712c21a02903e7d0cec4d7cea06f.zip)<br/>Descrição: shp_logradouros.zip<br/>Formato: shp<br/>SRID: 31982
@@ -62,9 +73,6 @@ Nome do arquivo: `logradouros`<br/>*Download* e integridade: [920d3a2f5e1c031a96
 
 #### Visualização
 [https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/via](https://viz.addressforall.org/BR-RS-NovoHamburgo/_pk0063.01/via)
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
-
-Nome do arquivo: `lotes`<br/>*Download* e integridade: [eb69ff81ddacf4fc1c1eb0a099102f365646d8bd4d227f27d930ad78c22ff9b5.zip](http://dl.digital-guard.org/eb69ff81ddacf4fc1c1eb0a099102f365646d8bd4d227f27d930ad78c22ff9b5.zip)<br/>Descrição: shp_lotes.zip<br/>Formato: shp<br/>SRID: 31982
 
 # Evidências de teste
 <img src="qgis.png" width="400"/>

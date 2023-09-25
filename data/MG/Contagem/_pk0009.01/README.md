@@ -36,6 +36,8 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 #### Resultados da filtragem e sua publicação
 11340374 bytes (10.82 <abbr title="mebibyte">MiB</abbr>)<br/>5953 polígonos com 91.52 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.59 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/block)
 
+#### Visualização
+[https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/block](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
 Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
@@ -48,6 +50,8 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 #### Resultados da filtragem e sua publicação
 5085443 bytes (4.85 <abbr title="mebibyte">MiB</abbr>)<br/>94572 pontos<br/>densidade média: 695.12 pontos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/geoaddress](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/geoaddress)
 
+#### Visualização
+[https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/geoaddress](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
 Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 3857
@@ -67,6 +71,8 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 #### Resultados da filtragem e sua publicação
 48776559 bytes (46.52 <abbr title="mebibyte">MiB</abbr>)<br/>115541 polígonos com 91.26 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.66 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/Contagem/_pk0009.01/parcel)
 
+#### Visualização
+[https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/parcel](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983

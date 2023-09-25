@@ -14,7 +14,9 @@ cd /tmp/sandbox/_pk7600006301_001; 7z  x -y /var/www/dl.digital-guard.org/830b54
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31982"
 cd /tmp/sandbox/_pk7600006301_001; shp2pgsql -D   -s 31982 "edificacoes.shp" pk7600006301101_p1_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006301_001/edificacoes.shp','building_full','pk7600006301101_p1_building','7600006301101','830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip',array['gid', 'tx_numero AS house_number', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw1_pk7600006301101_p1_building AS SELECT gid, 'yes' AS building, tx_numero AS hnum, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/edificacoes.shp','building_full','vw1_pk7600006301101_p1_building','7600006301101','830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw1_pk7600006301101_p1_building"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006301101_p1_building CASCADE"
 rm -f /tmp/sandbox/_pk7600006301_001/*edificacoes.* || true
@@ -41,7 +43,7 @@ cd /tmp/sandbox/_pk7600006301_001; 7z  x -y /var/www/dl.digital-guard.org/375a39
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31982"
 cd /tmp/sandbox/_pk7600006301_001; shp2pgsql -D   -s 31982 "bairros.shp" pk7600006301201_p2_nsvia | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006301_001/bairros.shp','nsvia_full','pk7600006301201_p2_nsvia','7600006301201','375a3906c90abe84e3dc3a6e7dbc81d985dc3779b00e4c3cebf35bcc6ff2067f.zip',array['gid', 'chave as nsvia_name', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600006301_001/bairros.shp','nsvia_full','pk7600006301201_p2_nsvia','7600006301201','375a3906c90abe84e3dc3a6e7dbc81d985dc3779b00e4c3cebf35bcc6ff2067f.zip',array['gid', 'chave as nsvia', 'geom'],5,1)"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006301201_p2_nsvia CASCADE"
 rm -f /tmp/sandbox/_pk7600006301_001/*bairros.* || true

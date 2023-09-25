@@ -36,6 +36,8 @@ Nome do arquivo: `no.porta-brusque-maio2023`<br/>*Download* e integridade: [c252
 #### Resultados da filtragem e sua publicação
 1207058 bytes (1.15 <abbr title="mebibyte">MiB</abbr>)<br/>22449 pontos<br/>densidade média: 68.45 pontos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Brusque/_pk0075.02/geoaddress](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Brusque/_pk0075.02/geoaddress)
 
+#### Visualização
+[https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/geoaddress](https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `eixo_logradouro-brusque-maio2023`<br/>*Download* e integridade: [c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip](http://dl.digital-guard.org/c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip)<br/>Descrição: email.zip<br/>Tamanho do arquivo: 1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31982
@@ -48,6 +50,9 @@ Nome do arquivo: `eixo_logradouro-brusque-maio2023`<br/>*Download* e integridade
 
 #### Resultados da filtragem e sua publicação
 1021137 bytes (0.97 <abbr title="mebibyte">MiB</abbr>)<br/>2204 segmentos com 682.12 <abbr title="quilômetros">km</abbr><br/>densidade média: 2.32 segmentos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Brusque/_pk0075.02/via](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Brusque/_pk0075.02/via)
+
+#### Visualização
+[https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/via](https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/via)
 
 # Evidências de teste
 <img src="qgis.png" width="400"/>
