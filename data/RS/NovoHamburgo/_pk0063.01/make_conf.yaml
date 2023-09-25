@@ -30,7 +30,7 @@ layers:
     standardized_fields:
      -
        name: tx_numero
-       standard: house_number
+       standard: hnum
      -
        name: building
        standard: building
