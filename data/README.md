@@ -12,11 +12,11 @@ Nomes e identificadores de regiões, estados e municípios, organizados conforme
 
 Para alterar Jurisdições ver [guia de preenchimento](https://wiki.addressforall.org/doc/dg:Guia_de_preenchimento_de_Planilha_jurisdictionLevel). Exemplos:
 
-* [`jurisdictionLevel3`](jurisdictionLevel3.csv): regiões (Sul, Norte, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 3](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) (`[admin_level](https://wiki.openstreetmap.org/wiki/Key:admin_level)=3`).
+* [`jurisdictionLevel3`](jurisdictionLevel3.csv): regiões (Sul, Norte, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 3](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) ([`admin_level=3`](https://wiki.openstreetmap.org/wiki/Key:admin_level)).
 
-* [`jurisdictionLevel4`](jurisdictionLevel4.csv): estados (AC, AM, ES, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 4](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) (`[admin_level](https://wiki.openstreetmap.org/wiki/Key:admin_level)=4`).
+* [`jurisdictionLevel4`](jurisdictionLevel4.csv): estados (AC, AM, ES, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 4](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) ([`admin_level=4`](https://wiki.openstreetmap.org/wiki/Key:admin_level)).
 
-* `$UF/jurisdictionLevel8`: municípios no contexto do estado (AM/Manaus, SP/Itu, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 8](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) (`[admin_level](https://wiki.openstreetmap.org/wiki/Key:admin_level)=8`). Exemplo: [AC/jurisdictionLevel8](AC/jurisdictionLevel8.csv).
+* `$UF/jurisdictionLevel8`: municípios no contexto do estado (AM/Manaus, SP/Itu, etc.), que no [OpenStreetMap](https://openstreetmap.org) correspondem a [jurisdição de nível 8](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) ([`admin_level=8`](https://wiki.openstreetmap.org/wiki/Key:admin_level)). Exemplo: [AC/jurisdictionLevel8](AC/jurisdictionLevel8.csv).
 
 ## Packages e seus metadados
 
