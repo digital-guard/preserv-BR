@@ -25,23 +25,26 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'tx_numero AS house_number', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, tx_numero AS hnum, geom FROM $(tabname)
     orig_filename: edificacoes
     standardized_fields:
      -
        name: tx_numero
        standard: house_number
+     -
+       name: building
+       standard: building
 
   nsvia:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'chave as nsvia_name', 'geom']
+    sql_select: ['gid', 'chave as nsvia', 'geom']
     orig_filename: bairros
     standardized_fields:
      -
        name: chave
-       standard: nsvia_name
+       standard: nsvia
 
   via:
     subtype: full
