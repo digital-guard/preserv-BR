@@ -31,7 +31,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip](http://dl.digital-guard.org/830b546ac5cdc4290fdcdb04654f731704b494f474e5dded78acfd651139f3a5.zip)<br/>Descrição: shp_edificacoes.zip<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
-* `tx_numero` (house_number)
+* `tx_numero` (hnum)
 
 * `building` (building)
 
