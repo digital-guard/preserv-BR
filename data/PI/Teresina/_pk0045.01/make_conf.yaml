@@ -11,7 +11,7 @@ files:
   size: 13201744
 
 license_evidences:
-  definition: [Implied BR-generic-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md']
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
 
 layers:
 
