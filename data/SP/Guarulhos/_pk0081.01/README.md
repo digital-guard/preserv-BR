@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.guarulhos.sp.gov.br/">Prefeitura de Guarulhos</a>
 <br/>&nbsp; <small>CNPJ 46.319.000.0001-50</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q53930928">Q53930928</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md"><b>Implied BR-generic-1.0</b></a> (cc0)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
 Obtido via <i>site;email</i> em <b>11/03/2022</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

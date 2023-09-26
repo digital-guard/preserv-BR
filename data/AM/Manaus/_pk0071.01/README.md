@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.manaus.am.gov.br/">Prefeitura Municipal de Manaus</a>
 <br/>&nbsp; <small>CNPJ 04.365.326/0001-73</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q53930905">Q53930905</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md"><b>Implied BR-generic-1.0</b></a> (cc0)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
 Obtido via <i>email</i> em <b>27/04/2021</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.piracicaba.sp.gov.br/">Prefeitura Municipal de Piracicaba</a>
 <br/>&nbsp; <small>CNPJ 46.341.038/0001-29</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450048">Q56450048</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md"><b>Implied BR-generic-1.0</b></a> (cc0)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
 Obtido via <i>site</i> em <b>03/09/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

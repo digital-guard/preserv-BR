@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://araucaria.atende.net/">Prefeitura do Município de Araucária</a>
 <br/>&nbsp; <small>CNPJ 76.105.535/0001-99</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q104848034">Q104848034</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-br-generic-v1.md"><b>Implied BR-generic-1.0</b></a> (cc0)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
 Obtido via <i>email</i> em <b>01/04/2022</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/crebollobr">crebollobr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
