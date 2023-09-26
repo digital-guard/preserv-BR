@@ -22,6 +22,19 @@ Este repositório de metadados descreve um pacote de arquivos doado para o domí
 
 Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](https://git.digital-guard.org/preserv-BR/blob/main/data/SP/SaoPaulo/_pk0033.01/make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
+# Origem e licença
+
+A 	SP-SPA, em 2020-07-26, ofertava os *downloads* em seu site [geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC](http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx)
+
+Por serem dados gerados pela Prefeitura, a licença é implícita e interpretada, segundo o relatório  [**`implied-govWorks-BR_municipal-v1.md`**](https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks-BR_municipal-v1.md), como "família CC0", equivalente a [CC-mark-1.0](https://creativecommons.org/publicdomain/mark/1.0/deed.pt_BR).
+
+Evidências e comprovações:
+
+* Registros de **existência** do site na ocasião do *download*: testemunhos de [Archive.org](https://web.archive.org/web/20200723211224/http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx) e [ArchiveToday](https://archive.ph/UBFqu).
+
+* Registro de nome de **domínio**: comprovação de que [`prefeitura.sp.gov.br`](https://git.digital-guard.org/preserv-BR/tree/main/data/_donorEvidence/br/sp.gov.br/prefeitura.sp.gov.br) está associado ao CNPJ da SP-SPA.
+
+
 # Camadas de dados
 
 Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
