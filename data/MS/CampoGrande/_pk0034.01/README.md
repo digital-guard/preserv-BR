@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/MS/CampoGrande/_pk0034.01"><big><b>pk0034.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-MS-CampoGrande">BR-MS-CampoGrande</a></small>
+<tr><td>Pacote <big><b>pk0034.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-MS-CampoGrande">BR-MS-CampoGrande</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.campogrande.ms.gov.br/">Prefeitura Municipal de Campo Grande</a>

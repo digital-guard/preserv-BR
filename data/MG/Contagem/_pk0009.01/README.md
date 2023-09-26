@@ -1,11 +1,11 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/MG/Contagem/_pk0009.01"><big><b>pk0009.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-MG-Contagem">BR-MG-Contagem</a></small>
+<tr><td>Pacote <big><b>pk0009.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-MG-Contagem">BR-MG-Contagem</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.contagem.mg.gov.br">Prefeitura Municipal de Contagem</a>
 <br/>&nbsp; <small>CNPJ 18.715.508/0001-31</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450007">Q56450007</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip" href="http://dl.digital-guard.org/4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip"><code>4982630...zip</code></a><a title="SHA256 d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml" href="d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml"><code>webarchive</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip" href="http://dl.digital-guard.org/4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip"><code>4982630...zip</code></a><a title="SHA256 d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml" href="http://dl.digital-guard.org/d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml"><code>d575c70...eml</code></a>)<br/>
 Obtido via <i>email</i> em <b>22/07/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>

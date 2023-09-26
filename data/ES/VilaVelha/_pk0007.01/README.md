@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/ES/VilaVelha/_pk0007.01"><big><b>pk0007.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-ES-VilaVelha">BR-ES-VilaVelha</a></small>
+<tr><td>Pacote <big><b>pk0007.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-ES-VilaVelha">BR-ES-VilaVelha</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.vilavelha.es.gov.br/">Prefeitura Municipal de Vila Velha</a>

@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/RJ/RioJaneiro/_pk0078.02"><big><b>pk0078.02</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-RJ-RioJaneiro">BR-RJ-RioJaneiro</a></small>
+<tr><td>Pacote <big><b>pk0078.02</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-RJ-RioJaneiro">BR-RJ-RioJaneiro</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://prefeitura.rio/">Prefeitura da Cidade do Rio de Janeiro</a>

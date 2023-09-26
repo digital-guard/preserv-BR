@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/SC/Brusque/_pk0075.02"><big><b>pk0075.02</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-SC-Brusque">BR-SC-Brusque</a></small>
+<tr><td>Pacote <big><b>pk0075.02</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-SC-Brusque">BR-SC-Brusque</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://portal.brusque.sc.gov.br/">Prefeitura Municipal de Brusque</a>

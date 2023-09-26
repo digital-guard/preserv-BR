@@ -1,6 +1,6 @@
 <aside>
 <table align="right" style="padding: 1em">
-<tr><td>Pacote <a target="_git" title="link canônico para o git deste pacote" href="https://git.digital-guard.org/preserv-BR/blob/main/data/PR/Araucaria/_pk0061.01"><big><b>pk0061.01</b></big></a> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-PR-Araucaria">BR-PR-Araucaria</a></small>
+<tr><td>Pacote <big><b>pk0061.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-PR-Araucaria">BR-PR-Araucaria</a></small>
 </td></tr>
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://araucaria.atende.net/">Prefeitura do Município de Araucária</a>
