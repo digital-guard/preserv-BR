@@ -26,7 +26,7 @@ Nota. O presente documento README foi gerado por software a partir das informaç
 
 A 	SP-SPA, em 2020-07-26, ofertava os *downloads* em seu site [geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC](http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx)
 
-Por serem dados gerados pela Prefeitura, a licença é implícita e interpretada, segundo o relatório  [**`implied-govWorks-BR_municipal-v1.md`**](https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks-BR_municipal-v1.md), como "família CC0", equivalente a [CC-mark-1.0](https://creativecommons.org/publicdomain/mark/1.0/deed.pt_BR).
+Por serem dados gerados pela Prefeitura, a licença é implícita e interpretada, segundo o relatório  [**`implied-govWorks_geo-BR-SP-SaoPaulo-v1.md`**](https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR-SP-SaoPaulo-v1.md), como "família CC0", equivalente a [CC-mark-1.0](https://creativecommons.org/publicdomain/mark/1.0/deed.pt_BR).
 
 Evidências e comprovações:
 
