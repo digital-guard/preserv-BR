@@ -43,9 +43,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
     orig_filename: edificacao
-    
+    standardized_fields:
+     -
+       name: 'yes'
+       standard: building
+
   via:
     subtype: full
     method: shp2sql

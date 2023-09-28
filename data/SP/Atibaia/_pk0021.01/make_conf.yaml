@@ -50,13 +50,16 @@ layers:
     subtype: full
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'numero as hnum', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, numero as hnum, geom FROM $(tabname)
     orig_filename: edificacoes/edificacoes
     codec: SHP;srid=3857
     standardized_fields:
      -
       name: numero
       standard: hnum
+     -
+       name: 'yes'
+       standard: building
 
 comments: Parcel e building incompletos. Sem nome de logradouro, alguns número de porta nulos ("0") e cobertura parcial de lotes (veja evidências).
 

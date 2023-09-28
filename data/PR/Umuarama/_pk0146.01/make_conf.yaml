@@ -31,8 +31,12 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote || nr_edifica || nr_unidade AS inscricao_edificacao', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, cd_distrit || cd_setor || nr_quadra || nr_lote || nr_edifica || nr_unidade AS inscricao_edificacao, geom FROM $(tabname)
     orig_filename: unidade_inscricao_geometriaPolygon
+    standardized_fields:
+     -
+       name: 'yes'
+       standard: building
     other_fields:
       -
         name: inscricao_edificacao

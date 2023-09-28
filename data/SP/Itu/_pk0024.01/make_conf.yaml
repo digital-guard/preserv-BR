@@ -55,8 +55,12 @@ layers:
         subtype: none
         method: shp2sql
         file: 3
-        sql_select: ['geom']
+        sql_view: SELECT row_number() OVER () as gid, 'yes' AS building, geom FROM $(tabname)
         orig_filename: Edificação/Edificação
+        standardized_fields:
+         -
+          name: 'yes'
+          standard: building
   block:
         subtype: none
         method: shp2sql

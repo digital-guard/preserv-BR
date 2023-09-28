@@ -34,7 +34,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 5
-    sql_view: SELECT row_number() OVER () AS gid, numero_int AS hnum, REGEXP_REPLACE(replace(logradouro,'.', ' '), '[[:space:]]+', ' ','g') AS via, bairro AS nsvia, complement, loteamento, cep AS postcode, geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () AS gid, numero_int AS hnum, REGEXP_REPLACE(replace(logradouro,'.', ' '), '[[:space:]]+', ' ','g') AS via, bairro AS nsvia, complement AS sup, loteamento, cep AS postcode, geom FROM $(tabname)
     orig_filename: numerosprediais
     codec: SHP~Latin1
     standardized_fields:
@@ -52,7 +52,7 @@ layers:
       standard: nsvia2
      -
       name: complement
-      standard: complement
+      standard: sup
      -
       name: cep
       standard: postcode
@@ -79,8 +79,12 @@ layers:
     subtype: none
     method: shp2sql
     file: 3
-    sql_select: ['gid', 'geom'] 
+    sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
     orig_filename: edificacoes
+    standardized_fields:
+     -
+      name: 'yes'
+      standard: building
 
   nsvia:
     subtype: full

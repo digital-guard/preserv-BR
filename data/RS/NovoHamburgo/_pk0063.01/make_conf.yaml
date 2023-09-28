@@ -32,7 +32,7 @@ layers:
        name: tx_numero
        standard: hnum
      -
-       name: building
+       name: 'yes'
        standard: building
 
   nsvia:

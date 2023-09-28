@@ -32,13 +32,16 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome AS name', 'geom']
+    sql_view: SELECT gid, nome AS name, 'yes' AS building, geom FROM $(tabname)
     orig_filename: edificacoes
     standardized_fields:
      -
       name: nome
       standard: name
       comment: Nome do prédio.
+     -
+       name: 'yes'
+       standard: building
 
   parcel:
     subtype: full

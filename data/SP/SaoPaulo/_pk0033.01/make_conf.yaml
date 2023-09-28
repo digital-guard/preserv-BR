@@ -61,7 +61,11 @@ layers:
     orig_filename: SHP_edificacao
     orig_subfilename: SIRGAS_SHP_edificacao
     codec: SHP.ZIP;charset=ISO-8859-1
-    sql_select: ['gid','geom']
+    sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
+    standardized_fields:
+     -
+      name: 'yes'
+      standard: building
 
   parcel:
     subtype: ext

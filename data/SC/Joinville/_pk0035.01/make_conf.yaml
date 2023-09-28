@@ -55,6 +55,11 @@ layers:
         subtype: none
         method: shp2sql
         file: 1
-        sql_select: ['gid','geom']
+        sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
         orig_filename: Malha Fundi ria/Quadras
+        standardized_fields:
+         -
+          name: 'yes'
+          standard: building
+
 test_evidence: qgis.png
