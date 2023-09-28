@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Prefeituras_Bairro`<br/>*Download* e integridade: [2dd6c00405143aa6378b38a80eb5a7f4d7ce201d31e99c60b4a5bf4ad5bf98de.zip](http://dl.digital-guard.org/2dd6c00405143aa6378b38a80eb5a7f4d7ce201d31e99c60b4a5bf4ad5bf98de.zip)<br/>Descrição: PrefeituraBairro.zip<br/>Tamanho do arquivo: 424803 bytes (0.41 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `Prefeituras_Bairro`<br/>*Download* e integridade: [2dd6c00405143aa6378b38a80eb5a7f4d7ce201d31e99c60b4a5bf4ad5bf98de.zip](https://dl.digital-guard.org/2dd6c00405143aa6378b38a80eb5a7f4d7ce201d31e99c60b4a5bf4ad5bf98de.zip)<br/>Descrição: PrefeituraBairro.zip<br/>Tamanho do arquivo: 424803 bytes (0.41 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `subclasses` (nsvia)
@@ -40,7 +40,7 @@ Nome do arquivo: `Prefeituras_Bairro`<br/>*Download* e integridade: [2dd6c004051
 [https://viz.addressforall.org/BR-BA-Salvador/_pk0050.01/nsvia](https://viz.addressforall.org/BR-BA-Salvador/_pk0050.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `edf_edificacao_a.dxf`<br/>*Download* e integridade: [e8326aac43117a60b0f6294ecc579e7c2bdaee704206a86d03edcff9a5f9db04.zip](http://dl.digital-guard.org/e8326aac43117a60b0f6294ecc579e7c2bdaee704206a86d03edcff9a5f9db04.zip)<br/>Descrição: Edificacao_sem_acentos.zip<br/>Tamanho do arquivo: 226002892 bytes (215.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31984
+Nome do arquivo: `edf_edificacao_a.dxf`<br/>*Download* e integridade: [e8326aac43117a60b0f6294ecc579e7c2bdaee704206a86d03edcff9a5f9db04.zip](https://dl.digital-guard.org/e8326aac43117a60b0f6294ecc579e7c2bdaee704206a86d03edcff9a5f9db04.zip)<br/>Descrição: Edificacao_sem_acentos.zip<br/>Tamanho do arquivo: 226002892 bytes (215.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31984
 
 #### Comentários
 foi necessário usar a função ST_MakePolygon(geom) sobre a geometia do dado para criar polignos uteis
@@ -52,7 +52,7 @@ foi necessário usar a função ST_MakePolygon(geom) sobre a geometia do dado pa
 [https://viz.addressforall.org/BR-BA-Salvador/_pk0050.01/parcel](https://viz.addressforall.org/BR-BA-Salvador/_pk0050.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Trecho_de_Arruamento_2021-08-20`<br/>*Download* e integridade: [58c2353cf924694da728d1107e71e9deb67d39c1f9ffd65a2eaffed32b4d253a.zip](http://dl.digital-guard.org/58c2353cf924694da728d1107e71e9deb67d39c1f9ffd65a2eaffed32b4d253a.zip)<br/>Descrição: Trecho_de_Arruamento_2021-08-20.zip<br/>Tamanho do arquivo: 13335497 bytes (12.72 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `Trecho_de_Arruamento_2021-08-20`<br/>*Download* e integridade: [58c2353cf924694da728d1107e71e9deb67d39c1f9ffd65a2eaffed32b4d253a.zip](https://dl.digital-guard.org/58c2353cf924694da728d1107e71e9deb67d39c1f9ffd65a2eaffed32b4d253a.zip)<br/>Descrição: Trecho_de_Arruamento_2021-08-20.zip<br/>Tamanho do arquivo: 13335497 bytes (12.72 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Comentários
 foi necessário usar a função ST_Boundary(geom) sobre a geometia do dado para criar linhas, uteis para o mapa

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `st_quadraPolygon`<br/>*Download* e integridade: [2bcdbd6a2ddf4fd810147a106616f404c69a9c38bc02531fe3fa9f27acab25a6.zip](http://dl.digital-guard.org/2bcdbd6a2ddf4fd810147a106616f404c69a9c38bc02531fe3fa9f27acab25a6.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 1673189 bytes (1.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `st_quadraPolygon`<br/>*Download* e integridade: [2bcdbd6a2ddf4fd810147a106616f404c69a9c38bc02531fe3fa9f27acab25a6.zip](https://dl.digital-guard.org/2bcdbd6a2ddf4fd810147a106616f404c69a9c38bc02531fe3fa9f27acab25a6.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 1673189 bytes (1.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Resultados da filtragem e sua publicação
 2292784 bytes (2.19 <abbr title="mebibyte">MiB</abbr>)<br/>2723 polígonos com 26.73 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.01 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/GovernadorValadares/_pk0039.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/GovernadorValadares/_pk0039.01/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `st_quadraPolygon`<br/>*Download* e integridade: [2bcdbd6a2ddf4
 [https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/block](https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [0cc1b05163361968a5681e971c8ab1395fcca1ba4b48150a7522a90b836727e3.zip](http://dl.digital-guard.org/0cc1b05163361968a5681e971c8ab1395fcca1ba4b48150a7522a90b836727e3.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 359552 bytes (0.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [0cc1b05163361968a5681e971c8ab1395fcca1ba4b48150a7522a90b836727e3.zip](https://dl.digital-guard.org/0cc1b05163361968a5681e971c8ab1395fcca1ba4b48150a7522a90b836727e3.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 359552 bytes (0.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Resultados da filtragem e sua publicação
 618659 bytes (0.59 <abbr title="mebibyte">MiB</abbr>)<br/>147 polígonos com 46.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.02 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/GovernadorValadares/_pk0039.01/nsvia](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/MG/GovernadorValadares/_pk0039.01/nsvia)
@@ -46,7 +46,7 @@ Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [0cc1b05163361
 [https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/nsvia](https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote_inscricao_geometria/lote_inscricao_geometriaPolygon`<br/>*Download* e integridade: [98248f643e60829689b398b2852981cfd12b11799a640d93b27223dfc4346948.rar](http://dl.digital-guard.org/98248f643e60829689b398b2852981cfd12b11799a640d93b27223dfc4346948.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4147631 bytes (3.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `lote_inscricao_geometria/lote_inscricao_geometriaPolygon`<br/>*Download* e integridade: [98248f643e60829689b398b2852981cfd12b11799a640d93b27223dfc4346948.rar](https://dl.digital-guard.org/98248f643e60829689b398b2852981cfd12b11799a640d93b27223dfc4346948.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4147631 bytes (3.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `cd_distrit || cd_setor || nr_quadra || nr_lote` (ref)
@@ -60,7 +60,7 @@ Nome do arquivo: `lote_inscricao_geometria/lote_inscricao_geometriaPolygon`<br/>
 [https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/parcel](https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `view_st_logradouro_eixoLine`<br/>*Download* e integridade: [437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip](http://dl.digital-guard.org/437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1597448 bytes (1.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `view_st_logradouro_eixoLine`<br/>*Download* e integridade: [437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip](https://dl.digital-guard.org/437a5012420b1bdc748ea571eabfa0aee6154c41196fe898c383d76e61a5c5db.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1597448 bytes (1.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `descricao` (via)
@@ -72,7 +72,7 @@ Nome do arquivo: `view_st_logradouro_eixoLine`<br/>*Download* e integridade: [43
 [https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/via](https://viz.addressforall.org/BR-MG-GovernadorValadares/_pk0039.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `Logradouros - Gov. Valadares`<br/>*Download* e integridade: [2e79fdf013a8de68e071c2f2a9911bc98196254bc9b9f39482cb0941a146b485.zip](http://dl.digital-guard.org/2e79fdf013a8de68e071c2f2a9911bc98196254bc9b9f39482cb0941a146b485.zip)<br/>Descrição: Planilha de Endereços<br/>Tamanho do arquivo: 2097698 bytes (2 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31984
+Nome do arquivo: `Logradouros - Gov. Valadares`<br/>*Download* e integridade: [2e79fdf013a8de68e071c2f2a9911bc98196254bc9b9f39482cb0941a146b485.zip](https://dl.digital-guard.org/2e79fdf013a8de68e071c2f2a9911bc98196254bc9b9f39482cb0941a146b485.zip)<br/>Descrição: Planilha de Endereços<br/>Tamanho do arquivo: 2097698 bytes (2 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31984
 
 #### Dados relevantes
 * `Logradouro` (via)

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `rb_20201111/quadras`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/quadras`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](https://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `iq` (ref): número de setor e quadra.
@@ -40,7 +40,7 @@ Nome do arquivo: `rb_20201111/quadras`<br/>*Download* e integridade: [73d02ba0ae
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `rb_20201111/bairros`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](http://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201111/bairros`<br/>*Download* e integridade: [73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip](https://dl.digital-guard.org/73d02ba0ae4b0a994a629f7d06f0a027259f5c1d97e53f9b771fecd345c2a02b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 4527739 bytes (4.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `name` (nsvia): nome do bairro em caixa alta, com acentuação.
@@ -52,7 +52,7 @@ Nome do arquivo: `rb_20201111/bairros`<br/>*Download* e integridade: [73d02ba0ae
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `rb_20201116/lotes`<br/>*Download* e integridade: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](http://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `rb_20201116/lotes`<br/>*Download* e integridade: [d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip](https://dl.digital-guard.org/d96f47270e22336cf4660f742ae4dba5694f15c6833363167c91d9fc9929871b.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 12086731 bytes (11.53 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `nomelog` (via): tipo e nome do logradouro em caixa alta, com acentuação.
@@ -66,7 +66,7 @@ Nome do arquivo: `rb_20201116/lotes`<br/>*Download* e integridade: [d96f47270e22
 [https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel](https://viz.addressforall.org/BR-AC-RioBranco/_pk0042.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`<br/>*Download* e integridade: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](http://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar](https://dl.digital-guard.org/29d68e5ce006079b06b710cc2df3aa08d6cb6934f32bc0b29fc46d3e8272ff77.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 316372 bytes (0.3 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32719
 
 #### Dados relevantes
 * `tipo ||' '|| Nome` (via): tipo e nome do logradouro em caixa alta, com acentuação.

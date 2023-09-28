@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Open Street/PARCELAMENTOS`<br/>*Download* e integridade: [ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar](http://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar)<br/>Descrição: Lotes e Loteamentos<br/>Tamanho do arquivo: 17402700 bytes (16.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31981
+Nome do arquivo: `Open Street/PARCELAMENTOS`<br/>*Download* e integridade: [ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar](https://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar)<br/>Descrição: Lotes e Loteamentos<br/>Tamanho do arquivo: 17402700 bytes (16.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31981
 
 #### Dados relevantes
 * `BAIRRO` (nsvia)
@@ -40,7 +40,7 @@ Nome do arquivo: `Open Street/PARCELAMENTOS`<br/>*Download* e integridade: [ca5d
 [https://viz.addressforall.org/BR-MS-CampoGrande/_pk0034.01/nsvia](https://viz.addressforall.org/BR-MS-CampoGrande/_pk0034.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Open Street/IMOVEL_2020_Logradouro`<br/>*Download* e integridade: [ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar](http://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar)<br/>Descrição: Lotes e Loteamentos<br/>Tamanho do arquivo: 17402700 bytes (16.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31981
+Nome do arquivo: `Open Street/IMOVEL_2020_Logradouro`<br/>*Download* e integridade: [ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar](https://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar)<br/>Descrição: Lotes e Loteamentos<br/>Tamanho do arquivo: 17402700 bytes (16.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31981
 
 #### Dados relevantes
 * `RUAIMO` (via)

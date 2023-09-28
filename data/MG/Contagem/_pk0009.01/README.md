@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.contagem.mg.gov.br">Prefeitura Municipal de Contagem</a>
 <br/>&nbsp; <small>CNPJ 18.715.508/0001-31</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450007">Q56450007</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip" href="http://dl.digital-guard.org/4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip"><code>4982630...zip</code></a><a title="SHA256 d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml" href="http://dl.digital-guard.org/d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml"><code>d575c70...eml</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip" href="https://dl.digital-guard.org/4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip"><code>4982630...zip</code></a><a title="SHA256 d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml" href="https://dl.digital-guard.org/d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml"><code>d575c70...eml</code></a>)<br/>
 Obtido via <i>email</i> em <b>22/07/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
+Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](https://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
 
 #### Dados relevantes
 * `QUADRA` (ref)
@@ -40,7 +40,7 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 [https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/block](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
+Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](https://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
 
 #### Dados relevantes
 * `Nome_logra` (via)
@@ -54,7 +54,7 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 [https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/geoaddress](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 3857
+Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](https://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 3857
 
 #### Dados relevantes
 * `Teste2_P_1` (nsvia)
@@ -63,7 +63,7 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 [https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/nsvia](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
+Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](https://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
 
 #### Dados relevantes
 * `BAIRRO` (nsvia)
@@ -75,7 +75,7 @@ Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e
 [https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/parcel](https://viz.addressforall.org/BR-MG-Contagem/_pk0009.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](http://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
+Nome do arquivo: `OpenStreetMap.gdb`<br/>*Download* e integridade: [058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar](https://dl.digital-guard.org/058a6022054e8b3f9ba81f25f7511b58cbd4ad616b0510033b917f3f7f9f23d5.rar)<br/>Descrição: GDB Geodatabase<br/>Tamanho do arquivo: 24477090 bytes (23.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31983
 
 #### Dados relevantes
 * `TIPO_LOGRA || ' ' || NOME_LOGRA` (via)

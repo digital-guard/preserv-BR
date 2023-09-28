@@ -11,7 +11,7 @@ rm -rf /tmp/sandbox/_pk7600011001_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600011001_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip && sudo chmod 664 /var/www/dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP FOREIGN TABLE IF EXISTS pk7600011001101_p1_geoaddress CASCADE"
 cd /tmp/sandbox/_pk7600011001_001; 7z  x -y /var/www/dl.digital-guard.org/8884e9035116c647376301085809c7cbfb0d44841e1f51035b4b286e8648b05a.zip "*Num_Predial_14_03_2022*" ; chmod -R a+rwx . > /dev/null

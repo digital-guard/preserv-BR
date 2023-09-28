@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `Q_Endereco_SBC`<br/>*Download* e integridade: [22ecd5ef4ca76adef213fa422d9b5e4198f0667df598c511c30e512bb10aaedd.zip](http://dl.digital-guard.org/22ecd5ef4ca76adef213fa422d9b5e4198f0667df598c511c30e512bb10aaedd.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 3502991 bytes (3.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `Q_Endereco_SBC`<br/>*Download* e integridade: [22ecd5ef4ca76adef213fa422d9b5e4198f0667df598c511c30e512bb10aaedd.zip](https://dl.digital-guard.org/22ecd5ef4ca76adef213fa422d9b5e4198f0667df598c511c30e512bb10aaedd.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 3502991 bytes (3.34 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME_COMPL` (via)
@@ -42,7 +42,7 @@ Nome do arquivo: `Q_Endereco_SBC`<br/>*Download* e integridade: [22ecd5ef4ca76ad
 [https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/geoaddress](https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `BAIRRO`<br/>*Download* e integridade: [350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip](http://dl.digital-guard.org/350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 2211019 bytes (2.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `BAIRRO`<br/>*Download* e integridade: [350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip](https://dl.digital-guard.org/350b605174967b94ef49ce1bbac0352dd76e2175e5eae1b8e5b730cd9950d133.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 2211019 bytes (2.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME` (nsvia)
@@ -54,7 +54,7 @@ Nome do arquivo: `BAIRRO`<br/>*Download* e integridade: [350b605174967b94ef49ce1
 [https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/nsvia](https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTE`<br/>*Download* e integridade: [d4985405060cc1887962a4278b4d68ada6ffd3ed72f296bd72d65abc4897cd2d.zip](http://dl.digital-guard.org/d4985405060cc1887962a4278b4d68ada6ffd3ed72f296bd72d65abc4897cd2d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 23974094 bytes (22.86 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOTE`<br/>*Download* e integridade: [d4985405060cc1887962a4278b4d68ada6ffd3ed72f296bd72d65abc4897cd2d.zip](https://dl.digital-guard.org/d4985405060cc1887962a4278b4d68ada6ffd3ed72f296bd72d65abc4897cd2d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 23974094 bytes (22.86 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Resultados da filtragem e sua publicação
 41815617 bytes (39.88 <abbr title="mebibyte">MiB</abbr>)<br/>126575 polígonos com 201.08 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoBernardoCampo/_pk0030.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoBernardoCampo/_pk0030.01/parcel)
@@ -63,7 +63,7 @@ Nome do arquivo: `LOTE`<br/>*Download* e integridade: [d4985405060cc1887962a4278
 [https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/parcel](https://viz.addressforall.org/BR-SP-SaoBernardoCampo/_pk0030.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `LOGRADOURO`<br/>*Download* e integridade: [3269bacc09d450b4d7496a2bc749ece94b1f48462ba0aae70d902404256bc433.zip](http://dl.digital-guard.org/3269bacc09d450b4d7496a2bc749ece94b1f48462ba0aae70d902404256bc433.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 11858312 bytes (11.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOGRADOURO`<br/>*Download* e integridade: [3269bacc09d450b4d7496a2bc749ece94b1f48462ba0aae70d902404256bc433.zip](https://dl.digital-guard.org/3269bacc09d450b4d7496a2bc749ece94b1f48462ba0aae70d902404256bc433.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 11858312 bytes (11.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME` (via)

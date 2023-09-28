@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`<br/>*Download* e integridade: [a9d2db675520121d4ed84084ae868d5868cbfc7516a8266eee30a15c651474dd.zip](http://dl.digital-guard.org/a9d2db675520121d4ed84084ae868d5868cbfc7516a8266eee30a15c651474dd.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 4395940 bytes (4.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [a9d2db675520121d4ed84084ae868d5868cbfc7516a8266eee30a15c651474dd.zip](https://dl.digital-guard.org/a9d2db675520121d4ed84084ae868d5868cbfc7516a8266eee30a15c651474dd.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 4395940 bytes (4.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Resultados da filtragem e sua publicação
 7276793 bytes (6.94 <abbr title="mebibyte">MiB</abbr>)<br/>6797 polígonos com 145.81 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.41 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/CaxiasSul/_pk0069.01/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [a9d2db675520121d4ed840
 [https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/block](https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairros`<br/>*Download* e integridade: [17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip](http://dl.digital-guard.org/17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 150919 bytes (0.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `bairros`<br/>*Download* e integridade: [17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip](https://dl.digital-guard.org/17c3cf7a5fc8429b79ab09193162a627ef9d93123f7b31e1f51435ef1a8c028c.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 150919 bytes (0.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `nome` (nsvia)
@@ -49,7 +49,7 @@ Nome do arquivo: `bairros`<br/>*Download* e integridade: [17c3cf7a5fc8429b79ab09
 [https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/nsvia](https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes`<br/>*Download* e integridade: [ca028e7824a7489c9a406884b78fe83dfbc72f15471bd9651e636d8a8d2afd3a.zip](http://dl.digital-guard.org/ca028e7824a7489c9a406884b78fe83dfbc72f15471bd9651e636d8a8d2afd3a.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 13326716 bytes (12.71 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `lotes`<br/>*Download* e integridade: [ca028e7824a7489c9a406884b78fe83dfbc72f15471bd9651e636d8a8d2afd3a.zip](https://dl.digital-guard.org/ca028e7824a7489c9a406884b78fe83dfbc72f15471bd9651e636d8a8d2afd3a.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 13326716 bytes (12.71 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 <br/>Complementado por [cadparcel](#-cadparcel) por meio de `inscrica_1` e `cod_localizacao_completo`
 
@@ -60,7 +60,7 @@ Nome do arquivo: `lotes`<br/>*Download* e integridade: [ca028e7824a7489c9a406884
 [https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/parcel](https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`<br/>*Download* e integridade: [09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip](http://dl.digital-guard.org/09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip)<br/>Descrição: Via<br/>Tamanho do arquivo: 3642414 bytes (3.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip](https://dl.digital-guard.org/09e01c7ab557f61a35999b32585f72059e983600606ea2870e1520e284815165.zip)<br/>Descrição: Via<br/>Tamanho do arquivo: 3642414 bytes (3.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `tipolograd || ' ' || nomeoficia` (via)
@@ -75,7 +75,7 @@ Nome do arquivo: `logradouros`<br/>*Download* e integridade: [09e01c7ab557f61a35
 [https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/via](https://viz.addressforall.org/BR-RS-CaxiasSul/_pk0069.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `data-1626873935092`<br/>*Download* e integridade: [58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip](http://dl.digital-guard.org/58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip)<br/>Descrição: Endereço<br/>Tamanho do arquivo: 429082 bytes (0.41 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31982
+Nome do arquivo: `data-1626873935092`<br/>*Download* e integridade: [58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip](https://dl.digital-guard.org/58858f634229c4d857ad8bf774758f6051357b365c15d9a75cdf778cde2f65f6.zip)<br/>Descrição: Endereço<br/>Tamanho do arquivo: 429082 bytes (0.41 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31982
 
 #### Dados relevantes
 * `nr_imovel` (hnum)

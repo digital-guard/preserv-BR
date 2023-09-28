@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.vitoria.es.gov.br/">Prefeitura Municipal de Vitória</a>
 <br/>&nbsp; <small>CNPJ 27.142.058/0001-26</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q30263900">Q30263900</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml" href="http://dl.digital-guard.org/ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml"><code>ea1b9c6...eml</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml" href="https://dl.digital-guard.org/ea1b9c60680466bc015231fa9438a64704ecb3bd24875b47af3736eace3e9b44.eml"><code>ea1b9c6...eml</code></a>)<br/>
 Obtido via <i>site</i> em <b>14/05/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -28,7 +28,10 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `edificacao`<br/>*Download* e integridade: [58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip](http://dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 9782721 bytes (9.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
+Nome do arquivo: `edificacao`<br/>*Download* e integridade: [58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip](https://dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 9782721 bytes (9.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
+
+#### Dados relevantes
+* `yes` (building)
 
 #### Resultados da filtragem e sua publicação
 19756744 bytes (18.84 <abbr title="mebibyte">MiB</abbr>)<br/>75689 polígonos com 9.64 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.24 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/Vitoria/_pk0006.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/Vitoria/_pk0006.01/building)
@@ -37,7 +40,7 @@ Nome do arquivo: `edificacao`<br/>*Download* e integridade: [58d1d77cd2dd760f6a5
 [https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/building](https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairros`<br/>*Download* e integridade: [307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip](http://dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 233211 bytes (0.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
+Nome do arquivo: `bairros`<br/>*Download* e integridade: [307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip](https://dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 233211 bytes (0.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
 
 #### Dados relevantes
 * `BAIRRO` (nsvia)
@@ -49,7 +52,7 @@ Nome do arquivo: `bairros`<br/>*Download* e integridade: [307f158ccd7d9ff8f7ec97
 [https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/nsvia](https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote`<br/>*Download* e integridade: [3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip](http://dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 8069890 bytes (7.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
+Nome do arquivo: `lote`<br/>*Download* e integridade: [3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip](https://dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 8069890 bytes (7.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
 
 #### Dados relevantes
 * `numero` (hnum)
@@ -63,7 +66,7 @@ Nome do arquivo: `lote`<br/>*Download* e integridade: [3a92899e5a7e87acb92cca719
 [https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/parcel](https://viz.addressforall.org/BR-ES-Vitoria/_pk0006.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixo_logradouro`<br/>*Download* e integridade: [252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip](http://dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 998723 bytes (0.95 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
+Nome do arquivo: `eixo_logradouro`<br/>*Download* e integridade: [252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip](https://dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 998723 bytes (0.95 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31999
 
 #### Dados relevantes
 * `Nome` (via)

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `New File Geodatabase (2).gdb`<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
+Nome do arquivo: `New File Geodatabase (2).gdb`<br/>*Download* e integridade: [47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip](https://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 193516287 bytes (184.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: gdb<br/>SRID: 31982
 
 #### Dados relevantes
 * `nrpredial` (hnum)

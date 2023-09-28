@@ -28,7 +28,10 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `unidade_inscricao_geometriaPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](http://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `unidade_inscricao_geometriaPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](https://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+
+#### Dados relevantes
+* `yes` (building)
 
 #### Outros dados relevantes
 * `inscricao_edificacao`: Número de inscrição da edificação.
@@ -40,7 +43,7 @@ Nome do arquivo: `unidade_inscricao_geometriaPolygon`<br/>*Download* e integrida
 [https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/building](https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](http://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](https://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Resultados da filtragem e sua publicação
 533445 bytes (0.51 <abbr title="mebibyte">MiB</abbr>)<br/>262 polígonos com 49.64 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.04 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Umuarama/_pk0146.01/nsvia](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PR/Umuarama/_pk0146.01/nsvia)
@@ -49,7 +52,7 @@ Nome do arquivo: `st_bairroPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc
 [https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/nsvia](https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote_inscricao_geometriaPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](http://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `lote_inscricao_geometriaPolygon`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](https://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Outros dados relevantes
 * `inscricao_lote`: Número de inscrição do lote.
@@ -63,7 +66,7 @@ Nome do arquivo: `lote_inscricao_geometriaPolygon`<br/>*Download* e integridade:
 [https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/parcel](https://viz.addressforall.org/BR-PR-Umuarama/_pk0146.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `TABELA IMOVEL`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](http://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31982
+Nome do arquivo: `TABELA IMOVEL`<br/>*Download* e integridade: [c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip](https://dl.digital-guard.org/c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip)<br/>Descrição: Lotes, edificações, bairros e endereços<br/>Tamanho do arquivo: 37022720 bytes (35.31 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31982
 
 #### Dados relevantes
 * `LOGRADOURO` (via)

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras_gerais`<br/>*Download* e integridade: [31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip](http://dl.digital-guard.org/31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip)<br/>Descrição: Quadras<br/>Formato: shp<br/>SRID: 31985
+Nome do arquivo: `quadras_gerais`<br/>*Download* e integridade: [31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip](https://dl.digital-guard.org/31081d4d9daf71ca3e0b11d06b228fd62d8eb326c889cc41af699d1d57f4c23e.zip)<br/>Descrição: Quadras<br/>Formato: shp<br/>SRID: 31985
 
 #### Resultados da filtragem e sua publicação
 4037696 bytes (3.85 <abbr title="mebibyte">MiB</abbr>)<br/>8662 polígonos com 108.21 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.51 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PB/JoaoPessoa/_pk0072.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/PB/JoaoPessoa/_pk0072.01/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `quadras_gerais`<br/>*Download* e integridade: [31081d4d9daf71c
 [https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/block](https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Bairros`<br/>*Download* e integridade: [07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip](http://dl.digital-guard.org/07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip)<br/>Descrição: Bairros<br/>Formato: shp<br/>SRID: 31985
+Nome do arquivo: `Bairros`<br/>*Download* e integridade: [07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip](https://dl.digital-guard.org/07c8aa95c98efecaa6e0a1e4667f4c2452f519477011cba4355f294c07d465c1.zip)<br/>Descrição: Bairros<br/>Formato: shp<br/>SRID: 31985
 
 #### Dados relevantes
 * `N_BAIRRO` (nsvia)
@@ -49,7 +49,7 @@ Nome do arquivo: `Bairros`<br/>*Download* e integridade: [07c8aa95c98efecaa6e0a1
 [https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/nsvia](https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip](http://dl.digital-guard.org/ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip)<br/>Descrição: Lotes<br/>Formato: shp<br/>SRID: 31985
+Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip](https://dl.digital-guard.org/ccb4e51a2caca195e8fd260de69d07ffc2d0cbbb80e4455806d7c89f2932948c.zip)<br/>Descrição: Lotes<br/>Formato: shp<br/>SRID: 31985
 
 #### Dados relevantes
 * `Nume_Imov` (hnum)
@@ -61,7 +61,7 @@ Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ccb4e51a2caca195e8fd260d
 [https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/parcel](https://viz.addressforall.org/BR-PB-JoaoPessoa/_pk0072.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Logradouro_gerais`<br/>*Download* e integridade: [393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip](http://dl.digital-guard.org/393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip)<br/>Descrição: Logradouros<br/>Formato: shp<br/>SRID: 31985
+Nome do arquivo: `Logradouro_gerais`<br/>*Download* e integridade: [393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip](https://dl.digital-guard.org/393dc287ca1b626ecb180b40d6c9ec2ebc74a3364444a4418d77e7225c32f3f7.zip)<br/>Descrição: Logradouros<br/>Formato: shp<br/>SRID: 31985
 
 #### Dados relevantes
 * `NOME_LOGR` (via)

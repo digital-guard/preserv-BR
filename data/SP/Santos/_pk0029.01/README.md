@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `LOTES_PONTO_S2K`<br/>*Download* e integridade: [b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip](http://dl.digital-guard.org/b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 1922893 bytes (1.83 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOTES_PONTO_S2K`<br/>*Download* e integridade: [b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip](https://dl.digital-guard.org/b192fba419ef8133861a9051d2382d08476193eafbd8932f0ea05456157c301c.zip)<br/>Descrição: Pontos de endereço<br/>Tamanho do arquivo: 1922893 bytes (1.83 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `L_NUMERO` (hnum)

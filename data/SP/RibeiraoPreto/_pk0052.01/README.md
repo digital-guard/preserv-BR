@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](https://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Outros dados relevantes
 * `QUADRA`
@@ -40,7 +40,7 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd0787
 [https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/block](https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lotes`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](https://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NRO_IMOV` (hnum)
@@ -57,7 +57,7 @@ Nome do arquivo: `lotes`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787
 [https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/parcel](https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](https://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME_LOGR` (via)
@@ -72,7 +72,7 @@ Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd07878
 [https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/via](https://viz.addressforall.org/BR-SP-RibeiraoPreto/_pk0052.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](http://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lograd`<br/>*Download* e integridade: [6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip](https://dl.digital-guard.org/6cd0d4b475e61b8cbd078787ea8b38ebdd051a1def026ca476d4a83d40354738.zip)<br/>Descrição: Todos os shapes<br/>Tamanho do arquivo: 34004455 bytes (32.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME_LOGR` (via)

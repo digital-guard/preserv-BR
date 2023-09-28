@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `OpenStreetMap_Shapefiles/QUADRAS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OpenStreetMap_Shapefiles/QUADRAS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](https://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
 
 #### Resultados da filtragem e sua publicação
 17901899 bytes (17.07 <abbr title="mebibyte">MiB</abbr>)<br/>16607 polígonos com 1284.41 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.54 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/block)
@@ -37,7 +37,10 @@ Nome do arquivo: `OpenStreetMap_Shapefiles/QUADRAS`<br/>*Download* e integridade
 [https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/block](https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `OpenStreetMap_Shapefiles/EDIFICACOES`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OpenStreetMap_Shapefiles/EDIFICACOES`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](https://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+
+#### Dados relevantes
+* `yes` (building)
 
 #### Resultados da filtragem e sua publicação
 94725613 bytes (90.34 <abbr title="mebibyte">MiB</abbr>)<br/>508326 polígonos com 49.46 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.26 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/AM/Manaus/_pk0071.01/building)
@@ -46,7 +49,7 @@ Nome do arquivo: `OpenStreetMap_Shapefiles/EDIFICACOES`<br/>*Download* e integri
 [https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/building](https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `OpenStreetMap_Shapefiles/NUMERACAO`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OpenStreetMap_Shapefiles/NUMERACAO`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](https://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
 
 #### Dados relevantes
 * `ENDEREÇO` (via)
@@ -63,7 +66,7 @@ Parcial, não contém todos os endereços de Manaus.
 [https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/geoaddress](https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `OpenStreetMap_Shapefiles/BAIRROS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OpenStreetMap_Shapefiles/BAIRROS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](https://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
 
 #### Dados relevantes
 * `NOME_BAIRR` (nsvia)
@@ -75,7 +78,7 @@ Nome do arquivo: `OpenStreetMap_Shapefiles/BAIRROS`<br/>*Download* e integridade
 [https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/nsvia](https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `OSM_Lotes/shape/Lotes`<br/>*Download* e integridade: [92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar](http://dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 61100366 bytes (58.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OSM_Lotes/shape/Lotes`<br/>*Download* e integridade: [92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar](https://dl.digital-guard.org/92954f43c27c205f677dd707019bd34d7d47280e74d1eede9def964528671839.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 61100366 bytes (58.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
 
 #### Dados relevantes
 * `LOG_TIPO ||' '|| LOG_NOME` (via)
@@ -89,7 +92,7 @@ Nome do arquivo: `OSM_Lotes/shape/Lotes`<br/>*Download* e integridade: [92954f43
 [https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/parcel](https://viz.addressforall.org/BR-AM-Manaus/_pk0071.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `OpenStreetMap_Shapefiles/LOGRADOUROS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](http://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
+Nome do arquivo: `OpenStreetMap_Shapefiles/LOGRADOUROS`<br/>*Download* e integridade: [4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar](https://dl.digital-guard.org/4134127ab8fe9d96a17d1cfb833437de98a0186e7121db4994ae4763ab4d542a.rar)<br/>Descrição: Bairros, bibliotecas, centros culturais, edificações, logradouros, lotes, município, museus, numeração, praças parques, quadras e teatros<br/>Tamanho do arquivo: 112363618 bytes (107.16 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: +proj=tmerc +lat_0=0 +lon_0=-60 +k=0.999995 +x_0=400000 +y_0=5000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs
 
 #### Dados relevantes
 * `TIPO ||' '|| LOGRADOURO` (via)

@@ -8,7 +8,7 @@ rm -rf /tmp/sandbox/_pk7600001601_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600001601_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip && sudo chmod 664 /var/www/dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP FOREIGN TABLE IF EXISTS pk7600001601401_p4_cadparcel CASCADE"
 cd /tmp/sandbox/_pk7600001601_002; 7z  x -y /var/www/dl.digital-guard.org/39d34950c7c61a89cfc2b4d70b0b34a85b346b41741331009205de0f06c86805.zip "*Solicitação0710_InscTec_LogNPorBairro*" ; chmod -R a+rwx . > /dev/null
@@ -29,7 +29,7 @@ rm -rf /tmp/sandbox/_pk7600001601_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600001601_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip && sudo chmod 664 /var/www/dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600001601301_p3_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600001601_002; 7z  x -y /var/www/dl.digital-guard.org/fd0fcfd937ee3d20620862cce6e870679518f4756063f3045c7f65e6b9ca9981.zip "*Limite_de_Bairros*" ; chmod -R a+rwx . > /dev/null
@@ -52,7 +52,7 @@ rm -rf /tmp/sandbox/_pk7600001601_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600001601_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip && sudo chmod 664 /var/www/dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600001601101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pk7600001601_002; 7z  x -y /var/www/dl.digital-guard.org/4bde69d0057c0785598f98963fdae3dc90420fb8f163652d70b659210da0ae2b.zip "*Lotes*" ; chmod -R a+rwx . > /dev/null
@@ -75,7 +75,7 @@ rm -rf /tmp/sandbox/_pk7600001601_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600001601_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip && sudo chmod 664 /var/www/dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600001601201_p2_via CASCADE"
 cd /tmp/sandbox/_pk7600001601_002; 7z  x -y /var/www/dl.digital-guard.org/5f7e5ecf8e15a9c13323cb9f4fddadee80eb3e253bcc270dc8c134400af3a8b2.zip "*Logradouro*" ; chmod -R a+rwx . > /dev/null

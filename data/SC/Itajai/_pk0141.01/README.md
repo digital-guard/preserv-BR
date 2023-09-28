@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Municipio de Itajai_SC/lotes`<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
+Nome do arquivo: `Municipio de Itajai_SC/lotes`<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](https://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
 * `numero` (hnum)
@@ -42,7 +42,7 @@ Nome do arquivo: `Municipio de Itajai_SC/lotes`<br/>*Download* e integridade: [b
 [https://viz.addressforall.org/BR-SC-Itajai/_pk0141.01/parcel](https://viz.addressforall.org/BR-SC-Itajai/_pk0141.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Municipio de Itajai_SC/vias`<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
+Nome do arquivo: `Municipio de Itajai_SC/vias`<br/>*Download* e integridade: [b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar](https://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar)<br/>Descrição: Lotes e logradouros<br/>Tamanho do arquivo: 4428447 bytes (4.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 3857
 
 #### Dados relevantes
 * `nome` (via)

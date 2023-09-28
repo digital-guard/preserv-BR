@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `QUADRAS/QUADRAS`<br/>*Download* e integridade: [3984d1a48b63d858fdfbe7829e493d1c35650546eb84039a59f9008de9bc4871.zip](http://dl.digital-guard.org/3984d1a48b63d858fdfbe7829e493d1c35650546eb84039a59f9008de9bc4871.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 2327148 bytes (2.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `QUADRAS/QUADRAS`<br/>*Download* e integridade: [3984d1a48b63d858fdfbe7829e493d1c35650546eb84039a59f9008de9bc4871.zip](https://dl.digital-guard.org/3984d1a48b63d858fdfbe7829e493d1c35650546eb84039a59f9008de9bc4871.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 2327148 bytes (2.22 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Resultados da filtragem e sua publicação
 2813635 bytes (2.68 <abbr title="mebibyte">MiB</abbr>)<br/>4523 polígonos com 54.44 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.25 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/VilaVelha/_pk0007.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/VilaVelha/_pk0007.01/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `QUADRAS/QUADRAS`<br/>*Download* e integridade: [3984d1a48b63d8
 [https://viz.addressforall.org/BR-ES-VilaVelha/_pk0007.01/block](https://viz.addressforall.org/BR-ES-VilaVelha/_pk0007.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `BAIRROS/BAIRROS`<br/>*Download* e integridade: [c0cd7b2a4cc67b5d49a4d296f41b564b23464364ab746adc6d2206d5dd9249af.zip](http://dl.digital-guard.org/c0cd7b2a4cc67b5d49a4d296f41b564b23464364ab746adc6d2206d5dd9249af.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 68069 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `BAIRROS/BAIRROS`<br/>*Download* e integridade: [c0cd7b2a4cc67b5d49a4d296f41b564b23464364ab746adc6d2206d5dd9249af.zip](https://dl.digital-guard.org/c0cd7b2a4cc67b5d49a4d296f41b564b23464364ab746adc6d2206d5dd9249af.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 68069 bytes (0.06 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `BAIRRO` (nsvia): nome do bairro em caixa alta, por extenso e com acentuação
@@ -49,7 +49,7 @@ Nome do arquivo: `BAIRROS/BAIRROS`<br/>*Download* e integridade: [c0cd7b2a4cc67b
 [https://viz.addressforall.org/BR-ES-VilaVelha/_pk0007.01/nsvia](https://viz.addressforall.org/BR-ES-VilaVelha/_pk0007.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTES/LOTES`<br/>*Download* e integridade: [5c7131c32a7411cf7a27022b8ac2989e88f86254ed74b6b3b2e5cf94b44e3acb.zip](http://dl.digital-guard.org/5c7131c32a7411cf7a27022b8ac2989e88f86254ed74b6b3b2e5cf94b44e3acb.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 6282461 bytes (5.99 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `LOTES/LOTES`<br/>*Download* e integridade: [5c7131c32a7411cf7a27022b8ac2989e88f86254ed74b6b3b2e5cf94b44e3acb.zip](https://dl.digital-guard.org/5c7131c32a7411cf7a27022b8ac2989e88f86254ed74b6b3b2e5cf94b44e3acb.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 6282461 bytes (5.99 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Resultados da filtragem e sua publicação
 15341314 bytes (14.63 <abbr title="mebibyte">MiB</abbr>)<br/>86886 polígonos com 43.76 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.44 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/VilaVelha/_pk0007.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/ES/VilaVelha/_pk0007.01/parcel)

@@ -13,7 +13,7 @@ rm -rf /tmp/sandbox/_pk7600005901_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600005901_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip && sudo chmod 664 /var/www/dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600005901101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pk7600005901_001; 7z  x -y /var/www/dl.digital-guard.org/47dca17c620c1c34ac091dac19afb8851f1d8f9a907094a0f40a0310e774445d.zip "*New File Geodatabase (2).gdb*" ; chmod -R a+rwx . > /dev/null

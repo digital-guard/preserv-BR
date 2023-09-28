@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `Quadras`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](http://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Quadras`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](https://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Outros dados relevantes
 * `NumQuadra`
@@ -40,7 +40,7 @@ Nome do arquivo: `Quadras`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a
 [https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/block](https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Bairros`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](http://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Bairros`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip](https://dl.digital-guard.org/f4d3819f9853e85e43bf7a58de7f257eed5f63bcf36daed1c4db0f2701544adc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 2053392 bytes (1.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME` (nsvia)
@@ -52,7 +52,7 @@ Nome do arquivo: `Bairros`<br/>*Download* e integridade: [f4d3819f9853e85e43bf7a
 [https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/nsvia](https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes/lote`<br/>*Download* e integridade: [51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar](http://dl.digital-guard.org/51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4656161 bytes (4.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Lotes/lote`<br/>*Download* e integridade: [51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar](https://dl.digital-guard.org/51a6beb9fca43e0fb45727138982f7806b8df52fce53f5e0e31edd61bfbc21b9.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4656161 bytes (4.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `Tipo || ' ' || Logradouro AS via, Numero` (hnum)
@@ -66,7 +66,7 @@ Nome do arquivo: `Lotes/lote`<br/>*Download* e integridade: [51a6beb9fca43e0fb45
 [https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/parcel](https://viz.addressforall.org/BR-RS-SantaMaria/_pk0019.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Ruas`<br/>*Download* e integridade: [9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip](http://dl.digital-guard.org/9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 5204795 bytes (4.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Ruas`<br/>*Download* e integridade: [9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip](https://dl.digital-guard.org/9600dcba403c8dc0b066c8f429507e4672966a01c93119923f75361a6ebc64c0.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 5204795 bytes (4.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME` (via)

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `DADOS PELOTAS/numeracao_cadastral`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](http://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `DADOS PELOTAS/numeracao_cadastral`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](https://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `text` (hnum)
@@ -40,7 +40,7 @@ Nome do arquivo: `DADOS PELOTAS/numeracao_cadastral`<br/>*Download* e integridad
 [https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/geoaddress](https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `DADOS PELOTAS/pelotas_lotes_cadastro`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](http://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `DADOS PELOTAS/pelotas_lotes_cadastro`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](https://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Resultados da filtragem e sua publicação
 14930812 bytes (14.24 <abbr title="mebibyte">MiB</abbr>)<br/>86488 polígonos com 100.89 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.53 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Pelotas/_pk0080.01/parcel)
@@ -49,7 +49,7 @@ Nome do arquivo: `DADOS PELOTAS/pelotas_lotes_cadastro`<br/>*Download* e integri
 [https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/parcel](https://viz.addressforall.org/BR-RS-Pelotas/_pk0080.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `DADOS PELOTAS/pelotas_eixos_viarios`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](http://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `DADOS PELOTAS/pelotas_eixos_viarios`<br/>*Download* e integridade: [3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip](https://dl.digital-guard.org/3c69a4bf2fa9cce1b701968f6c970230e51ee2a656f7168f384f5066a05eaba2.zip)<br/>Descrição: Todos os arquivos<br/>Tamanho do arquivo: 9022446 bytes (8.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `nome_map` (via)

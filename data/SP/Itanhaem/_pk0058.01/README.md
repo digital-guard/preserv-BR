@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `CENTROIDES`<br/>*Download* e integridade: [78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip](http://dl.digital-guard.org/78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 3431030 bytes (3.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `CENTROIDES`<br/>*Download* e integridade: [78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip](https://dl.digital-guard.org/78f10da32c1dfab83bdbb448884731fffba15a36c88337b122bc6e896a841302.zip)<br/>Descrição: Geo-endereços<br/>Tamanho do arquivo: 3431030 bytes (3.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `Cadastro_7` (via)
@@ -39,7 +39,7 @@ Nome do arquivo: `CENTROIDES`<br/>*Download* e integridade: [78f10da32c1dfab83bd
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/geoaddress](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `ABAIRRAMENTO`<br/>*Download* e integridade: [023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip](http://dl.digital-guard.org/023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 221789 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `ABAIRRAMENTO`<br/>*Download* e integridade: [023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip](https://dl.digital-guard.org/023071f87e4bb37e46d42cee7841f3a2119b8f65d2778604af3644f279cf89f1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 221789 bytes (0.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NOME` (nsvia)
@@ -51,7 +51,7 @@ Nome do arquivo: `ABAIRRAMENTO`<br/>*Download* e integridade: [023071f87e4bb37e4
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/nsvia](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTES_2020`<br/>*Download* e integridade: [7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip](http://dl.digital-guard.org/7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 18397666 bytes (17.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
+Nome do arquivo: `LOTES_2020`<br/>*Download* e integridade: [7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip](https://dl.digital-guard.org/7e8269d4c80f9a03cc999a44f028c00dd296868ee26b61f012dc53211e760417.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 18397666 bytes (17.55 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 29193
 
 #### Dados relevantes
 * `Cadastro_7` (via)
@@ -62,7 +62,7 @@ Nome do arquivo: `LOTES_2020`<br/>*Download* e integridade: [7e8269d4c80f9a03cc9
 [https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/parcel](https://viz.addressforall.org/BR-SP-Itanhaem/_pk0058.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `ARRUAMENTO`<br/>*Download* e integridade: [3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip](http://dl.digital-guard.org/3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 376218 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `ARRUAMENTO`<br/>*Download* e integridade: [3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip](https://dl.digital-guard.org/3137911874246d45f025f2b98066f1e7a31543332e175e83f433005d131c40fe.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 376218 bytes (0.36 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `tr_tipo || ' ' || tr_descric` (via)

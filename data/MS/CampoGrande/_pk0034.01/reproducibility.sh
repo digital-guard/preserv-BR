@@ -12,7 +12,7 @@ rm -rf /tmp/sandbox/_pk7600003401_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600003401_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar && sudo chmod 664 /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600003401101_p1_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600003401_001; 7z  x -y /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar "*Open Street/PARCELAMENTOS*" ; chmod -R a+rwx . > /dev/null
@@ -35,7 +35,7 @@ rm -rf /tmp/sandbox/_pk7600003401_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600003401_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar && sudo chmod 664 /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600003401101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pk7600003401_001; 7z  x -y /var/www/dl.digital-guard.org/ca5dab519aae0b5cfbc6f8930641c0cce2abbc34c25e306b3fe0aea87df34b74.rar "*Open Street/IMOVEL_2020_Logradouro*" ; chmod -R a+rwx . > /dev/null

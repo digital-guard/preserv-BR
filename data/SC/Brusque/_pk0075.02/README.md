@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `no.porta-brusque-maio2023`<br/>*Download* e integridade: [c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip](http://dl.digital-guard.org/c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip)<br/>Descrição: email.zip<br/>Tamanho do arquivo: 1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31982
+Nome do arquivo: `no.porta-brusque-maio2023`<br/>*Download* e integridade: [c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip](https://dl.digital-guard.org/c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip)<br/>Descrição: email.zip<br/>Tamanho do arquivo: 1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31982
 
 #### Dados relevantes
 * `properties->'nr_porta'` (hnum)
@@ -40,7 +40,7 @@ Nome do arquivo: `no.porta-brusque-maio2023`<br/>*Download* e integridade: [c252
 [https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/geoaddress](https://viz.addressforall.org/BR-SC-Brusque/_pk0075.02/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixo_logradouro-brusque-maio2023`<br/>*Download* e integridade: [c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip](http://dl.digital-guard.org/c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip)<br/>Descrição: email.zip<br/>Tamanho do arquivo: 1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31982
+Nome do arquivo: `eixo_logradouro-brusque-maio2023`<br/>*Download* e integridade: [c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip](https://dl.digital-guard.org/c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip)<br/>Descrição: email.zip<br/>Tamanho do arquivo: 1524507 bytes (1.45 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31982
 
 #### Dados relevantes
 * `properties->'COMPLETO'` (via)

@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/QUADRAS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/QUADRAS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](https://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `'Q ' || num_qdr` (name): Nome ou número da quadra.
@@ -44,7 +44,7 @@ Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/QUADRAS`<br/>*Download* e integridad
 [https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/block](https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/BAIRROS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/BAIRROS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](https://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `nm_bai` (nsvia)
@@ -58,7 +58,7 @@ Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/BAIRROS`<br/>*Download* e integridad
 [https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/nsvia](https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOTES`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOTES`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](https://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `( CASE WHEN ((trim(num_qdr)  = '') IS FALSE) THEN 'Q '|| trim(num_qdr)  ELSE '?' END || ', ' || CASE WHEN ((trim(num_lot) = '') IS FALSE) THEN 'LT '|| trim(num_lot) ELSE '?' END )` (sup): Quadra concatenada com lote foram o complemento do endereço.
@@ -72,7 +72,7 @@ Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOTES`<br/>*Download* e integridade:
 [https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/parcel](https://viz.addressforall.org/BR-GO-AparecidaGoiania/_pk0084.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOGRADOUROS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](http://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `GEO-SOCIAIS ADDRESSFORALL/LOGRADOUROS`<br/>*Download* e integridade: [607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar](https://dl.digital-guard.org/607ba1a0c854d6c93a0e57a95fa8851be3abe05b292b477ee5eb71ec245b1fae.rar)<br/>Descrição: Quadras, bairros, lotes e logradouros<br/>Tamanho do arquivo: 23960854 bytes (22.85 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `tp_log ||' '|| nm_log` (via)

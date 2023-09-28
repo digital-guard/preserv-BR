@@ -6,7 +6,7 @@ rm -rf /tmp/sandbox/_pk7600007601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip && sudo chmod 664 /var/www/dl.digital-guard.org/23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601101_p1_block CASCADE"
 cd /tmp/sandbox/_pk7600007601_001; 7z  x -y /var/www/dl.digital-guard.org/23916aea28282c1c2485ff18fa561728bcfc087c2999d9a9575658e32a66f782.zip "*quadra*" ; chmod -R a+rwx . > /dev/null
@@ -29,14 +29,16 @@ rm -rf /tmp/sandbox/_pk7600007601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip && sudo chmod 664 /var/www/dl.digital-guard.org/6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601201_p2_building CASCADE"
 cd /tmp/sandbox/_pk7600007601_001; 7z  x -y /var/www/dl.digital-guard.org/6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip "*Edificacao*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31982"
 cd /tmp/sandbox/_pk7600007601_001; shp2pgsql -D   -s 31982 "Edificacao.shp" pk7600007601201_p2_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600007601_001/Edificacao.shp','building_full','pk7600007601201_p2_building','7600007601201','6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip',array['gid', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600007601201_p2_building AS SELECT gid, 'yes' AS building, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/Edificacao.shp','building_full','vw2_pk7600007601201_p2_building','7600007601201','6536687209661fd36ce85976660e736b76cb2597c9a6402df810fe623aa2e569.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600007601201_p2_building"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601201_p2_building CASCADE"
 rm -f /tmp/sandbox/_pk7600007601_001/*Edificacao.* || true
@@ -56,7 +58,7 @@ rm -rf /tmp/sandbox/_pk7600007601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip && sudo chmod 664 /var/www/dl.digital-guard.org/62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601301_p3_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600007601_001; 7z  x -y /var/www/dl.digital-guard.org/62972bc1f5accf55c5ea97f9154f246a111cde13c4da881798668e12b0a03a41.zip "*LIMITE_BAIRROS*" ; chmod -R a+rwx . > /dev/null
@@ -81,7 +83,7 @@ rm -rf /tmp/sandbox/_pk7600007601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip && sudo chmod 664 /var/www/dl.digital-guard.org/4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601401_p4_parcel CASCADE"
 cd /tmp/sandbox/_pk7600007601_001; 7z  x -y /var/www/dl.digital-guard.org/4f5971ab149c0d936a315fff94fdd8ee5fb2410f2a472b3eaf0d33666ee1043d.zip "*lote_com_rua*" ; chmod -R a+rwx . > /dev/null
@@ -104,7 +106,7 @@ rm -rf /tmp/sandbox/_pk7600007601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600007601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip && sudo chmod 664 /var/www/dl.digital-guard.org/8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600007601501_p5_via CASCADE"
 cd /tmp/sandbox/_pk7600007601_001; 7z  x -y /var/www/dl.digital-guard.org/8dd9b6e7e03435fd0adb687313f754cfd76488f13a4b3cfdcc17a4b8c317be87.zip "*sistema_viario_atualizado*" ; chmod -R a+rwx . > /dev/null

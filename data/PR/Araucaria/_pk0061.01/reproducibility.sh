@@ -12,7 +12,7 @@ rm -rf /tmp/sandbox/_pk7600006101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600006101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip && sudo chmod 664 /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006101101_p1_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600006101_002; 7z  x -y /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip '*Bairros*' '*Localidades Rurais*' ; chmod -R a+rwx . > /dev/null
@@ -36,7 +36,7 @@ rm -rf /tmp/sandbox/_pk7600006101_002 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600006101_002
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip && sudo chmod 664 /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600006101101_p1_via CASCADE"
 cd /tmp/sandbox/_pk7600006101_002; 7z  x -y /var/www/dl.digital-guard.org/52302cd28b0d4e36ba923a7f1fc82ff4d16f544a92b667933f8b46e036213b88.zip "*Sistema Viario*" ; chmod -R a+rwx . > /dev/null

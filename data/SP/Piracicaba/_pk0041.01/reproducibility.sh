@@ -6,7 +6,7 @@ rm -rf /tmp/sandbox/_pk7600004101_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600004101_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip && sudo chmod 664 /var/www/dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600004101201_p2_block CASCADE"
 cd /tmp/sandbox/_pk7600004101_001; 7z  x -y /var/www/dl.digital-guard.org/23f703b7d1611ea29f53fe3bd2617a5939fe96d21453004838d7fe61064dae45.zip "*Quadras*" ; chmod -R a+rwx . > /dev/null
@@ -34,7 +34,7 @@ rm -rf /tmp/sandbox/_pk7600004101_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600004101_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip && sudo chmod 664 /var/www/dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600004101301_p3_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600004101_001; 7z  x -y /var/www/dl.digital-guard.org/2137f68df828ce00c276a38b969cd651efcc2f8300f9fb4a716b6fd10019862f.zip "*Bairros*" ; chmod -R a+rwx . > /dev/null
@@ -57,7 +57,7 @@ rm -rf /tmp/sandbox/_pk7600004101_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600004101_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip && sudo chmod 664 /var/www/dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600004101101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pk7600004101_001; 7z  x -y /var/www/dl.digital-guard.org/f40eeaa6fe4f78e52be084392cc9c04d07a95112f7fb2acaf3210fd23fbdf4a8.zip "*Cadastro de Imoveis*" ; chmod -R a+rwx . > /dev/null

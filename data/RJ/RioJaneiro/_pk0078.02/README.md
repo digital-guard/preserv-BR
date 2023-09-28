@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `Quadras_(2013)`<br/>*Download* e integridade: [6daa65d15bbda6b9d9959daf8d43c2063ed0410b643870c24d22af4fd149032d.zip](http://dl.digital-guard.org/6daa65d15bbda6b9d9959daf8d43c2063ed0410b643870c24d22af4fd149032d.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 167060078 bytes (159.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
+Nome do arquivo: `Quadras_(2013)`<br/>*Download* e integridade: [6daa65d15bbda6b9d9959daf8d43c2063ed0410b643870c24d22af4fd149032d.zip](https://dl.digital-guard.org/6daa65d15bbda6b9d9959daf8d43c2063ed0410b643870c24d22af4fd149032d.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 167060078 bytes (159.32 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
 
 #### Resultados da filtragem e sua publicação
 122956519 bytes (117.26 <abbr title="mebibyte">MiB</abbr>)<br/>31727 polígonos com 660.77 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.65 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/RioJaneiro/_pk0078.02/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RJ/RioJaneiro/_pk0078.02/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `Quadras_(2013)`<br/>*Download* e integridade: [6daa65d15bbda6b
 [https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/block](https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `NUMERO_DE_PORTA`<br/>*Download* e integridade: [ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar](http://dl.digital-guard.org/ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar)<br/>Descrição: Numero de Porta<br/>Tamanho do arquivo: 47211305 bytes (45.02 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `NUMERO_DE_PORTA`<br/>*Download* e integridade: [ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar](https://dl.digital-guard.org/ca3372bbecd51a34481c39af3c194db84c3fd6b578a14f58aa8f787d3f86caf4.rar)<br/>Descrição: Numero de Porta<br/>Tamanho do arquivo: 47211305 bytes (45.02 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `NP` (hnum)
@@ -56,7 +56,7 @@ Nome do arquivo: `NUMERO_DE_PORTA`<br/>*Download* e integridade: [ca3372bbecd51a
 [https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/geoaddress](https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Limite_de_Bairros`<br/>*Download* e integridade: [ea44a4e799c709b77e0de02ca98c67895246bccc4634940c77e5e82ce1b61f31.zip](http://dl.digital-guard.org/ea44a4e799c709b77e0de02ca98c67895246bccc4634940c77e5e82ce1b61f31.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 1504464 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
+Nome do arquivo: `Limite_de_Bairros`<br/>*Download* e integridade: [ea44a4e799c709b77e0de02ca98c67895246bccc4634940c77e5e82ce1b61f31.zip](https://dl.digital-guard.org/ea44a4e799c709b77e0de02ca98c67895246bccc4634940c77e5e82ce1b61f31.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 1504464 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
 
 #### Dados relevantes
 * `properties->'NOME'` (nsvia)
@@ -68,7 +68,7 @@ Nome do arquivo: `Limite_de_Bairros`<br/>*Download* e integridade: [ea44a4e799c7
 [https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/nsvia](https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes_(2013)`<br/>*Download* e integridade: [c2febb1aa33dcf75c3a23f36c6c535e7223f219e1b71fa1121cf278623961a01.zip](http://dl.digital-guard.org/c2febb1aa33dcf75c3a23f36c6c535e7223f219e1b71fa1121cf278623961a01.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 249615252 bytes (238.05 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
+Nome do arquivo: `Lotes_(2013)`<br/>*Download* e integridade: [c2febb1aa33dcf75c3a23f36c6c535e7223f219e1b71fa1121cf278623961a01.zip](https://dl.digital-guard.org/c2febb1aa33dcf75c3a23f36c6c535e7223f219e1b71fa1121cf278623961a01.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 249615252 bytes (238.05 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
 
 #### Dados relevantes
 * `properties->'cod_trecho'` (via)
@@ -82,7 +82,7 @@ Nome do arquivo: `Lotes_(2013)`<br/>*Download* e integridade: [c2febb1aa33dcf75c
 [https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/parcel](https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip](http://dl.digital-guard.org/cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 33511987 bytes (31.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
+Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip](https://dl.digital-guard.org/cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 33511987 bytes (31.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
 
 #### Dados relevantes
 * `properties->'COMPLETO'` (via)
@@ -94,7 +94,7 @@ Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [cbf1efdbbdbc96f0c0
 [https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/via](https://viz.addressforall.org/BR-RJ-RioJaneiro/_pk0078.02/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-address.png" alt="address" width="20"/> address
 
-Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip](http://dl.digital-guard.org/cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 33511987 bytes (31.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
+Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip](https://dl.digital-guard.org/cbf1efdbbdbc96f0c012556ff36040d8314564d300f9c53aaef8b49f0b8000c9.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 33511987 bytes (31.96 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 4326
 
 #### Dados relevantes
 * `properties->'COMPLETO'` (via)

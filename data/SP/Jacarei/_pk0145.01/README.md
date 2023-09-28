@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `AddressForAll/Loteamentos_2017`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `AddressForAll/Loteamentos_2017`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](https://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `LOTEAMENTO` (nsvia): nome de bairro sem acentuação
@@ -40,7 +40,7 @@ Nome do arquivo: `AddressForAll/Loteamentos_2017`<br/>*Download* e integridade: 
 [https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/nsvia](https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `AddressForAll/LOTES_2021`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `AddressForAll/LOTES_2021`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](https://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Outros dados relevantes
 * `INSCLOTE`: Inscrição do lote
@@ -54,7 +54,7 @@ Nome do arquivo: `AddressForAll/LOTES_2021`<br/>*Download* e integridade: [16075
 [https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/parcel](https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](https://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `Nome_LOG` (via)
@@ -66,7 +66,7 @@ Nome do arquivo: `AddressForAll/Eixo_logradouros_nomes`<br/>*Download* e integri
 [https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/via](https://viz.addressforall.org/BR-SP-Jacarei/_pk0145.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](http://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31983
+Nome do arquivo: `AddressForAll/LOTES_COM_NUMERO_TODOS`<br/>*Download* e integridade: [16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar](https://dl.digital-guard.org/16075eaba18c74d131e46efacfc88a43cd6154696fd6dbf96f29fecf2fbca54e.rar)<br/>Descrição: Lotes, logradouros, bairros e endereços<br/>Tamanho do arquivo: 12508908 bytes (11.93 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: xlsx<br/>SRID: 31983
 
 #### Dados relevantes
 * `Endereço` (via)

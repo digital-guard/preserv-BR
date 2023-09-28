@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.fortaleza.ce.gov.br/">Prefeitura Municipal de Fortaleza</a>
 <br/>&nbsp; <small>CNPJ 07.954.605/0001-60</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q43463">Q43463</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml" href="http://dl.digital-guard.org/87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml"><code>87c78d7...eml</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml" href="https://dl.digital-guard.org/87c78d7d7d33acbc18296a537842e6229369a747bb087e5c0b2a6aec7ebbfe2b.eml"><code>87c78d7...eml</code></a>)<br/>
 Obtido via <i>website</i> em <b>12/09/2022</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`<br/>*Download* e integridade: [82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip](http://dl.digital-guard.org/82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 8398313 bytes (8.01 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip](https://dl.digital-guard.org/82edaae1d8a79f5167d88cb89a09a21f7e2f89bae88d16d39ebbe971a28976d5.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 8398313 bytes (8.01 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Resultados da filtragem e sua publicação
 15357290 bytes (14.65 <abbr title="mebibyte">MiB</abbr>)<br/>18222 polígonos com 237.32 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.74 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/block)
@@ -37,7 +37,10 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [82edaae1d8a79f5167d88c
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/block](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip](http://dl.digital-guard.org/8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 129751437 bytes (123.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip](https://dl.digital-guard.org/8a07c88d17167f65182a6c1a86fb89842d2e0bfe4ca5f7fc2dba4d41d9f682f9.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 129751437 bytes (123.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+
+#### Dados relevantes
+* `yes` (building)
 
 #### Resultados da filtragem e sua publicação
 248783984 bytes (237.26 <abbr title="mebibyte">MiB</abbr>)<br/>922127 polígonos com 77.89 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/CE/Fortaleza/_pk0097.01/building)
@@ -46,7 +49,7 @@ Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [8a07c88d17167f6518
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/building](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairros`<br/>*Download* e integridade: [4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip](http://dl.digital-guard.org/4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 342881 bytes (0.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `bairros`<br/>*Download* e integridade: [4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip](https://dl.digital-guard.org/4c97d93a39cce2190b436b1adf1d56321627fef452dbbf18ede812731e2a035b.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 342881 bytes (0.33 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `nome_bairr` (nsvia)
@@ -58,7 +61,7 @@ Nome do arquivo: `bairros`<br/>*Download* e integridade: [4c97d93a39cce2190b436b
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/nsvia](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes_fiscais`<br/>*Download* e integridade: [d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip](http://dl.digital-guard.org/d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 57886654 bytes (55.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `lotes_fiscais`<br/>*Download* e integridade: [d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip](https://dl.digital-guard.org/d6bfda4f6ec70796d753b570ff04afc040ba6a2c438f116b301a977db3788b5e.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 57886654 bytes (55.21 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `split_part(endereco,',',1)` (hnum)
@@ -72,7 +75,7 @@ Nome do arquivo: `lotes_fiscais`<br/>*Download* e integridade: [d6bfda4f6ec70796
 [https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/parcel](https://viz.addressforall.org/BR-CE-Fortaleza/_pk0097.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `logradouros`<br/>*Download* e integridade: [86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip](http://dl.digital-guard.org/86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 2292206 bytes (2.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
+Nome do arquivo: `logradouros`<br/>*Download* e integridade: [86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip](https://dl.digital-guard.org/86c7283d4dc0351e397e72934f96141f55b92dc09112462cad3769649c0f8fec.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 2292206 bytes (2.19 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31984
 
 #### Dados relevantes
 * `nome_compl` (via)

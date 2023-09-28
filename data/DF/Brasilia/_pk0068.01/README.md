@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.df.gov.br/">Governo do Distrito Federal</a>
 <br/>&nbsp; <small>CNPJ 00.394.601/0001-26</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q96572867">Q96572867</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip" href="http://dl.digital-guard.org/0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip"><code>0b0f9b5...zip</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip" href="https://dl.digital-guard.org/0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip"><code>0b0f9b5...zip</code></a>)<br/>
 Obtido via <i>site</i> em <b>26/03/2021</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `Quadras`<br/>*Download* e integridade: [0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip](http://dl.digital-guard.org/0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip)<br/>Descrição: block<br/>Tamanho do arquivo: 2218378 bytes (2.12 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `Quadras`<br/>*Download* e integridade: [0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip](https://dl.digital-guard.org/0e5c2d6d8728b11d7a89ada7fb7639756e479761c57b1aa23d9f4bcdec8d480d.zip)<br/>Descrição: block<br/>Tamanho do arquivo: 2218378 bytes (2.12 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `sde_siturb` (bnum): Número da quadra.
@@ -45,10 +45,12 @@ Nome do arquivo: `Quadras`<br/>*Download* e integridade: [0e5c2d6d8728b11d7a89ad
 [https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/block](https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip](http://dl.digital-guard.org/c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 128753940 bytes (122.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip](https://dl.digital-guard.org/c9aca8c68c827c3a73598b677dc217fd8af5df1b8f53349e37b00ae13bcd46bd.zip)<br/>Descrição: Edificações<br/>Tamanho do arquivo: 128753940 bytes (122.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `nome` (name): Nome do prédio.
+
+* `yes` (building)
 
 #### Resultados da filtragem e sua publicação
 242496255 bytes (231.26 <abbr title="mebibyte">MiB</abbr>)<br/>759854 polígonos com 121.94 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.26 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/DF/Brasilia/_pk0068.01/building)
@@ -57,7 +59,7 @@ Nome do arquivo: `edificacoes`<br/>*Download* e integridade: [c9aca8c68c827c3a73
 [https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/building](https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Administrativas`<br/>*Download* e integridade: [12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip](http://dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip)<br/>Descrição: nsvia<br/>Tamanho do arquivo: 1196204 bytes (1.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `Administrativas`<br/>*Download* e integridade: [12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip](https://dl.digital-guard.org/12a8253e85ad740a408c73dc73224b5b939d8125fdbdf73ae8355338d1250730.zip)<br/>Descrição: nsvia<br/>Tamanho do arquivo: 1196204 bytes (1.14 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `ra` (nsvia): Nome do Região Administrativa.
@@ -69,7 +71,7 @@ Nome do arquivo: `Administrativas`<br/>*Download* e integridade: [12a8253e85ad74
 [https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/nsvia](https://viz.addressforall.org/BR-DF-Brasilia/_pk0068.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes Registrados`<br/>*Download* e integridade: [b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip](http://dl.digital-guard.org/b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip)<br/>Descrição: lotes<br/>Tamanho do arquivo: 124011266 bytes (118.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `Lotes Registrados`<br/>*Download* e integridade: [b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip](https://dl.digital-guard.org/b55567b8f4b77e16eb7805ac2883ffed63b67ec7d39aed103e914bbea0d94750.zip)<br/>Descrição: lotes<br/>Tamanho do arquivo: 124011266 bytes (118.27 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `ciu` (ref)

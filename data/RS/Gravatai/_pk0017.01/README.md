@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lote_numero_predial`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `lote_numero_predial`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](https://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `Número` (hnum)
@@ -40,7 +40,7 @@ Nome do arquivo: `lote_numero_predial`<br/>*Download* e integridade: [d101e729d5
 [https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/parcel](https://viz.addressforall.org/BR-RS-Gravatai/_pk0017.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `sistema_viario`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](http://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `sistema_viario`<br/>*Download* e integridade: [d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar](https://dl.digital-guard.org/d101e729d51ddfc33e4a866684074487c5a2601c7c84d4eca01ff9bbca186cda.rar)<br/>Descrição: Lotes e Eixos<br/>Tamanho do arquivo: 7445892 bytes (7.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `TIPO || ' ' || NOME` (via)

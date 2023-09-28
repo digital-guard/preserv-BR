@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `Bairros`<br/>*Download* e integridade: [305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip](http://dl.digital-guard.org/305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 109452 bytes (0.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Bairros`<br/>*Download* e integridade: [305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip](https://dl.digital-guard.org/305df61c61e90caef0a0409a09b7d01a56beb6e107ae4430188617c7058f02a1.zip)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 109452 bytes (0.1 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `nmbairro` (nsvia)
@@ -40,7 +40,7 @@ Nome do arquivo: `Bairros`<br/>*Download* e integridade: [305df61c61e90caef0a040
 [https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/nsvia](https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip](http://dl.digital-guard.org/ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 10174579 bytes (9.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip](https://dl.digital-guard.org/ae8dc027fe9e0983b553508c3a313061f7f466c50d66124c86c96254f70c4c15.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 10174579 bytes (9.7 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `logradouro` (via)
@@ -54,7 +54,7 @@ Nome do arquivo: `Lotes`<br/>*Download* e integridade: [ae8dc027fe9e0983b553508c
 [https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/parcel](https://viz.addressforall.org/BR-PR-Cascavel/_pk0011.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip](http://dl.digital-guard.org/f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1928343 bytes (1.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `Logradouros`<br/>*Download* e integridade: [f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip](https://dl.digital-guard.org/f4fe1f604f927b1d07ae56ec11ea9e3c4c64a4d02c01ce80ad041beadab165dc.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1928343 bytes (1.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `tipolograd || ' ' || nmlogradou` (via)

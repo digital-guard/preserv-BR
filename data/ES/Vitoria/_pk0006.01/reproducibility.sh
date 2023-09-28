@@ -7,14 +7,16 @@ rm -rf /tmp/sandbox/_pk7600000601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip && sudo chmod 664 /var/www/dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000601201_p2_building CASCADE"
 cd /tmp/sandbox/_pk7600000601_001; 7z  x -y /var/www/dl.digital-guard.org/58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip "*edificacao*" ; chmod -R a+rwx . > /dev/null
 psql postgres://postgres@localhost/ingest1 -c "SELECT srid, proj4text FROM spatial_ref_sys where srid=31999"
 cd /tmp/sandbox/_pk7600000601_001; shp2pgsql -D   -s 31999 "edificacao.shp" pk7600000601201_p2_building | psql -q postgres://postgres@localhost/ingest1 2> /dev/null
 
-psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/_pk7600000601_001/edificacao.shp','building_full','pk7600000601201_p2_building','7600000601201','58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip',array['gid', 'geom'],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "CREATE VIEW vw2_pk7600000601201_p2_building AS SELECT gid, 'yes' AS building, geom FROM $(tabname)"
+psql postgres://postgres@localhost/ingest1 -c "SELECT ingest.any_load('shp2sql','/tmp/sandbox/edificacao.shp','building_full','vw2_pk7600000601201_p2_building','7600000601201','58d1d77cd2dd760f6a57bfda746da7f2658fe8a1f23f6d371ed5a8e230ac30cf.zip',array[]::text[],5,1)"
+psql postgres://postgres@localhost/ingest1 -c "DROP VIEW vw2_pk7600000601201_p2_building"
 @echo "Confira os resultados nas tabelas ingest.donated_packcomponent e ingest.feature_asis".
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000601201_p2_building CASCADE"
 rm -f /tmp/sandbox/_pk7600000601_001/*edificacao.* || true
@@ -34,7 +36,7 @@ rm -rf /tmp/sandbox/_pk7600000601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip && sudo chmod 664 /var/www/dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000601101_p1_nsvia CASCADE"
 cd /tmp/sandbox/_pk7600000601_001; 7z  x -y /var/www/dl.digital-guard.org/307f158ccd7d9ff8f7ec9767de719595fde4ea759c14316d478da176c23303fe.zip "*bairros*" ; chmod -R a+rwx . > /dev/null
@@ -57,7 +59,7 @@ rm -rf /tmp/sandbox/_pk7600000601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip && sudo chmod 664 /var/www/dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000601401_p4_parcel CASCADE"
 cd /tmp/sandbox/_pk7600000601_001; 7z  x -y /var/www/dl.digital-guard.org/3a92899e5a7e87acb92cca7198cc0e894bac9ac96c2192b12b668d1e1d598898.zip "*lote*" ; chmod -R a+rwx . > /dev/null
@@ -80,7 +82,7 @@ rm -rf /tmp/sandbox/_pk7600000601_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600000601_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip && sudo chmod 664 /var/www/dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600000601301_p3_via CASCADE"
 cd /tmp/sandbox/_pk7600000601_001; 7z  x -y /var/www/dl.digital-guard.org/252f2228f3400be3f6fdbef5a99b3aacf1ed0232ab73675ed918f9b5f8743752.zip "*eixo_logradouro*" ; chmod -R a+rwx . > /dev/null

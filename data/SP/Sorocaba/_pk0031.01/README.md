@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes_prediais`<br/>*Download* e integridade: [3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip](http://dl.digital-guard.org/3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 14476669 bytes (13.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lotes_prediais`<br/>*Download* e integridade: [3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip](https://dl.digital-guard.org/3c89fd728a33d781a60088e8b384295e92e70c96b6c9fed78bd4f36f819df67a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 14476669 bytes (13.81 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `número por` (hnum)
@@ -42,7 +42,7 @@ Nome do arquivo: `lotes_prediais`<br/>*Download* e integridade: [3c89fd728a33d78
 [https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/parcel](https://viz.addressforall.org/BR-SP-Sorocaba/_pk0031.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixos_sorocaba`<br/>*Download* e integridade: [f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip](http://dl.digital-guard.org/f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1880173 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 5533
+Nome do arquivo: `eixos_sorocaba`<br/>*Download* e integridade: [f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip](https://dl.digital-guard.org/f88024120a0355a4a9c5ee990c31a41a031a06c25e82eca5e7320d00030edb36.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 1880173 bytes (1.79 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 5533
 
 #### Dados relevantes
 * `TIPO || ' ' || NOME` (via)

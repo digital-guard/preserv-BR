@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotes basicos`<br/>*Download* e integridade: [67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip](http://dl.digital-guard.org/67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4634935 bytes (4.42 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32720
+Nome do arquivo: `Lotes basicos`<br/>*Download* e integridade: [67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip](https://dl.digital-guard.org/67f980eb940a57a8f4e40b8e15be9b4b65162aa9afe27d0a89f826047f9b9039.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 4634935 bytes (4.42 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32720
 
 #### Dados relevantes
 * `LOTES_TIPO || ' ' || LOTES_ENDE` (via)
@@ -42,7 +42,7 @@ Nome do arquivo: `Lotes basicos`<br/>*Download* e integridade: [67f980eb940a57a8
 [https://viz.addressforall.org/BR-RO-JiParana/_pk0062.01/parcel](https://viz.addressforall.org/BR-RO-JiParana/_pk0062.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Ruas Matriz nova`<br/>*Download* e integridade: [910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip](http://dl.digital-guard.org/910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 363191 bytes (0.35 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32720
+Nome do arquivo: `Ruas Matriz nova`<br/>*Download* e integridade: [910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip](https://dl.digital-guard.org/910851a581a1eefe4a3a8534ffd46ac6ad11e998fcf7c6ebf624700b885a4b01.zip)<br/>Descrição: Logradouros<br/>Tamanho do arquivo: 363191 bytes (0.35 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 32720
 
 #### Dados relevantes
 * `Rua` (via)

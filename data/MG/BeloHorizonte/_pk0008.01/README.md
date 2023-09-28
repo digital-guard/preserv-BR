@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://prefeitura.pbh.gov.br/">Prefeitura de Belo Horizonte</a>
 <br/>&nbsp; <small>CNPJ 18.715.383/0001-40</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q30263897">Q30263897</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip" href="http://dl.digital-guard.org/c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip"><code>c60a5c4...zip</code></a><a title="SHA256 https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about" href="https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about"><code>webarchive</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0 <a title="SHA256 c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip" href="https://dl.digital-guard.org/c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip"><code>c60a5c4...zip</code></a><a title="SHA256 https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about" href="https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about"><code>webarchive</code></a>)<br/>
 Obtido via <i>email;site</i> em <b>19/03/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-geoaddress.png" alt="geoaddress" width="20"/> geoaddress
 
-Nome do arquivo: `ENDERECO`<br/>*Download* e integridade: [1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip](http://dl.digital-guard.org/1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 42826370 bytes (40.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
+Nome do arquivo: `ENDERECO`<br/>*Download* e integridade: [1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip](https://dl.digital-guard.org/1ce29a555565be5f540ab0c6f93ac55797c368293e0a6bfb479a645a5a23f542.zip)<br/>Descrição: Pontos de Endereço<br/>Tamanho do arquivo: 42826370 bytes (40.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
 
 #### Dados relevantes
 * `expressão complexa, consultar o make_conf.yaml` (hnum)
@@ -43,7 +43,7 @@ Nome do arquivo: `ENDERECO`<br/>*Download* e integridade: [1ce29a555565be5f540ab
 [https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/geoaddress](https://viz.addressforall.org/BR-MG-BeloHorizonte/_pk0008.01/geoaddress)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `LOGRADOUROLine`<br/>*Download* e integridade: [7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip](http://dl.digital-guard.org/7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 2637788 bytes (2.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `LOGRADOUROLine`<br/>*Download* e integridade: [7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip](https://dl.digital-guard.org/7d7d0661683a8eebd95d544c47dd0e254fc75e3d916fe9900a3bd9fb7b2cc378.zip)<br/>Descrição: Vias<br/>Tamanho do arquivo: 2637788 bytes (2.52 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `TIPO_LOGRA || ' ' || NOME_LOGRA` (via)

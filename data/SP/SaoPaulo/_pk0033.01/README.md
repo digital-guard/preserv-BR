@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="http://www.capital.sp.gov.br/">Prefeitura Municipal de São Paulo</a>
 <br/>&nbsp; <small>CNPJ 46.395.000/0001-39</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q10351100">Q10351100</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR-SP-SaoPaulo-v1.md"><b>Implied govWorks_geo-BR-SP-SaoPaulo-1.0</b></a> (cc0 <a title="SHA256 679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip" href="http://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR-SP-SaoPaulo-v1.md"><b>Implied govWorks_geo-BR-SP-SaoPaulo-1.0</b></a> (cc0 <a title="SHA256 679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip" href="https://dl.digital-guard.org/679c1c29a07170adeaf8e29feb9d5e33375cff18813f431bf28f3f3bc31675ef.zip"><code>679c1c2...zip</code></a>)<br/>
 Obtido via <i>site</i> em <b>26/07/2020</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
@@ -41,7 +41,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`<br/>*Download* e integridade: [0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip](http://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes (67.04 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`<br/>*Download* e integridade: [0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip](https://dl.digital-guard.org/0f724350c2511ec58873a9dcaeec51a6756f9258b2b4ecd953884198e0350cbc.zip)<br/>Descrição: Quadras<br/>Tamanho do arquivo: 70291605 bytes (67.04 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `qe_id` (ref)
@@ -53,7 +53,10 @@ Nome do arquivo: `SIRGAS_SHP_quadraviariaed/SIRGAS_SHP_quadraviariaed_polygon`<b
 [https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/block](https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-building.png" alt="building" width="20"/> building
 
-Nome do arquivo: `SHP_edificacao`<br/>*Download* e integridade: [8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip](http://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip)<br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes (669.89 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SHP_edificacao`<br/>*Download* e integridade: [8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip](https://dl.digital-guard.org/8e7be760f94bb385bb1b6a47feee3afce9c0fcf48317b554834a5ac30bc5a0cf.zip)<br/>Descrição: Edifícios<br/>Tamanho do arquivo: 702426931 bytes (669.89 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+
+#### Dados relevantes
+* `yes` (building)
 
 #### Resultados da filtragem e sua publicação
 752576234 bytes (717.71 <abbr title="mebibyte">MiB</abbr>)<br/>2764476 polígonos com 309.55 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.38 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/SaoPaulo/_pk0033.01/building)
@@ -62,7 +65,7 @@ Nome do arquivo: `SHP_edificacao`<br/>*Download* e integridade: [8e7be760f94bb38
 [https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/building](https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/building)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `SIRGAS_SHP_LOTES`<br/>*Download* e integridade: [bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip](http://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes (223.37 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_LOTES`<br/>*Download* e integridade: [bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip](https://dl.digital-guard.org/bae2054448855305db0fc855d2852cd5a7b369481cc03aeb809a0c3c162a2c04.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 234218427 bytes (223.37 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `lo_setor || lo_quadra || lo_lote` (ref)
@@ -76,7 +79,7 @@ Nome do arquivo: `SIRGAS_SHP_LOTES`<br/>*Download* e integridade: [bae2054448855
 [https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/parcel](https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`<br/>*Download* e integridade: [ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip](http://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes (22.58 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`<br/>*Download* e integridade: [ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip](https://dl.digital-guard.org/ef12421332aca1f53484084ab50bdca48d243ba1d9593ebfd873a1af2ab86556.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 23673744 bytes (22.58 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `lg_tipo || ' ' || lg_nome` (via)
@@ -88,7 +91,7 @@ Nome do arquivo: `SIRGAS_SHP_logradouronbl/SIRGAS_SHP_logradouronbl`<br/>*Downlo
 [https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/via](https://viz.addressforall.org/BR-SP-SaoPaulo/_pk0033.01/via)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-cadparcel.png" alt="cadparcel" width="20"/> cadparcel
 
-Nome do arquivo: `IPTU_2020`<br/>*Download* e integridade: [75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip](http://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes (119.87 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
+Nome do arquivo: `IPTU_2020`<br/>*Download* e integridade: [75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip](https://dl.digital-guard.org/75c003ca72fd92a2cd2146518c8bd69b6396dd1ee70d5e94c81107e27b498c12.zip)<br/>Descrição: Endereços<br/>Tamanho do arquivo: 125696085 bytes (119.87 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: csv<br/>SRID: 31983
 
 #### Dados relevantes
 * `split_part("NUMERO DO CONTRIBUINTE", '-', 1)` (ref)

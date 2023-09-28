@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
+Nome do arquivo: `Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](https://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
 
 #### Dados relevantes
 * `codquadra` (ref)
@@ -40,7 +40,7 @@ Nome do arquivo: `Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg`<br/>*D
 [https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/block](https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `bairros`<br/>*Download* e integridade: [0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip](http://dl.digital-guard.org/0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip)<br/>Descrição: entrega_2020-10-02_recorte.zip<br/>Tamanho do arquivo: 119677 bytes (0.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `bairros`<br/>*Download* e integridade: [0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip](https://dl.digital-guard.org/0332a2f00b8cd344818b1b734859c44c7d6b7604d347ce1619455d9bf2629d64.zip)<br/>Descrição: entrega_2020-10-02_recorte.zip<br/>Tamanho do arquivo: 119677 bytes (0.11 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `nome` (via)
@@ -52,7 +52,7 @@ Nome do arquivo: `bairros`<br/>*Download* e integridade: [0332a2f00b8cd344818b1b
 [https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/nsvia](https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
+Nome do arquivo: `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](https://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
 
 #### Dados relevantes
 * `num_atual` (hnum)
@@ -64,7 +64,7 @@ Nome do arquivo: `Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg`<br/>*Download
 [https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/parcel](https://viz.addressforall.org/BR-SP-Osasco/_pk0028.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `Eixo_Logradouros_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](http://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
+Nome do arquivo: `Eixo_Logradouros_sirgasUTM.gpkg`<br/>*Download* e integridade: [aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip](https://dl.digital-guard.org/aa41214cef0417fb400b83c2e196fb01d7be3688a560c36cac6e2c54cfa0502a.zip)<br/>Descrição: entrega_2020-11-04.zip<br/>Tamanho do arquivo: 27891388 bytes (26.6 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: <br/>SRID: 31983
 
 #### Dados relevantes
 * `nome` (via)

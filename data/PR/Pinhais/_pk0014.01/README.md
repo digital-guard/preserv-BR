@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `BAIRROS`<br/>*Download* e integridade: [7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar](http://dl.digital-guard.org/7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 35685 bytes (0.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `BAIRROS`<br/>*Download* e integridade: [7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar](https://dl.digital-guard.org/7d96c19771ca271623058eeb9fdc4ceb67ff68c3937a7b66e7ccdb1a4e6580fb.rar)<br/>Descrição: Bairros<br/>Tamanho do arquivo: 35685 bytes (0.03 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `BAIRRO` (nsvia)
@@ -40,7 +40,7 @@ Nome do arquivo: `BAIRROS`<br/>*Download* e integridade: [7d96c19771ca271623058e
 [https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/nsvia](https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `LOTES`<br/>*Download* e integridade: [56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar](http://dl.digital-guard.org/56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 2061575 bytes (1.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `LOTES`<br/>*Download* e integridade: [56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar](https://dl.digital-guard.org/56d32368409f4ba2c99afadc7ad307bd8cc660b93d38e57936da313fafde1f13.rar)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 2061575 bytes (1.97 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME_LOGRA || ' ' || TIPO_LOGRA` (via)
@@ -56,7 +56,7 @@ Nome do arquivo: `LOTES`<br/>*Download* e integridade: [56d32368409f4ba2c99afadc
 [https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/parcel](https://viz.addressforall.org/BR-PR-Pinhais/_pk0014.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `RUAS`<br/>*Download* e integridade: [27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar](http://dl.digital-guard.org/27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 97648 bytes (0.09 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
+Nome do arquivo: `RUAS`<br/>*Download* e integridade: [27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar](https://dl.digital-guard.org/27c0c467222a668837f62e9f40ac85f94685ea50f3d655207384f2343d13f573.rar)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 97648 bytes (0.09 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
 #### Dados relevantes
 * `NOME_RUA` (via)

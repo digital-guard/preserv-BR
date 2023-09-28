@@ -28,7 +28,7 @@ Os arquivos contêm "camadas de dados" temáticas. Os metadados também descreve
 
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-Nome do arquivo: `quadras`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `quadras`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](https://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Resultados da filtragem e sua publicação
 7634050 bytes (7.28 <abbr title="mebibyte">MiB</abbr>)<br/>4797 polígonos com 100.61 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.33 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SP/Limeira/_pk0026.01/block)
@@ -37,7 +37,7 @@ Nome do arquivo: `quadras`<br/>*Download* e integridade: [529f86b71a936bfdbca3d6
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/block](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-nsvia.png" alt="nsvia" width="20"/> nsvia
 
-Nome do arquivo: `loteamentos`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `loteamentos`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](https://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `Tipo || ' ' || Nome` (nsvia)
@@ -52,7 +52,7 @@ Necessario compor nome com regular expression.
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/nsvia](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/nsvia)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-Nome do arquivo: `lotes`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `lotes`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](https://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `ENDER_IMOV` (via)
@@ -66,7 +66,7 @@ Nome do arquivo: `lotes`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633
 [https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/parcel](https://viz.addressforall.org/BR-SP-Limeira/_pk0026.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Nome do arquivo: `eixo`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](http://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
+Nome do arquivo: `eixo`<br/>*Download* e integridade: [529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip](https://dl.digital-guard.org/529f86b71a936bfdbca3d633b80912f496b9c94a2505ef816e406e2362b631c4.zip)<br/>Descrição: Quadras, bairros, lotes e vias<br/>Tamanho do arquivo: 112972140 bytes (107.74 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31983
 
 #### Dados relevantes
 * `tipo || ' ' || compl_1 || ' ' || compl_2 || ' ' || nome_1` (via)
