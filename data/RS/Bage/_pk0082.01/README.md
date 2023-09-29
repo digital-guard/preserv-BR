@@ -11,7 +11,8 @@ Obtido via <i>GitHub</i> em <b>25/04/2022</b> por:
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
 </td></tr>
 <tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
-
+<tr><td>Dados publicados em <a href="https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
+<tr><td>Visualização: <a title="block" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
 </table>
 </aside>
 
@@ -25,6 +26,15 @@ Nota. O presente documento README foi gerado por software a partir das informaç
 
 Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
+
+Nome do arquivo: `QUARTEIRAO`<br/>*Download* e integridade: [47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip](https://dl.digital-guard.org/47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip)<br/>Descrição: quarteirões<br/>Tamanho do arquivo: 1496124 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
+
+#### Resultados da filtragem e sua publicação
+1610112 bytes (1.54 <abbr title="mebibyte">MiB</abbr>)<br/>2138 polígonos com 32.37 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.01 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/block)
+
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
 Nome do arquivo: `LOTES_URBANOS`<br/>*Download* e integridade: [7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip](https://dl.digital-guard.org/7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip)<br/>Descrição: LOTES<br/>Tamanho do arquivo: 10319163 bytes (9.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
@@ -32,16 +42,23 @@ Nome do arquivo: `LOTES_URBANOS`<br/>*Download* e integridade: [7fc034ac5c703dcf
 #### Dados relevantes
 * `properties->'logradouro'` (via)
 
-## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
+#### Resultados da filtragem e sua publicação
+7894776 bytes (7.53 <abbr title="mebibyte">MiB</abbr>)<br/>42697 polígonos com 33.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/parcel)
 
-Nome do arquivo: `QUARTEIRAO`<br/>*Download* e integridade: [47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip](https://dl.digital-guard.org/47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip)<br/>Descrição: quarteirões<br/>Tamanho do arquivo: 1496124 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
-
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel)
 ## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
 Nome do arquivo: `LOGRADOUROS-utf8`<br/>*Download* e integridade: [e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip](https://dl.digital-guard.org/e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip)<br/>Descrição: LOGRADOUROS<br/>Tamanho do arquivo: 456311 bytes (0.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
 
 #### Dados relevantes
 * `properties->'logradouro'` (via)
+
+#### Resultados da filtragem e sua publicação
+515684 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>4371 segmentos com 539.06 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.14 segmentos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/via](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/via)
+
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via)
 
 </section>
 <section>
