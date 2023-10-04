@@ -20,23 +20,23 @@ layers:
 #     Construir geom a partir de NOXPE e NOYPE
     standardized_fields:
         -
-        name: NUMERO
-        standard: hnum
+         name: NUMERO
+         standard: hnum
         -
-        name: TIPO_LOGRADOURO LOGRADOURO
-        standard: via
+         name: TIPO_LOGRADOURO LOGRADOURO
+         standard: via
         -
-        name: COMPLEMENTO
-        standard: sup
+         name: COMPLEMENTO
+         standard: sup
         -
-        name: BAIRRO
-        standard: nsvia
+         name: BAIRRO
+         standard: nsvia
         -
-        name: CEP
-        standard: postcode
+         name: CEP
+         standard: postcode
         -
-        name: CIDADE
-        standard: city
+         name: CIDADE
+         standard: city
         -
-        name: CONTA
-        standard: ref
+         name: CONTA
+         standard: ref

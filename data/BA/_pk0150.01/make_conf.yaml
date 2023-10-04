@@ -19,17 +19,17 @@ layers:
     sql_view: SELECT row_number() OVER () as gid, "NUMERO" AS hnum, "TIPO_LOGRADOURO" || ' ' || "LOGRADOURO" AS via, "DE_BAIRRO" AS nsvia, "CEP" AS postcode, "CIDADE" AS city, ST_SetSRID(ST_MakePoint("LATITUDE","LONGITUDE"),$(srid)) as geom FROM $(tabname)
     standardized_fields:
         -
-        name: NUMERO
-        standard: hnum
+         name: NUMERO
+         standard: hnum
         -
-        name: TIPO_LOGRADOURO LOGRADOURO
-        standard: via
+         name: TIPO_LOGRADOURO LOGRADOURO
+         standard: via
         -
-        name: DE_BAIRRO
-        standard: nsvia
+         name: DE_BAIRRO
+         standard: nsvia
         -
-        name: CEP
-        standard: postcode
+         name: CEP
+         standard: postcode
         -
-        name: CIDADE
-        standard: city
+         name: CIDADE
+         standard: city

@@ -18,14 +18,14 @@ layers:
     sql_view: SELECT row_number() OVER () as gid, ndacasa AS hnum, "Endereco" AS via, "Bairro" AS nsvia, "Cidade" AS city, geom FROM $(tabname)
     standardized_fields:
         -
-        name: ndacasa
-        standard: hnum
+         name: ndacasa
+         standard: hnum
         -
-        name: Endereco
-        standard: via
+         name: Endereco
+         standard: via
         -
-        name: Bairro
-        standard: nsvia
+         name: Bairro
+         standard: nsvia
         -
-        name: Cidade
-        standard: city
+         name: Cidade
+         standard: city

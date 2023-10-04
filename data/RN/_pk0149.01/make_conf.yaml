@@ -18,14 +18,14 @@ layers:
     sql_view: SELECT "OBJECTID" as gid, "NU_PORTAL" AS hnum, "DE_LOGRADO" AS via, "DE_BAIRRO" AS nsvia, "CEP" AS postcode, "DE_DESCRIC", geom FROM $(tabname)
     standardized_fields:
         -
-        name: NU_PORTAL
-        standard: hnum
+         name: NU_PORTAL
+         standard: hnum
         -
-        name: DE_LOGRADO
-        standard: via
+         name: DE_LOGRADO
+         standard: via
         -
-        name: DE_BAIRRO
-        standard: nsvia
+         name: DE_BAIRRO
+         standard: nsvia
     other_fields:
         -
-        name: DE_DESCRIC
+         name: DE_DESCRIC
