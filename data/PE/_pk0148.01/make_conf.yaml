@@ -1,0 +1,31 @@
+pack_id: 148.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+- file: 6bf359b4154983399b6a595033875a40c32f42bbaac7db364ea326a60ab9eb07.rar
+  name:
+  p: 1
+
+layers:
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 1
+    orig_filename: NPE_ADRESSFORALL
+    sql_view: SELECT row_number() OVER () as gid, ndacasa AS hnum, "Endereco" AS via, "Bairro" AS nsvia, "Cidade" AS city, geom FROM $(tabname)
+    standardized_fields:
+        -
+        name: ndacasa
+        standard: hnum
+        -
+        name: Endereco
+        standard: via
+        -
+        name: Bairro
+        standard: nsvia
+        -
+        name: Cidade
+        standard: city
