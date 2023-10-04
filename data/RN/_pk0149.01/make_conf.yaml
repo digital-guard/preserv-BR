@@ -15,7 +15,7 @@ layers:
     method: shp2sql
     file: 1
     orig_filename: CSR_ADRESSFORALL/CSR_ENDERECO
-    sql_view: SELECT OBJECTID as gid, NU_PORTAL AS hnum, DE_LOGRADO AS via, DE_BAIRRO AS nsvia, CEP AS postcode, DE_DESCRIC, geom FROM $(tabname)
+    sql_view: SELECT OBJECTID as gid, NU_PORTAL AS hnum, DE_LOGRADO AS via, DE_BAIRRO AS nsvia, DE_DESCRIC, geom FROM $(tabname)
     standardized_fields:
         -
          name: NU_PORTAL
