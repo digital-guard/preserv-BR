@@ -15,7 +15,7 @@ layers:
     method: shp2sql
     file: 1
     orig_filename: leitura_PE
-    sql_view: SELECT row_number() OVER () as gid, ndacasa AS hnum, "Endereco" AS via, "Bairro" AS nsvia, "Cidade" AS city, geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () as gid, ndacasa AS hnum, Endereco AS via, Bairro AS nsvia, Cidade AS city, geom FROM $(tabname)
     standardized_fields:
         -
          name: ndacasa

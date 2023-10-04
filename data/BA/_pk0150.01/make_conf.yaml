@@ -16,7 +16,7 @@ layers:
     codec: CSV~semicolon
     file: 1
     orig_filename: Table_Data_CLB_v2-20220505.txt
-    sql_view: SELECT row_number() OVER () as gid, "NUMERO" AS hnum, "TIPO_LOGRADOURO" || ' ' || "LOGRADOURO" AS via, "DE_BAIRRO" AS nsvia, "CEP" AS postcode, "CIDADE" AS city, ST_SetSRID(ST_MakePoint("LATITUDE","LONGITUDE"),$(srid)) as geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () as gid, NUMERO AS hnum, TIPO_LOGRADOURO || ' ' || LOGRADOURO AS via, DE_BAIRRO AS nsvia, CEP AS postcode, CIDADE AS city, ST_SetSRID(ST_MakePoint(LATITUDE,LONGITUDE),$(srid)) as geom FROM $(tabname)
     standardized_fields:
         -
          name: NUMERO

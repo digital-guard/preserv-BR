@@ -16,7 +16,7 @@ layers:
     file: 1
     orig_filename: NEOEKT_ADDRESSFORALL
     codec: CSV~semicolon
-    sql_view: SELECT row_number() OVER () as gid, "NUMERO" AS hnum, "TIPO_LOGRADOURO" || ' ' || "LOGRADOURO" AS via, "COMPLEMENTO" AS sup, "BAIRRO" AS nsvia, "CEP" AS postcode, "CIDADE" AS city, "CONTA" AS ref, geom FROM $(tabname)
+    sql_view: SELECT row_number() OVER () as gid, NUMERO AS hnum, TIPO_LOGRADOURO || ' ' || LOGRADOURO AS via, COMPLEMENTO AS sup, BAIRRO AS nsvia, CEP AS postcode, CIDADE AS city, CONTA AS ref, geom FROM $(tabname)
 #     Construir geom a partir de NOXPE e NOYPE
     standardized_fields:
         -
