@@ -10,7 +10,7 @@ files:
   p: 1
 
 layers:
-  geoaddress:
+  geopoint:
     subtype: full
     method: shp2sql
     file: 1
@@ -29,3 +29,4 @@ layers:
     other_fields:
         -
          name: DE_DESCRIC
+test_evidence: qgis.png
