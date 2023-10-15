@@ -1,0 +1,27 @@
+pack_id: 70.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=22523
+
+files:
+- file: a9eebc7790d496b13b2e69dd4fa1f43dd6596912fb21ff2131aa4c66ba3a52a4.zip
+  name: Eixos
+  p: 1
+  size: 561780
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  via:
+        subtype: full
+        method: shp2sql
+        file: 1
+        sql_select: ['gid', 'LOG_NOME AS via', 'geom']
+        orig_filename: Logradouros_Itabira_2021
+        standardized_fields:
+         -
+          name: LOG_NOME
+          standard: via
+test_evidence: qgis.png
