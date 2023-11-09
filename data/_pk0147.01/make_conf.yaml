@@ -2,7 +2,7 @@ pack_id: 147.1
 pkversion: 001
 schemaId_input: ref027a
 schemaId_template: ref027a
-codec:descr_encode: srid=4326
+codec:descr_encode: srid=31982
 
 files:
 - file: 07cf6cbb22f6b48f0d2331f124ac34b37fc7db53508565fb1ca576f14eb1156b.csv
@@ -16,8 +16,7 @@ layers:
     file: 1
     orig_filename: NEOEKT_ADDRESSFORALL
     codec: CSV~semicolon
-    sql_view: SELECT row_number() OVER () as gid, NUMERO AS hnum, TIPO_LOGRADOURO || ' ' || LOGRADOURO AS via, COMPLEMENTO AS sup, BAIRRO AS nsvia, CEP AS postcode, CIDADE AS city, CONTA AS ref, geom FROM $(tabname)
-#     Construir geom a partir de NOXPE e NOYPE
+    sql_view: SELECT row_number() OVER () as gid, NUMERO AS hnum, TIPO_LOGRADOURO || ' ' || LOGRADOURO AS via, COMPLEMENTO AS sup, BAIRRO AS nsvia, CEP AS postcode, CIDADE AS city, CONTA AS ref, ST_SetSRID(ST_MakePoint(replace("NOYPE",',','.')::float,replace("NOXPE",',','.')::float),$(srid)) AS geom FROM $(tabname)
     standardized_fields:
         -
          name: NUMERO
