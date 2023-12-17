@@ -104,4 +104,4 @@ pack_id,donor_id,pack_count,lst_vers,user_resp,accepted_date,scope,about,author,
 14901,149,1,001,luis,2022-11-08,BR-RN,Pontos,(self),2022,no,implied-govWorks_geo-BR_municipal-1.0,email,(anexo de email),no,working-make_conf,
 15001,150,1,001,luis,2021-11-08,BR-BA,Pontos,(self),2021,no,implied-govWorks_geo-BR_municipal-1.0,email,(anexo de email),no,working-make_conf,
 15201,152,1,001,carlos,2023-03-18,BR-SP-MogiCruzes,vias,(self),2023,no,implied-govWorks_geo-BR_municipal-1.0,email,(anexo de email),no,working-make_conf,
-15301,153,1,001,carlos,2023-11-17,BR-SP-Suzano,vias e lotes,(self),2023,no,implied-govWorks_geo-BR_municipal-1.0,email,(anexo de email),no
+15301,153,1,001,carlos,2023-11-17,BR-SP-Suzano,vias e lotes,(self),2023,no,implied-govWorks_geo-BR_municipal-1.0,email,(anexo de email),no,,
