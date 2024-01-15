@@ -99,5 +99,5 @@ local_id,scope_label,vat_id,legalName,wikidata_id,url,donor_date,donor_status
 149,BR-RN,cnpj:08.324.196/0001-81,Companhia Energética do Rio Grande do Norte - COSERN,18477769,https://servicos.neoenergiacosern.com.br/Pages/index.aspx,,
 150,BR-BA,cnpj:15.139.629/0001-94,Companhia de Eletricidade do Estado da Bahia - COELBA,9790126,https://servicos.neoenergiacoelba.com.br/Pages/index.aspx,,
 151,BR-DF,cnpj:07.522.669/0001-92,Neoenergia Distribuição Brasília S.A.,106542795,https://www.neoenergiabrasilia.com.br/Paginas/default.aspx,,
-152,BR-SP-MogiCruzes,cnpj:46.523.270/0001-88,Mogi das Cruzes,194332,https://www.mogidascruzes.sp.gov.br/,,
-153,BR-SP-Suzano,cnpj:46.523.056/0001-21,Prefeitura de Suzano,737670,https://suzano.sp.gov.br/,17/11/2023,
+152,BR-SP-MogiCruzes,cnpj:46.523.270/0001-88,Mogi das Cruzes,56450036,https://www.mogidascruzes.sp.gov.br/,18/03/2023,3
+153,BR-SP-Suzano,cnpj:46.523.056/0001-21,Prefeitura de Suzano,56450089,https://suzano.sp.gov.br/,22/09/2023,3
