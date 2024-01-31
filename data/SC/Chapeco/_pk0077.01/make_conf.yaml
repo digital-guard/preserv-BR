@@ -1,0 +1,37 @@
+pack_id: 77.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+- file: 6d297935496b04b1d314cb05ba7fab27cf20fec02e2692a26313fdb5d65d0dae.rar
+  name: BASE CHAPECÓ.rar
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  nsvia:
+        subtype: full
+        method: shp2sql
+        file: 1
+        orig_filename: 05_BAIRROS_PDC2014_LEI ATUAL
+        sql_select: ['gid','Text as nsvia', 'geom']
+        standardized_fields:
+         -
+          name: Text
+          standard: nsvia
+  via:
+        subtype: full
+        method: shp2sql
+        file: 1
+        orig_filename: 03_VIAS
+        sql_view: |-
+               SELECT gid, CLASSE || ' ' || NOME AS via, geom FROM $(tabname)
+        standardized_fields:
+         -
+          name: CLASSE || ' ' || NOME
+          standard: via
+test_evidence: qgis.png
