@@ -39,7 +39,13 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_select: ['gid', 'NOME_LOGR as via', 'geom']
+    #sql_select: ['gid', 'NOME_LOGR as via', 'geom']
+    #erro ERROR:  transform: Point outside of projection domain (2050)
+    sql_view: |-
+              SELECT gid, NOME_LOGR AS via, geom  FROM $(tabname) \
+              WHERE \
+                   ST_SRID(geom) = 31985 AND ST_X(ST_Centroid(geom)) BETWEEN 166021 AND 833978 AND \
+                   ST_Y(ST_Centroid(geom)) BETWEEN 0 AND 10000000 
     orig_filename: Logradouro_gerais
     standardized_fields:
      -
