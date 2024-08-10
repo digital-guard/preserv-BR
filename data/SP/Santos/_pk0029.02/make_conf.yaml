@@ -1,0 +1,35 @@
+pack_id: 29.2
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a 
+codec:descr_encode: srid=4326
+
+files:
+- file: df031fa60edcf6f7de4e6f83a2c880d94f401a2922df174afc4322a0704ebe1a.geojson
+  name: lotes
+  uncompacted: true
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+
+  parcel:
+    subtype: full
+    method: geojson2sql
+    file: 1
+    sql_view: SELECT row_number() OVER () as gid, properties->'logradouro' as via, properties->'numero' as hnum, properties->'bairro' as nsvia, jgeom as geom FROM $(tabname)
+    orig_filename: df031fa60edcf6f7de4e6f83a2c880d94f401a2922df174afc4322a0704ebe1a
+    standardized_fields:
+     -
+      name: logradouro
+      standard: via
+     -
+      name: numero
+      standard: hnum
+     -
+      name: bairro
+      standard: nsvia
+      
+test_evidence: qgis.png
