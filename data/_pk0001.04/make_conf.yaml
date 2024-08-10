@@ -1,0 +1,38 @@
+pack_id: 1.4
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4674
+
+files:
+- file: 5d5daa06e048ad8c83c909babee040e26fd8a54a29ed4cef2d2d220a3bd17b84.zip
+  name: Quadras
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+  
+
+layers:
+
+  blockface:
+    subtype: full
+    method: shp2sql
+    file: 1
+    orig_filename: faces_de_logradouros_2021
+    orig_subfilename: faces_de_logradouros_2021
+    codec: SHP.ZIP
+    sql_view: SELECT gid, nm_tip_log || ' ' || nm_tit_log || nm_log as via, tot_res, tot_geral, geom FROM $(tabname)
+    standardized_fields:
+     -
+      name: NM_TIP_LOG || ' ' || NM_TIT_LOG || NM_LOG
+      standard: via
+    other_fields:
+     -
+      name: TOT_RES
+      comment: número total de unidades residenciais.
+     -
+      name: TOT_GERAL
+      comment: número total de unidades residenciais e não residenciais.
+
+
