@@ -11,7 +11,7 @@ files:
   size: 24477090
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: 4982630073e571b5d4f0e347819bf1b8848aec4a9867766b90d75309966dc6fe.zip
   uri_evidency: d575c707490b0867f7d0a38662ac2788c7b787fe5f130673b2ee7bd89f8a7c13.eml
 
@@ -24,6 +24,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Bairros
         codec: GDB;srid=3857
+        standardized_fields:
+         -
+           name: Teste2_P_1
+           standard: nsvia
 
   via:
         method: gdb2sql
@@ -33,15 +37,27 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Logradouros
         buffer_type: 2
+        standardized_fields:
+         -
+           name: TIPO_LOGRA || ' ' || NOME_LOGRA
+           standard: via
 
   geoaddress:
         method: gdb2sql
         subtype: full
         file: 1
         orig_filename: OpenStreetMap.gdb
-        sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom']
+        #sql_select:  ['OBJECTID AS gid', 'Nome_logra AS via', 'Num_imovel AS hnum', 'geom']
+        sql_view: SELECT OBJECTID AS gid, Nome_logra AS via, Num_imovel AS hnum, geom FROM $(tabname) WHERE OBJECTID NOT IN (103847)
         orig_tabname: Endereco
         buffer_type: 2
+        standardized_fields:
+         -
+           name: Nome_logra
+           standard: via
+         -
+           name: Num_imovel
+           standard: hnum
 
   parcel:
         method: gdb2sql
@@ -51,6 +67,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Lotes
         buffer_type: 2
+        standardized_fields:
+         -
+           name: BAIRRO
+           standard: nsvia
 
   block:
         method: gdb2sql
@@ -59,6 +79,10 @@ layers:
         orig_filename: OpenStreetMap.gdb
         orig_tabname: Quadras
         sql_select:  ['OBJECTID AS gid', 'QUADRA AS ref', 'geom']
+        standardized_fields:
+         -
+           name: QUADRA
+           standard: ref
 
 comments: Tambem possui pracas.
 

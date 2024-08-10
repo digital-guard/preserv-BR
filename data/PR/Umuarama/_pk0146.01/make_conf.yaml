@@ -5,10 +5,13 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31982
 
 files:
-  -
-    p:    1
-    file: c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip
-    name: Lotes, edificações, bairros e endereços
+- file: c7e8f19fa27fc1e515c43383403b54291ad39aa39e09cd5d96d30e6385942a8a.zip
+  name: Lotes, edificações, bairros e endereços
+  p: 1
+  size: 37022720
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
 
 layers:
 
@@ -28,8 +31,12 @@ layers:
     subtype: ext
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote || nr_edifica || nr_unidade AS inscricao_edificacao', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, cd_distrit || cd_setor || nr_quadra || nr_lote || nr_edifica || nr_unidade AS inscricao_edificacao, geom FROM $(tabname)
     orig_filename: unidade_inscricao_geometriaPolygon
+    standardized_fields:
+     -
+       name: 'yes'
+       standard: building
     other_fields:
       -
         name: inscricao_edificacao

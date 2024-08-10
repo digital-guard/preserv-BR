@@ -18,6 +18,9 @@ files:
   p: 3
   size: 1496124
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   via:
         subtype: full
@@ -28,13 +31,17 @@ layers:
           SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
-# Join com SRID diferente não é suportado pelo programa
-  parcel:
-        subtype: full
-        method: geojson2sql
-        file: 2
-        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
-        sql_select: [['id AS gid','logradouro AS via','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
+        standardized_fields:
+         -
+          name: properties->'logradouro'
+          standard: via
+# Fazer apenas ingestão de lotes urbanos, o sistema não está preparado para esse tipo de ingestão 
+#  parcel:
+#        subtype: full
+#        method: geojson2sql
+#        file: 2
+#        orig_filename: ['LOTES_URBANOS','LOTES_RURAIS']
+#        sql_select: [['id AS gid','logradouro AS via','ST_Transform(geometry,31981) AS geom'],['id AS gid','ST_Transform(geometry,31981) AS geom']]
 
   parcel:
         subtype: full
@@ -45,6 +52,10 @@ layers:
               SELECT row_number() OVER () as gid, properties->'logradouro' AS via, \
               jgeom AS geom \
               FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'logradouro'
+          standard: via
 
   block:
         subtype: none

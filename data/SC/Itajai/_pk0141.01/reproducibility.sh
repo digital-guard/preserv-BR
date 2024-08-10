@@ -13,7 +13,7 @@ rm -rf /tmp/sandbox/_pk7600014101_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014101_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar && sudo chmod 664 /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600014101101_p1_parcel CASCADE"
 cd /tmp/sandbox/_pk7600014101_001; 7z  x -y /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar "*Municipio de Itajai_SC/lotes*" ; chmod -R a+rwx . > /dev/null
@@ -36,7 +36,7 @@ rm -rf /tmp/sandbox/_pk7600014101_001 || true
 mkdir -m 777 -p /tmp/sandbox
 mkdir -m 777 -p /tmp/sandbox/_pk7600014101_001
 mkdir -p /tmp/pg_io
-wget -P /var/www/dl.digital-guard.org http://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
+wget -P /var/www/dl.digital-guard.org https://dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
 sudo chown postgres:www-data /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar && sudo chmod 664 /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar
 psql postgres://postgres@localhost/ingest1 -c "DROP  TABLE IF EXISTS pk7600014101101_p1_via CASCADE"
 cd /tmp/sandbox/_pk7600014101_001; 7z  x -y /var/www/dl.digital-guard.org/b69cef94c0fad1a99013289fd30eb3ad0d612e227547f1a95cbd104716980263.rar "*Municipio de Itajai_SC/vias*" ; chmod -R a+rwx . > /dev/null

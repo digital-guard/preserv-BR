@@ -1,106 +1,86 @@
-# Tarefas
-## 1. (CONFIRMAR NECESSIDADE) Adicionar endereços nos lotes rurais 
-Os lotes da área rural (ver Lotes rurais) estão sem endereços e possuem só um identificador de setor, quadra e lote.
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <big><b>pk0035.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-SC-Joinville">BR-SC-Joinville</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="https://www.joinville.sc.gov.br/">Prefeitura Municipal de Joinville</a>
+<br/>&nbsp; <small>CNPJ 83.169.623/0001-10</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q56450014">Q56450014</a></small><br/>
+Licença <a rel="external" target="_doador" href="https://creativecommons.org/publicdomain/zero/1.0/"><b>CC0-1.0</b></a> (cc0)<br/>
+Obtido via <i>site</i> em <b>11/08/2020</b> por:
+<br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/IgorEliezer">IgorEliezer</a>
+<br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td>Dados publicados em <a href="https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
+<tr><td>Visualização: <a title="block" href="https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
+</table>
+</aside>
 
-Ver se o Censo Rural ou CNEFE do IBGE supre.
+<section>
 
-## 2. Gerar ponto de endereço na testada do lote
-Procedimento usando PostGIS com script desenvolvido pelo A4A.
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://wiki.addressforall.org/doc/Documentação_Digital-guard).
 
-Cada ponto terá os dados:
-* Nome do logradouro
-* Número predial
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](https://git.digital-guard.org/preserv-BR/blob/main/data/SC/Joinville/_pk0035.01/make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-## 3. (CONFIRMAR NECESSIDADE) Completar nome de logradouro nos eixos 
-Os eixos de do logradouro possuem só o nome, mas estão sem o tipo de via (R, AV, ROD etc). Por exemplo, "RUA PERNAMBUCO" está "PERNAMBUCO".
+# Camadas de dados
 
-O nome de logradouro nos lotes está completo.
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-# Extração
-Abaixo os passos para extração por tipo de dado relevante.
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-## Lotes
-SRID: 31982
-1. Abrir `shp_malhafund.zip`.
-2. Abrir diretório `Malha Fundiária`.
-3. Selecionar todos os arquivos `lotes2020_uso.*`.
-4. Copiar arquivos selecionados para diretório alvo.
+Nome do arquivo: `Malha Fundi ria/Quadras`<br/>*Download* e integridade: [3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip](https://dl.digital-guard.org/3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 37194488 bytes (35.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-### Dados relevantes
-Colunas da camada `lotes2020_uso`:
-* `_logradour` (string): tipo e nome de logradouro em caixa alta.
-* `_numero_25` (string): número de lote.
-* `_bairro_28` (string): nome do bairro em caixa alta.
-* `uso` (string): tipo de uso (para outros projetos).
+#### Dados relevantes
+* `yes` (building)
 
-Alguns lotes possuem "0" como número predial.
+#### Resultados da filtragem e sua publicação
+7060500 bytes (6.73 <abbr title="mebibyte">MiB</abbr>)<br/>5071 polígonos com 178.05 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.46 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/block)
 
-## Lotes rurais
-SRID: 31982
-1. Abrir `shp_malhafund.zip`.
-2. Abrir diretório `Malha Fundiária`.
-3. Selecionar todos os arquivos `Lotes_rurais.*`.
-4. Copiar arquivos selecionados para diretório alvo.
+#### Visualização
+[https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/block](https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/block)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-### Dados relevantes
-Colunas da camada `Lotes_rurais`:
-* `iq_lote` (string): identificador de setor, quadra e lote.
+Nome do arquivo: `['Malha Fundi\xa0ria/lotes2020_uso', 'Malha Fundi\xa0ria/Lotes_rurais']`<br/>*Download* e integridade: [3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip](https://dl.digital-guard.org/3d4a6f528249d062a0bcfb18aa6c115828bb651a164617489c14017b6433c02a.zip)<br/>Descrição: Lotes<br/>Tamanho do arquivo: 37194488 bytes (35.47 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-N.B.: Não há endereços nos lotes rurais.
+#### Dados relevantes
+* `___logradour` (via)
 
-## Eixos
-SRID: 31982
-1. Abrir `shp_malhaviaria.zip`.
-2. Abrir diretório `Malha Viária`.
-3. Selecionar todos os arquivos `logradouros.*`.
-4. Copiar arquivos selecionados para diretório alvo.
+* `___numero_25` (hnum)
 
-### Dados relevantes
-Colunas da camada `logradouros`:
-* `nomelog` (string): nome de logradouro sem tipo (R, AV, ROD etc) em caixa alta e sem acentuação.
+#### Outros dados relevantes
+* `uso`
 
-## Edificações
-SRID: 31982
-1. Abrir `shp_malhafund.zip`.
-2. Abrir diretório `Malha Fundiária`.
-3. Selecionar todos os arquivos `Edificacoes.*`.
-4. Copiar arquivos selecionados para diretório alvo.
+#### Resultados da filtragem e sua publicação
+36055129 bytes (34.38 <abbr title="mebibyte">MiB</abbr>)<br/>144323 polígonos com 1072.74 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.79 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/parcel)
 
-Possui cobertura limitada à área urbana.
+#### Visualização
+[https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/parcel](https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/parcel)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-No mesmo diretório, há também `Edificacoes_1000` e `Edificacoes_5000`, com as seguintes características:
-* São feições vetoriais do tipo linear, não são polígonos.
-* Cobrem mais a zona rural e com cobertura dispersa na área urbana. Há sobreposição das feições de `Edificacoes` com `Edificacoes_1000` e `Edificacoes_5000` na área urbana.
+Nome do arquivo: `Malha Vi ria/logradouros`<br/>*Download* e integridade: [207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip](https://dl.digital-guard.org/207c82a3f2fa79f943c7b393b0e4fe636ff60305302f9c64c8364851fc6bf6c2.zip)<br/>Descrição: Eixos<br/>Tamanho do arquivo: 8100838 bytes (7.73 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: shp<br/>SRID: 31982
 
-## Quadras
-SRID: 31982
-1. Abrir `shp_malhafund.zip`.
-2. Abrir diretório `Malha Fundiária`.
-3. Selecionar todos os arquivos `Quadras.*`.
-4. Copiar arquivos selecionados para diretório alvo.
+#### Dados relevantes
+* `nomelog` (via)
 
-### Dados relevantes
-Colunas da camada `Quadras`:
-* `iq` (string): identificador de setor e quadra.
+#### Resultados da filtragem e sua publicação
+1884297 bytes (1.8 <abbr title="mebibyte">MiB</abbr>)<br/>16364 segmentos com 1980.05 <abbr title="quilômetros">km</abbr><br/>densidade média: 1.72 segmentos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/via](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/SC/Joinville/_pk0035.01/via)
 
-## Outros
-Para outros projetos, há também dados sobre:
-* Malha viária:
-  * Ferrovia
-  * Meios-fios/leitos carroçáveis (arquivos `vias_rodovias_*`)
-* Equipamentos públicos:
-  * Academias populares
-  * Equipamentos de lazer/praças
-  * Escolas
-  * UBS
-* Patrimônio:
-  * Edificações tombados
-  * Arqueologia
-
-Nota: em cada diretório dentro dos arquivos zip, há um arquivo txt fornecido pela Prefeitura, contendo uma descrição detalhada de cada dataset.
-
-(!!! Havendo outros projetos, esta seção será detalhada !!!)
+#### Visualização
+[https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/via](https://viz.addressforall.org/BR-SC-Joinville/_pk0035.01/via)
 
 # Evidências de teste
-Teste no QGIS:
-![](qgis.png)
+<img src="qgis.png" width="400"/>
+
+</section>
+<section>
+
+# Reprodutibilidade
+
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
+
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](https://git.digital-guard.org/preserv-BR/blob/main/data/SC/Joinville/_pk0035.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
+
+</section>
+

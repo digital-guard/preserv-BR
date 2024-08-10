@@ -14,6 +14,9 @@ files:
   p: 2
   size: 119677
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   parcel:
         subtype: full
@@ -21,18 +24,33 @@ layers:
         file: 1
         sql_select: ['gid', 'num_atual AS hnum', 'geom']
         orig_filename: Lotecadastral_numpredial_jun2018_sirgasUTM.gpkg
+        standardized_fields:
+         -
+          name: num_atual
+          standard: hnum
   via:
         subtype: full
         method: ogr2ogr
         file: 1
         sql_select: ['gid', 'nome AS via','cep_correi AS postcode', 'geom']
         orig_filename: Eixo_Logradouros_sirgasUTM.gpkg
+        standardized_fields:
+         -
+          name: nome
+          standard: via
+         -
+          name: cep_correi
+          standard: postcode
   nsvia:
         subtype: full
         method: shp2sql
         file: 2
         sql_select: ['gid', 'nom_bairro AS nsvia', 'geom']
         orig_filename: bairros
+        standardized_fields:
+         -
+          name: nome
+          standard: via
   block:
         subtype: none
         method: ogr2ogr
@@ -40,3 +58,7 @@ layers:
         # gid e geom gerados automaticamente pelo software ingestão
         sql_select: ['codquadra AS ref']
         orig_filename: Quadrascadastrais_Quadrascomplementares_sirgasUTM.gpkg
+        standardized_fields:
+         -
+          name: codquadra
+          standard: ref

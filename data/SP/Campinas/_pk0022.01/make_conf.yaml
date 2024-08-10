@@ -14,6 +14,9 @@ files:
   p: 2
   size: 3115901
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   via: 
     subtype: none
@@ -22,6 +25,10 @@ layers:
     sql_select: ['gid', 'LOGRADOURO AS via', 'geom']
     orig_filename: 5486431b-c7fe-aec8-ab9c-00004b294da9
     buffer_type: 2
+    standardized_fields:
+     -
+      name: LOGRADOURO
+      standard: via
 
   geoaddress:
     subtype: none

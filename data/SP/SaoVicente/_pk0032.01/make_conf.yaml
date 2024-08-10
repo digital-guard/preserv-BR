@@ -10,6 +10,9 @@ files:
   p: 1
   size: 628580
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   geoaddress:
@@ -21,4 +24,8 @@ layers:
            ST_GeomFromText("SRID_29193",$(srid)) as geom \
       FROM $(tabname)
     orig_filename: SaoVicente-Oficial
+    standardized_fields:
+     -
+      name: HouseNumber
+      standard: hnum
 

@@ -22,6 +22,9 @@ files:
   p: 4
   size: 3197132
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   parcel:
         subtype: ext
@@ -37,7 +40,17 @@ layers:
         orig_filename: Logradouro
         sql_view: |-
                     SELECT gid, ST_TYPE || ' ' || ST_NO AS via, CMTY_L AS nsvia_left, CMTY_R AS nsvia_right, geom FROM $(tabname)
-
+        standardized_fields:
+         -
+          name: ST_TYPE || ' ' || ST_NO
+          standard: via
+        other_fields:
+         -
+          name: CMTY_L
+          standard: nsvia_left
+         -
+          name: CMTY_R
+          standard: nsvia_right
         # não coloquei Legislacao (string): lei da denominação (para outros projetos).
   nsvia:
         subtype: ext # Usar os dados de via para montar o poligono de bairro
@@ -52,5 +65,16 @@ layers:
         file: 4
         orig_filename: Solicitação0710_InscTec_LogNPorBairro
         codec: XLSX
-        sql_select: ['row_number() OVER () AS gid', 'tx_insctec' ,'tx_lgrd_no AS via' ,'nm_lgrd_nr AS hnum','nm_cd_bair AS nsvia']
+        sql_select: ['tx_insctec' ,'tx_lgrd_no AS via' ,'nm_lgrd_nr AS hnum','nm_cd_bair AS nsvia']
         join_id: tx_insctec
+        standardized_fields:
+         -
+          name: tx_lgrd_no
+          standard: via
+         -
+          name: nm_lgrd_nr
+          standard: hnum
+         -
+          name: nm_cd_bair
+          standard: nsvia
+

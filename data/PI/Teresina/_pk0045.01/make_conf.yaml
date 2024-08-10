@@ -5,10 +5,13 @@ schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a
 codec:descr_encode: srid=31983
 
 files:
-  -
-    p:    1
-    file: 6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip
-    name: Geo-endereços
+- file: 6d00a6246765ac93ce682e94282ecc0ed38cfdc1e7a6e936f53341414fd5269a.zip
+  name: Geo-endereços
+  p: 1
+  size: 13201744
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
 
 layers:
 

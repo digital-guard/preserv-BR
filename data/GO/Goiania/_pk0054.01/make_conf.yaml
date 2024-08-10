@@ -41,6 +41,11 @@ layers:
         file: 3
         sql_select: ['gid', 'nm AS nsvia', 'geom']
         orig_filename: BAI
+        standardized_fields:
+         -
+          name: nm
+          standard: nsvia
+
   via:
         subtype: full
         method: shp2sql
@@ -48,3 +53,8 @@ layers:
         sql_view: |-
                SELECT gid, tp_log || ' ' || nm_log AS via, geom FROM $(tabname)
         orig_filename: SEG
+        standardized_fields:
+         -
+          name: "tp_log || ' ' || nm_log"
+          standard: via
+test_evidence: qgis.png

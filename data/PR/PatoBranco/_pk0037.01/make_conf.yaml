@@ -1,0 +1,49 @@
+pack_id: 37.1
+pkversion: 001
+schemaId_input: ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+- file: 462e42be91abea4d29e9c7af89c61a05523fbc535523b25f972402d5f2bd0fa1.zip
+  name: todos os dados
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+
+  geoaddress:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_view: SELECT gid, NAME as hnum, geom FROM $(tabname)
+    orig_filename: SHAPEFILE/NUMERO LOTES
+    standardized_fields:
+     -
+       name: NAME
+       standard: hnum
+        
+  nsvia:
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_view: SELECT gid, REPLACE(LAYER,'_', ' ') as nsvia, geom FROM $(tabname)
+    orig_filename: SHAPEFILE/BAIRROS
+    standardized_fields:
+     -
+       name: REPLACE(LAYER,'_', ' ')
+       standard: nsvia
+       comment: nome de bairro semparado com "_" caixa alta
+
+  block:
+    subtype: none
+    method: shp2sql
+    file: 1
+    sql_view: SELECT gid, ST_BuildArea(geom) as geom FROM $(tabname)
+    orig_filename: SHAPEFILE/ALINHAMENTO RUAS
+
+to-do: 
+  - Via é representado como polignos de quadra sem nome de via e pontos com nome de via
+test_evidence: qgis.png

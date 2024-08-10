@@ -1,0 +1,37 @@
+pack_id: 150.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+- file: 6737c438c504c4f1a930e07ba6f392eedeb95b3ed96b9781187000b48f0eb082.zip
+  name:
+  p: 1
+
+layers:
+  geoaddress:
+    subtype: full
+    method: txt2sql
+    codec: TXT~semicolon
+    file: 1
+    orig_filename: Table_Data_CLB_v2.txt
+    sql_view: SELECT row_number() OVER () as gid, "NUMERO" AS hnum, "TIPO_LOGRADOURO" || ' ' || "LOGRADOURO" AS via, "DE_BAIRRO" AS nsvia, "CEP" AS postcode, "CIDADE" AS city, ST_SetSRID(ST_MakePoint(replace("LONGITUDE",',','.')::float,replace("LATITUDE",',','.')::float),$(srid)) as geom FROM $(tabname)
+    after_extract:
+        - cd $(sandbox); sed -i 's;\r$$;;'  Table_Data_CLB_v2.txt
+    standardized_fields:
+        -
+         name: NUMERO
+         standard: hnum
+        -
+         name: TIPO_LOGRADOURO LOGRADOURO
+         standard: via
+        -
+         name: DE_BAIRRO
+         standard: nsvia
+        -
+         name: CEP
+         standard: postcode
+        -
+         name: CIDADE
+         standard: city

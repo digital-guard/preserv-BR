@@ -23,7 +23,7 @@ files:
   size: 2218378
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: 0b0f9b510c5a82125edab20161cc36290d0a677d99a03e21392de841a647b5bb.zip
 
 layers:
@@ -32,13 +32,16 @@ layers:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'nome AS name', 'geom']
+    sql_view: SELECT gid, nome AS name, 'yes' AS building, geom FROM $(tabname)
     orig_filename: edificacoes
     standardized_fields:
      -
       name: nome
       standard: name
       comment: Nome do prédio.
+     -
+       name: 'yes'
+       standard: building
 
   parcel:
     subtype: full

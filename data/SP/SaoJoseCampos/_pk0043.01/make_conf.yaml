@@ -1,0 +1,42 @@
+pack_id: 43.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31983
+
+files:
+- file: 12fce79183bf495632c96e64708877eab12ffaf6f4f2d6f465d2cf7afff1369d.zip
+  name: bairros.zip
+  p: 1
+- file: 6effb451da343480c3acca559cf55536315c104974fb00f9c9d46b6034e1b2aa.zip
+  name: logradouros.zip
+  p: 2
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  nsvia:
+        subtype: full
+        method: shp2sql
+        file: 1
+        orig_filename: BAIRROS
+        sql_select: ['gid','bairro as nsvia', 'geom']
+        standardized_fields:
+         -
+          name: bairro
+          standard: nsvia
+  via:
+        subtype: full
+        method: shp2sql
+        file: 2
+        orig_filename: LOGRADOUROS
+        sql_select: ['gid','nome as via', 'ref', 'geom']
+        standardized_fields:
+         -
+          name: nome
+          standard: via
+         -
+          name: ref
+          standard: nome alternativo
+test_evidence: qgis.png

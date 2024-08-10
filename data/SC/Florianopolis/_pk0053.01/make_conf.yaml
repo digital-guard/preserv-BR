@@ -14,6 +14,9 @@ files:
   p: 2
   size: 15147324
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   nsvia:
@@ -22,6 +25,13 @@ layers:
     file: 1
     sql_select: ['gid', 'nm_bairro', 'label AS nsvia', 'geom']
     orig_filename: bairro
+    standardized_fields:
+     -
+      name: label
+      standard: nsvia
+    other_fields:
+     -
+      name: nm_bairro
 
   parcel:
     subtype: full
@@ -30,6 +40,13 @@ layers:
     sql_view: SELECT gid, split_part(logradouro, ',', 1) AS via, split_part(logradouro, ',', 2) AS hnum, geom FROM $(tabname)
     #sql_select: ['gid', 'logradouro', 'bairro AS nsvia', 'geom']
     orig_filename: view_cotr_imobliario_filtro
+    standardized_fields:
+     -
+      name: split_part(logradouro, ',', 1)
+      standard: via
+     -
+      name: split_part(logradouro, ',', 2)
+      standard: hnum
 
   via:
     subtype: full
@@ -37,6 +54,10 @@ layers:
     file: 1
     sql_select: ['gid', 'cd_logr', 'nome AS via', 'geom']
     orig_filename: logradouros
+    standardized_fields:
+     -
+      name: nome
+      standard: via
 
   cadvia:
     subtype: noid

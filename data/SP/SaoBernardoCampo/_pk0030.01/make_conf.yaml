@@ -22,6 +22,9 @@ files:
   p: 4
   size: 2211019
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   geoaddress:
         subtype: full

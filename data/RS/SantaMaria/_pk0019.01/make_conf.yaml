@@ -18,6 +18,9 @@ files:
   p: 3
   size: 5204795
 
+license_evidences:
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
+
 layers:
   parcel:
         subtype: full
@@ -27,6 +30,13 @@ layers:
         #orig_filename: lote
         sql_view: SELECT gid, Tipo || ' ' || Logradouro AS via, Numero AS hnum, Bairro AS nsvia, geom FROM $(tabname)
         orig_filename: Lotes/lote
+        standardized_fields:
+         -
+          name: Tipo || ' ' || Logradouro AS via, Numero
+          standard: hnum
+         -
+          name: Bairro
+          standard: nsvia
   via:
         subtype: full
         method: shp2sql
@@ -34,15 +44,26 @@ layers:
         sql_select: ['gid', 'NOME AS via', 'geom']
         #NOME ver README.md 
         orig_filename: Ruas
+        standardized_fields:
+         -
+          name: NOME
+          standard: via
   nsvia:
         subtype: full
         method: shp2sql
         file: 2
         sql_select: ['gid', 'NOME AS nsvia', 'geom']
         orig_filename: Bairros
+        standardized_fields:
+         -
+          name: NOME
+          standard: nsvia
   block:
         subtype: none
         method: shp2sql
         file: 2
         sql_select: ['gid', 'NumQuadra', 'geom']
         orig_filename: Quadras
+        other_fields:
+         -
+          name: NumQuadra

@@ -26,6 +26,9 @@ files:
   p: 5
   size: 1597448
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   cadparcel:
         subtype: cmpl
@@ -35,6 +38,17 @@ layers:
         sql_view: SELECT row_number() OVER () AS gid, "Logradouro" AS via, "Número" AS hnum, "Distrito" || "Setor" || "Quadra" || "Lote" AS ref FROM $(tabname)
         codec: XLSX
         join_id: ref
+        standardized_fields:
+         -
+          name: Logradouro
+          standard: via
+         -
+          name: Número
+          standard: hnum
+         -
+          name: Distrito || Setor || Quadra || Lote 
+          standard: ref
+         
   parcel:
         subtype: ext
         method: shp2sql
@@ -42,6 +56,11 @@ layers:
         sql_select: ['gid', 'cd_distrit || cd_setor || nr_quadra || nr_lote AS ref', 'geom']
         orig_filename: lote_inscricao_geometria/lote_inscricao_geometriaPolygon
         join_id: ref
+        standardized_fields:
+         -
+          name: cd_distrit || cd_setor || nr_quadra || nr_lote
+          standard: ref
+
   block: 
         subtype: none
         method: shp2sql
@@ -62,3 +81,18 @@ layers:
         sql_select: ['gid', 'descricao AS via', 'geom']
         orig_filename: view_st_logradouro_eixoLine
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: descricao
+          standard: via
+test_evidence: qgis.png
+to-do: |
+  <p dir="auto">A planilha <code>Logradouros - Gov. Valadares.xlsx</code> relaciona o número de setor, quadra e lote ao nome de logradouro e número predial.</p>
+  <p dir="auto">Precisa atribuir os endereços da planilha ao mapa de lote do shapefile <code>lote_inscricao_geometriaPolygon</code>. Os lotes possuem número de setor, quadra e lote para fazer o vínculo.</p>
+  <p dir="auto">Correspondência entre as colunas da planilha e colunas do shapefile:</p>
+  <ul dir="auto">
+  <li><code>Setor</code> -&gt; <code>cd_setor</code></li>
+  <li><code>Quadra</code> -&gt; <code>nr_quadra</code></li>
+  <li><code>Lote</code> -&gt;  <code>nr_lote</code></li>
+  </ul>
+  <a href="qgis-plan.png">

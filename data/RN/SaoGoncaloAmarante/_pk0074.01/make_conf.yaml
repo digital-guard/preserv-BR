@@ -1,0 +1,44 @@
+pack_id: 74.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=4326
+
+files:
+- file: 0d3ff4b054eecdf731311a1a0198a75084e87727b049ffff93468646f25cb562.zip
+  name: Arquivos Vetoriais - SGA-20210601T030700Z-001.zip
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  nsvia:
+        subtype: full
+        method: ogr2ogr
+        extension: kmz
+        file: 1
+        orig_filename: Arquivos Vetoriais - SGA/Bairros/Bairros_SGA_2020
+        sql_select: ['row_number() OVER () AS gid','Name as nsvia', 'geom']
+        standardized_fields:
+         -
+          name: Bairros
+          standard: nsvia
+  via:
+        subtype: full
+        method: shp2sql
+        file: 1
+        orig_filename: Arquivos Vetoriais - SGA/Logradouros_2019/mp_eixos_SGAmarante
+        codec: SHP~Latin1
+        sql_select: ['gid','MTR_NO_COM as via', 'MTR_CO_CEP', 'MTR_NO_BR as nsvia', 'geom']
+        standardized_fields:
+         -
+          name: MTR_NO_COM
+          standard: via
+         -
+          name: MTR_NO_BR
+          standard: nsvia
+        other_fields:
+         -
+          name: MTR_CO_CEP
+test_evidence: qgis.png

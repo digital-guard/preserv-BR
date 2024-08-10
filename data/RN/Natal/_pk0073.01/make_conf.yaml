@@ -26,6 +26,9 @@ files:
   p: 5
   size: 1225215
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   block:
@@ -39,7 +42,7 @@ layers:
     subtype: full
     method: shp2sql
     file: 2
-    sql_view: SELECT gid, Tipo || ' ' || Nome AS via, Nº AS hnum, Bairro as nsvia, CEP as postcode, geom FROM $(tabname)
+    sql_view: SELECT gid, 'yes' AS building, Tipo || ' ' || Nome AS via, Nº AS hnum, Bairro as nsvia, CEP as postcode, geom FROM $(tabname)
     orig_filename: Natal_Edif
     codec: SHP~Latin1
     standardized_fields:
@@ -55,6 +58,9 @@ layers:
      -
       name: CEP
       standard: 'postcode'
+     -
+       name: 'yes'
+       standard: building
 
   nsvia:
     subtype: full

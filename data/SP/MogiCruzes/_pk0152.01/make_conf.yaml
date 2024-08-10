@@ -10,6 +10,9 @@ files:
   p: 1
   size: 513477
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   via:
@@ -18,3 +21,13 @@ layers:
     file: 1
     sql_select: ['gid', 'nome AS via','cep AS postcode','loteamento as nsvia', 'geom']
     orig_filename: eixos
+    standardized_fields:
+     -
+      name: nome
+      standard: via
+     -
+      name: cep
+      standard: postcode
+     -
+      name: loteamento
+      standard: nsvia

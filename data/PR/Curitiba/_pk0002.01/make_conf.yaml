@@ -23,9 +23,23 @@ layers:
         orig_filename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
         orig_subfilename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.geojson
         sql_select: ['gid', 'num_pred as hnum', 'logradouro', 'geom']
+        standardized_fields:
+         -
+          name: num_pred
+          standard: hnum
+        other_fields:
+         -
+          name: logradouro
   parcel:
         subtupe: full
         method: shp2sql
         file: 2
         orig_filename: LOTES_201902
         sql_select: ['gid', 'NME_LOGRAD AS via', 'NUM_PREDIA AS poiter_number']
+        standardized_fields:
+         -
+          name: NME_LOGRAD
+          standard: via
+         -
+          name: NUM_PREDIA
+          standard: poiter_number

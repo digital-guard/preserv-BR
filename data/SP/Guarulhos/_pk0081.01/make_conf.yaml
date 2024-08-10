@@ -18,6 +18,9 @@ files:
   p: 3
   size: 11934534
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   nsvia:
@@ -26,6 +29,10 @@ layers:
     file: 1
     sql_select: ['gid', 'bairro as nsvia', 'geom']
     orig_filename: pg_cartografia_bairros
+    standardized_fields:
+     -
+      name: bairro
+      standard: nsvia
 
   via:
     subtype: full
@@ -33,6 +40,13 @@ layers:
     file: 2
     sql_select: ['gid', 'Logradouro as via','cod_log', 'geom']
     orig_filename: pg_cartografia_logradouros
+    standardized_fields:
+     -
+      name: Logradouro
+      standard: via
+    other_fields:
+     -
+      name: cod_log
 
   geoaddress:
     subtype: ext
@@ -41,6 +55,13 @@ layers:
     sql_select: ['gid', 'numnovo as hnum', 'cod_log', 'geom']
     orig_filename: pg_renumeracoes
     join_id: cod_log
+    standardized_fields:
+     -
+      name: numnovo
+      standard: hnum
+    other_fields:
+     -
+      name: cod_log
 
   address:
     subtype: cmpl
@@ -49,3 +70,10 @@ layers:
     sql_view: SELECT DISTINCT Logradouro as via, cod_log FROM $(tabname) WHERE Logradouro IS NOT NULL
     orig_filename: pg_cartografia_logradouros
     join_id: cod_log
+    standardized_fields:
+     -
+      name: Logradouro
+      standard: via
+    other_fields:
+     -
+      name: cod_log

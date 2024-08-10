@@ -1,0 +1,50 @@
+pack_id: 75.2
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31982
+
+files:
+- file: c252e8028e7f3abc353c7aebdfd5929913959b7931b05a4b18187c3a954b1296.zip
+  name: email.zip
+  p: 1
+  size: 1524507
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  geoaddress:
+        subtype: full
+        method: geojson2sql
+        file: 1
+        orig_filename: no.porta-brusque-maio2023
+        sql_view: |-
+              SELECT row_number() OVER () as gid, properties->'nr_porta' as hnum, \
+              jgeom AS geom \
+              FROM $(tabname)
+        standardized_fields:
+         -
+          name: properties->'nr_porta'
+          standard: hnum
+  via:
+        subtype: full
+        method: geojson2sql
+        file: 1
+        orig_filename: eixo_logradouro-brusque-maio2023
+        sql_view: |- 
+            SELECT  row_number() OVER () as gid, \
+            CONCAT(properties->'tipo_logr', ' ', properties->'logr') AS via,  \
+            properties->'categ_via' as categ_via, \
+            jgeom AS geom FROM $(tabname)
+        # como fazer properties->'tipo_logr' || ' ' || properties->'logr' AS via, ?
+        standardized_fields:
+         -
+          name: properties->'COMPLETO'
+          standard: via
+        other_fields:
+         -
+          name: categ_via
+test_evidence: qgis.png
+to-do:
+  - Tratamento/PostGIS: atribuir o nome de logradouro nos pontos de número predial. Confirmar viabilidade/interesse da equipe técnica em assumir este custo.

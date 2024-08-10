@@ -18,6 +18,9 @@ files:
   p: 3
   size: 10174579
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   nsvia:
         subtype: full
@@ -26,6 +29,10 @@ layers:
         sql_select: ['gid', 'nmbairro AS nsvia', 'geom']
         orig_filename: Bairros
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: nmbairro
+          standard: nsvia
   via:
         subtype: full
         method: shp2sql
@@ -34,6 +41,10 @@ layers:
                     SELECT gid, tipolograd || ' ' || nmlogradou AS via, geom  FROM $(tabname)
         orig_filename: Logradouros
         buffer_type: 2
+        standardized_fields:
+         -
+          name: tipolograd || ' ' || nmlogradou
+          standard: via
   parcel:
         subtype: full
         method: shp2sql
@@ -41,3 +52,21 @@ layers:
         orig_filename: Lotes
         sql_select: ['gid', 'logradouro AS via', 'numerologr AS hnum', 'geom']
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: logradouro
+          standard: via
+         -
+          name: numerologr
+          standard: hnum
+
+to-do:
+  - >
+    Completar nome de logradouro nos lotes. 
+    Os lotes possuem numeração predial e o nome do logradouro sem o tipo de via (R, AV, ROD etc). 
+    Por exemplo, "Pernambuco" ao invés de "Rua Pernambuco". 
+    Adicionar o tipo de via do shapefile de eixos (ver Eixos, coluna tipolograd) nos lotes.
+  - >
+    Gerar ponto de endereço na testada do lote. 
+    Procedimento usando PostGIS com script desenvolvido pelo A4A. 
+    Cada ponto terá os dados de Nome do logradouro e Número predial.

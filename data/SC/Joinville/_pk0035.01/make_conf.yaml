@@ -14,6 +14,9 @@ files:
   p: 2
   size: 8100838
 
+license_evidences:
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
+
 layers:
   parcel:
         subtype: full
@@ -21,12 +24,26 @@ layers:
         file: 1
         sql_select: [['gid', '_logradour AS via', '_numero_25 AS hnum', '_bairro_28 AS nsvia', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
         orig_filename: ['Malha Fundi ria/lotes2020_uso','Malha Fundi ria/Lotes_rurais']
+        standardized_fields:
+         -
+          name: ___logradour
+          standard: via
+         -
+          name: ___numero_25
+          standard: hnum
+        other_fields:
+         -
+          name: uso
   via:
         subtype: full
         method: shp2sql
         file: 2
         sql_select:  ['gid','nomelog AS via', 'geom']
         orig_filename: Malha Vi ria/logradouros
+        standardized_fields:
+         -
+          name: nomelog
+          standard: via
 #  building: # Verificar no README.md sobre outros arquivos e 
 #            # sobre a necessidade de importar esses arquivos
 #        subtype: none
@@ -38,5 +55,11 @@ layers:
         subtype: none
         method: shp2sql
         file: 1
-        sql_select: ['gid','geom']
+        sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
         orig_filename: Malha Fundi ria/Quadras
+        standardized_fields:
+         -
+          name: 'yes'
+          standard: building
+
+test_evidence: qgis.png

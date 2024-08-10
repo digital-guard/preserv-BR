@@ -10,6 +10,9 @@ files:
   p: 1
   size: 850728
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   via:
     subtype: full
@@ -17,6 +20,10 @@ layers:
     file: 1
     sql_select: ['gid', 'endereço AS via', 'geom']
     orig_filename: Sistema Viario
+    standardized_fields: 
+     -
+      name: endereço 
+      standard: via
 
   nsvia:
     subtype: full
@@ -24,3 +31,8 @@ layers:
     file: 1
     sql_select: [['gid', 'nome AS nsvia', 'geom'],['gid', 'nomes AS nsvia', 'geom']]
     orig_filename: ["Bairros","Localidades Rurais"]
+    standardized_fields: 
+     -
+      name: nome
+      standard: nsvia
+test_evidence: qgis.png

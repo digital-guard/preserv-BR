@@ -16,13 +16,17 @@ files:
   p: 2
   size: 61100366
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
 
   geoaddress:
     subtype: full
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom']
+    #sql_select: ['gid', 'ENDEREÇO as via', 'NUMERACAO as hnum', 'geom']
+    sql_view: SELECT gid, ENDEREÇO as via, NUMERACAO as hnum, geom FROM $(tabname) WHERE gid NOT IN (15703, 15767, 15780, 15879, 15937, 16211, 16395, 18290, 18420, 18449, 18450, 18704, 18874, 18931, 18932, 19198, 19199, 19203)
     orig_filename: OpenStreetMap_Shapefiles/NUMERACAO
     comments: 'Parcial, não contém todos os endereços de Manaus.'
     standardized_fields:
@@ -37,9 +41,13 @@ layers:
     subtype: none
     method: shp2sql
     file: 1
-    sql_select: ['gid', 'geom']
+    sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
     orig_filename: OpenStreetMap_Shapefiles/EDIFICACOES
-      
+    standardized_fields:
+     -
+       name: 'yes'
+       standard: building
+
   # parcel:
   #   subtype: none
   #   method: shp2sql

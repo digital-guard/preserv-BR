@@ -15,7 +15,7 @@ files:
   size: 2637788
 
 license_evidences:
-  definition: [CC0-1.0, cc0, https://creativecommons.org/publicdomain/zero/1.0/]
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
   file: c60a5c4b52d62db992ac18d1647fa7aa0e42926c430d621961ed44c08e3fac5e.zip
   uri_evidency: https://web.archive.org/web/20220523213131/https://dados.pbh.gov.br/about
 
@@ -35,6 +35,16 @@ layers:
       FROM $(tabname)
     orig_filename: ENDERECO
     buffer_type: 2
+    standardized_fields:
+     - 
+      name: expressão complexa, consultar o make_conf.yaml
+      standard: hnum
+    other_fields: 
+     - 
+      name: LETRA_IMOVEL
+      standard: is_complemento_provavel
+
+
 
   via:
     subtype: full
@@ -43,5 +53,7 @@ layers:
     file: 2
     sql_view:  SELECT gid, TIPO_LOGRA || ' ' || NOME_LOGRA AS via, geom FROM $(tabname)
     orig_filename: LOGRADOUROLine
-    
-test_evidence: qgis.png
+    standardized_fields:
+     - 
+      name: TIPO_LOGRA || ' ' || NOME_LOGRA
+      standard: via

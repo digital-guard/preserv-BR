@@ -10,6 +10,9 @@ files:
   p: 1
   size: 1922893
 
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
 layers:
   geoaddress: 
         subtype: full
@@ -19,3 +22,7 @@ layers:
         sql_select: ['gid', 'L_NUMERO AS hnum','X', 'Y', 'geom']
         codec: SHP~Latin1
         # não adicionei X e Y. Precisa?
+        standardized_fields:
+         -
+          name: L_NUMERO
+          standard: hnum

@@ -1,0 +1,49 @@
+pack_id: 153.1
+pkversion: 001
+schemaId_input:    ref027a  # ID do JSON-schema de input, ref no primeiro template a usar este padrão de input.
+schemaId_template: ref027a  # ID do makefile.mustache, ref no primeiro package a usar o template.
+codec:descr_encode: srid=31983
+
+files:
+- file: aff2f6a57e043ce7a5f0e2d6c120f6aba3a97621471422a11fbdfd69f82705da.zip
+  name: lotes_suzano
+  p: 1
+- file: 3f369b4082ed525f080ff6f20cd9cf35b473dfc64012f99690a043bb5d6960b1.zip 
+  name: logradouros
+  p: 2
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+
+layers:
+  parcel: 
+    subtype: full
+    method: shp2sql
+    file: 1
+    sql_select: ['gid', 'logradouro as via', "num_log as  hnum", " complement as complemento", 'geom']
+    orig_filename: lotes_suzano
+    standardized_fields:
+     -
+      name: logradouro
+      standard: via
+     -
+      name: num_log
+      standard: hnum
+     -
+      name: complement
+      standard: complemento
+
+  via:
+    subtype: full
+    method: shp2sql
+    file: 2
+    sql_select: ['gid', "LOG_CAD as via", 'LOTEA_LEG as nsvia', 'geom']
+    orig_filename: logradouros
+    standardized_fields:
+     -
+      name: LOG_CAD
+      standard: via
+     -
+      name: LOTEA_LEG
+      standard: nsvia
+test_evidence: qgis.png

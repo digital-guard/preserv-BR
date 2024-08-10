@@ -1,0 +1,3 @@
+b18fc8ebe8bccc2cfdbbbd5f4896d5f6573033ebfa80061d1d86550c5ae8521d *2018-01-05 BaseCartográfica.gdb.zip
+17432d1f30d451b7effc8c1842d6d819e14a5dbb9e1dc0427bc8644a6deae0a7 *Base Cartográfica Serra-20200514T131414Z-001.zip
+

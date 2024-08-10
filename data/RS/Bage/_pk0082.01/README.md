@@ -1,136 +1,75 @@
-# Geral
+<aside>
+<table align="right" style="padding: 1em">
+<tr><td>Pacote <big><b>pk0082.01</b></big> de <small><a target="_afacodes" title="Jurisdição" href="https://afa.codes/BR-RS-Bage">BR-RS-Bage</a></small>
+</td></tr>
+<tr><td>
+Doador: <a rel="external" target="_doador" href="https://www.bage.rs.gov.br/">Prefeitura Municipal de Bagé</a>
+<br/>&nbsp; <small>CNPJ 88.073.291/0001-99</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q119140">Q119140</a></small><br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
+Obtido via <i>GitHub</i> em <b>25/04/2022</b> por:
+<br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
+<br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
+</td></tr>
+<tr><td>Camadas: <a title="via" href="#-via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> <a title="block" href="#-block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="#-parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> </td></tr>
+<tr><td>Dados publicados em <a href="https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01">preservCutGeo-BR2021</a><br/><a href="#reprodutibilidade">Reprodutíveis</a></td></tr>
+<tr><td>Visualização: <a title="block" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/></a> <a title="parcel" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/></a> <a title="via" href="https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via"><img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/></a> </td></tr>
+</table>
+</aside>
 
-Baixamos os dados que estão disponíveis no [GitHub](https://github.com/GGC-Bage/GeoDataBase) em 2022-04-25. Todas as camadas estão no formato `geojson`.
+<section>
 
+Este repositório de metadados descreve um pacote de arquivos doado para o domínio público. Ele está sendo preservado pela Digital Guard: para maiores detalhes consulte a [documentação sobre o processo de registro e preservação](https://wiki.addressforall.org/doc/Documentação_Digital-guard).
 
+Nota. O presente documento README foi gerado por software a partir das informações contidas no arquivo [`make_conf.yaml`](https://git.digital-guard.org/preserv-BR/blob/main/data/RS/Bage/_pk0082.01/make_conf.yaml) deste pacote, e informações adicionais dos catálogos de [doadores](https://git.digital-guard.org/preserv-BR/blob/main/data/donor.csv) e de [pacotes](https://git.digital-guard.org/preserv-BR/blob/main/data/donatedPack.csv).
 
-## via
+# Camadas de dados
 
-Abrir LOGRADOUROS.geojson
+Os arquivos contêm "camadas de dados" temáticas. Os metadados também descrevem como cada camada foi avaliada e seus dados filtrados de forma padronizada.
 
-Copiar para o diretório alvo
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-block.png" alt="block" width="20"/> block
 
-SRID: 31981
+Nome do arquivo: `QUARTEIRAO`<br/>*Download* e integridade: [47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip](https://dl.digital-guard.org/47063f994f552e27c3b528fcc60cb03e36923b6875dd862dc54062e0ecb3bf60.zip)<br/>Descrição: quarteirões<br/>Tamanho do arquivo: 1496124 bytes (1.43 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
 
-id: gid
+#### Resultados da filtragem e sua publicação
+1610112 bytes (1.54 <abbr title="mebibyte">MiB</abbr>)<br/>2138 polígonos com 32.37 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.01 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/block](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/block)
 
-logradouro: via
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/block)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-parcel.png" alt="parcel" width="20"/> parcel
 
-geometry: geom
+Nome do arquivo: `LOTES_URBANOS`<br/>*Download* e integridade: [7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip](https://dl.digital-guard.org/7fc034ac5c703dcfe93567bd5196ce6eba22df7b779b15ca713b026e85f64759.zip)<br/>Descrição: LOTES<br/>Tamanho do arquivo: 10319163 bytes (9.84 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
 
+#### Dados relevantes
+* `properties->'logradouro'` (via)
 
+#### Resultados da filtragem e sua publicação
+7894776 bytes (7.53 <abbr title="mebibyte">MiB</abbr>)<br/>42697 polígonos com 33.69 <abbr title="quilômetros quadrados">km²</abbr><br/>densidade média: 0.23 polígonos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/parcel](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/parcel)
 
-## parcel
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/parcel)
+## <img src="https://raw.githubusercontent.com/digital-guard/preserv/main/docs/assets/layerIcon-via.png" alt="via" width="20"/> via
 
-Abrir LOTES_URBANOS.geojson
+Nome do arquivo: `LOGRADOUROS-utf8`<br/>*Download* e integridade: [e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip](https://dl.digital-guard.org/e77fe6f601a65e46244bc70b4f19008ad4ce3b1db36fafbaed2a248429504e81.zip)<br/>Descrição: LOGRADOUROS<br/>Tamanho do arquivo: 456311 bytes (0.44 <abbr title="mebibyte">MiB</abbr>)<br/>Formato: geojson<br/>SRID: 31981
 
-Copiar para o diretório alvo
+#### Dados relevantes
+* `properties->'logradouro'` (via)
 
-SRID: 31981
+#### Resultados da filtragem e sua publicação
+515684 bytes (0.49 <abbr title="mebibyte">MiB</abbr>)<br/>4371 segmentos com 539.06 <abbr title="quilômetros">km</abbr><br/>densidade média: 0.14 segmentos/km²<br/>GeoJSONs publicados em [https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/via](https://git.digital-guard.org/preservCutGeo-BR2021/tree/main/data/RS/Bage/_pk0082.01/via)
 
-id: gid
+#### Visualização
+[https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via](https://viz.addressforall.org/BR-RS-Bage/_pk0082.01/via)
 
-numero: hnum (numero de porta)
+</section>
+<section>
 
-logradouro: via (nome do logradouro)
+# Reprodutibilidade
 
-geometry: geom
+O processo de transformação dos *dados orginais* (arquivos doados) em *dados filtrados* pode ser reproduzido por qualquer pessoa fazendo uso das mesmas ferramentas de software utilizadas pelo projeto. A seguir a sequência de comandos *bash* que garantem a [reprodutibilidade](https://en.wikipedia.org/wiki/Reproducibility) do processo a cada *layer*. Qualquer pessoa, munida dos [ferramentas de software utilizadas pelo projeto](https://git.AddressForAll.org/suporte/blob/master/docs/pt/infra.md#ambientes-e-ferramentas-de-uso-geral), vai gerar os mesmos resultados.
 
-----
+Pode-se reproduzir de dois modos:
+* artesanal: com os comandos em [reproducibility.sh](https://git.digital-guard.org/preserv-BR/blob/main/data/RS/Bage/_pk0082.01/reproducibility.sh), depois de seguir a sequência de preparo da base de dados no esquema *ingest*.
+* automático: usando o comando `make` conforme descrito na documentação do projeto.
 
-Abrir LOTES_RURAIS.geojson
-
-Copiar para o diretório alvo
-
-SRID: 4326
-
-id: gid
-
-geometry: geom
-
-----
-
-**Obs:** necessário join entre lotes urbanos e rurais
-
-**Obs2:** o nome do logradouro no arquivo de lotes não é igual ao nome do logradouro no arquivo de vias. Seguindo os passos abaixo é possível encontrar correspondência de 89%.
-
-1. Remover os primeiros três caracteres
-
-2. Separar a string em duas, utilizando a vírgula como separador
-
-3. Na segunda string (que possui termos como AV ou TV), remover os espaços em branco a direita e esquerda (trim)
-
-4. Criar uma nova string com: (i) segunda string, (ii) espaço " ", (iii) primeira string
-
-```
-# Código em R (caso ajude a escrever o código em POSTGIS):
-
-data %>%
-  dplyr::mutate(log2 = stringr::str_sub(logradouro, 3)) %>% # 1.
-  tidyr::separate(log2, into=c("log3", "log4"), sep=",") %>% #2.
-  dplyr::mutate(log3 = dplyr::if_else(is.na(log3), "", log3),
-         log4 = dplyr::if_else(is.na(log4), "", log4),
-         log3 = stringr::str_trim(log3), #3.
-         log4 = stringr::str_trim(log4), #3.
-         log5 = base::paste0(log4, " ", log3)) %>% #4.
-  dplyr::select(id, log3, log4, log5) %>%
-  dplyr::rename(logradouro = log5)
-```
-
-
-
-## block
-
-Abrir QUARTEIRAO.geojson
-
-Copiar para o diretório alvo
-
-SRID: 31981
-
-id: gid
-
-geometry: geom
-
-
-
-## Outros arquivos:
-
-- AREA_CONTRUIDA.geojson
-
-- ASFALTO_ANTIGO.geojson
-
-- ASFALTO_NOVO_DESDE_2017.geojson
-
-- BANCOS_DE_AREA_ARROIO_BAGE.geojson
-
-- COMPREB.geojson
-
-- CONDOMINIOS.geojson
-
-- CURVAS_DE_NIVEL_BAGE_10M.geojson
-
-- DISTRITOS_DE_BAGE.geojson
-
-- DNPM_BAGE.geojson
-
-- ESTRADAS_RURAIS_DE_BAGE.geojson
-
-- INTERTRAVADO_DE_CONCRETO.geojson
-
-- LIMITES_DE_BAGE.geojson
-
-- LOTEAMENTOS.geojson
-
-- MARCOS_DE_REFERENCIA.geojson
-
-- PARALELEPIPEDO.geojson
-
-- PARQUE_DO_GAUCHO_BAGE.geojson
-
-- PAVIMENTACAO_BAGE.geojson
-
-- PREFEITURA_DE_BAGE.geojson
-
-- REGIOES_CENSITARIAS.geojson
-
+</section>
 

@@ -18,6 +18,9 @@ files:
   p: 3
   size: 2327148
 
+license_evidences:
+  definition: [CC0-1.0, cc0, 'https://creativecommons.org/publicdomain/zero/1.0/']
+
 layers:
   parcel:
         subtype: none 
@@ -34,6 +37,11 @@ layers:
         sql_select: ['gid', 'BAIRRO AS nsvia','geom'] 
         orig_filename: BAIRROS/BAIRROS
         codec: SHP~Latin1
+        standardized_fields:
+         -
+          name: BAIRRO
+          standard: nsvia
+          comment: nome do bairro em caixa alta, por extenso e com acentuação
 
   block:
         subtype: none 
@@ -42,3 +50,4 @@ layers:
         sql_select: ['gid', 'CODGIS AS ref','geom'] 
         orig_filename: QUADRAS/QUADRAS
         codec: SHP~Latin1
+test_evidence: qgis.png

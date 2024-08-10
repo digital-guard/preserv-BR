@@ -10,31 +10,29 @@ files:
   name: Quadras
   p: 1
   size: 984417
-  
 - file: 4b8f5c5264e567014e98d3314a49ba2a1c71f8da5cba66572671fe674b7788f1.zip
   name: Geoenderecos
   p: 2
   size: 1872639
-  
 - file: 5662a73fff9eeb6c1c3753b4d204b5c1074e9a17454c68fabcf17bd87c2c77b4.rar
   name: Bairros
   p: 3
   size: 6289596
-  
 - file: 81db1f1d79472aa7e664a00e012628ee113c887e952e73af28e6e86ad10a7dab.zip
   name: Lotes
   p: 4
   size: 4617404
-  
 - file: 7dbb469cf4affc5e9d0486712553ed2c635a2a33e3e2389c660ceabc209e59c7.zip
   name: Logradouros rurais
   p: 5
   size: 512885
-  
 - file: 3a300c9f9836c3ea1af53bfdff81e4d663c413f688fdd9c9f583105c19f3ec39.zip
   name: Logradouros urbanos
   p: 6
   size: 500230
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
 
 layers:
 

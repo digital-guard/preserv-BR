@@ -1,0 +1,32 @@
+pack_id: 149.1
+pkversion: 001
+schemaId_input: ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+- file: 4c277e529eaf56a0e8fa7ccd0c2afc141ad541e8d14874997ee429610ed31b23.zip
+  name:
+  p: 1
+
+layers:
+  geopoint:
+    subtype: full
+    method: shp2sql
+    file: 1
+    orig_filename: CSR_ADRESSFORALL/CSR_ENDERECO
+    sql_view: SELECT OBJECTID as gid, NU_PORTAL AS hnum, DE_LOGRADO AS via, DE_BAIRRO AS nsvia, DE_DESCRIC, geom FROM $(tabname)
+    standardized_fields:
+        -
+         name: NU_PORTAL
+         standard: hnum
+        -
+         name: DE_LOGRADO
+         standard: via
+        -
+         name: DE_BAIRRO
+         standard: nsvia
+    other_fields:
+        -
+         name: DE_DESCRIC
+test_evidence: qgis.png
