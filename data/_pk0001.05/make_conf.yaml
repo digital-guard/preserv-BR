@@ -1,0 +1,62 @@
+pack_id: 1.5
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+- file: daff5251f48d295d27621d0bfbd6c9b3a78a8827e31fd0bd7acb4bc7ad079d27.zip
+  name: Endereços
+  p: 1
+- file: 20e134019126420367c18e534a2ecd5229a769f1ce153763ceb5804af5417359.zip
+  name: Municipios
+  p: 2
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+  
+
+layers:
+
+  geoaddress:
+    subtype: ext
+    method: csv2sql
+    file: 1
+    orig_filename: _
+    orig_subfilename: _
+    codec: CSV.ZIP
+    sql_view: |- 
+      SELECT \
+      SELECT row_number() OVER () AS gid, COD_MUNICIPIO \
+      CEP, DSC_LOCALIDADE as nsvia, \
+      CASE WHEN NOM_TIPO_SEGLOGR = 'EDF' THEN '' ELSE NOM_TIPO_SEGLOGR || ' ' || NOM_TITULO_SEGLOGR || ' ' || NOM_SEGLOGR as via, \
+      NUM_ENDERECO as hnum, \
+      geom FROM $(tabname)
+    join_id: COD_MUNICIPIO
+    standardized_fields:
+     -
+      name: DSC_LOCALIDADE
+      standard: nsvia
+     -
+      name: CASE WHEN NOM_TIPO_SEGLOGR = 'EDF' THEN '' ELSE NOM_TIPO_SEGLOGR || ' ' || NOM_TITULO_SEGLOGR || ' ' || NOM_SEGLOGR
+      standard: via
+     -
+      name: NUM_ENDERECO
+      standard: hnum
+
+  address:
+        subtype: cmpl
+        method: csv2sql
+        file: 2
+        orig_filename: RELATORIO_DTB_BRASIL_MUNICIPIO
+        sql_view: |-
+          SELECT "Nome_UF" as estado,  "Nome_Município" as municipio \
+          FROM $(tabname)
+        join_id: Código Município Completo
+        standardized_fields:
+         -
+          name: Nome_UF 
+          standard: estado
+         -
+          name: Nome_Município
+          stadard: municipio
