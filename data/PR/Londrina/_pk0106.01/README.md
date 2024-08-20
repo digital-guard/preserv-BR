@@ -5,7 +5,7 @@
 <tr><td>
 Doador: <a rel="external" target="_doador" href="https://www.londrina.pr.gov.br/">Prefeitura do Município de Londrina</a>
 <br/>&nbsp; <small>CNPJ 75.771.477/0001-70</small> • Wikidata <a rel="external" target="_doador" title="link descritor Wikidata do doador" href="https://www.wikidata.org/wiki/Q192387">Q192387</a></small><br/>
-Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0 <a title="SHA256 7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af.eml" href="https://dl.digital-guard.org/7adf2a2ec5348c05db9a52eedccdfb065352d363ff617d6167cf6202e30ee4af.eml"><code>7adf2a2...eml</code></a>)<br/>
+Licença <a rel="external" target="_doador" href="https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md"><b>Implied govWorks_geo-BR_municipal-1.0</b></a> (cc0)<br/>
 Obtido via <i>site</i> em <b>10/11/2022</b> por:
 <br/>&nbsp; Avaliação técnica: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/luisfelipebr">luisfelipebr</a>
 <br/>&nbsp; Representação institucional: <a rel="external" target="_gitPerson" title="usuário Git" href="https://github.com/ThierryAJean">ThierryAJean</a><br/>
