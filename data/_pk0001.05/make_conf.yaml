@@ -23,9 +23,9 @@ layers:
     method: csv2sql
     file: 1
     orig_filename: _
-    orig_subfilename: _
+    orig_subfilename: */[0-9][0-9]_[A-Z][A-Z]
     codec: CSV.ZIP
-    sql_view: |- 
+    sql_view: |-
       SELECT \
       SELECT row_number() OVER () AS gid, COD_MUNICIPIO \
       CEP, DSC_LOCALIDADE as nsvia, \
@@ -55,7 +55,7 @@ layers:
         join_id: Código Município Completo
         standardized_fields:
          -
-          name: Nome_UF 
+          name: Nome_UF
           standard: estado
          -
           name: Nome_Município
