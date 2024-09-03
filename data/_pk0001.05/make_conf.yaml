@@ -14,7 +14,7 @@ files:
 
 license_evidences:
   definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
-  
+
 
 layers:
 
@@ -23,16 +23,13 @@ layers:
     method: csv2sql
     file: 1
     orig_filename: _
-    orig_subfilename: */[0-9][0-9]_[A-Z][A-Z]
-    codec: CSV.ZIP
+    orig_subfilename: '[0-9][0-9]_[A-Z][A-Z]'
+    codec: CSV.ZIP~semicolon
     sql_view: |-
-      SELECT \
-      SELECT row_number() OVER () AS gid, COD_MUNICIPIO \
-      CEP, DSC_LOCALIDADE as nsvia, \
-      CASE WHEN NOM_TIPO_SEGLOGR = 'EDF' THEN '' ELSE NOM_TIPO_SEGLOGR || ' ' || NOM_TITULO_SEGLOGR || ' ' || NOM_SEGLOGR as via, \
-      NUM_ENDERECO as hnum, \
-      geom FROM $(tabname)
-    join_id: COD_MUNICIPIO
+      SELECT row_number() OVER () AS gid, \\"COD_MUNICIPIO\\" AS ref, \\"CEP\\" AS cep, \\"DSC_LOCALIDADE\\" AS nsvia, \
+      CASE WHEN \\"NOM_TIPO_SEGLOGR\\" = 'EDF' THEN '' ELSE \\"NOM_TIPO_SEGLOGR\\" || ' ' || \\"NOM_TITULO_SEGLOGR\\" || ' ' || \\"NOM_SEGLOGR\\" END AS via, \
+      \\"NUM_ENDERECO\\" as hnum, ST_SetSRID(ST_MakePoint(\\"LONGITUDE\\"::float,\\"LATITUDE\\"::float),4326) AS geom FROM $(tabname)
+    join_id: ref
     standardized_fields:
      -
       name: DSC_LOCALIDADE
@@ -49,10 +46,13 @@ layers:
         method: csv2sql
         file: 2
         orig_filename: RELATORIO_DTB_BRASIL_MUNICIPIO
+        codec: CSV~semicolonCRLF
         sql_view: |-
-          SELECT "Nome_UF" as estado,  "Nome_Município" as municipio \
+          SELECT "Nome_UF" as estado,  "Nome_Município" as municipio, "Código Município Completo" AS ref \
           FROM $(tabname)
-        join_id: Código Município Completo
+        join_id: ref
+        after_extract:
+            - sed -i 's/;;;;;;//' $(sandbox)/RELATORIO_DTB_BRASIL_MUNICIPIO.csv
         standardized_fields:
          -
           name: Nome_UF
