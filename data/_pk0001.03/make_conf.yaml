@@ -1,0 +1,33 @@
+pack_id: 1.5
+pkversion: 001
+schemaId_input:    ref027a
+schemaId_template: ref027a
+codec:descr_encode: srid=4326
+
+files:
+- file: 20e134019126420367c18e534a2ecd5229a769f1ce153763ceb5804af5417359.zip
+  name: Municipios
+  p: 1
+
+license_evidences:
+  definition: [Implied govWorks_geo-BR_municipal-1.0, cc0, 'https://git.digital-guard.org/licenses/blob/master/reports/implied-govWorks_geo-BR_municipal-v1.md']
+  
+
+layers:
+
+  address:
+        subtype: cmpl
+        method: csv2sql
+        file: 1
+        orig_filename: RELATORIO_DTB_BRASIL_MUNICIPIO
+        sql_view: |-
+          SELECT "Nome_UF" as estado,  "Nome_Município" as municipio \
+          FROM $(tabname)
+        standardized_fields:
+         -
+          name: Nome_UF
+          standard: estado
+         -
+          name: Nome_Município
+          stadard: municipio
+
