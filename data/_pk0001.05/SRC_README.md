@@ -172,11 +172,32 @@ CREATE TABLE ibge_cnefe2022_ghs10_geom AS
  -- Garante latitude e longitude originais, sem o "snap to grid". Em caso de duplicidade usa centroide.
  SELECT  ghs10, st_centroid(ST_Collect(geom)) as geom
  FROM ibge_cnefe2022 group by 1 order by 1
+; -- 89899299  =  90 milhões
+
+CREATE TABLE ibge_cnefe2022_export0 AS
+ SELECT ghs10,  cod_municipio, cod_setor, cep,
+       CASE WHEN cardinality(vias) > 1 THEN concat(vias[1], ' (ou ', vias[2], ')') ELSE vias[1] END as via_name,
+       CASE WHEN cardinality(nums) > 1 THEN concat(nums[1], ' (ou ', nums[2], ')') ELSE nums[1] END as num_endereco,
+       num_face, n_dups
+ FROM (
+   SELECT ghs10,
+       count(*) n_dups,
+       min(cod_municipio) as cod_municipio,
+       min(cod_setor) as cod_setor,
+       max(cep) as cep,
+       min(num_face) as num_face,
+       array_agg(distinct via_name) as vias,
+       array_agg(distinct num_endereco) as nums
+   FROM ibge_cnefe2022
+   GROUP BY 1
+ )  t
+ ORDER BY 1
 ; -- 89899299
 
+-------- INSERTS:
 CREATE TABLE ibge_cnefe2022_export_tmp AS
   SELECT DISTINCT ghs10, COD_MUNICIPIO, cod_setor, cep, NUM_FACE, via_name, NUM_ENDERECO
-  FROM ibge_cnefe2022
+  FROM ibge_cnefe2022_export0 
   WHERE NUM_ENDERECO!='0' and NUM_ENDERECO>''
   ORDER BY cod_municipio, ghs10
 ; -- 67847029 (sem setor 67846775)
@@ -187,11 +208,12 @@ INSERT INTO ibge_cnefe2022_export_tmp
           THEN ('SN' || CASE WHEN nom_comp_elem1>'' THEN CONCAT(' (',nom_comp_elem1,' ',val_comp_elem1,')') ELSE '' END)
           ELSE NUM_ENDERECO
          END) AS NUM_ENDERECO
-  FROM ibge_cnefe2022 i LEFT JOIN ibge_cnefe2022_ghs10_geom t ON t.ghs10=i.ghs10
+  FROM ibge_cnefe2022_export0 i LEFT JOIN ibge_cnefe2022_ghs10_geom t ON t.ghs10=i.ghs10
   WHERE t.ghs10 IS NULL AND i.NUM_ENDERECO='0'
   GROUP BY 1, 2, 3, 4, 5, 6
   ORDER BY i.COD_MUNICIPIO, i.ghs10, i.via_name
 ; -- 22754153
+--------
 
 CREATE VIEW vw_ibge_cnefe2022_aux AS
   SELECT e.*, g.geom
