@@ -3,7 +3,60 @@ Arquivos utilizados como fonte de dados principal deste repositório, e preserva
 O download destes arquivos em geral  recebe o rótulo de `brazil-latest.osm.pbf`. 
 A seguir o histórico e metadados das versões utilizadas, organizadas por data (ano-mês-dia).
 
-* [Mais recente](#2022-02-01)
+* [Mais recente](#2025-09-15)
+* 
+## 2025-09-15
+Obtido de https://download.geofabrik.de/south-america-latest.osm.pbf com [_resumo-hash_ MD5](https://en.wikipedia.org/wiki/MD5) confirmado, e os seguintes metadados e confirmações no [arquivo PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) de *3.6 GiB*:
+
+* Evidência de licenciamento e licença: da mesma data na [Wayback Machine](https://web.archive.org), [evidência em openstreetmap.org/copyright](https://web.archive.org/web/20220201154930/https://www.openstreetmap.org/copyright) e [texto da licença em opendatacommons.org/licenses/odbl](https://web.archive.org/web/20220130114324/https://opendatacommons.org/licenses/odbl/). Portanto **ODbL**.
+
+* [_Resumo-hash_ SHA256d](https://en.bitcoin.it/wiki/Protocol_documentation#Hashes): <small> `35d4940da2814c8c4f523578bc05b5be97f8f0020aa99bd436d453289fc14d80`</small>.
+
+* Contagens banco de dados: 584899534 _nodes_; 46494841 _ways_; 591821 _relations_.
+
+* Metadados extraídos pelo [Osmium](https://osmcode.org/osmium-tool/manual.html):
+
+```
+File:
+  Name: 35d4940da2814c8c4f523578bc05b5be97f8f0020aa99bd436d453289fc14d80.pbf
+  Format: PBF
+  Compression: none
+  Size: 3800545182
+Header:
+  Bounding boxes:
+    (-122.961875,-60.30883,-23.24401,16.9126559)
+  With history: no
+  Options:
+    generator=osmium/1.14.0
+    osmosis_replication_base_url=https://download.geofabrik.de/south-america-updates
+    osmosis_replication_sequence_number=4548
+    osmosis_replication_timestamp=2025-09-15T20:20:59Z
+    pbf_dense_nodes=true
+    pbf_optional_feature_0=Sort.Type_then_ID
+    sorting=Type_then_ID
+    timestamp=2025-09-15T20:20:59Z
+Data:
+  Data:
+  Bounding box: (-127.5000007,-80,-22.5,65.1925988)
+  Timestamps:
+    First: 2006-11-07T22:24:17Z
+    Last: 2025-09-15T20:18:19Z
+  Objects ordered (by type and id): yes
+  Multiple versions of same object: no
+  CRC32: not calculated (use --crc/-c to enable)
+  Number of changesets: 0
+  Number of nodes: 584899534
+  Number of ways: 46494841
+  Number of relations: 591821
+  Smallest changeset ID: 0
+  Smallest node ID: 3
+  Smallest way ID: 3993610
+  Smallest relation ID: 3712
+  Largest changeset ID: 0
+  Largest node ID: 13145227872
+  Largest way ID: 1430058463
+  Largest relation ID: 19606195
+```
 
 ## 2022-02-01
 Obtido de http://download.geofabrik.de/south-america/brazil-latest.osm.pbf com [_resumo-hash_ MD5](https://en.wikipedia.org/wiki/MD5) confirmado, e os seguintes metadados e confirmações no [arquivo PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) de *1.4 GiB*:
