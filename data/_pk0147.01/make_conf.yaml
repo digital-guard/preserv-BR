@@ -6,8 +6,9 @@ codec:descr_encode: srid=31982
 
 files:
 - file: 07cf6cbb22f6b48f0d2331f124ac34b37fc7db53508565fb1ca576f14eb1156b.csv
-  name:
+  name: NEOEKT_ADDRESSFORALL
   p: 1
+  uncompacted: true
 
 layers:
   geopoint:
@@ -15,8 +16,9 @@ layers:
     method: csv2sql
     file: 1
     orig_filename: NEOEKT_ADDRESSFORALL
-    codec: CSV~semicolon
-    sql_view: SELECT row_number() OVER () as gid, NUMERO AS hnum, TIPO_LOGRADOURO || ' ' || LOGRADOURO AS via, COMPLEMENTO AS sup, BAIRRO AS nsvia, CEP AS postcode, CIDADE AS city, CONTA AS ref, ST_SetSRID(ST_MakePoint(replace("NOYPE",',','.')::float,replace("NOXPE",',','.')::float),$(srid)) AS geom FROM $(tabname)
+    codec: CSV~Latin1semicolon
+    partition_by: city
+    sql_view: SELECT row_number() OVER () AS gid, "NUMERO" AS hnum, "TIPO_LOGRADOURO" || ' ' || "LOGRADOURO" AS via, "COMPLEMENTO" AS sup, "BAIRRO" AS nsvia, "CEP" AS postcode, "CIDADE" AS city, "CONTA" AS ref, ST_SetSRID(ST_MakePoint(replace("NOXPE",',','.')::float, replace("NOYPE",',','.')::float), $(srid)) AS geom FROM $(tabname)
     standardized_fields:
         -
          name: NUMERO
