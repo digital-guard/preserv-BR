@@ -23,7 +23,7 @@ layers:
         method: shp2sql
         file: 1
         sql_select: [['gid', '_logradour AS via', '_numero_25 AS hnum', '_bairro_28 AS nsvia', 'uso', 'geom'],['gid', 'iq_lote', 'geom']]
-        orig_filename: ['Malha Fundi ria/lotes2020_uso','Malha Fundi ria/Lotes_rurais']
+        orig_filename: ['Malha Fundiária/lotes2020_uso','Malha Fundiária/Lotes_rurais']
         standardized_fields:
          -
           name: ___logradour
@@ -39,7 +39,7 @@ layers:
         method: shp2sql
         file: 2
         sql_select:  ['gid','nomelog AS via', 'geom']
-        orig_filename: Malha Vi ria/logradouros
+        orig_filename: Malha Viária/logradouros
         standardized_fields:
          -
           name: nomelog
@@ -56,7 +56,7 @@ layers:
         method: shp2sql
         file: 1
         sql_view: SELECT gid, 'yes' AS building, geom FROM $(tabname)
-        orig_filename: Malha Fundi ria/Quadras
+        orig_filename: Malha Fundiária/Quadras
         standardized_fields:
          -
           name: 'yes'
