@@ -16,7 +16,7 @@ files:
 
 layers:
   geoaddress:
-        subtupe: full
+        subtype: full
         method: shp2sql
         file: 1
         # tem que descompactar num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
@@ -31,7 +31,7 @@ layers:
          -
           name: logradouro
   parcel:
-        subtupe: full
+        subtype: full
         method: shp2sql
         file: 2
         orig_filename: LOTES_201902
