@@ -17,7 +17,7 @@ files:
 layers:
   geoaddress:
         subtype: full
-        method: shp2sql
+        method: geojson2sql
         file: 1
         # tem que descompactar num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
         orig_filename: num_predial_curitiba_201902_distancia_20metros_eixo_rua.rar
